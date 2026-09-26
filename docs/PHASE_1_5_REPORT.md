@@ -65,3 +65,11 @@ python scripts/validate_segmentation.py
 6. 官方答案的精细逐题/子题关联和评分没有自动确认；目前可人工选择并确认答案出处页。
 
 **停止条件：本阶段交付后停止，等待用户验收；禁止全量导入或其他年份处理。**
+
+## 线上交付
+
+网站：https://neroclaud2015.github.io/AP2/?v=1.5.3
+
+实现提交：`1bb94c1`。Pages 构建和部署成功：https://github.com/neroclaud2015/AP2/actions/runs/36255076234 。CI 成功：https://github.com/neroclaud2015/AP2/actions/runs/36255056598 。
+
+线上浏览器完整验收通过，包含36张裁剪、四项Review队列、编辑/裁剪/答案确认、刷新持久化、导入导出、手机布局。测试使用临时浏览器上下文，不改动用户真实浏览器的Review记录。最终工作已停止，等待验收。

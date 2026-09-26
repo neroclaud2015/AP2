@@ -20,4 +20,4 @@ Verification:
 
 Progress: initial layout inspection found imposed two-page spreads with printed question separators, 28 multiple-choice questions and 8 U questions indicated by the source instructions. Counts must be validated against extracted labels, not synthesized.
 
-Completed: coordinate segmentation, 36/36 coverage, 4-item review queue, image-first UI, persistent edits, backup, versioned resume, 12 Python tests and 2 storage tests, browser acceptance. Independent review findings fixed with regression tests. Pending: deploy and verify live, then stop.
+Completed: coordinate segmentation, 36/36 coverage, 4-item review queue, image-first UI, persistent edits, backup, versioned resume, 12 Python tests and 2 storage tests, browser acceptance. Independent review findings fixed with regression tests. Deployment and live browser verification passed. STOPPED; awaiting user acceptance.
