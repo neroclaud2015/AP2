@@ -20,3 +20,6 @@ Task 3: browser checks passed all 48 page images and PDF anchors, question and r
 Final review: independent reviewer found interrupted PDF copy and stale derived counts. Both reproduced, fixed and verified by a green 6-test Python suite.
 Ruling: image-only pages remain visible and queued for OCR; noisy/spread-based question extraction remains unverified. Cost: not a validated question bank; no bulk ingestion permitted.
 Ruling: user supplied https://github.com/neroclaud2015/AP2 for deployment verification. Repository is currently empty and private; preserve visibility.
+
+Deployment: user explicitly authorized public visibility after private Pages returned 422. Repository made public; workflow 36242054061 build/deploy succeeded. Online browser checks passed 48 images and 48 source anchors.
+Final scope: STOP. No Phase 2/3, no bulk ingestion, no automatic continuation.

@@ -46,6 +46,6 @@ Every original PDF/page can be browsed, including solution pages and diagrams. T
 
 ## GitHub Pages
 
-The manual `pages.yml` workflow validates and builds existing pilot data; it never runs ingestion. Relative asset paths support a repository subpath. A remote repository, Pages enabled with GitHub Actions, and an actual successful deployment are still required for the live-deployment acceptance criterion. Source and pilot data are pushed to https://github.com/neroclaud2015/AP2. Pages activation currently returns HTTP 422: the account plan does not support Pages for this private repository. No public website is live. Repository visibility has not been changed.
+The manual `pages.yml` workflow validates and builds existing pilot data; it never runs ingestion. Relative asset paths support a repository subpath. A remote repository, Pages enabled with GitHub Actions, and an actual successful deployment are still required for the live-deployment acceptance criterion. Source and pilot data are pushed to https://github.com/neroclaud2015/AP2. The user explicitly authorized making the repository public. GitHub Pages is live at https://neroclaud2015.github.io/AP2/; the build/deploy and online browser smoke checks passed.
 
 Do not commit personal progress, notes, IndexedDB exports or secrets. Browser progress storage is separate from the source repository.

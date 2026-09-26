@@ -43,4 +43,12 @@ Stop after repository/deployment outcome is recorded. Other exam seasons remain 
 
 ## Repository and deployment
 
-Initial implementation commit: `4c31a36`, pushed to `neroclaud2015/AP2` main. The repository is private. GitHub Pages activation returned HTTP 422: "Your current plan does not support GitHub Pages for this repository." Live Pages acceptance remains incomplete. Repository visibility is unchanged. A separate verification workflow runs tests/build only; it never runs ingestion.
+Initial implementation commit: `4c31a36`, pushed to `neroclaud2015/AP2` main. Initial private-repository Pages activation returned HTTP 422 due to the account plan. The user then explicitly authorized public visibility and continued deployment. The repository is now public; Pages deployment succeeded. A separate verification workflow runs tests/build only; it never runs ingestion.
+
+Live site: https://neroclaud2015.github.io/AP2/
+
+Deployment evidence: https://github.com/neroclaud2015/AP2/actions/runs/36242054061 — build and deploy successful.
+
+CI evidence: https://github.com/neroclaud2015/AP2/actions/runs/36242034050 — successful.
+
+The same browser smoke suite passed against the live URL, including all 48 images and PDF anchors, source navigation and mobile layout. Local branch retained; work stopped after Phase 0/1.
