@@ -15,3 +15,7 @@
 - IndexedDB schema v1 records are keyed by user + question. User field edits are locked; machine updates cannot overwrite them. Private records are never written into static exam JSON.
 
 Changes to extraction/schema versions require an explicit migration. No automatic rescan or destructive raw-source overwrite is supported.
+
+## Segmentation schema v2 (Phase 1.5)
+
+See `src/segmented/types.ts`. `extraction_confidence` describes heuristic layout/label confidence only; auxiliary OCR text is unverified. Source IDs use physical PDF page and stable layout anchors, independent of OCR number. `regions` is the exact union of retained source rectangles; `bounding_box` encloses this union. The cropped image masks other regions white. Review status distinguishes auto_ready, needs_review and confirmed. Local QuestionReview records overlay generated fields; solution_confirmed is separate. IndexedDB v2 adds reviews without replacing v1 progress records.

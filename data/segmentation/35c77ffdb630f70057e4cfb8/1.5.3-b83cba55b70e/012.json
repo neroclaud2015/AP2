@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "source_sha256": "e9eaa0a2ab88cdab5499fc909aab8f59cd9e8eff4b0738b2c3e14aa0094ddbe0",
+  "revision": "1.5.3-b83cba55b70e",
+  "page": 12,
+  "layout": {
+    "kind": "question_page",
+    "unresolved": []
+  },
+  "questions": [
+    {
+      "question_id": "35c77ffdb630f70057e4cfb8-p12-h0-U",
+      "exam": "2017_sommer",
+      "module": "Arbeitsplanung",
+      "question_number": "U3",
+      "source_pdf": "assets/pdfs/35c77ffdb630f70057e4cfb8.pdf",
+      "source_page": 12,
+      "source_page_image": "assets/pages/35c77ffdb630f70057e4cfb8/012.png",
+      "source_size": [
+        1190.4000244140625,
+        841.4400024414062
+      ],
+      "bounding_box": [
+        20.0,
+        15,
+        575.2,
+        808
+      ],
+      "regions": [
+        [
+          20.0,
+          15,
+          575.2000122070312,
+          808
+        ]
+      ],
+      "cropped_question_image": "assets/questions/35c77ffdb630f70057e4cfb8/1.5.3-b83cba55b70e/35c77ffdb630f70057e4cfb8-p12-h0-U.png",
+      "extracted_text": "U3\nDie Tischplatte des Hubtischs ist durch ein Gabelgelenk mit der Kolbenstange des Hubzylinders verbunden.\nTischptatte\n6abel\nLagerbuchse (CuSn)\nBotzen (Staht)\nt\nScheibe\nKotbenstange\n1. Nennen Sie das Ftigeverfahren, mit dem die Tischplatte mit der Gabel verbunden ist.\n2. Nennen Sie einen Vorteil, warum f0r die Lagerbuchse der Werkstoff CuSn gewiihlt wurde.\n3. Die zukiinftige maximale Zylinderkraft auf das Gabelgelenk betragt 14 kN.\nDie zulissige Fldchenpressung (Lochleibungsdruck) der Lagerbuchse (CuSn) ist mitpur, = 15 N/mm2 angegeben.\nDie MaBe der Lagerbuchse sind: d = 24 mm, b = 36 rnrn\nPnif€n Sie durch Rechnung, ob die Lagerbuchse ausreichend dimensioniert ist.\nl\nErgebnis\nU3\nPunkte",
+      "extraction_confidence": 0.96,
+      "label_evidence": "U_heading_and_booklet_half",
+      "review_status": "auto_ready",
+      "review_reasons": [],
+      "extractor_version": "1.5.3",
+      "segmentation_revision": "1.5.3-b83cba55b70e",
+      "tags": [],
+      "solution_page": null,
+      "solution_confirmed": false
+    },
+    {
+      "question_id": "35c77ffdb630f70057e4cfb8-p12-h1-U",
+      "exam": "2017_sommer",
+      "module": "Arbeitsplanung",
+      "question_number": "U4",
+      "source_pdf": "assets/pdfs/35c77ffdb630f70057e4cfb8.pdf",
+      "source_page": 12,
+      "source_page_image": "assets/pages/35c77ffdb630f70057e4cfb8/012.png",
+      "source_size": [
+        1190.4000244140625,
+        841.4400024414062
+      ],
+      "bounding_box": [
+        615.2,
+        15,
+        1170.4,
+        808
+      ],
+      "regions": [
+        [
+          615.2000122070312,
+          15,
+          1170.4000244140625,
+          808
+        ]
+      ],
+      "cropped_question_image": "assets/questions/35c77ffdb630f70057e4cfb8/1.5.3-b83cba55b70e/35c77ffdb630f70057e4cfb8-p12-h1-U.png",
+      "extracted_text": "U4\nAnlage Blatt 1 von 1: Hydraulikschaltplan\nFolgende Anforderungen sind an die hydraulische Schaltung gestellt:\nDer Hubtisch soll von der unteren Endlage, Sensor -B1 , bis zum Erreichen des Sensors -82 schnell ausfahren.\nDie Kippbewegung von Sensor -B2 bis zum Erreichen des Sensors -83 soll langsam und lastunabhAngig mit\nkonstanter Geschwindigkeit edolgen.\nDas Absenken des Hubtischs erfolgt mit maximaler Geschwindigkeit.\nBei Druckausfall darf sich der Hubtisch nicht absenken.\n1. Ergdnzen Sie den Schaltplan durch folgende Ventile:\n- Riickschlagventil (-R5)\n- entsperrbares R0ckschlagventil (-RG)\n- Stromregelventil GR4)\n-2l2-Wegeventil, elektrisch angesteuert, mit Vorsteuerung und Federriickstdlung (-Q3)\n2. Der Hubzylinder wird durch einen Zylinder mit dem Kolbendurchmesser d = 63 mm und 7 - 85 %o ersetzt.\nAuf welchen Druck (in MPa und bar) ist das DBV (-F1) einzustellen, wenn der Hubtisch eine Eigenmasse von\n350 kg hat und die zusiitzliche Hublasl zuf 1 000 kg begrenzt werden soll?\nA. r!\nI\nI\ni\nI\nI\nErgebnis\nU4\nPunkte",
+      "extraction_confidence": 0.96,
+      "label_evidence": "U_heading_and_booklet_half",
+      "review_status": "auto_ready",
+      "review_reasons": [],
+      "extractor_version": "1.5.3",
+      "segmentation_revision": "1.5.3-b83cba55b70e",
+      "tags": [],
+      "solution_page": null,
+      "solution_confirmed": false
+    }
+  ]
+}

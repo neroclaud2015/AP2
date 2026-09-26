@@ -1,3 +1,7 @@
+# Current stop: Phase 1.5 complete; awaiting user acceptance
+
+Arbeitsplanung only: 36 segmented questions, 32 auto-ready, 4 need review (8, 24, 25, 27). Active segmenter 1.5.3. Legacy ingestion records below remain unchanged. No other modules or years reprocessed.
+
 # Ingestion status
 
 Scope: **2017 Sommer only**. No bulk scanning authorized.

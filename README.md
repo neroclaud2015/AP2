@@ -1,6 +1,6 @@
-# AP2 Study — Phase 0 + 1 prototype
+# AP2 Study — Phase 1.5 question segmentation
 
-Only **2017 Sommer** is imported. Stop here for user review; no full archive scan is authorized.
+Only **2017 Sommer** is imported. Phase 1.5 re-segments **Arbeitsplanung only**: 36 original-image questions, 4 low-confidence review items, local review/edit persistence. [Phase 1.5 report](docs/PHASE_1_5_REPORT.md). Stop for user acceptance; no full archive scan is authorized.
 
 ## Run locally
 
@@ -30,6 +30,7 @@ Original ZIPs stay outside this repository and remain untouched. `raw/` is immut
 ```sh
 python -m unittest discover -s scripts -p 'test_*.py'
 python scripts/validate_data.py
+python scripts/validate_segmentation.py
 npm test
 npm run build
 ```
@@ -49,3 +50,12 @@ Every original PDF/page can be browsed, including solution pages and diagrams. T
 The manual `pages.yml` workflow validates and builds existing pilot data; it never runs ingestion. Relative asset paths support a repository subpath. A remote repository, Pages enabled with GitHub Actions, and an actual successful deployment are still required for the live-deployment acceptance criterion. Source and pilot data are pushed to https://github.com/neroclaud2015/AP2. The user explicitly authorized making the repository public. GitHub Pages is live at https://neroclaud2015.github.io/AP2/; the build/deploy and online browser smoke checks passed.
 
 Do not commit personal progress, notes, IndexedDB exports or secrets. Browser progress storage is separate from the source repository.
+
+## Phase 1.5 segmentation
+
+```sh
+python scripts/segment.py --document 35c77ffdb630f70057e4cfb8
+node scripts/browser_phase15.cjs
+```
+
+The segmentation manifest is separate from ingestion v1. Same source/version/config pages are reused without reopening the PDF. New versions are scoped to this explicit document. Default UI displays crops; the previous archive viewer remains under Sources / Debug. Review changes are local, locked overlays; export a backup before changing devices.
