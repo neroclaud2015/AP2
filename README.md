@@ -28,7 +28,7 @@ Original ZIPs stay outside this repository and remain untouched. `raw/` is immut
 ## Checks
 
 ```sh
-python scripts/test_ingest.py
+python -m unittest discover -s scripts -p 'test_*.py'
 python scripts/validate_data.py
 npm test
 npm run build
@@ -46,6 +46,6 @@ Every original PDF/page can be browsed, including solution pages and diagrams. T
 
 ## GitHub Pages
 
-The manual `pages.yml` workflow validates and builds existing pilot data; it never runs ingestion. Relative asset paths support a repository subpath. A remote repository, Pages enabled with GitHub Actions, and an actual successful deployment are still required for the live-deployment acceptance criterion. No remote repository has been selected and nothing has been published.
+The manual `pages.yml` workflow validates and builds existing pilot data; it never runs ingestion. Relative asset paths support a repository subpath. A remote repository, Pages enabled with GitHub Actions, and an actual successful deployment are still required for the live-deployment acceptance criterion. Source and pilot data are pushed to https://github.com/neroclaud2015/AP2. Pages activation currently returns HTTP 422: the account plan does not support Pages for this private repository. No public website is live. Repository visibility has not been changed.
 
 Do not commit personal progress, notes, IndexedDB exports or secrets. Browser progress storage is separate from the source repository.

@@ -40,3 +40,7 @@ The PDFs include imposed booklet spreads and noisy existing OCR. Proposal counts
 ## Stop condition
 
 Stop after repository/deployment outcome is recorded. Other exam seasons remain untouched. No scheduled continuation or automation is configured.
+
+## Repository and deployment
+
+Initial implementation commit: `4c31a36`, pushed to `neroclaud2015/AP2` main. The repository is private. GitHub Pages activation returned HTTP 422: "Your current plan does not support GitHub Pages for this repository." Live Pages acceptance remains incomplete. Repository visibility is unchanged. A separate verification workflow runs tests/build only; it never runs ingestion.
