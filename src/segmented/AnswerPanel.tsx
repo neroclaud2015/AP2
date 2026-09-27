@@ -1,3 +1,4 @@
+import {useAppServices} from '../services/context';
 import { useState } from 'react';
 import { asset } from './types';
 import { effectiveAnswer, type AnswerReview, type OfficialAnswer } from './answers';
@@ -6,13 +7,14 @@ export default function AnswerPanel({answer,review,overlay,disabled,onSave,onBus
   answer:OfficialAnswer; review?:AnswerReview; overlay:string; disabled:boolean;
   onSave:(review:AnswerReview)=>Promise<void>; onBusy:(busy:boolean)=>void;
 }) {
+ const {user}=useAppServices();
   const [source,setSource]=useState(false);const [editing,setEditing]=useState(false);
   const [draft,setDraft]=useState('');const [saving,setSaving]=useState(false);const [error,setError]=useState('');
   const current=effectiveAnswer(answer,review);
   const save=async(value:number,corrected:boolean)=>{
     if(!Number.isInteger(value)||value<1||value>5)return;
     setSaving(true);onBusy(true);setError('');
-    try {await onSave({userId:'local',question_id:answer.question_id,official_answer:value,
+    try {await onSave({userId:user.id,question_id:answer.question_id,official_answer:value,
       official_answer_status:'confirmed',user_corrected:corrected||!!review?.user_corrected,locked:true,
       parser_revision:answer.parser_revision,updated_at:new Date().toISOString()});setEditing(false);onBusy(false);}
     catch{setError('Antwort konnte nicht gespeichert werden. Bitte erneut versuchen.');onBusy(editing);}

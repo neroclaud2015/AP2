@@ -1,3 +1,7 @@
+import type {Attempt,LearningSession} from '../learning/model';
+import type {QuestionReview} from '../segmented/types';
+import type {AnswerReview} from '../segmented/answers';
+import type {TestSession,SessionAction} from '../exams/model';
 export type ReviewStatus = 'confirmed' | 'needs_review' | 'low_confidence' | 'user_corrected';
 export interface SourceReference { document_id: string; sha256: string; pdf: string; page: number; image: string; bbox?: number[] }
 export interface Question {
@@ -18,11 +22,33 @@ export interface Exam {
   review_queue: {id: string; kind: string; reason: string; source_reference: SourceReference; status: ReviewStatus}[];
 }
 export interface UserContext { id: string; mode: 'local' | 'remote' }
-export interface AuthProvider { currentUser(): Promise<UserContext> }
-export interface SyncProvider { sync(user: UserContext): Promise<void> }
+export interface AuthProvider { currentUser(): Promise<UserContext>; restoreSession():Promise<UserContext>; login(credentials:Readonly<Record<string,unknown>>):Promise<UserContext>; logout():Promise<void> }
+export interface SyncConflict {entity:string;id:string;local:unknown;remote:unknown}
+export type SyncResult = {status:'noop';reason:string}|{status:'completed';pulled:number;pushed:number}|{status:'conflicts';conflicts:SyncConflict[]}|{status:'error';message:string;retryable:boolean};
+export interface SyncProvider {pull(user:UserContext):Promise<SyncResult>;push(user:UserContext):Promise<SyncResult>;sync(user:UserContext):Promise<SyncResult>;resolveConflict(user:UserContext,conflict:SyncConflict,resolution:'local'|'remote'):Promise<SyncResult>}
 export interface LocalField { value: string; locked: boolean; origin: 'user' | 'machine' }
 export interface ProgressRecord { schema_version: 1; userId: string; questionId: string; fields: Record<string, LocalField>; updatedAt: string }
+export interface PersonalDataSnapshot {schema_version:1;userId:string;records:ProgressRecord[];reviews:QuestionReview[];answerReviews:AnswerReview[];attempts:Attempt[];learningSessions:LearningSession[];testSessions:TestSession[]}
 export interface ProgressRepository {
+ getRecords(userId:string):Promise<ProgressRecord[]>;
+ getReviews(userId:string):Promise<QuestionReview[]>;
+ saveReview(review:QuestionReview):Promise<void>;
+ importReviews(reviews:QuestionReview[],answers?:AnswerReview[],userId?:string):Promise<void>;
+ getAnswerReviews(userId:string):Promise<AnswerReview[]>;
+ saveAnswerReview(review:AnswerReview):Promise<void>;
+ getAttempts(userId:string):Promise<Attempt[]>;
+ getLearningSessions(userId:string):Promise<LearningSession[]>;
+ saveLearningSession(session:LearningSession):Promise<void>;
+ saveAttempt(attempt:Attempt,session?:LearningSession):Promise<void>;
+ annotateAttempt(userId:string,id:string,values:Pick<Attempt,'note'|'error_reason'|'unsure'|'confidence'>):Promise<void>;
+ getTestSessions(userId:string):Promise<TestSession[]>;
+ getAnalysisTestSessions(userId:string):Promise<TestSession[]>;
+ getTestSession(userId:string,id:string):Promise<TestSession|undefined>;
+ createTestSession(session:TestSession,replace?:{id:string;revision:number}):Promise<TestSession>;
+ updateTestSession(userId:string,id:string,revision:number,action:SessionAction):Promise<TestSession>;
+ discardTestSession(userId:string,id:string,revision:number):Promise<TestSession>;
+ deleteTestSession(userId:string,id:string,revision:number):Promise<void>;
+ exportSnapshot(userId:string):Promise<PersonalDataSnapshot>;
   get(userId: string, questionId: string): Promise<ProgressRecord | undefined>;
   saveCorrection(userId: string, questionId: string, field: string, value: string): Promise<void>;
   saveMachineValue(userId: string, questionId: string, field: string, value: string): Promise<void>;

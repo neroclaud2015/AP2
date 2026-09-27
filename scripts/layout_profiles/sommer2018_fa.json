@@ -1,0 +1,422 @@
+{
+  "profile_id": "portrait-explicit-regions",
+  "scope": "2018-fa",
+  "version": "2f.1.0",
+  "source_id": "src-f032928a61dd5b146856507a",
+  "solution_source_id": "src-1f4aa20ba2f2807cc5bd5c39",
+  "exam": "2018_sommer",
+  "module": "Funktionsanalyse",
+  "name": "2018_sommer_funktionsanalyse",
+  "source_hash": "ac636fb150c05709efb9fb3f683c34795094c7f35b50fd33d1c67ae22c8ccd16",
+  "validated_sources": [
+    "ac636fb150c05709efb9fb3f683c34795094c7f35b50fd33d1c67ae22c8ccd16"
+  ],
+  "status": "blocked",
+  "blocking_reasons": [
+    "Required attachment Blatt2 von2: Stückliste explicitly referenced by U1/U2/U3 is absent. Cached physical page25 is Schweißzange Blatt1(2); physical page24 is blank. All25 pages inspected; no replacement inferred."
+  ],
+  "missing_dependencies": [
+    {
+      "document": "Stückliste",
+      "sheet": "2 von2",
+      "required_by": [
+        "U1",
+        "U2",
+        "U3"
+      ],
+      "observed_reference_pages": [
+        16,
+        17,
+        18
+      ]
+    }
+  ],
+  "expected": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6",
+    "U7",
+    "U8"
+  ],
+  "timing_minutes": 105,
+  "timing_source_page": 2,
+  "description_page": 15,
+  "attachment_refs": {
+    "U1": [
+      25
+    ],
+    "U2": [
+      25
+    ],
+    "U3": [
+      25
+    ]
+  },
+  "configuration_complete": false,
+  "validation_note": "Source hash is registered and exact geometry audited; this is not a successful layout validation. Stop before executable segmentation/profile acceptance.",
+  "pages": {
+    "1": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "cover",
+      "observed_numbers": [],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "2": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "instructions",
+      "observed_numbers": [],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "3": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "observed_numbers": [
+        "1",
+        "2",
+        "3"
+      ],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "4": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "observed_numbers": [
+        "4"
+      ],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "5": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "observed_numbers": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "6": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "observed_numbers": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "7": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "observed_numbers": [
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "8": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "observed_numbers": [
+        "17",
+        "18"
+      ],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "9": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "observed_numbers": [
+        "19",
+        "20",
+        "21"
+      ],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "10": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "observed_numbers": [
+        "22",
+        "23"
+      ],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "11": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "observed_numbers": [
+        "24",
+        "25",
+        "26"
+      ],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "12": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "observed_numbers": [
+        "27",
+        "28"
+      ],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "13": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "cover",
+      "observed_numbers": [],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "14": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "instructions",
+      "observed_numbers": [],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "15": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "shared_description",
+      "observed_numbers": [],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "16": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "observed_numbers": [
+        "U1"
+      ],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "17": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "observed_numbers": [
+        "U2"
+      ],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "18": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "observed_numbers": [
+        "U3"
+      ],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "19": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "observed_numbers": [
+        "U4"
+      ],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "20": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "observed_numbers": [
+        "U5"
+      ],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "21": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "observed_numbers": [
+        "U6"
+      ],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "22": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "observed_numbers": [
+        "U7"
+      ],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "23": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "observed_numbers": [
+        "U8"
+      ],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "24": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "blank",
+      "observed_numbers": [],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "25": {
+      "geometry": [
+        1190.52001953125,
+        842.0399780273438
+      ],
+      "classification": "attachment",
+      "observed_numbers": [],
+      "evidence": "Cached image visually inspected; no question crops proposed because a required source attachment is missing.",
+      "slots": [],
+      "explicit_regions": []
+    }
+  },
+  "blocking_issues": [
+    "Required attachment Blatt2 von2: Stückliste explicitly referenced by U1/U2/U3 is absent. Cached physical page25 is Schweißzange Blatt1(2); physical page24 is blank. All25 pages inspected; no replacement inferred."
+  ]
+}

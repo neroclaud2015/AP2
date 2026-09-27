@@ -1,0 +1,1223 @@
+{
+  "profile_id": "portrait-explicit-regions",
+  "version": "2f.1.0",
+  "scope": "2018-ap",
+  "name": "2018_sommer_arbeitsplanung",
+  "exam": "2018_sommer",
+  "module": "Arbeitsplanung",
+  "source_id": "src-de1043c56cec7a3767da213a",
+  "solution_source_id": "src-d7a45bcdc0b997f689e34881",
+  "source_hash": "b5d74254038ebdd349fa6a8a29ed15bec4dcb1443aab649f6d1a60b043a84d37",
+  "validated_sources": [
+    "b5d74254038ebdd349fa6a8a29ed15bec4dcb1443aab649f6d1a60b043a84d37"
+  ],
+  "expected": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6",
+    "U7",
+    "U8"
+  ],
+  "timing_minutes": 105,
+  "timing_source_page": 2,
+  "description_page": 17,
+  "attachment_refs": {
+    "8": [
+      6
+    ],
+    "9": [
+      6
+    ],
+    "U6": [
+      29
+    ],
+    "U7": [
+      29
+    ]
+  },
+  "blocking_issues": [
+    "U6 and U7 explicitly require Blatt 2 von 2: Stückliste. Authorized AP PDF has only drawing Blatt 1(2) on final physical page29; page28 is blank. Missing required attachment; no formal production or official extraction."
+  ],
+  "pages": {
+    "1": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "cover",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": []
+    },
+    "2": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "instructions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": []
+    },
+    "3": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": [
+        {
+          "observed_number": "1",
+          "heading_box": [
+            56,
+            301,
+            91,
+            328
+          ],
+          "visual_patch_sha256": "d7dc1f0bb408c0567750fe0e0ef23efc518d53ff177adb43ac955be2bcc3767a",
+          "regions": [
+            [
+              55,
+              297,
+              551,
+              787
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 1"
+        }
+      ]
+    },
+    "4": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": [
+        {
+          "observed_number": "2",
+          "heading_box": [
+            55,
+            60,
+            99,
+            91
+          ],
+          "visual_patch_sha256": "12da5a6678eb5cc6aa9fe664efcb40cc620b8109c6d7047232b82d4c40f4b3b3",
+          "regions": [
+            [
+              54,
+              58,
+              550,
+              300
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 2"
+        },
+        {
+          "observed_number": "3",
+          "heading_box": [
+            55,
+            302,
+            99,
+            333
+          ],
+          "visual_patch_sha256": "2aa798d5bece1aad3bc14c73ef7afa4338a160f26158d051a255c7e7ad954b23",
+          "regions": [
+            [
+              54,
+              300,
+              550,
+              541
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 3"
+        },
+        {
+          "observed_number": "4",
+          "heading_box": [
+            55,
+            543,
+            99,
+            574
+          ],
+          "visual_patch_sha256": "b6aabbc609d52131e1178bcfd2e51b93145d9343a4d351ad3b52d98e284e09bb",
+          "regions": [
+            [
+              54,
+              541,
+              550,
+              783
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 4"
+        }
+      ]
+    },
+    "5": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": [
+        {
+          "observed_number": "5",
+          "heading_box": [
+            55,
+            56,
+            99,
+            87
+          ],
+          "visual_patch_sha256": "213fddc131d22d1fb1eba6d9f7f4767fc5b29dc2ad234137f04add470ea3c984",
+          "regions": [
+            [
+              54,
+              54,
+              295,
+              297
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 5"
+        },
+        {
+          "observed_number": "6",
+          "heading_box": [
+            55,
+            299,
+            99,
+            330
+          ],
+          "visual_patch_sha256": "df9ca975814457c66f1e628e2454761af966f5d9b27d4c7c6fcee0db60adf2e8",
+          "regions": [
+            [
+              54,
+              297,
+              550,
+              539
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 6"
+        },
+        {
+          "observed_number": "7",
+          "heading_box": [
+            55,
+            541,
+            99,
+            572
+          ],
+          "visual_patch_sha256": "1a728b78824f892dd596dc2674dfe5be48086c9413dd2bc57065b883a9d8896e",
+          "regions": [
+            [
+              54,
+              539,
+              550,
+              783
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 7"
+        }
+      ]
+    },
+    "6": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "shared_diagram",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": []
+    },
+    "7": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": [
+        {
+          "observed_number": "8",
+          "heading_box": [
+            55,
+            57,
+            99,
+            88
+          ],
+          "visual_patch_sha256": "61faf1c2a8091af149abc2efa71cfd98543f5a98687b0451e9b4ebad5e59ea94",
+          "regions": [
+            [
+              54,
+              55,
+              293,
+              297
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 8"
+        },
+        {
+          "observed_number": "9",
+          "heading_box": [
+            294,
+            57,
+            338,
+            88
+          ],
+          "visual_patch_sha256": "778faaf197091286c1b04e62b46fdf56a8612fc53f05c98bd44d8627358d751a",
+          "regions": [
+            [
+              293,
+              55,
+              550,
+              297
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 9"
+        },
+        {
+          "observed_number": "10",
+          "heading_box": [
+            55,
+            299,
+            99,
+            330
+          ],
+          "visual_patch_sha256": "6d952f8a181db813a4bb4e504fbd1b51747f0183eedefeb0aee9127555438802",
+          "regions": [
+            [
+              54,
+              297,
+              293,
+              539
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 10"
+        },
+        {
+          "observed_number": "11",
+          "heading_box": [
+            294,
+            299,
+            338,
+            330
+          ],
+          "visual_patch_sha256": "b03d9aa71e8a3d52977a217a8e86ba617944ae7a1e40e5e4aff94bd12e6b77c5",
+          "regions": [
+            [
+              293,
+              297,
+              550,
+              539
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 11"
+        },
+        {
+          "observed_number": "12",
+          "heading_box": [
+            55,
+            541,
+            99,
+            572
+          ],
+          "visual_patch_sha256": "295b4ed9fc4ec80c38d100426f63aa856be543513106645976dbcf4dbac88bd2",
+          "regions": [
+            [
+              54,
+              539,
+              550,
+              783
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 12"
+        }
+      ]
+    },
+    "8": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": [
+        {
+          "observed_number": "13",
+          "heading_box": [
+            55,
+            56,
+            99,
+            87
+          ],
+          "visual_patch_sha256": "f6aa05e1ea100bbf87183b1de5fcd50836ff94c4d3ada06296a67f83bfea16bc",
+          "regions": [
+            [
+              54,
+              54,
+              550,
+              297
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 13"
+        },
+        {
+          "observed_number": "14",
+          "heading_box": [
+            55,
+            299,
+            99,
+            330
+          ],
+          "visual_patch_sha256": "7a55ea85cbddedbff4b450ad5e0458cb49cd3a7d285dde5e4c8856056e8f9ce8",
+          "regions": [
+            [
+              54,
+              297,
+              550,
+              783
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 14"
+        }
+      ]
+    },
+    "9": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": [
+        {
+          "observed_number": "15",
+          "heading_box": [
+            55,
+            59,
+            99,
+            90
+          ],
+          "visual_patch_sha256": "3d0e62df8aa1fca08bac102405a04e288e0b3c3b42e02663b59f4a13a24f2134",
+          "regions": [
+            [
+              54,
+              57,
+              550,
+              539
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 15"
+        },
+        {
+          "observed_number": "16",
+          "heading_box": [
+            55,
+            541,
+            99,
+            572
+          ],
+          "visual_patch_sha256": "e1252a87330c46f10bc47baab0f65aae46eee5a74966d2efc6d6d819e2ae2f63",
+          "regions": [
+            [
+              54,
+              539,
+              295,
+              783
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 16"
+        }
+      ]
+    },
+    "10": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": [
+        {
+          "observed_number": "17",
+          "heading_box": [
+            55,
+            61,
+            99,
+            92
+          ],
+          "visual_patch_sha256": "ed8e0b3bd5903036396f096da211fe323e2b43b818efee0b09429a8cbad153ab",
+          "regions": [
+            [
+              54,
+              59,
+              550,
+              300
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 17"
+        },
+        {
+          "observed_number": "18",
+          "heading_box": [
+            55,
+            302,
+            99,
+            333
+          ],
+          "visual_patch_sha256": "bf2ec070b451c6555e6edc618a325da8d7e339dc1bf72d578aac892472823df4",
+          "regions": [
+            [
+              54,
+              300,
+              550,
+              541
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 18"
+        },
+        {
+          "observed_number": "19",
+          "heading_box": [
+            55,
+            543,
+            99,
+            574
+          ],
+          "visual_patch_sha256": "ef71b8a7c0a2172cd66852b7f49b636d6ccd81bdef0f69e104cc2e5ef919dcab",
+          "regions": [
+            [
+              54,
+              541,
+              550,
+              783
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 19"
+        }
+      ]
+    },
+    "11": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": [
+        {
+          "observed_number": "20",
+          "heading_box": [
+            55,
+            60,
+            99,
+            91
+          ],
+          "visual_patch_sha256": "0164730a5de239182f38c83928baa0b2af7999ccbbd621dc107297ec7f0d6980",
+          "regions": [
+            [
+              54,
+              58,
+              550,
+              541
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 20"
+        },
+        {
+          "observed_number": "21",
+          "heading_box": [
+            55,
+            543,
+            99,
+            574
+          ],
+          "visual_patch_sha256": "4a496f7467887cb7f4ed6e8fff7b074023ad98cbb8d780f8ab5cbf01499c0a6f",
+          "regions": [
+            [
+              54,
+              541,
+              550,
+              783
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 21"
+        }
+      ]
+    },
+    "12": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": [
+        {
+          "observed_number": "22",
+          "heading_box": [
+            55,
+            62,
+            99,
+            93
+          ],
+          "visual_patch_sha256": "cb571893c0de07101f0fc04a7779cf65fcc3bb770a190ecf1f92deaa1230152c",
+          "regions": [
+            [
+              54,
+              60,
+              295,
+              301
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 22"
+        },
+        {
+          "observed_number": "23",
+          "heading_box": [
+            55,
+            303,
+            99,
+            334
+          ],
+          "visual_patch_sha256": "2a8486f24be95c26eccba12f83ae099ce7ddf0262e2613e3bcd3ed51992bf5dd",
+          "regions": [
+            [
+              54,
+              301,
+              550,
+              542
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 23"
+        },
+        {
+          "observed_number": "24",
+          "heading_box": [
+            55,
+            544,
+            99,
+            575
+          ],
+          "visual_patch_sha256": "0ff3e5578138b98bef6b961cae978bcdc789796f26f483b1b5545b6d946d681a",
+          "regions": [
+            [
+              54,
+              542,
+              296,
+              784
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 24"
+        },
+        {
+          "observed_number": "25",
+          "heading_box": [
+            297,
+            544,
+            341,
+            575
+          ],
+          "visual_patch_sha256": "303b21d2b9265bee45768fcd57d93d2db8a32c409c0a0673932cbb816e0e4215",
+          "regions": [
+            [
+              296,
+              542,
+              550,
+              784
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 25"
+        }
+      ]
+    },
+    "13": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": [
+        {
+          "observed_number": "26",
+          "heading_box": [
+            55,
+            62,
+            99,
+            93
+          ],
+          "visual_patch_sha256": "4b1abe4ac1b99493360dd6e8cc4e86875229f55c30de846f0d707c05deff6bdf",
+          "regions": [
+            [
+              54,
+              60,
+              550,
+              299
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 26"
+        },
+        {
+          "observed_number": "27",
+          "heading_box": [
+            55,
+            301,
+            99,
+            332
+          ],
+          "visual_patch_sha256": "e8e5f9f0c075cb4f495e7843ad052946068ad887146be79b2324868b26117604",
+          "regions": [
+            [
+              54,
+              299,
+              550,
+              542
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 27"
+        },
+        {
+          "observed_number": "28",
+          "heading_box": [
+            55,
+            544,
+            99,
+            575
+          ],
+          "visual_patch_sha256": "f01f18b2cf645553db5e42d2114a9ac1c010e081fec266ad688caffa00d440a9",
+          "regions": [
+            [
+              54,
+              542,
+              550,
+              783
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed 28"
+        }
+      ]
+    },
+    "14": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "marking_instructions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": []
+    },
+    "15": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "cover",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": []
+    },
+    "16": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "instructions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": []
+    },
+    "17": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "shared_description",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": []
+    },
+    "18": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": [
+        {
+          "observed_number": "U1",
+          "heading_box": [
+            34,
+            31,
+            78,
+            59
+          ],
+          "visual_patch_sha256": "ba49c2c7464adea39134cd914a6840e9aea36e3d046e265654885e7c4eb36a6e",
+          "regions": [
+            [
+              31,
+              25,
+              554,
+              819
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed U1"
+        }
+      ]
+    },
+    "19": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": [
+        {
+          "observed_number": "U2",
+          "heading_box": [
+            43,
+            31,
+            87,
+            59
+          ],
+          "visual_patch_sha256": "879fbf2fdedeb2e3250dd041827096309d335a2ac673a9c600d6c6261ee5f517",
+          "regions": [
+            [
+              40,
+              25,
+              554,
+              819
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed U2"
+        }
+      ]
+    },
+    "20": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": [],
+      "explicit_regions": [
+        {
+          "owner": "2018-ap-p19-U2",
+          "observed_owner_label": "U2",
+          "bbox": [
+            31,
+            25,
+            554,
+            819
+          ],
+          "role": "continuation",
+          "evidence_box": [
+            510,
+            751,
+            552,
+            776
+          ],
+          "visual_patch_sha256": "6f4bce1d1489f41a687a5dc9c9f00854e3faa64adc2c80c87db232f59996e2d3",
+          "evidence": "Printed Ergebnis U2/U3 at end of continuation and preceding page Weiter nächste Seite."
+        }
+      ]
+    },
+    "21": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": [
+        {
+          "observed_number": "U3",
+          "heading_box": [
+            43,
+            31,
+            87,
+            59
+          ],
+          "visual_patch_sha256": "9e54f448262b9f9fe1e3ccdd212021823c9d745caad027f5779d25a3b9c2be36",
+          "regions": [
+            [
+              40,
+              25,
+              554,
+              819
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed U3"
+        }
+      ]
+    },
+    "22": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": [],
+      "explicit_regions": [
+        {
+          "owner": "2018-ap-p21-U3",
+          "observed_owner_label": "U3",
+          "bbox": [
+            31,
+            25,
+            554,
+            819
+          ],
+          "role": "continuation",
+          "evidence_box": [
+            508,
+            750,
+            551,
+            775
+          ],
+          "visual_patch_sha256": "337d49bfa85abbd67effbfb5d72940e521b90caa86af9ba9a3f12aafdd917eb6",
+          "evidence": "Printed Ergebnis U2/U3 at end of continuation and preceding page Weiter nächste Seite."
+        }
+      ]
+    },
+    "23": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": [
+        {
+          "observed_number": "U4",
+          "heading_box": [
+            43,
+            31,
+            87,
+            59
+          ],
+          "visual_patch_sha256": "f4ad20a0b1e8283d7e6fd1caa0455ddd2fcacb4a33840e3d38c30ea357107289",
+          "regions": [
+            [
+              40,
+              25,
+              554,
+              819
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed U4"
+        }
+      ]
+    },
+    "24": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": [
+        {
+          "observed_number": "U5",
+          "heading_box": [
+            34,
+            31,
+            78,
+            59
+          ],
+          "visual_patch_sha256": "738c522c37885c38a47a6f82b74e015dea81d27158a9c642de4d72be6985499f",
+          "regions": [
+            [
+              31,
+              25,
+              554,
+              819
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed U5"
+        }
+      ]
+    },
+    "25": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": [
+        {
+          "observed_number": "U6",
+          "heading_box": [
+            43,
+            31,
+            87,
+            59
+          ],
+          "visual_patch_sha256": "c77691043012a7364b1e30930da15445afec9c93fe37b1c7ae67510cd5d24840",
+          "regions": [
+            [
+              40,
+              25,
+              554,
+              819
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed U6"
+        }
+      ]
+    },
+    "26": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": [
+        {
+          "observed_number": "U7",
+          "heading_box": [
+            34,
+            31,
+            78,
+            59
+          ],
+          "visual_patch_sha256": "758cd280afb1c70b6e2ea81125756abdd60df81172565a75a58459d31bfbe750",
+          "regions": [
+            [
+              31,
+              25,
+              554,
+              819
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed U7"
+        }
+      ]
+    },
+    "27": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "questions",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": [
+        {
+          "observed_number": "U8",
+          "heading_box": [
+            43,
+            31,
+            87,
+            59
+          ],
+          "visual_patch_sha256": "d82caede3cf2b460606e12f1eace4e6fe205295441520a814bfd8b55b33b45c7",
+          "regions": [
+            [
+              40,
+              25,
+              554,
+              660
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed task heading plus ruled region border visually verified.",
+          "visual_evidence": "Individually observed printed U8"
+        }
+      ]
+    },
+    "28": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "blank",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": []
+    },
+    "29": {
+      "geometry": [
+        1190.52001953125,
+        842.0399780273438
+      ],
+      "classification": "attachment_incomplete",
+      "evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+      "slots": []
+    }
+  }
+}

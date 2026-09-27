@@ -1,0 +1,175 @@
+{
+  "key": "fe983a0649f420895405fea1c7e1507b8a10dc972199c6597422b411810f52f0",
+  "record_hash": "355b5299ff1d501b56ebfd9402079bc0a69058d2e9fdb0ffe86d4d09ad7aaf35",
+  "record": {
+    "page": 12,
+    "geometry": [
+      595.4400024414062,
+      842.0399780273438
+    ],
+    "classification": "questions",
+    "classification_evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2018-ap-p12-22",
+        "number": "22",
+        "bbox": [
+          55,
+          62,
+          99,
+          93
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Individually observed printed 22",
+        "review_reasons": [],
+        "heading_pixel_sha256": "cb571893c0de07101f0fc04a7779cf65fcc3bb770a190ecf1f92deaa1230152c"
+      },
+      {
+        "anchor_id": "2018-ap-p12-23",
+        "number": "23",
+        "bbox": [
+          55,
+          303,
+          99,
+          334
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Individually observed printed 23",
+        "review_reasons": [],
+        "heading_pixel_sha256": "2a8486f24be95c26eccba12f83ae099ce7ddf0262e2613e3bcd3ed51992bf5dd"
+      },
+      {
+        "anchor_id": "2018-ap-p12-24",
+        "number": "24",
+        "bbox": [
+          55,
+          544,
+          99,
+          575
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Individually observed printed 24",
+        "review_reasons": [],
+        "heading_pixel_sha256": "0ff3e5578138b98bef6b961cae978bcdc789796f26f483b1b5545b6d946d681a"
+      },
+      {
+        "anchor_id": "2018-ap-p12-25",
+        "number": "25",
+        "bbox": [
+          297,
+          544,
+          341,
+          575
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Individually observed printed 25",
+        "review_reasons": [],
+        "heading_pixel_sha256": "303b21d2b9265bee45768fcd57d93d2db8a32c409c0a0673932cbb816e0e4215"
+      }
+    ],
+    "regions": [
+      {
+        "page": 12,
+        "bbox": [
+          54,
+          60,
+          295,
+          301
+        ],
+        "role": "primary",
+        "owner": "2018-ap-p12-22",
+        "evidence": "Printed task heading plus ruled region border visually verified."
+      },
+      {
+        "page": 12,
+        "bbox": [
+          54,
+          301,
+          550,
+          542
+        ],
+        "role": "primary",
+        "owner": "2018-ap-p12-23",
+        "evidence": "Printed task heading plus ruled region border visually verified."
+      },
+      {
+        "page": 12,
+        "bbox": [
+          54,
+          542,
+          296,
+          784
+        ],
+        "role": "primary",
+        "owner": "2018-ap-p12-24",
+        "evidence": "Printed task heading plus ruled region border visually verified."
+      },
+      {
+        "page": 12,
+        "bbox": [
+          296,
+          542,
+          550,
+          784
+        ],
+        "role": "primary",
+        "owner": "2018-ap-p12-25",
+        "evidence": "Printed task heading plus ruled region border visually verified."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "22",
+        "bbox": [
+          55,
+          62,
+          99,
+          93
+        ],
+        "pixel_sha256": "cb571893c0de07101f0fc04a7779cf65fcc3bb770a190ecf1f92deaa1230152c",
+        "audited_pixel_sha256": "cb571893c0de07101f0fc04a7779cf65fcc3bb770a190ecf1f92deaa1230152c"
+      },
+      {
+        "kind": "heading",
+        "number": "23",
+        "bbox": [
+          55,
+          303,
+          99,
+          334
+        ],
+        "pixel_sha256": "2a8486f24be95c26eccba12f83ae099ce7ddf0262e2613e3bcd3ed51992bf5dd",
+        "audited_pixel_sha256": "2a8486f24be95c26eccba12f83ae099ce7ddf0262e2613e3bcd3ed51992bf5dd"
+      },
+      {
+        "kind": "heading",
+        "number": "24",
+        "bbox": [
+          55,
+          544,
+          99,
+          575
+        ],
+        "pixel_sha256": "0ff3e5578138b98bef6b961cae978bcdc789796f26f483b1b5545b6d946d681a",
+        "audited_pixel_sha256": "0ff3e5578138b98bef6b961cae978bcdc789796f26f483b1b5545b6d946d681a"
+      },
+      {
+        "kind": "heading",
+        "number": "25",
+        "bbox": [
+          297,
+          544,
+          341,
+          575
+        ],
+        "pixel_sha256": "303b21d2b9265bee45768fcd57d93d2db8a32c409c0a0673932cbb816e0e4215",
+        "audited_pixel_sha256": "303b21d2b9265bee45768fcd57d93d2db8a32c409c0a0673932cbb816e0e4215"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

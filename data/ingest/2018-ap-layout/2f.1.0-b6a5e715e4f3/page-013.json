@@ -1,0 +1,137 @@
+{
+  "key": "d44d3a416892c71fef39d98f8a7b6d1336976dcf4d601307c8e9c2037de44eef",
+  "record_hash": "a6208f99e38d25f254a01b07f8c897d3cd40c753ec34b75d67b8a6e43dc9510f",
+  "record": {
+    "page": 13,
+    "geometry": [
+      595.4400024414062,
+      842.0399780273438
+    ],
+    "classification": "questions",
+    "classification_evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2018-ap-p13-26",
+        "number": "26",
+        "bbox": [
+          55,
+          62,
+          99,
+          93
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Individually observed printed 26",
+        "review_reasons": [],
+        "heading_pixel_sha256": "4b1abe4ac1b99493360dd6e8cc4e86875229f55c30de846f0d707c05deff6bdf"
+      },
+      {
+        "anchor_id": "2018-ap-p13-27",
+        "number": "27",
+        "bbox": [
+          55,
+          301,
+          99,
+          332
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Individually observed printed 27",
+        "review_reasons": [],
+        "heading_pixel_sha256": "e8e5f9f0c075cb4f495e7843ad052946068ad887146be79b2324868b26117604"
+      },
+      {
+        "anchor_id": "2018-ap-p13-28",
+        "number": "28",
+        "bbox": [
+          55,
+          544,
+          99,
+          575
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Individually observed printed 28",
+        "review_reasons": [],
+        "heading_pixel_sha256": "f01f18b2cf645553db5e42d2114a9ac1c010e081fec266ad688caffa00d440a9"
+      }
+    ],
+    "regions": [
+      {
+        "page": 13,
+        "bbox": [
+          54,
+          60,
+          550,
+          299
+        ],
+        "role": "primary",
+        "owner": "2018-ap-p13-26",
+        "evidence": "Printed task heading plus ruled region border visually verified."
+      },
+      {
+        "page": 13,
+        "bbox": [
+          54,
+          299,
+          550,
+          542
+        ],
+        "role": "primary",
+        "owner": "2018-ap-p13-27",
+        "evidence": "Printed task heading plus ruled region border visually verified."
+      },
+      {
+        "page": 13,
+        "bbox": [
+          54,
+          542,
+          550,
+          783
+        ],
+        "role": "primary",
+        "owner": "2018-ap-p13-28",
+        "evidence": "Printed task heading plus ruled region border visually verified."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "26",
+        "bbox": [
+          55,
+          62,
+          99,
+          93
+        ],
+        "pixel_sha256": "4b1abe4ac1b99493360dd6e8cc4e86875229f55c30de846f0d707c05deff6bdf",
+        "audited_pixel_sha256": "4b1abe4ac1b99493360dd6e8cc4e86875229f55c30de846f0d707c05deff6bdf"
+      },
+      {
+        "kind": "heading",
+        "number": "27",
+        "bbox": [
+          55,
+          301,
+          99,
+          332
+        ],
+        "pixel_sha256": "e8e5f9f0c075cb4f495e7843ad052946068ad887146be79b2324868b26117604",
+        "audited_pixel_sha256": "e8e5f9f0c075cb4f495e7843ad052946068ad887146be79b2324868b26117604"
+      },
+      {
+        "kind": "heading",
+        "number": "28",
+        "bbox": [
+          55,
+          544,
+          99,
+          575
+        ],
+        "pixel_sha256": "f01f18b2cf645553db5e42d2114a9ac1c010e081fec266ad688caffa00d440a9",
+        "audited_pixel_sha256": "f01f18b2cf645553db5e42d2114a9ac1c010e081fec266ad688caffa00d440a9"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

@@ -1,3 +1,4 @@
+import {useAppServices} from '../services/context';
 import { useState } from 'react';
 import { CropEditor, CropImage } from './CropImage';
 import { asset, questionSources, type Box, type QuestionReview, type SegmentedExam, type SegmentedQuestion, validReview } from './types';
@@ -6,12 +7,13 @@ export default function ReviewEditor({question, original, exam, fixedSolution=fa
   question: SegmentedQuestion; original: SegmentedQuestion; exam: SegmentedExam; fixedSolution?:boolean;
   onSave: (review: QuestionReview)=>Promise<void>; onCancel: ()=>void;
 }) {
+ const {user}=useAppServices();
   const [draft,setDraft]=useState(question);const canCrop=question.source_page_available!==false&&!!question.source_page_image;
   const [error,setError]=useState(''); const [saving,setSaving]=useState(false);
   const update=<K extends keyof SegmentedQuestion>(key:K,value:SegmentedQuestion[K])=>setDraft(d=>({...d,[key]:value}));
   const validBox=(box:Box)=>box.every(Number.isFinite)&&box[0]>=0&&box[1]>=0&&box[2]<=draft.source_size[0]&&box[3]<=draft.source_size[1]&&box[2]>box[0]&&box[3]>box[1];
   const save=async(status:'confirmed'|'needs_review')=>{
-    const review:QuestionReview={userId:'local',question_id:original.question_id,source_revision:original.segmentation_revision,
+    const review:QuestionReview={userId:user.id,question_id:original.question_id,source_revision:original.segmentation_revision,
       question_number:draft.question_number.trim(),bounding_box:draft.bounding_box,regions:draft.regions,extracted_text:draft.extracted_text,
       tags:draft.tags,solution_page:draft.solution_page,solution_confirmed:draft.solution_confirmed,review_status:status,updated_at:new Date().toISOString()};
     if(!validReview(review)||!validBox(draft.bounding_box)){setError('Bitte eine gültige Nummer und einen Ausschnitt innerhalb der Originalseite eingeben.');return;}

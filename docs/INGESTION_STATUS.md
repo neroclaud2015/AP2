@@ -1,3 +1,19 @@
+# Current stop: Phase 2F — infrastructure complete; Sommer 2018 WiSo validated
+
+Production: Sommer 2017 AP36 / FA36 / WiSo24; Winter 2017/18 AP36 / FA36 / WiSo24; Sommer 2018 WiSo24. Total 7 modules / 216 questions.
+
+Sommer2018 AP: Blocked, missing required Stückliste Blatt2 referenced by U6/U7. 36-question dry-run only.
+Sommer2018 FA: Blocked, missing required Stückliste Blatt2 referenced by U1/U2/U3. Stopped before detailed segmentation.
+
+Source Registry has 18 logical records, including every historical production source. Four new physical PDFs cached by hash; shared solution rendered once. Old modules were not rescanned or changed. Page/module checkpoints and profile/config hashes remain required.
+
+ProgressRepository/AuthProvider/SyncProvider are complete replaceable contracts. Runtime remains LocalUserProvider + IndexedDB v6 + NoopSyncProvider. No real authentication/sync. Replacement source gates require safe complete identity mapping; historical provenance is immutable. See PHASE_2F_REPORT.md and DATA_SCHEMA.md.
+
+No later season is authorized. Stop for user acceptance.
+
+---
+# Historical status (retained below, superseded by Phase 2F above)
+
 # Current stop: Phase 2A learning prototype; awaiting user acceptance
 
 2017 Sommer Arbeitsplanung only: normal Dashboard/exam navigation, separate Study and Review, MC submissions and personal progress, U1–U8 official source crops and user-controlled subpart assessment. U7.1 numeric comparison uses an explicit practice tolerance. No other years/modules processed. See PHASE_2A_REPORT.md.

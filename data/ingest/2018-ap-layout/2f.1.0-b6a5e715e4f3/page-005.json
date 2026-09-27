@@ -1,0 +1,137 @@
+{
+  "key": "61629944b4ba70271e7249a6a9e75806fbe87f109ed853c3aa1e5b1f9b3f7ca8",
+  "record_hash": "c390e8837a8dff7e8ac2d9f6859885d44fe57af1d355ea51c1ab569578bdf342",
+  "record": {
+    "page": 5,
+    "geometry": [
+      595.4400024414062,
+      842.0399780273438
+    ],
+    "classification": "questions",
+    "classification_evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2018-ap-p5-5",
+        "number": "5",
+        "bbox": [
+          55,
+          56,
+          99,
+          87
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Individually observed printed 5",
+        "review_reasons": [],
+        "heading_pixel_sha256": "213fddc131d22d1fb1eba6d9f7f4767fc5b29dc2ad234137f04add470ea3c984"
+      },
+      {
+        "anchor_id": "2018-ap-p5-6",
+        "number": "6",
+        "bbox": [
+          55,
+          299,
+          99,
+          330
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Individually observed printed 6",
+        "review_reasons": [],
+        "heading_pixel_sha256": "df9ca975814457c66f1e628e2454761af966f5d9b27d4c7c6fcee0db60adf2e8"
+      },
+      {
+        "anchor_id": "2018-ap-p5-7",
+        "number": "7",
+        "bbox": [
+          55,
+          541,
+          99,
+          572
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Individually observed printed 7",
+        "review_reasons": [],
+        "heading_pixel_sha256": "1a728b78824f892dd596dc2674dfe5be48086c9413dd2bc57065b883a9d8896e"
+      }
+    ],
+    "regions": [
+      {
+        "page": 5,
+        "bbox": [
+          54,
+          54,
+          295,
+          297
+        ],
+        "role": "primary",
+        "owner": "2018-ap-p5-5",
+        "evidence": "Printed task heading plus ruled region border visually verified."
+      },
+      {
+        "page": 5,
+        "bbox": [
+          54,
+          297,
+          550,
+          539
+        ],
+        "role": "primary",
+        "owner": "2018-ap-p5-6",
+        "evidence": "Printed task heading plus ruled region border visually verified."
+      },
+      {
+        "page": 5,
+        "bbox": [
+          54,
+          539,
+          550,
+          783
+        ],
+        "role": "primary",
+        "owner": "2018-ap-p5-7",
+        "evidence": "Printed task heading plus ruled region border visually verified."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "5",
+        "bbox": [
+          55,
+          56,
+          99,
+          87
+        ],
+        "pixel_sha256": "213fddc131d22d1fb1eba6d9f7f4767fc5b29dc2ad234137f04add470ea3c984",
+        "audited_pixel_sha256": "213fddc131d22d1fb1eba6d9f7f4767fc5b29dc2ad234137f04add470ea3c984"
+      },
+      {
+        "kind": "heading",
+        "number": "6",
+        "bbox": [
+          55,
+          299,
+          99,
+          330
+        ],
+        "pixel_sha256": "df9ca975814457c66f1e628e2454761af966f5d9b27d4c7c6fcee0db60adf2e8",
+        "audited_pixel_sha256": "df9ca975814457c66f1e628e2454761af966f5d9b27d4c7c6fcee0db60adf2e8"
+      },
+      {
+        "kind": "heading",
+        "number": "7",
+        "bbox": [
+          55,
+          541,
+          99,
+          572
+        ],
+        "pixel_sha256": "1a728b78824f892dd596dc2674dfe5be48086c9413dd2bc57065b883a9d8896e",
+        "audited_pixel_sha256": "1a728b78824f892dd596dc2674dfe5be48086c9413dd2bc57065b883a9d8896e"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

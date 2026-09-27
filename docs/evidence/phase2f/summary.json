@@ -1,0 +1,61 @@
+{
+  "phase": "2F",
+  "production_modules": 7,
+  "registry_records": 18,
+  "historical_sources": 12,
+  "sommer2018_physical_files": 4,
+  "sommer2018": {
+    "arbeitsplanung": {
+      "status": "Blocked",
+      "physical_pages": 29,
+      "observed_questions": 36,
+      "expected_questions": 36,
+      "preview_questions": 36,
+      "production_questions": 0,
+      "needs_review": [
+        "U6",
+        "U7"
+      ],
+      "reason": "Referenced Stückliste Blatt 2 von 2 is missing. Only Getriebe Blatt 1(2) supplied.",
+      "answers": "not extracted; blocked before production"
+    },
+    "funktionsanalyse": {
+      "status": "Blocked",
+      "physical_pages": 25,
+      "observed_questions": 36,
+      "expected_questions": 36,
+      "preview_questions": 0,
+      "production_questions": 0,
+      "needs_review": [
+        "U1",
+        "U2",
+        "U3"
+      ],
+      "reason": "Referenced Stückliste Blatt 2 von 2 is missing. Only Schweißzange Blatt 1(2) supplied.",
+      "answers": "not extracted; stopped before detailed segmentation"
+    },
+    "wiso": {
+      "status": "Production",
+      "physical_pages": 14,
+      "questions": 24,
+      "multiple_choice": 18,
+      "u_questions": 6,
+      "mc_answers": 18,
+      "u_solutions": 6,
+      "needs_review": [],
+      "duration_minutes": 60,
+      "continuations": [
+        "U4 physical page8 to page9"
+      ]
+    }
+  },
+  "verification": {
+    "frontend_tests": 58,
+    "python_tests": 93,
+    "legacy_files_unchanged": 1082,
+    "database_version": 6,
+    "real_auth": false,
+    "real_sync": false,
+    "no_later_seasons": true
+  }
+}

@@ -78,3 +78,10 @@ describe('exam selector routing',()=>{
   expect(switchExamRoute(route,'unavailable',available)).toBe(route);
  });
 });
+
+it('keeps a partially available season when the requested module is blocked',()=>{
+ const route=readRoute('?view=exams&exam=2018-sommer&module=arbeitsplanung');
+ expect(route).toMatchObject({view:'exams',examId:'2018-sommer',module:'wiso'});
+ expect(MODULES.filter(m=>m.examId==='2018-sommer').map(m=>m.slug)).toEqual(['wiso']);
+ expect(MODULES.find(m=>m.examId==='2018-sommer')?.sharedContextForAllQuestions).toBe(true);
+});

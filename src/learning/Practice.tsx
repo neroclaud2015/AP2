@@ -1,13 +1,15 @@
+import {useAppServices} from '../services/context';
 import {useRef,useState} from 'react';
 import {asset} from '../segmented/types';
 import type {OfficialAnswer} from '../segmented/answers';
-import {checkNumeric,combineAssessments,type Attempt,type Correctness,type LearningSession,type USolution} from './model';
+import {checkNumeric,combineAssessments,type Attempt,type AttemptProvenance,type Correctness,type LearningSession,type USolution} from './model';
 
-export default function Practice({questionId,number,answer,u,session,history,onSession,onAttempt,onAnnotate,onBusy}:{
- questionId:string;number:string;answer?:OfficialAnswer;u?:USolution;session?:LearningSession;history:Attempt[];
+export default function Practice({provenance,questionId,number,answer,u,session,history,onSession,onAttempt,onAnnotate,onBusy}:{
+ provenance?:AttemptProvenance;questionId:string;number:string;answer?:OfficialAnswer;u?:USolution;session?:LearningSession;history:Attempt[];
  onSession:(session:LearningSession)=>Promise<void>;onAttempt:(attempt:Attempt,session:LearningSession)=>Promise<void>;
  onAnnotate:(id:string,values:Pick<Attempt,'note'|'error_reason'|'unsure'|'confidence'>)=>Promise<void>;onBusy:(busy:boolean)=>void;
 }) {
+ const {user}=useAppServices();
  const [draft,setDraft]=useState<Record<string,string>>(session?.draft??{});
  const [revealed,setRevealed]=useState(session?.revealed??false);
  const [attemptId,setAttemptId]=useState(session?.attempt_id);
@@ -16,7 +18,7 @@ export default function Practice({questionId,number,answer,u,session,history,onS
  const attempt=history.find(a=>a.attempt_id===attemptId);
  const persist=(next:Record<string,string>,show=revealed,id=attemptId)=>{
   setDraft(next);setMessage('Speichert…');pendingCount.current++;onBusy(true);
-  const snapshot={userId:'local',question_id:questionId,draft:next,revealed:show,attempt_id:id};
+  const snapshot={userId:user.id,question_id:questionId,draft:next,revealed:show,attempt_id:id};
   pending.current=pending.current.catch(()=>{}).then(()=>onSession(snapshot));
   void pending.current.then(()=>{if(pendingCount.current===1){setMessage('Entwurf gespeichert');setError('');}}).catch(()=>setError('Speichern fehlgeschlagen. Bitte erneut versuchen.')).finally(()=>{pendingCount.current--;if(!pendingCount.current&&!guard.current)onBusy(false);});
  };
@@ -33,16 +35,16 @@ export default function Practice({questionId,number,answer,u,session,history,onS
   const key=answer?.official_answer_status==='auto_ready'||(answer?.official_answer_status as string)==='confirmed'?answer?.official_answer??null:null;
   const correctness=u?combineAssessments(subparts.map(p=>p.correctness??null)):key===null?null:value===key?'richtig':'falsch';
   if(u&&correctness===null)return;
-  const result:Attempt={attempt_id:crypto.randomUUID(),userId:'local',question_id:questionId,timestamp:new Date().toISOString(),
+  const result:Attempt={...provenance,attempt_id:crypto.randomUUID(),userId:user.id,question_id:questionId,timestamp:new Date().toISOString(),
    user_answer:u?Object.fromEntries(u.subparts.map(p=>[p.id,draft[p.id]??''])):{choice:value},correctness,partial_status:correctness==='teilweise',
    unsure:draft.unsure==='true',confidence:draft.unsure==='true'?'unsure':'sure',hints_used:draft.hint==='true'?['general_strategy']:[],
    error_reason:draft.error_reason??'',note:draft.note??'',self_assessed:!!u,auto_scored:!u&&key!==null,subparts,
    official_answer_snapshot:u?undefined:key,source_revision:u?.extractor_revision??answer?.parser_revision};
-  await onAttempt(result,{userId:'local',question_id:questionId,draft,revealed:true,attempt_id:result.attempt_id});
+  await onAttempt(result,{userId:user.id,question_id:questionId,draft,revealed:true,attempt_id:result.attempt_id});
   setAttemptId(result.attempt_id);setRevealed(true);setMessage('Antwort und Ergebnis gespeichert');
  });
- const reveal=()=>void act(async()=>{await onSession({userId:'local',question_id:questionId,draft,revealed:true});setRevealed(true);setMessage('Lösung geöffnet · Deine Bewertung fehlt noch');});
- const reset=()=>void act(async()=>{await onSession({userId:'local',question_id:questionId,draft:{},revealed:false});setDraft({});setRevealed(false);setAttemptId(undefined);setMessage('Neuer Versuch. Frühere Ergebnisse bleiben erhalten.');});
+ const reveal=()=>void act(async()=>{await onSession({userId:user.id,question_id:questionId,draft,revealed:true});setRevealed(true);setMessage('Lösung geöffnet · Deine Bewertung fehlt noch');});
+ const reset=()=>void act(async()=>{await onSession({userId:user.id,question_id:questionId,draft:{},revealed:false});setDraft({});setRevealed(false);setAttemptId(undefined);setMessage('Neuer Versuch. Frühere Ergebnisse bleiben erhalten.');});
  return <section className="practice" aria-label="Antwort bearbeiten">
   <div className="reader-head"><h3>Deine Antwort</h3><span className="practice-label">Study Mode</span></div>
   {!u?<><fieldset className="choice-options" disabled={saving||!!attempt}><legend>Wähle eine Antwort</legend>{[1,2,3,4,5].map(n=><label key={n} className={draft.choice===String(n)?'selected':''}><input type="radio" name={'choice-'+questionId} value={n} checked={draft.choice===String(n)} onChange={()=>update('choice',String(n))}/>{n}</label>)}</fieldset>

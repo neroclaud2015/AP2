@@ -1,0 +1,151 @@
+{
+  "status": "blocked",
+  "module": "Funktionsanalyse",
+  "source_hash": "ac636fb150c05709efb9fb3f683c34795094c7f35b50fd33d1c67ae22c8ccd16",
+  "pages_inspected": 25,
+  "observed_question_count": 36,
+  "observed_numbers_by_page": {
+    "3": [
+      "1",
+      "2",
+      "3"
+    ],
+    "4": [
+      "4"
+    ],
+    "5": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "6": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "7": [
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "8": [
+      "17",
+      "18"
+    ],
+    "9": [
+      "19",
+      "20",
+      "21"
+    ],
+    "10": [
+      "22",
+      "23"
+    ],
+    "11": [
+      "24",
+      "25",
+      "26"
+    ],
+    "12": [
+      "27",
+      "28"
+    ],
+    "16": [
+      "U1"
+    ],
+    "17": [
+      "U2"
+    ],
+    "18": [
+      "U3"
+    ],
+    "19": [
+      "U4"
+    ],
+    "20": [
+      "U5"
+    ],
+    "21": [
+      "U6"
+    ],
+    "22": [
+      "U7"
+    ],
+    "23": [
+      "U8"
+    ]
+  },
+  "missing_dependency": "Required attachment Blatt2 von2: Stückliste explicitly referenced by U1/U2/U3 is absent. Cached physical page25 is Schweißzange Blatt1(2); physical page24 is blank. All25 pages inspected; no replacement inferred.",
+  "proofs": [
+    {
+      "page": 16,
+      "bbox": [
+        35,
+        30,
+        565,
+        160
+      ],
+      "image": "private/phase2f-fa/U1-attachment-reference.png",
+      "sha256": "5d1b308a9af1b971a5d4d108ec8d480e2f99965720f1d0736ef2c3ffd2407756",
+      "source_image_sha256": "82593b680746601738ab3fe534447639bff613fb131bb3fd40da07576dce0bbc"
+    },
+    {
+      "page": 17,
+      "bbox": [
+        35,
+        30,
+        565,
+        160
+      ],
+      "image": "private/phase2f-fa/U2-attachment-reference.png",
+      "sha256": "ad17309c2b80ca2aace1bd5a8fb753eea5eb6aef8479907cccce1d4819622ddd",
+      "source_image_sha256": "63a14a6cb83bceceeae297b8ebc2a741368440fa2b8f1133c67c2631a2733724"
+    },
+    {
+      "page": 18,
+      "bbox": [
+        35,
+        30,
+        565,
+        160
+      ],
+      "image": "private/phase2f-fa/U3-attachment-reference.png",
+      "sha256": "470eabff9238d3ab8513e8de5dc78abbc0a39df9bcc72933ab21fb9eb9eee531",
+      "source_image_sha256": "ca61a5c0e46d074fce63310e89a3d57e0d796397576b6281cf6b50226a003b63"
+    },
+    {
+      "page": 25,
+      "bbox": [
+        870,
+        750,
+        1180,
+        835
+      ],
+      "image": "private/phase2f-fa/attachment-sheet-1-of-2.png",
+      "sha256": "2cb3983adbb3df54120d57acf22bb49db846c7b4ef09b53077c71e6dca28d776",
+      "source_image_sha256": "be81d72f649ce4628d0dc90e1e5a19eab283a7ba8bc11024010e034417107c8c"
+    }
+  ],
+  "pdf_pages_opened": 0,
+  "pdf_pages_rendered": 0,
+  "formal_records_generated": false,
+  "official_answers_extracted": false,
+  "shared_solution_cache_checked": {
+    "source_hash": "bd8bef30b55fa7ca61e8500500eb6a27f595bdc6924201d8643796ffc9ce4f36",
+    "physical_pages_inspected": 13,
+    "parts_list_attachment_present": false,
+    "page_classification": {
+      "1": "AP official MC",
+      "2": "FA official MC",
+      "3": "WiSo official MC",
+      "4-8": "AP official U solutions",
+      "9-11": "FA official U solutions",
+      "12-13": "WiSo official U solutions"
+    }
+  },
+  "question_crop_preview_generated": false,
+  "remaining_preview_work": "Exact question boundaries/crop review intentionally not completed after missing required attachment; observed page labels/classifications retained."
+}

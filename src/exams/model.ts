@@ -1,7 +1,8 @@
+import {LOCAL_USER_ID} from '../services/identity';
 import {includesSource,type SourceExams} from '../learning/sourceExams';
 import type {ModuleConfig} from '../learning/modules';
 import {moduleParts} from '../learning/modules';
-import type {SegmentedExam} from '../segmented/types';
+import type {SegmentedQuestion,SegmentedExam} from '../segmented/types';
 import type {OfficialAnswer} from '../segmented/answers';
 import type {Correctness,USolution} from '../learning/model';
 import {combineAssessments} from '../learning/model';
@@ -9,8 +10,8 @@ import {combineAssessments} from '../learning/model';
 export type TestType='original'|'module';
 export type TestMode='kurz'|'standard';
 export type TestStatus='active'|'paused'|'completed'|'abandoned'|'discarded';
-export interface QuestionModel {kind:'multiple_choice'|'multi_part';subpart_ids:string[];number:string;part:string}
-export interface TestSource {question_id:string;exam:string;module:string;question_number:string;source_pdf:string;source_page:number;revision:string;answer_source_pdf?:string;answer_source_page?:number;answer_source_crop?:string;solution_image?:string}
+export interface QuestionModel {kind:'multiple_choice'|'multi_part';subpart_ids:string[];number:string;part:string;subpart_models?:USolution['subparts']}
+export interface TestSource {question_id:string;exam:string;module:string;question_number:string;source_pdf:string;source_page:number;revision:string;answer_source_pdf?:string;answer_source_page?:number;answer_source_crop?:string;solution_image?:string;question_source_id?:string;solution_source_id?:string;question_source_sha256?:string;solution_source_sha256?:string;official_answer_revision?:string;answer_review_revision?:string;question_snapshot?:SegmentedQuestion}
 export interface TestResult {total:number;beantwortet:number;richtig:number;falsch:number;teilweise:number;unbeantwortet:number;pending:number;vorlaeufig:boolean;byQuestion:Record<string,Correctness|'unbeantwortet'|'pending'>}
 export interface TestSession {
  test_id:string;exam_session_id:string;userId:string;test_type:TestType;exam:string;module:string;mode:TestMode;seed:string;
@@ -23,8 +24,8 @@ export type SessionAction={type:'answer';questionId:string;answer:Record<string,
 export const TEST_SIZES={kurz:{multiple_choice:6,multi_part:2},standard:{multiple_choice:12,multi_part:4}};
 function random(seed:string){let n=2166136261;for(const c of seed)n=Math.imul(n^c.charCodeAt(0),16777619);return()=>{n+=0x6D2B79F5;let t=Math.imul(n^(n>>>15),1|n);t^=t+Math.imul(t^(t>>>7),61|t);return ((t^(t>>>14))>>>0)/4294967296;};}
 function shuffled<T>(input:T[],rng:()=>number){const a=[...input];for(let i=a.length-1;i>0;i--){const j=Math.floor(rng()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
-export interface SessionPool {config:ModuleConfig;exam:SegmentedExam;officialAnswers:OfficialAnswer[];solutions:USolution[]}
-export function createSession(input:SessionPool&{type:TestType;sourceExams?:SourceExams;pools?:SessionPool[];mode?:TestMode;seed?:string;now?:number}):TestSession {
+export interface SessionPool {config:ModuleConfig;exam:SegmentedExam;officialAnswers:OfficialAnswer[];solutions:USolution[];provenance?:{question_source_id:string;solution_source_id:string}}
+export function createSession(input:SessionPool&{type:TestType;userId?:string;sourceExams?:SourceExams;pools?:SessionPool[];mode?:TestMode;seed?:string;now?:number}):TestSession {
  const {config}=input;const now=input.now??Date.now();const mode=input.mode??'kurz';const seed=input.seed??crypto.randomUUID();
  const sourceExams=input.sourceExams??'all';
  const pools=input.type==='module'?(input.pools??[input]).filter(p=>includesSource(sourceExams,p.config.examId)):[input];
@@ -54,13 +55,13 @@ export function createSession(input:SessionPool&{type:TestType;sourceExams?:Sour
  for(const {q,part,pool} of selected){
   const u=pool.solutions.find(s=>s.question_id===q.question_id);const key=pool.officialAnswers.find(k=>k.question_id===q.question_id);
   if(part.kind==='multi_part'&&(!u||!u.subparts.length))throw Error('Offizielle Teilaufgaben fehlen.');
-  question_models[q.question_id]={kind:part.kind,subpart_ids:u?.subparts.map(s=>s.id)??[],number:q.question_number,part:part.title};
+  question_models[q.question_id]={kind:part.kind,subpart_ids:u?.subparts.map(s=>s.id)??[],number:q.question_number,part:part.title,...(u?{subpart_models:structuredClone(u.subparts)}:{})};
   official_answers[q.question_id]=key&&['auto_ready','confirmed'].includes(key.official_answer_status)&&Number.isInteger(key.official_answer)&&key.official_answer!>=1&&key.official_answer!<=5?key.official_answer:null;
-  source_mix.push({question_id:q.question_id,exam:pool.config.examId,module:pool.config.slug,question_number:q.question_number,source_pdf:q.source_pdf,source_page:q.source_page,revision:q.segmentation_revision,
+  source_mix.push({question_id:q.question_id,exam:pool.config.examId,module:pool.config.slug,question_number:q.question_number,source_pdf:q.source_pdf,source_page:q.source_page,revision:q.segmentation_revision,...pool.provenance,official_answer_revision:key?.parser_revision??u?.extractor_revision,answer_review_revision:(key as (OfficialAnswer&{updated_at?:string})|undefined)?.updated_at,question_snapshot:structuredClone(q),
    answer_source_pdf:key?(key.source_pdf_available===false?undefined:key.source_pdf):(u?.solution_source_pdf_available===false?undefined:u?.solution_source_pdf),answer_source_page:key?.source_page??u?.solution_source_page,answer_source_crop:key?.source_crop,solution_image:u?.cropped_solution_image});
  }
  const id=crypto.randomUUID();
- return {test_id:id,exam_session_id:id,userId:'local',test_type:input.type,exam:input.type==='module'?(pools.find(p=>p.config.examId===config.examId)??pools[0]).config.examId:config.examId,module:config.slug,mode,seed,...(input.type==='module'?{sourceExams:sourceExams==='all'?'all' as const:[...sourceExams]}:{}),question_ids:selected.map(e=>e.q.question_id),question_models,source_mix,
+ return {test_id:id,exam_session_id:id,userId:input.userId??LOCAL_USER_ID,test_type:input.type,exam:input.type==='module'?(pools.find(p=>p.config.examId===config.examId)??pools[0]).config.examId:config.examId,module:config.slug,mode,seed,...(input.type==='module'?{sourceExams:sourceExams==='all'?'all' as const:[...sourceExams]}:{}),question_ids:selected.map(e=>e.q.question_id),question_models,source_mix,
   official_answers,answers:{},subpart_assessments:{},started_at:new Date(now).toISOString(),completed_at:null,status:'active',current_question:selected[0].q.question_id,elapsed_time:0,active_since:now,revision:0,
   duration_minutes:input.type==='original'?config.durationMinutes??null:null,result:null};
 }

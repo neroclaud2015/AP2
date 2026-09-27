@@ -1,0 +1,99 @@
+{
+  "key": "1134718a42b80d1cf6a76b2985fbad504522b47fa15937fef66c70ad4622bef6",
+  "record_hash": "ec43b411996acfcc428e922e9140a6e5fd5f49d42306e25bfff500a71abfdb6f",
+  "record": {
+    "page": 11,
+    "geometry": [
+      595.4400024414062,
+      842.0399780273438
+    ],
+    "classification": "mixed_questions",
+    "classification_evidence": "Cached original page individually visually inspected; all printed headings transcribed without sequential inference.",
+    "anchors": [
+      {
+        "anchor_id": "2018-wiso-p11-16",
+        "number": "16",
+        "bbox": [
+          54,
+          69,
+          85,
+          91
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 16 individually observed on physical page 11.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "7d3e9c1e87df3c2643ff323f00910f662cfd7074c3f8f3ccaceffafd4c312c5c"
+      },
+      {
+        "anchor_id": "2018-wiso-p11-U6",
+        "number": "U6",
+        "bbox": [
+          61,
+          312,
+          96,
+          335
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U6 individually observed on physical page 11.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "8eb683d01c0cffdfbffd611dd5008070538e69f7a532228d9dd0912f0e30a6c1"
+      }
+    ],
+    "regions": [
+      {
+        "page": 11,
+        "bbox": [
+          52,
+          55,
+          293,
+          307
+        ],
+        "role": "primary",
+        "owner": "2018-wiso-p11-16",
+        "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+      },
+      {
+        "page": 11,
+        "bbox": [
+          57,
+          307,
+          539,
+          795
+        ],
+        "role": "primary",
+        "owner": "2018-wiso-p11-U6",
+        "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "16",
+        "bbox": [
+          54,
+          69,
+          85,
+          91
+        ],
+        "pixel_sha256": "7d3e9c1e87df3c2643ff323f00910f662cfd7074c3f8f3ccaceffafd4c312c5c",
+        "audited_pixel_sha256": "7d3e9c1e87df3c2643ff323f00910f662cfd7074c3f8f3ccaceffafd4c312c5c"
+      },
+      {
+        "kind": "heading",
+        "number": "U6",
+        "bbox": [
+          61,
+          312,
+          96,
+          335
+        ],
+        "pixel_sha256": "8eb683d01c0cffdfbffd611dd5008070538e69f7a532228d9dd0912f0e30a6c1",
+        "audited_pixel_sha256": "8eb683d01c0cffdfbffd611dd5008070538e69f7a532228d9dd0912f0e30a6c1"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

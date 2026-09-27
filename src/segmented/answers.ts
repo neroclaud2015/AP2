@@ -17,7 +17,7 @@ export interface AnswerReview {
 export function validAnswerReview(value: unknown): value is AnswerReview {
   if(!value||typeof value!=='object')return false;
   const r=value as AnswerReview;
-  return r.userId==='local'&&typeof r.question_id==='string'&&!!r.question_id&&
+  return typeof r.userId==='string'&&!!r.userId.trim()&&typeof r.question_id==='string'&&!!r.question_id&&
     Number.isInteger(r.official_answer)&&r.official_answer>=1&&r.official_answer<=5&&
     r.official_answer_status==='confirmed'&&r.locked===true&&typeof r.user_corrected==='boolean'&&
     typeof r.parser_revision==='string'&&typeof r.updated_at==='string';

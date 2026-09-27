@@ -1,0 +1,99 @@
+{
+  "key": "d14772ff7a7f0789d40c897166b83b43fc82aaa57c52b05e701ecf78b4979ea5",
+  "record_hash": "6cec6423694f8d833949b622184d94b0c3c3ce2e6922ed8b9a203f1b98e01c0f",
+  "record": {
+    "page": 8,
+    "geometry": [
+      595.4400024414062,
+      842.0399780273438
+    ],
+    "classification": "mixed_questions",
+    "classification_evidence": "Cached original page individually visually inspected; all printed headings transcribed without sequential inference.",
+    "anchors": [
+      {
+        "anchor_id": "2018-wiso-p8-10",
+        "number": "10",
+        "bbox": [
+          68,
+          60,
+          96,
+          83
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 10 individually observed on physical page 8.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "b20886cff1f1d697a9015a7a5f0f5885abaa761e8d117e6a7a1dd0870d4d57ba"
+      },
+      {
+        "anchor_id": "2018-wiso-p8-U4",
+        "number": "U4",
+        "bbox": [
+          73,
+          302,
+          109,
+          325
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U4 individually observed on physical page 8.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "4396e50d5cf40b92fbfa298a554f28dd2d5276780acbca6d1cf2a507841d54f9"
+      }
+    ],
+    "regions": [
+      {
+        "page": 8,
+        "bbox": [
+          66,
+          51,
+          304,
+          298
+        ],
+        "role": "primary",
+        "owner": "2018-wiso-p8-10",
+        "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+      },
+      {
+        "page": 8,
+        "bbox": [
+          68,
+          298,
+          542,
+          785
+        ],
+        "role": "primary",
+        "owner": "2018-wiso-p8-U4",
+        "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "10",
+        "bbox": [
+          68,
+          60,
+          96,
+          83
+        ],
+        "pixel_sha256": "b20886cff1f1d697a9015a7a5f0f5885abaa761e8d117e6a7a1dd0870d4d57ba",
+        "audited_pixel_sha256": "b20886cff1f1d697a9015a7a5f0f5885abaa761e8d117e6a7a1dd0870d4d57ba"
+      },
+      {
+        "kind": "heading",
+        "number": "U4",
+        "bbox": [
+          73,
+          302,
+          109,
+          325
+        ],
+        "pixel_sha256": "4396e50d5cf40b92fbfa298a554f28dd2d5276780acbca6d1cf2a507841d54f9",
+        "audited_pixel_sha256": "4396e50d5cf40b92fbfa298a554f28dd2d5276780acbca6d1cf2a507841d54f9"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

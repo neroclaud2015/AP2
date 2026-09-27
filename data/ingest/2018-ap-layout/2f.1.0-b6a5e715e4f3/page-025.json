@@ -1,0 +1,61 @@
+{
+  "key": "2f7aba6b54a2a88b039a92c6645d3f00b43cc218b4ec99ab00c6c75b41e64a28",
+  "record_hash": "95bdbc6c6b27494656abe87a2c164b46202591e858316bc7e835e3a2e55e76b3",
+  "record": {
+    "page": 25,
+    "geometry": [
+      595.4400024414062,
+      842.0399780273438
+    ],
+    "classification": "questions",
+    "classification_evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2018-ap-p25-U6",
+        "number": "U6",
+        "bbox": [
+          43,
+          31,
+          87,
+          59
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Individually observed printed U6",
+        "review_reasons": [],
+        "heading_pixel_sha256": "c77691043012a7364b1e30930da15445afec9c93fe37b1c7ae67510cd5d24840"
+      }
+    ],
+    "regions": [
+      {
+        "page": 25,
+        "bbox": [
+          40,
+          25,
+          554,
+          819
+        ],
+        "role": "primary",
+        "owner": "2018-ap-p25-U6",
+        "evidence": "Printed task heading plus ruled region border visually verified."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U6",
+        "bbox": [
+          43,
+          31,
+          87,
+          59
+        ],
+        "pixel_sha256": "c77691043012a7364b1e30930da15445afec9c93fe37b1c7ae67510cd5d24840",
+        "audited_pixel_sha256": "c77691043012a7364b1e30930da15445afec9c93fe37b1c7ae67510cd5d24840"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

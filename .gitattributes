@@ -1,2 +1,8 @@
 # Accepted Winter evidence hashes bind exact bytes; never normalize these HTML artifacts.
 docs/evidence/phase2d/winter/**/*.html -text
+
+data/ingest/registered-receipts/b5d74254038ebdd349fa6a8a29ed15bec4dcb1443aab649f6d1a60b043a84d37.json -text
+data/ingest/registered-receipts/bd8bef30b55fa7ca61e8500500eb6a27f595bdc6924201d8643796ffc9ce4f36.json -text
+
+# Immutable Phase2F preview gate HTML hashes.
+docs/evidence/phase2f/**/*.html -text

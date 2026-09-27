@@ -32,7 +32,7 @@ export function validReview(value: unknown): value is QuestionReview {
   if (!value || typeof value !== 'object') return false;
   const r = value as QuestionReview;
   const box = (b: unknown) => Array.isArray(b) && b.length === 4 && b.every(Number.isFinite) && b[0] >= 0 && b[1] >= 0 && b[2] > b[0] && b[3] > b[1];
-  return r.userId === 'local' && typeof r.question_id === 'string' && typeof r.source_revision === 'string' &&
+  return typeof r.userId === 'string' && !!r.userId.trim() && typeof r.question_id === 'string' && typeof r.source_revision === 'string' &&
     typeof r.question_number === 'string' && !!r.question_number.trim() && typeof r.extracted_text === 'string' &&
     box(r.bounding_box) && Array.isArray(r.regions) && r.regions.length > 0 && r.regions.every(box) &&
     Array.isArray(r.tags) && r.tags.every(t => typeof t === 'string') && typeof r.solution_confirmed === 'boolean' &&

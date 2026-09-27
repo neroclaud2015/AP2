@@ -1,0 +1,137 @@
+{
+  "key": "ae39f15662f0cf7a21edaec3b7365725d604c65cd707dd27bb6668ff4770ef22",
+  "record_hash": "ce3dc20aa1b0b3a74ee9a6ca8dd7ca8937719fff52a619bb595504e738ad361b",
+  "record": {
+    "page": 7,
+    "geometry": [
+      595.4400024414062,
+      842.0399780273438
+    ],
+    "classification": "mixed_questions",
+    "classification_evidence": "Cached original page individually visually inspected; all printed headings transcribed without sequential inference.",
+    "anchors": [
+      {
+        "anchor_id": "2018-wiso-p7-U3",
+        "number": "U3",
+        "bbox": [
+          57,
+          67,
+          91,
+          89
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U3 individually observed on physical page 7.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "a087d5b3d3910bef037788e774135d06c68f06ba83ffa190e1d0ae6b9d1fe901"
+      },
+      {
+        "anchor_id": "2018-wiso-p7-8",
+        "number": "8",
+        "bbox": [
+          57,
+          554,
+          77,
+          575
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 8 individually observed on physical page 7.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "31164ed9f62c2263a59ac57a6f99830dd02d1f3c85f861fb2fc0ae06778fea1c"
+      },
+      {
+        "anchor_id": "2018-wiso-p7-9",
+        "number": "9",
+        "bbox": [
+          301,
+          548,
+          322,
+          570
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 9 individually observed on physical page 7.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "e44e96f61926016d7af1a89357b0b462175f9440038f08c471c8cde1bfc962ce"
+      }
+    ],
+    "regions": [
+      {
+        "page": 7,
+        "bbox": [
+          50,
+          50,
+          532,
+          548
+        ],
+        "role": "primary",
+        "owner": "2018-wiso-p7-U3",
+        "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          55,
+          548,
+          298,
+          795
+        ],
+        "role": "primary",
+        "owner": "2018-wiso-p7-8",
+        "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          298,
+          548,
+          535,
+          795
+        ],
+        "role": "primary",
+        "owner": "2018-wiso-p7-9",
+        "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U3",
+        "bbox": [
+          57,
+          67,
+          91,
+          89
+        ],
+        "pixel_sha256": "a087d5b3d3910bef037788e774135d06c68f06ba83ffa190e1d0ae6b9d1fe901",
+        "audited_pixel_sha256": "a087d5b3d3910bef037788e774135d06c68f06ba83ffa190e1d0ae6b9d1fe901"
+      },
+      {
+        "kind": "heading",
+        "number": "8",
+        "bbox": [
+          57,
+          554,
+          77,
+          575
+        ],
+        "pixel_sha256": "31164ed9f62c2263a59ac57a6f99830dd02d1f3c85f861fb2fc0ae06778fea1c",
+        "audited_pixel_sha256": "31164ed9f62c2263a59ac57a6f99830dd02d1f3c85f861fb2fc0ae06778fea1c"
+      },
+      {
+        "kind": "heading",
+        "number": "9",
+        "bbox": [
+          301,
+          548,
+          322,
+          570
+        ],
+        "pixel_sha256": "e44e96f61926016d7af1a89357b0b462175f9440038f08c471c8cde1bfc962ce",
+        "audited_pixel_sha256": "e44e96f61926016d7af1a89357b0b462175f9440038f08c471c8cde1bfc962ce"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

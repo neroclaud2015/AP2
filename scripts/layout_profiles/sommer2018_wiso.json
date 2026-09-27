@@ -1,0 +1,846 @@
+{
+  "profile_id": "portrait-explicit-regions",
+  "scope": "2018-wiso",
+  "version": "2f.1.0",
+  "exam": "2018_sommer",
+  "module": "WiSo",
+  "source_hash": "d70911bd62cdd7a47a13c1eeff19cb78568783527bebd2d2f3c95604de899570",
+  "source_id": "src-d25b2363c0829530c1006d9c",
+  "solution_source_id": "src-15c4c680b99b7d888e2df37c",
+  "validated_sources": [
+    "d70911bd62cdd7a47a13c1eeff19cb78568783527bebd2d2f3c95604de899570"
+  ],
+  "name": "2018_sommer_wiso",
+  "expected": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6"
+  ],
+  "timing_minutes": 60,
+  "timing_source_page": 2,
+  "description_page": 3,
+  "attachment_refs": {
+    "U1": [
+      13
+    ],
+    "U3": [
+      13
+    ]
+  },
+  "pages": {
+    "1": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "cover",
+      "evidence": "Cached original page individually visually inspected; all printed headings transcribed without sequential inference.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "2": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "instructions",
+      "evidence": "Cached original page individually visually inspected; all printed headings transcribed without sequential inference.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "3": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "description",
+      "evidence": "Cached original page individually visually inspected; all printed headings transcribed without sequential inference.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "4": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached original page individually visually inspected; all printed headings transcribed without sequential inference.",
+      "slots": [
+        {
+          "observed_number": "U1",
+          "heading_box": [
+            59,
+            73,
+            94,
+            99
+          ],
+          "visual_patch_sha256": "edad8161cf16042f7c60d2f2aade5826fba4673f9871f0e2596d3deff4107d5b",
+          "regions": [
+            [
+              55,
+              64,
+              533,
+              557
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U1 individually observed on physical page 4.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        },
+        {
+          "observed_number": "1",
+          "heading_box": [
+            57,
+            561,
+            79,
+            586
+          ],
+          "visual_patch_sha256": "c892987469d8c15d43530494816083db0c71f8ba94e8693656e9984ce26fc2c4",
+          "regions": [
+            [
+              55,
+              557,
+              296,
+              799
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 1 individually observed on physical page 4.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        },
+        {
+          "observed_number": "2",
+          "heading_box": [
+            300,
+            558,
+            321,
+            584
+          ],
+          "visual_patch_sha256": "2f11db043c48e96076ee51671dad92b8b77cfc35510fd3201a258d383d3e217c",
+          "regions": [
+            [
+              296,
+              557,
+              535,
+              799
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 2 individually observed on physical page 4.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "5": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached original page individually visually inspected; all printed headings transcribed without sequential inference.",
+      "slots": [
+        {
+          "observed_number": "3",
+          "heading_box": [
+            51,
+            65,
+            73,
+            87
+          ],
+          "visual_patch_sha256": "376fdc5352398bc52a05426aaa43986268918f66ba166fd29577f12ac4edfd85",
+          "regions": [
+            [
+              50,
+              55,
+              292,
+              298
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 3 individually observed on physical page 5.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        },
+        {
+          "observed_number": "U2",
+          "heading_box": [
+            60,
+            307,
+            95,
+            332
+          ],
+          "visual_patch_sha256": "a0775e13c96055bc8a5a02eed792188f98decb9aa62337766d1176873cc51f76",
+          "regions": [
+            [
+              55,
+              298,
+              540,
+              793
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U2 individually observed on physical page 5.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "6": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached original page individually visually inspected; all printed headings transcribed without sequential inference.",
+      "slots": [
+        {
+          "observed_number": "4",
+          "heading_box": [
+            54,
+            79,
+            76,
+            101
+          ],
+          "visual_patch_sha256": "a68de476f715b1400eb9f03c56ceeeb0170e5cd118e4a9d171a93c64ce104cdf",
+          "regions": [
+            [
+              53,
+              68,
+              292,
+              315
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 4 individually observed on physical page 6.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        },
+        {
+          "observed_number": "5",
+          "heading_box": [
+            296,
+            75,
+            317,
+            98
+          ],
+          "visual_patch_sha256": "32309a239b0efe189733b314d918c19123258cb29fa95f90ae5d9047839f46ae",
+          "regions": [
+            [
+              292,
+              65,
+              535,
+              315
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 5 individually observed on physical page 6.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        },
+        {
+          "observed_number": "6",
+          "heading_box": [
+            57,
+            321,
+            77,
+            344
+          ],
+          "visual_patch_sha256": "f593d238a13735b5a28ad68abf9f7f0bbbf6fd6eeecc77d42387fc0be32f8702",
+          "regions": [
+            [
+              53,
+              315,
+              295,
+              561
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 6 individually observed on physical page 6.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        },
+        {
+          "observed_number": "7",
+          "heading_box": [
+            298,
+            316,
+            319,
+            340
+          ],
+          "visual_patch_sha256": "20543f305c4a3fde1a4baf415cb6654f182dbf0bb0ac94c9eccc41427ed59842",
+          "regions": [
+            [
+              295,
+              315,
+              535,
+              561
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 7 individually observed on physical page 6.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "7": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached original page individually visually inspected; all printed headings transcribed without sequential inference.",
+      "slots": [
+        {
+          "observed_number": "U3",
+          "heading_box": [
+            57,
+            67,
+            91,
+            89
+          ],
+          "visual_patch_sha256": "a087d5b3d3910bef037788e774135d06c68f06ba83ffa190e1d0ae6b9d1fe901",
+          "regions": [
+            [
+              50,
+              50,
+              532,
+              548
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U3 individually observed on physical page 7.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        },
+        {
+          "observed_number": "8",
+          "heading_box": [
+            57,
+            554,
+            77,
+            575
+          ],
+          "visual_patch_sha256": "31164ed9f62c2263a59ac57a6f99830dd02d1f3c85f861fb2fc0ae06778fea1c",
+          "regions": [
+            [
+              55,
+              548,
+              298,
+              795
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 8 individually observed on physical page 7.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        },
+        {
+          "observed_number": "9",
+          "heading_box": [
+            301,
+            548,
+            322,
+            570
+          ],
+          "visual_patch_sha256": "e44e96f61926016d7af1a89357b0b462175f9440038f08c471c8cde1bfc962ce",
+          "regions": [
+            [
+              298,
+              548,
+              535,
+              795
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 9 individually observed on physical page 7.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "8": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached original page individually visually inspected; all printed headings transcribed without sequential inference.",
+      "slots": [
+        {
+          "observed_number": "10",
+          "heading_box": [
+            68,
+            60,
+            96,
+            83
+          ],
+          "visual_patch_sha256": "b20886cff1f1d697a9015a7a5f0f5885abaa761e8d117e6a7a1dd0870d4d57ba",
+          "regions": [
+            [
+              66,
+              51,
+              304,
+              298
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 10 individually observed on physical page 8.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        },
+        {
+          "observed_number": "U4",
+          "heading_box": [
+            73,
+            302,
+            109,
+            325
+          ],
+          "visual_patch_sha256": "4396e50d5cf40b92fbfa298a554f28dd2d5276780acbca6d1cf2a507841d54f9",
+          "regions": [
+            [
+              68,
+              298,
+              542,
+              785
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U4 individually observed on physical page 8.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "9": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached original page individually visually inspected; all printed headings transcribed without sequential inference.",
+      "slots": [
+        {
+          "observed_number": "11",
+          "heading_box": [
+            64,
+            300,
+            92,
+            325
+          ],
+          "visual_patch_sha256": "e395d6c6442059b7d91f74e8188c80505c72ad5424417477e547ed0e7598cc23",
+          "regions": [
+            [
+              63,
+              297,
+              302,
+              539
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 11 individually observed on physical page 9.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        },
+        {
+          "observed_number": "12",
+          "heading_box": [
+            305,
+            300,
+            335,
+            324
+          ],
+          "visual_patch_sha256": "72334addbca1c9759b0e603add4310ebed2de79153230cb7b849ccccd4cef2c4",
+          "regions": [
+            [
+              302,
+              297,
+              539,
+              539
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 12 individually observed on physical page 9.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        },
+        {
+          "observed_number": "13",
+          "heading_box": [
+            63,
+            542,
+            93,
+            567
+          ],
+          "visual_patch_sha256": "9925170dac2251ed721979899a8a65de65bfc90b840fc26e5df83aed2a4f48d5",
+          "regions": [
+            [
+              63,
+              539,
+              304,
+              784
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 13 individually observed on physical page 9.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        }
+      ],
+      "explicit_regions": [
+        {
+          "bbox": [
+            64,
+            49,
+            537,
+            297
+          ],
+          "role": "continuation",
+          "owner": "2018-wiso-p8-U4",
+          "observed_owner_label": "Ergebnis U4",
+          "evidence_box": [
+            491,
+            101,
+            530,
+            127
+          ],
+          "visual_patch_sha256": "db5809761a25cdbcc3ddda0cddc2d09f0b730fa51d235f8446f99f38f0544081",
+          "evidence": "Printed Ergebnis U4 and subparts 3 and 4 explicitly continue U4 subparts 1 and 2 from physical page8."
+        }
+      ]
+    },
+    "10": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached original page individually visually inspected; all printed headings transcribed without sequential inference.",
+      "slots": [
+        {
+          "observed_number": "U5",
+          "heading_box": [
+            62,
+            71,
+            95,
+            94
+          ],
+          "visual_patch_sha256": "7d5be3a8982aa9d0aaac7ee973a84ec371ca6203017cadef61f2b3e332d82e55",
+          "regions": [
+            [
+              55,
+              59,
+              533,
+              551
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U5 individually observed on physical page 10.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        },
+        {
+          "observed_number": "14",
+          "heading_box": [
+            59,
+            556,
+            87,
+            580
+          ],
+          "visual_patch_sha256": "809a9a8c467175b7b213b801a3f766db11f9764e22cb176d83e51e8a75db116a",
+          "regions": [
+            [
+              55,
+              551,
+              296,
+              794
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 14 individually observed on physical page 10.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        },
+        {
+          "observed_number": "15",
+          "heading_box": [
+            300,
+            552,
+            331,
+            578
+          ],
+          "visual_patch_sha256": "4d049935a3b79ec51f0998ca14fdd1ddd67d05ede887383ac86e6fb32dee00ce",
+          "regions": [
+            [
+              296,
+              551,
+              535,
+              794
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 15 individually observed on physical page 10.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "11": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached original page individually visually inspected; all printed headings transcribed without sequential inference.",
+      "slots": [
+        {
+          "observed_number": "16",
+          "heading_box": [
+            54,
+            69,
+            85,
+            91
+          ],
+          "visual_patch_sha256": "7d3e9c1e87df3c2643ff323f00910f662cfd7074c3f8f3ccaceffafd4c312c5c",
+          "regions": [
+            [
+              52,
+              55,
+              293,
+              307
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 16 individually observed on physical page 11.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        },
+        {
+          "observed_number": "U6",
+          "heading_box": [
+            61,
+            312,
+            96,
+            335
+          ],
+          "visual_patch_sha256": "8eb683d01c0cffdfbffd611dd5008070538e69f7a532228d9dd0912f0e30a6c1",
+          "regions": [
+            [
+              57,
+              307,
+              539,
+              795
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U6 individually observed on physical page 11.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "12": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached original page individually visually inspected; all printed headings transcribed without sequential inference.",
+      "slots": [
+        {
+          "observed_number": "17",
+          "heading_box": [
+            50,
+            63,
+            79,
+            87
+          ],
+          "visual_patch_sha256": "9d04bc37da24a66cb69b4df27f09164af71ef0cf681fccbcefb354f7d0ab8826",
+          "regions": [
+            [
+              49,
+              55,
+              285,
+              303
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 17 individually observed on physical page 12.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        },
+        {
+          "observed_number": "18",
+          "heading_box": [
+            289,
+            63,
+            319,
+            87
+          ],
+          "visual_patch_sha256": "ace7e612ae46f81c3c5369f9f8950026c26bde0120f158419bb568d6482d55f0",
+          "regions": [
+            [
+              285,
+              55,
+              526,
+              303
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 18 individually observed on physical page 12.",
+          "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "13": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "attachment",
+      "evidence": "Cached original page individually visually inspected; all printed headings transcribed without sequential inference.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "14": {
+      "geometry": [
+        595.4400024414062,
+        842.0399780273438
+      ],
+      "classification": "blank",
+      "evidence": "Cached original page individually visually inspected; all printed headings transcribed without sequential inference.",
+      "slots": [],
+      "explicit_regions": []
+    }
+  },
+  "attachment_crops": [
+    {
+      "page": 2,
+      "bbox": [
+        54,
+        38,
+        210,
+        59
+      ],
+      "title": "Zeitvorgabe \u00b7 insgesamt 60 Minuten",
+      "question_numbers": []
+    },
+    {
+      "page": 3,
+      "bbox": [
+        53,
+        298,
+        533,
+        598
+      ],
+      "title": "Pr\u00fcfungsaufgaben-Beschreibung \u00b7 Paul Fleissig / Alexandra Hages",
+      "question_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6"
+      ]
+    },
+    {
+      "page": 13,
+      "bbox": [
+        35,
+        150,
+        545,
+        565
+      ],
+      "title": "Anlage zu U1 und U3 \u00b7 SGB III / TzBfG",
+      "question_numbers": [
+        "U1",
+        "U3"
+      ]
+    }
+  ],
+  "description_crop": {
+    "page": 3,
+    "bbox": [
+      52,
+      295,
+      535,
+      791
+    ]
+  }
+}

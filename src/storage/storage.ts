@@ -1,3 +1,4 @@
+import {LOCAL_USER_ID} from '../services/identity';
 import {reduceSession,isEligibleForAnalysis,type TestSession,type SessionAction} from '../exams/model';
 import {validAttempt, type Attempt, type LearningSession} from '../learning/model';
 import { validAnswerReview, type AnswerReview } from '../segmented/answers';
@@ -5,7 +6,10 @@ import type { QuestionReview } from '../segmented/types';
 import Dexie, { type Table } from 'dexie';
 import type { AuthProvider, LocalField, ProgressRecord, ProgressRepository, UserContext } from '../types';
 export class LocalUserProvider implements AuthProvider {
-  async currentUser(): Promise<UserContext> { return { id: 'local', mode: 'local' }; }
+  async currentUser(): Promise<UserContext> { return { id: LOCAL_USER_ID, mode: 'local' }; }
+  async restoreSession(){return this.currentUser();}
+  async login(_credentials:Readonly<Record<string,unknown>>):Promise<UserContext>{throw Error('Login is unsupported in local mode.');}
+  async logout():Promise<void>{ /* Local identity remains available; no remote session exists. */ }
 }
 export class IndexedDBProgressRepository implements ProgressRepository {
   private db: Dexie;
@@ -44,7 +48,9 @@ export class IndexedDBProgressRepository implements ProgressRepository {
   async saveReview(review: QuestionReview) {
     await this.db.table<QuestionReview>('reviews').put(review);
   }
-  async importReviews(reviews: QuestionReview[], answers: AnswerReview[] = []) {
+  async importReviews(reviews: QuestionReview[], answers: AnswerReview[] = [], userId?:string) {
+    const owner=userId??reviews[0]?.userId??answers[0]?.userId;
+    if([...reviews,...answers].some(r=>!r.userId.trim()||r.userId!==owner))throw Error('Review ownership mismatch');
     if(!answers.every(validAnswerReview)) throw new Error('Invalid answer review');
     const table = this.db.table<QuestionReview>('reviews');
     const answerTable=this.db.table<AnswerReview>('answerReviews');
@@ -63,6 +69,7 @@ export class IndexedDBProgressRepository implements ProgressRepository {
   async getLearningSessions(userId:string):Promise<LearningSession[]> {return this.db.table<LearningSession>('learningSessions').where('userId').equals(userId).toArray();}
   async saveLearningSession(session:LearningSession) {await this.db.table<LearningSession>('learningSessions').put(session);}
   async saveAttempt(attempt:Attempt, session?:LearningSession) {
+    if(session&&(session.userId!==attempt.userId||session.question_id!==attempt.question_id))throw Error('Attempt session ownership mismatch');
     if(!validAttempt(attempt))throw new Error('Invalid attempt');
     const attempts=this.db.table<Attempt>('attempts'),sessions=this.db.table<LearningSession>('learningSessions');
     await this.db.transaction('rw',attempts,sessions,async()=>{await attempts.add(attempt);if(session)await sessions.put(session);});
@@ -76,7 +83,7 @@ export class IndexedDBProgressRepository implements ProgressRepository {
   async getAnalysisTestSessions(userId:string):Promise<TestSession[]> {return (await this.getTestSessions(userId)).filter(isEligibleForAnalysis);}
   async getTestSession(userId:string,id:string):Promise<TestSession|undefined> {return this.db.table<TestSession>('testSessions').get([userId,id]);}
   async createTestSession(session:TestSession,replace?:{id:string;revision:number}):Promise<TestSession> {
-    if(session.userId!=='local'||session.status!=='active'||session.revision!==0||!session.question_ids.length||Object.keys(session.answers).length)throw Error('Ungültiger neuer Versuch.');
+    if(!session.userId?.trim()||session.status!=='active'||session.revision!==0||!session.question_ids.length||Object.keys(session.answers).length)throw Error('Ungültiger neuer Versuch.');
     const table=this.db.table<TestSession>('testSessions');
     return this.db.transaction('rw',table,async()=>{
       const existing=(await table.where('userId').equals(session.userId).toArray()).filter(s=>(session.test_type==='module'||s.exam===session.exam)&&s.module===session.module&&s.test_type===session.test_type&&['active','paused'].includes(s.status));
@@ -107,6 +114,11 @@ export class IndexedDBProgressRepository implements ProgressRepository {
       // Ordinary attempts/reviews are independent and must never be deleted by test ID.
       await table.delete([userId,id]);
     });
+  }
+  async getRecords(userId:string):Promise<ProgressRecord[]>{return this.records.where('userId').equals(userId).toArray();}
+  async exportSnapshot(userId:string){
+    const names=['records','reviews','answerReviews','attempts','learningSessions','testSessions'];
+    return this.db.transaction('r',names,async()=>({schema_version:1 as const,userId,records:await this.getRecords(userId),reviews:await this.getReviews(userId),answerReviews:await this.getAnswerReviews(userId),attempts:await this.getAttempts(userId),learningSessions:await this.getLearningSessions(userId),testSessions:await this.getTestSessions(userId)}));
   }
   close() { this.db.close(); }
 }

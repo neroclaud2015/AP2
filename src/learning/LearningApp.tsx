@@ -1,10 +1,12 @@
+import sourceRegistry from '../../public/data/source_registry.json';
+import {sourceSnapshot} from '../sources/registry';
 import {includesSource,sourceLabel,sourceDescription} from './sourceExams';
 import {useEffect,useRef,useState} from 'react';
 import ReviewWorkspace from '../segmented/StudyApp';
 import {asset,effectiveQuestion,questionSources,questionSourceUrl,type QuestionReview,type SegmentedExam} from '../segmented/types';
 import {effectiveAnswer,type AnswerKey,type AnswerReview,type OfficialAnswer} from '../segmented/answers';
 import {CropImage} from '../segmented/CropImage';
-import {IndexedDBProgressRepository} from '../storage/storage';
+import {useAppServices} from '../services/context';
 import Practice from './Practice';
 import type {Attempt,LearningSession,USolution} from './model';
 import {MODULES,EXAM_SESSIONS,MODULE_TITLES,moduleKey,findModule,switchExamRoute,examLabel,originalPageLink,moduleProgress,moduleParts,questionPart,readRoute,routeUrl,type LearningRoute,type ModuleSlug,type View} from './modules';
@@ -13,10 +15,10 @@ import ExamWorkspace from '../exams/ExamWorkspace';
 import {createSession,sessionResult,isEligibleForAnalysis,type TestSession,type TestType,type TestMode} from '../exams/model';
 import './learning.css';
 
-const repository=new IndexedDBProgressRepository();
 interface Bundle {exam:SegmentedExam;keys:AnswerKey;solutions:USolution[]}
 interface Launch {module:string;type:TestType;mode:TestMode;replaceId:string;replaceRevision:number}
 export default function LearningApp(){
+ const {repository,user}=useAppServices();
  const [locationState,setLocationState]=useState(()=>readRoute(location.search));const [bundles,setBundles]=useState<Partial<Record<ModuleSlug,Bundle>>>({});
  const [showDiscarded,setShowDiscarded]=useState(false);const [lifecycleBusy,setLifecycleBusy]=useState(false);
  const [moduleErrors,setModuleErrors]=useState<Partial<Record<ModuleSlug,string>>>({});const [personalLoaded,setPersonalLoaded]=useState(false);
@@ -26,7 +28,7 @@ export default function LearningApp(){
  const [error,setError]=useState('');const [practiceBusy,setBusy]=useState(false);const [reviewBusy,setReviewBusy]=useState(false);const [routing,setRouting]=useState(false);
  const busy=practiceBusy||reviewBusy||lifecycleBusy||routing||!!launch;const busyRef=useRef(busy);busyRef.current=busy;
  const deferredRoute=useRef<LearningRoute|null>(null);const transition=useRef<(next:LearningRoute,push:boolean)=>Promise<void>>(async()=>{});
- const refreshPersonal=async()=>{const [a,s,r,k,t]=await Promise.all([repository.getAttempts('local'),repository.getLearningSessions('local'),repository.getReviews('local'),repository.getAnswerReviews('local'),repository.getTestSessions('local')]);setAttempts(a);setSessions(s);setReviews(r);setAnswerReviews(k);setTestSessions(t);};
+ const refreshPersonal=async()=>{const [a,s,r,k,t]=await Promise.all([repository.getAttempts(user.id),repository.getLearningSessions(user.id),repository.getReviews(user.id),repository.getAnswerReviews(user.id),repository.getTestSessions(user.id)]);setAttempts(a);setSessions(s);setReviews(r);setAnswerReviews(k);setTestSessions(t);};
  useEffect(()=>{
   const controller=new AbortController();let active=true;const get=async(path:string)=>{const r=await fetch(asset(path),{signal:controller.signal});if(!r.ok)throw Error();return r.json();};
   for(const m of MODULES)void Promise.all([get(m.segmentedPath),get(m.answersPath),get(m.solutionsPath)]).then(([exam,keys,u])=>{if(active)setBundles(all=>({...all,[moduleKey(m)]:{exam,keys,solutions:u.solutions}}));}).catch(()=>{if(active)setModuleErrors(all=>({...all,[moduleKey(m)]:'Moduldaten konnten nicht geladen werden. Bitte neu laden.'}));});
@@ -43,7 +45,7 @@ export default function LearningApp(){
   if(locationState.view!=='session'){setSelectedTest(undefined);return;}
   let active=true;setTestLoading(true);setSelectedTest(undefined);setTestError('');
   if(!locationState.sessionId){setTestError('Die Sitzungs-ID fehlt. Bitte einen gespeicherten Versuch öffnen.');setTestLoading(false);return;}
-  void repository.getTestSession('local',locationState.sessionId).then(s=>{if(!active)return;if(!s){setTestError('Diese Sitzung wurde auf diesem Gerät nicht gefunden.');return;}
+  void repository.getTestSession(user.id,locationState.sessionId).then(s=>{if(!active)return;if(!s){setTestError('Diese Sitzung wurde auf diesem Gerät nicht gefunden.');return;}
    const m=MODULES.find(m=>m.slug===s.module&&m.examId===s.exam);if(!m){setTestError('Das Modul dieser Sitzung ist nicht verfügbar.');return;}
    setSelectedTest(s);setLocationState(r=>r.module===s.module&&r.examId===s.exam?r:{...r,module:s.module,examId:s.exam});
   }).catch(()=>{if(active)setTestError('Die Sitzung konnte nicht geladen werden. Bitte erneut öffnen.');}).finally(()=>{if(active)setTestLoading(false);});return()=>{active=false;};
@@ -56,14 +58,14 @@ export default function LearningApp(){
   if(routing||practiceBusy||reviewBusy)return;setRouting(true);setTestError('');
   try{
    const config=MODULES.find(m=>moduleKey(m)===key)!;const module=config.slug;const data=bundles[key];if(!data)throw Error('Moduldaten fehlen.');
-   const existing=(await repository.getTestSessions('local')).find(s=>s.module===module&&(type==='module'||s.exam===config.examId)&&s.test_type===type&&['active','paused'].includes(s.status));
+   const existing=(await repository.getTestSessions(user.id)).find(s=>s.module===module&&(type==='module'||s.exam===config.examId)&&s.test_type===type&&['active','paused'].includes(s.status));
    if(existing&&!replace){setLaunch({module:key,type,mode,replaceId:existing.test_id,replaceRevision:existing.revision});return;}
    const officialAnswers=data.keys.answers.map(a=>effectiveAnswer(a,answerReviews.find(r=>r.question_id===a.question_id)) as OfficialAnswer);
-   const pools=type==='module'?MODULES.filter(m=>m.slug===module&&includesSource(locationState.sourceExams??'all',m.examId)).map(m=>{const b=bundles[moduleKey(m)];if(!b)throw Error('Prüfungsquelle wird noch geladen.');return {config:m,exam:b.exam,officialAnswers:b.keys.answers.map(a=>effectiveAnswer(a,answerReviews.find(r=>r.question_id===a.question_id)) as OfficialAnswer),solutions:b.solutions};}):undefined;
-   const created=await repository.createTestSession(createSession({type,config,exam:data.exam,officialAnswers,solutions:data.solutions,mode,sourceExams:locationState.sourceExams??'all',pools:type==='module'?pools:undefined}),replace);
-   setLaunch(null);setTestSessions(await repository.getTestSessions('local'));
+   const pools=type==='module'?MODULES.filter(m=>m.slug===module&&includesSource(locationState.sourceExams??'all',m.examId)).map(m=>{const b=bundles[moduleKey(m)];if(!b)throw Error('Prüfungsquelle wird noch geladen.');return {config:m,provenance:sourceSnapshot(sourceRegistry,m),exam:b.exam,officialAnswers:b.keys.answers.map(a=>effectiveAnswer(a,answerReviews.find(r=>r.question_id===a.question_id)) as OfficialAnswer),solutions:b.solutions};}):undefined;
+   const created=await repository.createTestSession(createSession({userId:user.id,type,config,provenance:sourceSnapshot(sourceRegistry,config),exam:data.exam,officialAnswers,solutions:data.solutions,mode,sourceExams:locationState.sourceExams??'all',pools:type==='module'?pools:undefined}),replace);
+   setLaunch(null);setTestSessions(await repository.getTestSessions(user.id));
    const next:LearningRoute={view:'session',sessionId:created.test_id,module,examId:config.examId,number:'1',...(type==='module'?{sourceExams:locationState.sourceExams??'all'}:{})};history.pushState(null,'',routeUrl(next,location.href));setLocationState(next);window.scrollTo(0,0);
-  }catch(e){setTestError(e instanceof Error?e.message:'Sitzung nicht gespeichert. Bitte erneut versuchen.');setLaunch(null);setTestSessions(await repository.getTestSessions('local').catch(()=>testSessions));}finally{setRouting(false);}
+  }catch(e){setTestError(e instanceof Error?e.message:'Sitzung nicht gespeichert. Bitte erneut versuchen.');setLaunch(null);setTestSessions(await repository.getTestSessions(user.id).catch(()=>testSessions));}finally{setRouting(false);}
  };
  const config=findModule(locationState.examId,locationState.module)!;const bundle=bundles[moduleKey(config)];const exam=bundle?.exam;const keys=bundle?.keys;const solutions=bundle?.solutions??[];
  const sessionBundles=selectedTest?.test_type==='module'?MODULES.filter(m=>m.slug===selectedTest.module).map(m=>bundles[moduleKey(m)]).filter((b):b is Bundle=>!!b):bundle?[bundle]:[];
@@ -75,7 +77,7 @@ export default function LearningApp(){
  const identityFor=(id:string)=>{const m=MODULES.find(m=>bundles[moduleKey(m)]?.exam.questions.some(q=>q.question_id===id));return m?{exam:m.examId,module:m.slug}:{};};
  const saveSession=async(s:LearningSession)=>{s={...s,...identityFor(s.question_id),updated_at:new Date().toISOString()};await repository.saveLearningSession(s);setSessions(all=>[...all.filter(v=>v.question_id!==s.question_id),s]);};
  const saveAttempt=async(a:Attempt,s:LearningSession)=>{a={...a,...identityFor(a.question_id)};s={...s,...identityFor(s.question_id),updated_at:new Date().toISOString()};await repository.saveAttempt(a,s);setAttempts(all=>[...all,a]);setSessions(all=>[...all.filter(v=>v.question_id!==s.question_id),s]);};
- const annotate=async(id:string,v:Pick<Attempt,'note'|'error_reason'|'unsure'|'confidence'>)=>{await repository.annotateAttempt('local',id,v);setAttempts(all=>all.map(a=>a.attempt_id===id?{...a,...v}:a));};
+ const annotate=async(id:string,v:Pick<Attempt,'note'|'error_reason'|'unsure'|'confidence'>)=>{await repository.annotateAttempt(user.id,id,v);setAttempts(all=>all.map(a=>a.attempt_id===id?{...a,...v}:a));};
  if(error)return <main className="learning-main" role="alert">{error}</main>;
  const progress=moduleProgress(exam?.questions??[],attempts,sessions);const review=reviews.find(r=>r.question_id===original?.question_id);const current=original?effectiveQuestion(original,review):undefined;
  const base=keys?.answers.find(a=>a.question_id===original?.question_id);const answer=base?effectiveAnswer(base,answerReviews.find(r=>r.question_id===original?.question_id)) as OfficialAnswer:undefined;
@@ -105,8 +107,8 @@ export default function LearningApp(){
  !bundle||!personalLoaded||!original||!current||!exam?<p role={moduleErrors[moduleKey(config)]?'alert':'status'}>{moduleErrors[moduleKey(config)]??'Lernbereich wird geladen…'}</p>:
  <><div className="learning-heading"><div><span className="eyebrow">{examLabel(config.examId)} · {config.title}</span><h1>{currentPart?.title} · {currentPart?.label}</h1></div><span className="practice-label">Study Mode</span></div><nav className="part-nav" aria-label="Prüfungsteile">{moduleParts(config,exam.questions).map(part=><button key={part.title} disabled={busy||!part.questions.length} onClick={()=>navigate('study',part.questions[0].question_number)}>{part.title} · {part.questions.length} Aufgaben</button>)}</nav><nav className="learning-question-nav" aria-label="Aufgaben">{exam.questions.filter(q=>currentPart?.questionNumbers.includes(q.question_number)).map(q=><button disabled={busy} key={q.question_id} onClick={()=>navigate('study',q.question_number)} aria-label={`Aufgabe ${q.question_number}`} aria-current={q.question_id===current.question_id?'true':undefined} className={progress.done.has(q.question_id)?'completed':''}>{q.question_number}{progress.done.has(q.question_id)?' ✓':''}</button>)}</nav>
  <section className="reader"><div className="reader-head"><h2>Aufgabe {current.question_number}</h2><div className="source-links">{questionSources(current).map(source=><a key={source.source_page} className="outline" href={questionSourceUrl(current,source)} target="_blank" rel="noreferrer">{current.source_pdf_available===false?'Originalseite':'Original-PDF · Seite'} {source.source_page} ↗</a>)}</div></div><div className="question-art"><CropImage question={current} edited={!!review&&JSON.stringify(current.regions)!==JSON.stringify(original.regions)}/></div>
- {solution&&<details><summary>{config.descriptionLabel??'Gemeinsame Aufgabenbeschreibung'} & Anlagen</summary>{config.descriptionPage>0&&<a href={originalPageLink(config,current.source_pdf,config.descriptionPage)} target="_blank" rel="noreferrer">{config.descriptionLabel??'Aufgabenbeschreibung'} · Seite {config.descriptionPage} ↗</a>}{config.attachmentPages.map(page=><p key={page}><a href={originalPageLink(config,current.source_pdf,page)} target="_blank" rel="noreferrer">Anlage · Seite {page} ↗</a></p>)}</details>}
- {currentPart?.kind==='multi_part'&&!solution?<p role="alert">Offizielle U-Lösung fehlt. Keine Bewertung möglich.</p>:<Practice key={original.question_id} questionId={original.question_id} number={original.question_number} answer={answer} u={solution} session={sessions.find(s=>s.question_id===original.question_id)} history={attempts.filter(a=>a.question_id===original.question_id)} onSession={saveSession} onAttempt={saveAttempt} onAnnotate={annotate} onBusy={setBusy}/>}
+ {(solution||config.sharedContextForAllQuestions)&&<details><summary>{config.descriptionLabel??'Gemeinsame Aufgabenbeschreibung'} & Anlagen</summary>{config.descriptionPage>0&&<a href={originalPageLink(config,current.source_pdf,config.descriptionPage)} target="_blank" rel="noreferrer">{config.descriptionLabel??'Aufgabenbeschreibung'} · Seite {config.descriptionPage} ↗</a>}{config.attachmentPages.map(page=><p key={page}><a href={originalPageLink(config,current.source_pdf,page)} target="_blank" rel="noreferrer">Anlage · Seite {page} ↗</a></p>)}</details>}
+ {currentPart?.kind==='multi_part'&&!solution?<p role="alert">Offizielle U-Lösung fehlt. Keine Bewertung möglich.</p>:<Practice provenance={{...sourceSnapshot(sourceRegistry,config),question_source_revision:original.segmentation_revision,official_answer_revision:solution?.extractor_revision??base?.parser_revision,answer_review_revision:answerReviews.find(r=>r.question_id===original.question_id)?.updated_at}} key={original.question_id} questionId={original.question_id} number={original.question_number} answer={answer} u={solution} session={sessions.find(s=>s.question_id===original.question_id)} history={attempts.filter(a=>a.question_id===original.question_id)} onSession={saveSession} onAttempt={saveAttempt} onAnnotate={annotate} onBusy={setBusy}/>}
  </section><div className="study-pagination"><button disabled={busy||exam.questions.indexOf(original)===0} onClick={()=>navigate('study',exam.questions[exam.questions.indexOf(original)-1].question_number)}>← Vorherige Aufgabe</button><button disabled={busy||exam.questions.indexOf(original)===exam.questions.length-1} onClick={()=>navigate('study',exam.questions[exam.questions.indexOf(original)+1].question_number)}>Nächste Aufgabe →</button></div></>}
 
  <footer className="learning-footer"><span>{locationState.view==='tests'?'Modultests':examLabel(config.examId)} · Fortschritt bleibt auf diesem Gerät</span>{locationState.view==='study'&&<button className="outline" disabled={busy||!bundle||!personalLoaded} onClick={()=>navigate('review')}>Review / Quellen</button>}<button className="outline" disabled={busy||!personalLoaded} onClick={()=>{const blob=new Blob([JSON.stringify({schema_version:2,attempts,sessions,testSessions},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='ap2-learning-data.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}}>Lernfortschritt exportieren</button></footer>

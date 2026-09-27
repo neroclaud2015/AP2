@@ -35,3 +35,12 @@ describe('source-year restrictions',()=>{
   for(const sourceExams of [[],['missing'],['2017-sommer','missing']])expect(()=>createSession({...summer,type:'module',pools:[summer,winter],sourceExams})).toThrow(/Prüfungsquellen/);
  });
 });
+
+describe('historical provenance snapshots',()=>{
+ it('retains the exact question, answer version and grading after source objects change',()=>{
+  const pool=structuredClone(summer);pool.provenance={question_source_id:'q-source-v1',solution_source_id:'a-source-v1'};
+  const session=createSession({...pool,type:'original',userId:'user-future',seed:'history'});
+  const saved=structuredClone(session);pool.exam.questions[0].cropped_question_image='replacement.png';pool.exam.questions[0].segmentation_revision='v2';pool.officialAnswers[0].official_answer=5;pool.officialAnswers[0].parser_revision='v2';
+  expect(session).toEqual(saved);expect(session.userId).toBe('user-future');expect(session.source_mix[0].question_source_id).toBe('q-source-v1');expect(session.source_mix[0].official_answer_revision).toBe(summer.officialAnswers.find(k=>k.question_id===session.question_ids[0])?.parser_revision);expect(session.source_mix[0].question_snapshot?.cropped_question_image).not.toBe('replacement.png');
+ });
+});

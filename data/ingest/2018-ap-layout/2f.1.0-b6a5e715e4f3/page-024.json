@@ -1,0 +1,61 @@
+{
+  "key": "33bc1d45c9cf6e45ee9e9ee7e53d0a14484673d2a7e3f93c2a65c85909ae8d43",
+  "record_hash": "a4e6e2b9cef3593fec471c33966e7c71c449b1c5dfa505515ae47efc8f2ee5a9",
+  "record": {
+    "page": 24,
+    "geometry": [
+      595.4400024414062,
+      842.0399780273438
+    ],
+    "classification": "questions",
+    "classification_evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2018-ap-p24-U5",
+        "number": "U5",
+        "bbox": [
+          34,
+          31,
+          78,
+          59
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Individually observed printed U5",
+        "review_reasons": [],
+        "heading_pixel_sha256": "738c522c37885c38a47a6f82b74e015dea81d27158a9c642de4d72be6985499f"
+      }
+    ],
+    "regions": [
+      {
+        "page": 24,
+        "bbox": [
+          31,
+          25,
+          554,
+          819
+        ],
+        "role": "primary",
+        "owner": "2018-ap-p24-U5",
+        "evidence": "Printed task heading plus ruled region border visually verified."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U5",
+        "bbox": [
+          34,
+          31,
+          78,
+          59
+        ],
+        "pixel_sha256": "738c522c37885c38a47a6f82b74e015dea81d27158a9c642de4d72be6985499f",
+        "audited_pixel_sha256": "738c522c37885c38a47a6f82b74e015dea81d27158a9c642de4d72be6985499f"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

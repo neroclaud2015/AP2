@@ -3,22 +3,22 @@ import { useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import AnswerPanel from './AnswerPanel';
 import { effectiveAnswer, validAnswerReview, type AnswerKey, type AnswerReview, type OfficialAnswer } from './answers';
 import {MODULES,examLabel,originalPageLink,moduleParts,questionPart,type ModuleConfig} from '../learning/modules';
-import { IndexedDBProgressRepository } from '../storage/storage';
+import {useAppServices} from '../services/context';
 import { CropImage } from './CropImage';
 import ReviewEditor from './ReviewEditor';
 import { asset, effectiveQuestion, questionSources,questionSourceUrl, validReview, type QuestionReview, type SegmentedExam } from './types';
 import './study.css';
 
-const repository = new IndexedDBProgressRepository();
 const reason = (value:string) => ({non_rectangular_layout:'L-förmiger Ausschnitt: Anordnung prüfen',single_ocr_label_evidence:'Aufgabennummer nur per OCR erkannt',uncertain_question_number:'Aufgabennummer unsicher'}[value] ?? value);
 export default function StudyApp({onBusy,onHome,uSolutions=[],config=MODULES[0],suppliedExam,suppliedAnswerKey,selectedNumber,onQuestionChange}:{onBusy?:(busy:boolean)=>void;onHome?:()=>void;uSolutions?:USolution[];config?:ModuleConfig;suppliedExam?:SegmentedExam;suppliedAnswerKey?:AnswerKey;selectedNumber?:string;onQuestionChange?:(number:string)=>void}={}) {
+  const {repository,user}=useAppServices();
   const [exam,setExam]=useState<SegmentedExam>(); const [reviews,setReviews]=useState<Record<string,QuestionReview>>({});
   const [answerKey,setAnswerKey]=useState<AnswerKey>(); const [answerReviews,setAnswerReviews]=useState<Record<string,AnswerReview>>({});
   const [answerEditing,setAnswerEditing]=useState(false); const [importing,setImporting]=useState(false);
   const [error,setError]=useState(''); const [message,setMessage]=useState('');
   const [selected,setSelected]=useState(''); const [tab,setTab]=useState<'study'|'review'|'debug'>('study');
   const [editing,setEditing]=useState(false); const [search,setSearch]=useState('');
-  useEffect(()=>{Promise.all([(suppliedExam?Promise.resolve({ok:true,json:()=>Promise.resolve(suppliedExam)}):fetch(asset(config.segmentedPath))).then(r=>{if(!r.ok)throw Error('Prüfungsdaten fehlen');return r.json();}),repository.getReviews('local'),(suppliedAnswerKey?Promise.resolve({ok:true,json:()=>Promise.resolve(suppliedAnswerKey)}):fetch(asset(config.answersPath))).then(r=>{if(!r.ok)throw Error('Antwortdaten fehlen');return r.json();}),repository.getAnswerReviews('local')])
+  useEffect(()=>{Promise.all([(suppliedExam?Promise.resolve({ok:true,json:()=>Promise.resolve(suppliedExam)}):fetch(asset(config.segmentedPath))).then(r=>{if(!r.ok)throw Error('Prüfungsdaten fehlen');return r.json();}),repository.getReviews(user.id),(suppliedAnswerKey?Promise.resolve({ok:true,json:()=>Promise.resolve(suppliedAnswerKey)}):fetch(asset(config.answersPath))).then(r=>{if(!r.ok)throw Error('Antwortdaten fehlen');return r.json();}),repository.getAnswerReviews(user.id)])
     .then(([data,saved,key,answers]:[SegmentedExam,QuestionReview[],AnswerKey,AnswerReview[]])=>{setExam(data);setAnswerKey(key);setAnswerReviews(Object.fromEntries(answers.filter(a=>data.questions.some(q=>q.question_id===a.question_id)).map(a=>[a.question_id,a])));setReviews(Object.fromEntries(saved.filter(r=>data.questions.some(q=>q.question_id===r.question_id)).map(r=>[r.question_id,r])));const number=selectedNumber??new URLSearchParams(location.search).get('q');setSelected(data.questions.find(q=>q.question_number===number)?.question_id??data.questions[0].question_id);})
     .catch(()=>setError('Die Prüfungsdaten oder der lokale Speicher konnten nicht geöffnet werden. Bitte Seite neu laden und Browserspeicher erlauben.'));},[]);
   useEffect(()=>{if(exam&&selectedNumber){const q=exam.questions.find(q=>q.question_number===selectedNumber);if(q)setSelected(q.question_id);}},[exam,selectedNumber]);
@@ -44,7 +44,7 @@ export default function StudyApp({onBusy,onHome,uSolutions=[],config=MODULES[0],
     const importedAnswers=data.schema_version===2?data.answer_reviews:[];
     if(!Array.isArray(importedAnswers)||!importedAnswers.every(validAnswerReview)||importedAnswers.some((a:AnswerReview)=>!answers.some(q=>q.question_id===a.question_id)))throw Error();
     for(const r of data.reviews as QuestionReview[]){const q=exam.questions.find(q=>q.question_id===r.question_id);if(!q||r.bounding_box[2]>q.source_size[0]||r.bounding_box[3]>q.source_size[1]||r.regions.some(b=>b[0]<r.bounding_box[0]||b[1]<r.bounding_box[1]||b[2]>r.bounding_box[2]||b[3]>r.bounding_box[3])||r.solution_page!==null&&!new Set([...exam.solution_document.pages.map(p=>p.number),...answers.map(a=>a.source_page),...uSolutions.map(s=>s.solution_source_page)]).has(r.solution_page))throw Error();}
-    await repository.importReviews(data.reviews,importedAnswers);setAnswerReviews(Object.fromEntries((await repository.getAnswerReviews('local')).filter(a=>exam.questions.some(q=>q.question_id===a.question_id)).map(a=>[a.question_id,a])));setReviews(Object.fromEntries((await repository.getReviews('local')).filter(r=>exam.questions.some(q=>q.question_id===r.question_id)).map(r=>[r.question_id,r])));setMessage('Sicherung importiert.');
+    await repository.importReviews(data.reviews,importedAnswers,user.id);setAnswerReviews(Object.fromEntries((await repository.getAnswerReviews(user.id)).filter(a=>exam.questions.some(q=>q.question_id===a.question_id)).map(a=>[a.question_id,a])));setReviews(Object.fromEntries((await repository.getReviews(user.id)).filter(r=>exam.questions.some(q=>q.question_id===r.question_id)).map(r=>[r.question_id,r])));setMessage('Sicherung importiert.');
   }catch{setMessage('Import nicht möglich: ungültige Daten oder andere Prüfung. Vorhandene Änderungen bleiben erhalten.');}finally{setImporting(false);}};
   if(error)return <main role="alert">{error}</main>;
   if(!exam||!current||!original||!answerKey)return <main>Aufgaben werden geladen…</main>;

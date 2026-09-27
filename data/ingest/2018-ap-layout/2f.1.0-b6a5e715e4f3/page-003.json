@@ -1,0 +1,61 @@
+{
+  "key": "d0d7915506000f7a2281a0e688f99a09b2ceb30ab372dd7f6d2aa0c3c8932745",
+  "record_hash": "0e646a851f2582eaa20bd29c51158576f36b9c7cb1275593ec77ececa5c2e747",
+  "record": {
+    "page": 3,
+    "geometry": [
+      595.4400024414062,
+      842.0399780273438
+    ],
+    "classification": "questions",
+    "classification_evidence": "Individually viewed registered cached source page; explicit printed heading ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2018-ap-p3-1",
+        "number": "1",
+        "bbox": [
+          56,
+          301,
+          91,
+          328
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Individually observed printed 1",
+        "review_reasons": [],
+        "heading_pixel_sha256": "d7dc1f0bb408c0567750fe0e0ef23efc518d53ff177adb43ac955be2bcc3767a"
+      }
+    ],
+    "regions": [
+      {
+        "page": 3,
+        "bbox": [
+          55,
+          297,
+          551,
+          787
+        ],
+        "role": "primary",
+        "owner": "2018-ap-p3-1",
+        "evidence": "Printed task heading plus ruled region border visually verified."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "1",
+        "bbox": [
+          56,
+          301,
+          91,
+          328
+        ],
+        "pixel_sha256": "d7dc1f0bb408c0567750fe0e0ef23efc518d53ff177adb43ac955be2bcc3767a",
+        "audited_pixel_sha256": "d7dc1f0bb408c0567750fe0e0ef23efc518d53ff177adb43ac955be2bcc3767a"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

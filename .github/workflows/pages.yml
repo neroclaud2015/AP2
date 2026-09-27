@@ -27,6 +27,7 @@ jobs:
       - run: python scripts/validate_segmentation.py
       - run: python scripts/validate_answers.py
       - run: python scripts/validate_u_solutions.py
+      - run: python scripts/validate_source_registry.py
       - run: npm test
       - run: npm run build
       - run: python scripts/publish_layout_evidence.py
@@ -34,6 +35,7 @@ jobs:
       - run: python scripts/publish_phase2e.py
       - run: python scripts/publish_phase2e1.py
       - run: python scripts/publish_module_year_filter.py
+      - run: python scripts/publish_phase2f.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

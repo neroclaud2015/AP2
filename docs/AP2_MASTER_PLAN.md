@@ -1093,3 +1093,16 @@ mistake types
 review performance
 and adapts future study priorities without losing traceability to the real historical exam archive.
 END OF MASTER PLAN
+
+## Phase 2F operational checkpoint (2026-09-27)
+
+This checkpoint limits the implemented scope; broader sections above remain future plans.
+
+- Complete repository/auth/sync contracts; actual runtime remains local IndexedDB v6 with LocalUserProvider and NoopSyncProvider.
+- Source Registry covers all production sources. Replacement is append-only: new source hash/version, every validation gate, complete verified identity mapping. Unsafe mappings block; personal records are never migrated automatically.
+- New records snapshot source/official-answer revisions; old tests retain their original questions, sourceExams and source_mix.
+- Sommer 2018 WiSo validated: 24 questions,18 MC official answers,6 U screenshot solutions; registered through existing data-driven learning/original/test interfaces.
+- Sommer2018 AP and FA blocked: required Stückliste Blatt2 is absent. AP36-question preview retained; FA stopped before detailed segmentation. Neither is production.
+- No old source rescans and no later years. No real auth/cloud sync/taxonomy/AI generation. Stop for acceptance.
+
+Detailed evidence: docs/PHASE_2F_REPORT.md and docs/evidence/phase2f/.

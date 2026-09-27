@@ -1,0 +1,172 @@
+{
+  "url": "http://127.0.0.1:5173/",
+  "checks": {
+    "old_records_exactly_unchanged": true,
+    "old_all_years_test_not_reassembled": true,
+    "blocked_modules_not_enterable": true,
+    "mc_shared_context_available": true,
+    "wiso_mc_official_source": true,
+    "wiso_u_self_assessment_persists": true,
+    "exam_mc_shared_context_available": true,
+    "original_order_pause_refresh_submit": true,
+    "three_season_all_years": true,
+    "single_year_exclusive": true,
+    "back_forward_refresh": true,
+    "immutable_provenance_snapshots": true,
+    "old_personal_and_review_data_unchanged": true,
+    "mobile_no_overflow": true
+  },
+  "mixes": [
+    {
+      "filter": "all",
+      "source_mix": [
+        {
+          "exam": "2018-sommer",
+          "question_id": "2018-wiso-p10-U5"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p4-slot3"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p7-slot2"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p6-4"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p8-9"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p10-U5"
+        },
+        {
+          "exam": "2018-sommer",
+          "question_id": "2018-wiso-p9-13"
+        },
+        {
+          "exam": "2018-sommer",
+          "question_id": "2018-wiso-p6-6"
+        }
+      ]
+    },
+    {
+      "filter": "2018-sommer",
+      "source_mix": [
+        {
+          "exam": "2018-sommer",
+          "question_id": "2018-wiso-p11-16"
+        },
+        {
+          "exam": "2018-sommer",
+          "question_id": "2018-wiso-p4-1"
+        },
+        {
+          "exam": "2018-sommer",
+          "question_id": "2018-wiso-p8-U4"
+        },
+        {
+          "exam": "2018-sommer",
+          "question_id": "2018-wiso-p6-4"
+        },
+        {
+          "exam": "2018-sommer",
+          "question_id": "2018-wiso-p10-14"
+        },
+        {
+          "exam": "2018-sommer",
+          "question_id": "2018-wiso-p9-11"
+        },
+        {
+          "exam": "2018-sommer",
+          "question_id": "2018-wiso-p8-10"
+        },
+        {
+          "exam": "2018-sommer",
+          "question_id": "2018-wiso-p5-U2"
+        }
+      ]
+    },
+    {
+      "filter": "2017-sommer",
+      "source_mix": [
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p5-slot3"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p6-slot0"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p7-slot3"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p6-slot3"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p8-slot1"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p4-slot1"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p7-slot1"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p5-slot5"
+        }
+      ]
+    },
+    {
+      "filter": "2017-18-winter",
+      "source_mix": [
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p10-14"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p8-9"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p7-8"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p13-18"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p8-U4"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p9-10"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p10-13"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p5-U2"
+        }
+      ]
+    }
+  ],
+  "isolated_browser": true,
+  "private_baseline_not_published": true,
+  "errors": []
+}

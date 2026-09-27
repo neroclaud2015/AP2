@@ -1,9 +1,9 @@
 import {useLayoutEffect,useRef,useState} from 'react';
-import type {IndexedDBProgressRepository} from '../storage/storage';
+import type {ProgressRepository} from '../types';
 import type {TestSession} from './model';
 
 export interface RecordLifecycleProps {
- compact?:boolean;session:TestSession;repository:IndexedDBProgressRepository;disabled?:boolean;
+ compact?:boolean;session:TestSession;repository:ProgressRepository;disabled?:boolean;
  onUpdated:(session:TestSession)=>void;onDeleted:(id:string)=>void;onBusy?:(busy:boolean)=>void;
 }
 export default function RecordLifecycle({session,repository,compact=false,disabled=false,onUpdated,onDeleted,onBusy}:RecordLifecycleProps){

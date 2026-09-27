@@ -1,0 +1,156 @@
+{
+  "scope": "2018-wiso",
+  "profile_id": "official-ring-grid",
+  "version": "2f.1.0",
+  "name": "2018_sommer_wiso",
+  "exam": "2018_sommer",
+  "module": "WiSo",
+  "source_hash": "bd8bef30b55fa7ca61e8500500eb6a27f595bdc6924201d8643796ffc9ce4f36",
+  "source_id": "src-15c4c680b99b7d888e2df37c",
+  "question_source_id": "src-d25b2363c0829530c1006d9c",
+  "solution_source_id": "src-15c4c680b99b7d888e2df37c",
+  "validated_sources": [
+    "bd8bef30b55fa7ca61e8500500eb6a27f595bdc6924201d8643796ffc9ce4f36"
+  ],
+  "choice_page": 3,
+  "choice_count": 18,
+  "analysis_size": [
+    993,
+    1404
+  ],
+  "groups": [
+    [
+      1,
+      10,
+      135.5,
+      60.1,
+      390.8,
+      19.9,
+      0,
+      363
+    ],
+    [
+      11,
+      8,
+      135.5,
+      60.1,
+      509.6,
+      20.0,
+      0,
+      482
+    ]
+  ],
+  "grid_crop": [
+    105,
+    360,
+    720,
+    603
+  ],
+  "ring_policy": {
+    "min_ring": 0.4,
+    "support": 0.83,
+    "possible_ring": 0.32,
+    "possible_support": 0.58,
+    "margin": 0.15,
+    "center": 0.1
+  },
+  "header_evidence": "Physical3 printed S18 9907 L10, Sommer2018, Wirtschafts- und Sozialkunde; all 18 column numbers visually verified in 10+8 grid. No semantic inference.",
+  "page_image_hashes": {
+    "3": "f75be90e9577c44d18bcf23ac1deb0a829d1576959ca11e49c7e51a8d04c3d73",
+    "12": "736eecc13ea1ca94772a3fb77ee96ad9fd405351207bf545abb12ecf730feaa2",
+    "13": "d2e467f517a93e5c28028557d126d2d308e46657a971b8fde18afc7a39c3ac6e"
+  },
+  "u_evidence": "Physical12 printed Sommer2018 Wirtschafts- und Sozialkunde S18 9907 L contains U1-U4; reverse physical13 explicitly U5/U6. U2 is a whole-task table, no invented numbered subparts. U1 3, U3 2, U4 4, U5 3, U6 2 printed subparts.",
+  "u_regions": {
+    "U1": {
+      "regions": [
+        {
+          "page": 12,
+          "bbox": [
+            29,
+            232,
+            566,
+            313
+          ]
+        }
+      ],
+      "count": 3,
+      "diagram_parts": []
+    },
+    "U2": {
+      "regions": [
+        {
+          "page": 12,
+          "bbox": [
+            29,
+            313,
+            566,
+            594
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": []
+    },
+    "U3": {
+      "regions": [
+        {
+          "page": 12,
+          "bbox": [
+            29,
+            594,
+            566,
+            681
+          ]
+        }
+      ],
+      "count": 2,
+      "diagram_parts": []
+    },
+    "U4": {
+      "regions": [
+        {
+          "page": 12,
+          "bbox": [
+            29,
+            681,
+            566,
+            811
+          ]
+        }
+      ],
+      "count": 4,
+      "diagram_parts": []
+    },
+    "U5": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            15,
+            15,
+            550,
+            110
+          ]
+        }
+      ],
+      "count": 3,
+      "diagram_parts": []
+    },
+    "U6": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            15,
+            110,
+            550,
+            201
+          ]
+        }
+      ],
+      "count": 2,
+      "diagram_parts": []
+    }
+  }
+}

@@ -1,9 +1,11 @@
+import sourceRegistry from '../../public/data/source_registry.json';
+import {assertProductionModule} from '../sources/registry';
 import {parseSourceExams,type SourceExams} from './sourceExams';
 import type {Attempt,LearningSession} from './model';
 export type ModuleSlug=string;
 export type View='start'|'learn'|'exams'|'tests'|'session'|'study'|'review';
 export interface PartConfig {id:string;title:string;kind:'multiple_choice'|'multi_part';label:string;questionNumbers:string[]}
-export interface ModuleConfig {examId:string;slug:ModuleSlug;title:string;segmentedPath:string;answersPath:string;solutionsPath:string;choiceSolutionPage:number;descriptionPage:number;descriptionLabel?:string;attachmentPages:number[];parts:PartConfig[];durationMinutes:number|null;sourcePageImages?:Record<number,string>;durationSource?:{pdf:string;page:number;image?:string}}
+export interface ModuleConfig {examId:string;slug:ModuleSlug;title:string;segmentedPath:string;answersPath:string;solutionsPath:string;choiceSolutionPage:number;descriptionPage:number;descriptionLabel?:string;sharedContextForAllQuestions?:boolean;attachmentPages:number[];parts:PartConfig[];durationMinutes:number|null;sourcePageImages?:Record<number,string>;durationSource?:{pdf:string;page:number;image?:string}}
 const standardParts=():PartConfig[]=>[
  {id:'A',title:'Teil A',kind:'multiple_choice',label:'Auswahlaufgaben',questionNumbers:Array.from({length:28},(_,i)=>String(i+1))},
  {id:'B',title:'Teil B',kind:'multi_part',label:'Offene Aufgaben',questionNumbers:Array.from({length:8},(_,i)=>`U${i+1}`)},
@@ -21,8 +23,13 @@ export const MODULES:ModuleConfig[]=[
  {id:'A',title:'Gebundene Aufgaben',kind:'multiple_choice',label:'Auswahlaufgaben',questionNumbers:Array.from({length:18},(_,i)=>String(i+1))},
  {id:'B',title:'Ungebundene Aufgaben',kind:'multi_part',label:'Offene Aufgaben',questionNumbers:Array.from({length:6},(_,i)=>`U${i+1}`)},
  ]},
+ {examId:'2018-sommer',slug:'wiso',title:'WiSo',segmentedPath:'data/2018_sommer_wiso_segmented.json',answersPath:'data/2018_sommer_wiso_answers.json',solutionsPath:'data/2018_sommer_wiso_u_solutions.json',choiceSolutionPage:3,descriptionPage:3,descriptionLabel:'Prüfungsaufgaben-Beschreibung',sharedContextForAllQuestions:true,attachmentPages:[13],durationMinutes:60,durationSource:{pdf:'',page:2,image:'assets/questions/d70911bd62cdd7a47a13c1ee/2f.1.0-f88a0acb6f43/attachment-2-0.png'},sourcePageImages:{3:'assets/questions/d70911bd62cdd7a47a13c1ee/2f.1.0-f88a0acb6f43/attachment-3-1.png',13:'assets/questions/d70911bd62cdd7a47a13c1ee/2f.1.0-f88a0acb6f43/attachment-13-2.png'},parts:[
+  {id:'A',title:'Gebundene Aufgaben',kind:'multiple_choice',label:'Auswahlaufgaben',questionNumbers:Array.from({length:18},(_,i)=>String(i+1))},
+  {id:'B',title:'Ungebundene Aufgaben',kind:'multi_part',label:'Offene Aufgaben',questionNumbers:Array.from({length:6},(_,i)=>`U${i+1}`)},
+ ]},
 ];
-export const EXAM_SESSIONS=[{id:'2017-sommer',label:'Sommer 2017'},{id:'2017-18-winter',label:'Winter 2017/18'}];
+for(const module of MODULES)assertProductionModule(sourceRegistry,module);
+export const EXAM_SESSIONS=[{id:'2017-sommer',label:'Sommer 2017'},{id:'2017-18-winter',label:'Winter 2017/18'},{id:'2018-sommer',label:'Sommer 2018'}];
 export const MODULE_TITLES:Record<string,string>={arbeitsplanung:'Arbeitsplanung',funktionsanalyse:'Funktionsanalyse',wiso:'WiSo'};
 export function examLabel(id:string){return EXAM_SESSIONS.find(e=>e.id===id)?.label??id;}
 export function moduleKey(config:Pick<ModuleConfig,'examId'|'slug'>){return `${config.examId}/${config.slug}`;}
@@ -34,7 +41,7 @@ export function questionPart(config:ModuleConfig,number:string){return config.pa
 export interface LearningRoute {view:View;examId:string;module:ModuleSlug;number:string;sessionId?:string;sourceExams?:SourceExams}
 export function readRoute(search:string):LearningRoute {
  const p=new URLSearchParams(search);const requested=p.get('view');
- const config=MODULES.find(m=>m.slug===(p.get('module')??MODULES[0].slug)&&m.examId===(p.get('exam')??MODULES[0].examId))??MODULES[0];
+ const config=MODULES.find(m=>m.slug===(p.get('module')??MODULES[0].slug)&&m.examId===(p.get('exam')??MODULES[0].examId))??MODULES.find(m=>m.examId===p.get('exam'))??MODULES[0];
  return {view:(['start','learn','exams','tests','session','study','review'].includes(requested??'')?requested:p.has('q')?'study':'start') as View,examId:config.examId,module:config.slug,number:p.get('q')??config.parts[0].questionNumbers[0],...((requested==='tests'||requested==='session'&&p.has('years'))?{sourceExams:parseSourceExams(p.get('years'))}:{}),...(requested==='session'&&p.get('session')?{sessionId:p.get('session')!}:{})};
 }
 export function routeUrl(route:LearningRoute,href:string):URL {

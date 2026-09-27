@@ -1,0 +1,161 @@
+{
+  "key": "49bb3f2c2d9b79dd6d69fa617569b99fc8af46b751cfe5463faddf92053f70a7",
+  "record_hash": "f731f9de22c48ec38e38d6620958efd8a8665b1d88cbe77c89c1d6c6a50f10d5",
+  "record": {
+    "page": 9,
+    "geometry": [
+      595.4400024414062,
+      842.0399780273438
+    ],
+    "classification": "mixed_questions",
+    "classification_evidence": "Cached original page individually visually inspected; all printed headings transcribed without sequential inference.",
+    "anchors": [
+      {
+        "anchor_id": "2018-wiso-p9-11",
+        "number": "11",
+        "bbox": [
+          64,
+          300,
+          92,
+          325
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 11 individually observed on physical page 9.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "e395d6c6442059b7d91f74e8188c80505c72ad5424417477e547ed0e7598cc23"
+      },
+      {
+        "anchor_id": "2018-wiso-p9-12",
+        "number": "12",
+        "bbox": [
+          305,
+          300,
+          335,
+          324
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 12 individually observed on physical page 9.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "72334addbca1c9759b0e603add4310ebed2de79153230cb7b849ccccd4cef2c4"
+      },
+      {
+        "anchor_id": "2018-wiso-p9-13",
+        "number": "13",
+        "bbox": [
+          63,
+          542,
+          93,
+          567
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 13 individually observed on physical page 9.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "9925170dac2251ed721979899a8a65de65bfc90b840fc26e5df83aed2a4f48d5"
+      }
+    ],
+    "regions": [
+      {
+        "page": 9,
+        "bbox": [
+          63,
+          297,
+          302,
+          539
+        ],
+        "role": "primary",
+        "owner": "2018-wiso-p9-11",
+        "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          302,
+          297,
+          539,
+          539
+        ],
+        "role": "primary",
+        "owner": "2018-wiso-p9-12",
+        "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          63,
+          539,
+          304,
+          784
+        ],
+        "role": "primary",
+        "owner": "2018-wiso-p9-13",
+        "evidence": "Complete printed question panel including all options, tables/diagrams and answer areas; neighboring question panels excluded."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          64,
+          49,
+          537,
+          297
+        ],
+        "role": "continuation",
+        "owner": "2018-wiso-p8-U4",
+        "evidence": "Printed Ergebnis U4 and subparts 3 and 4 explicitly continue U4 subparts 1 and 2 from physical page8."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "11",
+        "bbox": [
+          64,
+          300,
+          92,
+          325
+        ],
+        "pixel_sha256": "e395d6c6442059b7d91f74e8188c80505c72ad5424417477e547ed0e7598cc23",
+        "audited_pixel_sha256": "e395d6c6442059b7d91f74e8188c80505c72ad5424417477e547ed0e7598cc23"
+      },
+      {
+        "kind": "heading",
+        "number": "12",
+        "bbox": [
+          305,
+          300,
+          335,
+          324
+        ],
+        "pixel_sha256": "72334addbca1c9759b0e603add4310ebed2de79153230cb7b849ccccd4cef2c4",
+        "audited_pixel_sha256": "72334addbca1c9759b0e603add4310ebed2de79153230cb7b849ccccd4cef2c4"
+      },
+      {
+        "kind": "heading",
+        "number": "13",
+        "bbox": [
+          63,
+          542,
+          93,
+          567
+        ],
+        "pixel_sha256": "9925170dac2251ed721979899a8a65de65bfc90b840fc26e5df83aed2a4f48d5",
+        "audited_pixel_sha256": "9925170dac2251ed721979899a8a65de65bfc90b840fc26e5df83aed2a4f48d5"
+      },
+      {
+        "kind": "ownership",
+        "number": "Ergebnis U4",
+        "bbox": [
+          491,
+          101,
+          530,
+          127
+        ],
+        "pixel_sha256": "db5809761a25cdbcc3ddda0cddc2d09f0b730fa51d235f8446f99f38f0544081",
+        "audited_pixel_sha256": "db5809761a25cdbcc3ddda0cddc2d09f0b730fa51d235f8446f99f38f0544081"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "key": "8b7a51bd1e4b9b124c6a9454040f43d02e10207c73038e1fa4ced4c1577986f7",
+  "value": {
+    "question_id": "2018-wiso-p4-U1",
+    "question_number": "U1",
+    "exam": "2018_sommer",
+    "module": "WiSo",
+    "solution_source_pdf": "assets/pdfs/bd8bef30b55fa7ca61e85005.pdf",
+    "solution_source_pdf_available": false,
+    "solution_source_page": 12,
+    "solution_bbox": [
+      29,
+      232,
+      566,
+      313
+    ],
+    "regions": [
+      {
+        "source_page": 12,
+        "bbox": [
+          29,
+          232,
+          566,
+          313
+        ]
+      }
+    ],
+    "cropped_solution_image": "assets/official/2018-wiso-2f.1.0-2ef2f657205b/U1.png",
+    "review_status": "auto_ready",
+    "answer_type": "multi_part",
+    "subparts": [
+      {
+        "id": "1",
+        "label": "1 · Teilaufgabe 1",
+        "type": "short_text"
+      },
+      {
+        "id": "2",
+        "label": "2 · Teilaufgabe 2",
+        "type": "short_text"
+      },
+      {
+        "id": "3",
+        "label": "3 · Teilaufgabe 3",
+        "type": "short_text"
+      }
+    ],
+    "source_hash": "bd8bef30b55fa7ca61e8500500eb6a27f595bdc6924201d8643796ffc9ce4f36",
+    "extractor_revision": "2018-wiso-2f.1.0-2ef2f657205b",
+    "association_evidence": "Physical12 printed Sommer2018 Wirtschafts- und Sozialkunde S18 9907 L contains U1-U4; reverse physical13 explicitly U5/U6. U2 is a whole-task table, no invented numbered subparts. U1 3, U3 2, U4 4, U5 3, U6 2 printed subparts.",
+    "grading_policy": "Printed subparts only; user self-assessment; no numeric rubric or answer inference.",
+    "source_cache_hashes": {
+      "12": "736eecc13ea1ca94772a3fb77ee96ad9fd405351207bf545abb12ecf730feaa2"
+    },
+    "bbox_units": "PDF points, top-left"
+  },
+  "value_hash": "0a275cf358e83116f2d683c7d9fae01a80a46bb737a15c48c996cdae11609d7d",
+  "artifacts": {
+    "public/assets/official/2018-wiso-2f.1.0-2ef2f657205b/U1.png": "0248c53dc3a70d51a27a0564ed368907fe250461d9fa730a261b47a7755f0a09"
+  }
+}
