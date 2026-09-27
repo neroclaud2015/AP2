@@ -1,0 +1,21 @@
+const { chromium } = require('playwright');
+const fs=require('node:fs');
+(async()=>{
+ const root=(process.env.EVIDENCE_URL||'http://127.0.0.1:4173/evidence/layout-profiles/').replace(/\/?$/,'/');
+ const browser=await chromium.launch({channel:'chrome',headless:true});
+ const page=await browser.newPage({viewport:{width:1440,height:1000}});
+ const response=await page.goto(root);if(response.status()!==200)throw Error('Evidence HTTP '+response.status());
+ await page.getByRole('heading',{name:'Phase 2B.1 — visual acceptance'}).waitFor();
+ await page.getByRole('link',{name:'All 36 final question crops'}).click();
+ const count=await page.locator('article').count();if(count!==36)throw Error('Expected36; got '+count);
+ await page.evaluate(async()=>{await Promise.all([...document.images].map(im=>{im.loading='eager';return im.decode();}));});
+ const broken=await page.evaluate(()=>[...document.images].filter(i=>!i.naturalWidth).length);if(broken)throw Error('Broken crop image');
+ const dbs=await page.evaluate(()=>indexedDB.databases());if(dbs.length)throw Error('Evidence must not create IndexedDB');
+ await page.getByRole('link',{name:'Q15 / Q16 / full table'}).click();
+ await page.getByRole('heading',{name:'Q16 final crop + complete table'}).waitFor();
+ await page.evaluate(async()=>{await Promise.all([...document.images].map(i=>i.decode()));});
+ if(process.env.EVIDENCE_SCREENSHOT)await page.screenshot({path:process.env.EVIDENCE_SCREENSHOT,fullPage:true});
+ await page.goto(root+'legacy.html');await page.getByRole('heading',{name:'Legacy Sommer 2017 AP regression: passed'}).waitFor();
+ console.log(JSON.stringify({url:root,crops:count,broken_images:broken,indexeddb_created:dbs.length,q15_q16:true,legacy:true}));
+ await browser.close();
+})().catch(e=>{console.error(e);process.exit(1)});

@@ -1,0 +1,570 @@
+{
+  "profile": "ap_2017_18",
+  "version": "2b.1.1",
+  "config_hash": "a2fe9c23bdbf61a4",
+  "source_hash": "f5e152ae12d23f22345ae8b5f6f60208eaab095cbe5e3c7d5eecf563af6b6c21",
+  "status": "blocked",
+  "classification": "Blocked",
+  "detected_question_count": 0,
+  "anchor_count": 0,
+  "expected_question_count": 36,
+  "expected": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6",
+    "U7",
+    "U8"
+  ],
+  "missing": [
+    "1",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "2",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6",
+    "U7",
+    "U8"
+  ],
+  "duplicates": [],
+  "unexpected": [],
+  "continuation_regions": [],
+  "review_count": 17,
+  "review_unit": "physical pages",
+  "question_review_count": 0,
+  "blocking_issues": [
+    {
+      "page": 3,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 4,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 5,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 6,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 7,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 8,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 9,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 10,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 15,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 16,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 17,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 18,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 19,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 20,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 21,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 22,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 23,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 3,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 4,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 5,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 6,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 7,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 8,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 9,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 10,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 15,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 16,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 17,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 18,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 19,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 20,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 21,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 22,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 23,
+      "reason": "unowned_primary"
+    }
+  ],
+  "attachment_references": {},
+  "continuation_candidates": [
+    {
+      "page": 20,
+      "candidate_owner": "U5",
+      "evidence": "U5 on p19; flow chart response on p20, no machine-verified anchor"
+    }
+  ],
+  "review_queue": [
+    {
+      "page": 3,
+      "reason": "raster portrait layout requires verified heading/boundary detector",
+      "status": "needs_review"
+    },
+    {
+      "page": 4,
+      "reason": "raster portrait layout requires verified heading/boundary detector",
+      "status": "needs_review"
+    },
+    {
+      "page": 5,
+      "reason": "raster portrait layout requires verified heading/boundary detector",
+      "status": "needs_review"
+    },
+    {
+      "page": 6,
+      "reason": "raster portrait layout requires verified heading/boundary detector",
+      "status": "needs_review"
+    },
+    {
+      "page": 7,
+      "reason": "raster portrait layout requires verified heading/boundary detector",
+      "status": "needs_review"
+    },
+    {
+      "page": 8,
+      "reason": "raster portrait layout requires verified heading/boundary detector",
+      "status": "needs_review"
+    },
+    {
+      "page": 9,
+      "reason": "raster portrait layout requires verified heading/boundary detector",
+      "status": "needs_review"
+    },
+    {
+      "page": 10,
+      "reason": "raster portrait layout requires verified heading/boundary detector",
+      "status": "needs_review"
+    },
+    {
+      "page": 15,
+      "reason": "raster portrait layout requires verified heading/boundary detector",
+      "status": "needs_review"
+    },
+    {
+      "page": 16,
+      "reason": "raster portrait layout requires verified heading/boundary detector",
+      "status": "needs_review"
+    },
+    {
+      "page": 17,
+      "reason": "raster portrait layout requires verified heading/boundary detector",
+      "status": "needs_review"
+    },
+    {
+      "page": 18,
+      "reason": "raster portrait layout requires verified heading/boundary detector",
+      "status": "needs_review"
+    },
+    {
+      "page": 19,
+      "reason": "raster portrait layout requires verified heading/boundary detector",
+      "status": "needs_review"
+    },
+    {
+      "page": 20,
+      "reason": "raster portrait layout requires verified heading/boundary detector",
+      "status": "needs_review"
+    },
+    {
+      "page": 21,
+      "reason": "raster portrait layout requires verified heading/boundary detector",
+      "status": "needs_review"
+    },
+    {
+      "page": 22,
+      "reason": "raster portrait layout requires verified heading/boundary detector",
+      "status": "needs_review"
+    },
+    {
+      "page": 23,
+      "reason": "raster portrait layout requires verified heading/boundary detector",
+      "status": "needs_review"
+    },
+    {
+      "page": 3,
+      "reason": "unowned_primary",
+      "status": "needs_review"
+    },
+    {
+      "page": 4,
+      "reason": "unowned_primary",
+      "status": "needs_review"
+    },
+    {
+      "page": 5,
+      "reason": "unowned_primary",
+      "status": "needs_review"
+    },
+    {
+      "page": 6,
+      "reason": "unowned_primary",
+      "status": "needs_review"
+    },
+    {
+      "page": 7,
+      "reason": "unowned_primary",
+      "status": "needs_review"
+    },
+    {
+      "page": 8,
+      "reason": "unowned_primary",
+      "status": "needs_review"
+    },
+    {
+      "page": 9,
+      "reason": "unowned_primary",
+      "status": "needs_review"
+    },
+    {
+      "page": 10,
+      "reason": "unowned_primary",
+      "status": "needs_review"
+    },
+    {
+      "page": 15,
+      "reason": "unowned_primary",
+      "status": "needs_review"
+    },
+    {
+      "page": 16,
+      "reason": "unowned_primary",
+      "status": "needs_review"
+    },
+    {
+      "page": 17,
+      "reason": "unowned_primary",
+      "status": "needs_review"
+    },
+    {
+      "page": 18,
+      "reason": "unowned_primary",
+      "status": "needs_review"
+    },
+    {
+      "page": 19,
+      "reason": "unowned_primary",
+      "status": "needs_review"
+    },
+    {
+      "page": 20,
+      "reason": "unowned_primary",
+      "status": "needs_review"
+    },
+    {
+      "page": 21,
+      "reason": "unowned_primary",
+      "status": "needs_review"
+    },
+    {
+      "page": 22,
+      "reason": "unowned_primary",
+      "status": "needs_review"
+    },
+    {
+      "page": 23,
+      "reason": "unowned_primary",
+      "status": "needs_review"
+    }
+  ],
+  "issues": [
+    {
+      "page": 3,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 4,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 5,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 6,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 7,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 8,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 9,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 10,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 15,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 16,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 17,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 18,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 19,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 20,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 21,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 22,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 23,
+      "reason": "raster portrait layout requires verified heading/boundary detector"
+    },
+    {
+      "page": 3,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 4,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 5,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 6,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 7,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 8,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 9,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 10,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 15,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 16,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 17,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 18,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 19,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 20,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 21,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 22,
+      "reason": "unowned_primary"
+    },
+    {
+      "page": 23,
+      "reason": "unowned_primary"
+    }
+  ],
+  "ownership_errors": [
+    "unowned_primary",
+    "unowned_primary",
+    "unowned_primary",
+    "unowned_primary",
+    "unowned_primary",
+    "unowned_primary",
+    "unowned_primary",
+    "unowned_primary",
+    "unowned_primary",
+    "unowned_primary",
+    "unowned_primary",
+    "unowned_primary",
+    "unowned_primary",
+    "unowned_primary",
+    "unowned_primary",
+    "unowned_primary",
+    "unowned_primary"
+  ],
+  "physical_pages_checked": 25,
+  "formal_records_generated": false
+}

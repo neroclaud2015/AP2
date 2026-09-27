@@ -29,6 +29,7 @@ jobs:
       - run: python scripts/validate_u_solutions.py
       - run: npm test
       - run: npm run build
+      - run: python scripts/publish_layout_evidence.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

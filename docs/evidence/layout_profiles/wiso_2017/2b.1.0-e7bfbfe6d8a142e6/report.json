@@ -1,0 +1,94 @@
+{
+  "profile": "wiso_2017",
+  "version": "2b.1.0",
+  "config_hash": "e7bfbfe6d8a142e6",
+  "source_hash": "3542821032c4d6b251a2e78c7e370428c373ff41b38f0759304205c105b07697",
+  "status": "blocked",
+  "classification": "Blocked",
+  "detected_question_count": 18,
+  "anchor_count": 18,
+  "expected_question_count": 24,
+  "expected": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6"
+  ],
+  "missing": [
+    "10",
+    "11",
+    "12",
+    "8",
+    "9",
+    "U3"
+  ],
+  "duplicates": [],
+  "unexpected": [],
+  "continuation_regions": [
+    {
+      "page": 4,
+      "bbox": [
+        638,
+        45,
+        1162,
+        295
+      ],
+      "role": "continuation",
+      "owner": null,
+      "evidence": "cross-half response area; owner not yet verified"
+    }
+  ],
+  "review_count": 5,
+  "review_unit": "physical pages",
+  "issues": [
+    {
+      "page": 4,
+      "reason": "cross-half response area; owner not yet verified"
+    },
+    {
+      "page": 4,
+      "reason": "region_ownership_not_validated"
+    },
+    {
+      "page": 5,
+      "reason": "region_ownership_not_validated"
+    },
+    {
+      "page": 6,
+      "reason": "region_ownership_not_validated"
+    },
+    {
+      "page": 7,
+      "reason": "no_embedded_text_layer"
+    },
+    {
+      "page": 8,
+      "reason": "region_ownership_not_validated"
+    }
+  ],
+  "ownership_errors": [
+    "unowned_continuation"
+  ],
+  "physical_pages_checked": 9,
+  "formal_records_generated": false
+}

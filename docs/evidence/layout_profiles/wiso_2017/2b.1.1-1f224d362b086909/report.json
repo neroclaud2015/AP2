@@ -1,0 +1,111 @@
+{
+  "profile": "wiso_2017",
+  "version": "2b.1.1",
+  "config_hash": "1f224d362b086909",
+  "source_hash": "3542821032c4d6b251a2e78c7e370428c373ff41b38f0759304205c105b07697",
+  "status": "blocked",
+  "classification": "Blocked",
+  "detected_question_count": 20,
+  "anchor_count": 20,
+  "expected_question_count": 24,
+  "expected": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6"
+  ],
+  "missing": [
+    "11",
+    "8",
+    "9",
+    "U3"
+  ],
+  "duplicates": [],
+  "unexpected": [],
+  "continuation_regions": [
+    {
+      "page": 4,
+      "bbox": [
+        638,
+        45,
+        1170,
+        290
+      ],
+      "role": "continuation",
+      "owner": "wiso_2017-p5-slot2",
+      "evidence": "Printed U6 score label on p4 right; tablet purchase scenario subparts 3/4 continue p5 U6 subparts 1/2"
+    }
+  ],
+  "review_count": 2,
+  "review_unit": "physical pages",
+  "question_review_count": 0,
+  "blocking_issues": [
+    {
+      "page": 7,
+      "reason": "unverified_heading:11"
+    },
+    {
+      "page": 7,
+      "reason": "unverified_heading:U3"
+    },
+    {
+      "page": 8,
+      "reason": "unverified_heading:8"
+    },
+    {
+      "page": 8,
+      "reason": "unverified_heading:9"
+    }
+  ],
+  "attachment_references": {
+    "U1": [
+      9
+    ]
+  },
+  "issues": [
+    {
+      "page": 7,
+      "reason": "unverified_heading:11"
+    },
+    {
+      "page": 7,
+      "reason": "unverified_heading:U3"
+    },
+    {
+      "page": 8,
+      "reason": "unverified_heading:8"
+    },
+    {
+      "page": 8,
+      "reason": "unverified_heading:9"
+    }
+  ],
+  "ownership_errors": [
+    "unowned_primary",
+    "unowned_primary",
+    "unowned_primary",
+    "unowned_primary"
+  ],
+  "physical_pages_checked": 9,
+  "formal_records_generated": false
+}

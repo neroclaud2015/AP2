@@ -1,0 +1,50 @@
+[
+  {
+    "profile_id": "ap_2017",
+    "profile_version": "1.5.3",
+    "validated_sources": [
+      {
+        "exam": "2017_sommer",
+        "module": "Arbeitsplanung",
+        "source_hash": "e9eaa0a2ab88cdab5499fc909aab8f59cd9e8eff4b0738b2c3e14aa0094ddbe0",
+        "validation_status": "compatible"
+      }
+    ]
+  },
+  {
+    "profile_id": "fa_2017",
+    "profile_version": "2b.1.4",
+    "validated_sources": [
+      {
+        "exam": "2017_sommer",
+        "module": "Funktionsanalyse",
+        "source_hash": "7978554f21aeb854391be5b2e3d2c5b711f58fa5bae9d55055c72a1eb038bb0b",
+        "validation_status": "compatible"
+      }
+    ]
+  },
+  {
+    "profile_id": "wiso_2017",
+    "profile_version": "2b.1.2",
+    "validated_sources": [
+      {
+        "exam": "2017_sommer",
+        "module": "WiSo",
+        "source_hash": "3542821032c4d6b251a2e78c7e370428c373ff41b38f0759304205c105b07697",
+        "validation_status": "blocked"
+      }
+    ]
+  },
+  {
+    "profile_id": "ap_2017_18",
+    "profile_version": "2b.1.1",
+    "validated_sources": [
+      {
+        "exam": "2017_18_winter",
+        "module": "Arbeitsplanung",
+        "source_hash": "f5e152ae12d23f22345ae8b5f6f60208eaab095cbe5e3c7d5eecf563af6b6c21",
+        "validation_status": "blocked"
+      }
+    ]
+  }
+]
