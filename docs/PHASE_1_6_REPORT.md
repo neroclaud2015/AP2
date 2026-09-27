@@ -102,6 +102,14 @@
 
 独立代码审查发现的“备份读取期间编辑竞争”已先复现、再修复并回归。自动部署流程只验证保存的数据和构建网站，不执行真实 ingestion、segmentation 或 answer parser。
 
+## 上线验收
+
+- 已发布提交：`197c4cd7422dea85cb421809c785159121e3e35f`。
+- [GitHub CI](https://github.com/neroclaud2015/AP2/actions/runs/36305895432)：success。
+- [Pages 部署](https://github.com/neroclaud2015/AP2/actions/runs/36305912056)：success。
+- 对 [实际网站](https://neroclaud2015.github.io/AP2/?q=3) 完整执行 Phase 1.6 浏览器验收：28 个来源裁剪、修改刷新、机器版本更新保护、真实 parser 跳过、备份恢复、慢速导入锁定、缺失/模糊答案队列及移动端均通过。
+- [线上浏览器记录](evidence/phase16/live/browser.json)；[发布记录](evidence/phase16/deployment.json)。这些测试使用隔离浏览器，仅修改测试数据。
+
 ## 仍不能可靠自动处理的情况
 
 1. 新 PDF 哈希、不同页序或不同版式：必须先核对对应模板；当前解析器拒绝未知来源。
