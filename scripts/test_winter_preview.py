@@ -55,7 +55,7 @@ class PortraitContracts(unittest.TestCase):
         self.assertEqual(result.getpixel((2,result.height-2)),(255,0,0))
     def test_resume_no_pdf_zip_or_repeat_analysis(self):
         import pymupdf,zipfile
-        with patch.object(pymupdf,'open',side_effect=AssertionError('No PDF access')),patch.object(zipfile,'ZipFile',side_effect=AssertionError('No archive access')),patch.object(APWinterProfile,'analyze_cached',side_effect=AssertionError('Completed page reanalysis')):
+        with patch.object(pymupdf,'open',side_effect=AssertionError('No PDF access')),patch.object(zipfile,'ZipFile',side_effect=AssertionError('No archive access')),patch.object(APWinterProfile,'analyze_cached',side_effect=AssertionError('Completed page reanalysis')),patch.object(runner,'make_report',side_effect=AssertionError('Completed accepted evidence must never regenerate')):
             result=runner.run(ROOT)
         self.assertEqual(result['processed_now'],0)
         self.assertEqual(result['skipped_pages'],25)
