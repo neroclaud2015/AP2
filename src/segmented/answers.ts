@@ -6,7 +6,7 @@ export interface OfficialAnswer {
   answer_bbox: number[]; parser_revision: string; review_reasons: string[];
 }
 export interface AnswerKey {
-  schema_version: 1; parser_revision: string; answers: OfficialAnswer[]; overlay: string;
+  schema_version: 1; solution_source_page?: number; parser_revision: string; answers: OfficialAnswer[]; overlay: string;
   completeness: { unique_complete: boolean; problems: {question_number:number;reason:string}[] };
 }
 export interface AnswerReview {

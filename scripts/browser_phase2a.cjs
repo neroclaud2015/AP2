@@ -3,7 +3,7 @@ const {chromium}=require('playwright');const fs=require('node:fs/promises');cons
  const url=process.env.APP_URL||'http://127.0.0.1:5173/';const evidence=process.env.EVIDENCE_DIR||'docs/evidence/phase2a';await fs.mkdir(evidence,{recursive:true});
  try{
   await page.goto(url);await page.getByRole('heading',{name:/Verstehen. Üben./}).waitFor();await page.screenshot({path:evidence+'/dashboard.png',fullPage:true});
-  await page.getByRole('button',{name:'Originalprüfungen',exact:true}).first().click();await page.getByRole('button',{name:/Teil A Q1–Q28/}).click();
+  await page.getByRole('button',{name:'Originalprüfungen',exact:true}).first().click();await page.locator('.exam-card').filter({has:page.getByRole('heading',{name:'Arbeitsplanung',exact:true})}).getByRole('button',{name:/Teil A/}).click();
   await page.getByRole('heading',{name:'Aufgabe 1',exact:true}).waitFor();
   assert.equal(await page.getByRole('button',{name:'Antwort bestätigen',exact:true}).count(),0);
   assert.equal(await page.getByText('Offizielle Antwortquelle',{exact:true}).count(),0);
@@ -17,7 +17,7 @@ const {chromium}=require('playwright');const fs=require('node:fs/promises');cons
   await page.screenshot({path:evidence+'/q1-wrong-source.png',fullPage:true});
   await page.reload();await page.locator('.result-banner.falsch').waitFor();
   await page.getByRole('button',{name:'Neuer Versuch',exact:true}).click();await page.getByRole('radio',{name:'4',exact:true}).check();await page.getByRole('button',{name:'Antwort abgeben',exact:true}).click();await page.locator('.result-banner.richtig').waitFor();
-  await page.getByRole('button',{name:'Teil B · U1–U8',exact:true}).click();await page.getByRole('heading',{name:'Aufgabe U1',exact:true}).waitFor();
+  await page.getByRole('button',{name:'Teil B · 8 Aufgaben',exact:true}).click();await page.getByRole('heading',{name:'Aufgabe U1',exact:true}).waitFor();
   await page.getByLabel('U1 Teil 1',{exact:true}).fill('Schutzkleidung, Ordnung, sichere Werkzeuge, Arbeitsplanung');
   await page.getByLabel('U1 Teil 2',{exact:true}).fill('Ruhe bewahren, sichern, Hilfe holen, Erste Hilfe');
   await page.getByLabel('U1 Teil 3',{exact:true}).fill('Kopfschutz und Notruftelefon');
@@ -32,7 +32,7 @@ const {chromium}=require('playwright');const fs=require('node:fs/promises');cons
   assert.equal(await page.getByLabel('U7 Bewertung 1',{exact:true}).inputValue(),'');assert.equal(await page.getByRole('button',{name:'Bewertung speichern',exact:true}).isDisabled(),true);
   for(let i=1;i<=3;i++)await page.getByLabel('U7 Bewertung '+i,{exact:true}).selectOption('falsch');await page.getByRole('button',{name:'Bewertung speichern',exact:true}).click();await page.locator('.result-banner.falsch').waitFor();await page.screenshot({path:evidence+'/u7-numeric-user-final.png',fullPage:true});
   for(const n of ['U2','U3','U4','U5','U6','U8']){await page.getByRole('button',{name:'Aufgabe '+n,exact:true}).click();await page.getByLabel(n+' Teil 1',{exact:true}).fill('Testantwort');await page.getByRole('button',{name:'Lösung anzeigen',exact:true}).click();await page.locator('.u-solution-image').evaluate(im=>im.decode());if(n==='U4')assert.equal(await page.locator('.source-links a').count(),2);}
-  await page.getByRole('button',{name:'Review / Quellen',exact:true}).click();await page.getByText('Review Mode · Daten und Quellen prüfen',{exact:true}).waitFor();await page.getByRole('button',{name:'Aufgabe 1',exact:true}).click();await page.getByRole('button',{name:'Antwort bestätigen',exact:true}).waitFor();
+  await page.getByRole('button',{name:'Review / Quellen',exact:true}).click();await page.getByText('Review Mode · Arbeitsplanung · Daten und Quellen prüfen',{exact:true}).waitFor();await page.getByRole('button',{name:'Aufgabe 1',exact:true}).click();await page.getByRole('button',{name:'Antwort bestätigen',exact:true}).waitFor();
   await page.getByRole('button',{name:'Zurück zum Lernen',exact:true}).click();await page.locator('.review-shell').waitFor({state:'detached'});assert.equal(await page.getByRole('button',{name:'Antwort bestätigen',exact:true}).count(),0);
   await page.getByRole('button',{name:'Start / Dashboard',exact:true}).click();await page.getByRole('heading',{name:/Verstehen. Üben./}).waitFor();
   const download=page.waitForEvent('download');await page.getByRole('button',{name:'Lernfortschritt exportieren',exact:true}).click();const data=JSON.parse(await fs.readFile(await(await download).path(),'utf8'));

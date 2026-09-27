@@ -8,7 +8,7 @@ const {chromium}=require('playwright');const assert=require('node:assert/strict'
  let slowStorage=null;
  if(!process.env.APP_URL){
   const slow=await browser.newPage();await slow.route('**/src/storage/storage.ts*',async route=>{const r=await route.fetch();const body=await r.text();const patched=body.replace('async saveLearningSession(session) {','async saveLearningSession(session) { await new Promise(resolve => setTimeout(resolve, 1200));');assert.notEqual(patched,body);await route.fulfill({response:r,body:patched});});
-  await slow.goto(url);await slow.getByRole('button',{name:'Originalprüfungen',exact:true}).first().click();await slow.getByRole('button',{name:/Teil B U1–U8/}).click();await slow.getByLabel('U1 Teil 1',{exact:true}).fill('Dieser Entwurf darf nicht verloren gehen');
+  await slow.goto(url);await slow.getByRole('button',{name:'Originalprüfungen',exact:true}).first().click();await slow.locator('.exam-card').filter({has:slow.getByRole('heading',{name:'Arbeitsplanung',exact:true})}).getByRole('button',{name:/Teil B/}).click();await slow.getByLabel('U1 Teil 1',{exact:true}).fill('Dieser Entwurf darf nicht verloren gehen');
   assert.equal(await slow.getByRole('button',{name:'Aufgabe U2',exact:true}).isDisabled(),true);assert.equal(await slow.getByRole('button',{name:'Start / Dashboard',exact:true}).isDisabled(),true);
   await slow.goBack();await slow.getByRole('heading',{name:'Originalprüfungen',exact:true}).waitFor();await slow.goForward();await slow.getByLabel('U1 Teil 1',{exact:true}).waitFor();assert.equal(await slow.getByLabel('U1 Teil 1',{exact:true}).inputValue(),'Dieser Entwurf darf nicht verloren gehen');slowStorage=true;await slow.close();
  }

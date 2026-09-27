@@ -1,0 +1,55 @@
+const {chromium}=require('playwright');
+const assert=require('node:assert/strict');
+const fs=require('node:fs/promises');
+(async()=>{
+ const base=process.env.APP_URL||'http://127.0.0.1:5173/';
+ const evidence=process.env.EVIDENCE_DIR||'docs/evidence/phase2b2';
+ const browser=await chromium.launch({channel:'chrome',headless:true});
+ try{
+  const page=await browser.newPage({viewport:{width:1440,height:1050}});const errors=[];page.on('pageerror',error=>errors.push(error.message));
+  const snapshot=()=>page.evaluate(()=>new Promise((resolve,reject)=>{const request=indexedDB.open('ap2-private-learning');request.onerror=()=>reject(request.error);request.onsuccess=()=>{const db=request.result;const tx=db.transaction(['attempts','learningSessions'],'readonly');const a=tx.objectStore('attempts').getAll();const s=tx.objectStore('learningSessions').getAll();tx.oncomplete=()=>{resolve({version:db.verno??db.version,attempts:a.result,sessions:s.result});db.close();};};}));
+  const ready=async number=>page.getByRole('heading',{name:`Aufgabe ${number}`,exact:true}).waitFor();
+  const switchModule=async name=>page.getByRole('navigation',{name:'Module',exact:true}).getByRole('button',{name,exact:true}).click();
+  const route=()=>new URL(page.url()).searchParams;
+  await page.goto(base+'?q=1');await ready('1');assert.equal(route().get('module'),'arbeitsplanung');
+  const ap=(await (await page.request.get(new URL('data/2017_sommer_arbeitsplanung_segmented.json',base).href)).json());
+  const fa=(await (await page.request.get(new URL('data/2017_sommer_funktionsanalyse_segmented.json',base).href)).json());
+  const faAnswers=await (await page.request.get(new URL('data/2017_sommer_funktionsanalyse_answers.json',base).href)).json();
+  const faU=await (await page.request.get(new URL('data/2017_sommer_funktionsanalyse_u_solutions.json',base).href)).json();
+  const apId=ap.questions.find(q=>q.question_number==='1').question_id;const faId=fa.questions.find(q=>q.question_number==='1').question_id;
+  assert.notEqual(apId,faId);assert.equal(fa.questions.length,36);assert.equal(faAnswers.answers.find(a=>a.question_id===faId).official_answer,3);
+  assert.equal(await page.locator('.mc-source').count(),0);
+  await page.getByRole('radio',{name:'1',exact:true}).check();await page.getByRole('button',{name:'Antwort abgeben',exact:true}).click();await page.locator('.result-banner').waitFor();
+  await page.getByText('Notiz',{exact:true}).click();await page.getByLabel('Lernnotiz',{exact:true}).fill('Bestehende AP-Notiz bleibt unverändert');await page.getByRole('button',{name:'Reflexion speichern',exact:true}).click();await page.getByText('Reflexion gespeichert',{exact:true}).waitFor();
+  const apBefore=(await snapshot()).attempts.filter(a=>a.question_id===apId);assert.equal(apBefore.length,1);
+  await switchModule('Funktionsanalyse');await ready('1');assert.equal(route().get('module'),'funktionsanalyse');assert.equal(await page.locator('.result-banner').count(),0);assert.equal(await page.locator('.mc-source').count(),0);
+  await page.getByRole('radio',{name:'3',exact:true}).check();await page.getByRole('button',{name:'Antwort abgeben',exact:true}).click();await page.locator('.result-banner.richtig').waitFor();
+  await page.getByText('Offizielle Antwortquelle',{exact:true}).click();await page.locator('.mc-source').waitFor();assert.ok(await page.locator('.mc-source').evaluate(img=>img.complete&&img.naturalWidth>0));
+  await page.screenshot({path:await output('fa-q1.png'),fullPage:true});
+  await page.getByRole('button',{name:'Teil B · 8 Aufgaben',exact:true}).click();await ready('U1');
+  for(let n=1;n<=3;n++)await page.getByLabel(`U1 Teil ${n}`,{exact:true}).fill(`Eigene Antwort ${n}`);
+  await page.getByRole('button',{name:'Lösung anzeigen',exact:true}).click();await page.locator('.u-solution-image').waitFor();assert.ok(await page.locator('.u-solution-image').evaluate(img=>img.complete&&img.naturalWidth>0));
+  for(let n=1;n<=3;n++)await page.getByLabel(`U1 Bewertung ${n}`,{exact:true}).selectOption(n===3?'teilweise':'richtig');
+  await page.getByRole('button',{name:'Bewertung speichern',exact:true}).click();await page.locator('.result-banner.teilweise').waitFor();
+  await page.getByText('Gemeinsame Aufgabenbeschreibung & Anlagen',{exact:true}).click();for(const n of [13,14,15])assert.equal(await page.getByRole('link',{name:`Anlage · Seite ${n} ↗`,exact:true}).count(),1);
+  await page.screenshot({path:await output('fa-u1.png'),fullPage:true});
+  await switchModule('Arbeitsplanung');await ready('1');assert.equal(await page.locator('.result-banner').count(),1);await page.getByText('Notiz',{exact:true}).click();assert.equal(await page.getByLabel('Lernnotiz',{exact:true}).inputValue(),'Bestehende AP-Notiz bleibt unverändert');
+  await page.goBack();await ready('U1');assert.equal(route().get('module'),'funktionsanalyse');await page.locator('.result-banner.teilweise').waitFor();
+  await page.goForward();await ready('1');assert.equal(route().get('module'),'arbeitsplanung');
+  await switchModule('Funktionsanalyse');await ready('U1');await page.reload();await ready('U1');await page.locator('.result-banner.teilweise').waitFor();
+  await page.getByRole('button',{name:'Teil A · 28 Aufgaben',exact:true}).click();await ready('1');await page.getByRole('button',{name:'Review / Quellen',exact:true}).click();
+  await page.getByRole('button',{name:'Prüfen / Bearbeiten',exact:true}).click();assert.equal(await page.getByRole('button',{name:'Zurück zum Lernen',exact:true}).isDisabled(),true);assert.equal(await page.getByRole('button',{name:'Arbeitsplanung',exact:true}).isDisabled(),true);
+  await page.getByRole('button',{name:'Abbrechen',exact:true}).click();await page.getByRole('button',{name:'Aufgabe 2',exact:true}).click();assert.equal(route().get('q'),'2');
+  await page.getByRole('button',{name:'Zurück zum Lernen',exact:true}).click();await ready('2');assert.equal(route().get('module'),'funktionsanalyse');
+  await page.getByRole('button',{name:'Aufgabe 1',exact:true}).click();await page.getByRole('button',{name:'Neuer Versuch',exact:true}).click();await page.getByRole('button',{name:'Review / Quellen',exact:true}).click();
+  await page.getByRole('button',{name:'Antwort ändern',exact:true}).click();await page.getByLabel('Richtige Antwort',{exact:true}).selectOption('5');await page.getByRole('button',{name:'Antwort speichern',exact:true}).click();await page.getByText('Confirmed · gesperrt',{exact:true}).waitFor();
+  await page.goBack();await ready('1');await page.getByRole('radio',{name:'5',exact:true}).check();await page.getByRole('button',{name:'Antwort abgeben',exact:true}).click();await page.locator('.result-banner.richtig').waitFor();assert.match(await page.locator('.result-banner').innerText(),/Offizielle Antwort: 5/);
+  const final=await snapshot();assert.equal(final.version,40);assert.deepEqual(final.attempts.filter(a=>a.question_id===apId),apBefore);
+  const uAttempt=final.attempts.find(a=>a.question_id===faU.solutions.find(s=>s.question_number==='U1').question_id);assert.equal(uAttempt.self_assessed,true);assert.equal(uAttempt.auto_scored,false);assert.equal(uAttempt.subparts.length,3);
+  await page.getByRole('button',{name:'Start / Dashboard',exact:true}).click();assert.equal(await page.locator('.module-cards .exam-card').count(),2);await page.screenshot({path:await output('dashboard.png'),fullPage:true});
+  assert.deepEqual(errors,[]);
+  const result={url:base,real_data_no_mock:true,fa_counts:{questions:fa.questions.length,answers:faAnswers.answers.length,u_solutions:faU.solutions.length},fa_q1_answer_3_source_verified:true,fa_u1_three_subparts_self_assessed:true,ap_existing_v4_result_and_note_unchanged:true,ap_fa_q1_isolated:true,refresh_back_forward:true,review_busy_and_selected_question:true,review_key_refreshed_on_browser_back:true,indexeddb_logical_schema:4,page_errors:errors};
+  await fs.writeFile(await output('browser-acceptance.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));
+  async function output(name){await fs.mkdir(evidence,{recursive:true});return evidence+'/'+name;}
+ }finally{await browser.close();}
+})().catch(error=>{console.error(error);process.exit(1);});
