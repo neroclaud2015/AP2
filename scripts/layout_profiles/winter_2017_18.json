@@ -1,0 +1,1163 @@
+{
+  "source_hash": "f5e152ae12d23f22345ae8b5f6f60208eaab095cbe5e3c7d5eecf563af6b6c21",
+  "source_cache": "layout_validation_manifest.sources exact hash; immutable saved page pixels only",
+  "geometries": [
+    [
+      595.260009765625,
+      841.8599853515625
+    ],
+    [
+      1190.52001953125,
+      841.8599853515625
+    ]
+  ],
+  "publication": "dry_run_only",
+  "pages": {
+    "3": {
+      "classification": "questions",
+      "slots": [
+        {
+          "observed_number": "1",
+          "heading_box": [
+            56,
+            302,
+            82,
+            326
+          ],
+          "regions": [
+            [
+              52,
+              298,
+              563,
+              785
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Q1 below sample marking-form context; both component drawings included.",
+          "visual_patch_sha256": "66ed1a87bf85dd936c25e7db1c480d5682cc3a1062b4b65b04e7e5d94133f820",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        }
+      ],
+      "context_regions": [
+        {
+          "bbox": [
+            52,
+            54,
+            546,
+            298
+          ],
+          "evidence": "Example marking form above Q1, excluded from Q1 crop"
+        }
+      ],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "4": {
+      "classification": "questions",
+      "slots": [
+        {
+          "observed_number": "2",
+          "heading_box": [
+            55,
+            59,
+            83,
+            84
+          ],
+          "regions": [
+            [
+              52,
+              54,
+              563,
+              296
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "0b830fcfd43178decab791568c02eebb6a1f186448567dcc2744701307b1dfb4",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        },
+        {
+          "observed_number": "3",
+          "heading_box": [
+            55,
+            300,
+            83,
+            326
+          ],
+          "regions": [
+            [
+              52,
+              296,
+              563,
+              537
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "c98e7f37188e2ab106b0dd7b3abd0b312045c77c6df006c0873ea9670d36e8b6",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        },
+        {
+          "observed_number": "4",
+          "heading_box": [
+            55,
+            541,
+            83,
+            567
+          ],
+          "regions": [
+            [
+              52,
+              537,
+              299,
+              785
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "0b611e04db8a1cede8fb650b5cf1e2b238b202db707f71dea8cbbb6704a8c1d2",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        },
+        {
+          "observed_number": "5",
+          "heading_box": [
+            304,
+            541,
+            332,
+            567
+          ],
+          "regions": [
+            [
+              299,
+              537,
+              563,
+              785
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "629a28dd829e67885edc3890109750106500a69ebbea01e91c23b1b6a1995cd4",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        }
+      ],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "5": {
+      "classification": "questions",
+      "slots": [
+        {
+          "observed_number": "6",
+          "heading_box": [
+            54,
+            59,
+            83,
+            85
+          ],
+          "regions": [
+            [
+              51,
+              54,
+              563,
+              540
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "0a31b9a310767878066bea9d693beb927472d1593936643580c5f9e4d39f57c4",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        },
+        {
+          "observed_number": "7",
+          "heading_box": [
+            54,
+            542,
+            83,
+            568
+          ],
+          "regions": [
+            [
+              51,
+              540,
+              563,
+              785
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "35d6534c3e7c44112f1490197edcf447c5eab83985c479e94d5ec24bccb6c6ec",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        }
+      ],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "6": {
+      "classification": "questions",
+      "slots": [
+        {
+          "observed_number": "8",
+          "heading_box": [
+            56,
+            57,
+            86,
+            85
+          ],
+          "regions": [
+            [
+              53,
+              54,
+              563,
+              296
+            ],
+            [
+              299,
+              296,
+              563,
+              537
+            ]
+          ],
+          "roles": [
+            "primary",
+            "diagram"
+          ],
+          "evidence": "Q8 electrical control circuit occupies right column alongside Q9; explicit visually verified L shape.",
+          "visual_patch_sha256": "05d4dc9ed13cca5374e71f367772b2529369f33ce548bb1e48bda9ab06b52ae0",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        },
+        {
+          "observed_number": "9",
+          "heading_box": [
+            56,
+            301,
+            83,
+            328
+          ],
+          "regions": [
+            [
+              53,
+              296,
+              299,
+              537
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "f10c7221376c2b9026b9c5d83de53adc82d393d1dc1ddc201f7558c92b8666dd",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        },
+        {
+          "observed_number": "10",
+          "heading_box": [
+            56,
+            541,
+            86,
+            569
+          ],
+          "regions": [
+            [
+              53,
+              537,
+              563,
+              785
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "4eadc775bb5464e4ec8de6c7e48d19d303bd95bec6268563dee39d6bad7e383b",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        }
+      ],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "7": {
+      "classification": "questions",
+      "slots": [
+        {
+          "observed_number": "11",
+          "heading_box": [
+            53,
+            58,
+            85,
+            86
+          ],
+          "regions": [
+            [
+              51,
+              54,
+              296,
+              297
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "39c3bd0d84c4dc8cf0ff78c656a488edb3a8d8be3d5bfb26fba0f9c8a9fa4e3c",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        },
+        {
+          "observed_number": "12",
+          "heading_box": [
+            303,
+            58,
+            335,
+            86
+          ],
+          "regions": [
+            [
+              296,
+              54,
+              563,
+              297
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "0680a7a1ca8ed3eff0d0c1164873036b8ac8424bfc48885f5ea2ce6b478afe03",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        },
+        {
+          "observed_number": "13",
+          "heading_box": [
+            53,
+            302,
+            85,
+            330
+          ],
+          "regions": [
+            [
+              51,
+              297,
+              296,
+              538
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "a91eaf4230ee3925522992fb2dc421161af26366a5cd818ffdb542100d7a9d00",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        },
+        {
+          "observed_number": "14",
+          "heading_box": [
+            303,
+            302,
+            335,
+            330
+          ],
+          "regions": [
+            [
+              296,
+              297,
+              563,
+              538
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "0db81f5f3b33bbdb3fbdb46abbee45bb4aacc45e4b0e8dc7fed00d2b4aabb761",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        },
+        {
+          "observed_number": "15",
+          "heading_box": [
+            54,
+            541,
+            86,
+            569
+          ],
+          "regions": [
+            [
+              51,
+              538,
+              563,
+              785
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "ecbe762db39c1da5b2df94954bf37c14e0105c000b42255534ea717abcd93509",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        }
+      ],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "8": {
+      "classification": "questions",
+      "slots": [
+        {
+          "observed_number": "16",
+          "heading_box": [
+            56,
+            57,
+            88,
+            85
+          ],
+          "regions": [
+            [
+              53,
+              53,
+              298,
+              295
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "9e68ef92f92ba0bbd0e33ada41a1733c94f2d51d6969373dee8a243eecb137d8",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        },
+        {
+          "observed_number": "17",
+          "heading_box": [
+            305,
+            57,
+            337,
+            85
+          ],
+          "regions": [
+            [
+              298,
+              53,
+              563,
+              295
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "8ae06b8449aae47d5614daf9e0db30acf8d69bb196712f506b9868e5d929d2b9",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        },
+        {
+          "observed_number": "18",
+          "heading_box": [
+            56,
+            299,
+            88,
+            327
+          ],
+          "regions": [
+            [
+              53,
+              295,
+              563,
+              536
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "f8ef0e5bc74fa336604e4188746a94490221df94ec1db871cb7062035f094073",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        },
+        {
+          "observed_number": "19",
+          "heading_box": [
+            56,
+            540,
+            88,
+            568
+          ],
+          "regions": [
+            [
+              53,
+              536,
+              563,
+              785
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "243086e0970b348b7bb3691b12008360679b016117bc3293150871caf27228d0",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        }
+      ],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "9": {
+      "classification": "questions",
+      "slots": [
+        {
+          "observed_number": "20",
+          "heading_box": [
+            54,
+            58,
+            86,
+            86
+          ],
+          "regions": [
+            [
+              51,
+              53,
+              298,
+              298
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "4a5522eff1e878d66914fcea8cdb1f5c4c0e99932c07f41f80d99b45425655b6",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        },
+        {
+          "observed_number": "21",
+          "heading_box": [
+            307,
+            58,
+            339,
+            86
+          ],
+          "regions": [
+            [
+              298,
+              53,
+              563,
+              298
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "6b014434141f410a3f405b5a70d30d1163385d1649340d8f694808b193f56ffa",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        },
+        {
+          "observed_number": "22",
+          "heading_box": [
+            54,
+            302,
+            86,
+            330
+          ],
+          "regions": [
+            [
+              51,
+              298,
+              563,
+              539
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "9536cc5cacc9c86674dc30665809d491b7ce3aff1ed9049b0d3009fb0e74a658",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        },
+        {
+          "observed_number": "23",
+          "heading_box": [
+            54,
+            542,
+            86,
+            570
+          ],
+          "regions": [
+            [
+              51,
+              539,
+              296,
+              785
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "e6bb124603282086659eded21ee9202a4a8c21e67874b4b6acd3c6881b43d35f",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        },
+        {
+          "observed_number": "24",
+          "heading_box": [
+            302,
+            542,
+            334,
+            570
+          ],
+          "regions": [
+            [
+              296,
+              539,
+              563,
+              785
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "1cde1cb74eba33a8dce6f7c26daa8cace5868477aa21176d41ee89390bc75257",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        }
+      ],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "10": {
+      "classification": "questions",
+      "slots": [
+        {
+          "observed_number": "25",
+          "heading_box": [
+            58,
+            61,
+            88,
+            87
+          ],
+          "regions": [
+            [
+              55,
+              54,
+              563,
+              299
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "86849c33692e02a80601cc070a4861c5428a3dfdc58210fb4b5b7ad97c905b7e",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        },
+        {
+          "observed_number": "26",
+          "heading_box": [
+            58,
+            303,
+            88,
+            330
+          ],
+          "regions": [
+            [
+              55,
+              299,
+              303,
+              541
+            ],
+            [
+              303,
+              299,
+              563,
+              541
+            ]
+          ],
+          "roles": [
+            "primary",
+            "response_area"
+          ],
+          "evidence": "Right panel explicitly printed Nebenrechnung Aufgabe 26; same owner, no adjacent-question inference.",
+          "visual_patch_sha256": "7f954a388c429b96021b5f8fdae801553bc14bf45ea263cfa9c5a863249650a7",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        },
+        {
+          "observed_number": "27",
+          "heading_box": [
+            58,
+            545,
+            89,
+            572
+          ],
+          "regions": [
+            [
+              55,
+              541,
+              303,
+              785
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "b55ab6e8f3f4402ba271e8bebbe3882f76eb0b80d9aaa645d9be9f0deb154a76",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        },
+        {
+          "observed_number": "28",
+          "heading_box": [
+            306,
+            545,
+            337,
+            572
+          ],
+          "regions": [
+            [
+              303,
+              541,
+              563,
+              785
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading observed directly; boundaries follow printed separators.",
+          "visual_patch_sha256": "75ba4b44c813a910ceefef326f7a9104980d9822eaab7caa195c3f4d954a11cc",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        }
+      ],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "15": {
+      "classification": "questions",
+      "slots": [
+        {
+          "observed_number": "U1",
+          "heading_box": [
+            25,
+            24,
+            90,
+            49
+          ],
+          "regions": [
+            [
+              20,
+              16,
+              575,
+              817
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Observed printed U heading; entire prompt/figure/table and response area, excluding page footer.",
+          "visual_patch_sha256": "5e832c4c872d8545fd3d324f6370aa6757a15ca5e2987b8dade528c644db4301",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        }
+      ],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "16": {
+      "classification": "questions",
+      "slots": [
+        {
+          "observed_number": "U2",
+          "heading_box": [
+            25,
+            24,
+            90,
+            49
+          ],
+          "regions": [
+            [
+              20,
+              16,
+              575,
+              817
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Observed printed U heading; entire prompt/figure/table and response area, excluding page footer.",
+          "visual_patch_sha256": "6c38da02bfd66ccb8b96b2c1cc299bc4b20615e5d53f28d9cee884b6e0dbfaea",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        }
+      ],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "17": {
+      "classification": "questions",
+      "slots": [
+        {
+          "observed_number": "U3",
+          "heading_box": [
+            25,
+            24,
+            90,
+            49
+          ],
+          "regions": [
+            [
+              20,
+              16,
+              575,
+              817
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Observed printed U heading; entire prompt/figure/table and response area, excluding page footer.",
+          "visual_patch_sha256": "2e01e709a616305c7825ee33faf8cce200eca6eae4844b2370a94df117329067",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        }
+      ],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "18": {
+      "classification": "questions",
+      "slots": [
+        {
+          "observed_number": "U4",
+          "heading_box": [
+            25,
+            24,
+            90,
+            49
+          ],
+          "regions": [
+            [
+              20,
+              16,
+              575,
+              817
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Observed printed U heading; entire prompt/figure/table and response area, excluding page footer.",
+          "visual_patch_sha256": "440b18e991d60cf46fb8107a3dc21a712e72bb9d1c2689a3e4f8ca9901c23444",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        }
+      ],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "19": {
+      "classification": "questions",
+      "slots": [
+        {
+          "observed_number": "U5",
+          "heading_box": [
+            25,
+            24,
+            90,
+            49
+          ],
+          "regions": [
+            [
+              20,
+              16,
+              575,
+              817
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Observed printed U heading; entire prompt/figure/table and response area, excluding page footer.",
+          "visual_patch_sha256": "fe9bc32a9ae8c2740e0bb70ae8f47a0c378b55859e43131b70b08aa4491fa95f",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        }
+      ],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "21": {
+      "classification": "questions",
+      "slots": [
+        {
+          "observed_number": "U6",
+          "heading_box": [
+            25,
+            24,
+            90,
+            49
+          ],
+          "regions": [
+            [
+              20,
+              16,
+              575,
+              817
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Observed printed U heading; entire prompt/figure/table and response area, excluding page footer.",
+          "visual_patch_sha256": "5c984e3bdf72d4dc3cca8a342e42f8367f70a411904db55b6c3d1c5d1734e874",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        }
+      ],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "22": {
+      "classification": "questions",
+      "slots": [
+        {
+          "observed_number": "U7",
+          "heading_box": [
+            25,
+            24,
+            90,
+            49
+          ],
+          "regions": [
+            [
+              20,
+              16,
+              575,
+              817
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Observed printed U heading; entire prompt/figure/table and response area, excluding page footer.",
+          "visual_patch_sha256": "17fcae37822d3b16ab6b0f28910b8f4ba7f83031432f6d9870c1bdab7c5aeeb0",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        }
+      ],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "23": {
+      "classification": "questions",
+      "slots": [
+        {
+          "observed_number": "U8",
+          "heading_box": [
+            25,
+            24,
+            90,
+            49
+          ],
+          "regions": [
+            [
+              20,
+              16,
+              575,
+              636
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Observed printed U heading; entire prompt/figure/table and response area, excluding page footer. U8 examiner summary below response grid is excluded.",
+          "visual_patch_sha256": "62a0066675b5db88dd0a5a6bd0d585dedbee9716e5ca79639c722d0638f33fca",
+          "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence."
+        }
+      ],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "1": {
+      "classification": "cover",
+      "evidence": "Teil A cover: Winter 2017/18 Arbeitsplanung",
+      "slots": [],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "2": {
+      "classification": "instructions",
+      "evidence": "Printed Part A instructions and expected 28 choice + 8 unbound tasks",
+      "slots": [],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "11": {
+      "classification": "marking_example",
+      "evidence": "Example marking form; no question heading",
+      "slots": [],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "12": {
+      "classification": "cover",
+      "evidence": "Teil B cover",
+      "slots": [],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "13": {
+      "classification": "instructions",
+      "evidence": "Printed Part B instructions; total 28 + 8 tasks",
+      "slots": [],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "14": {
+      "classification": "shared_description",
+      "evidence": "Injection moulding machine task description and labelled machine diagram",
+      "slots": [],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "24": {
+      "classification": "attachment",
+      "evidence": "Blatt 2 von 2: English oil-change operating instructions, referenced by U4",
+      "slots": [],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    },
+    "25": {
+      "classification": "attachment",
+      "evidence": "Blatt 1 von 2: A3 extrusion-tool engineering drawing, referenced by U2",
+      "slots": [],
+      "geometry": [
+        1190.52001953125,
+        841.8599853515625
+      ]
+    },
+    "20": {
+      "classification": "continuation",
+      "slots": [],
+      "explicit_regions": [
+        {
+          "bbox": [
+            20,
+            16,
+            575,
+            817
+          ],
+          "owner": "winter-ap-p19-U5",
+          "role": "response_area",
+          "evidence": "p20 lower-right scoring field explicitly says Ergebnis U5. Its Grafcet matches p19 U5 task, symbols and functional description.",
+          "evidence_box": [
+            520,
+            743,
+            565,
+            775
+          ],
+          "observed_owner_label": "U5",
+          "visual_patch_sha256": "3fd2b9aea70c1732299eaf7f188200364a4553a15d1621f2b00dbb59fbc06712"
+        }
+      ],
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ]
+    }
+  },
+  "expected": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6",
+    "U7",
+    "U8"
+  ],
+  "attachment_refs": {
+    "U2": [
+      25
+    ],
+    "U4": [
+      24
+    ]
+  },
+  "shared_description_page": 14,
+  "observations": "All25 physical pages visually inspected. Printed headings recorded individually from crops; no numbering interpolation. Q8 L-shape and Q26 response box explicit; U5 p20 label proves owner. Final crop QA: right exterior margins extended to x563 PDF points to preserve the complete Q8 St\u00f6rung label and edge axis annotations."
+}

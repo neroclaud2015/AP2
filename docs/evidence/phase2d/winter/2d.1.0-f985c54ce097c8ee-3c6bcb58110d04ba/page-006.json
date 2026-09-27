@@ -1,0 +1,152 @@
+{
+  "page": 6,
+  "geometry": [
+    595.260009765625,
+    841.8599853515625
+  ],
+  "classification": "questions",
+  "classification_evidence": "Individually inspected printed heading and panels",
+  "anchors": [
+    {
+      "anchor_id": "winter-ap-p6-8",
+      "number": "8",
+      "bbox": [
+        56,
+        57,
+        86,
+        85
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "05d4dc9ed13cca5374e71f367772b2529369f33ce548bb1e48bda9ab06b52ae0"
+    },
+    {
+      "anchor_id": "winter-ap-p6-9",
+      "number": "9",
+      "bbox": [
+        56,
+        301,
+        83,
+        328
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "f10c7221376c2b9026b9c5d83de53adc82d393d1dc1ddc201f7558c92b8666dd"
+    },
+    {
+      "anchor_id": "winter-ap-p6-10",
+      "number": "10",
+      "bbox": [
+        56,
+        541,
+        86,
+        569
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "4eadc775bb5464e4ec8de6c7e48d19d303bd95bec6268563dee39d6bad7e383b"
+    }
+  ],
+  "regions": [
+    {
+      "page": 6,
+      "bbox": [
+        53,
+        54,
+        563,
+        296
+      ],
+      "role": "primary",
+      "owner": "winter-ap-p6-8",
+      "evidence": "Q8 electrical control circuit occupies right column alongside Q9; explicit visually verified L shape."
+    },
+    {
+      "page": 6,
+      "bbox": [
+        299,
+        296,
+        563,
+        537
+      ],
+      "role": "diagram",
+      "owner": "winter-ap-p6-8",
+      "evidence": "Q8 electrical control circuit occupies right column alongside Q9; explicit visually verified L shape."
+    },
+    {
+      "page": 6,
+      "bbox": [
+        53,
+        296,
+        299,
+        537
+      ],
+      "role": "primary",
+      "owner": "winter-ap-p6-9",
+      "evidence": "Printed heading observed directly; boundaries follow printed separators."
+    },
+    {
+      "page": 6,
+      "bbox": [
+        53,
+        537,
+        563,
+        785
+      ],
+      "role": "primary",
+      "owner": "winter-ap-p6-10",
+      "evidence": "Printed heading observed directly; boundaries follow printed separators."
+    }
+  ],
+  "proofs": [
+    {
+      "kind": "heading",
+      "number": "8",
+      "bbox": [
+        56,
+        57,
+        86,
+        85
+      ],
+      "pixel_sha256": "05d4dc9ed13cca5374e71f367772b2529369f33ce548bb1e48bda9ab06b52ae0",
+      "audited_pixel_sha256": "05d4dc9ed13cca5374e71f367772b2529369f33ce548bb1e48bda9ab06b52ae0"
+    },
+    {
+      "kind": "heading",
+      "number": "9",
+      "bbox": [
+        56,
+        301,
+        83,
+        328
+      ],
+      "pixel_sha256": "f10c7221376c2b9026b9c5d83de53adc82d393d1dc1ddc201f7558c92b8666dd",
+      "audited_pixel_sha256": "f10c7221376c2b9026b9c5d83de53adc82d393d1dc1ddc201f7558c92b8666dd"
+    },
+    {
+      "kind": "heading",
+      "number": "10",
+      "bbox": [
+        56,
+        541,
+        86,
+        569
+      ],
+      "pixel_sha256": "4eadc775bb5464e4ec8de6c7e48d19d303bd95bec6268563dee39d6bad7e383b",
+      "audited_pixel_sha256": "4eadc775bb5464e4ec8de6c7e48d19d303bd95bec6268563dee39d6bad7e383b"
+    }
+  ],
+  "issues": [],
+  "context_regions": [],
+  "review_status": "visually_verified",
+  "user_acceptance": "pending",
+  "source_hash": "f5e152ae12d23f22345ae8b5f6f60208eaab095cbe5e3c7d5eecf563af6b6c21",
+  "source_image_sha256": "95cc061aaa25fa1c4664a22879f33ba268a60d80d96685adb2a979eaca1d3ebc",
+  "source_raw_sha256": "ea1820c38ae61b8a60c6f3915d4f7cdf59a2d53b3bcafc1d71d0a75643cd5871",
+  "profile_version": "2d.1.0",
+  "config_hash": "f985c54ce097c8ee",
+  "source_image_cache": "docs/evidence/layout_profiles/ap_2017_18/2b.1.0-c28daf4b06759ef9/page-006.png",
+  "source_raw_cache": "docs/evidence/layout_profiles/ap_2017_18/2b.1.0-c28daf4b06759ef9/page-006.json"
+}

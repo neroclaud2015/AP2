@@ -1,0 +1,416 @@
+{
+  "schema_version": 1,
+  "exam": "2017_sommer",
+  "module": "WiSo",
+  "extractor_revision": "wiso-2d.1.0-85f556d4c34e",
+  "source_pdf_sha256": "1bca5421b9553e59df7103d82bfa3bbb45243009b2e09bcd9c4f3904fe1d9bd4",
+  "solutions": [
+    {
+      "question_id": "wiso_2017-p4-slot0",
+      "question_number": "U1",
+      "exam": "2017_sommer",
+      "module": "WiSo",
+      "solution_source_pdf": "assets/pdfs/ea47a013956459b9cf4c907b.pdf",
+      "solution_source_page": 10,
+      "solution_bbox": [
+        31.2,
+        231.0,
+        571.2,
+        508.8
+      ],
+      "regions": [
+        {
+          "source_page": 10,
+          "bbox": [
+            31.2,
+            231.0,
+            571.2,
+            508.8
+          ],
+          "bbox_pixels": [
+            52,
+            385,
+            952,
+            848
+          ]
+        }
+      ],
+      "cropped_solution_image": "assets/wiso-u-solutions/wiso-2d.1.0-85f556d4c34e/U1.png",
+      "review_status": "auto_ready",
+      "answer_type": "multi_part",
+      "subparts": [
+        {
+          "id": "whole",
+          "label": "Gesamte Aufgabe · Selbstbewertung",
+          "type": "short_text"
+        }
+      ],
+      "source_hash": "1bca5421b9553e59df7103d82bfa3bbb45243009b2e09bcd9c4f3904fe1d9bd4",
+      "extractor_revision": "wiso-2d.1.0-85f556d4c34e",
+      "association_evidence": "Physical page10 has WiSo title and printed U1/U2; page11 is its printed reverse (-2-(2)) with U3/U4/U5/U6 headings. All crop ownership and boundaries visually checked; physical page9 is AP and excluded.",
+      "subpart_evidence": "Only printed 1-3 in U4/U5 and 1-4 in U6 are separate subparts; U1 table/U2 list/U3 diagram assessed as whole tasks.",
+      "grading_policy": "User self-assessment only; no semantic answer inference, numeric tolerance or point rubric.",
+      "confidence": 0.98,
+      "confidence_note": "Visually verified source ownership, not a calibrated probability.",
+      "source_pdf_sha256": "1bca5421b9553e59df7103d82bfa3bbb45243009b2e09bcd9c4f3904fe1d9bd4",
+      "source_cache_image": "assets/pages/ea47a013956459b9cf4c907b/010.png",
+      "source_cache_sha256": "523e2dd3621f46da87c2a30592d85bd66527a2a2d8eefe19028f94dae0cd4dd7",
+      "source_cache_size": [
+        992,
+        1403
+      ],
+      "source_page_points": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "source_cache_dpi": 120,
+      "bbox_units": "PDF points; top-left origin; cached 120-DPI pixels multiplied by 72/120",
+      "extraction_method": "immutable_cached_pixels_only; PDF not opened or rendered"
+    },
+    {
+      "question_id": "wiso_2017-p6-slot0",
+      "question_number": "U2",
+      "exam": "2017_sommer",
+      "module": "WiSo",
+      "solution_source_pdf": "assets/pdfs/ea47a013956459b9cf4c907b.pdf",
+      "solution_source_page": 10,
+      "solution_bbox": [
+        31.2,
+        510.6,
+        571.2,
+        570.0
+      ],
+      "regions": [
+        {
+          "source_page": 10,
+          "bbox": [
+            31.2,
+            510.6,
+            571.2,
+            570.0
+          ],
+          "bbox_pixels": [
+            52,
+            851,
+            952,
+            950
+          ]
+        }
+      ],
+      "cropped_solution_image": "assets/wiso-u-solutions/wiso-2d.1.0-85f556d4c34e/U2.png",
+      "review_status": "auto_ready",
+      "answer_type": "multi_part",
+      "subparts": [
+        {
+          "id": "whole",
+          "label": "Gesamte Aufgabe · Selbstbewertung",
+          "type": "short_text"
+        }
+      ],
+      "source_hash": "1bca5421b9553e59df7103d82bfa3bbb45243009b2e09bcd9c4f3904fe1d9bd4",
+      "extractor_revision": "wiso-2d.1.0-85f556d4c34e",
+      "association_evidence": "Physical page10 has WiSo title and printed U1/U2; page11 is its printed reverse (-2-(2)) with U3/U4/U5/U6 headings. All crop ownership and boundaries visually checked; physical page9 is AP and excluded.",
+      "subpart_evidence": "Only printed 1-3 in U4/U5 and 1-4 in U6 are separate subparts; U1 table/U2 list/U3 diagram assessed as whole tasks.",
+      "grading_policy": "User self-assessment only; no semantic answer inference, numeric tolerance or point rubric.",
+      "confidence": 0.98,
+      "confidence_note": "Visually verified source ownership, not a calibrated probability.",
+      "source_pdf_sha256": "1bca5421b9553e59df7103d82bfa3bbb45243009b2e09bcd9c4f3904fe1d9bd4",
+      "source_cache_image": "assets/pages/ea47a013956459b9cf4c907b/010.png",
+      "source_cache_sha256": "523e2dd3621f46da87c2a30592d85bd66527a2a2d8eefe19028f94dae0cd4dd7",
+      "source_cache_size": [
+        992,
+        1403
+      ],
+      "source_page_points": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "source_cache_dpi": 120,
+      "bbox_units": "PDF points; top-left origin; cached 120-DPI pixels multiplied by 72/120",
+      "extraction_method": "immutable_cached_pixels_only; PDF not opened or rendered"
+    },
+    {
+      "question_id": "wiso_2017-p7-slot3",
+      "question_number": "U3",
+      "exam": "2017_sommer",
+      "module": "WiSo",
+      "solution_source_pdf": "assets/pdfs/ea47a013956459b9cf4c907b.pdf",
+      "solution_source_page": 11,
+      "solution_bbox": [
+        17.4,
+        24.0,
+        558.0,
+        372.6
+      ],
+      "regions": [
+        {
+          "source_page": 11,
+          "bbox": [
+            17.4,
+            24.0,
+            558.0,
+            372.6
+          ],
+          "bbox_pixels": [
+            29,
+            40,
+            930,
+            621
+          ]
+        }
+      ],
+      "cropped_solution_image": "assets/wiso-u-solutions/wiso-2d.1.0-85f556d4c34e/U3.png",
+      "review_status": "auto_ready",
+      "answer_type": "multi_part",
+      "subparts": [
+        {
+          "id": "whole",
+          "label": "Gesamte Aufgabe · Selbstbewertung",
+          "type": "diagram"
+        }
+      ],
+      "source_hash": "1bca5421b9553e59df7103d82bfa3bbb45243009b2e09bcd9c4f3904fe1d9bd4",
+      "extractor_revision": "wiso-2d.1.0-85f556d4c34e",
+      "association_evidence": "Physical page10 has WiSo title and printed U1/U2; page11 is its printed reverse (-2-(2)) with U3/U4/U5/U6 headings. All crop ownership and boundaries visually checked; physical page9 is AP and excluded.",
+      "subpart_evidence": "Only printed 1-3 in U4/U5 and 1-4 in U6 are separate subparts; U1 table/U2 list/U3 diagram assessed as whole tasks.",
+      "grading_policy": "User self-assessment only; no semantic answer inference, numeric tolerance or point rubric.",
+      "confidence": 0.98,
+      "confidence_note": "Visually verified source ownership, not a calibrated probability.",
+      "source_pdf_sha256": "1bca5421b9553e59df7103d82bfa3bbb45243009b2e09bcd9c4f3904fe1d9bd4",
+      "source_cache_image": "assets/pages/ea47a013956459b9cf4c907b/011.png",
+      "source_cache_sha256": "7a702b249b41e565ed19185f71fcb64e29b4a1d0618226c13ac91df887453137",
+      "source_cache_size": [
+        992,
+        1403
+      ],
+      "source_page_points": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "source_cache_dpi": 120,
+      "bbox_units": "PDF points; top-left origin; cached 120-DPI pixels multiplied by 72/120",
+      "extraction_method": "immutable_cached_pixels_only; PDF not opened or rendered"
+    },
+    {
+      "question_id": "wiso_2017-p8-slot4",
+      "question_number": "U4",
+      "exam": "2017_sommer",
+      "module": "WiSo",
+      "solution_source_pdf": "assets/pdfs/ea47a013956459b9cf4c907b.pdf",
+      "solution_source_page": 11,
+      "solution_bbox": [
+        17.4,
+        374.4,
+        558.0,
+        538.2
+      ],
+      "regions": [
+        {
+          "source_page": 11,
+          "bbox": [
+            17.4,
+            374.4,
+            558.0,
+            538.2
+          ],
+          "bbox_pixels": [
+            29,
+            624,
+            930,
+            897
+          ]
+        }
+      ],
+      "cropped_solution_image": "assets/wiso-u-solutions/wiso-2d.1.0-85f556d4c34e/U4.png",
+      "review_status": "auto_ready",
+      "answer_type": "multi_part",
+      "subparts": [
+        {
+          "id": "1",
+          "label": "1 · Teilaufgabe 1",
+          "type": "short_text"
+        },
+        {
+          "id": "2",
+          "label": "2 · Teilaufgabe 2",
+          "type": "short_text"
+        },
+        {
+          "id": "3",
+          "label": "3 · Teilaufgabe 3",
+          "type": "short_text"
+        }
+      ],
+      "source_hash": "1bca5421b9553e59df7103d82bfa3bbb45243009b2e09bcd9c4f3904fe1d9bd4",
+      "extractor_revision": "wiso-2d.1.0-85f556d4c34e",
+      "association_evidence": "Physical page10 has WiSo title and printed U1/U2; page11 is its printed reverse (-2-(2)) with U3/U4/U5/U6 headings. All crop ownership and boundaries visually checked; physical page9 is AP and excluded.",
+      "subpart_evidence": "Only printed 1-3 in U4/U5 and 1-4 in U6 are separate subparts; U1 table/U2 list/U3 diagram assessed as whole tasks.",
+      "grading_policy": "User self-assessment only; no semantic answer inference, numeric tolerance or point rubric.",
+      "confidence": 0.98,
+      "confidence_note": "Visually verified source ownership, not a calibrated probability.",
+      "source_pdf_sha256": "1bca5421b9553e59df7103d82bfa3bbb45243009b2e09bcd9c4f3904fe1d9bd4",
+      "source_cache_image": "assets/pages/ea47a013956459b9cf4c907b/011.png",
+      "source_cache_sha256": "7a702b249b41e565ed19185f71fcb64e29b4a1d0618226c13ac91df887453137",
+      "source_cache_size": [
+        992,
+        1403
+      ],
+      "source_page_points": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "source_cache_dpi": 120,
+      "bbox_units": "PDF points; top-left origin; cached 120-DPI pixels multiplied by 72/120",
+      "extraction_method": "immutable_cached_pixels_only; PDF not opened or rendered"
+    },
+    {
+      "question_id": "wiso_2017-p6-slot1",
+      "question_number": "U5",
+      "exam": "2017_sommer",
+      "module": "WiSo",
+      "solution_source_pdf": "assets/pdfs/ea47a013956459b9cf4c907b.pdf",
+      "solution_source_page": 11,
+      "solution_bbox": [
+        17.4,
+        540.0,
+        558.0,
+        631.2
+      ],
+      "regions": [
+        {
+          "source_page": 11,
+          "bbox": [
+            17.4,
+            540.0,
+            558.0,
+            631.2
+          ],
+          "bbox_pixels": [
+            29,
+            900,
+            930,
+            1052
+          ]
+        }
+      ],
+      "cropped_solution_image": "assets/wiso-u-solutions/wiso-2d.1.0-85f556d4c34e/U5.png",
+      "review_status": "auto_ready",
+      "answer_type": "multi_part",
+      "subparts": [
+        {
+          "id": "1",
+          "label": "1 · Teilaufgabe 1",
+          "type": "short_text"
+        },
+        {
+          "id": "2",
+          "label": "2 · Teilaufgabe 2",
+          "type": "short_text"
+        },
+        {
+          "id": "3",
+          "label": "3 · Teilaufgabe 3",
+          "type": "short_text"
+        }
+      ],
+      "source_hash": "1bca5421b9553e59df7103d82bfa3bbb45243009b2e09bcd9c4f3904fe1d9bd4",
+      "extractor_revision": "wiso-2d.1.0-85f556d4c34e",
+      "association_evidence": "Physical page10 has WiSo title and printed U1/U2; page11 is its printed reverse (-2-(2)) with U3/U4/U5/U6 headings. All crop ownership and boundaries visually checked; physical page9 is AP and excluded.",
+      "subpart_evidence": "Only printed 1-3 in U4/U5 and 1-4 in U6 are separate subparts; U1 table/U2 list/U3 diagram assessed as whole tasks.",
+      "grading_policy": "User self-assessment only; no semantic answer inference, numeric tolerance or point rubric.",
+      "confidence": 0.98,
+      "confidence_note": "Visually verified source ownership, not a calibrated probability.",
+      "source_pdf_sha256": "1bca5421b9553e59df7103d82bfa3bbb45243009b2e09bcd9c4f3904fe1d9bd4",
+      "source_cache_image": "assets/pages/ea47a013956459b9cf4c907b/011.png",
+      "source_cache_sha256": "7a702b249b41e565ed19185f71fcb64e29b4a1d0618226c13ac91df887453137",
+      "source_cache_size": [
+        992,
+        1403
+      ],
+      "source_page_points": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "source_cache_dpi": 120,
+      "bbox_units": "PDF points; top-left origin; cached 120-DPI pixels multiplied by 72/120",
+      "extraction_method": "immutable_cached_pixels_only; PDF not opened or rendered"
+    },
+    {
+      "question_id": "wiso_2017-p5-slot2",
+      "question_number": "U6",
+      "exam": "2017_sommer",
+      "module": "WiSo",
+      "solution_source_pdf": "assets/pdfs/ea47a013956459b9cf4c907b.pdf",
+      "solution_source_page": 11,
+      "solution_bbox": [
+        17.4,
+        633.0,
+        558.0,
+        762.0
+      ],
+      "regions": [
+        {
+          "source_page": 11,
+          "bbox": [
+            17.4,
+            633.0,
+            558.0,
+            762.0
+          ],
+          "bbox_pixels": [
+            29,
+            1055,
+            930,
+            1270
+          ]
+        }
+      ],
+      "cropped_solution_image": "assets/wiso-u-solutions/wiso-2d.1.0-85f556d4c34e/U6.png",
+      "review_status": "auto_ready",
+      "answer_type": "multi_part",
+      "subparts": [
+        {
+          "id": "1",
+          "label": "1 · Teilaufgabe 1",
+          "type": "short_text"
+        },
+        {
+          "id": "2",
+          "label": "2 · Teilaufgabe 2",
+          "type": "short_text"
+        },
+        {
+          "id": "3",
+          "label": "3 · Teilaufgabe 3",
+          "type": "short_text"
+        },
+        {
+          "id": "4",
+          "label": "4 · Teilaufgabe 4",
+          "type": "short_text"
+        }
+      ],
+      "source_hash": "1bca5421b9553e59df7103d82bfa3bbb45243009b2e09bcd9c4f3904fe1d9bd4",
+      "extractor_revision": "wiso-2d.1.0-85f556d4c34e",
+      "association_evidence": "Physical page10 has WiSo title and printed U1/U2; page11 is its printed reverse (-2-(2)) with U3/U4/U5/U6 headings. All crop ownership and boundaries visually checked; physical page9 is AP and excluded.",
+      "subpart_evidence": "Only printed 1-3 in U4/U5 and 1-4 in U6 are separate subparts; U1 table/U2 list/U3 diagram assessed as whole tasks.",
+      "grading_policy": "User self-assessment only; no semantic answer inference, numeric tolerance or point rubric.",
+      "confidence": 0.98,
+      "confidence_note": "Visually verified source ownership, not a calibrated probability.",
+      "source_pdf_sha256": "1bca5421b9553e59df7103d82bfa3bbb45243009b2e09bcd9c4f3904fe1d9bd4",
+      "source_cache_image": "assets/pages/ea47a013956459b9cf4c907b/011.png",
+      "source_cache_sha256": "7a702b249b41e565ed19185f71fcb64e29b4a1d0618226c13ac91df887453137",
+      "source_cache_size": [
+        992,
+        1403
+      ],
+      "source_page_points": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "source_cache_dpi": 120,
+      "bbox_units": "PDF points; top-left origin; cached 120-DPI pixels multiplied by 72/120",
+      "extraction_method": "immutable_cached_pixels_only; PDF not opened or rendered"
+    }
+  ]
+}

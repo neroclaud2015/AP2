@@ -1,0 +1,45 @@
+{
+  "number": "8",
+  "bbox": [
+    49,
+    305,
+    72,
+    333
+  ],
+  "readings": [
+    {
+      "threshold": 100,
+      "hits": [
+        [
+          "8",
+          0.9867696762084961
+        ]
+      ]
+    },
+    {
+      "threshold": 120,
+      "hits": [
+        [
+          "8",
+          0.9894691705703735
+        ]
+      ]
+    },
+    {
+      "threshold": 140,
+      "hits": [
+        [
+          "8",
+          0.9881716370582581
+        ]
+      ]
+    }
+  ],
+  "confidence": 0.9867696762084961,
+  "source_hash": "3542821032c4d6b251a2e78c7e370428c373ff41b38f0759304205c105b07697",
+  "page": 8,
+  "cached_page_hash": "bf0e64db56033c3aac5f0a024a365838aa2968791ce8fdd8038a6161c9911c17",
+  "crop_hash": "98d290ff8598df3edc5095e3e58526bb2577e512677045799753bd0d6e1c71f7",
+  "visual_observation": "8",
+  "method": "Actual printed label visually read and independently agreed by three local binary OCR thresholds; no sequence inference."
+}

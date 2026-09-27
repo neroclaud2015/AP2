@@ -14,7 +14,7 @@ describe('module routes',()=>{
  });
  it('normalizes unavailable exams and modules without opening another archive',()=>{
   expect(readRoute('?exam=2018-winter&module=wiso').module).toBe('arbeitsplanung');
-  expect(MODULES.map(m=>m.slug)).toEqual(['arbeitsplanung','funktionsanalyse']);
+  expect(MODULES.map(m=>m.slug)).toEqual(['arbeitsplanung','funktionsanalyse','wiso']);
  });
 });
 describe('module progress isolation',()=>{
@@ -52,5 +52,12 @@ it('round-trips independent session routes and registers the official duration s
  const r=readRoute('?view=session&exam=2017-sommer&module=funktionsanalyse&session=test-one');
  expect(r.view).toBe('session');expect(r.sessionId).toBe('test-one');
  expect(readRoute(routeUrl(r,'https://example.test/').search)).toEqual(r);
- for(const config of MODULES){expect(config.durationMinutes).toBe(105);expect(config.durationSource?.page).toBe(2);expect(config.durationSource?.pdf).toMatch(/assets\/pdfs\//);}
+ for(const config of MODULES.filter(m=>m.slug!=='wiso')){expect(config.durationMinutes).toBe(105);expect(config.durationSource?.page).toBe(2);expect(config.durationSource?.pdf).toMatch(/assets\/pdfs\//);}
+});
+
+it('registers Sommer WiSo with its own 18 bound and 6 unbound questions only',()=>{
+ const config=MODULES.find(m=>m.slug==='wiso');expect(config).toBeDefined();
+ expect(config?.durationMinutes).toBe(60);expect(config?.durationSource?.page).toBe(2);expect(config?.parts.map(p=>[p.title,p.questionNumbers.length])).toEqual([['Gebundene Aufgaben',18],['Ungebundene Aufgaben',6]]);
+ expect(readRoute('?view=study&exam=2017-sommer&module=wiso&q=U6').module).toBe('wiso');
+ expect(MODULES.some(m=>m.examId.includes('winter'))).toBe(false);
 });

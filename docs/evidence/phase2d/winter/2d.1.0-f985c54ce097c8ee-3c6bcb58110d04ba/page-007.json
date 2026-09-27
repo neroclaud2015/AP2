@@ -1,0 +1,216 @@
+{
+  "page": 7,
+  "geometry": [
+    595.260009765625,
+    841.8599853515625
+  ],
+  "classification": "questions",
+  "classification_evidence": "Individually inspected printed heading and panels",
+  "anchors": [
+    {
+      "anchor_id": "winter-ap-p7-11",
+      "number": "11",
+      "bbox": [
+        53,
+        58,
+        85,
+        86
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "39c3bd0d84c4dc8cf0ff78c656a488edb3a8d8be3d5bfb26fba0f9c8a9fa4e3c"
+    },
+    {
+      "anchor_id": "winter-ap-p7-12",
+      "number": "12",
+      "bbox": [
+        303,
+        58,
+        335,
+        86
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "0680a7a1ca8ed3eff0d0c1164873036b8ac8424bfc48885f5ea2ce6b478afe03"
+    },
+    {
+      "anchor_id": "winter-ap-p7-13",
+      "number": "13",
+      "bbox": [
+        53,
+        302,
+        85,
+        330
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "a91eaf4230ee3925522992fb2dc421161af26366a5cd818ffdb542100d7a9d00"
+    },
+    {
+      "anchor_id": "winter-ap-p7-14",
+      "number": "14",
+      "bbox": [
+        303,
+        302,
+        335,
+        330
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "0db81f5f3b33bbdb3fbdb46abbee45bb4aacc45e4b0e8dc7fed00d2b4aabb761"
+    },
+    {
+      "anchor_id": "winter-ap-p7-15",
+      "number": "15",
+      "bbox": [
+        54,
+        541,
+        86,
+        569
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "ecbe762db39c1da5b2df94954bf37c14e0105c000b42255534ea717abcd93509"
+    }
+  ],
+  "regions": [
+    {
+      "page": 7,
+      "bbox": [
+        51,
+        54,
+        296,
+        297
+      ],
+      "role": "primary",
+      "owner": "winter-ap-p7-11",
+      "evidence": "Printed heading observed directly; boundaries follow printed separators."
+    },
+    {
+      "page": 7,
+      "bbox": [
+        296,
+        54,
+        563,
+        297
+      ],
+      "role": "primary",
+      "owner": "winter-ap-p7-12",
+      "evidence": "Printed heading observed directly; boundaries follow printed separators."
+    },
+    {
+      "page": 7,
+      "bbox": [
+        51,
+        297,
+        296,
+        538
+      ],
+      "role": "primary",
+      "owner": "winter-ap-p7-13",
+      "evidence": "Printed heading observed directly; boundaries follow printed separators."
+    },
+    {
+      "page": 7,
+      "bbox": [
+        296,
+        297,
+        563,
+        538
+      ],
+      "role": "primary",
+      "owner": "winter-ap-p7-14",
+      "evidence": "Printed heading observed directly; boundaries follow printed separators."
+    },
+    {
+      "page": 7,
+      "bbox": [
+        51,
+        538,
+        563,
+        785
+      ],
+      "role": "primary",
+      "owner": "winter-ap-p7-15",
+      "evidence": "Printed heading observed directly; boundaries follow printed separators."
+    }
+  ],
+  "proofs": [
+    {
+      "kind": "heading",
+      "number": "11",
+      "bbox": [
+        53,
+        58,
+        85,
+        86
+      ],
+      "pixel_sha256": "39c3bd0d84c4dc8cf0ff78c656a488edb3a8d8be3d5bfb26fba0f9c8a9fa4e3c",
+      "audited_pixel_sha256": "39c3bd0d84c4dc8cf0ff78c656a488edb3a8d8be3d5bfb26fba0f9c8a9fa4e3c"
+    },
+    {
+      "kind": "heading",
+      "number": "12",
+      "bbox": [
+        303,
+        58,
+        335,
+        86
+      ],
+      "pixel_sha256": "0680a7a1ca8ed3eff0d0c1164873036b8ac8424bfc48885f5ea2ce6b478afe03",
+      "audited_pixel_sha256": "0680a7a1ca8ed3eff0d0c1164873036b8ac8424bfc48885f5ea2ce6b478afe03"
+    },
+    {
+      "kind": "heading",
+      "number": "13",
+      "bbox": [
+        53,
+        302,
+        85,
+        330
+      ],
+      "pixel_sha256": "a91eaf4230ee3925522992fb2dc421161af26366a5cd818ffdb542100d7a9d00",
+      "audited_pixel_sha256": "a91eaf4230ee3925522992fb2dc421161af26366a5cd818ffdb542100d7a9d00"
+    },
+    {
+      "kind": "heading",
+      "number": "14",
+      "bbox": [
+        303,
+        302,
+        335,
+        330
+      ],
+      "pixel_sha256": "0db81f5f3b33bbdb3fbdb46abbee45bb4aacc45e4b0e8dc7fed00d2b4aabb761",
+      "audited_pixel_sha256": "0db81f5f3b33bbdb3fbdb46abbee45bb4aacc45e4b0e8dc7fed00d2b4aabb761"
+    },
+    {
+      "kind": "heading",
+      "number": "15",
+      "bbox": [
+        54,
+        541,
+        86,
+        569
+      ],
+      "pixel_sha256": "ecbe762db39c1da5b2df94954bf37c14e0105c000b42255534ea717abcd93509",
+      "audited_pixel_sha256": "ecbe762db39c1da5b2df94954bf37c14e0105c000b42255534ea717abcd93509"
+    }
+  ],
+  "issues": [],
+  "context_regions": [],
+  "review_status": "visually_verified",
+  "user_acceptance": "pending",
+  "source_hash": "f5e152ae12d23f22345ae8b5f6f60208eaab095cbe5e3c7d5eecf563af6b6c21",
+  "source_image_sha256": "75e2df9de67e35b8379f60f7a37a903c94b6707b8c9e7d43d055047563649164",
+  "source_raw_sha256": "77ae6cf1bafdc71e2900b185e8f74131a0ac4af69a728d38655ad0b6f3075bda",
+  "profile_version": "2d.1.0",
+  "config_hash": "f985c54ce097c8ee",
+  "source_image_cache": "docs/evidence/layout_profiles/ap_2017_18/2b.1.0-c28daf4b06759ef9/page-007.png",
+  "source_raw_cache": "docs/evidence/layout_profiles/ap_2017_18/2b.1.0-c28daf4b06759ef9/page-007.json"
+}

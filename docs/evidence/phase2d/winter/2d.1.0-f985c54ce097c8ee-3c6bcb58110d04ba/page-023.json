@@ -1,0 +1,64 @@
+{
+  "page": 23,
+  "geometry": [
+    595.260009765625,
+    841.8599853515625
+  ],
+  "classification": "questions",
+  "classification_evidence": "Individually inspected printed heading and panels",
+  "anchors": [
+    {
+      "anchor_id": "winter-ap-p23-U8",
+      "number": "U8",
+      "bbox": [
+        25,
+        24,
+        90,
+        49
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "62a0066675b5db88dd0a5a6bd0d585dedbee9716e5ca79639c722d0638f33fca"
+    }
+  ],
+  "regions": [
+    {
+      "page": 23,
+      "bbox": [
+        20,
+        16,
+        575,
+        636
+      ],
+      "role": "primary",
+      "owner": "winter-ap-p23-U8",
+      "evidence": "Observed printed U heading; entire prompt/figure/table and response area, excluding page footer. U8 examiner summary below response grid is excluded."
+    }
+  ],
+  "proofs": [
+    {
+      "kind": "heading",
+      "number": "U8",
+      "bbox": [
+        25,
+        24,
+        90,
+        49
+      ],
+      "pixel_sha256": "62a0066675b5db88dd0a5a6bd0d585dedbee9716e5ca79639c722d0638f33fca",
+      "audited_pixel_sha256": "62a0066675b5db88dd0a5a6bd0d585dedbee9716e5ca79639c722d0638f33fca"
+    }
+  ],
+  "issues": [],
+  "context_regions": [],
+  "review_status": "visually_verified",
+  "user_acceptance": "pending",
+  "source_hash": "f5e152ae12d23f22345ae8b5f6f60208eaab095cbe5e3c7d5eecf563af6b6c21",
+  "source_image_sha256": "e2ce5d03d8bb5e1adbf72246fe3dcb138de41fccf80b3b64a4a1450f20ade8a9",
+  "source_raw_sha256": "b176a948f57762c077c533765ed16c24bca0f5210854522f91599a287093fbab",
+  "profile_version": "2d.1.0",
+  "config_hash": "f985c54ce097c8ee",
+  "source_image_cache": "docs/evidence/layout_profiles/ap_2017_18/2b.1.0-c28daf4b06759ef9/page-023.png",
+  "source_raw_cache": "docs/evidence/layout_profiles/ap_2017_18/2b.1.0-c28daf4b06759ef9/page-023.json"
+}

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { CropEditor, CropImage } from './CropImage';
-import { asset, type Box, type QuestionReview, type SegmentedExam, type SegmentedQuestion, validReview } from './types';
+import { asset, questionSources, type Box, type QuestionReview, type SegmentedExam, type SegmentedQuestion, validReview } from './types';
 
 export default function ReviewEditor({question, original, exam, fixedSolution=false, onSave, onCancel}: {
   question: SegmentedQuestion; original: SegmentedQuestion; exam: SegmentedExam; fixedSolution?:boolean;
@@ -21,7 +21,7 @@ export default function ReviewEditor({question, original, exam, fixedSolution=fa
     <p className="hint">Deine Änderungen werden auf diesem Gerät gespeichert und gegen automatische Extraktion gesperrt. Exportiere sie als Sicherung.</p>
     <div className="edit-fields"><label>Aufgabennummer<input aria-label="Aufgabennummer" value={draft.question_number} onChange={e=>update('question_number',e.target.value)}/></label>
       <label>Wissens-Tags (mit Komma trennen)<input aria-label="Wissens-Tags" value={draft.tags.join(', ')} onChange={e=>update('tags',e.target.value.split(',').map(t=>t.trim()))}/></label></div>
-    <h3>Originalausschnitt</h3><CropEditor question={draft} onChange={box=>setDraft(d=>({...d,bounding_box:box,regions:[box]}))}/>
+    <h3>Originalausschnitt</h3>{questionSources(draft).length>1&&<p className="hint">Du bearbeitest nur den Hauptbereich auf Seite {draft.source_page}. Die Fortsetzung auf {questionSources(draft).slice(1).map(s=>`Seite ${s.source_page}`).join(", ")} bleibt unverändert erhalten und wird in der Vorschau mit angezeigt.</p>}<CropEditor question={draft} onChange={box=>setDraft(d=>({...d,bounding_box:box,regions:[box]}))}/>
     <button className="outline" onClick={()=>setDraft(d=>({...d,bounding_box:original.bounding_box,regions:original.regions}))}>Automatischen Ausschnitt wiederherstellen</button>
     {validBox(draft.bounding_box)&&<details><summary>Vorschau des neuen Ausschnitts</summary><CropImage question={draft} edited/></details>}
     <label className="text-label">Hilfstext für Suche und Einordnung<textarea aria-label="Extrahierter Text" rows={8} value={draft.extracted_text} onChange={e=>update('extracted_text',e.target.value)}/></label>

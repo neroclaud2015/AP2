@@ -1,0 +1,304 @@
+{
+  "schema_version": 1,
+  "profile_id": "ap_2017_18",
+  "profile_version": "2d.1.0",
+  "source_hash": "f5e152ae12d23f22345ae8b5f6f60208eaab095cbe5e3c7d5eecf563af6b6c21",
+  "config_hash": "f985c54ce097c8ee",
+  "runner_hash": "3c6bcb58110d04ba",
+  "status": "compatible_dry_run",
+  "classification": "Compatible with independent portrait profile; user acceptance pending",
+  "expected_question_count": 36,
+  "observed_question_count": 36,
+  "preview_count": 36,
+  "physical_pages_checked": 25,
+  "pages": [
+    {
+      "page": 1,
+      "classification": "cover",
+      "issues": []
+    },
+    {
+      "page": 2,
+      "classification": "instructions",
+      "issues": []
+    },
+    {
+      "page": 3,
+      "classification": "questions",
+      "issues": []
+    },
+    {
+      "page": 4,
+      "classification": "questions",
+      "issues": []
+    },
+    {
+      "page": 5,
+      "classification": "questions",
+      "issues": []
+    },
+    {
+      "page": 6,
+      "classification": "questions",
+      "issues": []
+    },
+    {
+      "page": 7,
+      "classification": "questions",
+      "issues": []
+    },
+    {
+      "page": 8,
+      "classification": "questions",
+      "issues": []
+    },
+    {
+      "page": 9,
+      "classification": "questions",
+      "issues": []
+    },
+    {
+      "page": 10,
+      "classification": "questions",
+      "issues": []
+    },
+    {
+      "page": 11,
+      "classification": "marking_example",
+      "issues": []
+    },
+    {
+      "page": 12,
+      "classification": "cover",
+      "issues": []
+    },
+    {
+      "page": 13,
+      "classification": "instructions",
+      "issues": []
+    },
+    {
+      "page": 14,
+      "classification": "shared_description",
+      "issues": []
+    },
+    {
+      "page": 15,
+      "classification": "questions",
+      "issues": []
+    },
+    {
+      "page": 16,
+      "classification": "questions",
+      "issues": []
+    },
+    {
+      "page": 17,
+      "classification": "questions",
+      "issues": []
+    },
+    {
+      "page": 18,
+      "classification": "questions",
+      "issues": []
+    },
+    {
+      "page": 19,
+      "classification": "questions",
+      "issues": []
+    },
+    {
+      "page": 20,
+      "classification": "continuation",
+      "issues": []
+    },
+    {
+      "page": 21,
+      "classification": "questions",
+      "issues": []
+    },
+    {
+      "page": 22,
+      "classification": "questions",
+      "issues": []
+    },
+    {
+      "page": 23,
+      "classification": "questions",
+      "issues": []
+    },
+    {
+      "page": 24,
+      "classification": "attachment",
+      "issues": []
+    },
+    {
+      "page": 25,
+      "classification": "attachment",
+      "issues": []
+    }
+  ],
+  "missing": [],
+  "unexpected": [],
+  "duplicates": [],
+  "review_queue": [],
+  "review_count": 0,
+  "heading_method": "36 individually visually transcribed printed-number patches authenticated by exact cached RGB pixel SHA256. No sequence completion or nearest-owner inference; no OCR claim.",
+  "ownership_policy": "Explicit per-region owner; p20 Ergebnis U5 print authenticates U5 continuation; Q8 L shape and Q26 labelled calculation area explicit.",
+  "source_pdf_pages_opened": 0,
+  "source_pdf_pages_rendered": 0,
+  "formal_records_generated": false,
+  "answers_extracted": false,
+  "production_registration": false,
+  "user_acceptance": "pending",
+  "preview_resolution": "Original immutable 120dpi cached pixels, no super-resolution or PDF rerender",
+  "attachment_refs": {
+    "U2": [
+      25
+    ],
+    "U4": [
+      24
+    ]
+  },
+  "shared_description_page": 14,
+  "continuations": [
+    {
+      "page": 6,
+      "bbox": [
+        299,
+        296,
+        563,
+        537
+      ],
+      "role": "diagram",
+      "owner": "winter-ap-p6-8",
+      "evidence": "Q8 electrical control circuit occupies right column alongside Q9; explicit visually verified L shape."
+    },
+    {
+      "page": 10,
+      "bbox": [
+        303,
+        299,
+        563,
+        541
+      ],
+      "role": "response_area",
+      "owner": "winter-ap-p10-26",
+      "evidence": "Right panel explicitly printed Nebenrechnung Aufgabe 26; same owner, no adjacent-question inference."
+    },
+    {
+      "page": 20,
+      "bbox": [
+        20,
+        16,
+        575,
+        817
+      ],
+      "role": "response_area",
+      "owner": "winter-ap-p19-U5",
+      "evidence": "p20 lower-right scoring field explicitly says Ergebnis U5. Its Grafcet matches p19 U5 task, symbols and functional description."
+    }
+  ],
+  "page_checkpoints": {
+    "1": {
+      "raw_hash": "7b4e15bae22626f45eb7e63b59c715842cc368be769211d7dc99a3266133861b",
+      "image_hash": "5b8ed40b17689c97da9b7d2fe66eb8a606ab0e636514a4cba2951b9e00218eef"
+    },
+    "2": {
+      "raw_hash": "25346aebc3b1fbb6875435ff037385eeb312758f9e52bf95bcc6b2ebee425b84",
+      "image_hash": "d0202466cae8afacaa79286c4da6b2f4859fe840f8fdd2bc853232838b6fba82"
+    },
+    "3": {
+      "raw_hash": "1e5e530f0f66cef487d2fb30b2e48b06eacb435bef56fc8df29511a4086da2e7",
+      "image_hash": "1c5576a320eb1d55fed7ef6d829468e3f4eec849fa4e921d7f914f4afb18e95a"
+    },
+    "4": {
+      "raw_hash": "60dcae5a37983ed84b91bbbcbc4db3b4ed99dfba7572d45b5ef58b436a4e789b",
+      "image_hash": "645ab6cff9797e2ba000748a3e70d89e1b790362a40d7447bd68d3e861028947"
+    },
+    "5": {
+      "raw_hash": "c972d30fe13f2c0deef8366cac59f7ff4f219d6ef4113cff78e47ca15e76cdbf",
+      "image_hash": "9044b24ba899e3cd512d93ac8e5c69a2ee7a11455d7f9935950516b5970b1662"
+    },
+    "6": {
+      "raw_hash": "ea1820c38ae61b8a60c6f3915d4f7cdf59a2d53b3bcafc1d71d0a75643cd5871",
+      "image_hash": "95cc061aaa25fa1c4664a22879f33ba268a60d80d96685adb2a979eaca1d3ebc"
+    },
+    "7": {
+      "raw_hash": "77ae6cf1bafdc71e2900b185e8f74131a0ac4af69a728d38655ad0b6f3075bda",
+      "image_hash": "75e2df9de67e35b8379f60f7a37a903c94b6707b8c9e7d43d055047563649164"
+    },
+    "8": {
+      "raw_hash": "d9831422108a95763922d7d6ce514fb511384fd8c75b401ce339853b85c5a61c",
+      "image_hash": "4fec90dae4bd3dda18b0f8c8afab050674bbfda462c73d50d303521879ff42b3"
+    },
+    "9": {
+      "raw_hash": "63dc173ceccc92983035d57ed6a3c1f704e2d8ca07c10b2f16aa497be2079bc4",
+      "image_hash": "cbae925de86d3757b20d45b669164619895d3e9af71b0b5317d1a956cf5c9f7b"
+    },
+    "10": {
+      "raw_hash": "04c6a5008c4e699cb5f83de2fb367df66972b1edd91180ab4ce3a043b2287b1c",
+      "image_hash": "c1b066bd1a172bc201f88254f656d7f04963499d1feb311ee968d6dc98c2ab27"
+    },
+    "11": {
+      "raw_hash": "7f634a1d281426d3d82d03354089945de41ea6064a4835af6b475170c4aaf7cf",
+      "image_hash": "b95b74532455489b3ed16eb18c29bfd08a5007502edaa98b18cb3d19211c85bb"
+    },
+    "12": {
+      "raw_hash": "9b73a225b957f5177122ff8fae068855c7328cbc0fe9aa8673212dca7f323a4a",
+      "image_hash": "1f57d846628a13c22d5712062e79a20c206b9da1e3273573dfb62bed6b2fa579"
+    },
+    "13": {
+      "raw_hash": "66f60f4862996a3d95d06dd7e41898997f247f61eae73656040552db23d37322",
+      "image_hash": "10d16773a5bd8e12c6ffd70fbf68ce3245a9af48c5106151b2b753090f81bad9"
+    },
+    "14": {
+      "raw_hash": "df239db186acb3188d231bb5e629543d7baa8ab9b610cf7f89597bc3a64511c0",
+      "image_hash": "63bd96b32bc6ca302afd38665fb39581db2cbe4d3a8814cd21669a818bd4e97b"
+    },
+    "15": {
+      "raw_hash": "f7513a03d805b67348f0499d74223e4620868f3d498ca91c3c9e94feb9125b8c",
+      "image_hash": "8014aeae0d6f3db2720e8c07d4f3b10a75f67b323c5b12b3221eb83790123a1e"
+    },
+    "16": {
+      "raw_hash": "faa182d58fe6e5d1a6b3479cd6c029dbfb840f6346fdf18ba6f5459fb1b1e938",
+      "image_hash": "2ae8128b20c89d234f395d2ced3ad30429a4b2cdc70821299a65ea1d2dd4dae5"
+    },
+    "17": {
+      "raw_hash": "8b9d2aaaa2c5d06c45d7ba7a05c85dfebfb0cf8c22f833511493de1b064c58fc",
+      "image_hash": "6918a0e1ce3ca9a6b615d113dd1ba9da1310d72e4768aab1061a6642857e94c2"
+    },
+    "18": {
+      "raw_hash": "ee18c020a85a08468515f86c163e5787a644f195ec2072b8df32ab98dbc2648a",
+      "image_hash": "1a2a0f1c59980c98b6a73338ef152caea8f2191767c19db397cc625aa566bf8e"
+    },
+    "19": {
+      "raw_hash": "4cdc46443fac56de1976a78a11ac2cb35e34d417ed2f2e917a20117ecb88b7f7",
+      "image_hash": "26ee82f3b98ad1b8d708d6af4c6e7fa90f5c2f17fc8c405483334d81c8078b83"
+    },
+    "20": {
+      "raw_hash": "53f609526d06de003b39933cdc48067fd50ccdc8d1f4710deaf42d107c467c8e",
+      "image_hash": "0e888b2d0a24e392acf76415207bb74f22889b6eaf5aae2fe6cd7f803d5b3e8e"
+    },
+    "21": {
+      "raw_hash": "1e93e004afd902ec69772fde27be806338889c061be093ebf4ac324f8383f86d",
+      "image_hash": "8895a0dba8e5a38b0923d8cb982b853370b93f73a55d5884fd23c09c53393c28"
+    },
+    "22": {
+      "raw_hash": "2999b1340a3d4cbabc88336735915fcb3f27711b1c82f7c89b55d3fcc6c4990b",
+      "image_hash": "2a0bbe8303cc2b6263fd7aab6c368b8bb3188967d11b5b5a74614286357760fd"
+    },
+    "23": {
+      "raw_hash": "b176a948f57762c077c533765ed16c24bca0f5210854522f91599a287093fbab",
+      "image_hash": "e2ce5d03d8bb5e1adbf72246fe3dcb138de41fccf80b3b64a4a1450f20ade8a9"
+    },
+    "24": {
+      "raw_hash": "02bbc428bf3aa1d482cd648be979edf9e809c4b7f426c6709f58eab6ee888f13",
+      "image_hash": "ad5540396bab658306dd0762c3afc0e2b9d8f1bdf3a54bd2e9bd1c4c24bd4b83"
+    },
+    "25": {
+      "raw_hash": "bd5c5a4bb151ef453e093e2262adeccc30299feb83dd71922a821d6b80b2b8a2",
+      "image_hash": "a1cc5811ae0bfbdab56afd4186ffc13ef2f538415ac582ac41037e02018457ec"
+    }
+  }
+}

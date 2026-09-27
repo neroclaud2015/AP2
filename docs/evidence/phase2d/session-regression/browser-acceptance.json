@@ -1,0 +1,26 @@
+{
+  "url": "http://127.0.0.1:5173/",
+  "checks": {
+    "navigation_four_modes": true,
+    "free_assessment_only_after_reveal": true,
+    "original_order_fresh_no_leak": true,
+    "answer_cursor_refresh": true,
+    "pause_resume_persistent": true,
+    "leave_free_back_forward_safe": true,
+    "timer_105_advisory_no_autosubmit": true,
+    "submit_pending_not_wrong": true,
+    "result_source_decode_editable_U": true,
+    "kurz_unique_mixed_blank": true,
+    "resume_cancel_keeps_existing": true,
+    "new_seed_abandons_not_deletes": true,
+    "revision_conflict_reloads_without_overwrite": true,
+    "standard_FA_12_4_unique": true,
+    "FA_original_and_dashboard_resume": true,
+    "pending_reload_guard_preserves_answer": true,
+    "kurz_submitted_U_self_assessed_source": true,
+    "standard_submitted_result_source": true,
+    "personal_data_isolated_mobile_clean": true
+  },
+  "passed": 19,
+  "page_errors": []
+}

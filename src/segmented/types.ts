@@ -1,8 +1,10 @@
 export type Box = [number, number, number, number];
+export interface SourceRegion {page:number;bbox:Box;role:string;owner:string;evidence:string;source_page_image?:string;source_size?:[number,number]}
+export interface QuestionSource {source_page:number;source_page_image:string;source_size:[number,number];bounding_box:Box;regions:Box[]}
 export interface SegmentedQuestion {
   question_id: string; exam: string; module: string; question_number: string;
   source_pdf: string; source_page: number; source_page_image: string; source_size: [number, number];
-  bounding_box: Box; regions: Box[]; cropped_question_image: string; extracted_text: string;
+  bounding_box: Box; regions: Box[]; source_regions?:SourceRegion[]; cropped_question_image: string; extracted_text: string;
   extraction_confidence: number; label_evidence: string; review_status: 'auto_ready' | 'needs_review' | 'confirmed';
   review_reasons: string[]; extractor_version: string; segmentation_revision: string;
   tags: string[]; solution_page: number | null; solution_confirmed: boolean;
@@ -36,4 +38,14 @@ export function validReview(value: unknown): value is QuestionReview {
     Array.isArray(r.tags) && r.tags.every(t => typeof t === 'string') && typeof r.solution_confirmed === 'boolean' &&
     (r.solution_page === null || Number.isInteger(r.solution_page) && r.solution_page > 0) &&
     (!r.solution_confirmed || r.solution_page !== null) && ['confirmed','needs_review'].includes(r.review_status) && typeof r.updated_at === 'string';
+}
+
+// Reviews deliberately retain their legacy primary-page shape. Continuation pages
+// always come from immutable source metadata and are never replaced by a review.
+export function questionSources(q:SegmentedQuestion):QuestionSource[]{
+ const primary:QuestionSource={source_page:q.source_page,source_page_image:q.source_page_image,source_size:q.source_size,bounding_box:q.bounding_box,regions:q.regions};
+ const pages=new Map<number,SourceRegion[]>();
+ for(const region of q.source_regions??[]){if(region.page===q.source_page)continue;pages.set(region.page,[...(pages.get(region.page)??[]),region]);}
+ return [primary,...[...pages].map(([page,regions])=>({source_page:page,source_page_image:regions.find(r=>r.source_page_image)?.source_page_image??'',source_size:regions.find(r=>r.source_size)?.source_size??q.source_size,
+  bounding_box:[Math.min(...regions.map(r=>r.bbox[0])),Math.min(...regions.map(r=>r.bbox[1])),Math.max(...regions.map(r=>r.bbox[2])),Math.max(...regions.map(r=>r.bbox[3]))] as Box,regions:regions.map(r=>r.bbox)}))];
 }

@@ -1,0 +1,64 @@
+{
+  "page": 16,
+  "geometry": [
+    595.260009765625,
+    841.8599853515625
+  ],
+  "classification": "questions",
+  "classification_evidence": "Individually inspected printed heading and panels",
+  "anchors": [
+    {
+      "anchor_id": "winter-ap-p16-U2",
+      "number": "U2",
+      "bbox": [
+        25,
+        24,
+        90,
+        49
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "6c38da02bfd66ccb8b96b2c1cc299bc4b20615e5d53f28d9cee884b6e0dbfaea"
+    }
+  ],
+  "regions": [
+    {
+      "page": 16,
+      "bbox": [
+        20,
+        16,
+        575,
+        817
+      ],
+      "role": "primary",
+      "owner": "winter-ap-p16-U2",
+      "evidence": "Observed printed U heading; entire prompt/figure/table and response area, excluding page footer."
+    }
+  ],
+  "proofs": [
+    {
+      "kind": "heading",
+      "number": "U2",
+      "bbox": [
+        25,
+        24,
+        90,
+        49
+      ],
+      "pixel_sha256": "6c38da02bfd66ccb8b96b2c1cc299bc4b20615e5d53f28d9cee884b6e0dbfaea",
+      "audited_pixel_sha256": "6c38da02bfd66ccb8b96b2c1cc299bc4b20615e5d53f28d9cee884b6e0dbfaea"
+    }
+  ],
+  "issues": [],
+  "context_regions": [],
+  "review_status": "visually_verified",
+  "user_acceptance": "pending",
+  "source_hash": "f5e152ae12d23f22345ae8b5f6f60208eaab095cbe5e3c7d5eecf563af6b6c21",
+  "source_image_sha256": "2ae8128b20c89d234f395d2ced3ad30429a4b2cdc70821299a65ea1d2dd4dae5",
+  "source_raw_sha256": "faa182d58fe6e5d1a6b3479cd6c029dbfb840f6346fdf18ba6f5459fb1b1e938",
+  "profile_version": "2d.1.0",
+  "config_hash": "f985c54ce097c8ee",
+  "source_image_cache": "docs/evidence/layout_profiles/ap_2017_18/2b.1.0-c28daf4b06759ef9/page-016.png",
+  "source_raw_cache": "docs/evidence/layout_profiles/ap_2017_18/2b.1.0-c28daf4b06759ef9/page-016.json"
+}

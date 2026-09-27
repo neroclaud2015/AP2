@@ -9,7 +9,7 @@ PROFILES = [AP2017Profile, FA2017Profile, WiSo2017Profile, APWinterProfile]
 # verified source to the same profile when its geometry/ownership rules match.
 for cls in PROFILES:
     cls.validated_sources = ({'exam':cls.exam,'module':cls.module,'source_hash':cls.source_hash,
-        'validation_status':'compatible' if cls.profile_id in ('ap_2017','fa_2017') else 'blocked'},)
+        'validation_status':'compatible' if cls.profile_id in ('ap_2017','fa_2017','wiso_2017') else 'blocked'},)
 
 def profile_metadata():
     return [{'profile_id':cls.profile_id,'profile_version':cls.version,

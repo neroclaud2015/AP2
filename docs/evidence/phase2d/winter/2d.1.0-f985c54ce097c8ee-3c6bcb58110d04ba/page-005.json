@@ -1,0 +1,102 @@
+{
+  "page": 5,
+  "geometry": [
+    595.260009765625,
+    841.8599853515625
+  ],
+  "classification": "questions",
+  "classification_evidence": "Individually inspected printed heading and panels",
+  "anchors": [
+    {
+      "anchor_id": "winter-ap-p5-6",
+      "number": "6",
+      "bbox": [
+        54,
+        59,
+        83,
+        85
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "0a31b9a310767878066bea9d693beb927472d1593936643580c5f9e4d39f57c4"
+    },
+    {
+      "anchor_id": "winter-ap-p5-7",
+      "number": "7",
+      "bbox": [
+        54,
+        542,
+        83,
+        568
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Direct visual transcription of printed heading on this exact cached-pixel patch; never inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "35d6534c3e7c44112f1490197edcf447c5eab83985c479e94d5ec24bccb6c6ec"
+    }
+  ],
+  "regions": [
+    {
+      "page": 5,
+      "bbox": [
+        51,
+        54,
+        563,
+        540
+      ],
+      "role": "primary",
+      "owner": "winter-ap-p5-6",
+      "evidence": "Printed heading observed directly; boundaries follow printed separators."
+    },
+    {
+      "page": 5,
+      "bbox": [
+        51,
+        540,
+        563,
+        785
+      ],
+      "role": "primary",
+      "owner": "winter-ap-p5-7",
+      "evidence": "Printed heading observed directly; boundaries follow printed separators."
+    }
+  ],
+  "proofs": [
+    {
+      "kind": "heading",
+      "number": "6",
+      "bbox": [
+        54,
+        59,
+        83,
+        85
+      ],
+      "pixel_sha256": "0a31b9a310767878066bea9d693beb927472d1593936643580c5f9e4d39f57c4",
+      "audited_pixel_sha256": "0a31b9a310767878066bea9d693beb927472d1593936643580c5f9e4d39f57c4"
+    },
+    {
+      "kind": "heading",
+      "number": "7",
+      "bbox": [
+        54,
+        542,
+        83,
+        568
+      ],
+      "pixel_sha256": "35d6534c3e7c44112f1490197edcf447c5eab83985c479e94d5ec24bccb6c6ec",
+      "audited_pixel_sha256": "35d6534c3e7c44112f1490197edcf447c5eab83985c479e94d5ec24bccb6c6ec"
+    }
+  ],
+  "issues": [],
+  "context_regions": [],
+  "review_status": "visually_verified",
+  "user_acceptance": "pending",
+  "source_hash": "f5e152ae12d23f22345ae8b5f6f60208eaab095cbe5e3c7d5eecf563af6b6c21",
+  "source_image_sha256": "9044b24ba899e3cd512d93ac8e5c69a2ee7a11455d7f9935950516b5970b1662",
+  "source_raw_sha256": "c972d30fe13f2c0deef8366cac59f7ff4f219d6ef4113cff78e47ca15e76cdbf",
+  "profile_version": "2d.1.0",
+  "config_hash": "f985c54ce097c8ee",
+  "source_image_cache": "docs/evidence/layout_profiles/ap_2017_18/2b.1.0-c28daf4b06759ef9/page-005.png",
+  "source_raw_cache": "docs/evidence/layout_profiles/ap_2017_18/2b.1.0-c28daf4b06759ef9/page-005.json"
+}

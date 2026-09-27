@@ -1,0 +1,69 @@
+{
+  "key": "1bca5421b9553e59df7103d82bfa3bbb45243009b2e09bcd9c4f3904fe1d9bd4:2d.1.0:007cf0229dd97315b43d812eefee8c0ef9d7157b23477940f86962271edb27f2:61720341595448935b61eb59649a3af46a526474ae11ef208a99965093e4116e:8b7b06cf34ce5231575efb14a2699539623ee986e41230e4a80ca3b0e069804e",
+  "value": {
+    "question_id": "wiso_2017-p6-slot0",
+    "question_number": "U2",
+    "exam": "2017_sommer",
+    "module": "WiSo",
+    "solution_source_pdf": "assets/pdfs/ea47a013956459b9cf4c907b.pdf",
+    "solution_source_page": 10,
+    "solution_bbox": [
+      31.2,
+      510.6,
+      571.2,
+      570.0
+    ],
+    "regions": [
+      {
+        "source_page": 10,
+        "bbox": [
+          31.2,
+          510.6,
+          571.2,
+          570.0
+        ],
+        "bbox_pixels": [
+          52,
+          851,
+          952,
+          950
+        ]
+      }
+    ],
+    "cropped_solution_image": "assets/wiso-u-solutions/wiso-2d.1.0-007cf0229dd9/U2.png",
+    "review_status": "auto_ready",
+    "answer_type": "multi_part",
+    "subparts": [
+      {
+        "id": "whole",
+        "label": "Gesamte Aufgabe · Selbstbewertung",
+        "type": "short_text"
+      }
+    ],
+    "source_hash": "1bca5421b9553e59df7103d82bfa3bbb45243009b2e09bcd9c4f3904fe1d9bd4",
+    "extractor_revision": "wiso-2d.1.0-007cf0229dd9",
+    "association_evidence": "Physical page10 has WiSo title and printed U1/U2; page11 is its printed reverse (-2-(2)) with U3/U4/U5/U6 headings. All crop ownership and boundaries visually checked; physical page9 is AP and excluded.",
+    "subpart_evidence": "Only printed 1-3 in U4/U5 and 1-4 in U6 are separate subparts; U1 table/U2 list/U3 diagram assessed as whole tasks.",
+    "grading_policy": "User self-assessment only; no semantic answer inference, numeric tolerance or point rubric.",
+    "confidence": 0.98,
+    "confidence_note": "Visually verified source ownership, not a calibrated probability.",
+    "source_pdf_sha256": "1bca5421b9553e59df7103d82bfa3bbb45243009b2e09bcd9c4f3904fe1d9bd4",
+    "source_cache_image": "assets/pages/ea47a013956459b9cf4c907b/010.png",
+    "source_cache_sha256": "523e2dd3621f46da87c2a30592d85bd66527a2a2d8eefe19028f94dae0cd4dd7",
+    "source_cache_size": [
+      992,
+      1403
+    ],
+    "source_page_points": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "source_cache_dpi": 120,
+    "bbox_units": "PDF points; top-left origin; cached 120-DPI pixels multiplied by 72/120",
+    "extraction_method": "immutable_cached_pixels_only; PDF not opened or rendered"
+  },
+  "value_hash": "30b318dca2dd47c24f143c7efc289991d04a0ee17cf3e3219a923afaf1fc41b1",
+  "artifacts": {
+    "public/assets/wiso-u-solutions/wiso-2d.1.0-007cf0229dd9/U2.png": "7b54a007ecb953292b0861043b8242396f041a3fae2900c2ca90aee90cf14988"
+  }
+}

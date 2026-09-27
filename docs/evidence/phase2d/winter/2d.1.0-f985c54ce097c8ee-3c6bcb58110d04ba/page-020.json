@@ -1,0 +1,49 @@
+{
+  "page": 20,
+  "geometry": [
+    595.260009765625,
+    841.8599853515625
+  ],
+  "classification": "continuation",
+  "classification_evidence": "Individually inspected printed heading and panels",
+  "anchors": [],
+  "regions": [
+    {
+      "page": 20,
+      "bbox": [
+        20,
+        16,
+        575,
+        817
+      ],
+      "role": "response_area",
+      "owner": "winter-ap-p19-U5",
+      "evidence": "p20 lower-right scoring field explicitly says Ergebnis U5. Its Grafcet matches p19 U5 task, symbols and functional description."
+    }
+  ],
+  "proofs": [
+    {
+      "kind": "ownership",
+      "number": "U5",
+      "bbox": [
+        520,
+        743,
+        565,
+        775
+      ],
+      "pixel_sha256": "3fd2b9aea70c1732299eaf7f188200364a4553a15d1621f2b00dbb59fbc06712",
+      "audited_pixel_sha256": "3fd2b9aea70c1732299eaf7f188200364a4553a15d1621f2b00dbb59fbc06712"
+    }
+  ],
+  "issues": [],
+  "context_regions": [],
+  "review_status": "visually_verified",
+  "user_acceptance": "pending",
+  "source_hash": "f5e152ae12d23f22345ae8b5f6f60208eaab095cbe5e3c7d5eecf563af6b6c21",
+  "source_image_sha256": "0e888b2d0a24e392acf76415207bb74f22889b6eaf5aae2fe6cd7f803d5b3e8e",
+  "source_raw_sha256": "53f609526d06de003b39933cdc48067fd50ccdc8d1f4710deaf42d107c467c8e",
+  "profile_version": "2d.1.0",
+  "config_hash": "f985c54ce097c8ee",
+  "source_image_cache": "docs/evidence/layout_profiles/ap_2017_18/2b.1.0-c28daf4b06759ef9/page-020.png",
+  "source_raw_cache": "docs/evidence/layout_profiles/ap_2017_18/2b.1.0-c28daf4b06759ef9/page-020.json"
+}

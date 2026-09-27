@@ -1,34 +1,26 @@
 import { useEffect, useRef, useState } from 'react';
-import type { Box, SegmentedQuestion } from './types';
-import { asset } from './types';
+import type { Box, QuestionSource, SegmentedQuestion } from './types';
+import { asset,questionSources } from './types';
 
-export function CropImage({ question, edited = false }: {question: SegmentedQuestion; edited?: boolean}) {
-  const canvas = useRef<HTMLCanvasElement>(null);
-  const [error, setError] = useState(false);
-  useEffect(() => {
-    if (!edited) return;
-    let active = true;
-    const image = new Image();
-    image.onload = () => {
-      if (!active || !canvas.current) return;
-      const [x0,y0,x1,y1] = question.bounding_box;
-      const scale = image.naturalWidth / question.source_size[0];
-      const output = canvas.current;
-      output.width = Math.round((x1-x0)*scale); output.height = Math.round((y1-y0)*scale);
-      const context = output.getContext('2d')!;
-      context.fillStyle = 'white'; context.fillRect(0,0,output.width,output.height);
-      for (const [a,b,c,d] of question.regions) context.drawImage(image,a*scale,b*scale,(c-a)*scale,(d-b)*scale,(a-x0)*scale,(b-y0)*scale,(c-a)*scale,(d-b)*scale);
-      setError(false);
-    };
-    image.onerror = () => setError(true);
-    image.src = asset(question.source_page_image);
-    return () => { active = false; };
-  }, [question, edited]);
-  if (error) return <p role="alert">Bild konnte nicht geladen werden. Bitte Original-PDF öffnen.</p>;
-  return edited ? <canvas ref={canvas} className="question-image" role="img" aria-label={`Aufgabe ${question.question_number}, bearbeiteter Originalausschnitt`}/> :
-    <img className="question-image" src={asset(question.cropped_question_image)} alt={`Aufgabe ${question.question_number}, Originalausschnitt`} onError={() => setError(true)}/>;
+function PageCrop({source,label}:{source:QuestionSource;label:string}){
+ const canvas=useRef<HTMLCanvasElement>(null);const [error,setError]=useState(false);
+ useEffect(()=>{
+  let active=true;setError(false);if(!source.source_page_image){setError(true);return;}
+  const image=new Image();image.onload=()=>{
+   if(!active||!canvas.current)return;
+   const [x0,y0,x1,y1]=source.bounding_box;const scale=image.naturalWidth/source.source_size[0];const output=canvas.current;
+   output.width=Math.round((x1-x0)*scale);output.height=Math.round((y1-y0)*scale);const context=output.getContext('2d')!;
+   context.fillStyle='white';context.fillRect(0,0,output.width,output.height);
+   for(const [a,b,c,d] of source.regions)context.drawImage(image,a*scale,b*scale,(c-a)*scale,(d-b)*scale,(a-x0)*scale,(b-y0)*scale,(c-a)*scale,(d-b)*scale);
+  };image.onerror=()=>{if(active)setError(true);};image.src=asset(source.source_page_image);return()=>{active=false;};
+ },[source]);
+ return error?<p role="alert">Bild von Seite {source.source_page} konnte nicht geladen werden. Bitte Original-PDF öffnen.</p>:<canvas ref={canvas} className="question-image" role="img" data-source-page={source.source_page} aria-label={label}/>;
 }
-
+export function CropImage({question,edited=false}:{question:SegmentedQuestion;edited?:boolean}){
+ const [error,setError]=useState(false);useEffect(()=>setError(false),[question.question_id,question.cropped_question_image,edited]);
+ if(edited)return <div className="multipage-crop">{questionSources(question).map((source,i)=><div key={source.source_page}>{i>0&&<p className="hint">Fortsetzung · Originalseite {source.source_page}</p>}<PageCrop source={source} label={`Aufgabe ${question.question_number}, ${i===0?'bearbeiteter Originalausschnitt':'unveränderte Fortsetzung'}, Seite ${source.source_page}`}/></div>)}</div>;
+ return error?<p role="alert">Bild konnte nicht geladen werden. Bitte Original-PDF öffnen.</p>:<img className="question-image" src={asset(question.cropped_question_image)} alt={`Aufgabe ${question.question_number}, Originalausschnitt`} onError={()=>setError(true)}/>;
+}
 export function CropEditor({question, onChange}: {question: SegmentedQuestion; onChange: (box: Box) => void}) {
   const start = useRef<[number,number] | null>(null);
   const svg = useRef<SVGSVGElement>(null);

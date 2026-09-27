@@ -2,7 +2,7 @@ import type {Attempt,LearningSession} from './model';
 export type ModuleSlug=string;
 export type View='start'|'learn'|'exams'|'tests'|'session'|'study'|'review';
 export interface PartConfig {id:string;title:string;kind:'multiple_choice'|'multi_part';label:string;questionNumbers:string[]}
-export interface ModuleConfig {examId:string;slug:ModuleSlug;title:string;segmentedPath:string;answersPath:string;solutionsPath:string;choiceSolutionPage:number;descriptionPage:number;attachmentPages:number[];parts:PartConfig[];durationMinutes:number|null;durationSource?:{pdf:string;page:number}}
+export interface ModuleConfig {examId:string;slug:ModuleSlug;title:string;segmentedPath:string;answersPath:string;solutionsPath:string;choiceSolutionPage:number;descriptionPage:number;descriptionLabel?:string;attachmentPages:number[];parts:PartConfig[];durationMinutes:number|null;durationSource?:{pdf:string;page:number}}
 const standardParts=():PartConfig[]=>[
  {id:'A',title:'Teil A',kind:'multiple_choice',label:'Auswahlaufgaben',questionNumbers:Array.from({length:28},(_,i)=>String(i+1))},
  {id:'B',title:'Teil B',kind:'multi_part',label:'Offene Aufgaben',questionNumbers:Array.from({length:8},(_,i)=>`U${i+1}`)},
@@ -10,6 +10,10 @@ const standardParts=():PartConfig[]=>[
 export const MODULES:ModuleConfig[]=[
  {examId:'2017-sommer',slug:'arbeitsplanung',title:'Arbeitsplanung',segmentedPath:'data/2017_sommer_arbeitsplanung_segmented.json',answersPath:'data/2017_sommer_arbeitsplanung_answers.json',solutionsPath:'data/2017_sommer_arbeitsplanung_u_solutions.json',choiceSolutionPage:2,descriptionPage:9,attachmentPages:[13],parts:standardParts(),durationMinutes:105,durationSource:{pdf:'assets/pdfs/35c77ffdb630f70057e4cfb8.pdf',page:2}},
  {examId:'2017-sommer',slug:'funktionsanalyse',title:'Funktionsanalyse',segmentedPath:'data/2017_sommer_funktionsanalyse_segmented.json',answersPath:'data/2017_sommer_funktionsanalyse_answers.json',solutionsPath:'data/2017_sommer_funktionsanalyse_u_solutions.json',choiceSolutionPage:1,descriptionPage:9,attachmentPages:[13,14,15],parts:standardParts(),durationMinutes:105,durationSource:{pdf:'assets/pdfs/0734a1589eed96809ac7896a.pdf',page:2}},
+ {examId:'2017-sommer',slug:'wiso',title:'WiSo',segmentedPath:'data/2017_sommer_wiso_segmented.json',answersPath:'data/2017_sommer_wiso_answers.json',solutionsPath:'data/2017_sommer_wiso_u_solutions.json',choiceSolutionPage:3,descriptionPage:2,descriptionLabel:'Prüfungshinweise',attachmentPages:[9],durationMinutes:60,durationSource:{pdf:'assets/pdfs/35f662246f2737dba0b61b88.pdf',page:2},parts:[
+  {id:'A',title:'Gebundene Aufgaben',kind:'multiple_choice',label:'Auswahlaufgaben',questionNumbers:Array.from({length:18},(_,i)=>String(i+1))},
+  {id:'B',title:'Ungebundene Aufgaben',kind:'multi_part',label:'Offene Aufgaben',questionNumbers:Array.from({length:6},(_,i)=>`U${i+1}`)},
+ ]},
 ];
 export function moduleParts<Q extends {question_number:string}>(config:ModuleConfig,questions:Q[]){
  return config.parts.map(part=>({...part,questions:part.questionNumbers.flatMap(number=>{const q=questions.find(q=>q.question_number===number);return q?[q]:[];})}));

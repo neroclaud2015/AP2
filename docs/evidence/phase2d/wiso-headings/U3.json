@@ -1,0 +1,45 @@
+{
+  "number": "U3",
+  "bbox": [
+    650,
+    62,
+    696,
+    95
+  ],
+  "readings": [
+    {
+      "threshold": 100,
+      "hits": [
+        [
+          "U3",
+          0.9965262115001678
+        ]
+      ]
+    },
+    {
+      "threshold": 120,
+      "hits": [
+        [
+          "U3",
+          0.995493471622467
+        ]
+      ]
+    },
+    {
+      "threshold": 140,
+      "hits": [
+        [
+          "U3",
+          0.9959525167942047
+        ]
+      ]
+    }
+  ],
+  "confidence": 0.995493471622467,
+  "source_hash": "3542821032c4d6b251a2e78c7e370428c373ff41b38f0759304205c105b07697",
+  "page": 7,
+  "cached_page_hash": "fab1b2f2f1049e7bdd019ce4cb2017cb2231cdb5ca05cbe7e1f2e50e90740bc0",
+  "crop_hash": "58e471d5ebc81b7748e0517cd3d9fe9dadf5fd5f332b61b9b4429e85afeaa81a",
+  "visual_observation": "U3",
+  "method": "Actual printed label visually read and independently agreed by three local binary OCR thresholds; no sequence inference."
+}

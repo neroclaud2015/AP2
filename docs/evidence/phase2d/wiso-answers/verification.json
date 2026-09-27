@@ -1,0 +1,475 @@
+{
+  "scope": "Sommer2017 WiSo official answers only",
+  "revision": "wiso-2d.1.0-85f556d4c34e",
+  "source_pdf_sha256": "1bca5421b9553e59df7103d82bfa3bbb45243009b2e09bcd9c4f3904fe1d9bd4",
+  "cache_provenance": {
+    "3": {
+      "sha256": "048225cbff1912052be6532dcb7b4fd59f884993d93ec73f1c813c47cc94826d",
+      "size": [
+        992,
+        1404
+      ],
+      "points": [
+        595.0,
+        842.0
+      ]
+    },
+    "10": {
+      "sha256": "523e2dd3621f46da87c2a30592d85bd66527a2a2d8eefe19028f94dae0cd4dd7",
+      "size": [
+        992,
+        1403
+      ],
+      "points": [
+        595.2000122070312,
+        841.4400024414062
+      ]
+    },
+    "11": {
+      "sha256": "7a702b249b41e565ed19185f71fcb64e29b4a1d0618226c13ac91df887453137",
+      "size": [
+        992,
+        1403
+      ],
+      "points": [
+        595.2000122070312,
+        841.4400024414062
+      ]
+    }
+  },
+  "cache_only": true,
+  "pdf_opened": false,
+  "pdf_pages_rendered": 0,
+  "answer_counts": {
+    "expected": 18,
+    "auto_ready": 18,
+    "needs_review": 0
+  },
+  "u_solutions": 6,
+  "geometry_evidence": "WiSo module heading and printed Q1-10/Q11-18 column labels visually verified on physical solution page3; source/cache-hash-bound coordinate template contains no answers.",
+  "u_ownership_evidence": "Physical page10 has WiSo title and printed U1/U2; page11 is its printed reverse (-2-(2)) with U3/U4/U5/U6 headings. All crop ownership and boundaries visually checked; physical page9 is AP and excluded.",
+  "visual_qa": {
+    "all_18_circles_checked_against_original": true,
+    "all_6_U_crops_complete": true,
+    "Q10_skewed_header_margin_fixed_and_rechecked": true,
+    "source_crop_pixels_unchanged": true,
+    "U1_U2_U3_no_invented_subparts": true
+  },
+  "test_command": "python -m unittest discover -s scripts -p test_wiso_answers.py",
+  "tests_passed": 5,
+  "tested_contracts": [
+    "rows1-5",
+    "absent/double/missing/shifted dots",
+    "unverified labels rejected",
+    "identity scope and 24-record coverage",
+    "explicit subparts only",
+    "PDF open forbidden and PDF file absent",
+    "checkpoint resume without extraction",
+    "repeat skip without extraction",
+    "damaged artifact recovery",
+    "version/config invalidation",
+    "modified source cache rejected",
+    "U crop exact pixel equality",
+    "checkpoint metadata tampering rejected during recovery"
+  ],
+  "repeat_run": {
+    "status": "skipped",
+    "pages_processed": 0,
+    "questions_processed": 0,
+    "pdf_pages_rendered": 0,
+    "key": "1bca5421b9553e59df7103d82bfa3bbb45243009b2e09bcd9c4f3904fe1d9bd4:2d.1.0:85f556d4c34ee4f0787edf5137aed09bd599cfca3d96ba20d3b77ff5cc78bf0d:61720341595448935b61eb59649a3af46a526474ae11ef208a99965093e4116e:8b7b06cf34ce5231575efb14a2699539623ee986e41230e4a80ca3b0e069804e"
+  },
+  "answers": [
+    {
+      "question_id": "wiso_2017-p5-slot3",
+      "question_number": 1,
+      "answer": 2,
+      "source_page": 3,
+      "bbox": [
+        52.8,
+        238.2,
+        81.6,
+        312.0
+      ],
+      "crop": "Q01.png"
+    },
+    {
+      "question_id": "wiso_2017-p5-slot4",
+      "question_number": 2,
+      "answer": 4,
+      "source_page": 3,
+      "bbox": [
+        88.2,
+        238.2,
+        117.0,
+        312.0
+      ],
+      "crop": "Q02.png"
+    },
+    {
+      "question_id": "wiso_2017-p5-slot5",
+      "question_number": 3,
+      "answer": 2,
+      "source_page": 3,
+      "bbox": [
+        123.0,
+        237.6,
+        151.8,
+        311.4
+      ],
+      "crop": "Q03.png"
+    },
+    {
+      "question_id": "wiso_2017-p6-slot2",
+      "question_number": 4,
+      "answer": 5,
+      "source_page": 3,
+      "bbox": [
+        158.4,
+        237.6,
+        187.2,
+        311.4
+      ],
+      "crop": "Q04.png"
+    },
+    {
+      "question_id": "wiso_2017-p6-slot3",
+      "question_number": 5,
+      "answer": 5,
+      "source_page": 3,
+      "bbox": [
+        193.2,
+        237.0,
+        222.0,
+        310.8
+      ],
+      "crop": "Q05.png"
+    },
+    {
+      "question_id": "wiso_2017-p8-slot0",
+      "question_number": 6,
+      "answer": 2,
+      "source_page": 3,
+      "bbox": [
+        228.6,
+        237.0,
+        257.4,
+        310.8
+      ],
+      "crop": "Q06.png"
+    },
+    {
+      "question_id": "wiso_2017-p8-slot1",
+      "question_number": 7,
+      "answer": 4,
+      "source_page": 3,
+      "bbox": [
+        264.0,
+        236.4,
+        292.8,
+        310.8
+      ],
+      "crop": "Q07.png"
+    },
+    {
+      "question_id": "wiso_2017-p8-slot2",
+      "question_number": 8,
+      "answer": 3,
+      "source_page": 3,
+      "bbox": [
+        298.8,
+        236.4,
+        327.6,
+        310.2
+      ],
+      "crop": "Q08.png"
+    },
+    {
+      "question_id": "wiso_2017-p8-slot3",
+      "question_number": 9,
+      "answer": 3,
+      "source_page": 3,
+      "bbox": [
+        334.2,
+        235.8,
+        363.0,
+        310.2
+      ],
+      "crop": "Q09.png"
+    },
+    {
+      "question_id": "wiso_2017-p7-slot0",
+      "question_number": 10,
+      "answer": 2,
+      "source_page": 3,
+      "bbox": [
+        369.0,
+        235.8,
+        397.8,
+        309.6
+      ],
+      "crop": "Q10.png"
+    },
+    {
+      "question_id": "wiso_2017-p7-slot1",
+      "question_number": 11,
+      "answer": 2,
+      "source_page": 3,
+      "bbox": [
+        52.8,
+        309.0,
+        81.6,
+        381.6
+      ],
+      "crop": "Q11.png"
+    },
+    {
+      "question_id": "wiso_2017-p7-slot2",
+      "question_number": 12,
+      "answer": 4,
+      "source_page": 3,
+      "bbox": [
+        88.2,
+        309.0,
+        117.0,
+        381.0
+      ],
+      "crop": "Q12.png"
+    },
+    {
+      "question_id": "wiso_2017-p5-slot0",
+      "question_number": 13,
+      "answer": 2,
+      "source_page": 3,
+      "bbox": [
+        123.6,
+        308.4,
+        152.4,
+        381.0
+      ],
+      "crop": "Q13.png"
+    },
+    {
+      "question_id": "wiso_2017-p5-slot1",
+      "question_number": 14,
+      "answer": 2,
+      "source_page": 3,
+      "bbox": [
+        159.0,
+        308.4,
+        187.8,
+        380.4
+      ],
+      "crop": "Q14.png"
+    },
+    {
+      "question_id": "wiso_2017-p4-slot1",
+      "question_number": 15,
+      "answer": 2,
+      "source_page": 3,
+      "bbox": [
+        194.4,
+        307.8,
+        223.2,
+        380.4
+      ],
+      "crop": "Q15.png"
+    },
+    {
+      "question_id": "wiso_2017-p4-slot2",
+      "question_number": 16,
+      "answer": 2,
+      "source_page": 3,
+      "bbox": [
+        229.8,
+        307.8,
+        258.6,
+        379.8
+      ],
+      "crop": "Q16.png"
+    },
+    {
+      "question_id": "wiso_2017-p4-slot3",
+      "question_number": 17,
+      "answer": 3,
+      "source_page": 3,
+      "bbox": [
+        265.2,
+        307.2,
+        294.0,
+        379.8
+      ],
+      "crop": "Q17.png"
+    },
+    {
+      "question_id": "wiso_2017-p4-slot4",
+      "question_number": 18,
+      "answer": 5,
+      "source_page": 3,
+      "bbox": [
+        300.6,
+        307.2,
+        329.4,
+        379.2
+      ],
+      "crop": "Q18.png"
+    }
+  ],
+  "written_solutions": [
+    {
+      "question_id": "wiso_2017-p4-slot0",
+      "question_number": "U1",
+      "source_page": 10,
+      "bbox": [
+        31.2,
+        231.0,
+        571.2,
+        508.8
+      ],
+      "subparts": [
+        {
+          "id": "whole",
+          "label": "Gesamte Aufgabe · Selbstbewertung",
+          "type": "short_text"
+        }
+      ],
+      "crop": "U1.png"
+    },
+    {
+      "question_id": "wiso_2017-p6-slot0",
+      "question_number": "U2",
+      "source_page": 10,
+      "bbox": [
+        31.2,
+        510.6,
+        571.2,
+        570.0
+      ],
+      "subparts": [
+        {
+          "id": "whole",
+          "label": "Gesamte Aufgabe · Selbstbewertung",
+          "type": "short_text"
+        }
+      ],
+      "crop": "U2.png"
+    },
+    {
+      "question_id": "wiso_2017-p7-slot3",
+      "question_number": "U3",
+      "source_page": 11,
+      "bbox": [
+        17.4,
+        24.0,
+        558.0,
+        372.6
+      ],
+      "subparts": [
+        {
+          "id": "whole",
+          "label": "Gesamte Aufgabe · Selbstbewertung",
+          "type": "diagram"
+        }
+      ],
+      "crop": "U3.png"
+    },
+    {
+      "question_id": "wiso_2017-p8-slot4",
+      "question_number": "U4",
+      "source_page": 11,
+      "bbox": [
+        17.4,
+        374.4,
+        558.0,
+        538.2
+      ],
+      "subparts": [
+        {
+          "id": "1",
+          "label": "1 · Teilaufgabe 1",
+          "type": "short_text"
+        },
+        {
+          "id": "2",
+          "label": "2 · Teilaufgabe 2",
+          "type": "short_text"
+        },
+        {
+          "id": "3",
+          "label": "3 · Teilaufgabe 3",
+          "type": "short_text"
+        }
+      ],
+      "crop": "U4.png"
+    },
+    {
+      "question_id": "wiso_2017-p6-slot1",
+      "question_number": "U5",
+      "source_page": 11,
+      "bbox": [
+        17.4,
+        540.0,
+        558.0,
+        631.2
+      ],
+      "subparts": [
+        {
+          "id": "1",
+          "label": "1 · Teilaufgabe 1",
+          "type": "short_text"
+        },
+        {
+          "id": "2",
+          "label": "2 · Teilaufgabe 2",
+          "type": "short_text"
+        },
+        {
+          "id": "3",
+          "label": "3 · Teilaufgabe 3",
+          "type": "short_text"
+        }
+      ],
+      "crop": "U5.png"
+    },
+    {
+      "question_id": "wiso_2017-p5-slot2",
+      "question_number": "U6",
+      "source_page": 11,
+      "bbox": [
+        17.4,
+        633.0,
+        558.0,
+        762.0
+      ],
+      "subparts": [
+        {
+          "id": "1",
+          "label": "1 · Teilaufgabe 1",
+          "type": "short_text"
+        },
+        {
+          "id": "2",
+          "label": "2 · Teilaufgabe 2",
+          "type": "short_text"
+        },
+        {
+          "id": "3",
+          "label": "3 · Teilaufgabe 3",
+          "type": "short_text"
+        },
+        {
+          "id": "4",
+          "label": "4 · Teilaufgabe 4",
+          "type": "short_text"
+        }
+      ],
+      "crop": "U6.png"
+    }
+  ],
+  "limits": [
+    "Confidence is a deterministic rule grade, not probability.",
+    "Historical official screenshot facts only; no legal advice or current-law assertion.",
+    "No OCR/semantic choice inference; no numeric rubric inferred.",
+    "Personal review, AP and FA records/manifests were not modified."
+  ]
+}
