@@ -1,3 +1,4 @@
+import { validAnswerReview, type AnswerReview } from '../segmented/answers';
 import type { QuestionReview } from '../segmented/types';
 import Dexie, { type Table } from 'dexie';
 import type { AuthProvider, LocalField, ProgressRecord, ProgressRepository, UserContext } from '../types';
@@ -11,6 +12,7 @@ export class IndexedDBProgressRepository implements ProgressRepository {
     this.db = new Dexie(name);
     this.db.version(1).stores({ records: '[userId+questionId],userId' });
     this.db.version(2).stores({ reviews: '[userId+question_id],userId' });
+    this.db.version(3).stores({ answerReviews: '[userId+question_id],userId' });
     this.records = this.db.table('records');
   }
   async get(userId: string, questionId: string) { return this.records.get([userId, questionId]); }
@@ -37,9 +39,20 @@ export class IndexedDBProgressRepository implements ProgressRepository {
   async saveReview(review: QuestionReview) {
     await this.db.table<QuestionReview>('reviews').put(review);
   }
-  async importReviews(reviews: QuestionReview[]) {
+  async importReviews(reviews: QuestionReview[], answers: AnswerReview[] = []) {
+    if(!answers.every(validAnswerReview)) throw new Error('Invalid answer review');
     const table = this.db.table<QuestionReview>('reviews');
-    await this.db.transaction('rw', table, () => table.bulkPut(reviews));
+    const answerTable=this.db.table<AnswerReview>('answerReviews');
+    await this.db.transaction('rw', table, answerTable, async () => {
+      await table.bulkPut(reviews); await answerTable.bulkPut(answers);
+    });
+  }
+  async getAnswerReviews(userId: string): Promise<AnswerReview[]> {
+    return this.db.table<AnswerReview>('answerReviews').where('userId').equals(userId).toArray();
+  }
+  async saveAnswerReview(review: AnswerReview) {
+    if(!validAnswerReview(review)) throw new Error('Invalid answer review');
+    await this.db.table<AnswerReview>('answerReviews').put(review);
   }
   close() { this.db.close(); }
 }

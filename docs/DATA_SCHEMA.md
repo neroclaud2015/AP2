@@ -19,3 +19,18 @@ Changes to extraction/schema versions require an explicit migration. No automati
 ## Segmentation schema v2 (Phase 1.5)
 
 See `src/segmented/types.ts`. `extraction_confidence` describes heuristic layout/label confidence only; auxiliary OCR text is unverified. Source IDs use physical PDF page and stable layout anchors, independent of OCR number. `regions` is the exact union of retained source rectangles; `bounding_box` encloses this union. The cropped image masks other regions white. Review status distinguishes auto_ready, needs_review and confirmed. Local QuestionReview records overlay generated fields; solution_confirmed is separate. IndexedDB v2 adds reviews without replacing v1 progress records.
+
+
+## Separate official answer key (Phase 1.6)
+
+`src/segmented/answers.ts` and `data/exams/2017_sommer_arbeitsplanung_answers.json` hold the scoped answer grid output. Existing segmented questions are unchanged. Join by exam/module/original numeric question number during extraction, then by stable question_id in the UI; editing the visible number does not silently reassign the answer.
+
+- `solution_source_page`/`source_page`: physical source page, 1-based. Not an answer value.
+- `official_answer_type`: multiple_choice; `official_answer`: integer 1–5 or null; `official_answer_status`: auto_ready / needs_review.
+- `source_pdf`, `source_pdf_sha256`, `source_crop`, `answer_bbox` (header + five positions), `circle_bbox` (selected ring), `bbox_units`: PDF points, top-left origin.
+- `measurements`: each row 1–5 has center, center ink, annular ink and angular support. `confidence` is a deterministic rule grade, not calibrated probability.
+- Header numbering comes from a visually verified, PDF-hash-bound layout template. No OCR or semantics determine answer values.
+- `data/ingest/answer_manifest.json`: separate entries keyed by source hash, parser version and layout config hash; atomic checkpoint and content-verified outputs. Shared OS lock serializes writers. No directory discovery.
+- IndexedDB v3 adds `answerReviews`, keyed by userId + question_id. Locked manual answer records are independent of regenerated data; `user_corrected=true` for edits, `official_answer_status=confirmed`, `locked=true`. Automatic processing never writes this table.
+- Backup schema v2 includes `reviews` + `answer_reviews`, imported in one transaction. v1 backups remain accepted without clearing answer reviews.
+- Legacy `solution_page`/`solution_confirmed` only map a source; they never become numeric official answers.

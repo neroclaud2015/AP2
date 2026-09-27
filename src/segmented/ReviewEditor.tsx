@@ -25,9 +25,10 @@ export default function ReviewEditor({question, original, exam, onSave, onCancel
     <button className="outline" onClick={()=>setDraft(d=>({...d,bounding_box:original.bounding_box,regions:original.regions}))}>Automatischen Ausschnitt wiederherstellen</button>
     {validBox(draft.bounding_box)&&<details><summary>Vorschau des neuen Ausschnitts</summary><CropImage question={draft} edited/></details>}
     <label className="text-label">Hilfstext für Suche und Einordnung<textarea aria-label="Extrahierter Text" rows={8} value={draft.extracted_text} onChange={e=>update('extracted_text',e.target.value)}/></label>
-    <h3>Offizielle Lösung zuordnen</h3><p className="hint">Seite aus dem vorhandenen Lösungsdokument auswählen und prüfen. Eine Zuordnung gilt erst nach deiner Bestätigung.</p>
+    {/^\d+$/.test(original.question_number)?<p className="hint">Die Auswahlantwort wird oben separat über „Antwort ändern“ bearbeitet (nur 1–5). Die Quellen-PDF-Seite ist kein Antwortwert.</p>:<><h3>Offizielle Lösungsquelle zuordnen</h3><p className="hint">Seite aus dem vorhandenen Lösungsdokument auswählen und prüfen. Eine Zuordnung gilt erst nach deiner Bestätigung.</p>
     <label>Lösungsseite <select aria-label="Lösungsseite" value={draft.solution_page??''} onChange={e=>setDraft(d=>({...d,solution_page:e.target.value?Number(e.target.value):null,solution_confirmed:false}))}><option value="">Keine Zuordnung</option>{exam.solution_document.pages.map(p=><option key={p.number} value={p.number}>PDF-Seite {p.number}</option>)}</select></label>
     {draft.solution_page&&<><div className="solution-preview"><img src={asset(exam.solution_document.pages[draft.solution_page-1].image)} alt={`Lösungsvorschau Seite ${draft.solution_page}`}/></div><label className="check-label"><input type="checkbox" checked={draft.solution_confirmed} onChange={e=>update('solution_confirmed',e.target.checked)}/>Diese Lösungszuordnung bestätigen</label></>}
+    </>}
     {error&&<p role="alert">{error}</p>}<div className="save-row"><button className="primary" disabled={saving} onClick={()=>save('confirmed')}>Speichern · Confirmed</button><button className="outline" disabled={saving} onClick={()=>save('needs_review')}>Speichern · Needs Review</button></div>
   </section>;
 }
