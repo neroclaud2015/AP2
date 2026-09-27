@@ -3,7 +3,7 @@ const {chromium}=require('playwright');const fs=require('node:fs/promises');cons
  const url=process.env.APP_URL||'http://127.0.0.1:5173/';const evidence=process.env.EVIDENCE_DIR||'docs/evidence/phase2a';await fs.mkdir(evidence,{recursive:true});
  try{
   await page.goto(url);await page.getByRole('heading',{name:/Verstehen. Üben./}).waitFor();await page.screenshot({path:evidence+'/dashboard.png',fullPage:true});
-  await page.getByRole('button',{name:'Originalprüfungen',exact:true}).first().click();await page.locator('.exam-card').filter({has:page.getByRole('heading',{name:'Arbeitsplanung',exact:true})}).getByRole('button',{name:/Teil A/}).click();
+  await page.getByRole('button',{name:'Lernen',exact:true}).first().click();await page.locator('.exam-card').filter({has:page.getByRole('heading',{name:'Arbeitsplanung',exact:true})}).getByRole('button',{name:/Teil A/}).click();
   await page.getByRole('heading',{name:'Aufgabe 1',exact:true}).waitFor();
   assert.equal(await page.getByRole('button',{name:'Antwort bestätigen',exact:true}).count(),0);
   assert.equal(await page.getByText('Offizielle Antwortquelle',{exact:true}).count(),0);
@@ -34,7 +34,7 @@ const {chromium}=require('playwright');const fs=require('node:fs/promises');cons
   for(const n of ['U2','U3','U4','U5','U6','U8']){await page.getByRole('button',{name:'Aufgabe '+n,exact:true}).click();await page.getByLabel(n+' Teil 1',{exact:true}).fill('Testantwort');await page.getByRole('button',{name:'Lösung anzeigen',exact:true}).click();await page.locator('.u-solution-image').evaluate(im=>im.decode());if(n==='U4')assert.equal(await page.locator('.source-links a').count(),2);}
   await page.getByRole('button',{name:'Review / Quellen',exact:true}).click();await page.getByText('Review Mode · Arbeitsplanung · Daten und Quellen prüfen',{exact:true}).waitFor();await page.getByRole('button',{name:'Aufgabe 1',exact:true}).click();await page.getByRole('button',{name:'Antwort bestätigen',exact:true}).waitFor();
   await page.getByRole('button',{name:'Zurück zum Lernen',exact:true}).click();await page.locator('.review-shell').waitFor({state:'detached'});assert.equal(await page.getByRole('button',{name:'Antwort bestätigen',exact:true}).count(),0);
-  await page.getByRole('button',{name:'Start / Dashboard',exact:true}).click();await page.getByRole('heading',{name:/Verstehen. Üben./}).waitFor();
+  await page.getByRole('button',{name:'Start',exact:true}).click();await page.getByRole('heading',{name:/Verstehen. Üben./}).waitFor();
   const download=page.waitForEvent('download');await page.getByRole('button',{name:'Lernfortschritt exportieren',exact:true}).click();const data=JSON.parse(await fs.readFile(await(await download).path(),'utf8'));
   assert.equal(data.attempts.length,4);assert.equal(data.attempts.filter(a=>a.auto_scored).length,2);assert.equal(data.attempts.filter(a=>a.self_assessed).length,2);
   assert.ok(data.attempts.some(a=>a.error_reason==='Vorzeichen übersehen'&&a.unsure));assert.ok(data.attempts.some(a=>a.subparts.length===3&&a.correctness==='teilweise'));

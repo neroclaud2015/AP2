@@ -47,3 +47,10 @@ it('derives parts and answer kind from registered question membership, not label
  expect(questionPart(config,'9')?.kind).toBe('multi_part');
  expect(questionPart(config,'U99')?.kind).toBe('multiple_choice');
 });
+
+it('round-trips independent session routes and registers the official duration source',()=>{
+ const r=readRoute('?view=session&exam=2017-sommer&module=funktionsanalyse&session=test-one');
+ expect(r.view).toBe('session');expect(r.sessionId).toBe('test-one');
+ expect(readRoute(routeUrl(r,'https://example.test/').search)).toEqual(r);
+ for(const config of MODULES){expect(config.durationMinutes).toBe(105);expect(config.durationSource?.page).toBe(2);expect(config.durationSource?.pdf).toMatch(/assets\/pdfs\//);}
+});
