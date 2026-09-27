@@ -3,7 +3,7 @@ export interface SourceRegion {page:number;bbox:Box;role:string;owner:string;evi
 export interface QuestionSource {source_page:number;source_page_image:string;source_size:[number,number];bounding_box:Box;regions:Box[]}
 export interface SegmentedQuestion {
   question_id: string; exam: string; module: string; question_number: string;
-  source_pdf: string; source_page: number; source_page_image: string; source_size: [number, number];
+  source_pdf: string; source_pdf_available?:boolean; source_page_available?:boolean; source_page: number; source_page_image: string; source_size: [number, number];
   bounding_box: Box; regions: Box[]; source_regions?:SourceRegion[]; cropped_question_image: string; extracted_text: string;
   extraction_confidence: number; label_evidence: string; review_status: 'auto_ready' | 'needs_review' | 'confirmed';
   review_reasons: string[]; extractor_version: string; segmentation_revision: string;
@@ -16,10 +16,10 @@ export interface QuestionReview {
   review_status: 'needs_review' | 'confirmed'; updated_at: string;
 }
 export interface SegmentedExam {
-  schema_version: 2; exam: string; module: string; document_id: string; source_pdf: string;
+  schema_version: 2; exam: string; module: string; document_id: string; source_pdf: string; source_pdf_available?:boolean; source_page_available?:boolean;
   extractor_version: string; segmentation_revision: string; questions: SegmentedQuestion[];
   pages_processed: number; pages_total: number; confidence_note: string;
-  solution_document: { public_pdf: string; pages: {number: number; image: string}[] };
+  solution_document: { public_pdf: string; public_pdf_available?:boolean; pages: {number: number; image: string}[] };
   source_pages: {number: number; image: string; raw_text: string}[];
 }
 export const asset = (path: string) => import.meta.env.BASE_URL + path;
@@ -49,3 +49,5 @@ export function questionSources(q:SegmentedQuestion):QuestionSource[]{
  return [primary,...[...pages].map(([page,regions])=>({source_page:page,source_page_image:regions.find(r=>r.source_page_image)?.source_page_image??'',source_size:regions.find(r=>r.source_size)?.source_size??q.source_size,
   bounding_box:[Math.min(...regions.map(r=>r.bbox[0])),Math.min(...regions.map(r=>r.bbox[1])),Math.max(...regions.map(r=>r.bbox[2])),Math.max(...regions.map(r=>r.bbox[3]))] as Box,regions:regions.map(r=>r.bbox)}))];
 }
+
+export function questionSourceUrl(q:SegmentedQuestion,source:QuestionSource){return q.source_pdf_available===false?asset(source.source_page_image||q.cropped_question_image):asset(q.source_pdf)+`#page=${source.source_page}`;}

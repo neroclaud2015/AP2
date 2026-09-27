@@ -1,0 +1,98 @@
+{
+  "page": 13,
+  "geometry": [
+    595.260009765625,
+    841.8599853515625
+  ],
+  "classification": "mixed_questions",
+  "classification_evidence": "Printed headings and panels individually visually inspected",
+  "anchors": [
+    {
+      "anchor_id": "winter-wiso-p13-17",
+      "number": "17",
+      "bbox": [
+        58,
+        59,
+        101,
+        84
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 17 individually observed; no sequence completion.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "a248022707be383975fc958a4740ac651403748ec6b09b24b8a436f735f73cac"
+    },
+    {
+      "anchor_id": "winter-wiso-p13-18",
+      "number": "18",
+      "bbox": [
+        306,
+        59,
+        350,
+        84
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 18 individually observed; no sequence completion.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "61ee9983bda2953679eab35057412c0a0fa837b02cf6e1594bed2aac916d0f0a"
+    }
+  ],
+  "regions": [
+    {
+      "page": 13,
+      "bbox": [
+        56,
+        54,
+        301,
+        295
+      ],
+      "role": "primary",
+      "owner": "winter-wiso-p13-17",
+      "evidence": "Original printed heading and visible ruled panel retain all question content."
+    },
+    {
+      "page": 13,
+      "bbox": [
+        301,
+        54,
+        543,
+        295
+      ],
+      "role": "primary",
+      "owner": "winter-wiso-p13-18",
+      "evidence": "Original printed heading and visible ruled panel retain all question content."
+    }
+  ],
+  "proofs": [
+    {
+      "kind": "heading",
+      "number": "17",
+      "bbox": [
+        58,
+        59,
+        101,
+        84
+      ],
+      "pixel_sha256": "a248022707be383975fc958a4740ac651403748ec6b09b24b8a436f735f73cac",
+      "audited_pixel_sha256": "a248022707be383975fc958a4740ac651403748ec6b09b24b8a436f735f73cac"
+    },
+    {
+      "kind": "heading",
+      "number": "18",
+      "bbox": [
+        306,
+        59,
+        350,
+        84
+      ],
+      "pixel_sha256": "61ee9983bda2953679eab35057412c0a0fa837b02cf6e1594bed2aac916d0f0a",
+      "audited_pixel_sha256": "61ee9983bda2953679eab35057412c0a0fa837b02cf6e1594bed2aac916d0f0a"
+    }
+  ],
+  "issues": [],
+  "context_regions": [],
+  "review_status": "visually_verified",
+  "user_acceptance": "pending",
+  "source_hash": "47d11c07ee752963d6746821c82ecd2a4d684d44114cf13a89222b29c0d14383",
+  "source_image_sha256": "47d350008544dad4a2601c15d4c560aedd49d1669969cdb216941a5118abffd7",
+  "config_hash": "1b027a044e15323ef3768af887e947fef9b8b90bdd4806d82327beeb42d63c84"
+}

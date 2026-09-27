@@ -1,0 +1,80 @@
+{
+  "page": 16,
+  "geometry": [
+    595.260009765625,
+    841.8599853515625
+  ],
+  "classification": "questions",
+  "classification_evidence": "Individually visually inspected cached printed page",
+  "anchors": [
+    {
+      "anchor_id": "winter-fa-p16-U1",
+      "number": "U1",
+      "bbox": [
+        41,
+        392,
+        78,
+        415
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed U1 inspected individually, not inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "ffb37e385bfadc9b2b780864a9f3417585b8dd2fbf15c5230e26365527ca98c6"
+    }
+  ],
+  "regions": [
+    {
+      "page": 16,
+      "bbox": [
+        37,
+        387,
+        562,
+        817
+      ],
+      "role": "primary",
+      "owner": "winter-fa-p16-U1",
+      "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+    }
+  ],
+  "proofs": [
+    {
+      "kind": "heading",
+      "number": "U1",
+      "bbox": [
+        41,
+        392,
+        78,
+        415
+      ],
+      "pixel_sha256": "ffb37e385bfadc9b2b780864a9f3417585b8dd2fbf15c5230e26365527ca98c6",
+      "audited_pixel_sha256": "ffb37e385bfadc9b2b780864a9f3417585b8dd2fbf15c5230e26365527ca98c6"
+    }
+  ],
+  "issues": [],
+  "context_regions": [
+    {
+      "bbox": [
+        37,
+        20,
+        562,
+        387
+      ],
+      "role": "shared_description",
+      "for_questions": [
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6",
+        "U7",
+        "U8"
+      ]
+    }
+  ],
+  "review_status": "visually_verified",
+  "user_acceptance": "pending",
+  "source_hash": "765e3fd4ff24429fd28bee06f43052bf39250bb5916d378cf130d8d167089d83",
+  "source_image_sha256": "dce8b5f2e89ca955af4c7d3beaadb7b6b8722b360be3cc502ddd8045cd78d469",
+  "config_hash": "a63b0a402c21df53ca3b78fee53ab3d4e4ca6e838875ceacd7b29411d0f3713f"
+}

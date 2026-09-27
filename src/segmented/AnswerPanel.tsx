@@ -19,7 +19,7 @@ export default function AnswerPanel({answer,review,overlay,disabled,onSave,onBus
     finally{setSaving(false);}
   };
   return <section className="answer official-answer" aria-label="Offizielle Auswahlantwort">
-    <div className="reader-head"><strong>OFFICIAL ANSWER · TEIL A</strong><span className={`badge ${current.official_answer_status}`}>{current.official_answer_status==='confirmed'?'Confirmed · gesperrt':current.official_answer_status==='auto_ready'?'Auto detected':'Needs Review'}</span></div>
+    <div className="reader-head"><strong>OFFICIAL ANSWER</strong><span className={`badge ${current.official_answer_status}`}>{current.official_answer_status==='confirmed'?'Confirmed · gesperrt':current.official_answer_status==='auto_ready'?'Auto detected':'Needs Review'}</span></div>
     <p className="answer-value">Official answer: <strong data-testid="official-answer">{current.official_answer??'—'}</strong></p>
     <p className="hint">{review?'Deine bestätigte Antwort ist vor automatischen Änderungen geschützt.':`Confidence: ${answer.confidence>=.95?'High':'Needs Review'} · Geometrische Erkennung der offiziellen Kreismarkierung.`}</p>
     {review&&<p>Automatisch erkannt: {answer.official_answer??'nicht eindeutig'} · {review.user_corrected?'Von dir bearbeitet':'Von dir bestätigt'}</p>}
@@ -33,6 +33,6 @@ export default function AnswerPanel({answer,review,overlay,disabled,onSave,onBus
     {error&&<p role="alert">{error}</p>}
     {source&&<div className="answer-source"><p>Originalquelle Q{answer.question_number} · Lösung PDF-Seite {answer.solution_source_page}. Von oben nach unten: 1, 2, 3, 4, 5.</p>
       <img src={asset(answer.source_crop)} alt={`Offizielle Antwortquelle Q${answer.question_number}: Nummer und fünf Positionen`} />
-      <div className="question-actions"><a href={asset(answer.source_pdf)+`#page=${answer.solution_source_page}`} target="_blank" rel="noreferrer">Original-Antwortseite ↗</a><a href={asset(overlay)} target="_blank" rel="noreferrer">Gesamte Tabelle mit Erkennung ↗</a></div></div>}
+      <div className="question-actions"><a href={answer.source_pdf_available===false?asset(answer.source_crop):asset(answer.source_pdf)+`#page=${answer.solution_source_page}`} target="_blank" rel="noreferrer">{answer.source_pdf_available===false?'Original-Antwortausschnitt':'Original-Antwortseite'} ↗</a><a href={asset(overlay)} target="_blank" rel="noreferrer">Gesamte Tabelle mit Erkennung ↗</a></div></div>}
   </section>;
 }

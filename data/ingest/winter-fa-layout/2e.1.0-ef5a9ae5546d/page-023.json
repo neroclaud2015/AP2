@@ -1,0 +1,60 @@
+{
+  "page": 23,
+  "geometry": [
+    595.260009765625,
+    841.8599853515625
+  ],
+  "classification": "questions",
+  "classification_evidence": "Individually visually inspected cached printed page",
+  "anchors": [
+    {
+      "anchor_id": "winter-fa-p23-U8",
+      "number": "U8",
+      "bbox": [
+        31,
+        23,
+        85,
+        55
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed U8 inspected individually, not inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "c882a8301deb4283a54acf5af2592640eff3bc56b23b9ed4f2eb5fe2ca4e91b9"
+    }
+  ],
+  "regions": [
+    {
+      "page": 23,
+      "bbox": [
+        28,
+        20,
+        566,
+        640
+      ],
+      "role": "primary",
+      "owner": "winter-fa-p23-U8",
+      "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+    }
+  ],
+  "proofs": [
+    {
+      "kind": "heading",
+      "number": "U8",
+      "bbox": [
+        31,
+        23,
+        85,
+        55
+      ],
+      "pixel_sha256": "c882a8301deb4283a54acf5af2592640eff3bc56b23b9ed4f2eb5fe2ca4e91b9",
+      "audited_pixel_sha256": "c882a8301deb4283a54acf5af2592640eff3bc56b23b9ed4f2eb5fe2ca4e91b9"
+    }
+  ],
+  "issues": [],
+  "context_regions": [],
+  "review_status": "visually_verified",
+  "user_acceptance": "pending",
+  "source_hash": "765e3fd4ff24429fd28bee06f43052bf39250bb5916d378cf130d8d167089d83",
+  "source_image_sha256": "0dac35cc8a2f37e17b9f90eeefaeac00af3cfe80bdfd7d86b944214a6d8d7748",
+  "config_hash": "ef5a9ae5546d55efa82bad580aa801ae9dbc7e72caaa1abe7f007769f6711e3e"
+}

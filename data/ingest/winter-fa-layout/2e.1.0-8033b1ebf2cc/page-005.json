@@ -1,0 +1,198 @@
+{
+  "page": 5,
+  "geometry": [
+    595.260009765625,
+    841.8599853515625
+  ],
+  "classification": "questions",
+  "classification_evidence": "Individually visually inspected cached printed page",
+  "anchors": [
+    {
+      "anchor_id": "winter-fa-p5-6",
+      "number": "6",
+      "bbox": [
+        58,
+        58,
+        86,
+        84
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 6 inspected individually, not inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "659a69c8e3812e50558668d8845c239b3763c6528e85932a73b0ca7a33b2f7eb"
+    },
+    {
+      "anchor_id": "winter-fa-p5-7",
+      "number": "7",
+      "bbox": [
+        305,
+        302,
+        335,
+        325
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 7 inspected individually, not inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "c15bd35942db6dab02aa52d9b3f2564e804469cec49557f88a7408358124578c"
+    },
+    {
+      "anchor_id": "winter-fa-p5-8",
+      "number": "8",
+      "bbox": [
+        57,
+        543,
+        87,
+        566
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 8 inspected individually, not inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "eb99e406b685910840997e105c16c2896e2f0ab4b8be8a8700691eadc8c20afa"
+    },
+    {
+      "anchor_id": "winter-fa-p5-9",
+      "number": "9",
+      "bbox": [
+        305,
+        543,
+        335,
+        566
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 9 inspected individually, not inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "3bf8b690d73cebfd2262605c51bd86d71275a0c91a9c1571b8f1a30c7802f195"
+    }
+  ],
+  "regions": [
+    {
+      "page": 5,
+      "bbox": [
+        57,
+        55,
+        542,
+        297
+      ],
+      "role": "primary",
+      "owner": "winter-fa-p5-6",
+      "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+    },
+    {
+      "page": 5,
+      "bbox": [
+        300,
+        297,
+        542,
+        538
+      ],
+      "role": "primary",
+      "owner": "winter-fa-p5-7",
+      "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+    },
+    {
+      "page": 5,
+      "bbox": [
+        57,
+        538,
+        300,
+        780
+      ],
+      "role": "primary",
+      "owner": "winter-fa-p5-8",
+      "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+    },
+    {
+      "page": 5,
+      "bbox": [
+        300,
+        538,
+        542,
+        780
+      ],
+      "role": "primary",
+      "owner": "winter-fa-p5-9",
+      "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+    },
+    {
+      "page": 5,
+      "bbox": [
+        57,
+        297,
+        300,
+        538
+      ],
+      "role": "response_area",
+      "owner": "winter-fa-p5-6",
+      "evidence": "Printed Nebenrechnung Aufgabe 6 explicitly assigns this response area."
+    }
+  ],
+  "proofs": [
+    {
+      "kind": "heading",
+      "number": "6",
+      "bbox": [
+        58,
+        58,
+        86,
+        84
+      ],
+      "pixel_sha256": "659a69c8e3812e50558668d8845c239b3763c6528e85932a73b0ca7a33b2f7eb",
+      "audited_pixel_sha256": "659a69c8e3812e50558668d8845c239b3763c6528e85932a73b0ca7a33b2f7eb"
+    },
+    {
+      "kind": "heading",
+      "number": "7",
+      "bbox": [
+        305,
+        302,
+        335,
+        325
+      ],
+      "pixel_sha256": "c15bd35942db6dab02aa52d9b3f2564e804469cec49557f88a7408358124578c",
+      "audited_pixel_sha256": "c15bd35942db6dab02aa52d9b3f2564e804469cec49557f88a7408358124578c"
+    },
+    {
+      "kind": "heading",
+      "number": "8",
+      "bbox": [
+        57,
+        543,
+        87,
+        566
+      ],
+      "pixel_sha256": "eb99e406b685910840997e105c16c2896e2f0ab4b8be8a8700691eadc8c20afa",
+      "audited_pixel_sha256": "eb99e406b685910840997e105c16c2896e2f0ab4b8be8a8700691eadc8c20afa"
+    },
+    {
+      "kind": "heading",
+      "number": "9",
+      "bbox": [
+        305,
+        543,
+        335,
+        566
+      ],
+      "pixel_sha256": "3bf8b690d73cebfd2262605c51bd86d71275a0c91a9c1571b8f1a30c7802f195",
+      "audited_pixel_sha256": "3bf8b690d73cebfd2262605c51bd86d71275a0c91a9c1571b8f1a30c7802f195"
+    },
+    {
+      "kind": "ownership",
+      "number": "Nebenrechnung Aufgabe 6",
+      "bbox": [
+        69,
+        301,
+        209,
+        315
+      ],
+      "pixel_sha256": "98e141ba5ef238de1b9c8c2473a61087fb45e9229f4a1c5e2c0643564c3c8be7",
+      "audited_pixel_sha256": "98e141ba5ef238de1b9c8c2473a61087fb45e9229f4a1c5e2c0643564c3c8be7"
+    }
+  ],
+  "issues": [],
+  "context_regions": [],
+  "review_status": "visually_verified",
+  "user_acceptance": "pending",
+  "source_hash": "765e3fd4ff24429fd28bee06f43052bf39250bb5916d378cf130d8d167089d83",
+  "source_image_sha256": "b155518363326d5477da2d3a30b1d25dfaebfb5cbc798f50409f72a3ef10605f",
+  "config_hash": "8033b1ebf2cc726292863c8d5dc9d4b667cf636e2509864db4cb90b71fa2f0f2"
+}

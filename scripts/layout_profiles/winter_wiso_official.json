@@ -1,0 +1,148 @@
+{
+  "scope": "winter-wiso",
+  "name": "2017_18_winter_wiso",
+  "exam": "2017_18_winter",
+  "module": "WiSo",
+  "source_hash": "ff4767053ef41cb3b49cb4f5e074c289a398750d8ffaf30f6dd71087b0ee7f8c",
+  "choice_page": 12,
+  "choice_count": 18,
+  "analysis_size": [
+    993,
+    1404
+  ],
+  "groups": [
+    [
+      1,
+      10,
+      149.5,
+      57.5,
+      408.5,
+      19.1,
+      0,
+      380
+    ],
+    [
+      11,
+      8,
+      150,
+      57.5,
+      522.5,
+      19.3,
+      0,
+      493
+    ]
+  ],
+  "grid_crop": [
+    121,
+    379,
+    714,
+    610
+  ],
+  "ring_policy": {
+    "min_ring": 0.4,
+    "support": 0.83,
+    "possible_ring": 0.32,
+    "possible_support": 0.58,
+    "margin": 0.15,
+    "center": 0.1
+  },
+  "header_evidence": "Physical12 printed W17 9907 L10, Winter2017/18, Wirtschafts- und Sozialkunde,18 questions. All column labels individually visually verified. Physical15 same printed code is duplicate scan. Template has no answers.",
+  "page_image_hashes": {
+    "12": "1f2e5a734cb61ccb015111a5614c52efa360d496b7ea35d7a418efc359ccfb59",
+    "13": "20634dd302a57134ac205748a0fef1c5df030680858aacde30124da9f64de413",
+    "14": "090c1758fe84513f5b3e0366215788a492686287e97b64208d7882309eb428cb"
+  },
+  "u_evidence": "Physical13 printed W17 9907 L, Winter2017/18 Wirtschafts- und Sozialkunde: explicit U1-U5 boxes. Physical14 reverse page marked2-(2), explicit U6. Only printed numbered subparts; U3/U5 whole-task self-assessment.",
+  "u_regions": {
+    "U1": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            46,
+            245,
+            568,
+            341
+          ]
+        }
+      ],
+      "count": 3,
+      "diagram_parts": []
+    },
+    "U2": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            46,
+            343,
+            568,
+            475
+          ]
+        }
+      ],
+      "count": 4,
+      "diagram_parts": []
+    },
+    "U3": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            46,
+            477,
+            568,
+            621
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": []
+    },
+    "U4": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            46,
+            623,
+            568,
+            712
+          ]
+        }
+      ],
+      "count": 3,
+      "diagram_parts": []
+    },
+    "U5": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            46,
+            715,
+            568,
+            790
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": []
+    },
+    "U6": {
+      "regions": [
+        {
+          "page": 14,
+          "bbox": [
+            28,
+            38,
+            551,
+            120
+          ]
+        }
+      ],
+      "count": 2,
+      "diagram_parts": []
+    }
+  }
+}

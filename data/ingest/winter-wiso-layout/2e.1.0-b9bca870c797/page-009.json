@@ -1,0 +1,160 @@
+{
+  "page": 9,
+  "geometry": [
+    595.260009765625,
+    841.8599853515625
+  ],
+  "classification": "mixed_questions",
+  "classification_evidence": "Printed headings and panels individually visually inspected",
+  "anchors": [
+    {
+      "anchor_id": "winter-wiso-p9-10",
+      "number": "10",
+      "bbox": [
+        54,
+        301,
+        97,
+        327
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 10 individually observed; no sequence completion.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "9b8f100c9267c3c6495c46eb9b26337a324fca9cf8c95bb5e2ee64fa8453ec54"
+    },
+    {
+      "anchor_id": "winter-wiso-p9-11",
+      "number": "11",
+      "bbox": [
+        302,
+        301,
+        345,
+        327
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 11 individually observed; no sequence completion.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "0a0f58cd26e21e10deb474307b7e7e909087ae7fdf8f8e0824cfac519a1b70f2"
+    },
+    {
+      "anchor_id": "winter-wiso-p9-12",
+      "number": "12",
+      "bbox": [
+        54,
+        542,
+        98,
+        568
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 12 individually observed; no sequence completion.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "56355e1359bd2a65c5ec1269722d0c641d6b116054c0b5bcca320d6df9065787"
+    }
+  ],
+  "regions": [
+    {
+      "page": 9,
+      "bbox": [
+        53,
+        295,
+        295,
+        537
+      ],
+      "role": "primary",
+      "owner": "winter-wiso-p9-10",
+      "evidence": "Original printed heading and visible ruled panel retain all question content."
+    },
+    {
+      "page": 9,
+      "bbox": [
+        295,
+        295,
+        539,
+        537
+      ],
+      "role": "primary",
+      "owner": "winter-wiso-p9-11",
+      "evidence": "Original printed heading and visible ruled panel retain all question content."
+    },
+    {
+      "page": 9,
+      "bbox": [
+        53,
+        537,
+        298,
+        780
+      ],
+      "role": "primary",
+      "owner": "winter-wiso-p9-12",
+      "evidence": "Original printed heading and visible ruled panel retain all question content."
+    },
+    {
+      "page": 9,
+      "bbox": [
+        53,
+        54,
+        539,
+        295
+      ],
+      "role": "continuation",
+      "owner": "winter-wiso-p8-U4",
+      "evidence": "Printed Ergebnis U4 explicitly identifies continuation; preceding primary panel and continued printed subpart numbering also visually checked."
+    }
+  ],
+  "proofs": [
+    {
+      "kind": "heading",
+      "number": "10",
+      "bbox": [
+        54,
+        301,
+        97,
+        327
+      ],
+      "pixel_sha256": "9b8f100c9267c3c6495c46eb9b26337a324fca9cf8c95bb5e2ee64fa8453ec54",
+      "audited_pixel_sha256": "9b8f100c9267c3c6495c46eb9b26337a324fca9cf8c95bb5e2ee64fa8453ec54"
+    },
+    {
+      "kind": "heading",
+      "number": "11",
+      "bbox": [
+        302,
+        301,
+        345,
+        327
+      ],
+      "pixel_sha256": "0a0f58cd26e21e10deb474307b7e7e909087ae7fdf8f8e0824cfac519a1b70f2",
+      "audited_pixel_sha256": "0a0f58cd26e21e10deb474307b7e7e909087ae7fdf8f8e0824cfac519a1b70f2"
+    },
+    {
+      "kind": "heading",
+      "number": "12",
+      "bbox": [
+        54,
+        542,
+        98,
+        568
+      ],
+      "pixel_sha256": "56355e1359bd2a65c5ec1269722d0c641d6b116054c0b5bcca320d6df9065787",
+      "audited_pixel_sha256": "56355e1359bd2a65c5ec1269722d0c641d6b116054c0b5bcca320d6df9065787"
+    },
+    {
+      "kind": "ownership",
+      "number": "Ergebnis U4",
+      "bbox": [
+        493,
+        101,
+        535,
+        126
+      ],
+      "pixel_sha256": "f3018965cceb7c9c95ac083978212357fd1374160a6330f6ae3ff24ff53827af",
+      "audited_pixel_sha256": "f3018965cceb7c9c95ac083978212357fd1374160a6330f6ae3ff24ff53827af"
+    }
+  ],
+  "issues": [],
+  "context_regions": [],
+  "review_status": "visually_verified",
+  "user_acceptance": "pending",
+  "source_hash": "47d11c07ee752963d6746821c82ecd2a4d684d44114cf13a89222b29c0d14383",
+  "source_image_sha256": "0c66c69de106a4121fea55a8f44032d4201a240f74a9d7f1d2d309c1cfd7c714",
+  "config_hash": "b9bca870c797b72ed138b9e45a7210ded2217eef6b26ff9c579da7e3c0fc73b4"
+}

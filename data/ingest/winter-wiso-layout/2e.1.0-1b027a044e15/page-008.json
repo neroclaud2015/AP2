@@ -1,0 +1,98 @@
+{
+  "page": 8,
+  "geometry": [
+    595.260009765625,
+    841.8599853515625
+  ],
+  "classification": "mixed_questions",
+  "classification_evidence": "Printed headings and panels individually visually inspected",
+  "anchors": [
+    {
+      "anchor_id": "winter-wiso-p8-9",
+      "number": "9",
+      "bbox": [
+        61,
+        59,
+        95,
+        84
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 9 individually observed; no sequence completion.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "7796894ad2a860308c6ce199c744381aba45531a9c2050e148fafddf72e6d3f4"
+    },
+    {
+      "anchor_id": "winter-wiso-p8-U4",
+      "number": "U4",
+      "bbox": [
+        61,
+        300,
+        108,
+        325
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed U4 individually observed; no sequence completion.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "c37cc7541c5bcb21b6cc32cd96fce5a2c96a499f468d393c68c0f3038e7e2312"
+    }
+  ],
+  "regions": [
+    {
+      "page": 8,
+      "bbox": [
+        55,
+        55,
+        298,
+        296
+      ],
+      "role": "primary",
+      "owner": "winter-wiso-p8-9",
+      "evidence": "Original printed heading and visible ruled panel retain all question content."
+    },
+    {
+      "page": 8,
+      "bbox": [
+        55,
+        296,
+        542,
+        779
+      ],
+      "role": "primary",
+      "owner": "winter-wiso-p8-U4",
+      "evidence": "Original printed heading and visible ruled panel retain all question content."
+    }
+  ],
+  "proofs": [
+    {
+      "kind": "heading",
+      "number": "9",
+      "bbox": [
+        61,
+        59,
+        95,
+        84
+      ],
+      "pixel_sha256": "7796894ad2a860308c6ce199c744381aba45531a9c2050e148fafddf72e6d3f4",
+      "audited_pixel_sha256": "7796894ad2a860308c6ce199c744381aba45531a9c2050e148fafddf72e6d3f4"
+    },
+    {
+      "kind": "heading",
+      "number": "U4",
+      "bbox": [
+        61,
+        300,
+        108,
+        325
+      ],
+      "pixel_sha256": "c37cc7541c5bcb21b6cc32cd96fce5a2c96a499f468d393c68c0f3038e7e2312",
+      "audited_pixel_sha256": "c37cc7541c5bcb21b6cc32cd96fce5a2c96a499f468d393c68c0f3038e7e2312"
+    }
+  ],
+  "issues": [],
+  "context_regions": [],
+  "review_status": "visually_verified",
+  "user_acceptance": "pending",
+  "source_hash": "47d11c07ee752963d6746821c82ecd2a4d684d44114cf13a89222b29c0d14383",
+  "source_image_sha256": "d040a699b23ca7fe395e01b4bf1607ff4183cf147d3767cee4562b8607696143",
+  "config_hash": "1b027a044e15323ef3768af887e947fef9b8b90bdd4806d82327beeb42d63c84"
+}

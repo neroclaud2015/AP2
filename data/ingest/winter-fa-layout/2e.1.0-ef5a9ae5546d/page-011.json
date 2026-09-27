@@ -1,0 +1,98 @@
+{
+  "page": 11,
+  "geometry": [
+    595.260009765625,
+    841.8599853515625
+  ],
+  "classification": "questions",
+  "classification_evidence": "Individually visually inspected cached printed page",
+  "anchors": [
+    {
+      "anchor_id": "winter-fa-p11-25",
+      "number": "25",
+      "bbox": [
+        55,
+        61,
+        95,
+        85
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 25 inspected individually, not inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "00bf5d7b7362cb83d7f2bd3a8b7007f5f62e17c68aa2b077ce8b0bfb0ec4980f"
+    },
+    {
+      "anchor_id": "winter-fa-p11-26",
+      "number": "26",
+      "bbox": [
+        55,
+        541,
+        90,
+        567
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 26 inspected individually, not inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "7a7bc4989addc751f98673690c01f322524092484402412e0321fe12c7dbf5cf"
+    }
+  ],
+  "regions": [
+    {
+      "page": 11,
+      "bbox": [
+        55,
+        58,
+        542,
+        538
+      ],
+      "role": "primary",
+      "owner": "winter-fa-p11-25",
+      "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+    },
+    {
+      "page": 11,
+      "bbox": [
+        55,
+        538,
+        542,
+        780
+      ],
+      "role": "primary",
+      "owner": "winter-fa-p11-26",
+      "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+    }
+  ],
+  "proofs": [
+    {
+      "kind": "heading",
+      "number": "25",
+      "bbox": [
+        55,
+        61,
+        95,
+        85
+      ],
+      "pixel_sha256": "00bf5d7b7362cb83d7f2bd3a8b7007f5f62e17c68aa2b077ce8b0bfb0ec4980f",
+      "audited_pixel_sha256": "00bf5d7b7362cb83d7f2bd3a8b7007f5f62e17c68aa2b077ce8b0bfb0ec4980f"
+    },
+    {
+      "kind": "heading",
+      "number": "26",
+      "bbox": [
+        55,
+        541,
+        90,
+        567
+      ],
+      "pixel_sha256": "7a7bc4989addc751f98673690c01f322524092484402412e0321fe12c7dbf5cf",
+      "audited_pixel_sha256": "7a7bc4989addc751f98673690c01f322524092484402412e0321fe12c7dbf5cf"
+    }
+  ],
+  "issues": [],
+  "context_regions": [],
+  "review_status": "visually_verified",
+  "user_acceptance": "pending",
+  "source_hash": "765e3fd4ff24429fd28bee06f43052bf39250bb5916d378cf130d8d167089d83",
+  "source_image_sha256": "39ba8129eaa57f63195e66b1515aafdc468d7610be723d437e6ea9346d0a90a9",
+  "config_hash": "ef5a9ae5546d55efa82bad580aa801ae9dbc7e72caaa1abe7f007769f6711e3e"
+}

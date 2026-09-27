@@ -18,7 +18,7 @@ function PageCrop({source,label}:{source:QuestionSource;label:string}){
 }
 export function CropImage({question,edited=false}:{question:SegmentedQuestion;edited?:boolean}){
  const [error,setError]=useState(false);useEffect(()=>setError(false),[question.question_id,question.cropped_question_image,edited]);
- if(edited)return <div className="multipage-crop">{questionSources(question).map((source,i)=><div key={source.source_page}>{i>0&&<p className="hint">Fortsetzung · Originalseite {source.source_page}</p>}<PageCrop source={source} label={`Aufgabe ${question.question_number}, ${i===0?'bearbeiteter Originalausschnitt':'unveränderte Fortsetzung'}, Seite ${source.source_page}`}/></div>)}</div>;
+ if(edited&&question.source_page_available!==false)return <div className="multipage-crop">{questionSources(question).map((source,i)=><div key={source.source_page}>{i>0&&<p className="hint">Fortsetzung · Originalseite {source.source_page}</p>}<PageCrop source={source} label={`Aufgabe ${question.question_number}, ${i===0?'bearbeiteter Originalausschnitt':'unveränderte Fortsetzung'}, Seite ${source.source_page}`}/></div>)}</div>;
  return error?<p role="alert">Bild konnte nicht geladen werden. Bitte Original-PDF öffnen.</p>:<img className="question-image" src={asset(question.cropped_question_image)} alt={`Aufgabe ${question.question_number}, Originalausschnitt`} onError={()=>setError(true)}/>;
 }
 export function CropEditor({question, onChange}: {question: SegmentedQuestion; onChange: (box: Box) => void}) {

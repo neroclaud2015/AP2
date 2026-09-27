@@ -1,0 +1,811 @@
+{
+  "profile_id": "winter-wiso",
+  "version": "2e.1.0",
+  "exam": "2017_18_winter",
+  "module": "WiSo",
+  "source_hash": "47d11c07ee752963d6746821c82ecd2a4d684d44114cf13a89222b29c0d14383",
+  "name": "2017_18_winter_wiso",
+  "expected": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6"
+  ],
+  "timing_minutes": 60,
+  "timing_source_page": 2,
+  "description_page": null,
+  "attachment_refs": {
+    "U6": [
+      12
+    ]
+  },
+  "pages": {
+    "1": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "cover",
+      "evidence": "Printed headings and panels individually visually inspected",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "2": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "instructions",
+      "evidence": "Printed headings and panels individually visually inspected",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "3": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Printed headings and panels individually visually inspected",
+      "slots": [
+        {
+          "observed_number": "U1",
+          "heading_box": [
+            60,
+            301,
+            101,
+            325
+          ],
+          "visual_patch_sha256": "c3869b4151d8155e896bbd2aa225e44366bd2f1e9d0eae3155984fac6dc73097",
+          "regions": [
+            [
+              54,
+              296,
+              540,
+              779
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U1 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "4": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Printed headings and panels individually visually inspected",
+      "slots": [
+        {
+          "observed_number": "1",
+          "heading_box": [
+            57,
+            541,
+            91,
+            566
+          ],
+          "visual_patch_sha256": "9ec698c668054c8386cfbe9035238dcb5524e7f686836ff6544281dbefa550e6",
+          "regions": [
+            [
+              56,
+              536,
+              301,
+              780
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 1 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        },
+        {
+          "observed_number": "2",
+          "heading_box": [
+            305,
+            541,
+            341,
+            566
+          ],
+          "visual_patch_sha256": "11f195158258c9472b39ff9eca1336deff44af0a1af418149d8f743a4ff6b685",
+          "regions": [
+            [
+              301,
+              536,
+              542,
+              780
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 2 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        }
+      ],
+      "explicit_regions": [
+        {
+          "bbox": [
+            56,
+            54,
+            542,
+            536
+          ],
+          "role": "continuation",
+          "owner": "winter-wiso-p3-U1",
+          "observed_owner_label": "Ergebnis U1",
+          "evidence_box": [
+            496,
+            346,
+            539,
+            369
+          ],
+          "visual_patch_sha256": "7b2be524ae23ce04737143ea0beb6564c1e303f2edd4df291fe7d984d042991d",
+          "evidence": "Printed Ergebnis U1 explicitly identifies continuation; preceding primary panel and continued printed subpart numbering also visually checked."
+        }
+      ]
+    },
+    "5": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Printed headings and panels individually visually inspected",
+      "slots": [
+        {
+          "observed_number": "3",
+          "heading_box": [
+            51,
+            59,
+            84,
+            83
+          ],
+          "visual_patch_sha256": "3522e43e661da2e370824ffc81828d871cd5146c77199a4668ede4c1d15a5e10",
+          "regions": [
+            [
+              50,
+              55,
+              294,
+              296
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 3 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        },
+        {
+          "observed_number": "U2",
+          "heading_box": [
+            58,
+            301,
+            105,
+            326
+          ],
+          "visual_patch_sha256": "1a41180d19b8676bf4cc2f24f387b485fd41fe096a344a0ad55c8c0c4110a61e",
+          "regions": [
+            [
+              52,
+              296,
+              539,
+              780
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U2 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "6": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Printed headings and panels individually visually inspected",
+      "slots": [
+        {
+          "observed_number": "4",
+          "heading_box": [
+            57,
+            304,
+            89,
+            329
+          ],
+          "visual_patch_sha256": "f15bdf4948ba9ee04cc0d12faccd395f192e55f9221ce81216dae7e8b25cd8f5",
+          "regions": [
+            [
+              57,
+              299,
+              301,
+              539
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 4 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        },
+        {
+          "observed_number": "5",
+          "heading_box": [
+            306,
+            304,
+            340,
+            329
+          ],
+          "visual_patch_sha256": "4e145f5d3494e55c7cee64ffcd43ad806d8554d921acbaf348dc04966a8fbc08",
+          "regions": [
+            [
+              301,
+              299,
+              543,
+              539
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 5 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        },
+        {
+          "observed_number": "6",
+          "heading_box": [
+            58,
+            545,
+            92,
+            569
+          ],
+          "visual_patch_sha256": "f38f62d062dd1aa80faf8fa550eab27517ae5aae3b7351d27880fbeb9715af75",
+          "regions": [
+            [
+              57,
+              539,
+              301,
+              781
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 6 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        }
+      ],
+      "explicit_regions": [
+        {
+          "bbox": [
+            56,
+            56,
+            541,
+            299
+          ],
+          "role": "continuation",
+          "owner": "winter-wiso-p5-U2",
+          "observed_owner_label": "Ergebnis U2",
+          "evidence_box": [
+            496,
+            107,
+            539,
+            133
+          ],
+          "visual_patch_sha256": "3b2337b4426518a38748b578e072e96a7635e051381e79eaf373c04bd7c7022b",
+          "evidence": "Printed Ergebnis U2 explicitly identifies continuation; preceding primary panel and continued printed subpart numbering also visually checked."
+        }
+      ]
+    },
+    "7": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Printed headings and panels individually visually inspected",
+      "slots": [
+        {
+          "observed_number": "U3",
+          "heading_box": [
+            59,
+            59,
+            105,
+            85
+          ],
+          "visual_patch_sha256": "cba55fd3c2f43147ba1b0986872cebc16414aaf56b12e6e41a589234cc46866d",
+          "regions": [
+            [
+              51,
+              54,
+              538,
+              538
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U3 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        },
+        {
+          "observed_number": "7",
+          "heading_box": [
+            51,
+            543,
+            84,
+            568
+          ],
+          "visual_patch_sha256": "de4dea6846939637955fd660ec9941f5e487461d2d541cf60d46500ba6c095ed",
+          "regions": [
+            [
+              51,
+              538,
+              292,
+              780
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 7 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        },
+        {
+          "observed_number": "8",
+          "heading_box": [
+            299,
+            543,
+            334,
+            568
+          ],
+          "visual_patch_sha256": "ecd5efd768d904d8b3698a515fa7db48bb0ac780f384e48674b2dd13bda6d46b",
+          "regions": [
+            [
+              292,
+              538,
+              540,
+              780
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 8 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "8": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Printed headings and panels individually visually inspected",
+      "slots": [
+        {
+          "observed_number": "9",
+          "heading_box": [
+            61,
+            59,
+            95,
+            84
+          ],
+          "visual_patch_sha256": "7796894ad2a860308c6ce199c744381aba45531a9c2050e148fafddf72e6d3f4",
+          "regions": [
+            [
+              55,
+              55,
+              298,
+              296
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 9 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        },
+        {
+          "observed_number": "U4",
+          "heading_box": [
+            61,
+            300,
+            108,
+            325
+          ],
+          "visual_patch_sha256": "c37cc7541c5bcb21b6cc32cd96fce5a2c96a499f468d393c68c0f3038e7e2312",
+          "regions": [
+            [
+              55,
+              296,
+              542,
+              779
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U4 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "9": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Printed headings and panels individually visually inspected",
+      "slots": [
+        {
+          "observed_number": "10",
+          "heading_box": [
+            54,
+            301,
+            97,
+            327
+          ],
+          "visual_patch_sha256": "9b8f100c9267c3c6495c46eb9b26337a324fca9cf8c95bb5e2ee64fa8453ec54",
+          "regions": [
+            [
+              53,
+              295,
+              295,
+              537
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 10 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        },
+        {
+          "observed_number": "11",
+          "heading_box": [
+            302,
+            301,
+            345,
+            327
+          ],
+          "visual_patch_sha256": "0a0f58cd26e21e10deb474307b7e7e909087ae7fdf8f8e0824cfac519a1b70f2",
+          "regions": [
+            [
+              295,
+              295,
+              539,
+              537
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 11 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        },
+        {
+          "observed_number": "12",
+          "heading_box": [
+            54,
+            542,
+            98,
+            568
+          ],
+          "visual_patch_sha256": "56355e1359bd2a65c5ec1269722d0c641d6b116054c0b5bcca320d6df9065787",
+          "regions": [
+            [
+              53,
+              537,
+              298,
+              780
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 12 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        }
+      ],
+      "explicit_regions": [
+        {
+          "bbox": [
+            53,
+            54,
+            539,
+            295
+          ],
+          "role": "continuation",
+          "owner": "winter-wiso-p8-U4",
+          "observed_owner_label": "Ergebnis U4",
+          "evidence_box": [
+            493,
+            101,
+            535,
+            126
+          ],
+          "visual_patch_sha256": "f3018965cceb7c9c95ac083978212357fd1374160a6330f6ae3ff24ff53827af",
+          "evidence": "Printed Ergebnis U4 explicitly identifies continuation; preceding primary panel and continued printed subpart numbering also visually checked."
+        }
+      ]
+    },
+    "10": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Printed headings and panels individually visually inspected",
+      "slots": [
+        {
+          "observed_number": "U5",
+          "heading_box": [
+            63,
+            58,
+            111,
+            84
+          ],
+          "visual_patch_sha256": "690a7645cff872b5881faad806bc6a776b5a49388802c0cf6a254b475db7719d",
+          "regions": [
+            [
+              57,
+              52,
+              543,
+              535
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U5 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        },
+        {
+          "observed_number": "13",
+          "heading_box": [
+            59,
+            541,
+            104,
+            567
+          ],
+          "visual_patch_sha256": "a56ea0148847eec9f9b4efbb917e920f3f792af5057d82cfe2075463423f1a5d",
+          "regions": [
+            [
+              57,
+              535,
+              301,
+              779
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 13 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        },
+        {
+          "observed_number": "14",
+          "heading_box": [
+            306,
+            541,
+            350,
+            567
+          ],
+          "visual_patch_sha256": "6c7d2a2f34a3dae39b11f822a642d1e6aa92bc361ac976c028bda84a183e62b0",
+          "regions": [
+            [
+              301,
+              535,
+              543,
+              779
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 14 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "11": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Printed headings and panels individually visually inspected",
+      "slots": [
+        {
+          "observed_number": "U6",
+          "heading_box": [
+            62,
+            60,
+            108,
+            86
+          ],
+          "visual_patch_sha256": "effb7a68973c0b3f038d68a2eb8815e76bb3b37f8fa6d1ffeb087a85080cc223",
+          "regions": [
+            [
+              56,
+              54,
+              542,
+              536
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U6 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        },
+        {
+          "observed_number": "15",
+          "heading_box": [
+            58,
+            542,
+            102,
+            568
+          ],
+          "visual_patch_sha256": "0a888f354ea6319079a23ec78d0a4ccc2079ae04b833c803a6729fc07464500d",
+          "regions": [
+            [
+              56,
+              536,
+              300,
+              780
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 15 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        },
+        {
+          "observed_number": "16",
+          "heading_box": [
+            306,
+            542,
+            350,
+            568
+          ],
+          "visual_patch_sha256": "ff0a2fa3b0721a27e6894a8cc49484e07bb9cbfd9b44961ba7a67a714f5e80bc",
+          "regions": [
+            [
+              300,
+              536,
+              542,
+              780
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 16 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "12": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "attachment",
+      "evidence": "Printed headings and panels individually visually inspected",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "13": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Printed headings and panels individually visually inspected",
+      "slots": [
+        {
+          "observed_number": "17",
+          "heading_box": [
+            58,
+            59,
+            101,
+            84
+          ],
+          "visual_patch_sha256": "a248022707be383975fc958a4740ac651403748ec6b09b24b8a436f735f73cac",
+          "regions": [
+            [
+              56,
+              54,
+              301,
+              295
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 17 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        },
+        {
+          "observed_number": "18",
+          "heading_box": [
+            306,
+            59,
+            350,
+            84
+          ],
+          "visual_patch_sha256": "61ee9983bda2953679eab35057412c0a0fa837b02cf6e1594bed2aac916d0f0a",
+          "regions": [
+            [
+              301,
+              54,
+              543,
+              295
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 18 individually observed; no sequence completion.",
+          "evidence": "Original printed heading and visible ruled panel retain all question content."
+        }
+      ],
+      "explicit_regions": []
+    }
+  },
+  "attachment_crops": [
+    {
+      "page": 12,
+      "bbox": [
+        47,
+        162,
+        307,
+        545
+      ],
+      "title": "Anlage zu U6 · JArbSchG",
+      "question_numbers": [
+        "U6"
+      ]
+    }
+  ]
+}

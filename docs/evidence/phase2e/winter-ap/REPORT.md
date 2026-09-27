@@ -1,0 +1,12 @@
+# Winter 2017/18 Arbeitsplanung production evidence
+
+- Accepted Phase2D preview promoted without changing any of its 36 question IDs or crop bytes. Cached ownership/heading evidence was revalidated across all 25 question pages; no question PDF pages were reopened.
+- 28 official multiple-choice answers extracted from physical solution page 10. Fixed exact-source geometry measures five central dots and annular ink/angular support, requiring a unique ring at both thresholds 190 and 215. Missing/multiple marks or missing dots fail closed. All 28 passed; the contact sheet was visually checked against the marked positions.
+- U1–U8 use explicit visually verified official regions: pages 3 (U1–U3), 4 (U4–U5), 5 (U6–U8). All eight complete screenshots were inspected. U5 retains the complete GRAFCET; U7 retains the graph and calculation. Subparts remain self-assessment only, without an inferred score rubric.
+- Official solution source: `2017_18 Winter/17_18 Lösung.pdf`, SHA256 `ff4767053ef41cb3b49cb4f5e074c289a398750d8ffaf30f6dd71087b0ee7f8c`.
+- Source metadata: 105 minutes (printed on cached question page 2), task description page 14, attachments pages 24–25. The accepted original page images remain linked through the existing layout evidence route.
+- Full original/solution PDF publication was rejected by automatic approval review as an unapproved complete-document disclosure. No rejected action was retried. Only explicitly authorized question/answer crops and existing published question-page references are delivered. Both complete PDF availability flags remain false. Full solution PDF/full-page render cache is private under ignored `data/ingest/winter-solutions/`.
+- Completed-run checkpoint verification reads the public artifacts and accepted question evidence but neither the private solution cache nor any PDF/ZIP. Source-page extraction is independently checkpointed; damaged completed private pages fail instead of triggering rescans. Per-question answer checkpoints include record and crop hashes.
+- Six new tests pass: every possible ring position; missing/multiple rings; missing center; geometry outside the page; public identity/source/artifact integrity; completed resume with private-cache/PDF/ZIP access forbidden. Existing Winter preview tests are run separately.
+
+Review images: [MC crop montage](mc-overlay.png), [U crop contact sheet](u-contact-sheet.png). Original-resolution per-question images are linked by the production JSON. The displayed confidence is a deterministic rule grade, not a calibrated probability.

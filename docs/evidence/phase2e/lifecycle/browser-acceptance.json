@@ -1,0 +1,20 @@
+{
+  "url": "http://127.0.0.1:5173/",
+  "checks": {
+    "active_cancel_keeps_answers": true,
+    "paused_cancel_preserves_timer": true,
+    "completed_discard_preserves_result": true,
+    "hidden_discarded_history_and_delete": true,
+    "paused_delete": true,
+    "stale_confirmation_refuses_delete_and_refreshes": true,
+    "active_delete": true,
+    "completed_history_delete": true,
+    "active_discard": true,
+    "paused_discard": true,
+    "module_completed_in_history_and_dashboard": true,
+    "module_discard_hidden_by_default": true,
+    "module_permanent_delete_keeps_other_sessions": true,
+    "all_ordinary_data_unchanged": true
+  },
+  "page_errors": []
+}

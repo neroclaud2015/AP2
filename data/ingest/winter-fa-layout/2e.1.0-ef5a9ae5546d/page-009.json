@@ -1,0 +1,160 @@
+{
+  "page": 9,
+  "geometry": [
+    595.260009765625,
+    841.8599853515625
+  ],
+  "classification": "questions",
+  "classification_evidence": "Individually visually inspected cached printed page",
+  "anchors": [
+    {
+      "anchor_id": "winter-fa-p9-18",
+      "number": "18",
+      "bbox": [
+        49,
+        61,
+        82,
+        87
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 18 inspected individually, not inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "8cd23911178366c015dcd2afe11d8fabc54a6adb451c16fa01904cad9005ba1c"
+    },
+    {
+      "anchor_id": "winter-fa-p9-19",
+      "number": "19",
+      "bbox": [
+        49,
+        304,
+        90,
+        329
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 19 inspected individually, not inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "64cc4f731652c84d1deb36ebcafb4bf9e0dcdada09bb1188e352907d2e19c5bd"
+    },
+    {
+      "anchor_id": "winter-fa-p9-20",
+      "number": "20",
+      "bbox": [
+        298,
+        304,
+        335,
+        329
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 20 inspected individually, not inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "8a3e982d841f2e3fb7e409687da1e360295afcb1e8b6072a9a9c41efcdf5cdbc"
+    }
+  ],
+  "regions": [
+    {
+      "page": 9,
+      "bbox": [
+        49,
+        58,
+        535,
+        299
+      ],
+      "role": "primary",
+      "owner": "winter-fa-p9-18",
+      "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+    },
+    {
+      "page": 9,
+      "bbox": [
+        49,
+        299,
+        291,
+        540
+      ],
+      "role": "primary",
+      "owner": "winter-fa-p9-19",
+      "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+    },
+    {
+      "page": 9,
+      "bbox": [
+        291,
+        299,
+        535,
+        540
+      ],
+      "role": "primary",
+      "owner": "winter-fa-p9-20",
+      "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+    },
+    {
+      "page": 9,
+      "bbox": [
+        49,
+        540,
+        535,
+        782
+      ],
+      "role": "response_area",
+      "owner": "winter-fa-p9-20",
+      "evidence": "Printed Nebenrechnung Aufgabe 20 explicitly assigns this response area."
+    }
+  ],
+  "proofs": [
+    {
+      "kind": "heading",
+      "number": "18",
+      "bbox": [
+        49,
+        61,
+        82,
+        87
+      ],
+      "pixel_sha256": "8cd23911178366c015dcd2afe11d8fabc54a6adb451c16fa01904cad9005ba1c",
+      "audited_pixel_sha256": "8cd23911178366c015dcd2afe11d8fabc54a6adb451c16fa01904cad9005ba1c"
+    },
+    {
+      "kind": "heading",
+      "number": "19",
+      "bbox": [
+        49,
+        304,
+        90,
+        329
+      ],
+      "pixel_sha256": "64cc4f731652c84d1deb36ebcafb4bf9e0dcdada09bb1188e352907d2e19c5bd",
+      "audited_pixel_sha256": "64cc4f731652c84d1deb36ebcafb4bf9e0dcdada09bb1188e352907d2e19c5bd"
+    },
+    {
+      "kind": "heading",
+      "number": "20",
+      "bbox": [
+        298,
+        304,
+        335,
+        329
+      ],
+      "pixel_sha256": "8a3e982d841f2e3fb7e409687da1e360295afcb1e8b6072a9a9c41efcdf5cdbc",
+      "audited_pixel_sha256": "8a3e982d841f2e3fb7e409687da1e360295afcb1e8b6072a9a9c41efcdf5cdbc"
+    },
+    {
+      "kind": "ownership",
+      "number": "Nebenrechnung Aufgabe 20",
+      "bbox": [
+        60,
+        544,
+        216,
+        559
+      ],
+      "pixel_sha256": "6f62d40a939c1cbf93a00177d1a8878d8381b61133b6901567045861d99a3629",
+      "audited_pixel_sha256": "6f62d40a939c1cbf93a00177d1a8878d8381b61133b6901567045861d99a3629"
+    }
+  ],
+  "issues": [],
+  "context_regions": [],
+  "review_status": "visually_verified",
+  "user_acceptance": "pending",
+  "source_hash": "765e3fd4ff24429fd28bee06f43052bf39250bb5916d378cf130d8d167089d83",
+  "source_image_sha256": "653ee282bc42e4db1bcca868eb450eabb6310de8d59c2c77262ab6734015d062",
+  "config_hash": "ef5a9ae5546d55efa82bad580aa801ae9dbc7e72caaa1abe7f007769f6711e3e"
+}

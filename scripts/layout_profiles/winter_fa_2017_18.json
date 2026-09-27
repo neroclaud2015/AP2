@@ -1,0 +1,1230 @@
+{
+  "profile_id": "winter-fa",
+  "version": "2e.1.0",
+  "exam": "2017_18_winter",
+  "module": "Funktionsanalyse",
+  "source_hash": "765e3fd4ff24429fd28bee06f43052bf39250bb5916d378cf130d8d167089d83",
+  "name": "2017_18_winter_funktionsanalyse",
+  "expected": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6",
+    "U7",
+    "U8"
+  ],
+  "timing_minutes": 105,
+  "timing_source_page": 2,
+  "description_page": 16,
+  "attachment_refs": {
+    "U7": [
+      24
+    ]
+  },
+  "pages": {
+    "1": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "cover",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "2": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "instructions",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "3": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "questions",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [
+        {
+          "observed_number": "1",
+          "heading_box": [
+            56,
+            301,
+            87,
+            324
+          ],
+          "visual_patch_sha256": "1b5e5d779685d2405c0df307e1a6a00c1f014a2f66ca1d8eda9472e5615d1e33",
+          "regions": [
+            [
+              55,
+              297,
+              298,
+              538
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 1 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        },
+        {
+          "observed_number": "2",
+          "heading_box": [
+            304,
+            301,
+            336,
+            324
+          ],
+          "visual_patch_sha256": "d05a15b277e240b13e6c4b51442c9ef1724a9bf435d0323844ce381614b88041",
+          "regions": [
+            [
+              298,
+              297,
+              541,
+              538
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 2 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        },
+        {
+          "observed_number": "3",
+          "heading_box": [
+            56,
+            541,
+            88,
+            567
+          ],
+          "visual_patch_sha256": "4ed583b61f55b9cb56ef358a0261df9c3329b9c31cda8c723e60fa93768b10f3",
+          "regions": [
+            [
+              55,
+              538,
+              541,
+              782
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 3 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "4": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "questions",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [
+        {
+          "observed_number": "4",
+          "heading_box": [
+            60,
+            65,
+            87,
+            86
+          ],
+          "visual_patch_sha256": "12e355c8424b4cfee93c1e84b2f523831665692bf0837fe9c6facee9503ff27e",
+          "regions": [
+            [
+              60,
+              60,
+              304,
+              300
+            ],
+            [
+              304,
+              60,
+              550,
+              540
+            ]
+          ],
+          "roles": [
+            "primary",
+            "diagram"
+          ],
+          "visual_evidence": "Printed 4 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        },
+        {
+          "observed_number": "5",
+          "heading_box": [
+            61,
+            306,
+            93,
+            330
+          ],
+          "visual_patch_sha256": "82c6e20785566b76b5f45e36ef36416656bc421d1fbd2e234e717ad644da61b7",
+          "regions": [
+            [
+              60,
+              300,
+              304,
+              541
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 5 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        }
+      ],
+      "explicit_regions": [
+        {
+          "bbox": [
+            60,
+            541,
+            550,
+            783
+          ],
+          "role": "response_area",
+          "owner": "winter-fa-p4-5",
+          "observed_owner_label": "Nebenrechnung Aufgabe 5",
+          "evidence_box": [
+            75,
+            545,
+            236,
+            560
+          ],
+          "visual_patch_sha256": "c3cc603560d55d29baaa8cf60b830290c0ad2b43945bd6d2b0357b96811458f4",
+          "evidence": "Printed Nebenrechnung Aufgabe 5 explicitly assigns this response area."
+        }
+      ]
+    },
+    "5": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "questions",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [
+        {
+          "observed_number": "6",
+          "heading_box": [
+            58,
+            58,
+            86,
+            84
+          ],
+          "visual_patch_sha256": "659a69c8e3812e50558668d8845c239b3763c6528e85932a73b0ca7a33b2f7eb",
+          "regions": [
+            [
+              57,
+              55,
+              542,
+              297
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 6 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        },
+        {
+          "observed_number": "7",
+          "heading_box": [
+            305,
+            302,
+            335,
+            325
+          ],
+          "visual_patch_sha256": "c15bd35942db6dab02aa52d9b3f2564e804469cec49557f88a7408358124578c",
+          "regions": [
+            [
+              300,
+              297,
+              542,
+              538
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 7 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        },
+        {
+          "observed_number": "8",
+          "heading_box": [
+            57,
+            543,
+            87,
+            566
+          ],
+          "visual_patch_sha256": "eb99e406b685910840997e105c16c2896e2f0ab4b8be8a8700691eadc8c20afa",
+          "regions": [
+            [
+              57,
+              538,
+              300,
+              780
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 8 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        },
+        {
+          "observed_number": "9",
+          "heading_box": [
+            305,
+            543,
+            335,
+            566
+          ],
+          "visual_patch_sha256": "3bf8b690d73cebfd2262605c51bd86d71275a0c91a9c1571b8f1a30c7802f195",
+          "regions": [
+            [
+              300,
+              538,
+              542,
+              780
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 9 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        }
+      ],
+      "explicit_regions": [
+        {
+          "bbox": [
+            57,
+            297,
+            300,
+            538
+          ],
+          "role": "response_area",
+          "owner": "winter-fa-p5-6",
+          "observed_owner_label": "Nebenrechnung Aufgabe 6",
+          "evidence_box": [
+            69,
+            301,
+            209,
+            315
+          ],
+          "visual_patch_sha256": "98e141ba5ef238de1b9c8c2473a61087fb45e9229f4a1c5e2c0643564c3c8be7",
+          "evidence": "Printed Nebenrechnung Aufgabe 6 explicitly assigns this response area."
+        }
+      ]
+    },
+    "6": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "questions",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [
+        {
+          "observed_number": "10",
+          "heading_box": [
+            62,
+            59,
+            100,
+            82
+          ],
+          "visual_patch_sha256": "6c11af425e27fd72b911c0234fd45999727ce7e6f05e2bf94e9ee19e1618df92",
+          "regions": [
+            [
+              62,
+              55,
+              304,
+              296
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 10 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        },
+        {
+          "observed_number": "11",
+          "heading_box": [
+            310,
+            59,
+            350,
+            82
+          ],
+          "visual_patch_sha256": "72ef37c180f259a4aebd529263973d306397fed858e6a9404388f528ccb8e432",
+          "regions": [
+            [
+              304,
+              55,
+              547,
+              296
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 11 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        },
+        {
+          "observed_number": "12",
+          "heading_box": [
+            62,
+            301,
+            102,
+            326
+          ],
+          "visual_patch_sha256": "f7a278b2195f7efc54c3b7adf9339bff0431bf24c6526655df98303f312773aa",
+          "regions": [
+            [
+              62,
+              296,
+              547,
+              537
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 12 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        },
+        {
+          "observed_number": "13",
+          "heading_box": [
+            62,
+            543,
+            102,
+            567
+          ],
+          "visual_patch_sha256": "2a48086c34cd90716e96b85ab5cbf469f082f96d3b68c9da2211c0eabf9c9487",
+          "regions": [
+            [
+              62,
+              537,
+              547,
+              780
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 13 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "7": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "questions",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [
+        {
+          "observed_number": "14",
+          "heading_box": [
+            56,
+            61,
+            90,
+            86
+          ],
+          "visual_patch_sha256": "802fcd3d31cd0812b7554cd71b0ade9fd751c76f84852fb7d70d2a2eca283c97",
+          "regions": [
+            [
+              55,
+              58,
+              542,
+              300
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 14 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        },
+        {
+          "observed_number": "15",
+          "heading_box": [
+            55,
+            304,
+            93,
+            329
+          ],
+          "visual_patch_sha256": "2af95a954208c129ce09e05e036b507d155281e4e36c239deafb1f6350fdc2ed",
+          "regions": [
+            [
+              55,
+              300,
+              542,
+              540
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 15 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        },
+        {
+          "observed_number": "16",
+          "heading_box": [
+            55,
+            545,
+            95,
+            569
+          ],
+          "visual_patch_sha256": "5b773e4cf95d09fb9fd14e15cfdb7154fbb62f5bf4ef560c0cd8e9f813845d04",
+          "regions": [
+            [
+              55,
+              540,
+              542,
+              780
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 16 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "8": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "questions",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [
+        {
+          "observed_number": "17",
+          "heading_box": [
+            55,
+            61,
+            95,
+            85
+          ],
+          "visual_patch_sha256": "b455c085a4c170b23f4e9467acb45a953a38d05fb9941a962825dbdc6ef8f513",
+          "regions": [
+            [
+              55,
+              58,
+              542,
+              780
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 17 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "9": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "questions",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [
+        {
+          "observed_number": "18",
+          "heading_box": [
+            49,
+            61,
+            82,
+            87
+          ],
+          "visual_patch_sha256": "8cd23911178366c015dcd2afe11d8fabc54a6adb451c16fa01904cad9005ba1c",
+          "regions": [
+            [
+              49,
+              58,
+              535,
+              299
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 18 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        },
+        {
+          "observed_number": "19",
+          "heading_box": [
+            49,
+            304,
+            90,
+            329
+          ],
+          "visual_patch_sha256": "64cc4f731652c84d1deb36ebcafb4bf9e0dcdada09bb1188e352907d2e19c5bd",
+          "regions": [
+            [
+              49,
+              299,
+              291,
+              540
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 19 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        },
+        {
+          "observed_number": "20",
+          "heading_box": [
+            298,
+            304,
+            335,
+            329
+          ],
+          "visual_patch_sha256": "8a3e982d841f2e3fb7e409687da1e360295afcb1e8b6072a9a9c41efcdf5cdbc",
+          "regions": [
+            [
+              291,
+              299,
+              535,
+              540
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 20 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        }
+      ],
+      "explicit_regions": [
+        {
+          "bbox": [
+            49,
+            540,
+            535,
+            782
+          ],
+          "role": "response_area",
+          "owner": "winter-fa-p9-20",
+          "observed_owner_label": "Nebenrechnung Aufgabe 20",
+          "evidence_box": [
+            60,
+            544,
+            216,
+            559
+          ],
+          "visual_patch_sha256": "6f62d40a939c1cbf93a00177d1a8878d8381b61133b6901567045861d99a3629",
+          "evidence": "Printed Nebenrechnung Aufgabe 20 explicitly assigns this response area."
+        }
+      ]
+    },
+    "10": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "questions",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [
+        {
+          "observed_number": "21",
+          "heading_box": [
+            55,
+            61,
+            95,
+            85
+          ],
+          "visual_patch_sha256": "9db227a0f0a69ce10815e9c69e5448b3b984b24b5a27d97f0203aa37be1c02d9",
+          "regions": [
+            [
+              55,
+              58,
+              542,
+              300
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 21 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        },
+        {
+          "observed_number": "22",
+          "heading_box": [
+            55,
+            304,
+            95,
+            329
+          ],
+          "visual_patch_sha256": "dff64bd5965b39831c387851a7a708f57dbea0fc465449094bbd407d7faf61bc",
+          "regions": [
+            [
+              55,
+              300,
+              299,
+              540
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 22 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        },
+        {
+          "observed_number": "23",
+          "heading_box": [
+            305,
+            304,
+            345,
+            329
+          ],
+          "visual_patch_sha256": "afed65784d91e561eb9c919807e2e0dd354855621e173d67377ba1354cc19f7b",
+          "regions": [
+            [
+              299,
+              300,
+              542,
+              540
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 23 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        },
+        {
+          "observed_number": "24",
+          "heading_box": [
+            55,
+            545,
+            95,
+            569
+          ],
+          "visual_patch_sha256": "fbf09972899adf2ba03dd541ea6754521a7d1d2c17b4ff101cd339b1b39c5007",
+          "regions": [
+            [
+              55,
+              540,
+              542,
+              780
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 24 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "11": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "questions",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [
+        {
+          "observed_number": "25",
+          "heading_box": [
+            55,
+            61,
+            95,
+            85
+          ],
+          "visual_patch_sha256": "00bf5d7b7362cb83d7f2bd3a8b7007f5f62e17c68aa2b077ce8b0bfb0ec4980f",
+          "regions": [
+            [
+              55,
+              58,
+              542,
+              538
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 25 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        },
+        {
+          "observed_number": "26",
+          "heading_box": [
+            55,
+            541,
+            90,
+            567
+          ],
+          "visual_patch_sha256": "7a7bc4989addc751f98673690c01f322524092484402412e0321fe12c7dbf5cf",
+          "regions": [
+            [
+              55,
+              538,
+              542,
+              780
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 26 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "12": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "questions",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [
+        {
+          "observed_number": "27",
+          "heading_box": [
+            55,
+            62,
+            91,
+            88
+          ],
+          "visual_patch_sha256": "03eb7a60c6904718e45a1baef8a212b36a049022ccfa06ca8bb943d7f12f1662",
+          "regions": [
+            [
+              55,
+              58,
+              545,
+              299
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 27 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        },
+        {
+          "observed_number": "28",
+          "heading_box": [
+            57,
+            305,
+            99,
+            330
+          ],
+          "visual_patch_sha256": "4a9b35e23a6e2651f0c900039a5d6b3df79839700d600c10926026620000d7b5",
+          "regions": [
+            [
+              55,
+              299,
+              545,
+              784
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 28 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "13": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "answer_sheet_instructions",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "14": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "cover",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "15": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "instructions",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "16": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "questions",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [
+        {
+          "observed_number": "U1",
+          "heading_box": [
+            41,
+            392,
+            78,
+            415
+          ],
+          "visual_patch_sha256": "ffb37e385bfadc9b2b780864a9f3417585b8dd2fbf15c5230e26365527ca98c6",
+          "regions": [
+            [
+              37,
+              387,
+              562,
+              817
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U1 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        }
+      ],
+      "explicit_regions": [],
+      "context_regions": [
+        {
+          "bbox": [
+            37,
+            20,
+            562,
+            387
+          ],
+          "role": "shared_description",
+          "for_questions": [
+            "U1",
+            "U2",
+            "U3",
+            "U4",
+            "U5",
+            "U6",
+            "U7",
+            "U8"
+          ]
+        }
+      ]
+    },
+    "17": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "questions",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [
+        {
+          "observed_number": "U2",
+          "heading_box": [
+            31,
+            23,
+            85,
+            55
+          ],
+          "visual_patch_sha256": "f1c5a28ccd44601d53cd3733b87cf48eabeedd4cfbdd462b82eb5f32cb408440",
+          "regions": [
+            [
+              28,
+              20,
+              566,
+              818
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U2 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "18": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "questions",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [
+        {
+          "observed_number": "U3",
+          "heading_box": [
+            31,
+            23,
+            85,
+            55
+          ],
+          "visual_patch_sha256": "d70b71b6e1ebb0c70eafe9dd7d0ba997dc83d5d9ed826b4482d5dcb63971f0e6",
+          "regions": [
+            [
+              28,
+              20,
+              566,
+              818
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U3 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "19": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "questions",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [
+        {
+          "observed_number": "U4",
+          "heading_box": [
+            31,
+            23,
+            85,
+            55
+          ],
+          "visual_patch_sha256": "ca3a20c090bfd44c3f714fa211389d7ffca91b997bb6adcca9bdc71ef8564a7b",
+          "regions": [
+            [
+              28,
+              20,
+              566,
+              818
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U4 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "20": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "questions",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [
+        {
+          "observed_number": "U5",
+          "heading_box": [
+            31,
+            23,
+            85,
+            55
+          ],
+          "visual_patch_sha256": "849af62b1979fe2e5c44b5c6b2560f65ffb6bf6e97b17f15e85f3d94a2a5f121",
+          "regions": [
+            [
+              28,
+              20,
+              566,
+              818
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U5 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "21": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "questions",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [
+        {
+          "observed_number": "U6",
+          "heading_box": [
+            31,
+            23,
+            85,
+            55
+          ],
+          "visual_patch_sha256": "c0c68753fc1ce8ba8b6ebb98615af49e70edf68d510897dbee6b9511886c62c9",
+          "regions": [
+            [
+              28,
+              20,
+              566,
+              818
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U6 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "22": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "questions",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [
+        {
+          "observed_number": "U7",
+          "heading_box": [
+            31,
+            23,
+            85,
+            55
+          ],
+          "visual_patch_sha256": "b15086e13e1e0d4f38076da67552b07d394e75cf5210a03b16bbfb9aae3a3083",
+          "regions": [
+            [
+              28,
+              20,
+              566,
+              818
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U7 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "23": {
+      "geometry": [
+        595.260009765625,
+        841.8599853515625
+      ],
+      "classification": "questions",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [
+        {
+          "observed_number": "U8",
+          "heading_box": [
+            31,
+            23,
+            85,
+            55
+          ],
+          "visual_patch_sha256": "c882a8301deb4283a54acf5af2592640eff3bc56b23b9ed4f2eb5fe2ca4e91b9",
+          "regions": [
+            [
+              28,
+              20,
+              566,
+              640
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U8 inspected individually, not inferred from sequence.",
+          "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "24": {
+      "geometry": [
+        1190.52001953125,
+        841.8599853515625
+      ],
+      "classification": "attachment",
+      "evidence": "Individually visually inspected cached printed page",
+      "slots": [],
+      "explicit_regions": []
+    }
+  }
+}

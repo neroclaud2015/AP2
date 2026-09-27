@@ -1,0 +1,134 @@
+{
+  "page": 4,
+  "geometry": [
+    595.260009765625,
+    841.8599853515625
+  ],
+  "classification": "questions",
+  "classification_evidence": "Individually visually inspected cached printed page",
+  "anchors": [
+    {
+      "anchor_id": "winter-fa-p4-4",
+      "number": "4",
+      "bbox": [
+        60,
+        65,
+        87,
+        86
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 4 inspected individually, not inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "12e355c8424b4cfee93c1e84b2f523831665692bf0837fe9c6facee9503ff27e"
+    },
+    {
+      "anchor_id": "winter-fa-p4-5",
+      "number": "5",
+      "bbox": [
+        61,
+        306,
+        93,
+        330
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 5 inspected individually, not inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "82c6e20785566b76b5f45e36ef36416656bc421d1fbd2e234e717ad644da61b7"
+    }
+  ],
+  "regions": [
+    {
+      "page": 4,
+      "bbox": [
+        60,
+        60,
+        304,
+        300
+      ],
+      "role": "primary",
+      "owner": "winter-fa-p4-4",
+      "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+    },
+    {
+      "page": 4,
+      "bbox": [
+        304,
+        60,
+        550,
+        540
+      ],
+      "role": "diagram",
+      "owner": "winter-fa-p4-4",
+      "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+    },
+    {
+      "page": 4,
+      "bbox": [
+        60,
+        300,
+        304,
+        541
+      ],
+      "role": "primary",
+      "owner": "winter-fa-p4-5",
+      "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+    },
+    {
+      "page": 4,
+      "bbox": [
+        60,
+        541,
+        550,
+        783
+      ],
+      "role": "response_area",
+      "owner": "winter-fa-p4-5",
+      "evidence": "Printed Nebenrechnung Aufgabe 5 explicitly assigns this response area."
+    }
+  ],
+  "proofs": [
+    {
+      "kind": "heading",
+      "number": "4",
+      "bbox": [
+        60,
+        65,
+        87,
+        86
+      ],
+      "pixel_sha256": "12e355c8424b4cfee93c1e84b2f523831665692bf0837fe9c6facee9503ff27e",
+      "audited_pixel_sha256": "12e355c8424b4cfee93c1e84b2f523831665692bf0837fe9c6facee9503ff27e"
+    },
+    {
+      "kind": "heading",
+      "number": "5",
+      "bbox": [
+        61,
+        306,
+        93,
+        330
+      ],
+      "pixel_sha256": "82c6e20785566b76b5f45e36ef36416656bc421d1fbd2e234e717ad644da61b7",
+      "audited_pixel_sha256": "82c6e20785566b76b5f45e36ef36416656bc421d1fbd2e234e717ad644da61b7"
+    },
+    {
+      "kind": "ownership",
+      "number": "Nebenrechnung Aufgabe 5",
+      "bbox": [
+        75,
+        545,
+        236,
+        560
+      ],
+      "pixel_sha256": "c3cc603560d55d29baaa8cf60b830290c0ad2b43945bd6d2b0357b96811458f4",
+      "audited_pixel_sha256": "c3cc603560d55d29baaa8cf60b830290c0ad2b43945bd6d2b0357b96811458f4"
+    }
+  ],
+  "issues": [],
+  "context_regions": [],
+  "review_status": "visually_verified",
+  "user_acceptance": "pending",
+  "source_hash": "765e3fd4ff24429fd28bee06f43052bf39250bb5916d378cf130d8d167089d83",
+  "source_image_sha256": "b6a7ecd2cd5bc2adbd17d488f3f72eb8821e475453bbdb428f4721c142cd43ee",
+  "config_hash": "ef5a9ae5546d55efa82bad580aa801ae9dbc7e72caaa1abe7f007769f6711e3e"
+}

@@ -2,7 +2,7 @@ import type {Attempt,LearningSession} from './model';
 export type ModuleSlug=string;
 export type View='start'|'learn'|'exams'|'tests'|'session'|'study'|'review';
 export interface PartConfig {id:string;title:string;kind:'multiple_choice'|'multi_part';label:string;questionNumbers:string[]}
-export interface ModuleConfig {examId:string;slug:ModuleSlug;title:string;segmentedPath:string;answersPath:string;solutionsPath:string;choiceSolutionPage:number;descriptionPage:number;descriptionLabel?:string;attachmentPages:number[];parts:PartConfig[];durationMinutes:number|null;durationSource?:{pdf:string;page:number}}
+export interface ModuleConfig {examId:string;slug:ModuleSlug;title:string;segmentedPath:string;answersPath:string;solutionsPath:string;choiceSolutionPage:number;descriptionPage:number;descriptionLabel?:string;attachmentPages:number[];parts:PartConfig[];durationMinutes:number|null;sourcePageImages?:Record<number,string>;durationSource?:{pdf:string;page:number;image?:string}}
 const standardParts=():PartConfig[]=>[
  {id:'A',title:'Teil A',kind:'multiple_choice',label:'Auswahlaufgaben',questionNumbers:Array.from({length:28},(_,i)=>String(i+1))},
  {id:'B',title:'Teil B',kind:'multi_part',label:'Offene Aufgaben',questionNumbers:Array.from({length:8},(_,i)=>`U${i+1}`)},
@@ -14,7 +14,18 @@ export const MODULES:ModuleConfig[]=[
   {id:'A',title:'Gebundene Aufgaben',kind:'multiple_choice',label:'Auswahlaufgaben',questionNumbers:Array.from({length:18},(_,i)=>String(i+1))},
   {id:'B',title:'Ungebundene Aufgaben',kind:'multi_part',label:'Offene Aufgaben',questionNumbers:Array.from({length:6},(_,i)=>`U${i+1}`)},
  ]},
+ {examId:'2017-18-winter',slug:'arbeitsplanung',title:'Arbeitsplanung',segmentedPath:'data/2017_18_winter_arbeitsplanung_segmented.json',answersPath:'data/2017_18_winter_arbeitsplanung_answers.json',solutionsPath:'data/2017_18_winter_arbeitsplanung_u_solutions.json',choiceSolutionPage:10,descriptionPage:14,attachmentPages:[24,25],parts:standardParts(),durationMinutes:105,durationSource:{pdf:'',page:2,image:'evidence/layout-profiles/ap_2017_18/2b.1.1-a2fe9c23bdbf61a4/page-002.png'},sourcePageImages:Object.fromEntries(Array.from({length:25},(_,i)=>[i+1,`evidence/layout-profiles/ap_2017_18/2b.1.1-a2fe9c23bdbf61a4/page-${String(i+1).padStart(3,'0')}.png`]))},
+ {examId:'2017-18-winter',slug:'funktionsanalyse',title:'Funktionsanalyse',segmentedPath:'data/2017_18_winter_funktionsanalyse_segmented.json',answersPath:'data/2017_18_winter_funktionsanalyse_answers.json',solutionsPath:'data/2017_18_winter_funktionsanalyse_u_solutions.json',choiceSolutionPage:11,descriptionPage:16,attachmentPages:[24],parts:standardParts(),durationMinutes:105,durationSource:{pdf:'assets/pdfs/765e3fd4ff24429fd28bee06.pdf',page:2}},
+ {examId:'2017-18-winter',slug:'wiso',title:'WiSo',segmentedPath:'data/2017_18_winter_wiso_segmented.json',answersPath:'data/2017_18_winter_wiso_answers.json',solutionsPath:'data/2017_18_winter_wiso_u_solutions.json',choiceSolutionPage:12,descriptionPage:0,descriptionLabel:'Unterlagen',attachmentPages:[12],durationMinutes:60,durationSource:{pdf:'',page:2,image:'assets/official/winter-wiso-timing.png'},sourcePageImages:{12:'assets/questions/47d11c07ee752963d6746821/2e.1.0-b9bca870c797/attachment-12.png'},parts:[
+ {id:'A',title:'Gebundene Aufgaben',kind:'multiple_choice',label:'Auswahlaufgaben',questionNumbers:Array.from({length:18},(_,i)=>String(i+1))},
+ {id:'B',title:'Ungebundene Aufgaben',kind:'multi_part',label:'Offene Aufgaben',questionNumbers:Array.from({length:6},(_,i)=>`U${i+1}`)},
+ ]},
 ];
+export const EXAM_SESSIONS=[{id:'2017-sommer',label:'Sommer 2017'},{id:'2017-18-winter',label:'Winter 2017/18'}];
+export const MODULE_TITLES:Record<string,string>={arbeitsplanung:'Arbeitsplanung',funktionsanalyse:'Funktionsanalyse',wiso:'WiSo'};
+export function examLabel(id:string){return EXAM_SESSIONS.find(e=>e.id===id)?.label??id;}
+export function moduleKey(config:Pick<ModuleConfig,'examId'|'slug'>){return `${config.examId}/${config.slug}`;}
+export function findModule(examId:string,slug:string){return MODULES.find(m=>m.examId===examId&&m.slug===slug);}
 export function moduleParts<Q extends {question_number:string}>(config:ModuleConfig,questions:Q[]){
  return config.parts.map(part=>({...part,questions:part.questionNumbers.flatMap(number=>{const q=questions.find(q=>q.question_number===number);return q?[q]:[];})}));
 }
@@ -35,3 +46,5 @@ export function moduleProgress(questions:{question_id:string;question_number:str
  const activity=[...attempts.map(a=>({id:a.question_id,date:a.timestamp})),...sessions.map(s=>({id:s.question_id,date:s.updated_at??''}))].sort((a,b)=>a.date.localeCompare(b.date)).at(-1);
  return {practiced:latest.size,attempts:attempts.length,correct:[...latest.values()].filter(a=>a.correctness==='richtig').length,unsure:[...latest.values()].filter(a=>a.unsure).length,lastActivity:activity?.date??'',resumeNumber:questions.find(q=>q.question_id===activity?.id)?.question_number??questions[0]?.question_number??'1',done:new Set(latest.keys())};
 }
+
+export function originalPageLink(config:ModuleConfig,pdf:string,page:number){const image=config.sourcePageImages?.[page];return image?import.meta.env.BASE_URL+image:import.meta.env.BASE_URL+pdf+`#page=${page}`;}

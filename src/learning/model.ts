@@ -1,10 +1,10 @@
 export type Correctness='richtig'|'teilweise'|'falsch';
 export interface NumericSpec {value:number;unit:string;tolerance:number;tolerance_policy?:string}
 export interface USubpart {id:string;label:string;type:'numeric'|'short_text'|'drawing'|'diagram';numeric?:NumericSpec}
-export interface USolution {question_id:string;question_number:string;solution_source_pdf:string;solution_source_page:number;regions:{source_page:number;bbox:number[]}[];cropped_solution_image:string;review_status:string;answer_type:'multi_part';subparts:USubpart[];extractor_revision:string}
+export interface USolution {question_id:string;question_number:string;solution_source_pdf:string;solution_source_pdf_available?:boolean;solution_source_page:number;regions:{source_page:number;bbox:number[]}[];cropped_solution_image:string;review_status:string;answer_type:'multi_part';subparts:USubpart[];extractor_revision:string}
 export interface SubpartResult {id:string;user_answer:string;unit?:string;correctness:Correctness;numeric_suggestion?:Correctness|'invalid';self_assessed:true;auto_scored:false}
-export interface Attempt {attempt_id:string;userId:string;question_id:string;timestamp:string;user_answer:Record<string,string|number>;correctness:Correctness|null;partial_status:boolean;unsure:boolean;confidence:'sure'|'unsure';hints_used:string[];error_reason:string;note:string;self_assessed:boolean;auto_scored:boolean;subparts:SubpartResult[];official_answer_snapshot?:number|null;source_revision?:string}
-export interface LearningSession {userId:string;question_id:string;draft:Record<string,string>;revealed:boolean;attempt_id?:string;updated_at?:string}
+export interface Attempt {exam?:string;module?:string;attempt_id:string;userId:string;question_id:string;timestamp:string;user_answer:Record<string,string|number>;correctness:Correctness|null;partial_status:boolean;unsure:boolean;confidence:'sure'|'unsure';hints_used:string[];error_reason:string;note:string;self_assessed:boolean;auto_scored:boolean;subparts:SubpartResult[];official_answer_snapshot?:number|null;source_revision?:string}
+export interface LearningSession {exam?:string;module?:string;userId:string;question_id:string;draft:Record<string,string>;revealed:boolean;attempt_id?:string;updated_at?:string}
 // Advisory integration seam. An evaluator has no repository access and cannot finalize an attempt.
 export interface EvaluationSuggestion {subpart_id:string;suggested:Correctness;rationale:string;requires_user_confirmation:true}
 export interface AdvisoryEvaluator {suggest(answer:string,solution:USolution):Promise<EvaluationSuggestion[]>}

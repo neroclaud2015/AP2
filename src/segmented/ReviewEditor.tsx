@@ -6,7 +6,7 @@ export default function ReviewEditor({question, original, exam, fixedSolution=fa
   question: SegmentedQuestion; original: SegmentedQuestion; exam: SegmentedExam; fixedSolution?:boolean;
   onSave: (review: QuestionReview)=>Promise<void>; onCancel: ()=>void;
 }) {
-  const [draft,setDraft]=useState(question);
+  const [draft,setDraft]=useState(question);const canCrop=question.source_page_available!==false&&!!question.source_page_image;
   const [error,setError]=useState(''); const [saving,setSaving]=useState(false);
   const update=<K extends keyof SegmentedQuestion>(key:K,value:SegmentedQuestion[K])=>setDraft(d=>({...d,[key]:value}));
   const validBox=(box:Box)=>box.every(Number.isFinite)&&box[0]>=0&&box[1]>=0&&box[2]<=draft.source_size[0]&&box[3]<=draft.source_size[1]&&box[2]>box[0]&&box[3]>box[1];
@@ -21,9 +21,9 @@ export default function ReviewEditor({question, original, exam, fixedSolution=fa
     <p className="hint">Deine Änderungen werden auf diesem Gerät gespeichert und gegen automatische Extraktion gesperrt. Exportiere sie als Sicherung.</p>
     <div className="edit-fields"><label>Aufgabennummer<input aria-label="Aufgabennummer" value={draft.question_number} onChange={e=>update('question_number',e.target.value)}/></label>
       <label>Wissens-Tags (mit Komma trennen)<input aria-label="Wissens-Tags" value={draft.tags.join(', ')} onChange={e=>update('tags',e.target.value.split(',').map(t=>t.trim()))}/></label></div>
-    <h3>Originalausschnitt</h3>{questionSources(draft).length>1&&<p className="hint">Du bearbeitest nur den Hauptbereich auf Seite {draft.source_page}. Die Fortsetzung auf {questionSources(draft).slice(1).map(s=>`Seite ${s.source_page}`).join(", ")} bleibt unverändert erhalten und wird in der Vorschau mit angezeigt.</p>}<CropEditor question={draft} onChange={box=>setDraft(d=>({...d,bounding_box:box,regions:[box]}))}/>
-    <button className="outline" onClick={()=>setDraft(d=>({...d,bounding_box:original.bounding_box,regions:original.regions}))}>Automatischen Ausschnitt wiederherstellen</button>
-    {validBox(draft.bounding_box)&&<details><summary>Vorschau des neuen Ausschnitts</summary><CropImage question={draft} edited/></details>}
+    <h3>Originalausschnitt</h3>{questionSources(draft).length>1&&<p className="hint">Du bearbeitest nur den Hauptbereich auf Seite {draft.source_page}. Die Fortsetzung auf {questionSources(draft).slice(1).map(s=>`Seite ${s.source_page}`).join(", ")} bleibt unverändert erhalten und wird in der Vorschau mit angezeigt.</p>}<>{canCrop?<CropEditor question={draft} onChange={box=>setDraft(d=>({...d,bounding_box:box,regions:[box]}))}/>:<p className="hint">Der Originalausschnitt ist verfügbar. Die ganze Quellseite ist hier nicht veröffentlicht; deshalb lässt sich der Bildbereich derzeit nicht verschieben. Nummer, Text, Tags und Antwort bleiben bearbeitbar.</p>}</>
+    <button className="outline" disabled={!canCrop} onClick={()=>setDraft(d=>({...d,bounding_box:original.bounding_box,regions:original.regions}))}>Automatischen Ausschnitt wiederherstellen</button>
+    {canCrop&&validBox(draft.bounding_box)&&<details><summary>Vorschau des neuen Ausschnitts</summary><CropImage question={draft} edited/></details>}
     <label className="text-label">Hilfstext für Suche und Einordnung<textarea aria-label="Extrahierter Text" rows={8} value={draft.extracted_text} onChange={e=>update('extracted_text',e.target.value)}/></label>
     {fixedSolution?<p className="hint">Die offiziellen Lösungsbereiche werden oben mit direkten PDF-Quellen gezeigt. Eigene Bewertungen bleiben im Lernmodus.</p>:/^\d+$/.test(original.question_number)?<p className="hint">Die Auswahlantwort wird oben separat über „Antwort ändern“ bearbeitet (nur 1–5). Die Quellen-PDF-Seite ist kein Antwortwert.</p>:<><h3>Offizielle Lösungsquelle zuordnen</h3><p className="hint">Seite aus dem vorhandenen Lösungsdokument auswählen und prüfen. Eine Zuordnung gilt erst nach deiner Bestätigung.</p>
     <label>Lösungsseite <select aria-label="Lösungsseite" value={draft.solution_page??''} onChange={e=>setDraft(d=>({...d,solution_page:e.target.value?Number(e.target.value):null,solution_confirmed:false}))}><option value="">Keine Zuordnung</option>{exam.solution_document.pages.map(p=><option key={p.number} value={p.number}>PDF-Seite {p.number}</option>)}</select></label>

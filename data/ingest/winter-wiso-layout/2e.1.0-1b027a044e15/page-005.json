@@ -1,0 +1,98 @@
+{
+  "page": 5,
+  "geometry": [
+    595.260009765625,
+    841.8599853515625
+  ],
+  "classification": "mixed_questions",
+  "classification_evidence": "Printed headings and panels individually visually inspected",
+  "anchors": [
+    {
+      "anchor_id": "winter-wiso-p5-3",
+      "number": "3",
+      "bbox": [
+        51,
+        59,
+        84,
+        83
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 3 individually observed; no sequence completion.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "3522e43e661da2e370824ffc81828d871cd5146c77199a4668ede4c1d15a5e10"
+    },
+    {
+      "anchor_id": "winter-wiso-p5-U2",
+      "number": "U2",
+      "bbox": [
+        58,
+        301,
+        105,
+        326
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed U2 individually observed; no sequence completion.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "1a41180d19b8676bf4cc2f24f387b485fd41fe096a344a0ad55c8c0c4110a61e"
+    }
+  ],
+  "regions": [
+    {
+      "page": 5,
+      "bbox": [
+        50,
+        55,
+        294,
+        296
+      ],
+      "role": "primary",
+      "owner": "winter-wiso-p5-3",
+      "evidence": "Original printed heading and visible ruled panel retain all question content."
+    },
+    {
+      "page": 5,
+      "bbox": [
+        52,
+        296,
+        539,
+        780
+      ],
+      "role": "primary",
+      "owner": "winter-wiso-p5-U2",
+      "evidence": "Original printed heading and visible ruled panel retain all question content."
+    }
+  ],
+  "proofs": [
+    {
+      "kind": "heading",
+      "number": "3",
+      "bbox": [
+        51,
+        59,
+        84,
+        83
+      ],
+      "pixel_sha256": "3522e43e661da2e370824ffc81828d871cd5146c77199a4668ede4c1d15a5e10",
+      "audited_pixel_sha256": "3522e43e661da2e370824ffc81828d871cd5146c77199a4668ede4c1d15a5e10"
+    },
+    {
+      "kind": "heading",
+      "number": "U2",
+      "bbox": [
+        58,
+        301,
+        105,
+        326
+      ],
+      "pixel_sha256": "1a41180d19b8676bf4cc2f24f387b485fd41fe096a344a0ad55c8c0c4110a61e",
+      "audited_pixel_sha256": "1a41180d19b8676bf4cc2f24f387b485fd41fe096a344a0ad55c8c0c4110a61e"
+    }
+  ],
+  "issues": [],
+  "context_regions": [],
+  "review_status": "visually_verified",
+  "user_acceptance": "pending",
+  "source_hash": "47d11c07ee752963d6746821c82ecd2a4d684d44114cf13a89222b29c0d14383",
+  "source_image_sha256": "e487a03e3440b5377f054e87ee3e9dba777c375c551b3452d0a916482335b382",
+  "config_hash": "1b027a044e15323ef3768af887e947fef9b8b90bdd4806d82327beeb42d63c84"
+}

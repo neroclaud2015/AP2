@@ -2,7 +2,7 @@ export interface OfficialAnswer {
   question_id: string; exam: string; module: string; question_number: number;
   official_answer_type: 'multiple_choice'; official_answer: number | null;
   official_answer_status: 'auto_ready'|'needs_review'; confidence: number;
-  solution_source_page: number; source_page: number; source_pdf: string; source_crop: string;
+  solution_source_page: number; source_page: number; source_pdf: string; source_pdf_available?:boolean; source_crop: string;
   answer_bbox: number[]; parser_revision: string; review_reasons: string[];
 }
 export interface AnswerKey {

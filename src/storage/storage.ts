@@ -1,4 +1,4 @@
-import {reduceSession,type TestSession,type SessionAction} from '../exams/model';
+import {reduceSession,isEligibleForAnalysis,type TestSession,type SessionAction} from '../exams/model';
 import {validAttempt, type Attempt, type LearningSession} from '../learning/model';
 import { validAnswerReview, type AnswerReview } from '../segmented/answers';
 import type { QuestionReview } from '../segmented/types';
@@ -17,6 +17,7 @@ export class IndexedDBProgressRepository implements ProgressRepository {
     this.db.version(3).stores({ answerReviews: '[userId+question_id],userId' });
     this.db.version(4).stores({ attempts: '[userId+attempt_id],userId,[userId+question_id]', learningSessions: '[userId+question_id],userId' });
     this.db.version(5).stores({testSessions:'[userId+test_id],userId,[userId+module],[userId+status]'});
+    this.db.version(6).stores({testSessions:'[userId+test_id],userId,[userId+module],[userId+status]'}).upgrade(tx=>tx.table('testSessions').toCollection().modify(record=>{if(record.status==='submitted')record.status='completed';}));
     this.records = this.db.table('records');
   }
   async get(userId: string, questionId: string) { return this.records.get([userId, questionId]); }
@@ -72,15 +73,16 @@ export class IndexedDBProgressRepository implements ProgressRepository {
       await table.put({...a,note:values.note,error_reason:values.error_reason,unsure:values.unsure,confidence:values.confidence});});
   }
   async getTestSessions(userId:string):Promise<TestSession[]> {return this.db.table<TestSession>('testSessions').where('userId').equals(userId).toArray();}
+  async getAnalysisTestSessions(userId:string):Promise<TestSession[]> {return (await this.getTestSessions(userId)).filter(isEligibleForAnalysis);}
   async getTestSession(userId:string,id:string):Promise<TestSession|undefined> {return this.db.table<TestSession>('testSessions').get([userId,id]);}
   async createTestSession(session:TestSession,replace?:{id:string;revision:number}):Promise<TestSession> {
     if(session.userId!=='local'||session.status!=='active'||session.revision!==0||!session.question_ids.length||Object.keys(session.answers).length)throw Error('Ungültiger neuer Versuch.');
     const table=this.db.table<TestSession>('testSessions');
     return this.db.transaction('rw',table,async()=>{
-      const existing=(await table.where('userId').equals(session.userId).toArray()).filter(s=>s.exam===session.exam&&s.module===session.module&&s.test_type===session.test_type&&['active','paused'].includes(s.status));
+      const existing=(await table.where('userId').equals(session.userId).toArray()).filter(s=>(session.test_type==='module'||s.exam===session.exam)&&s.module===session.module&&s.test_type===session.test_type&&['active','paused'].includes(s.status));
       if(existing.length){
         if(existing.length!==1||existing[0].test_id!==replace?.id||existing[0].revision!==replace?.revision)throw Error('Ein offener Versuch besteht bereits. Bitte fortsetzen oder ausdrücklich abbrechen.');
-        await table.put(reduceSession(existing[0],{type:'abandon'}));
+        await table.put(reduceSession(existing[0],{type:'discard'}));
       }else if(replace)throw Error('Der vorherige Versuch wurde bereits verändert. Bitte neu laden.');
       await table.add(session);return session;
     });
@@ -91,6 +93,19 @@ export class IndexedDBProgressRepository implements ProgressRepository {
       const current=await table.get([userId,id]);if(!current)throw Error('Versuch nicht gefunden.');
       if(current.revision!==revision)throw Error('Dieser Versuch wurde in einem anderen Fenster verändert. Der aktuelle Stand wird geladen.');
       const updated=reduceSession(current,action);await table.put(updated);return updated;
+    });
+  }
+  async discardTestSession(userId:string,id:string,revision:number):Promise<TestSession> {
+    return this.updateTestSession(userId,id,revision,{type:'discard'});
+  }
+  async deleteTestSession(userId:string,id:string,revision:number):Promise<void> {
+    const table=this.db.table<TestSession>('testSessions');
+    await this.db.transaction('rw',table,async()=>{
+      const current=await table.get([userId,id]);if(!current)throw Error('Versuch nicht gefunden.');
+      if(current.revision!==revision)throw Error('Dieser Versuch wurde in einem anderen Fenster verändert. Bitte erneut prüfen.');
+      // Test answers, assessments, snapshots and results are embedded in this record.
+      // Ordinary attempts/reviews are independent and must never be deleted by test ID.
+      await table.delete([userId,id]);
     });
   }
   close() { this.db.close(); }

@@ -1,0 +1,136 @@
+{
+  "page": 3,
+  "geometry": [
+    595.260009765625,
+    841.8599853515625
+  ],
+  "classification": "questions",
+  "classification_evidence": "Individually visually inspected cached printed page",
+  "anchors": [
+    {
+      "anchor_id": "winter-fa-p3-1",
+      "number": "1",
+      "bbox": [
+        56,
+        301,
+        87,
+        324
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 1 inspected individually, not inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "1b5e5d779685d2405c0df307e1a6a00c1f014a2f66ca1d8eda9472e5615d1e33"
+    },
+    {
+      "anchor_id": "winter-fa-p3-2",
+      "number": "2",
+      "bbox": [
+        304,
+        301,
+        336,
+        324
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 2 inspected individually, not inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "d05a15b277e240b13e6c4b51442c9ef1724a9bf435d0323844ce381614b88041"
+    },
+    {
+      "anchor_id": "winter-fa-p3-3",
+      "number": "3",
+      "bbox": [
+        56,
+        541,
+        88,
+        567
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 3 inspected individually, not inferred from sequence.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "4ed583b61f55b9cb56ef358a0261df9c3329b9c31cda8c723e60fa93768b10f3"
+    }
+  ],
+  "regions": [
+    {
+      "page": 3,
+      "bbox": [
+        55,
+        297,
+        298,
+        538
+      ],
+      "role": "primary",
+      "owner": "winter-fa-p3-1",
+      "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+    },
+    {
+      "page": 3,
+      "bbox": [
+        298,
+        297,
+        541,
+        538
+      ],
+      "role": "primary",
+      "owner": "winter-fa-p3-2",
+      "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+    },
+    {
+      "page": 3,
+      "bbox": [
+        55,
+        538,
+        541,
+        782
+      ],
+      "role": "primary",
+      "owner": "winter-fa-p3-3",
+      "evidence": "Visible ruled panel and original heading; diagrams in same owned panel retained."
+    }
+  ],
+  "proofs": [
+    {
+      "kind": "heading",
+      "number": "1",
+      "bbox": [
+        56,
+        301,
+        87,
+        324
+      ],
+      "pixel_sha256": "1b5e5d779685d2405c0df307e1a6a00c1f014a2f66ca1d8eda9472e5615d1e33",
+      "audited_pixel_sha256": "1b5e5d779685d2405c0df307e1a6a00c1f014a2f66ca1d8eda9472e5615d1e33"
+    },
+    {
+      "kind": "heading",
+      "number": "2",
+      "bbox": [
+        304,
+        301,
+        336,
+        324
+      ],
+      "pixel_sha256": "d05a15b277e240b13e6c4b51442c9ef1724a9bf435d0323844ce381614b88041",
+      "audited_pixel_sha256": "d05a15b277e240b13e6c4b51442c9ef1724a9bf435d0323844ce381614b88041"
+    },
+    {
+      "kind": "heading",
+      "number": "3",
+      "bbox": [
+        56,
+        541,
+        88,
+        567
+      ],
+      "pixel_sha256": "4ed583b61f55b9cb56ef358a0261df9c3329b9c31cda8c723e60fa93768b10f3",
+      "audited_pixel_sha256": "4ed583b61f55b9cb56ef358a0261df9c3329b9c31cda8c723e60fa93768b10f3"
+    }
+  ],
+  "issues": [],
+  "context_regions": [],
+  "review_status": "visually_verified",
+  "user_acceptance": "pending",
+  "source_hash": "765e3fd4ff24429fd28bee06f43052bf39250bb5916d378cf130d8d167089d83",
+  "source_image_sha256": "4efeb211deb9661063a77e1d07295a93702851662a0122359d191d6ddbb15e82",
+  "config_hash": "8033b1ebf2cc726292863c8d5dc9d4b667cf636e2509864db4cb90b71fa2f0f2"
+}

@@ -1,0 +1,136 @@
+{
+  "page": 10,
+  "geometry": [
+    595.260009765625,
+    841.8599853515625
+  ],
+  "classification": "mixed_questions",
+  "classification_evidence": "Printed headings and panels individually visually inspected",
+  "anchors": [
+    {
+      "anchor_id": "winter-wiso-p10-U5",
+      "number": "U5",
+      "bbox": [
+        63,
+        58,
+        111,
+        84
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed U5 individually observed; no sequence completion.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "690a7645cff872b5881faad806bc6a776b5a49388802c0cf6a254b475db7719d"
+    },
+    {
+      "anchor_id": "winter-wiso-p10-13",
+      "number": "13",
+      "bbox": [
+        59,
+        541,
+        104,
+        567
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 13 individually observed; no sequence completion.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "a56ea0148847eec9f9b4efbb917e920f3f792af5057d82cfe2075463423f1a5d"
+    },
+    {
+      "anchor_id": "winter-wiso-p10-14",
+      "number": "14",
+      "bbox": [
+        306,
+        541,
+        350,
+        567
+      ],
+      "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+      "visual_evidence": "Printed 14 individually observed; no sequence completion.",
+      "review_reasons": [],
+      "heading_pixel_sha256": "6c7d2a2f34a3dae39b11f822a642d1e6aa92bc361ac976c028bda84a183e62b0"
+    }
+  ],
+  "regions": [
+    {
+      "page": 10,
+      "bbox": [
+        57,
+        52,
+        543,
+        535
+      ],
+      "role": "primary",
+      "owner": "winter-wiso-p10-U5",
+      "evidence": "Original printed heading and visible ruled panel retain all question content."
+    },
+    {
+      "page": 10,
+      "bbox": [
+        57,
+        535,
+        301,
+        779
+      ],
+      "role": "primary",
+      "owner": "winter-wiso-p10-13",
+      "evidence": "Original printed heading and visible ruled panel retain all question content."
+    },
+    {
+      "page": 10,
+      "bbox": [
+        301,
+        535,
+        543,
+        779
+      ],
+      "role": "primary",
+      "owner": "winter-wiso-p10-14",
+      "evidence": "Original printed heading and visible ruled panel retain all question content."
+    }
+  ],
+  "proofs": [
+    {
+      "kind": "heading",
+      "number": "U5",
+      "bbox": [
+        63,
+        58,
+        111,
+        84
+      ],
+      "pixel_sha256": "690a7645cff872b5881faad806bc6a776b5a49388802c0cf6a254b475db7719d",
+      "audited_pixel_sha256": "690a7645cff872b5881faad806bc6a776b5a49388802c0cf6a254b475db7719d"
+    },
+    {
+      "kind": "heading",
+      "number": "13",
+      "bbox": [
+        59,
+        541,
+        104,
+        567
+      ],
+      "pixel_sha256": "a56ea0148847eec9f9b4efbb917e920f3f792af5057d82cfe2075463423f1a5d",
+      "audited_pixel_sha256": "a56ea0148847eec9f9b4efbb917e920f3f792af5057d82cfe2075463423f1a5d"
+    },
+    {
+      "kind": "heading",
+      "number": "14",
+      "bbox": [
+        306,
+        541,
+        350,
+        567
+      ],
+      "pixel_sha256": "6c7d2a2f34a3dae39b11f822a642d1e6aa92bc361ac976c028bda84a183e62b0",
+      "audited_pixel_sha256": "6c7d2a2f34a3dae39b11f822a642d1e6aa92bc361ac976c028bda84a183e62b0"
+    }
+  ],
+  "issues": [],
+  "context_regions": [],
+  "review_status": "visually_verified",
+  "user_acceptance": "pending",
+  "source_hash": "47d11c07ee752963d6746821c82ecd2a4d684d44114cf13a89222b29c0d14383",
+  "source_image_sha256": "5c5c4ac5ec5e58911550594948e892e5192277a37ab2b0c8730ab38656defc50",
+  "config_hash": "1b027a044e15323ef3768af887e947fef9b8b90bdd4806d82327beeb42d63c84"
+}
