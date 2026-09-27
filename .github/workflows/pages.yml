@@ -32,6 +32,7 @@ jobs:
       - run: python scripts/publish_layout_evidence.py
       - run: python scripts/publish_phase2d.py
       - run: python scripts/publish_phase2e.py
+      - run: python scripts/publish_phase2e1.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

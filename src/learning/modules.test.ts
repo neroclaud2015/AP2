@@ -1,5 +1,5 @@
 import {describe,it,expect} from 'vitest';
-import {readRoute,routeUrl,moduleProgress,moduleParts,questionPart,MODULES} from './modules';
+import {readRoute,routeUrl,moduleProgress,moduleParts,questionPart,switchExamRoute,MODULES} from './modules';
 import type {Attempt,LearningSession} from './model';
 
 describe('module routes',()=>{
@@ -63,3 +63,18 @@ it('registers Sommer WiSo with its own 18 bound and 6 unbound questions only',()
 });
 
 it('round-trips Winter identity independently of Sommer Q1',()=>{const route=readRoute('?view=study&exam=2017-18-winter&module=arbeitsplanung&q=U5');expect(route.examId).toBe('2017-18-winter');expect(readRoute(routeUrl(route,'https://example.test/').search)).toEqual(route);});
+
+describe('exam selector routing',()=>{
+ it('preserves list modes and module, while dropping unrelated session identity',()=>{
+  for(const view of ['start','learn','exams','tests'] as const){
+   const next=switchExamRoute({view,examId:'2017-sommer',module:'wiso',number:'U1'},'2017-18-winter');
+   expect(next).toEqual({view,examId:'2017-18-winter',module:'wiso',number:'U1'});
+  }
+ });
+ it('falls back to the target season first available module and valid question',()=>{
+  const route={view:'learn' as const,examId:'2017-sommer',module:'wiso',number:'U99'};
+  const available=MODULES.filter(m=>m.examId==='2017-18-winter'&&m.slug==='funktionsanalyse');
+  expect(switchExamRoute(route,'2017-18-winter',available)).toEqual({view:'learn',examId:'2017-18-winter',module:'funktionsanalyse',number:'1'});
+  expect(switchExamRoute(route,'unavailable',available)).toBe(route);
+ });
+});

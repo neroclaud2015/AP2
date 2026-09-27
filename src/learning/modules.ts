@@ -48,3 +48,10 @@ export function moduleProgress(questions:{question_id:string;question_number:str
 }
 
 export function originalPageLink(config:ModuleConfig,pdf:string,page:number){const image=config.sourcePageImages?.[page];return image?import.meta.env.BASE_URL+image:import.meta.env.BASE_URL+pdf+`#page=${page}`;}
+
+export function switchExamRoute(route:LearningRoute,examId:string,modules:ModuleConfig[]=MODULES):LearningRoute {
+ const target=modules.find(m=>m.examId===examId&&m.slug===route.module)??modules.find(m=>m.examId===examId);
+ if(!target)return route;
+ const number=target.parts.some(p=>p.questionNumbers.includes(route.number))?route.number:target.parts[0].questionNumbers[0];
+ return {view:route.view==='session'?'exams':route.view,examId:target.examId,module:target.slug,number};
+}

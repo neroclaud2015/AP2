@@ -3,10 +3,10 @@ import type {IndexedDBProgressRepository} from '../storage/storage';
 import type {TestSession} from './model';
 
 export interface RecordLifecycleProps {
- session:TestSession;repository:IndexedDBProgressRepository;disabled?:boolean;
+ compact?:boolean;session:TestSession;repository:IndexedDBProgressRepository;disabled?:boolean;
  onUpdated:(session:TestSession)=>void;onDeleted:(id:string)=>void;onBusy?:(busy:boolean)=>void;
 }
-export default function RecordLifecycle({session,repository,disabled=false,onUpdated,onDeleted,onBusy}:RecordLifecycleProps){
+export default function RecordLifecycle({session,repository,compact=false,disabled=false,onUpdated,onDeleted,onBusy}:RecordLifecycleProps){
  const [confirmation,setConfirmation]=useState<{mode:'discard'|'delete';revision:number}|null>(null);
  const [saving,setSaving]=useState(false);const [error,setError]=useState('');const guard=useRef(false);
  const busyRef=useRef(false);const callbackRef=useRef(onBusy);callbackRef.current=onBusy;
@@ -24,7 +24,7 @@ export default function RecordLifecycle({session,repository,disabled=false,onUpd
   }finally{guard.current=false;setSaving(false);setConfirmation(null);}
  };
  return <div className="record-lifecycle" data-testid="record-lifecycle">
-  <div className="session-actions">{session.status!=='discarded'&&<button className="outline" disabled={disabled||saving} onClick={()=>open('discard')}>Versuch verwerfen</button>}<button className="outline" disabled={disabled||saving} onClick={()=>open('delete')}>Versuch löschen</button></div>
+  <div className="session-actions">{session.status!=='discarded'&&<button className="outline" disabled={disabled||saving} aria-label="Versuch verwerfen" onClick={()=>open('discard')}>{compact?'Verwerfen':'Versuch verwerfen'}</button>}<button className="outline destructive-outline" disabled={disabled||saving} aria-label="Versuch löschen" onClick={()=>open('delete')}>{compact?'Löschen':'Versuch löschen'}</button></div>
   {error&&<p className="session-warning" role="alert">{error} Bitte den aktuellen Stand prüfen und bei Bedarf erneut bestätigen.</p>}
   {confirmation&&<section className="session-confirm" role="alertdialog" aria-label={confirmation.mode==='discard'?'Versuch verwerfen bestätigen':'Versuch löschen bestätigen'}><h2>{confirmation.mode==='discard'?'Diesen Versuch verwerfen?':'Diesen Versuch dauerhaft löschen?'}</h2><p>{session.module} · {new Date(session.started_at).toLocaleString('de-DE')}</p><p>{confirmation.mode==='discard'?'Der Versuch bleibt mit seinen Antworten gespeichert, wird aber aus der normalen Übersicht und allen Auswertungen ausgeschlossen. Er kann nicht fortgesetzt werden.':'Dieser Versuch mit seinen Antworten, Bewertungen und Ergebnissen wird dauerhaft gelöscht. Dein freier Lernfortschritt und andere Versuche bleiben erhalten.'}</p><button className="primary" disabled={saving} onClick={()=>void confirm()}>{confirmation.mode==='discard'?'Verwerfen bestätigen':'Dauerhaft löschen'}</button><button className="outline" autoFocus disabled={saving} onClick={()=>setConfirmation(null)}>Abbrechen</button></section>}
  </div>;
