@@ -38,3 +38,7 @@ IndexedDB schema remains version 4: no destructive migration is needed. Existing
 - Q15/Q16 accepted boundary: https://neroclaud2015.github.io/AP2/evidence/layout-profiles/fa-preview/q15-q16.html
 
 The high-confidence label is a deterministic rule grade, not a calibrated statistical probability. Q9 remains available for review. U answers are not automatically graded.
+
+## Production verification
+
+The same no-mock browser acceptance passed at https://neroclaud2015.github.io/AP2/ after Pages deployment, including loaded MC/U source images, AP/FA record isolation, saved AP note, refresh/history and Review transitions. Evidence: `docs/evidence/phase2b2/live/browser-acceptance.json`. Browser checks wait for image decoding before asserting dimensions.
