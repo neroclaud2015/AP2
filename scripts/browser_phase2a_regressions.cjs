@@ -5,7 +5,7 @@ const {chromium}=require('playwright');const assert=require('node:assert/strict'
  assert.equal(await page.getByRole('button',{name:'Zurück zum Lernen',exact:true}).isDisabled(),true);assert.equal(await page.getByRole('button',{name:'Start / Dashboard',exact:true}).isDisabled(),true);
  await page.getByRole('button',{name:'Abbrechen',exact:true}).click();await page.getByRole('button',{name:'Antwort ändern',exact:true}).click();await page.getByLabel('Richtige Antwort',{exact:true}).selectOption('5');await page.getByRole('button',{name:'Antwort speichern',exact:true}).click();await page.getByText('Confirmed · gesperrt',{exact:true}).waitFor();
  await page.goBack();await page.getByRole('radio',{name:'5',exact:true}).check();await page.getByRole('button',{name:'Antwort abgeben',exact:true}).click();await page.locator('.result-banner.richtig').waitFor();assert.match(await page.locator('.result-banner').innerText(),/Offizielle Antwort: 5/);await page.close();
- let slowStorage=false;
+ let slowStorage=null;
  if(!process.env.APP_URL){
   const slow=await browser.newPage();await slow.route('**/src/storage/storage.ts*',async route=>{const r=await route.fetch();const body=await r.text();const patched=body.replace('async saveLearningSession(session) {','async saveLearningSession(session) { await new Promise(resolve => setTimeout(resolve, 1200));');assert.notEqual(patched,body);await route.fulfill({response:r,body:patched});});
   await slow.goto(url);await slow.getByRole('button',{name:'Originalprüfungen',exact:true}).first().click();await slow.getByRole('button',{name:/Teil B U1–U8/}).click();await slow.getByLabel('U1 Teil 1',{exact:true}).fill('Dieser Entwurf darf nicht verloren gehen');

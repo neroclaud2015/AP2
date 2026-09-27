@@ -91,4 +91,13 @@ IndexedDB v4 新增独立的 `attempts` 和 `learningSessions`，保留已有题
 - Q1 / U1 手机视图无横向溢出；浏览器验收无页面错误。
 - CI / Pages 只验证已保存数据并构建网站，不运行真实题库提取。
 
-**完成后停止，等待用户验收；不扫描其他年份或模块，不启动知识点系统或全量导入。**
+## 最终上线验收
+
+- 已部署代码提交：`cea9438`。
+- [最终 CI](https://github.com/neroclaud2015/AP2/actions/runs/36321794959) 与 [Pages 部署](https://github.com/neroclaud2015/AP2/actions/runs/36321830271) 均 success。
+- [线上完整学习验收](evidence/phase2a/live/browser.json) 与 [线上导航保护回归](evidence/phase2a/live/navigation-regressions.json) 均通过。
+- 首轮线上快速切换测试发现 Review 外层导航保护晚一个渲染周期；已改为绘制前同步保护，在生产预览和最终线上版本重新验证通过。
+- 慢速存储注入在本地开发测试执行，结果为通过；线上不注入此测试，对应记录为 null，线上仍验证刷新持久化、Review 编辑退出保护和浏览器后退使用最新答案。
+- [发布证据](evidence/phase2a/deployment.json)。最终验证使用隔离浏览器，没有修改用户现有个人记录。
+
+**已停止，等待用户验收；不扫描其他年份或模块，不启动知识点系统或全量导入。**
