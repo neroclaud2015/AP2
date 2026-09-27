@@ -1,5 +1,5 @@
 import type {USolution} from '../learning/model';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import AnswerPanel from './AnswerPanel';
 import { effectiveAnswer, validAnswerReview, type AnswerKey, type AnswerReview, type OfficialAnswer } from './answers';
 import LegacyArchive from '../LegacyArchive';
@@ -23,8 +23,8 @@ export default function StudyApp({onBusy,onHome,uSolutions=[]}:{onBusy?:(busy:bo
     .catch(()=>setError('Die Prüfungsdaten oder der lokale Speicher konnten nicht geöffnet werden. Bitte Seite neu laden und Browserspeicher erlauben.'));},[]);
   const questions=useMemo(()=>exam?.questions.map(q=>effectiveQuestion(q,reviews[q.question_id]))??[],[exam,reviews]);
   const busy=editing||answerEditing||importing;
-  useEffect(()=>{onBusy?.(busy);},[busy,onBusy]);
-  useEffect(()=>()=>onBusy?.(false),[onBusy]);
+  useLayoutEffect(()=>{onBusy?.(busy);},[busy,onBusy]);
+  useLayoutEffect(()=>()=>onBusy?.(false),[onBusy]);
   const segmentationQueue=questions.filter(q=>q.review_status==='needs_review');
   const answers=useMemo(()=>exam?.questions.filter(q=>/^\d+$/.test(q.question_number)).map(q=>answerKey?.answers.find(a=>a.question_id===q.question_id)??({
     question_id:q.question_id,exam:q.exam,module:q.module,question_number:Number(q.question_number),official_answer_type:'multiple_choice',official_answer:null,
