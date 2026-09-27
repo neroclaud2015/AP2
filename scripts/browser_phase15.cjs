@@ -8,7 +8,7 @@ const assert = require('node:assert/strict');
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  const url=process.env.APP_URL||'http://127.0.0.1:5173/';
  try {
-  await page.goto(url);await page.getByRole('heading',{name:/Die Originalaufgabe/}).waitFor();
+  await page.goto(url+'?view=review');await page.getByRole('heading',{name:/Die Originalaufgabe/}).waitFor();
   await page.locator('.question-art img').evaluate(img=>img.decode());
   assert.equal(await page.locator('.number-grid button').count(),36);
   for(let i=0;i<36;i++){

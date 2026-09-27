@@ -9,7 +9,7 @@ const {execFileSync}=require('node:child_process');
  const evidence=process.env.EVIDENCE_DIR||'docs/evidence/phase16';
  const url=process.env.APP_URL||'http://127.0.0.1:5173/';
  try{
-  await page.goto(url+'?q=3');await page.getByRole('heading',{name:'Aufgabe 3',exact:true}).waitFor();
+  await page.goto(url+'?view=review&q=3');await page.getByRole('heading',{name:'Aufgabe 3',exact:true}).waitFor();
   assert.equal(await page.locator('.official-answer').count(),1,'multiple-choice answer panel exists');
   const dataset=await (await page.request.get(url+'data/2017_sommer_arbeitsplanung_answers.json')).json();
   for(const answer of dataset.answers){
@@ -66,7 +66,7 @@ const {execFileSync}=require('node:child_process');
   await page.getByRole('status').filter({hasText:'Import nicht möglich'}).waitFor();assert.equal(await page.getByTestId('official-answer').innerText(),'5');
   await page.locator('.import-button input').setInputFiles({name:'old-backup.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({schema_version:1,reviews:[]}))});
   await page.getByRole('status').filter({hasText:'Sicherung importiert'}).waitFor();assert.equal(await page.getByTestId('official-answer').innerText(),'5');
-  const fresh=await browser.newContext();const restore=await fresh.newPage();await restore.goto(url+'?q=3');
+  const fresh=await browser.newContext();const restore=await fresh.newPage();await restore.goto(url+'?view=review&q=3');
   await restore.getByRole('heading',{name:'Aufgabe 3',exact:true}).waitFor();
   await restore.locator('.import-button input').setInputFiles({name:'backup.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(backup))});
   await restore.getByText('Confirmed · gesperrt',{exact:true}).waitFor();assert.equal(await restore.getByTestId('official-answer').innerText(),'5');

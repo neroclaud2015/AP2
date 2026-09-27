@@ -34,3 +34,12 @@ See `src/segmented/types.ts`. `extraction_confidence` describes heuristic layout
 - IndexedDB v3 adds `answerReviews`, keyed by userId + question_id. Locked manual answer records are independent of regenerated data; `user_corrected=true` for edits, `official_answer_status=confirmed`, `locked=true`. Automatic processing never writes this table.
 - Backup schema v2 includes `reviews` + `answer_reviews`, imported in one transaction. v1 backups remain accepted without clearing answer reviews.
 - Legacy `solution_page`/`solution_confirmed` only map a source; they never become numeric official answers.
+
+
+## Learning and U solution schema (Phase 2A)
+
+`src/learning/model.ts` defines multi_part U solutions, numeric/short_text/drawing/diagram subparts and private Attempt/LearningSession records. Official U source crops live separately in `data/exams/2017_sommer_arbeitsplanung_u_solutions.json`, keyed to unchanged question IDs. Regions carry physical PDF page and PDF-point box; the composite preserves source imagery.
+
+IndexedDB v4 adds `attempts` keyed by userId+attempt_id and `learningSessions` keyed by userId+question_id. Submission atomically appends a historical attempt and stores active session; duplicate attempt IDs are rejected. Attempt grading snapshots are immutable. Only reflection fields (note/error_reason/unsure/confidence) may be amended. User answers, timestamp, partial status, hints and scoring provenance remain private. Drafts/revealed state persist separately; session updated_at determines resume order.
+
+MC uses the effective official key (including locked local Review correction) at submission time. U numeric comparison produces a suggestion; final per-subpart assessment always comes from the user. AI advisory interface cannot access the repository. No AI evaluation is active. Numeric practice tolerance is not official scoring policy. No knowledge taxonomy or other-year ingestion is added.

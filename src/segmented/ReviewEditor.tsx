@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { CropEditor, CropImage } from './CropImage';
 import { asset, type Box, type QuestionReview, type SegmentedExam, type SegmentedQuestion, validReview } from './types';
 
-export default function ReviewEditor({question, original, exam, onSave, onCancel}: {
-  question: SegmentedQuestion; original: SegmentedQuestion; exam: SegmentedExam;
+export default function ReviewEditor({question, original, exam, fixedSolution=false, onSave, onCancel}: {
+  question: SegmentedQuestion; original: SegmentedQuestion; exam: SegmentedExam; fixedSolution?:boolean;
   onSave: (review: QuestionReview)=>Promise<void>; onCancel: ()=>void;
 }) {
   const [draft,setDraft]=useState(question);
@@ -25,7 +25,7 @@ export default function ReviewEditor({question, original, exam, onSave, onCancel
     <button className="outline" onClick={()=>setDraft(d=>({...d,bounding_box:original.bounding_box,regions:original.regions}))}>Automatischen Ausschnitt wiederherstellen</button>
     {validBox(draft.bounding_box)&&<details><summary>Vorschau des neuen Ausschnitts</summary><CropImage question={draft} edited/></details>}
     <label className="text-label">Hilfstext für Suche und Einordnung<textarea aria-label="Extrahierter Text" rows={8} value={draft.extracted_text} onChange={e=>update('extracted_text',e.target.value)}/></label>
-    {/^\d+$/.test(original.question_number)?<p className="hint">Die Auswahlantwort wird oben separat über „Antwort ändern“ bearbeitet (nur 1–5). Die Quellen-PDF-Seite ist kein Antwortwert.</p>:<><h3>Offizielle Lösungsquelle zuordnen</h3><p className="hint">Seite aus dem vorhandenen Lösungsdokument auswählen und prüfen. Eine Zuordnung gilt erst nach deiner Bestätigung.</p>
+    {fixedSolution?<p className="hint">Die offiziellen Lösungsbereiche werden oben mit direkten PDF-Quellen gezeigt. Eigene Bewertungen bleiben im Lernmodus.</p>:/^\d+$/.test(original.question_number)?<p className="hint">Die Auswahlantwort wird oben separat über „Antwort ändern“ bearbeitet (nur 1–5). Die Quellen-PDF-Seite ist kein Antwortwert.</p>:<><h3>Offizielle Lösungsquelle zuordnen</h3><p className="hint">Seite aus dem vorhandenen Lösungsdokument auswählen und prüfen. Eine Zuordnung gilt erst nach deiner Bestätigung.</p>
     <label>Lösungsseite <select aria-label="Lösungsseite" value={draft.solution_page??''} onChange={e=>setDraft(d=>({...d,solution_page:e.target.value?Number(e.target.value):null,solution_confirmed:false}))}><option value="">Keine Zuordnung</option>{exam.solution_document.pages.map(p=><option key={p.number} value={p.number}>PDF-Seite {p.number}</option>)}</select></label>
     {draft.solution_page&&<><div className="solution-preview"><img src={asset(exam.solution_document.pages[draft.solution_page-1].image)} alt={`Lösungsvorschau Seite ${draft.solution_page}`}/></div><label className="check-label"><input type="checkbox" checked={draft.solution_confirmed} onChange={e=>update('solution_confirmed',e.target.checked)}/>Diese Lösungszuordnung bestätigen</label></>}
     </>}

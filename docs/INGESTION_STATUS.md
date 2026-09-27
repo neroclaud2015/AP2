@@ -1,3 +1,9 @@
+# Current stop: Phase 2A learning prototype; awaiting user acceptance
+
+2017 Sommer Arbeitsplanung only: normal Dashboard/exam navigation, separate Study and Review, MC submissions and personal progress, U1–U8 official source crops and user-controlled subpart assessment. U7.1 numeric comparison uses an explicit practice tolerance. No other years/modules processed. See PHASE_2A_REPORT.md.
+
+## Historical Phase 1.6 status
+
 # Current stop: Phase 1.6 complete; awaiting user acceptance
 
 Only 2017 Sommer Arbeitsplanung Teil A official answers were added: Q1–Q28, 28 auto_ready, 0 answer needs_review. Source: Lösung PDF page 2. Parser 1.6.0, separate answer manifest. Phase 1.5 segmentation and all question IDs remain unchanged; its 4 crop reviews remain. No other years/modules/U answers processed. See PHASE_1_6_REPORT.md.

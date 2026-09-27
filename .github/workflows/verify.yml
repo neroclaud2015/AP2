@@ -23,5 +23,6 @@ jobs:
       - run: python scripts/validate_data.py
       - run: python scripts/validate_segmentation.py
       - run: python scripts/validate_answers.py
+      - run: python scripts/validate_u_solutions.py
       - run: npm test
       - run: npm run build

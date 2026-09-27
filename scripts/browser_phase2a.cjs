@@ -1,0 +1,44 @@
+const {chromium}=require('playwright');const fs=require('node:fs/promises');const assert=require('node:assert/strict');
+(async()=>{const browser=await chromium.launch({channel:'chrome',headless:true});const context=await browser.newContext({viewport:{width:1440,height:1000}});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ const url=process.env.APP_URL||'http://127.0.0.1:5173/';const evidence=process.env.EVIDENCE_DIR||'docs/evidence/phase2a';await fs.mkdir(evidence,{recursive:true});
+ try{
+  await page.goto(url);await page.getByRole('heading',{name:/Verstehen. Üben./}).waitFor();await page.screenshot({path:evidence+'/dashboard.png',fullPage:true});
+  await page.getByRole('button',{name:'Originalprüfungen',exact:true}).first().click();await page.getByRole('button',{name:/Teil A Q1–Q28/}).click();
+  await page.getByRole('heading',{name:'Aufgabe 1',exact:true}).waitFor();
+  assert.equal(await page.getByRole('button',{name:'Antwort bestätigen',exact:true}).count(),0);
+  assert.equal(await page.getByText('Offizielle Antwortquelle',{exact:true}).count(),0);
+  await page.getByRole('radio',{name:'3',exact:true}).check();await page.getByRole('button',{name:'Antwort abgeben',exact:true}).click();
+  await page.locator('.result-banner.falsch').waitFor();assert.match(await page.locator('.result-banner').innerText(),/Deine Antwort: 3 · Offizielle Antwort: 4/);
+  await page.getByText('Offizielle Antwortquelle',{exact:true}).click();await page.locator('.mc-source').evaluate(im=>im.decode());
+  await page.getByText('Warum falsch?',{exact:true}).click();await page.getByLabel('Fehlerursache',{exact:true}).fill('Vorzeichen übersehen');
+  await page.getByText('Notiz',{exact:true}).click();await page.getByLabel('Lernnotiz',{exact:true}).fill('Beim nächsten Mal vergleichen');
+  await page.getByText('Unsicher',{exact:true}).click();await page.getByLabel('Bei dieser Antwort bin ich unsicher',{exact:true}).check();
+  await page.getByRole('button',{name:'Reflexion speichern',exact:true}).click();await page.getByText('Reflexion gespeichert',{exact:true}).waitFor();
+  await page.screenshot({path:evidence+'/q1-wrong-source.png',fullPage:true});
+  await page.reload();await page.locator('.result-banner.falsch').waitFor();
+  await page.getByRole('button',{name:'Neuer Versuch',exact:true}).click();await page.getByRole('radio',{name:'4',exact:true}).check();await page.getByRole('button',{name:'Antwort abgeben',exact:true}).click();await page.locator('.result-banner.richtig').waitFor();
+  await page.getByRole('button',{name:'Teil B · U1–U8',exact:true}).click();await page.getByRole('heading',{name:'Aufgabe U1',exact:true}).waitFor();
+  await page.getByLabel('U1 Teil 1',{exact:true}).fill('Schutzkleidung, Ordnung, sichere Werkzeuge, Arbeitsplanung');
+  await page.getByLabel('U1 Teil 2',{exact:true}).fill('Ruhe bewahren, sichern, Hilfe holen, Erste Hilfe');
+  await page.getByLabel('U1 Teil 3',{exact:true}).fill('Kopfschutz und Notruftelefon');
+  await page.getByText('Entwurf gespeichert',{exact:true}).waitFor();await page.reload();await page.getByLabel('U1 Teil 3',{exact:true}).waitFor();assert.equal(await page.getByLabel('U1 Teil 3',{exact:true}).inputValue(),'Kopfschutz und Notruftelefon');
+  await page.getByRole('button',{name:'Lösung anzeigen',exact:true}).click();await page.locator('.u-solution-image').evaluate(im=>im.decode());
+  for(const [i,value] of [[1,'richtig'],[2,'teilweise'],[3,'falsch']])await page.getByLabel('U1 Bewertung '+i,{exact:true}).selectOption(value);
+  await page.getByRole('button',{name:'Bewertung speichern',exact:true}).click();await page.locator('.result-banner.teilweise').waitFor();await page.screenshot({path:evidence+'/u1-self-assessment.png',fullPage:true});
+  await page.reload();await page.locator('.result-banner.teilweise').waitFor();
+  await page.getByRole('button',{name:'Aufgabe U7',exact:true}).click();await page.getByLabel('U7 Teil 1',{exact:true}).fill('18,69');
+  await page.getByLabel('U7 Teil 2',{exact:true}).fill('Rechenweg auf Papier');await page.getByLabel('U7 Teil 3',{exact:true}).fill('Noch unsicher');
+  await page.getByRole('button',{name:'Lösung anzeigen',exact:true}).click();await page.getByTestId('numeric-result').waitFor();assert.match(await page.getByTestId('numeric-result').innerText(),/Numerische Prüfung: Richtig/);
+  assert.equal(await page.getByLabel('U7 Bewertung 1',{exact:true}).inputValue(),'');assert.equal(await page.getByRole('button',{name:'Bewertung speichern',exact:true}).isDisabled(),true);
+  for(let i=1;i<=3;i++)await page.getByLabel('U7 Bewertung '+i,{exact:true}).selectOption('falsch');await page.getByRole('button',{name:'Bewertung speichern',exact:true}).click();await page.locator('.result-banner.falsch').waitFor();await page.screenshot({path:evidence+'/u7-numeric-user-final.png',fullPage:true});
+  for(const n of ['U2','U3','U4','U5','U6','U8']){await page.getByRole('button',{name:'Aufgabe '+n,exact:true}).click();await page.getByLabel(n+' Teil 1',{exact:true}).fill('Testantwort');await page.getByRole('button',{name:'Lösung anzeigen',exact:true}).click();await page.locator('.u-solution-image').evaluate(im=>im.decode());if(n==='U4')assert.equal(await page.locator('.source-links a').count(),2);}
+  await page.getByRole('button',{name:'Review / Quellen',exact:true}).click();await page.getByText('Review Mode · Daten und Quellen prüfen',{exact:true}).waitFor();await page.getByRole('button',{name:'Aufgabe 1',exact:true}).click();await page.getByRole('button',{name:'Antwort bestätigen',exact:true}).waitFor();
+  await page.getByRole('button',{name:'Zurück zum Lernen',exact:true}).click();await page.locator('.review-shell').waitFor({state:'detached'});assert.equal(await page.getByRole('button',{name:'Antwort bestätigen',exact:true}).count(),0);
+  await page.getByRole('button',{name:'Start / Dashboard',exact:true}).click();await page.getByRole('heading',{name:/Verstehen. Üben./}).waitFor();
+  const download=page.waitForEvent('download');await page.getByRole('button',{name:'Lernfortschritt exportieren',exact:true}).click();const data=JSON.parse(await fs.readFile(await(await download).path(),'utf8'));
+  assert.equal(data.attempts.length,4);assert.equal(data.attempts.filter(a=>a.auto_scored).length,2);assert.equal(data.attempts.filter(a=>a.self_assessed).length,2);
+  assert.ok(data.attempts.some(a=>a.error_reason==='Vorzeichen übersehen'&&a.unsure));assert.ok(data.attempts.some(a=>a.subparts.length===3&&a.correctness==='teilweise'));
+  await page.setViewportSize({width:390,height:844});await page.screenshot({path:evidence+'/dashboard-mobile.png',fullPage:true});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  assert.deepEqual(errors,[]);await fs.writeFile(evidence+'/browser.json',JSON.stringify({url,q1_wrong_and_right:true,MC_source:true,study_review_separate:true,normal_navigation:true,U1_answer_reveal_self_assess:true,U1_partial_subparts:true,U7_numeric_tolerance:true,U_final_user_controlled:true,draft_refresh:true,attempt_refresh:true,all_eight_solution_images:true,U4_two_pages:true,attempts:4,errors},null,2));console.log('Phase 2A browser acceptance passed.');
+ }finally{await browser.close();}
+})().catch(e=>{console.error(e);process.exit(1)});

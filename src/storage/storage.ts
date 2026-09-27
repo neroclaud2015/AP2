@@ -1,3 +1,4 @@
+import {validAttempt, type Attempt, type LearningSession} from '../learning/model';
 import { validAnswerReview, type AnswerReview } from '../segmented/answers';
 import type { QuestionReview } from '../segmented/types';
 import Dexie, { type Table } from 'dexie';
@@ -13,6 +14,7 @@ export class IndexedDBProgressRepository implements ProgressRepository {
     this.db.version(1).stores({ records: '[userId+questionId],userId' });
     this.db.version(2).stores({ reviews: '[userId+question_id],userId' });
     this.db.version(3).stores({ answerReviews: '[userId+question_id],userId' });
+    this.db.version(4).stores({ attempts: '[userId+attempt_id],userId,[userId+question_id]', learningSessions: '[userId+question_id],userId' });
     this.records = this.db.table('records');
   }
   async get(userId: string, questionId: string) { return this.records.get([userId, questionId]); }
@@ -53,6 +55,19 @@ export class IndexedDBProgressRepository implements ProgressRepository {
   async saveAnswerReview(review: AnswerReview) {
     if(!validAnswerReview(review)) throw new Error('Invalid answer review');
     await this.db.table<AnswerReview>('answerReviews').put(review);
+  }
+  async getAttempts(userId:string):Promise<Attempt[]> {return this.db.table<Attempt>('attempts').where('userId').equals(userId).toArray();}
+  async getLearningSessions(userId:string):Promise<LearningSession[]> {return this.db.table<LearningSession>('learningSessions').where('userId').equals(userId).toArray();}
+  async saveLearningSession(session:LearningSession) {await this.db.table<LearningSession>('learningSessions').put(session);}
+  async saveAttempt(attempt:Attempt, session?:LearningSession) {
+    if(!validAttempt(attempt))throw new Error('Invalid attempt');
+    const attempts=this.db.table<Attempt>('attempts'),sessions=this.db.table<LearningSession>('learningSessions');
+    await this.db.transaction('rw',attempts,sessions,async()=>{await attempts.add(attempt);if(session)await sessions.put(session);});
+  }
+  async annotateAttempt(userId:string,id:string,values:Pick<Attempt,'note'|'error_reason'|'unsure'|'confidence'>) {
+    const table=this.db.table<Attempt>('attempts');
+    await this.db.transaction('rw',table,async()=>{const a=await table.get([userId,id]);if(!a)throw Error('Missing attempt');
+      await table.put({...a,note:values.note,error_reason:values.error_reason,unsure:values.unsure,confidence:values.confidence});});
   }
   close() { this.db.close(); }
 }

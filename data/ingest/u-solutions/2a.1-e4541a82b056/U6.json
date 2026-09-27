@@ -1,0 +1,55 @@
+{
+  "key": "1bca5421b9553e59df7103d82bfa3bbb45243009b2e09bcd9c4f3904fe1d9bd4:2a.1:e4541a82b05652713b7b4d21c9ca8b3b6f4722509d32f45b18d3d3cdff6830fd",
+  "record": {
+    "question_id": "35c77ffdb630f70057e4cfb8-p10-h1-U",
+    "question_number": "U6",
+    "exam": "2017_sommer",
+    "module": "Arbeitsplanung",
+    "solution_source_pdf": "assets/pdfs/ea47a013956459b9cf4c907b.pdf",
+    "solution_source_page": 9,
+    "solution_bbox": [
+      25,
+      402,
+      552,
+      588
+    ],
+    "regions": [
+      {
+        "source_page": 9,
+        "bbox": [
+          25,
+          402,
+          552,
+          588
+        ]
+      }
+    ],
+    "cropped_solution_image": "assets/u-solutions/2a.1-e4541a82b056/U6.png",
+    "bbox_units": "PDF points, top-left origin",
+    "review_status": "auto_ready",
+    "answer_type": "multi_part",
+    "subparts": [
+      {
+        "id": "1",
+        "label": "1 · Widerstandsverhalten",
+        "type": "short_text"
+      },
+      {
+        "id": "2",
+        "label": "2 · NTC-Widerstand bei 60 °C",
+        "type": "short_text"
+      },
+      {
+        "id": "3",
+        "label": "3 · Potenziometer einstellen",
+        "type": "short_text"
+      }
+    ],
+    "source_hash": "1bca5421b9553e59df7103d82bfa3bbb45243009b2e09bcd9c4f3904fe1d9bd4",
+    "extractor_revision": "2a.1-e4541a82b056",
+    "association_evidence": "Module headers, printed continuation pages 3–7, U number and original task matched visually. Adjacent Funktionsanalyse regions excluded."
+  },
+  "artifacts": {
+    "public/assets/u-solutions/2a.1-e4541a82b056/U6.png": "387d6bd74c3be1baebe4c9bcafe07f06ea31361d7d6602e0416711c1e082a6ee"
+  }
+}
