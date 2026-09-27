@@ -52,4 +52,9 @@ class WiSoDatasetTests(unittest.TestCase):
    return value
   with patch('wiso_dataset.read',side_effect=changed):
    with self.assertRaisesRegex(ValueError,'metadata integrity'):wiso_dataset.run(ROOT,True)
+ def test_html_fingerprint_ignores_platform_newlines(self):
+  import tempfile
+  with tempfile.TemporaryDirectory() as directory:
+   p=Path(directory)/'evidence.html';p.write_bytes(b'<p>source</p>\n<pre>regions</pre>');before=wiso_dataset.artifact_digest(p)
+   p.write_bytes(b'<p>source</p>\r\n<pre>regions</pre>');self.assertEqual(before,wiso_dataset.artifact_digest(p))
 if __name__=='__main__':unittest.main()

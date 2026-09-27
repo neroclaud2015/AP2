@@ -3,10 +3,20 @@ from pathlib import Path
 import hashlib,json,html,shutil,argparse
 from PIL import Image,ImageDraw
 from acceptance_artifacts import active_evidence
-from answers import artifact_digest,artifacts_valid
+from answers import artifact_digest as binary_or_json_digest
 from ingest import read,save,lock
 from layout_profiles.ap_2017 import region_text
 VERSION='2d.1.0';DOC='35f662246f2737dba0b61b88';NAME='2017_sommer_wiso'
+
+def artifact_digest(path):
+ path=Path(path)
+ if path.suffix=='.html':return hashlib.sha256(path.read_text(encoding='utf8').encode()).hexdigest()
+ return binary_or_json_digest(path)
+
+def artifacts_valid(root,artifacts):
+ try:return bool(artifacts) and all((root/p).is_file() and artifact_digest(root/p)==h for p,h in artifacts.items())
+ except (OSError,ValueError):return False
+
 
 def run(root,promote=False):
  root=Path(root);folder,report=active_evidence(root,'wiso_2017')

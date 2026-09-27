@@ -1452,6 +1452,491 @@
         "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p6-slot1.png": "82aae29d81bd6fdf25650cad9931c011b238bd59844a819f31d7b2b7e2ee7bed",
         "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p5-slot2.png": "e51a5065580d3fe30298f9d2f705b0b73407f166ab61bdeab2dd084e74d04e48"
       }
+    },
+    "3542821032c4d6b251a2e78c7e370428c373ff41b38f0759304205c105b07697:2d.1.0-5ab693bb14b7ac07:4e21a63fdb69ef999c6376b1534925977a29efb6a79c38a5d73addd91f0f5e2a:da53e85700f5bdcb244f3d87dfbabb2e87f1832fb8703ab0dca9fc6576892a3f": {
+      "status": "promoted",
+      "source_hash": "3542821032c4d6b251a2e78c7e370428c373ff41b38f0759304205c105b07697",
+      "version": "2d.1.0",
+      "config_hash": "5ab693bb14b7ac07",
+      "algorithm_hash": "4e21a63fdb69ef999c6376b1534925977a29efb6a79c38a5d73addd91f0f5e2a",
+      "source_metadata_hash": "da53e85700f5bdcb244f3d87dfbabb2e87f1832fb8703ab0dca9fc6576892a3f",
+      "questions": {
+        "wiso_2017-p5-slot3": {
+          "sha256": "cd6b1e8e8f265580e01abdef9f2be0763e999cfaa0a4d226f18ecc1ac4f67cff",
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                638,
+                50,
+                890,
+                290
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p5-slot3",
+              "evidence": "pdf_heading_in_verified_panel"
+            }
+          ]
+        },
+        "wiso_2017-p5-slot4": {
+          "sha256": "7bba573dadfaac8caad4afc2391ecad067b3e77dc584c4fdd4a622eba21c6ef1",
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                890,
+                50,
+                1165,
+                290
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p5-slot4",
+              "evidence": "pdf_heading_in_verified_panel"
+            }
+          ]
+        },
+        "wiso_2017-p5-slot5": {
+          "sha256": "fe1493e4668d7ac512041493935714c14196bbd72e30d2778babc4646bbe29d5",
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                638,
+                290,
+                890,
+                535
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p5-slot5",
+              "evidence": "pdf_heading_in_verified_panel"
+            }
+          ]
+        },
+        "wiso_2017-p6-slot2": {
+          "sha256": "c00ce07c74ee099870d9a3e9d9afd7356553e14deefad2897caae9d7d6a1549a",
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                48,
+                535,
+                297,
+                785
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p6-slot2",
+              "evidence": "pdf_heading_in_verified_panel"
+            }
+          ]
+        },
+        "wiso_2017-p6-slot3": {
+          "sha256": "2873f4338e76431ad6626a15e73395f3d3e2535e37930944c4ef5c115d5c0f33",
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                297,
+                535,
+                565,
+                785
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p6-slot3",
+              "evidence": "pdf_heading_in_verified_panel"
+            }
+          ]
+        },
+        "wiso_2017-p8-slot0": {
+          "sha256": "17334f66ee0b2c7d04f804b43490cf93df34a502ce03c6fa3b88383fe17739bd",
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                48,
+                50,
+                297,
+                298
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p8-slot0",
+              "evidence": "pdf_heading_in_verified_panel"
+            }
+          ]
+        },
+        "wiso_2017-p8-slot1": {
+          "sha256": "ee01ca72f0a923c28ee9851051041f1f09b2b7507a3b3935ad7150d5c76b428d",
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                297,
+                50,
+                565,
+                298
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p8-slot1",
+              "evidence": "pdf_heading_in_verified_panel"
+            }
+          ]
+        },
+        "wiso_2017-p8-slot2": {
+          "sha256": "028b7d54d60253e6641bcbf0cf1c6f047b2ccf02a7fd2c427d4533bc19a0bd51",
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                48,
+                298,
+                297,
+                550
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p8-slot2",
+              "evidence": "Explicit printed panel boundary; observed heading 8"
+            }
+          ]
+        },
+        "wiso_2017-p8-slot3": {
+          "sha256": "589560544c6bf99f11279ca56c251b4dff01c82d46742ab5fdd139f03f4954a7",
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                297,
+                298,
+                565,
+                550
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p8-slot3",
+              "evidence": "Explicit printed panel boundary; observed heading 9"
+            }
+          ]
+        },
+        "wiso_2017-p7-slot0": {
+          "sha256": "0d76a4aeb32ebbcb6ea56af0270fb2416c0c78c3b63ea4e19545afa6885d2d30",
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                48,
+                50,
+                297,
+                292
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p7-slot0",
+              "evidence": "localized_heading_ocr"
+            }
+          ]
+        },
+        "wiso_2017-p7-slot1": {
+          "sha256": "56ad681548005186377b9d0b4a1364009169ab882e18776d67be0211e0433bc8",
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                297,
+                50,
+                565,
+                292
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p7-slot1",
+              "evidence": "Explicit printed panel boundary; observed heading 11"
+            }
+          ]
+        },
+        "wiso_2017-p7-slot2": {
+          "sha256": "ee29fcd7d81c06a4c662a9102e6f194e247328fa482dfb2244048aa266ca0d2a",
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                48,
+                292,
+                297,
+                537
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p7-slot2",
+              "evidence": "localized_heading_ocr"
+            }
+          ]
+        },
+        "wiso_2017-p5-slot0": {
+          "sha256": "fb7f7f47c409ac1db4ee3b9b2500c74d7067dc546ef38901462a02868631ea62",
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                48,
+                45,
+                297,
+                288
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p5-slot0",
+              "evidence": "pdf_heading_in_verified_panel"
+            }
+          ]
+        },
+        "wiso_2017-p5-slot1": {
+          "sha256": "4cd8f20e47e0c728c9f35a2fc123ae29993266a377f92ebfd6f137ee1119fce4",
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                297,
+                45,
+                565,
+                288
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p5-slot1",
+              "evidence": "pdf_heading_in_verified_panel"
+            }
+          ]
+        },
+        "wiso_2017-p4-slot1": {
+          "sha256": "20dd1aa58885ba718290eae79292256fd7c9dc98cfd040b4f591fe232c830f40",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                638,
+                302,
+                890,
+                535
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p4-slot1",
+              "evidence": "pdf_heading_in_verified_panel"
+            }
+          ]
+        },
+        "wiso_2017-p4-slot2": {
+          "sha256": "e5a203b724c80bc0f3225ea7ac60715e5ed329ff916d56ca78bf942756ea1bd7",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                890,
+                302,
+                1165,
+                535
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p4-slot2",
+              "evidence": "pdf_heading_in_verified_panel"
+            }
+          ]
+        },
+        "wiso_2017-p4-slot3": {
+          "sha256": "f125d725e53be722a13fa7c26f876ce2fbf96c67f28c0bb3d2c82b6f5d5224f6",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                638,
+                535,
+                890,
+                785
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p4-slot3",
+              "evidence": "pdf_heading_in_verified_panel"
+            }
+          ]
+        },
+        "wiso_2017-p4-slot4": {
+          "sha256": "6958e6dbd42457bf254f6323e1d15879ae3a4ac486dead6ecb8a1b465eabdcec",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                890,
+                535,
+                1165,
+                785
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p4-slot4",
+              "evidence": "pdf_heading_in_verified_panel"
+            }
+          ]
+        },
+        "wiso_2017-p4-slot0": {
+          "sha256": "d7eff7441380db682f92b6e790e41cb004256d983426aef6949a04efea75a644",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                55,
+                50,
+                570,
+                794
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p4-slot0",
+              "evidence": "pdf_heading_in_verified_panel"
+            }
+          ]
+        },
+        "wiso_2017-p6-slot0": {
+          "sha256": "fa405a609719036a8c456a03fbf40326214c84c6ae0edd130dbc3002873ea628",
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                50,
+                48,
+                570,
+                535
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p6-slot0",
+              "evidence": "pdf_heading_in_verified_panel"
+            }
+          ]
+        },
+        "wiso_2017-p7-slot3": {
+          "sha256": "a452c97382e8cf4de588b025d918f7cdf0ab814a71441d5acb0855c8fae3bbd0",
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                642,
+                50,
+                1170,
+                797
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p7-slot3",
+              "evidence": "Explicit printed panel boundary; observed heading U3"
+            }
+          ]
+        },
+        "wiso_2017-p8-slot4": {
+          "sha256": "d240356a17febea00b209ea2d2895c925ed0048107230532c9f6d6cb979c9ce4",
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                642,
+                50,
+                1170,
+                795
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p8-slot4",
+              "evidence": "pdf_heading_in_verified_panel"
+            }
+          ]
+        },
+        "wiso_2017-p6-slot1": {
+          "sha256": "82aae29d81bd6fdf25650cad9931c011b238bd59844a819f31d7b2b7e2ee7bed",
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                642,
+                48,
+                1170,
+                795
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p6-slot1",
+              "evidence": "pdf_heading_in_verified_panel"
+            }
+          ]
+        },
+        "wiso_2017-p5-slot2": {
+          "sha256": "e51a5065580d3fe30298f9d2f705b0b73407f166ab61bdeab2dd084e74d04e48",
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                50,
+                288,
+                570,
+                797
+              ],
+              "role": "primary",
+              "owner": "wiso_2017-p5-slot2",
+              "evidence": "pdf_heading_in_verified_panel"
+            },
+            {
+              "page": 4,
+              "bbox": [
+                638,
+                45,
+                1170,
+                302
+              ],
+              "role": "continuation",
+              "owner": "wiso_2017-p5-slot2",
+              "evidence": "Printed U6 score label on p4 right; tablet purchase scenario subparts 3/4 continue p5 U6 subparts 1/2"
+            }
+          ]
+        }
+      },
+      "artifacts": {
+        "data/exams/2017_sommer_wiso_segmented.json": "a26ebbc3bcf15b091ed5f4835f504f09682d4e9db03101970cc32b67f72f36ec",
+        "public/data/2017_sommer_wiso_segmented.json": "a26ebbc3bcf15b091ed5f4835f504f09682d4e9db03101970cc32b67f72f36ec",
+        "docs/evidence/phase2d/wiso-preview/contact-sheet.jpg": "9c221aa1d036813aaba6d85d805d03c9218d997ed12ec4c9feabf35689e81a10",
+        "docs/evidence/phase2d/wiso-preview/index.html": "d0f45fde621c50a5268b11e61c933147ade0728414d5b5650c86fbdf93e552f2",
+        "docs/evidence/phase2d/wiso-preview/preview-manifest.json": "00726419315f97abfb9a75b76737a03989d093ce4744ba7878824d124171e88a",
+        "docs/evidence/phase2d/wiso-preview/Q1.png": "cd6b1e8e8f265580e01abdef9f2be0763e999cfaa0a4d226f18ecc1ac4f67cff",
+        "docs/evidence/phase2d/wiso-preview/Q10.png": "0d76a4aeb32ebbcb6ea56af0270fb2416c0c78c3b63ea4e19545afa6885d2d30",
+        "docs/evidence/phase2d/wiso-preview/Q11.png": "56ad681548005186377b9d0b4a1364009169ab882e18776d67be0211e0433bc8",
+        "docs/evidence/phase2d/wiso-preview/Q12.png": "ee29fcd7d81c06a4c662a9102e6f194e247328fa482dfb2244048aa266ca0d2a",
+        "docs/evidence/phase2d/wiso-preview/Q13.png": "fb7f7f47c409ac1db4ee3b9b2500c74d7067dc546ef38901462a02868631ea62",
+        "docs/evidence/phase2d/wiso-preview/Q14.png": "4cd8f20e47e0c728c9f35a2fc123ae29993266a377f92ebfd6f137ee1119fce4",
+        "docs/evidence/phase2d/wiso-preview/Q15.png": "20dd1aa58885ba718290eae79292256fd7c9dc98cfd040b4f591fe232c830f40",
+        "docs/evidence/phase2d/wiso-preview/Q16.png": "e5a203b724c80bc0f3225ea7ac60715e5ed329ff916d56ca78bf942756ea1bd7",
+        "docs/evidence/phase2d/wiso-preview/Q17.png": "f125d725e53be722a13fa7c26f876ce2fbf96c67f28c0bb3d2c82b6f5d5224f6",
+        "docs/evidence/phase2d/wiso-preview/Q18.png": "6958e6dbd42457bf254f6323e1d15879ae3a4ac486dead6ecb8a1b465eabdcec",
+        "docs/evidence/phase2d/wiso-preview/Q2.png": "7bba573dadfaac8caad4afc2391ecad067b3e77dc584c4fdd4a622eba21c6ef1",
+        "docs/evidence/phase2d/wiso-preview/Q3.png": "fe1493e4668d7ac512041493935714c14196bbd72e30d2778babc4646bbe29d5",
+        "docs/evidence/phase2d/wiso-preview/Q4.png": "c00ce07c74ee099870d9a3e9d9afd7356553e14deefad2897caae9d7d6a1549a",
+        "docs/evidence/phase2d/wiso-preview/Q5.png": "2873f4338e76431ad6626a15e73395f3d3e2535e37930944c4ef5c115d5c0f33",
+        "docs/evidence/phase2d/wiso-preview/Q6.png": "17334f66ee0b2c7d04f804b43490cf93df34a502ce03c6fa3b88383fe17739bd",
+        "docs/evidence/phase2d/wiso-preview/Q7.png": "ee01ca72f0a923c28ee9851051041f1f09b2b7507a3b3935ad7150d5c76b428d",
+        "docs/evidence/phase2d/wiso-preview/Q8.png": "028b7d54d60253e6641bcbf0cf1c6f047b2ccf02a7fd2c427d4533bc19a0bd51",
+        "docs/evidence/phase2d/wiso-preview/Q9.png": "589560544c6bf99f11279ca56c251b4dff01c82d46742ab5fdd139f03f4954a7",
+        "docs/evidence/phase2d/wiso-preview/U1.png": "d7eff7441380db682f92b6e790e41cb004256d983426aef6949a04efea75a644",
+        "docs/evidence/phase2d/wiso-preview/U2.png": "fa405a609719036a8c456a03fbf40326214c84c6ae0edd130dbc3002873ea628",
+        "docs/evidence/phase2d/wiso-preview/U3.png": "a452c97382e8cf4de588b025d918f7cdf0ab814a71441d5acb0855c8fae3bbd0",
+        "docs/evidence/phase2d/wiso-preview/U4.png": "d240356a17febea00b209ea2d2895c925ed0048107230532c9f6d6cb979c9ce4",
+        "docs/evidence/phase2d/wiso-preview/U5.png": "82aae29d81bd6fdf25650cad9931c011b238bd59844a819f31d7b2b7e2ee7bed",
+        "docs/evidence/phase2d/wiso-preview/U6.png": "e51a5065580d3fe30298f9d2f705b0b73407f166ab61bdeab2dd084e74d04e48",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p5-slot3.png": "cd6b1e8e8f265580e01abdef9f2be0763e999cfaa0a4d226f18ecc1ac4f67cff",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p5-slot4.png": "7bba573dadfaac8caad4afc2391ecad067b3e77dc584c4fdd4a622eba21c6ef1",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p5-slot5.png": "fe1493e4668d7ac512041493935714c14196bbd72e30d2778babc4646bbe29d5",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p6-slot2.png": "c00ce07c74ee099870d9a3e9d9afd7356553e14deefad2897caae9d7d6a1549a",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p6-slot3.png": "2873f4338e76431ad6626a15e73395f3d3e2535e37930944c4ef5c115d5c0f33",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p8-slot0.png": "17334f66ee0b2c7d04f804b43490cf93df34a502ce03c6fa3b88383fe17739bd",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p8-slot1.png": "ee01ca72f0a923c28ee9851051041f1f09b2b7507a3b3935ad7150d5c76b428d",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p8-slot2.png": "028b7d54d60253e6641bcbf0cf1c6f047b2ccf02a7fd2c427d4533bc19a0bd51",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p8-slot3.png": "589560544c6bf99f11279ca56c251b4dff01c82d46742ab5fdd139f03f4954a7",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p7-slot0.png": "0d76a4aeb32ebbcb6ea56af0270fb2416c0c78c3b63ea4e19545afa6885d2d30",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p7-slot1.png": "56ad681548005186377b9d0b4a1364009169ab882e18776d67be0211e0433bc8",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p7-slot2.png": "ee29fcd7d81c06a4c662a9102e6f194e247328fa482dfb2244048aa266ca0d2a",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p5-slot0.png": "fb7f7f47c409ac1db4ee3b9b2500c74d7067dc546ef38901462a02868631ea62",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p5-slot1.png": "4cd8f20e47e0c728c9f35a2fc123ae29993266a377f92ebfd6f137ee1119fce4",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p4-slot1.png": "20dd1aa58885ba718290eae79292256fd7c9dc98cfd040b4f591fe232c830f40",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p4-slot2.png": "e5a203b724c80bc0f3225ea7ac60715e5ed329ff916d56ca78bf942756ea1bd7",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p4-slot3.png": "f125d725e53be722a13fa7c26f876ce2fbf96c67f28c0bb3d2c82b6f5d5224f6",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p4-slot4.png": "6958e6dbd42457bf254f6323e1d15879ae3a4ac486dead6ecb8a1b465eabdcec",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p4-slot0.png": "d7eff7441380db682f92b6e790e41cb004256d983426aef6949a04efea75a644",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p6-slot0.png": "fa405a609719036a8c456a03fbf40326214c84c6ae0edd130dbc3002873ea628",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p7-slot3.png": "a452c97382e8cf4de588b025d918f7cdf0ab814a71441d5acb0855c8fae3bbd0",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p8-slot4.png": "d240356a17febea00b209ea2d2895c925ed0048107230532c9f6d6cb979c9ce4",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p6-slot1.png": "82aae29d81bd6fdf25650cad9931c011b238bd59844a819f31d7b2b7e2ee7bed",
+        "public/assets/questions/35f662246f2737dba0b61b88/2d.1.0-5ab693bb14b7ac07/wiso_2017-p5-slot2.png": "e51a5065580d3fe30298f9d2f705b0b73407f166ab61bdeab2dd084e74d04e48"
+      }
     }
   }
 }
