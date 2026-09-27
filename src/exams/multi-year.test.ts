@@ -21,3 +21,17 @@ describe('cross-season module selection',()=>{
  it('fails closed on wrong-season dataset association',()=>{expect(()=>createSession({...summer,type:'original',config:winter.config})).toThrow(/Prüfungsquelle/);});
  it('fails closed on shared IDs across source seasons',()=>{expect(()=>createSession({...summer,type:'module',pools:[summer,{...winter,exam:{...winter.exam,questions:winter.exam.questions.map((q,i)=>({...q,question_id:summer.exam.questions[i].question_id}))}}]})).toThrow(/identität/);});
 });
+
+describe('source-year restrictions',()=>{
+ it('uses only explicitly selected pools and persists the filter',()=>{
+  for(const id of ['2017-sommer','2017-18-winter'])for(const mode of ['kurz','standard'] as const){
+   const s=createSession({...summer,type:'module',pools:[summer,winter],sourceExams:[id],mode,seed:'restricted'});
+   expect(new Set(s.source_mix.map(q=>q.exam))).toEqual(new Set([id]));expect(s.sourceExams).toEqual([id]);expect(s.exam).toBe(id);expect(new Set(s.question_ids).size).toBe(s.question_ids.length);
+  }
+ });
+ it('supports multi-select and rejects unavailable or empty selections without widening',()=>{
+  const s=createSession({...summer,type:'module',pools:[summer,winter],sourceExams:['2017-sommer','2017-18-winter'],seed:'multi'});
+  expect(new Set(s.source_mix.map(q=>q.exam)).size).toBe(2);
+  for(const sourceExams of [[],['missing'],['2017-sommer','missing']])expect(()=>createSession({...summer,type:'module',pools:[summer,winter],sourceExams})).toThrow(/Prüfungsquellen/);
+ });
+});

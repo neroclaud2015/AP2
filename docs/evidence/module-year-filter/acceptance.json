@@ -1,0 +1,386 @@
+{
+  "url": "http://127.0.0.1:5173/",
+  "checks": {
+    "url_back_forward_refresh": true,
+    "all_cross_year": true,
+    "single_year_exclusive": true,
+    "source_mix_matches_filter": true,
+    "replacement_uses_new_filter": true,
+    "paused_session_preserved": true,
+    "mobile_no_overflow": true
+  },
+  "results": [
+    {
+      "filter": "all",
+      "module": "Arbeitsplanung",
+      "sourceExams": "all",
+      "source_mix": [
+        {
+          "exam": "2017-sommer",
+          "question_id": "35c77ffdb630f70057e4cfb8-p6-h1-r2-c0"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-ap-p6-10"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "35c77ffdb630f70057e4cfb8-p8-h1-U"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "35c77ffdb630f70057e4cfb8-p4-h0-r2-c0"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-ap-p10-25"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-ap-p23-U8"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-ap-p4-4"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "35c77ffdb630f70057e4cfb8-p4-h0-r0-c0"
+        }
+      ],
+      "unique": 8
+    },
+    {
+      "filter": "all",
+      "module": "Funktionsanalyse",
+      "sourceExams": "all",
+      "source_mix": [
+        {
+          "exam": "2017-sommer",
+          "question_id": "fa_2017-p8-h1-U"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-fa-p23-U8"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-fa-p12-28"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-fa-p4-4"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "fa_2017-p6-h0-r1-c1"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-fa-p9-18"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "fa_2017-p4-h1-r0-c0"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "fa_2017-p4-h0-r1-c1"
+        }
+      ],
+      "unique": 8
+    },
+    {
+      "filter": "all",
+      "module": "WiSo",
+      "sourceExams": "all",
+      "source_mix": [
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p5-slot1"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p5-slot0"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p9-12"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p10-U5"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p13-17"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p8-slot1"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p5-slot2"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p9-11"
+        }
+      ],
+      "unique": 8
+    },
+    {
+      "filter": "2017-18-winter",
+      "module": "Arbeitsplanung",
+      "sourceExams": [
+        "2017-18-winter"
+      ],
+      "source_mix": [
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-ap-p9-23"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-ap-p8-19"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-ap-p17-U3"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-ap-p16-U2"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-ap-p4-4"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-ap-p10-27"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-ap-p9-21"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-ap-p10-25"
+        }
+      ],
+      "unique": 8
+    },
+    {
+      "filter": "2017-18-winter",
+      "module": "Funktionsanalyse",
+      "sourceExams": [
+        "2017-18-winter"
+      ],
+      "source_mix": [
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-fa-p19-U4"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-fa-p11-26"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-fa-p16-U1"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-fa-p10-22"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-fa-p10-21"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-fa-p8-17"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-fa-p5-7"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-fa-p4-4"
+        }
+      ],
+      "unique": 8
+    },
+    {
+      "filter": "2017-18-winter",
+      "module": "WiSo",
+      "sourceExams": [
+        "2017-18-winter"
+      ],
+      "source_mix": [
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p7-7"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p11-U6"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p7-U3"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p6-5"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p6-6"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p10-13"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p9-11"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p9-10"
+        }
+      ],
+      "unique": 8
+    },
+    {
+      "filter": "2017-sommer",
+      "module": "Arbeitsplanung",
+      "sourceExams": [
+        "2017-sommer"
+      ],
+      "source_mix": [
+        {
+          "exam": "2017-sommer",
+          "question_id": "35c77ffdb630f70057e4cfb8-p11-h0-U"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "35c77ffdb630f70057e4cfb8-p2-h1-r0-c0"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "35c77ffdb630f70057e4cfb8-p12-h1-U"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "35c77ffdb630f70057e4cfb8-p4-h0-r1-c0"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "35c77ffdb630f70057e4cfb8-p5-h1-r0-c0"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "35c77ffdb630f70057e4cfb8-p6-h1-r2-c0"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "35c77ffdb630f70057e4cfb8-p3-h1-r1-c0"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "35c77ffdb630f70057e4cfb8-p5-h1-r1-c1"
+        }
+      ],
+      "unique": 8
+    },
+    {
+      "filter": "2017-sommer",
+      "module": "Funktionsanalyse",
+      "sourceExams": [
+        "2017-sommer"
+      ],
+      "source_mix": [
+        {
+          "exam": "2017-sommer",
+          "question_id": "fa_2017-p5-h0-r1-c0"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "fa_2017-p3-h1-r1-c0"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "fa_2017-p5-h0-r2-c1"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "fa_2017-p6-h1-r0-c0"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "fa_2017-p4-h0-r1-c1"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "fa_2017-p11-h0-U"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "fa_2017-p11-h1-U"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "fa_2017-p6-h0-r1-c1"
+        }
+      ],
+      "unique": 8
+    },
+    {
+      "filter": "2017-sommer",
+      "module": "WiSo",
+      "sourceExams": [
+        "2017-sommer"
+      ],
+      "source_mix": [
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p8-slot0"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p6-slot2"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p4-slot3"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p7-slot3"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p7-slot2"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p5-slot2"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p6-slot3"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p4-slot2"
+        }
+      ],
+      "unique": 8
+    }
+  ]
+}

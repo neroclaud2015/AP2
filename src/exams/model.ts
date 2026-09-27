@@ -1,3 +1,4 @@
+import {includesSource,type SourceExams} from '../learning/sourceExams';
 import type {ModuleConfig} from '../learning/modules';
 import {moduleParts} from '../learning/modules';
 import type {SegmentedExam} from '../segmented/types';
@@ -13,7 +14,7 @@ export interface TestSource {question_id:string;exam:string;module:string;questi
 export interface TestResult {total:number;beantwortet:number;richtig:number;falsch:number;teilweise:number;unbeantwortet:number;pending:number;vorlaeufig:boolean;byQuestion:Record<string,Correctness|'unbeantwortet'|'pending'>}
 export interface TestSession {
  test_id:string;exam_session_id:string;userId:string;test_type:TestType;exam:string;module:string;mode:TestMode;seed:string;
- question_ids:string[];question_models:Record<string,QuestionModel>;source_mix:TestSource[];
+ sourceExams?:SourceExams;question_ids:string[];question_models:Record<string,QuestionModel>;source_mix:TestSource[];
  answers:Record<string,Record<string,string>>;subpart_assessments:Record<string,Record<string,Correctness>>;official_answers:Record<string,number|null>;
  started_at:string;completed_at:string|null;status:TestStatus;current_question:string;discarded_at?:string;discarded_from?:TestStatus;deleted_at?:string;
  elapsed_time:number;active_since:number|null;revision:number;duration_minutes:number|null;result:TestResult|null;
@@ -23,9 +24,11 @@ export const TEST_SIZES={kurz:{multiple_choice:6,multi_part:2},standard:{multipl
 function random(seed:string){let n=2166136261;for(const c of seed)n=Math.imul(n^c.charCodeAt(0),16777619);return()=>{n+=0x6D2B79F5;let t=Math.imul(n^(n>>>15),1|n);t^=t+Math.imul(t^(t>>>7),61|t);return ((t^(t>>>14))>>>0)/4294967296;};}
 function shuffled<T>(input:T[],rng:()=>number){const a=[...input];for(let i=a.length-1;i>0;i--){const j=Math.floor(rng()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 export interface SessionPool {config:ModuleConfig;exam:SegmentedExam;officialAnswers:OfficialAnswer[];solutions:USolution[]}
-export function createSession(input:SessionPool&{type:TestType;pools?:SessionPool[];mode?:TestMode;seed?:string;now?:number}):TestSession {
+export function createSession(input:SessionPool&{type:TestType;sourceExams?:SourceExams;pools?:SessionPool[];mode?:TestMode;seed?:string;now?:number}):TestSession {
  const {config}=input;const now=input.now??Date.now();const mode=input.mode??'kurz';const seed=input.seed??crypto.randomUUID();
- const pools=input.type==='module'?(input.pools??[input]):[input];
+ const sourceExams=input.sourceExams??'all';
+ const pools=input.type==='module'?(input.pools??[input]).filter(p=>includesSource(sourceExams,p.config.examId)):[input];
+ if(input.type==='module'&&sourceExams!=='all'&&(!sourceExams.length||sourceExams.some(id=>!pools.some(p=>p.config.examId===id))))throw Error('Ausgewählte Prüfungsquellen sind nicht verfügbar.');
  if(!pools.length||pools.some(p=>p.config.slug!==config.slug)||new Set(pools.map(p=>p.config.examId)).size!==pools.length)throw Error('Ungültige Prüfungsquellen.');
  const entries=pools.flatMap(pool=>{
   const expected=pool.config.parts.flatMap(p=>p.questionNumbers);
@@ -57,7 +60,7 @@ export function createSession(input:SessionPool&{type:TestType;pools?:SessionPoo
    answer_source_pdf:key?(key.source_pdf_available===false?undefined:key.source_pdf):(u?.solution_source_pdf_available===false?undefined:u?.solution_source_pdf),answer_source_page:key?.source_page??u?.solution_source_page,answer_source_crop:key?.source_crop,solution_image:u?.cropped_solution_image});
  }
  const id=crypto.randomUUID();
- return {test_id:id,exam_session_id:id,userId:'local',test_type:input.type,exam:config.examId,module:config.slug,mode,seed,question_ids:selected.map(e=>e.q.question_id),question_models,source_mix,
+ return {test_id:id,exam_session_id:id,userId:'local',test_type:input.type,exam:input.type==='module'?(pools.find(p=>p.config.examId===config.examId)??pools[0]).config.examId:config.examId,module:config.slug,mode,seed,...(input.type==='module'?{sourceExams:sourceExams==='all'?'all' as const:[...sourceExams]}:{}),question_ids:selected.map(e=>e.q.question_id),question_models,source_mix,
   official_answers,answers:{},subpart_assessments:{},started_at:new Date(now).toISOString(),completed_at:null,status:'active',current_question:selected[0].q.question_id,elapsed_time:0,active_since:now,revision:0,
   duration_minutes:input.type==='original'?config.durationMinutes??null:null,result:null};
 }

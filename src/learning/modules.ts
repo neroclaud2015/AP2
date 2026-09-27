@@ -1,3 +1,4 @@
+import {parseSourceExams,type SourceExams} from './sourceExams';
 import type {Attempt,LearningSession} from './model';
 export type ModuleSlug=string;
 export type View='start'|'learn'|'exams'|'tests'|'session'|'study'|'review';
@@ -30,14 +31,14 @@ export function moduleParts<Q extends {question_number:string}>(config:ModuleCon
  return config.parts.map(part=>({...part,questions:part.questionNumbers.flatMap(number=>{const q=questions.find(q=>q.question_number===number);return q?[q]:[];})}));
 }
 export function questionPart(config:ModuleConfig,number:string){return config.parts.find(part=>part.questionNumbers.includes(number));}
-export interface LearningRoute {view:View;examId:string;module:ModuleSlug;number:string;sessionId?:string}
+export interface LearningRoute {view:View;examId:string;module:ModuleSlug;number:string;sessionId?:string;sourceExams?:SourceExams}
 export function readRoute(search:string):LearningRoute {
  const p=new URLSearchParams(search);const requested=p.get('view');
  const config=MODULES.find(m=>m.slug===(p.get('module')??MODULES[0].slug)&&m.examId===(p.get('exam')??MODULES[0].examId))??MODULES[0];
- return {view:(['start','learn','exams','tests','session','study','review'].includes(requested??'')?requested:p.has('q')?'study':'start') as View,examId:config.examId,module:config.slug,number:p.get('q')??config.parts[0].questionNumbers[0],...(requested==='session'&&p.get('session')?{sessionId:p.get('session')!}:{})};
+ return {view:(['start','learn','exams','tests','session','study','review'].includes(requested??'')?requested:p.has('q')?'study':'start') as View,examId:config.examId,module:config.slug,number:p.get('q')??config.parts[0].questionNumbers[0],...((requested==='tests'||requested==='session'&&p.has('years'))?{sourceExams:parseSourceExams(p.get('years'))}:{}),...(requested==='session'&&p.get('session')?{sessionId:p.get('session')!}:{})};
 }
 export function routeUrl(route:LearningRoute,href:string):URL {
- const url=new URL(href);url.searchParams.set('view',route.view);url.searchParams.set('exam',route.examId);url.searchParams.set('module',route.module);
+ const url=new URL(href);if(route.view==='tests'||route.view==='session'&&route.sourceExams!==undefined){const filter=route.sourceExams??'all';url.searchParams.set('years',filter==='all'?'all':filter.join(','));}else url.searchParams.delete('years');url.searchParams.set('view',route.view);url.searchParams.set('exam',route.examId);url.searchParams.set('module',route.module);
  if(route.view==='study'||route.view==='review')url.searchParams.set('q',route.number);else url.searchParams.delete('q');if(route.view==='session'&&route.sessionId)url.searchParams.set('session',route.sessionId);else url.searchParams.delete('session');return url;
 }
 export function moduleProgress(questions:{question_id:string;question_number:string}[],allAttempts:Attempt[],allSessions:LearningSession[]){
