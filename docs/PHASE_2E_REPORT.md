@@ -39,3 +39,5 @@ Automatic approval review rejected publishing complete Winter solution PDFs, the
 Stopped after these three Winter modules. No further archive processing is scheduled.
 
 Verification before release: 72 Python tests, 39 frontend tests, production build, 14 lifecycle browser checks, 7 navigation checks and 8 Winter FA/WiSo browser checks passed.
+
+Live verification: the same 29 browser checks passed against https://neroclaud2015.github.io/AP2/ after deployment of 3bb38080ae454a490ec8287a26dc86665c73aaa3. Evidence JSON contains the production URL. CI 36339913855 and Pages 36339913677 succeeded. This evidence-only follow-up does not change application or datasets.
