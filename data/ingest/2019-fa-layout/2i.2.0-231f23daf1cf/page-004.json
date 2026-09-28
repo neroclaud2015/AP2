@@ -1,0 +1,111 @@
+{
+  "key": "7840cc5fba4c645998547c971a1aaf05296dd5dd9087856c8a6ccb4e2a80f6d2",
+  "record_hash": "1e52ca926518bb5dc5c58eeef655046c7e8e26aa69d2c46cffbdd8ca8e93b5c5",
+  "record": {
+    "page": 4,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Entire cached physical page visually inspected. Printed headings and ruled regions read directly; no inferred numbering.",
+    "anchors": [
+      {
+        "anchor_id": "2019-fa-p4-2",
+        "number": "2",
+        "bbox": [
+          45.9,
+          56.1,
+          86.7,
+          88.4
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 2 read on physical page 4; exact original pixels retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "61e4343b0c08068f639e98c5822949b81f9e1f49f3fd7c4457906f12aa20bb86"
+      },
+      {
+        "anchor_id": "2019-fa-p4-3",
+        "number": "3",
+        "bbox": [
+          297.5,
+          56.1,
+          338.3,
+          88.4
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 3 read on physical page 4; exact original pixels retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "fb47785842200ca5cfbdf1fbe60980074c175e1aaed463201e6ff9264fdd7d93"
+      }
+    ],
+    "regions": [
+      {
+        "page": 4,
+        "bbox": [
+          45.9,
+          56.1,
+          292.4,
+          300.9
+        ],
+        "role": "primary",
+        "owner": "2019-fa-p4-2",
+        "evidence": "Ruled boundaries and explicit diagram/response-area reference; no neighboring content inherited."
+      },
+      {
+        "page": 4,
+        "bbox": [
+          297.5,
+          56.1,
+          537.2,
+          300.9
+        ],
+        "role": "primary",
+        "owner": "2019-fa-p4-3",
+        "evidence": "Ruled boundaries and explicit diagram/response-area reference; no neighboring content inherited."
+      },
+      {
+        "page": 4,
+        "bbox": [
+          45.9,
+          304.3,
+          537.2,
+          793.9
+        ],
+        "role": "diagram",
+        "owner": "2019-fa-p4-3",
+        "evidence": "Ruled boundaries and explicit diagram/response-area reference; no neighboring content inherited."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "2",
+        "bbox": [
+          45.9,
+          56.1,
+          86.7,
+          88.4
+        ],
+        "pixel_sha256": "61e4343b0c08068f639e98c5822949b81f9e1f49f3fd7c4457906f12aa20bb86",
+        "audited_pixel_sha256": "61e4343b0c08068f639e98c5822949b81f9e1f49f3fd7c4457906f12aa20bb86"
+      },
+      {
+        "kind": "heading",
+        "number": "3",
+        "bbox": [
+          297.5,
+          56.1,
+          338.3,
+          88.4
+        ],
+        "pixel_sha256": "fb47785842200ca5cfbdf1fbe60980074c175e1aaed463201e6ff9264fdd7d93",
+        "audited_pixel_sha256": "fb47785842200ca5cfbdf1fbe60980074c175e1aaed463201e6ff9264fdd7d93"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

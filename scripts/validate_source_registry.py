@@ -12,16 +12,16 @@ def validate(root):
   pair=production_sources(registry,exam,module)
   for source in pair.values():
    if source.get('supersedes_source_id'):validate_identity_artifacts(root,registry,source)
-   evidence=source['gates']['validated']
-   legacy=evidence.get('basis')=='existing_accepted_production_metadata_migration'
-   for rel,expected in evidence['artifacts'].items():
-    path=root/rel
-    if not path.is_file():raise ValueError(f'Missing production evidence: {rel}')
-    if path.suffix=='.json':
-     value=json.loads(path.read_text(encoding='utf-8-sig'))
-     actual=hashlib.sha256(json.dumps(value,sort_keys=True,separators=(',',':'),ensure_ascii=legacy).encode()).hexdigest()
-    else:actual=hashlib.sha256(path.read_bytes()).hexdigest()
-    if actual!=expected:raise ValueError(f'Production evidence changed: {rel}')
+   for evidence in [source['gates']['validated'],source['gates']['production']]:
+    legacy=evidence.get('basis')=='existing_accepted_production_metadata_migration'
+    for rel,expected in evidence['artifacts'].items():
+     path=root/rel
+     if not path.is_file():raise ValueError(f'Missing production evidence: {rel}')
+     if path.suffix=='.json':
+      value=json.loads(path.read_text(encoding='utf-8-sig'))
+      actual=hashlib.sha256(json.dumps(value,sort_keys=True,separators=(',',':'),ensure_ascii=legacy).encode()).hexdigest()
+     else:actual=hashlib.sha256(path.read_bytes()).hexdigest()
+     if actual!=expected:raise ValueError(f'Production evidence changed: {rel}')
   prefix=exam.replace('-','_')+'_'+module
   q=json.loads((root/f'public/data/{prefix}_segmented.json').read_text(encoding='utf-8-sig'))
   a=json.loads((root/f'public/data/{prefix}_answers.json').read_text(encoding='utf-8-sig'))

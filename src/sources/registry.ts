@@ -34,7 +34,7 @@ export function moduleSources(value:unknown,module:ModuleIdentity):{question:Reg
   if(!candidates.length||candidates.filter(s=>s.version===candidates[0].version).length!==1)throw Error('Dieses Modul ist nicht über das Quellenregister freigegeben.');
   const source=candidates[0];validated(source,registry);
   const paths=[module.segmentedPath,module.answersPath,module.solutionsPath].filter((p):p is string=>!!p);
-  if(paths.some(path=>!source.gates.validated!.artifacts[path.startsWith('public/')?path:'public/'+path]))throw Error('Moduldateien stimmen nicht mit den validierten Quellen überein.');
+  if(paths.some(path=>{const key=path.startsWith('public/')?path:'public/'+path;return !source.gates.validated!.artifacts[key]&&!source.gates.production!.artifacts[key];}))throw Error('Moduldateien stimmen nicht mit den validierten Quellen überein.');
   return structuredClone(source);
  };
  return {question:select('question_pdf'),solution:select('solution_pdf')};

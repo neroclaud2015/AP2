@@ -37,3 +37,12 @@ describe('production source registry',()=>{
   const q=moduleSources(registry,{examId:'2017-sommer',slug:'arbeitsplanung'}).question;q.sha256='changed';expect(moduleSources(registry,{examId:'2017-sommer',slug:'arbeitsplanung'}).question.sha256).not.toBe('changed');
  });
 });
+
+it('uses final production evidence for reviewed crops without replacing validated evidence',()=>{
+ const copy=structuredClone(registry) as unknown as SourceRegistry;
+ const before=JSON.stringify(copy.sources.map(s=>s.gates.validated));
+ for(const s of copy.sources.filter(s=>s.exam==='2017-sommer'&&s.module==='arbeitsplanung'))s.gates.production!.artifacts['public/data/reviewed_u_solutions.json']='a'.repeat(64);
+ expect(()=>moduleSources(copy,{examId:'2017-sommer',slug:'arbeitsplanung',solutionsPath:'data/reviewed_u_solutions.json'})).not.toThrow();
+ expect(JSON.stringify(copy.sources.map(s=>s.gates.validated))).toBe(before);
+ expect(()=>moduleSources(copy,{examId:'2017-sommer',slug:'arbeitsplanung',solutionsPath:'data/unreviewed.json'})).toThrow();
+});

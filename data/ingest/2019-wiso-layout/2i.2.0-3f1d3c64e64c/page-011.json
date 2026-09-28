@@ -1,0 +1,137 @@
+{
+  "key": "476f10bdb5da319a36d993a853a9e19c3a5897a585567e0f44109c3a11353ff7",
+  "record_hash": "e12c832b1f2e1c45dc77891b7b82d6098845946270539d96dc7484ee26da98c1",
+  "record": {
+    "page": 11,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Entire cached physical page visually inspected. Printed headings and ruled regions read directly; no inferred numbering.",
+    "anchors": [
+      {
+        "anchor_id": "2019-wiso-p11-9",
+        "number": "9",
+        "bbox": [
+          45.9,
+          56.1,
+          86.7,
+          88.4
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 9 read on physical page 11; exact original pixels retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "1180deb6da4c0773aeca27aacbdd30e4f34ec1a21bc61a00426c9b080567a855"
+      },
+      {
+        "anchor_id": "2019-wiso-p11-10",
+        "number": "10",
+        "bbox": [
+          295.8,
+          56.1,
+          336.6,
+          88.4
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 10 read on physical page 11; exact original pixels retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "e0de59a59a39e0753edad0a0b4c083a482b928caab212be062c449886c7ea7dd"
+      },
+      {
+        "anchor_id": "2019-wiso-p11-11",
+        "number": "11",
+        "bbox": [
+          45.9,
+          297.5,
+          86.7,
+          329.8
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 11 read on physical page 11; exact original pixels retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "4debc70872d1ccbf50e967f9e648987b2373e15edb129d098c048d9ab91a4ac8"
+      }
+    ],
+    "regions": [
+      {
+        "page": 11,
+        "bbox": [
+          45.9,
+          56.1,
+          290.7,
+          294.1
+        ],
+        "role": "primary",
+        "owner": "2019-wiso-p11-9",
+        "evidence": "Ruled boundaries and explicit diagram/response-area reference; no neighboring content inherited."
+      },
+      {
+        "page": 11,
+        "bbox": [
+          295.8,
+          56.1,
+          537.2,
+          294.1
+        ],
+        "role": "primary",
+        "owner": "2019-wiso-p11-10",
+        "evidence": "Ruled boundaries and explicit diagram/response-area reference; no neighboring content inherited."
+      },
+      {
+        "page": 11,
+        "bbox": [
+          45.9,
+          297.5,
+          290.7,
+          538.9
+        ],
+        "role": "primary",
+        "owner": "2019-wiso-p11-11",
+        "evidence": "Ruled boundaries and explicit diagram/response-area reference; no neighboring content inherited."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "9",
+        "bbox": [
+          45.9,
+          56.1,
+          86.7,
+          88.4
+        ],
+        "pixel_sha256": "1180deb6da4c0773aeca27aacbdd30e4f34ec1a21bc61a00426c9b080567a855",
+        "audited_pixel_sha256": "1180deb6da4c0773aeca27aacbdd30e4f34ec1a21bc61a00426c9b080567a855"
+      },
+      {
+        "kind": "heading",
+        "number": "10",
+        "bbox": [
+          295.8,
+          56.1,
+          336.6,
+          88.4
+        ],
+        "pixel_sha256": "e0de59a59a39e0753edad0a0b4c083a482b928caab212be062c449886c7ea7dd",
+        "audited_pixel_sha256": "e0de59a59a39e0753edad0a0b4c083a482b928caab212be062c449886c7ea7dd"
+      },
+      {
+        "kind": "heading",
+        "number": "11",
+        "bbox": [
+          45.9,
+          297.5,
+          86.7,
+          329.8
+        ],
+        "pixel_sha256": "4debc70872d1ccbf50e967f9e648987b2373e15edb129d098c048d9ab91a4ac8",
+        "audited_pixel_sha256": "4debc70872d1ccbf50e967f9e648987b2373e15edb129d098c048d9ab91a4ac8"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

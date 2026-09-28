@@ -1,0 +1,149 @@
+{
+  "key": "5a486fdcec721443f3d201cbbd0df91f7503b5f42762e3ed2ef47394c70cd6f6",
+  "record_hash": "893bea9dc0ad7b8db3fc69da7ae70b5caaee6f85c16fbc8f77ce3da7feab0f8a",
+  "record": {
+    "page": 7,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Entire cached physical page visually inspected. Printed headings and ruled regions read directly; no inferred numbering.",
+    "anchors": [
+      {
+        "anchor_id": "2019-ap-p7-8",
+        "number": "8",
+        "bbox": [
+          45.9,
+          57.8,
+          86.7,
+          90.1
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 8 read on physical page 7; exact original pixels retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "7aeec18d253f3dbc615b0f105022f24ee8219b7f5158f76e65d012059896570c"
+      },
+      {
+        "anchor_id": "2019-ap-p7-9",
+        "number": "9",
+        "bbox": [
+          45.9,
+          304.3,
+          86.7,
+          336.6
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 9 read on physical page 7; exact original pixels retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "8e95bc63cf6c20ebecab8411bbfd56a774413fe9c655e4f36e13896d77554c8d"
+      },
+      {
+        "anchor_id": "2019-ap-p7-10",
+        "number": "10",
+        "bbox": [
+          295.8,
+          304.3,
+          336.6,
+          336.6
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 10 read on physical page 7; exact original pixels retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "75c9131a1a90ea2ba2fa74cdc5210c31ca113d88e909b5f15349b988789c1782"
+      }
+    ],
+    "regions": [
+      {
+        "page": 7,
+        "bbox": [
+          45.9,
+          57.8,
+          537.2,
+          300.9
+        ],
+        "role": "primary",
+        "owner": "2019-ap-p7-8",
+        "evidence": "Ruled boundaries and explicit diagram/response-area reference; no neighboring content inherited."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          45.9,
+          304.3,
+          292.4,
+          533.8
+        ],
+        "role": "primary",
+        "owner": "2019-ap-p7-9",
+        "evidence": "Ruled boundaries and explicit diagram/response-area reference; no neighboring content inherited."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          295.8,
+          304.3,
+          537.2,
+          533.8
+        ],
+        "role": "primary",
+        "owner": "2019-ap-p7-10",
+        "evidence": "Ruled boundaries and explicit diagram/response-area reference; no neighboring content inherited."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          45.9,
+          537.2,
+          537.2,
+          792.2
+        ],
+        "role": "response_area",
+        "owner": "2019-ap-p7-10",
+        "evidence": "Ruled boundaries and explicit diagram/response-area reference; no neighboring content inherited."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "8",
+        "bbox": [
+          45.9,
+          57.8,
+          86.7,
+          90.1
+        ],
+        "pixel_sha256": "7aeec18d253f3dbc615b0f105022f24ee8219b7f5158f76e65d012059896570c",
+        "audited_pixel_sha256": "7aeec18d253f3dbc615b0f105022f24ee8219b7f5158f76e65d012059896570c"
+      },
+      {
+        "kind": "heading",
+        "number": "9",
+        "bbox": [
+          45.9,
+          304.3,
+          86.7,
+          336.6
+        ],
+        "pixel_sha256": "8e95bc63cf6c20ebecab8411bbfd56a774413fe9c655e4f36e13896d77554c8d",
+        "audited_pixel_sha256": "8e95bc63cf6c20ebecab8411bbfd56a774413fe9c655e4f36e13896d77554c8d"
+      },
+      {
+        "kind": "heading",
+        "number": "10",
+        "bbox": [
+          295.8,
+          304.3,
+          336.6,
+          336.6
+        ],
+        "pixel_sha256": "75c9131a1a90ea2ba2fa74cdc5210c31ca113d88e909b5f15349b988789c1782",
+        "audited_pixel_sha256": "75c9131a1a90ea2ba2fa74cdc5210c31ca113d88e909b5f15349b988789c1782"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

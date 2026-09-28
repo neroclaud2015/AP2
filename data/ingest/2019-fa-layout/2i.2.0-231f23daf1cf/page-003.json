@@ -1,0 +1,61 @@
+{
+  "key": "f34f51998c3dcb8be1c304a3c6c1e2780bbc519d63da7bdc58ee80263966ad8a",
+  "record_hash": "e239aec9f5dbeb721a884e8be55823d905024e6e7bc184d6adfdce80a99ab9a8",
+  "record": {
+    "page": 3,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Entire cached physical page visually inspected. Printed headings and ruled regions read directly; no inferred numbering.",
+    "anchors": [
+      {
+        "anchor_id": "2019-fa-p3-1",
+        "number": "1",
+        "bbox": [
+          45.9,
+          294.1,
+          86.7,
+          326.4
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 1 read on physical page 3; exact original pixels retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "4e56edf5a74e0e1214020ea6f9d2173a9e802d9bd567f39c914bbaee92f5c6ae"
+      }
+    ],
+    "regions": [
+      {
+        "page": 3,
+        "bbox": [
+          45.9,
+          294.1,
+          537.2,
+          793.9
+        ],
+        "role": "primary",
+        "owner": "2019-fa-p3-1",
+        "evidence": "Ruled boundaries and explicit diagram/response-area reference; no neighboring content inherited."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "1",
+        "bbox": [
+          45.9,
+          294.1,
+          86.7,
+          326.4
+        ],
+        "pixel_sha256": "4e56edf5a74e0e1214020ea6f9d2173a9e802d9bd567f39c914bbaee92f5c6ae",
+        "audited_pixel_sha256": "4e56edf5a74e0e1214020ea6f9d2173a9e802d9bd567f39c914bbaee92f5c6ae"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

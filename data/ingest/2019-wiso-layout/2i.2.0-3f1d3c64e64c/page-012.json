@@ -1,0 +1,61 @@
+{
+  "key": "df8f84062812aaca8dfec7f4e5fbc172fe25dd304b8999a3f521aa6a0d31e8ab",
+  "record_hash": "0bd577e70abbb83dce993b0639cb02ada10c884534e928074f90548386b56906",
+  "record": {
+    "page": 12,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Entire cached physical page visually inspected. Printed headings and ruled regions read directly; no inferred numbering.",
+    "anchors": [
+      {
+        "anchor_id": "2019-wiso-p12-U5",
+        "number": "U5",
+        "bbox": [
+          49.3,
+          734.4,
+          83.3,
+          780.3
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U5 read on physical page 12; exact original pixels retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "d8b5350c115ba9be3305ee623ea4fc69b0b521a3b48cf25e3b2762b89ddcdfc6"
+      }
+    ],
+    "regions": [
+      {
+        "page": 12,
+        "bbox": [
+          45.9,
+          54.4,
+          538.9,
+          783.7
+        ],
+        "role": "primary",
+        "owner": "2019-wiso-p12-U5",
+        "evidence": "Ruled boundaries and explicit diagram/response-area reference; no neighboring content inherited."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U5",
+        "bbox": [
+          49.3,
+          734.4,
+          83.3,
+          780.3
+        ],
+        "pixel_sha256": "d8b5350c115ba9be3305ee623ea4fc69b0b521a3b48cf25e3b2762b89ddcdfc6",
+        "audited_pixel_sha256": "d8b5350c115ba9be3305ee623ea4fc69b0b521a3b48cf25e3b2762b89ddcdfc6"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

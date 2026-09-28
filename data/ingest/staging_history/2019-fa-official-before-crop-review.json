@@ -1,0 +1,847 @@
+{
+  "reason": "Pre-release visual QA: correct left border and horizontal separators; all MC measurements unchanged. Not a production replacement.",
+  "answer_manifest": {
+    "key": "3c789ef1c787cb071baba1ae97f2dd3e3a030fce385d2defb6db88d9252b6653",
+    "revision": "2019-fa-2f.1.0-9a476961687a",
+    "status": "validated",
+    "artifacts": {
+      "data/exams/2019_sommer_funktionsanalyse_answers.json": "217b2af7303f6bbf3ce24dbb3766e2e3d1ecf0e43ea59c1b0df95c8e9a2a8f02",
+      "public/data/2019_sommer_funktionsanalyse_answers.json": "217b2af7303f6bbf3ce24dbb3766e2e3d1ecf0e43ea59c1b0df95c8e9a2a8f02",
+      "data/exams/2019_sommer_funktionsanalyse_u_solutions.json": "b8340df4883de412aa7dc2d26724d7c58c403eca7a10ee94e9341d99e392be63",
+      "public/data/2019_sommer_funktionsanalyse_u_solutions.json": "b8340df4883de412aa7dc2d26724d7c58c403eca7a10ee94e9341d99e392be63",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q01.png": "426545e08e8943f937901331db0f5fc76cf0262df9abb1d36db1c74c88f91a98",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q02.png": "b92a2d1e56cb6286d341f563388894f8e380f7aec291709accaa62b5ba5069b9",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q03.png": "221b37a9a390c38fb893baa85c0144dd7e641eb90230010394465b2789874d56",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q04.png": "f1651dc142156382e6506fe0460bcac4a8a6d242ae831f1828ef6a459eaf8265",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q05.png": "2302a3783c348ffbb03eb36ebd3649f9121850c726de5f959fadbba4c6f4c678",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q06.png": "2e22afb9fdcc9a38e613dc963482fd7ffb96cb5c87cac9bb392555b03306c3ec",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q07.png": "01e184c0106b045425b9897febc8254c7d87bad5ec689930902cd33ca5521dfb",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q08.png": "8c1bb5f51fcb1fc01b240688cf6e22656c10782f2f1515848e95e4646cda1537",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q09.png": "54b97919a9156c0dbe6c4e148844fd42db55ddb424ee0474514a6ab38040dc1c",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q10.png": "51c3c785c107a5bc0b202bbe871ee6c71bf373250b53e57da1e0f9d6a900361d",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q11.png": "6694cd224b4667b433a9dd26126f6e18fc6f6a646ee2a3b6c4909a3e3d22d5b5",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q12.png": "db71466cb19d034bf9d8be33e956175c9e8889e71ef28574fcda1a4272fcf5cb",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q13.png": "6860c749c100a70e6428e660e5758de4333818d43846d8a73b1b7bb8ab57b3b8",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q14.png": "3b30bd7fe4dcfd7c1a3a09181d205a5b5300a0390d86eee412c34887a0c77d31",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q15.png": "f2a9f91358e6a0b5f32c1b76938f10f331847d6ca26f92130daa239641d741c6",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q16.png": "bb29cc5a17dfb71a61aae543714a06373dc579de029c6fe0f6b8d2f2743ba15b",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q17.png": "a0bbf7b695da6d64120f7f8a47d9f69886b5e17a8588cbeac8ccd2daacc64edf",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q18.png": "06a906970202bb5f0aded84319fed406d99198c8614658f9d738f45cd2f4f128",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q19.png": "a7606091015db588cdaa4cfbd49a4d73f455685d21b6d135ce66ea97211c58bf",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q20.png": "0c7d2f2ce0d52ca0378a2d763acaf84de76e5c4edf9c1e9e69a6e1436485e3b8",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q21.png": "82c4ab3779c27e922ed03d30f09597deb91d73152faf89352a8006ea71737887",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q22.png": "55f2b209a0deca012a38dd58aca305bcdca0c071513e791bdce0ce8582fdd5c4",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q23.png": "4ba3c84cfaf7ed7ecf7799cdd9d41e4b77f7192ced47606c4e9218f43729d03c",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q24.png": "0afb24872a60569ac668cae56c8286913282d31fa5c6435387dfc8974e201692",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q25.png": "793ffcf19e1fc4e50d3774f01664ce1df24e31a43215a2bb66e427885fe8a186",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q26.png": "6384d6bc6f431957f43cb501c77621096317a8dd74d28b288cc1acfc6e75e5f2",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q27.png": "98689ea8542ac70745260b0b086aa1f5d0b6ac8e5eee3fca22f3f5a46814c1f0",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/Q28.png": "dc6614d0d2fc773ea2bf23b99297bc7fd1dd9c332fc9fc5d43ec0a997b15e688",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/U1.png": "dcb0d3f9bef984391b1dfefb777f59a5f1c019ede14db1eb267f23974d5e7387",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/U2.png": "439c1e8953b0c4d5a8915152a2b17e7286c6e9840eb41c93947de5cca2a34521",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/U3.png": "894b5854bbfaf9da51f764e2a7f08ddaaf3bd38ee76744966542c63de6df65a8",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/U4.png": "aaae28dd177ba354ab5899e407bbd1a3e651d3a238d652b359bf431ab485ef02",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/U5.png": "8b140fd1a5be109165f35ca988bf4f4acef66527cfb73b021d0045b2919157ee",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/U6.png": "54bf72a82fb1416218be6cba2ce4488cf548c50c72c5bddff915c8837bb03ec7",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/U7.png": "e6e871a6e4a77504845d15d45031d64cc73f1f13975e351a33d3a486ac51d65a",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/U8.png": "4807578baa9edb3917a5a40babd1aa93c9168db04e7284402cceb48038c54298",
+      "public/assets/official/2019-fa-2f.1.0-9a476961687a/grid-overlay.png": "fdad08abfc676f1b3e92245baebcce534c102c412a91ce0ad96b94a18b3b59db",
+      "docs/evidence/phase2f/2019-fa/answer-coverage.json": "cd302b0832170afe380b4abfef4bad9c1708377a0a9e90fc745ffb2d462e2625"
+    }
+  },
+  "official_config": {
+    "scope": "2019-fa",
+    "name": "2019_sommer_funktionsanalyse",
+    "exam": "2019_sommer",
+    "module": "Funktionsanalyse",
+    "profile_id": "official-ring-grid",
+    "version": "2i.2.0",
+    "source_hash": "7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad",
+    "source_id": "src-00889f7bb2a1a38a79cbdee2",
+    "question_source_id": "src-383213b7d0b51419a99f86ae",
+    "solution_source_id": "src-00889f7bb2a1a38a79cbdee2",
+    "validated_sources": [
+      "7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad"
+    ],
+    "choice_page": 2,
+    "choice_count": 28,
+    "analysis_size": [
+      993,
+      1404
+    ],
+    "groups": [
+      [
+        1,
+        10,
+        135.5,
+        60,
+        390.5,
+        19.85,
+        0,
+        357
+      ],
+      [
+        11,
+        10,
+        135.5,
+        60,
+        509.5,
+        19.85,
+        0,
+        477
+      ],
+      [
+        21,
+        8,
+        135.5,
+        60,
+        629.3,
+        20,
+        0,
+        597
+      ]
+    ],
+    "grid_crop": [
+      106,
+      356,
+      725,
+      724
+    ],
+    "ring_policy": {
+      "min_ring": 0.4,
+      "support": 0.83,
+      "possible_ring": 0.32,
+      "possible_support": 0.58,
+      "margin": 0.15,
+      "center": 0.1
+    },
+    "header_evidence": "Physical page 2: Sommer 2019 Funktionsanalyse; printed column numbers individually visually checked, five dot positions top-to-bottom 1–5; no semantic inference.",
+    "u_regions": {
+      "U1": {
+        "regions": [
+          {
+            "page": 10,
+            "bbox": [
+              43.03200007059488,
+              121.92400020001882,
+              568.3810009324407,
+              256.39900042062783
+            ]
+          }
+        ],
+        "count": 0,
+        "diagram_parts": [],
+        "heading_page": 10,
+        "heading_box": [
+          43.03200007059488,
+          121.92400020001882,
+          73.03200007059488,
+          141.92400020001884
+        ],
+        "heading_pixel_sha256": "e1b9d181ed243a7dcb6939a88668d767ef28553dde964a55373223d358999da4"
+      },
+      "U2": {
+        "regions": [
+          {
+            "page": 10,
+            "bbox": [
+              43.03200007059488,
+              261.77800042945216,
+              568.3810009324407,
+              814.0220013354198
+            ]
+          }
+        ],
+        "count": 0,
+        "diagram_parts": [],
+        "heading_page": 10,
+        "heading_box": [
+          43.03200007059488,
+          261.77800042945216,
+          73.03200007059488,
+          281.77800042945216
+        ],
+        "heading_pixel_sha256": "394942bd657336ac7515123b4ef86249410c4a731b4b95f78edfb5cbe9c90021"
+      },
+      "U3": {
+        "regions": [
+          {
+            "page": 11,
+            "bbox": [
+              43.03200007059488,
+              17.930000029414533,
+              568.3810009324407,
+              489.4890008030168
+            ]
+          }
+        ],
+        "count": 0,
+        "diagram_parts": [],
+        "heading_page": 11,
+        "heading_box": [
+          43.03200007059488,
+          17.930000029414533,
+          73.03200007059488,
+          37.93000002941453
+        ],
+        "heading_pixel_sha256": "953f3890704b0ef21cf098e4f417639daab065a9aa163e727c469154508c383d"
+      },
+      "U4": {
+        "regions": [
+          {
+            "page": 11,
+            "bbox": [
+              43.03200007059488,
+              494.8680008118411,
+              568.3810009324407,
+              814.0220013354198
+            ]
+          }
+        ],
+        "count": 0,
+        "diagram_parts": [],
+        "heading_page": 11,
+        "heading_box": [
+          43.03200007059488,
+          494.8680008118411,
+          73.03200007059488,
+          514.8680008118411
+        ],
+        "heading_pixel_sha256": "1cc1ec64889abd47894d7032151f48b5cd28653cd76b7f2e8f53e3608301dbd3"
+      },
+      "U5": {
+        "regions": [
+          {
+            "page": 12,
+            "bbox": [
+              43.03200007059488,
+              125.51000020590173,
+              568.3810009324407,
+              340.67000055887615
+            ]
+          }
+        ],
+        "count": 0,
+        "diagram_parts": [],
+        "heading_page": 12,
+        "heading_box": [
+          43.03200007059488,
+          125.51000020590173,
+          73.03200007059488,
+          145.51000020590175
+        ],
+        "heading_pixel_sha256": "d0a647b59b5bed39da5aba2dfac377d9f41c3651e45cf3a593470a1031469482"
+      },
+      "U6": {
+        "regions": [
+          {
+            "page": 12,
+            "bbox": [
+              43.03200007059488,
+              346.0490005677005,
+              568.3810009324407,
+              475.14500077948514
+            ]
+          }
+        ],
+        "count": 0,
+        "diagram_parts": [],
+        "heading_page": 12,
+        "heading_box": [
+          43.03200007059488,
+          346.0490005677005,
+          73.03200007059488,
+          366.0490005677005
+        ],
+        "heading_pixel_sha256": "6243a6e8258a27a7540b36c1d7ab8fe8c73154229bca12c568077da5df802d51"
+      },
+      "U7": {
+        "regions": [
+          {
+            "page": 12,
+            "bbox": [
+              43.03200007059488,
+              480.5240007883095,
+              568.3810009324407,
+              584.5180009589138
+            ]
+          }
+        ],
+        "count": 0,
+        "diagram_parts": [],
+        "heading_page": 12,
+        "heading_box": [
+          43.03200007059488,
+          480.5240007883095,
+          73.03200007059488,
+          500.5240007883095
+        ],
+        "heading_pixel_sha256": "e60ee95111d6dde36da7ef9745f265875d28e869d3bbc4c53c636b301194371a"
+      },
+      "U8": {
+        "regions": [
+          {
+            "page": 12,
+            "bbox": [
+              43.03200007059488,
+              589.8970009677381,
+              568.3810009324407,
+              814.0220013354198
+            ]
+          }
+        ],
+        "count": 0,
+        "diagram_parts": [],
+        "heading_page": 12,
+        "heading_box": [
+          43.03200007059488,
+          589.8970009677381,
+          73.03200007059488,
+          609.8970009677381
+        ],
+        "heading_pixel_sha256": "a4257ae4d0197179ec6402e56cbef92622884a2f3003e7f65dac1b8378f9faaf"
+      }
+    },
+    "u_evidence": "Printed U headings and ruled boundaries directly observed in cached source pages. Whole-task self-assessment; no inferred rubric.",
+    "page_image_hashes": {
+      "11": "8331755820e62a894d9b58fe38b57cd7e92166399eb4ef23e76a61473b8b650d",
+      "2": "14811677be0bd1763611d4484c5898beb93e0fff5a8093acb41f40cd0884ecdd",
+      "10": "c13fec58701afc0bfab629c3853ffd3dabe26204189f1c6c4a1bea8b97700aeb",
+      "12": "51d285bcf60af1f01c9be323ee38ca94b7b35f1e70ba94ae663ab6ae58dcd99b"
+    }
+  },
+  "source_states": [
+    {
+      "source_id": "src-383213b7d0b51419a99f86ae",
+      "exam": "2019-sommer",
+      "module": "funktionsanalyse",
+      "source_type": "question_pdf",
+      "filename": "2019 Sommer/19 Funktionsanalyse.PDF",
+      "sha256": "483912414b377a8959fe2c1728484e6279391ee76d8ab78be92e5b52d2567d8a",
+      "version": 1,
+      "status": "validated",
+      "layout_profile": "portrait-explicit-regions@2i.2.0-231f23daf1cf",
+      "answer_profile": "ring-annulus-explicit@2f.1.0",
+      "supersedes_source_id": null,
+      "created_at": "2026-09-28T11:36:06.152054+00:00",
+      "identity_migration": null,
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "483912414b377a8959fe2c1728484e6279391ee76d8ab78be92e5b52d2567d8a",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/483912414b377a8959fe2c1728484e6279391ee76d8ab78be92e5b52d2567d8a.json": "f16ba478e78a726de10b738f8b946672080a51006e1caa122ea6dea3b1c633d4"
+          }
+        },
+        "profile_matched": {
+          "source_sha256": "483912414b377a8959fe2c1728484e6279391ee76d8ab78be92e5b52d2567d8a",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2019_fa.json": "bf150959759db0a75b533ea8f8182a02f389c6ae409776d4e585bcfe767d0f75"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "profile_id": "portrait-explicit-regions",
+          "validated_sources": [
+            "483912414b377a8959fe2c1728484e6279391ee76d8ab78be92e5b52d2567d8a"
+          ]
+        },
+        "layout_validated": {
+          "source_sha256": "483912414b377a8959fe2c1728484e6279391ee76d8ab78be92e5b52d2567d8a",
+          "result": "passed",
+          "artifacts": {
+            "docs/evidence/phase2f/2019-fa/layout-validation.json": "61bd9016e90215c328fbdad052a23ca5a5f562f8172f42165776ba25d71b9f9f"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "preview_ready": {
+          "source_sha256": "483912414b377a8959fe2c1728484e6279391ee76d8ab78be92e5b52d2567d8a",
+          "result": "passed",
+          "artifacts": {
+            "docs/evidence/phase2f/2019-fa/preview-manifest.json": "7ebe68726a090e971dbb3c7008f6a12e0eb9059a4a90440f4757a6ee04ce1f0b",
+            "docs/evidence/phase2f/2019-fa/index.html": "58f67f52a6c66a7351160d2be0163be78ff541feca043d77c607bbbe6d1f24de",
+            "docs/evidence/phase2f/2019-fa/layout-validation.json": "61bd9016e90215c328fbdad052a23ca5a5f562f8172f42165776ba25d71b9f9f"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "formal_segmented": {
+          "source_sha256": "483912414b377a8959fe2c1728484e6279391ee76d8ab78be92e5b52d2567d8a",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2019_sommer_funktionsanalyse_segmented.json": "c0361d7ddb5521f443a5971a7583000478f8ee1605a01c61da038e18ccba81d8",
+            "public/data/2019_sommer_funktionsanalyse_segmented.json": "c0361d7ddb5521f443a5971a7583000478f8ee1605a01c61da038e18ccba81d8"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "answers_extracted": {
+          "source_sha256": "483912414b377a8959fe2c1728484e6279391ee76d8ab78be92e5b52d2567d8a",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2019_sommer_funktionsanalyse_answers.json": "217b2af7303f6bbf3ce24dbb3766e2e3d1ecf0e43ea59c1b0df95c8e9a2a8f02",
+            "public/data/2019_sommer_funktionsanalyse_answers.json": "217b2af7303f6bbf3ce24dbb3766e2e3d1ecf0e43ea59c1b0df95c8e9a2a8f02",
+            "data/exams/2019_sommer_funktionsanalyse_u_solutions.json": "b8340df4883de412aa7dc2d26724d7c58c403eca7a10ee94e9341d99e392be63",
+            "public/data/2019_sommer_funktionsanalyse_u_solutions.json": "b8340df4883de412aa7dc2d26724d7c58c403eca7a10ee94e9341d99e392be63"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "validated": {
+          "source_sha256": "483912414b377a8959fe2c1728484e6279391ee76d8ab78be92e5b52d2567d8a",
+          "result": "passed",
+          "artifacts": {
+            "public/data/2019_sommer_funktionsanalyse_segmented.json": "c0361d7ddb5521f443a5971a7583000478f8ee1605a01c61da038e18ccba81d8",
+            "public/data/2019_sommer_funktionsanalyse_answers.json": "217b2af7303f6bbf3ce24dbb3766e2e3d1ecf0e43ea59c1b0df95c8e9a2a8f02",
+            "public/data/2019_sommer_funktionsanalyse_u_solutions.json": "b8340df4883de412aa7dc2d26724d7c58c403eca7a10ee94e9341d99e392be63",
+            "docs/evidence/phase2f/2019-fa/answer-coverage.json": "cd302b0832170afe380b4abfef4bad9c1708377a0a9e90fc745ffb2d462e2625"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "question_revision": "2i.2.0-231f23daf1cf",
+          "official_answer_revision": "2019-fa-2f.1.0-9a476961687a",
+          "question_ids": [
+            "2019-fa-p3-1",
+            "2019-fa-p4-2",
+            "2019-fa-p4-3",
+            "2019-fa-p5-4",
+            "2019-fa-p5-5",
+            "2019-fa-p5-6",
+            "2019-fa-p6-7",
+            "2019-fa-p6-8",
+            "2019-fa-p6-9",
+            "2019-fa-p6-10",
+            "2019-fa-p6-11",
+            "2019-fa-p7-12",
+            "2019-fa-p7-13",
+            "2019-fa-p7-14",
+            "2019-fa-p8-15",
+            "2019-fa-p8-16",
+            "2019-fa-p8-17",
+            "2019-fa-p8-18",
+            "2019-fa-p9-19",
+            "2019-fa-p9-20",
+            "2019-fa-p9-21",
+            "2019-fa-p9-22",
+            "2019-fa-p9-23",
+            "2019-fa-p10-24",
+            "2019-fa-p10-25",
+            "2019-fa-p10-26",
+            "2019-fa-p10-27",
+            "2019-fa-p10-28",
+            "2019-fa-p16-U1",
+            "2019-fa-p17-U2",
+            "2019-fa-p18-U3",
+            "2019-fa-p21-U4",
+            "2019-fa-p22-U5",
+            "2019-fa-p25-U6",
+            "2019-fa-p26-U7",
+            "2019-fa-p27-U8"
+          ]
+        }
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-09-28T11:36:06.152054+00:00"
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-09-28T11:36:16.622614+00:00",
+          "evidence": {
+            "source_sha256": "483912414b377a8959fe2c1728484e6279391ee76d8ab78be92e5b52d2567d8a",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/483912414b377a8959fe2c1728484e6279391ee76d8ab78be92e5b52d2567d8a.json": "f16ba478e78a726de10b738f8b946672080a51006e1caa122ea6dea3b1c633d4"
+            }
+          }
+        },
+        {
+          "stage": "profile_matched",
+          "at": "2026-09-28T11:43:56.641045+00:00",
+          "evidence": {
+            "source_sha256": "483912414b377a8959fe2c1728484e6279391ee76d8ab78be92e5b52d2567d8a",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2019_fa.json": "bf150959759db0a75b533ea8f8182a02f389c6ae409776d4e585bcfe767d0f75"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "profile_id": "portrait-explicit-regions",
+            "validated_sources": [
+              "483912414b377a8959fe2c1728484e6279391ee76d8ab78be92e5b52d2567d8a"
+            ]
+          }
+        },
+        {
+          "stage": "layout_validated",
+          "at": "2026-09-28T11:43:57.300974+00:00",
+          "evidence": {
+            "source_sha256": "483912414b377a8959fe2c1728484e6279391ee76d8ab78be92e5b52d2567d8a",
+            "result": "passed",
+            "artifacts": {
+              "docs/evidence/phase2f/2019-fa/layout-validation.json": "61bd9016e90215c328fbdad052a23ca5a5f562f8172f42165776ba25d71b9f9f"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "preview_ready",
+          "at": "2026-09-28T11:44:03.679180+00:00",
+          "evidence": {
+            "source_sha256": "483912414b377a8959fe2c1728484e6279391ee76d8ab78be92e5b52d2567d8a",
+            "result": "passed",
+            "artifacts": {
+              "docs/evidence/phase2f/2019-fa/preview-manifest.json": "7ebe68726a090e971dbb3c7008f6a12e0eb9059a4a90440f4757a6ee04ce1f0b",
+              "docs/evidence/phase2f/2019-fa/index.html": "58f67f52a6c66a7351160d2be0163be78ff541feca043d77c607bbbe6d1f24de",
+              "docs/evidence/phase2f/2019-fa/layout-validation.json": "61bd9016e90215c328fbdad052a23ca5a5f562f8172f42165776ba25d71b9f9f"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "formal_segmented",
+          "at": "2026-09-28T11:47:08.996372+00:00",
+          "evidence": {
+            "source_sha256": "483912414b377a8959fe2c1728484e6279391ee76d8ab78be92e5b52d2567d8a",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2019_sommer_funktionsanalyse_segmented.json": "c0361d7ddb5521f443a5971a7583000478f8ee1605a01c61da038e18ccba81d8",
+              "public/data/2019_sommer_funktionsanalyse_segmented.json": "c0361d7ddb5521f443a5971a7583000478f8ee1605a01c61da038e18ccba81d8"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "answers_extracted",
+          "at": "2026-09-28T11:47:12.071400+00:00",
+          "evidence": {
+            "source_sha256": "483912414b377a8959fe2c1728484e6279391ee76d8ab78be92e5b52d2567d8a",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2019_sommer_funktionsanalyse_answers.json": "217b2af7303f6bbf3ce24dbb3766e2e3d1ecf0e43ea59c1b0df95c8e9a2a8f02",
+              "public/data/2019_sommer_funktionsanalyse_answers.json": "217b2af7303f6bbf3ce24dbb3766e2e3d1ecf0e43ea59c1b0df95c8e9a2a8f02",
+              "data/exams/2019_sommer_funktionsanalyse_u_solutions.json": "b8340df4883de412aa7dc2d26724d7c58c403eca7a10ee94e9341d99e392be63",
+              "public/data/2019_sommer_funktionsanalyse_u_solutions.json": "b8340df4883de412aa7dc2d26724d7c58c403eca7a10ee94e9341d99e392be63"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "validated",
+          "at": "2026-09-28T11:47:12.229738+00:00",
+          "evidence": {
+            "source_sha256": "483912414b377a8959fe2c1728484e6279391ee76d8ab78be92e5b52d2567d8a",
+            "result": "passed",
+            "artifacts": {
+              "public/data/2019_sommer_funktionsanalyse_segmented.json": "c0361d7ddb5521f443a5971a7583000478f8ee1605a01c61da038e18ccba81d8",
+              "public/data/2019_sommer_funktionsanalyse_answers.json": "217b2af7303f6bbf3ce24dbb3766e2e3d1ecf0e43ea59c1b0df95c8e9a2a8f02",
+              "public/data/2019_sommer_funktionsanalyse_u_solutions.json": "b8340df4883de412aa7dc2d26724d7c58c403eca7a10ee94e9341d99e392be63",
+              "docs/evidence/phase2f/2019-fa/answer-coverage.json": "cd302b0832170afe380b4abfef4bad9c1708377a0a9e90fc745ffb2d462e2625"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "question_revision": "2i.2.0-231f23daf1cf",
+            "official_answer_revision": "2019-fa-2f.1.0-9a476961687a",
+            "question_ids": [
+              "2019-fa-p3-1",
+              "2019-fa-p4-2",
+              "2019-fa-p4-3",
+              "2019-fa-p5-4",
+              "2019-fa-p5-5",
+              "2019-fa-p5-6",
+              "2019-fa-p6-7",
+              "2019-fa-p6-8",
+              "2019-fa-p6-9",
+              "2019-fa-p6-10",
+              "2019-fa-p6-11",
+              "2019-fa-p7-12",
+              "2019-fa-p7-13",
+              "2019-fa-p7-14",
+              "2019-fa-p8-15",
+              "2019-fa-p8-16",
+              "2019-fa-p8-17",
+              "2019-fa-p8-18",
+              "2019-fa-p9-19",
+              "2019-fa-p9-20",
+              "2019-fa-p9-21",
+              "2019-fa-p9-22",
+              "2019-fa-p9-23",
+              "2019-fa-p10-24",
+              "2019-fa-p10-25",
+              "2019-fa-p10-26",
+              "2019-fa-p10-27",
+              "2019-fa-p10-28",
+              "2019-fa-p16-U1",
+              "2019-fa-p17-U2",
+              "2019-fa-p18-U3",
+              "2019-fa-p21-U4",
+              "2019-fa-p22-U5",
+              "2019-fa-p25-U6",
+              "2019-fa-p26-U7",
+              "2019-fa-p27-U8"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "src-00889f7bb2a1a38a79cbdee2",
+      "exam": "2019-sommer",
+      "module": "funktionsanalyse",
+      "source_type": "solution_pdf",
+      "filename": "2019 Sommer/19 Lösung.pdf",
+      "sha256": "7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad",
+      "version": 1,
+      "status": "validated",
+      "layout_profile": "portrait-explicit-regions@2i.2.0-231f23daf1cf",
+      "answer_profile": "official-ring-grid@2019-fa-2f.1.0-9a476961687a",
+      "supersedes_source_id": null,
+      "created_at": "2026-09-28T11:36:06.161325+00:00",
+      "identity_migration": null,
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad.json": "ccb76acb0da9856e61e35ca70a4e4abc03063810ea2862be422f85f1180cd834"
+          }
+        },
+        "profile_matched": {
+          "source_sha256": "7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2019_fa_official.json": "e6ef74f0c95e1dcc2e47cdcfa74f54371c1842e2fcd5b36d5b5d80099c979789"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "layout_validated": {
+          "source_sha256": "7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2019_fa_official.json": "e6ef74f0c95e1dcc2e47cdcfa74f54371c1842e2fcd5b36d5b5d80099c979789",
+            "public/data/2019_sommer_funktionsanalyse_segmented.json": "c0361d7ddb5521f443a5971a7583000478f8ee1605a01c61da038e18ccba81d8"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "preview_ready": {
+          "source_sha256": "7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2019_fa_official.json": "e6ef74f0c95e1dcc2e47cdcfa74f54371c1842e2fcd5b36d5b5d80099c979789",
+            "public/data/2019_sommer_funktionsanalyse_segmented.json": "c0361d7ddb5521f443a5971a7583000478f8ee1605a01c61da038e18ccba81d8"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "formal_segmented": {
+          "source_sha256": "7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2019_fa_official.json": "e6ef74f0c95e1dcc2e47cdcfa74f54371c1842e2fcd5b36d5b5d80099c979789",
+            "public/data/2019_sommer_funktionsanalyse_segmented.json": "c0361d7ddb5521f443a5971a7583000478f8ee1605a01c61da038e18ccba81d8"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "answers_extracted": {
+          "source_sha256": "7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2019_sommer_funktionsanalyse_answers.json": "217b2af7303f6bbf3ce24dbb3766e2e3d1ecf0e43ea59c1b0df95c8e9a2a8f02",
+            "public/data/2019_sommer_funktionsanalyse_answers.json": "217b2af7303f6bbf3ce24dbb3766e2e3d1ecf0e43ea59c1b0df95c8e9a2a8f02",
+            "data/exams/2019_sommer_funktionsanalyse_u_solutions.json": "b8340df4883de412aa7dc2d26724d7c58c403eca7a10ee94e9341d99e392be63",
+            "public/data/2019_sommer_funktionsanalyse_u_solutions.json": "b8340df4883de412aa7dc2d26724d7c58c403eca7a10ee94e9341d99e392be63"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "validated": {
+          "source_sha256": "7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad",
+          "result": "passed",
+          "artifacts": {
+            "public/data/2019_sommer_funktionsanalyse_segmented.json": "c0361d7ddb5521f443a5971a7583000478f8ee1605a01c61da038e18ccba81d8",
+            "public/data/2019_sommer_funktionsanalyse_answers.json": "217b2af7303f6bbf3ce24dbb3766e2e3d1ecf0e43ea59c1b0df95c8e9a2a8f02",
+            "public/data/2019_sommer_funktionsanalyse_u_solutions.json": "b8340df4883de412aa7dc2d26724d7c58c403eca7a10ee94e9341d99e392be63",
+            "docs/evidence/phase2f/2019-fa/answer-coverage.json": "cd302b0832170afe380b4abfef4bad9c1708377a0a9e90fc745ffb2d462e2625"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "question_revision": "2i.2.0-231f23daf1cf",
+          "official_answer_revision": "2019-fa-2f.1.0-9a476961687a",
+          "question_ids": [
+            "2019-fa-p3-1",
+            "2019-fa-p4-2",
+            "2019-fa-p4-3",
+            "2019-fa-p5-4",
+            "2019-fa-p5-5",
+            "2019-fa-p5-6",
+            "2019-fa-p6-7",
+            "2019-fa-p6-8",
+            "2019-fa-p6-9",
+            "2019-fa-p6-10",
+            "2019-fa-p6-11",
+            "2019-fa-p7-12",
+            "2019-fa-p7-13",
+            "2019-fa-p7-14",
+            "2019-fa-p8-15",
+            "2019-fa-p8-16",
+            "2019-fa-p8-17",
+            "2019-fa-p8-18",
+            "2019-fa-p9-19",
+            "2019-fa-p9-20",
+            "2019-fa-p9-21",
+            "2019-fa-p9-22",
+            "2019-fa-p9-23",
+            "2019-fa-p10-24",
+            "2019-fa-p10-25",
+            "2019-fa-p10-26",
+            "2019-fa-p10-27",
+            "2019-fa-p10-28",
+            "2019-fa-p16-U1",
+            "2019-fa-p17-U2",
+            "2019-fa-p18-U3",
+            "2019-fa-p21-U4",
+            "2019-fa-p22-U5",
+            "2019-fa-p25-U6",
+            "2019-fa-p26-U7",
+            "2019-fa-p27-U8"
+          ]
+        }
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-09-28T11:36:06.161325+00:00"
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-09-28T11:36:25.909021+00:00",
+          "evidence": {
+            "source_sha256": "7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad.json": "ccb76acb0da9856e61e35ca70a4e4abc03063810ea2862be422f85f1180cd834"
+            }
+          }
+        },
+        {
+          "stage": "profile_matched",
+          "at": "2026-09-28T11:47:09.987714+00:00",
+          "evidence": {
+            "source_sha256": "7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2019_fa_official.json": "e6ef74f0c95e1dcc2e47cdcfa74f54371c1842e2fcd5b36d5b5d80099c979789"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "layout_validated",
+          "at": "2026-09-28T11:47:10.057339+00:00",
+          "evidence": {
+            "source_sha256": "7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2019_fa_official.json": "e6ef74f0c95e1dcc2e47cdcfa74f54371c1842e2fcd5b36d5b5d80099c979789",
+              "public/data/2019_sommer_funktionsanalyse_segmented.json": "c0361d7ddb5521f443a5971a7583000478f8ee1605a01c61da038e18ccba81d8"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "preview_ready",
+          "at": "2026-09-28T11:47:10.141030+00:00",
+          "evidence": {
+            "source_sha256": "7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2019_fa_official.json": "e6ef74f0c95e1dcc2e47cdcfa74f54371c1842e2fcd5b36d5b5d80099c979789",
+              "public/data/2019_sommer_funktionsanalyse_segmented.json": "c0361d7ddb5521f443a5971a7583000478f8ee1605a01c61da038e18ccba81d8"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "formal_segmented",
+          "at": "2026-09-28T11:47:10.250970+00:00",
+          "evidence": {
+            "source_sha256": "7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2019_fa_official.json": "e6ef74f0c95e1dcc2e47cdcfa74f54371c1842e2fcd5b36d5b5d80099c979789",
+              "public/data/2019_sommer_funktionsanalyse_segmented.json": "c0361d7ddb5521f443a5971a7583000478f8ee1605a01c61da038e18ccba81d8"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "answers_extracted",
+          "at": "2026-09-28T11:47:12.146374+00:00",
+          "evidence": {
+            "source_sha256": "7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2019_sommer_funktionsanalyse_answers.json": "217b2af7303f6bbf3ce24dbb3766e2e3d1ecf0e43ea59c1b0df95c8e9a2a8f02",
+              "public/data/2019_sommer_funktionsanalyse_answers.json": "217b2af7303f6bbf3ce24dbb3766e2e3d1ecf0e43ea59c1b0df95c8e9a2a8f02",
+              "data/exams/2019_sommer_funktionsanalyse_u_solutions.json": "b8340df4883de412aa7dc2d26724d7c58c403eca7a10ee94e9341d99e392be63",
+              "public/data/2019_sommer_funktionsanalyse_u_solutions.json": "b8340df4883de412aa7dc2d26724d7c58c403eca7a10ee94e9341d99e392be63"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "validated",
+          "at": "2026-09-28T11:47:12.306146+00:00",
+          "evidence": {
+            "source_sha256": "7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad",
+            "result": "passed",
+            "artifacts": {
+              "public/data/2019_sommer_funktionsanalyse_segmented.json": "c0361d7ddb5521f443a5971a7583000478f8ee1605a01c61da038e18ccba81d8",
+              "public/data/2019_sommer_funktionsanalyse_answers.json": "217b2af7303f6bbf3ce24dbb3766e2e3d1ecf0e43ea59c1b0df95c8e9a2a8f02",
+              "public/data/2019_sommer_funktionsanalyse_u_solutions.json": "b8340df4883de412aa7dc2d26724d7c58c403eca7a10ee94e9341d99e392be63",
+              "docs/evidence/phase2f/2019-fa/answer-coverage.json": "cd302b0832170afe380b4abfef4bad9c1708377a0a9e90fc745ffb2d462e2625"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "question_revision": "2i.2.0-231f23daf1cf",
+            "official_answer_revision": "2019-fa-2f.1.0-9a476961687a",
+            "question_ids": [
+              "2019-fa-p3-1",
+              "2019-fa-p4-2",
+              "2019-fa-p4-3",
+              "2019-fa-p5-4",
+              "2019-fa-p5-5",
+              "2019-fa-p5-6",
+              "2019-fa-p6-7",
+              "2019-fa-p6-8",
+              "2019-fa-p6-9",
+              "2019-fa-p6-10",
+              "2019-fa-p6-11",
+              "2019-fa-p7-12",
+              "2019-fa-p7-13",
+              "2019-fa-p7-14",
+              "2019-fa-p8-15",
+              "2019-fa-p8-16",
+              "2019-fa-p8-17",
+              "2019-fa-p8-18",
+              "2019-fa-p9-19",
+              "2019-fa-p9-20",
+              "2019-fa-p9-21",
+              "2019-fa-p9-22",
+              "2019-fa-p9-23",
+              "2019-fa-p10-24",
+              "2019-fa-p10-25",
+              "2019-fa-p10-26",
+              "2019-fa-p10-27",
+              "2019-fa-p10-28",
+              "2019-fa-p16-U1",
+              "2019-fa-p17-U2",
+              "2019-fa-p18-U3",
+              "2019-fa-p21-U4",
+              "2019-fa-p22-U5",
+              "2019-fa-p25-U6",
+              "2019-fa-p26-U7",
+              "2019-fa-p27-U8"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

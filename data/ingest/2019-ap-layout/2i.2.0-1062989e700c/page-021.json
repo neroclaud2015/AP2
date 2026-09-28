@@ -1,0 +1,61 @@
+{
+  "key": "f134d46e0c08b03f0ae3aded52a44ab654962d3413ee1f87d6544863a3ae578a",
+  "record_hash": "b513a0df0e02d154e4e9337a3664c0607263ed10de98b7f2b85e820aa2615856",
+  "record": {
+    "page": 21,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Entire cached physical page visually inspected. Printed headings and ruled regions read directly; no inferred numbering.",
+    "anchors": [
+      {
+        "anchor_id": "2019-ap-p21-U7",
+        "number": "U7",
+        "bbox": [
+          17.0,
+          17.0,
+          74.8,
+          49.3
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U7 read on physical page 21; exact original pixels retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "6980c93a3f26a440e183fad79051d4f7c3cd74cb69c724e712d8a63edaf6256d"
+      }
+    ],
+    "regions": [
+      {
+        "page": 21,
+        "bbox": [
+          17.0,
+          17.0,
+          567.8,
+          816.0
+        ],
+        "role": "primary",
+        "owner": "2019-ap-p21-U7",
+        "evidence": "Ruled boundaries and explicit diagram/response-area reference; no neighboring content inherited."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U7",
+        "bbox": [
+          17.0,
+          17.0,
+          74.8,
+          49.3
+        ],
+        "pixel_sha256": "6980c93a3f26a440e183fad79051d4f7c3cd74cb69c724e712d8a63edaf6256d",
+        "audited_pixel_sha256": "6980c93a3f26a440e183fad79051d4f7c3cd74cb69c724e712d8a63edaf6256d"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

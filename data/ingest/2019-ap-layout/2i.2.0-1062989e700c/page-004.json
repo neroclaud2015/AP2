@@ -1,0 +1,99 @@
+{
+  "key": "58d186e974c1ec9b8cdd392aa1c7e3ddc82ee9ed6ccb72c68ecd33bd9ce74b07",
+  "record_hash": "cd1da172488fee45ad4f6d3ef441a7bbe81a776eb9dc8649ce5f866c5b510a66",
+  "record": {
+    "page": 4,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Entire cached physical page visually inspected. Printed headings and ruled regions read directly; no inferred numbering.",
+    "anchors": [
+      {
+        "anchor_id": "2019-ap-p4-4",
+        "number": "4",
+        "bbox": [
+          45.9,
+          57.8,
+          86.7,
+          90.1
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 4 read on physical page 4; exact original pixels retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "d564c85ed7d49d5903c63033395cc790f4a4d180e648fee3226bb8837f82a51c"
+      },
+      {
+        "anchor_id": "2019-ap-p4-5",
+        "number": "5",
+        "bbox": [
+          45.9,
+          540.6,
+          86.7,
+          572.9
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 5 read on physical page 4; exact original pixels retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "faf77e90145833a91306754922d459b1dc98bd1688bd07faae3bedf810e3770a"
+      }
+    ],
+    "regions": [
+      {
+        "page": 4,
+        "bbox": [
+          45.9,
+          57.8,
+          537.2,
+          537.2
+        ],
+        "role": "primary",
+        "owner": "2019-ap-p4-4",
+        "evidence": "Ruled boundaries and explicit diagram/response-area reference; no neighboring content inherited."
+      },
+      {
+        "page": 4,
+        "bbox": [
+          45.9,
+          540.6,
+          537.2,
+          792.2
+        ],
+        "role": "primary",
+        "owner": "2019-ap-p4-5",
+        "evidence": "Ruled boundaries and explicit diagram/response-area reference; no neighboring content inherited."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "4",
+        "bbox": [
+          45.9,
+          57.8,
+          86.7,
+          90.1
+        ],
+        "pixel_sha256": "d564c85ed7d49d5903c63033395cc790f4a4d180e648fee3226bb8837f82a51c",
+        "audited_pixel_sha256": "d564c85ed7d49d5903c63033395cc790f4a4d180e648fee3226bb8837f82a51c"
+      },
+      {
+        "kind": "heading",
+        "number": "5",
+        "bbox": [
+          45.9,
+          540.6,
+          86.7,
+          572.9
+        ],
+        "pixel_sha256": "faf77e90145833a91306754922d459b1dc98bd1688bd07faae3bedf810e3770a",
+        "audited_pixel_sha256": "faf77e90145833a91306754922d459b1dc98bd1688bd07faae3bedf810e3770a"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

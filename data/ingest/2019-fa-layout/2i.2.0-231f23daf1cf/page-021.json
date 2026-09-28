@@ -1,0 +1,61 @@
+{
+  "key": "4db4e2679404f7c7422a6bcf5787acc37a36f4bc3f2387ad5a7a88a7a13c4e12",
+  "record_hash": "6f64dcb399fc4a24c558edbb50b4268c202905d67658ab6129d536acdf231b53",
+  "record": {
+    "page": 21,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Entire cached physical page visually inspected. Printed headings and ruled regions read directly; no inferred numbering.",
+    "anchors": [
+      {
+        "anchor_id": "2019-fa-p21-U4",
+        "number": "U4",
+        "bbox": [
+          17.0,
+          17.0,
+          73.1,
+          49.3
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U4 read on physical page 21; exact original pixels retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "0f446e761506fe01c8592304d865c0b791041e59541411b90f8ce4948fb9473c"
+      }
+    ],
+    "regions": [
+      {
+        "page": 21,
+        "bbox": [
+          17.0,
+          17.0,
+          569.5,
+          816.0
+        ],
+        "role": "primary",
+        "owner": "2019-fa-p21-U4",
+        "evidence": "Ruled boundaries and explicit diagram/response-area reference; no neighboring content inherited."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U4",
+        "bbox": [
+          17.0,
+          17.0,
+          73.1,
+          49.3
+        ],
+        "pixel_sha256": "0f446e761506fe01c8592304d865c0b791041e59541411b90f8ce4948fb9473c",
+        "audited_pixel_sha256": "0f446e761506fe01c8592304d865c0b791041e59541411b90f8ce4948fb9473c"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

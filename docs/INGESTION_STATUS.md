@@ -1,3 +1,11 @@
+# Current checkpoint — Phase 2I.2 / Sommer 2019
+
+AP36 / FA36 / WiSo24 production. MC28/28 +28/28 +18/18; U8/8 +8/8 +6/6; Needs Review0. Total13 modules /408 questions. Existing24 source records and old datasets unchanged. Sommer2018 AP/FA still blocked: missing Stückliste / Anlage. 89 new pages cached once, old PDF rescans0, 12 repeat steps skipped under PDF-open guard. Stop for per-season acceptance; Winter2019/20 and later pending.
+
+See PHASE_2I_2_REPORT.md and docs/evidence/phase2i2.
+
+---
+
 # Phase 2I.1 — Winter2018/19 AP and FA released
 
 All8 user source confirmations imported. AP36 / FA36: each28/28 MC +8/8 U. Winter2018/19 now AP/FA/WiSo production. Total10 modules/312 questions. PDF rescan0; later seasons0. Previous production data preserved. Stop for acceptance; no further imports.

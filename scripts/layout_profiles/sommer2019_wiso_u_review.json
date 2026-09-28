@@ -1,0 +1,204 @@
+{
+  "scope": "2019-wiso",
+  "name": "2019_sommer_wiso",
+  "exam": "2019_sommer",
+  "module": "WiSo",
+  "profile_id": "official-ring-grid",
+  "version": "2i.2.1",
+  "source_hash": "7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad",
+  "source_id": "src-994441b95f70c7caea9b1562",
+  "question_source_id": "src-6bea816caa30673b76115274",
+  "solution_source_id": "src-994441b95f70c7caea9b1562",
+  "validated_sources": [
+    "7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad"
+  ],
+  "choice_page": 3,
+  "choice_count": 18,
+  "analysis_size": [
+    993,
+    1404
+  ],
+  "groups": [
+    [
+      1,
+      10,
+      135.5,
+      60,
+      390.5,
+      19.85,
+      0,
+      357
+    ],
+    [
+      11,
+      8,
+      135.5,
+      60,
+      509.5,
+      19.85,
+      0,
+      477
+    ]
+  ],
+  "grid_crop": [
+    106,
+    356,
+    725,
+    605
+  ],
+  "ring_policy": {
+    "min_ring": 0.4,
+    "support": 0.83,
+    "possible_ring": 0.32,
+    "possible_support": 0.58,
+    "margin": 0.15,
+    "center": 0.1
+  },
+  "header_evidence": "Physical page 3: Sommer 2019 WiSo; printed column numbers individually visually checked, five dot positions top-to-bottom 1–5; no semantic inference.",
+  "u_regions": {
+    "U1": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            31.464588623046875,
+            234.7088232421875,
+            579.9689038085937,
+            438.8034521484375
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 13,
+      "heading_box": [
+        31.464588623046875,
+        234.7088232421875,
+        61.46458862304688,
+        254.7088232421875
+      ],
+      "heading_pixel_sha256": "3c79a88bb8c55ba8d9151411e95f2bed9d5c7489f262029421f8afa6c6f6903c"
+    },
+    "U2": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            31.464588623046875,
+            443.05542358398435,
+            579.9689038085937,
+            569.7641723632812
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 13,
+      "heading_box": [
+        31.464588623046875,
+        443.05542358398435,
+        61.46458862304688,
+        463.05542358398435
+      ],
+      "heading_pixel_sha256": "f368f78d69b49998f48b2251737d681364e0baa8d5e81e3213e730f69c37cab0"
+    },
+    "U3": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            31.464588623046875,
+            574.8665380859375,
+            579.9689038085937,
+            807.0241784667969
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 13,
+      "heading_box": [
+        31.464588623046875,
+        574.8665380859375,
+        61.46458862304688,
+        594.8665380859375
+      ],
+      "heading_pixel_sha256": "65d60b4c666e4c2b41a3756f12d4a04fe558fbe866b61b1f62b7d92385c41f08"
+    },
+    "U4": {
+      "regions": [
+        {
+          "page": 14,
+          "bbox": [
+            14.456702880859375,
+            24.661434326171875,
+            564.661806640625,
+            346.1104748535156
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 14,
+      "heading_box": [
+        14.456702880859375,
+        24.661434326171875,
+        44.456702880859375,
+        44.66143432617187
+      ],
+      "heading_pixel_sha256": "8a316e1a09024d2b2424efa676401329cd12b6caa8d8201661fa01158b805713"
+    },
+    "U5": {
+      "regions": [
+        {
+          "page": 14,
+          "bbox": [
+            14.456702880859375,
+            351.21284057617186,
+            564.661806640625,
+            608.0319152832031
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 14,
+      "heading_box": [
+        14.456702880859375,
+        351.21284057617186,
+        44.456702880859375,
+        371.21284057617186
+      ],
+      "heading_pixel_sha256": "f7017c2a3e954bec7badfa4c46588eb862c279b0d7510c4083ba386a36e0762a"
+    },
+    "U6": {
+      "regions": [
+        {
+          "page": 14,
+          "bbox": [
+            14.456702880859375,
+            613.1342810058594,
+            564.661806640625,
+            682.0162182617188
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 14,
+      "heading_box": [
+        14.456702880859375,
+        613.1342810058594,
+        44.456702880859375,
+        633.1342810058594
+      ],
+      "heading_pixel_sha256": "a81ea38fb90085a1f55adbad35ba86897d9edfe67aebd27e22b7f9362a7ce9fb"
+    }
+  },
+  "u_evidence": "Printed U headings and ruled boundaries directly observed in cached source pages. Whole-task self-assessment; no inferred rubric.",
+  "page_image_hashes": {
+    "3": "efe2a2eccaeb10b2c0a5ced05b4b103c7e75c46b028b1926145b12753f57beac",
+    "13": "c742935bcecda470d8290ddb85841ed85b396ab6af160624481178b7f0b03e40",
+    "14": "7fd3e2a20e905eda85a0f83fcdb8e7b2b3b45c9dd9dfa9256ff3ac1a68bab112"
+  }
+}

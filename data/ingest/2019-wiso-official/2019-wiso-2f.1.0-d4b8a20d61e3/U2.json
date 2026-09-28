@@ -1,0 +1,51 @@
+{
+  "key": "8b3416cc518ad7926aaf1f8054dbf6f509be9fcddcc1a367fdd6088026de1010",
+  "value": {
+    "question_id": "2019-wiso-p6-U2",
+    "question_number": "U2",
+    "exam": "2019_sommer",
+    "module": "WiSo",
+    "solution_source_pdf": "assets/pdfs/7a5c46d67eabd4e46339988c.pdf",
+    "solution_source_pdf_available": false,
+    "solution_source_page": 13,
+    "solution_bbox": [
+      43.03200007059488,
+      415.9760006824172,
+      568.3810009324407,
+      570.1740009353822
+    ],
+    "regions": [
+      {
+        "source_page": 13,
+        "bbox": [
+          43.03200007059488,
+          415.9760006824172,
+          568.3810009324407,
+          570.1740009353822
+        ]
+      }
+    ],
+    "cropped_solution_image": "assets/official/2019-wiso-2f.1.0-d4b8a20d61e3/U2.png",
+    "review_status": "auto_ready",
+    "answer_type": "multi_part",
+    "subparts": [
+      {
+        "id": "whole",
+        "label": "Gesamte Aufgabe · Selbstbewertung",
+        "type": "short_text"
+      }
+    ],
+    "source_hash": "7a5c46d67eabd4e46339988cdec9ff2c3cac02c940dd23b029f3cc1bc35e62ad",
+    "extractor_revision": "2019-wiso-2f.1.0-d4b8a20d61e3",
+    "association_evidence": "Printed U headings and ruled boundaries directly observed in cached source pages. Whole-task self-assessment; no inferred rubric.",
+    "grading_policy": "Printed subparts only; user self-assessment; no numeric rubric or answer inference.",
+    "source_cache_hashes": {
+      "13": "c742935bcecda470d8290ddb85841ed85b396ab6af160624481178b7f0b03e40"
+    },
+    "bbox_units": "PDF points, top-left"
+  },
+  "value_hash": "95d2f4339c0b885ecf50b89e925a0bbc2ae9000929ef2ba967b6875faf709341",
+  "artifacts": {
+    "public/assets/official/2019-wiso-2f.1.0-d4b8a20d61e3/U2.png": "f6fe9eaae6ba6a3f2bc5885d636a087e7a630c8cfc622fc08db7ff582dde3cf5"
+  }
+}

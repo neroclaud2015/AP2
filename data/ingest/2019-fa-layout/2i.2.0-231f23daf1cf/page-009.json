@@ -1,0 +1,213 @@
+{
+  "key": "ce6bf7fc0c45171106b84bcbd06270de27e1693a4ec655f3a204b061563e716c",
+  "record_hash": "0001c6e1268b776043a12f26c363456d9d3134a596d53a25d0521dd286a55b70",
+  "record": {
+    "page": 9,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Entire cached physical page visually inspected. Printed headings and ruled regions read directly; no inferred numbering.",
+    "anchors": [
+      {
+        "anchor_id": "2019-fa-p9-19",
+        "number": "19",
+        "bbox": [
+          45.9,
+          56.1,
+          86.7,
+          88.4
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 19 read on physical page 9; exact original pixels retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "1f475bcdda2e855b0e988a07c665258690f3d0a4829b3543a2d82ca2fe570430"
+      },
+      {
+        "anchor_id": "2019-fa-p9-20",
+        "number": "20",
+        "bbox": [
+          295.8,
+          56.1,
+          336.6,
+          88.4
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 20 read on physical page 9; exact original pixels retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "0ce3900c3d90bfcc88faa42deeb16ea42c0d221fac4935212074eb5dcfb77bf5"
+      },
+      {
+        "anchor_id": "2019-fa-p9-21",
+        "number": "21",
+        "bbox": [
+          45.9,
+          297.5,
+          86.7,
+          329.8
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 21 read on physical page 9; exact original pixels retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "5908f7bec285a0becf3dc0f7916e3f14e47e81a359b1ace27802a12bbbcad1b5"
+      },
+      {
+        "anchor_id": "2019-fa-p9-22",
+        "number": "22",
+        "bbox": [
+          45.9,
+          538.9,
+          86.7,
+          571.2
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 22 read on physical page 9; exact original pixels retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "6caae33309010b60e487a25889faeba1058b3973f902e0ec0310f2f7a5120952"
+      },
+      {
+        "anchor_id": "2019-fa-p9-23",
+        "number": "23",
+        "bbox": [
+          295.8,
+          538.9,
+          336.6,
+          571.2
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 23 read on physical page 9; exact original pixels retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "dc90b58be7a8055a0a442d03c8b02439c7a144f27afe7542d41dbea71b99ce91"
+      }
+    ],
+    "regions": [
+      {
+        "page": 9,
+        "bbox": [
+          45.9,
+          56.1,
+          290.7,
+          294.1
+        ],
+        "role": "primary",
+        "owner": "2019-fa-p9-19",
+        "evidence": "Ruled boundaries and explicit diagram/response-area reference; no neighboring content inherited."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          295.8,
+          56.1,
+          537.2,
+          294.1
+        ],
+        "role": "primary",
+        "owner": "2019-fa-p9-20",
+        "evidence": "Ruled boundaries and explicit diagram/response-area reference; no neighboring content inherited."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          45.9,
+          297.5,
+          537.2,
+          535.5
+        ],
+        "role": "primary",
+        "owner": "2019-fa-p9-21",
+        "evidence": "Ruled boundaries and explicit diagram/response-area reference; no neighboring content inherited."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          45.9,
+          538.9,
+          290.7,
+          793.9
+        ],
+        "role": "primary",
+        "owner": "2019-fa-p9-22",
+        "evidence": "Ruled boundaries and explicit diagram/response-area reference; no neighboring content inherited."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          295.8,
+          538.9,
+          537.2,
+          793.9
+        ],
+        "role": "primary",
+        "owner": "2019-fa-p9-23",
+        "evidence": "Ruled boundaries and explicit diagram/response-area reference; no neighboring content inherited."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "19",
+        "bbox": [
+          45.9,
+          56.1,
+          86.7,
+          88.4
+        ],
+        "pixel_sha256": "1f475bcdda2e855b0e988a07c665258690f3d0a4829b3543a2d82ca2fe570430",
+        "audited_pixel_sha256": "1f475bcdda2e855b0e988a07c665258690f3d0a4829b3543a2d82ca2fe570430"
+      },
+      {
+        "kind": "heading",
+        "number": "20",
+        "bbox": [
+          295.8,
+          56.1,
+          336.6,
+          88.4
+        ],
+        "pixel_sha256": "0ce3900c3d90bfcc88faa42deeb16ea42c0d221fac4935212074eb5dcfb77bf5",
+        "audited_pixel_sha256": "0ce3900c3d90bfcc88faa42deeb16ea42c0d221fac4935212074eb5dcfb77bf5"
+      },
+      {
+        "kind": "heading",
+        "number": "21",
+        "bbox": [
+          45.9,
+          297.5,
+          86.7,
+          329.8
+        ],
+        "pixel_sha256": "5908f7bec285a0becf3dc0f7916e3f14e47e81a359b1ace27802a12bbbcad1b5",
+        "audited_pixel_sha256": "5908f7bec285a0becf3dc0f7916e3f14e47e81a359b1ace27802a12bbbcad1b5"
+      },
+      {
+        "kind": "heading",
+        "number": "22",
+        "bbox": [
+          45.9,
+          538.9,
+          86.7,
+          571.2
+        ],
+        "pixel_sha256": "6caae33309010b60e487a25889faeba1058b3973f902e0ec0310f2f7a5120952",
+        "audited_pixel_sha256": "6caae33309010b60e487a25889faeba1058b3973f902e0ec0310f2f7a5120952"
+      },
+      {
+        "kind": "heading",
+        "number": "23",
+        "bbox": [
+          295.8,
+          538.9,
+          336.6,
+          571.2
+        ],
+        "pixel_sha256": "dc90b58be7a8055a0a442d03c8b02439c7a144f27afe7542d41dbea71b99ce91",
+        "audited_pixel_sha256": "dc90b58be7a8055a0a442d03c8b02439c7a144f27afe7542d41dbea71b99ce91"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}
