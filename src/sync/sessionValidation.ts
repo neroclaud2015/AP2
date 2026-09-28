@@ -1,0 +1,26 @@
+const object=(x:unknown):x is Record<string,unknown>=>!!x&&typeof x==='object'&&!Array.isArray(x);
+const strings=(x:unknown):x is string[]=>Array.isArray(x)&&x.every(v=>typeof v==='string');
+const finite=(x:unknown)=>typeof x==='number'&&Number.isFinite(x)&&x>=0;
+const stringMap=(x:unknown):x is Record<string,string>=>object(x)&&Object.values(x).every(v=>typeof v==='string');
+const correct=(x:unknown)=>['richtig','teilweise','falsch'].includes(String(x));
+const box=(x:unknown)=>Array.isArray(x)&&x.length===4&&x.every(finite)&&x[2]>x[0]&&x[3]>x[1];
+function subpart(x:unknown){return object(x)&&typeof x.id==='string'&&typeof x.label==='string'&&['numeric','short_text','drawing','diagram'].includes(String(x.type))&&(x.numeric===undefined||object(x.numeric)&&typeof x.numeric.value==='number'&&Number.isFinite(x.numeric.value)&&typeof x.numeric.unit==='string'&&finite(x.numeric.tolerance));}
+function questionSnapshot(x:unknown,id:string){return object(x)&&x.question_id===id&&['question_number','source_pdf','source_page_image','cropped_question_image','extracted_text','segmentation_revision'].every(k=>typeof x[k]==='string')&&Number.isInteger(x.source_page)&&Number(x.source_page)>0&&Array.isArray(x.source_size)&&x.source_size.length===2&&x.source_size.every(v=>finite(v)&&Number(v)>0)&&box(x.bounding_box)&&Array.isArray(x.regions)&&x.regions.length>0&&x.regions.every(box)&&(x.source_regions===undefined||Array.isArray(x.source_regions)&&x.source_regions.every(r=>object(r)&&Number.isInteger(r.page)&&Number(r.page)>0&&box(r.bbox)&&typeof r.role==='string'&&typeof r.owner==='string'&&(r.source_page_image===undefined||typeof r.source_page_image==='string')&&(r.source_size===undefined||Array.isArray(r.source_size)&&r.source_size.length===2&&r.source_size.every(v=>finite(v)&&Number(v)>0))));}
+export function validTestSession(v:Record<string,unknown>):boolean {
+ if(!strings(v.question_ids)||!v.question_ids.length||new Set(v.question_ids).size!==v.question_ids.length||typeof v.current_question!=='string'||!v.question_ids.includes(v.current_question))return false;
+ if(!['test_id','exam_session_id','exam','module','mode','seed','started_at'].every(k=>typeof v[k]==='string')||!Number.isFinite(Date.parse(String(v.started_at)))||!['original','module'].includes(String(v.test_type))||!['kurz','standard'].includes(String(v.mode)))return false;
+ if(!['active','paused','completed','abandoned','discarded'].includes(String(v.status))||!Number.isInteger(v.revision)||Number(v.revision)<0||!finite(v.elapsed_time)||!(v.active_since===null||finite(v.active_since))||!(v.duration_minutes===null||finite(v.duration_minutes)&&Number(v.duration_minutes)>0)||!(v.completed_at===null||typeof v.completed_at==='string'&&Number.isFinite(Date.parse(v.completed_at))))return false;
+ if(v.sourceExams!==undefined&&v.sourceExams!=='all'&&!strings(v.sourceExams))return false;
+ if(!object(v.question_models)||!object(v.answers)||!object(v.official_answers)||!object(v.subpart_assessments))return false;
+ const models=v.question_models,ids=v.question_ids;
+ for(const id of ids){const m=models[id];if(!object(m)||!['multiple_choice','multi_part'].includes(String(m.kind))||typeof m.number!=='string'||typeof m.part!=='string'||!strings(m.subpart_ids)||new Set(m.subpart_ids).size!==m.subpart_ids.length)return false;
+  if(m.subpart_models!==undefined&&(!Array.isArray(m.subpart_models)||!m.subpart_models.every(subpart)||m.subpart_ids.some(p=>!(m.subpart_models as Record<string,unknown>[]).some(s=>s.id===p))))return false;
+  const official=v.official_answers[id];if(!(official===null||Number.isInteger(official)&&Number(official)>=1&&Number(official)<=5))return false;
+ }
+ for(const [id,answer] of Object.entries(v.answers)){if(!ids.includes(id)||!stringMap(answer))return false;const m=models[id] as Record<string,unknown>;if(Object.keys(answer).some(k=>m.kind==='multiple_choice'?k!=='choice':!(m.subpart_ids as string[]).includes(k)))return false;}
+ for(const [id,assessments] of Object.entries(v.subpart_assessments)){const m=models[id];if(!ids.includes(id)||!object(m)||!object(assessments)||Object.entries(assessments).some(([p,result])=>!(m.subpart_ids as string[]).includes(p)||!correct(result)))return false;}
+ if(!Array.isArray(v.source_mix)||!v.source_mix.every(s=>object(s)&&ids.includes(String(s.question_id))&&['question_id','exam','module','question_number','source_pdf','revision'].every(k=>typeof s[k]==='string')&&Number.isInteger(s.source_page)&&Number(s.source_page)>0&&(s.question_snapshot===undefined||questionSnapshot(s.question_snapshot,String(s.question_id)))&&['answer_source_pdf','answer_source_crop','solution_image'].every(k=>s[k]===undefined||typeof s[k]==='string')))return false;
+ if(v.result!==null&&(!object(v.result)||!['total','beantwortet','richtig','falsch','teilweise','unbeantwortet','pending'].every(k=>finite((v.result as Record<string,unknown>)[k]))||typeof v.result.vorlaeufig!=='boolean'||!object(v.result.byQuestion)||Object.entries(v.result.byQuestion).some(([id,result])=>!ids.includes(id)||!['richtig','teilweise','falsch','unbeantwortet','pending'].includes(String(result)))))return false;
+ return true;
+}
+export {stringMap};

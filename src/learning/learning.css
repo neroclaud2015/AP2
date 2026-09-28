@@ -11,3 +11,36 @@
 @media(max-width:700px){.learning-topbar nav{order:3;flex-basis:100%}.exam-year-select{font-size:10px}.exam-year-select select{max-width:155px;font-size:11px;padding:8px}.exam-year-tabs button{padding:10px 12px}.session-history .record-actions{gap:7px}.record-actions button{padding:9px 11px}}
 
 .source-year-filter{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:14px;margin-bottom:20px}.source-year-filter select{min-width:190px;max-width:100%;padding:10px 14px;background:white}
+
+/* Phase2G: shared spacing scale and intrinsically shrinkable controls. */
+:root{--space-xs:4px;--space-sm:8px;--space-md:16px;--space-lg:24px;--space-xl:32px;--space-2xl:40px}
+.learning-main>.exam-season,.learning-main>.test-history,.learning-main>.discarded-history,.learning-main>.session-history{margin-block:var(--space-xl)}
+.exam-season>.module-cards{margin-top:var(--space-lg)}
+.test-history,.archive-history{margin-top:var(--space-xl)}
+.test-history h2,.session-history h2{margin:0 0 var(--space-md)}
+.learning-root fieldset{min-inline-size:0;max-width:100%}
+.learning-root .choice-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(64px,1fr));gap:var(--space-sm);width:100%;max-width:560px;min-width:0;margin-inline:0;padding:var(--space-sm) 0 var(--space-lg)}
+.learning-root .choice-options label{min-width:0;min-height:48px;justify-content:center;padding:12px 8px;gap:var(--space-sm);font-size:18px;white-space:nowrap}
+.learning-root .choice-options input[type=radio]{width:20px;height:20px;min-width:20px;flex:0 0 20px;margin:0;accent-color:#194b40}
+.learning-root .reader,.practice,.subparts,.source-year-selection,.test-history{min-width:0}
+.learning-root .save-status,.learning-root .session-warning,.learning-root .hint{overflow-wrap:anywhere}
+.source-year-selection{border:1px solid #cbd8c5;border-radius:12px;background:white;padding:var(--space-lg);margin:var(--space-lg) 0}
+.source-year-selection legend{font-weight:600;padding:0 var(--space-sm)}
+.source-modes,.source-year-options,.selection-actions,.history-filters{display:flex;flex-wrap:wrap;gap:var(--space-md);align-items:center}
+.source-modes label,.source-year-options label{display:flex;align-items:center;gap:var(--space-sm);min-height:44px;cursor:pointer}
+.source-year-options{margin-block:var(--space-md);max-height:240px;overflow:auto;align-items:flex-start}
+.source-year-options label{padding:8px 12px;border:1px solid #d6dfd1;border-radius:8px}
+.source-year-selection input{width:18px;height:18px;flex-shrink:0;accent-color:#194b40}
+.selection-actions{font-size:12px;color:#607b6c}.selection-actions button{margin:0}
+.history-filters{padding-block:var(--space-md)}.history-filters label{display:grid;gap:var(--space-sm);font-size:13px}.history-filters select{max-width:100%}
+.history-pagination{margin-block:var(--space-lg)}.test-history>details{margin-top:var(--space-xl)}
+.history-overview-link{margin-block:var(--space-lg)}
+.sync-settings{max-width:850px}.sync-settings>section{margin-block:var(--space-xl);padding:var(--space-lg);border:1px solid #cedac6;background:white;border-radius:12px}.sync-settings input,.sync-settings textarea{max-width:100%;padding:12px;min-width:0}.sync-settings button{margin:var(--space-sm) var(--space-sm) var(--space-sm) 0}.sync-settings pre,.sync-settings code{overflow-wrap:anywhere;white-space:pre-wrap}.sync-settings label{display:block;margin-block:var(--space-md)}
+@media(max-width:700px){.source-year-selection{padding:var(--space-md)}.source-year-options{gap:var(--space-sm)}.source-modes{gap:var(--space-sm)}.history-filters{align-items:stretch}.history-filters label{flex:1 1 130px}.learning-root .reader-head{flex-wrap:wrap}.learning-root .compact-module select{max-width:100%}.sync-settings>section{padding:var(--space-md)}}
+
+.sync-settings button{min-height:44px;padding:10px 16px;border:1px solid #b9c9c0;border-radius:8px;background:#fff;color:#184d41;font:inherit;cursor:pointer;margin:4px 8px 4px 0}
+.sync-settings button:hover:not(:disabled){background:#eef4ef}
+.sync-settings button:disabled{opacity:1;color:#67736d;background:#ecefe9;border-color:#d2d8d1;cursor:not-allowed}
+.sync-settings input[type=file]{display:block;max-width:100%;width:100%;margin-top:12px;font:inherit}
+.sync-settings input[type=file]::file-selector-button{padding:10px 12px;border:1px solid #b9c9c0;border-radius:8px;background:#fff;color:#184d41;font:inherit;margin-right:8px}
+.sync-settings pre{max-height:360px;overflow:auto;background:#f5f6f0;padding:12px;border-radius:8px}

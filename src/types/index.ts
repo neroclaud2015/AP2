@@ -28,7 +28,7 @@ export type SyncResult = {status:'noop';reason:string}|{status:'completed';pulle
 export interface SyncProvider {pull(user:UserContext):Promise<SyncResult>;push(user:UserContext):Promise<SyncResult>;sync(user:UserContext):Promise<SyncResult>;resolveConflict(user:UserContext,conflict:SyncConflict,resolution:'local'|'remote'):Promise<SyncResult>}
 export interface LocalField { value: string; locked: boolean; origin: 'user' | 'machine' }
 export interface ProgressRecord { schema_version: 1; userId: string; questionId: string; fields: Record<string, LocalField>; updatedAt: string }
-export interface PersonalDataSnapshot {schema_version:1;userId:string;records:ProgressRecord[];reviews:QuestionReview[];answerReviews:AnswerReview[];attempts:Attempt[];learningSessions:LearningSession[];testSessions:TestSession[]}
+export interface PersonalDataSnapshot {schema_version:1;userId:string;records:ProgressRecord[];reviews:QuestionReview[];answerReviews:AnswerReview[];attempts:Attempt[];learningSessions:LearningSession[];testSessions:TestSession[];settings?:Array<{userId:string;id:string;value:unknown}>}
 export interface ProgressRepository {
  getRecords(userId:string):Promise<ProgressRecord[]>;
  getReviews(userId:string):Promise<QuestionReview[]>;
@@ -49,6 +49,9 @@ export interface ProgressRepository {
  discardTestSession(userId:string,id:string,revision:number):Promise<TestSession>;
  deleteTestSession(userId:string,id:string,revision:number):Promise<void>;
  exportSnapshot(userId:string):Promise<PersonalDataSnapshot>;
+ getSettings(userId:string):Promise<Array<{userId:string;id:string;value:unknown}>>;
+ saveSetting(userId:string,id:string,value:unknown):Promise<void>;
+ importSnapshot(snapshot:PersonalDataSnapshot,userId:string,sync:boolean):Promise<void>;
   get(userId: string, questionId: string): Promise<ProgressRecord | undefined>;
   saveCorrection(userId: string, questionId: string, field: string, value: string): Promise<void>;
   saveMachineValue(userId: string, questionId: string, field: string, value: string): Promise<void>;

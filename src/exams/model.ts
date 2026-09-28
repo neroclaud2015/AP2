@@ -17,10 +17,10 @@ export interface TestSession {
  test_id:string;exam_session_id:string;userId:string;test_type:TestType;exam:string;module:string;mode:TestMode;seed:string;
  sourceExams?:SourceExams;question_ids:string[];question_models:Record<string,QuestionModel>;source_mix:TestSource[];
  answers:Record<string,Record<string,string>>;subpart_assessments:Record<string,Record<string,Correctness>>;official_answers:Record<string,number|null>;
- started_at:string;completed_at:string|null;status:TestStatus;current_question:string;discarded_at?:string;discarded_from?:TestStatus;deleted_at?:string;
+ started_at:string;completed_at:string|null;status:TestStatus;current_question:string;discarded_at?:string;discarded_from?:TestStatus;previous_status?:TestStatus;deleted_at?:string;
  elapsed_time:number;active_since:number|null;revision:number;duration_minutes:number|null;result:TestResult|null;
 }
-export type SessionAction={type:'answer';questionId:string;answer:Record<string,string>}|{type:'move';questionId:string}|{type:'pause'|'resume'|'submit'|'abandon'|'discard'}|{type:'assess';questionId:string;assessments:Record<string,Correctness>};
+export type SessionAction={type:'answer';questionId:string;answer:Record<string,string>}|{type:'move';questionId:string}|{type:'pause'|'resume'|'submit'|'abandon'|'discard'|'restore'}|{type:'assess';questionId:string;assessments:Record<string,Correctness>};
 export const TEST_SIZES={kurz:{multiple_choice:6,multi_part:2},standard:{multiple_choice:12,multi_part:4}};
 function random(seed:string){let n=2166136261;for(const c of seed)n=Math.imul(n^c.charCodeAt(0),16777619);return()=>{n+=0x6D2B79F5;let t=Math.imul(n^(n>>>15),1|n);t^=t+Math.imul(t^(t>>>7),61|t);return ((t^(t>>>14))>>>0)/4294967296;};}
 function shuffled<T>(input:T[],rng:()=>number){const a=[...input];for(let i=a.length-1;i>0;i--){const j=Math.floor(rng()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
@@ -66,6 +66,10 @@ export function createSession(input:SessionPool&{type:TestType;userId?:string;so
   duration_minutes:input.type==='original'?config.durationMinutes??null:null,result:null};
 }
 export function isEligibleForAnalysis(s:TestSession){return s.status==='completed'&&!s.discarded_at&&!s.deleted_at;}
+export function restoreStatus(s:TestSession):Exclude<TestStatus,'active'|'discarded'>|null {
+ if(s.status!=='discarded'||s.deleted_at)return null;const previous=s.previous_status??s.discarded_from;
+ return previous==='active'?'paused':previous==='paused'||previous==='completed'||previous==='abandoned'?previous:null;
+}
 export function elapsedMs(s:TestSession,now=Date.now()){return s.elapsed_time+(s.status==='active'&&s.active_since!==null?Math.max(0,now-s.active_since):0);}
 export function questionAnswered(s:TestSession,id:string){const m=s.question_models[id],a=s.answers[id]??{};return m.kind==='multiple_choice'?/^[1-5]$/.test(a.choice??''):m.subpart_ids.some(k=>(a[k]??'').trim().length>0);}
 export function sessionResult(s:TestSession):TestResult {
@@ -99,12 +103,15 @@ export function reduceSession(s:TestSession,action:SessionAction,now=Date.now())
   next={...next,status:action.type==='submit'?'completed':'abandoned',elapsed_time:elapsedMs(s,now),active_since:null,completed_at:new Date(now).toISOString()};
  }else if(action.type==='discard'){
   if(s.status==='discarded')throw Error('Dieser Versuch ist bereits verworfen.');
-  next={...next,status:'discarded',discarded_from:s.status,discarded_at:new Date(now).toISOString(),elapsed_time:elapsedMs(s,now),active_since:null};
+  next={...next,status:'discarded',previous_status:s.status,discarded_from:s.status,discarded_at:new Date(now).toISOString(),elapsed_time:elapsedMs(s,now),active_since:null};
+ }else if(action.type==='restore'){
+  const target=restoreStatus(s);if(!target)throw Error('Der frühere Status ist nicht sicher bekannt. Wiederherstellen ist nicht möglich.');
+  next={...next,status:target,active_since:null};delete next.discarded_at;delete next.previous_status;delete next.discarded_from;
  }else if(action.type==='assess'){
   if(s.status!=='completed')throw Error('Selbstbewertung erst nach Abgabe.');hasQuestion(action.questionId);const model=s.question_models[action.questionId];
   if(model.kind!=='multi_part'||!questionAnswered(s,action.questionId))throw Error('Keine beantwortete offene Aufgabe.');
   if(Object.entries(action.assessments).some(([id,value])=>!model.subpart_ids.includes(id)||!['richtig','teilweise','falsch'].includes(value)))throw Error('Ungültige Selbstbewertung.');
   next.subpart_assessments={...s.subpart_assessments,[action.questionId]:{...action.assessments}};
  }
- next.revision=s.revision+1;next.result=next.status==='completed'?sessionResult(next):next.status==='discarded'?s.result:null;return next;
+ next.revision=s.revision+1;next.result=next.status==='completed'?(action.type==='restore'?s.result:sessionResult(next)):next.status==='discarded'?s.result:null;return next;
 }

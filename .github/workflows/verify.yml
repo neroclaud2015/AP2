@@ -26,4 +26,9 @@ jobs:
       - run: python scripts/validate_u_solutions.py
       - run: python scripts/validate_source_registry.py
       - run: npm test
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - run: npx firebase emulators:exec --only firestore --project demo-ap2-sync "node --test firebase/rules.emulator.mjs && npx vitest run firebase/transport.emulator.test.ts"
       - run: npm run build

@@ -1,0 +1,94 @@
+rules_version = '2';
+service cloud.firestore {
+ match /databases/{database}/documents {
+  function own(uid) { return request.auth != null && request.auth.uid == uid; }
+  function entity(e) { return e in ['records','reviews','answerReviews','attempts','learningSessions','testSessions','settings']; }
+  function idField(e) { return e == 'records' ? 'questionId' : e == 'attempts' ? 'attempt_id' : e == 'testSessions' ? 'test_id' : e == 'settings' ? 'id' : 'question_id'; }
+  function validValue(uid,e,id,deleted,value) { return deleted ? value == null : value is map && value.userId == uid && value[idField(e)] == id; }
+  function validEnvelope(uid,e) {
+   return e.keys().hasOnly(['entity','id','revision','cursor','updatedAt','deviceId','deleted','value'])
+    && entity(e.entity) && e.id is string && e.id.size() > 0 && e.id.size() <= 200
+    && e.revision is int && e.revision > 0 && e.cursor is int && e.cursor > 0 && e.cursor < 9007199254740991
+    && e.updatedAt is string && e.updatedAt.size() <= 40 && e.deviceId is string && e.deviceId.size() > 0 && e.deviceId.size() <= 128
+    && e.deleted is bool && validValue(uid,e.entity,e.id,e.deleted,e.value);
+  }
+  function compatible(kind,old,next) {
+   return old == null || (kind == 'attempts'
+    ? next.diff(old).affectedKeys().hasOnly(['note','error_reason','unsure','confidence','updated_at','revision','sync_state','device_id'])
+    : kind != 'testSessions' || (
+      !next.diff(old).affectedKeys().hasAny(['test_id','userId','exam_session_id','test_type','exam','module','mode','seed','sourceExams','question_ids','question_models','source_mix','official_answers','started_at'])
+      && (!(old.get('completed_at',null) != null || old.get('status','') == 'completed' || old.get('discarded_from','') == 'completed' || old.get('previous_status','') == 'completed')
+       || next.diff(old).affectedKeys().hasOnly(['status','previous_status','discarded_from','discarded_at','deleted_at','revision','updated_at','sync_state','device_id','current_question','note','notes','reflection','subpart_assessments','result']))));
+  }
+  function historyValid(data,old) {
+   return data.envelope.deleted ? data.history == old :
+    compatible(data.envelope.entity,old,data.envelope.value)
+    && data.history == (data.envelope.entity in ['attempts','testSessions'] ? data.envelope.value : null);
+  }
+  function cursorValid(uid,e) {
+   let p = /databases/$(database)/documents/users/$(uid)/sync/state;
+   return e.cursor == getAfter(p).data.cursor && e.cursor == (exists(p) ? get(p).data.cursor + 1 : 1);
+  }
+  function validMutation(uid,m) {
+   return m.keys().hasOnly(['mutationId','entity','id','baseRevision','deleted','value'])
+    && m.mutationId is string && m.mutationId.size() > 0 && m.mutationId.size() <= 200 && entity(m.entity)
+    && m.id is string && m.id.size() > 0 && m.id.size() <= 200 && m.baseRevision is int && m.baseRevision >= 0
+    && m.deleted is bool && validValue(uid,m.entity,m.id,m.deleted,m.value);
+  }
+  function receiptValid(uid,d) {
+   let p = /databases/$(database)/documents/users/$(uid)/records/$(d.recordKey);
+   let r = d.result;
+   return d.keys().hasOnly(['userId','mutation','result','recordKey','createdAt']) && d.userId == uid
+    && d.recordKey is string && d.recordKey.matches('^[a-f0-9]{64}$') && d.createdAt is string
+    && validMutation(uid,d.mutation) && r.mutationId == d.mutation.mutationId
+    && (r.status == 'applied'
+      ? r.keys().hasOnly(['mutationId','status','record']) && r.record == getAfter(p).data.envelope
+        && r.record.revision == d.mutation.baseRevision + 1 && r.record.entity == d.mutation.entity
+        && r.record.id == d.mutation.id && r.record.deleted == d.mutation.deleted && r.record.value == d.mutation.value
+      : r.status == 'conflict' && r.keys().hasOnly(['mutationId','status','record','conflictId','reason'])
+        && r.conflictId is string && r.reason in ['revision_mismatch','immutable_history']
+        && (exists(p) ? r.record == get(p).data.envelope : r.record.revision == 0 && r.record.deleted == true && r.record.value == null));
+  }
+  match /users/{uid}/records/{key} {
+   allow read: if own(uid);
+   allow create: if own(uid) && key.matches('^[a-f0-9]{64}$') && request.resource.data.keys().hasOnly(['userId','envelope','history'])
+    && request.resource.data.userId == uid && validEnvelope(uid,request.resource.data.envelope)
+    && request.resource.data.envelope.revision == 1 && cursorValid(uid,request.resource.data.envelope) && historyValid(request.resource.data,null);
+   allow update: if own(uid) && request.resource.data.keys().hasOnly(['userId','envelope','history']) && request.resource.data.userId == uid
+    && validEnvelope(uid,request.resource.data.envelope) && request.resource.data.envelope.entity == resource.data.envelope.entity
+    && request.resource.data.envelope.id == resource.data.envelope.id && request.resource.data.envelope.revision == resource.data.envelope.revision + 1
+    && cursorValid(uid,request.resource.data.envelope) && historyValid(request.resource.data,resource.data.history);
+   allow delete: if false; // Logical deletion is a revisioned tombstone; preserve retry/history safety.
+  }
+  match /users/{uid}/sync/state {
+   allow read: if own(uid);
+   allow create: if own(uid) && request.resource.data.keys().hasOnly(['userId','cursor']) && request.resource.data.userId == uid && request.resource.data.cursor == 1;
+   allow update: if own(uid) && request.resource.data.keys().hasOnly(['userId','cursor']) && request.resource.data.userId == uid && request.resource.data.cursor is int && request.resource.data.cursor == resource.data.cursor + 1;
+   allow delete: if false;
+  }
+  match /users/{uid}/mutations/{key} {
+   allow read: if own(uid);
+   allow create: if own(uid) && key.matches('^[a-f0-9]{64}$') && receiptValid(uid,request.resource.data);
+   allow update,delete: if false;
+  }
+  match /users/{uid}/conflicts/{key} {
+   allow read: if own(uid);
+   allow create: if own(uid) && request.resource.data.keys().hasOnly(['userId','recordKey','mutation','remote','reason','createdAt'])
+    && request.resource.data.userId == uid && validMutation(uid,request.resource.data.mutation)
+    && request.resource.data.mutation == getAfter(/databases/$(database)/documents/users/$(uid)/mutations/$(key)).data.mutation
+    && request.resource.data.remote == getAfter(/databases/$(database)/documents/users/$(uid)/mutations/$(key)).data.result.record
+    && request.resource.data.reason == getAfter(/databases/$(database)/documents/users/$(uid)/mutations/$(key)).data.result.reason;
+   allow update,delete: if false; // Both historical versions remain; a new CAS mutation explicitly resolves locally.
+  }
+  match /users/{uid}/devices/{device} {
+   allow read: if own(uid);
+   allow create,update: if own(uid) && request.resource.data.keys().hasOnly(['user_id','device_id','device_name','created_at','last_seen','revoked_at'])
+    && request.resource.data.user_id == uid && request.resource.data.device_id == device
+    && request.resource.data.device_name is string && request.resource.data.device_name.size() <= 100
+    && request.resource.data.created_at is string && request.resource.data.last_seen is string
+    && request.resource.data.revoked_at == null;
+   allow delete: if false;
+  }
+  match /{document=**} { allow read,write: if false; }
+ }
+}

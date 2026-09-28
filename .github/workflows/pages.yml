@@ -29,13 +29,26 @@ jobs:
       - run: python scripts/validate_u_solutions.py
       - run: python scripts/validate_source_registry.py
       - run: npm test
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - run: npx firebase emulators:exec --only firestore --project demo-ap2-sync "node --test firebase/rules.emulator.mjs && npx vitest run firebase/transport.emulator.test.ts"
       - run: npm run build
+        env:
+          VITE_FIREBASE_API_KEY: ${{ vars.VITE_FIREBASE_API_KEY }}
+          VITE_FIREBASE_AUTH_DOMAIN: ${{ vars.VITE_FIREBASE_AUTH_DOMAIN }}
+          VITE_FIREBASE_PROJECT_ID: ${{ vars.VITE_FIREBASE_PROJECT_ID }}
+          VITE_FIREBASE_APP_ID: ${{ vars.VITE_FIREBASE_APP_ID }}
+          VITE_FIREBASE_MESSAGING_SENDER_ID: ${{ vars.VITE_FIREBASE_MESSAGING_SENDER_ID }}
+          VITE_FIREBASE_STORAGE_BUCKET: ${{ vars.VITE_FIREBASE_STORAGE_BUCKET }}
       - run: python scripts/publish_layout_evidence.py
       - run: python scripts/publish_phase2d.py
       - run: python scripts/publish_phase2e.py
       - run: python scripts/publish_phase2e1.py
       - run: python scripts/publish_module_year_filter.py
       - run: python scripts/publish_phase2f.py
+      - run: python scripts/publish_phase2g.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

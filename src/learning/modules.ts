@@ -3,7 +3,7 @@ import {assertProductionModule} from '../sources/registry';
 import {parseSourceExams,type SourceExams} from './sourceExams';
 import type {Attempt,LearningSession} from './model';
 export type ModuleSlug=string;
-export type View='start'|'learn'|'exams'|'tests'|'session'|'study'|'review';
+export type View='start'|'learn'|'exams'|'tests'|'session'|'study'|'review'|'history'|'settings';
 export interface PartConfig {id:string;title:string;kind:'multiple_choice'|'multi_part';label:string;questionNumbers:string[]}
 export interface ModuleConfig {examId:string;slug:ModuleSlug;title:string;segmentedPath:string;answersPath:string;solutionsPath:string;choiceSolutionPage:number;descriptionPage:number;descriptionLabel?:string;sharedContextForAllQuestions?:boolean;attachmentPages:number[];parts:PartConfig[];durationMinutes:number|null;sourcePageImages?:Record<number,string>;durationSource?:{pdf:string;page:number;image?:string}}
 const standardParts=():PartConfig[]=>[
@@ -42,7 +42,7 @@ export interface LearningRoute {view:View;examId:string;module:ModuleSlug;number
 export function readRoute(search:string):LearningRoute {
  const p=new URLSearchParams(search);const requested=p.get('view');
  const config=MODULES.find(m=>m.slug===(p.get('module')??MODULES[0].slug)&&m.examId===(p.get('exam')??MODULES[0].examId))??MODULES.find(m=>m.examId===p.get('exam'))??MODULES[0];
- return {view:(['start','learn','exams','tests','session','study','review'].includes(requested??'')?requested:p.has('q')?'study':'start') as View,examId:config.examId,module:config.slug,number:p.get('q')??config.parts[0].questionNumbers[0],...((requested==='tests'||requested==='session'&&p.has('years'))?{sourceExams:parseSourceExams(p.get('years'))}:{}),...(requested==='session'&&p.get('session')?{sessionId:p.get('session')!}:{})};
+ return {view:(['start','learn','exams','tests','session','study','review','history','settings'].includes(requested??'')?requested:p.has('q')?'study':'start') as View,examId:config.examId,module:config.slug,number:p.get('q')??config.parts[0].questionNumbers[0],...((requested==='tests'||requested==='session'&&p.has('years'))?{sourceExams:parseSourceExams(p.get('years'))}:{}),...(requested==='session'&&p.get('session')?{sessionId:p.get('session')!}:{})};
 }
 export function routeUrl(route:LearningRoute,href:string):URL {
  const url=new URL(href);if(route.view==='tests'||route.view==='session'&&route.sourceExams!==undefined){const filter=route.sourceExams??'all';url.searchParams.set('years',filter==='all'?'all':filter.join(','));}else url.searchParams.delete('years');url.searchParams.set('view',route.view);url.searchParams.set('exam',route.examId);url.searchParams.set('module',route.module);
