@@ -5,7 +5,7 @@ Default is dry-run. --apply registers each complete module, leaving others block
 from pathlib import Path
 from copy import deepcopy
 from datetime import datetime,timezone
-import argparse,json
+import argparse,json,hashlib
 from ingest import read,save
 from answers import artifact_digest,artifacts_valid
 from portrait_dataset import objhash
@@ -95,7 +95,7 @@ def apply(root,payload):
    continue
   paths=[f'public/data/{prefix}_segmented.json',f'public/data/{prefix}_reviewed_answers.json',f'public/data/{prefix}_u_solutions.json']
   for base in ['data/exams','public/data']:writes[root/f'{base}/{prefix}_reviewed_answers.json']=p['answers']
-  artifacts={paths[0]:artifact_digest(root/paths[0]),paths[1]:objhash(p['answers']),paths[2]:artifact_digest(root/paths[2])}
+  artifacts={paths[0]:artifact_digest(root/paths[0]),paths[1]:hashlib.sha256(json.dumps(p['answers'],sort_keys=True,separators=(',',':'),ensure_ascii=False).encode('utf-8')).hexdigest(),paths[2]:artifact_digest(root/paths[2])}
   audit={'result':'passed','confirmation_method':'manual_source_review','manual_confirmation_revision':p['revision'],'question_ids':[q['question_id'] for q in p['questions']['questions']],'question_revision':p['questions']['segmentation_revision'],'official_answer_revision':p['revision'],'artifacts':artifacts,'choice_coverage':28,'u_coverage':8}
   for sid in [c['source_id'],c['solution_source_id']]:
    source=next(s for s in registry['sources'] if s['source_id']==sid)
@@ -112,7 +112,8 @@ def apply(root,payload):
  # No writes before all inputs and modules validate; registry written last.
  backups={p:p.read_bytes() if p.exists() else None for p in list(writes)+[root/'data/source_registry.json',root/'public/data/source_registry.json']}
  try:
-  for path,value in writes.items():save(path,value)
+  for path,value in writes.items():
+   if not path.exists() or read(path)!=value:save(path,value)
   save_registry(root,registry)
  except BaseException:
   for path,content in backups.items():

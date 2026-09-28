@@ -5,18 +5,21 @@ const {chromium}=require('playwright');
 const script=String.raw`
 import sys,json,shutil
 from pathlib import Path
-from ingest import read
+from ingest import read,save
+from test_manual_answer_promotion import blocked_registry_fixture
 from manual_answer_promotion import apply,FIELDS
 r=Path(sys.argv[1]);tmp=Path(sys.argv[2]);paths={'public/data/manual_answer_review_queue.json','data/source_registry.json','public/data/source_registry.json'}
 for code in ['ap','fa']:
  paths.add(f'scripts/layout_profiles/winter2018_19_{code}.json')
  for kind in ['answers','layout']:
   rel=f'data/ingest/2018-19-{code}_registered_{kind}.json';paths.add(rel);paths.update(read(r/rel)['artifacts'])
-for s in read(r/'data/source_registry.json')['sources']:
+registry=blocked_registry_fixture(read(r/'data/source_registry.json'))
+for s in registry['sources']:
  if s['exam']=='2018-19-winter' and s['module'] in ['arbeitsplanung','funktionsanalyse']:
   for g in s['gates'].values():paths.update(g['artifacts'])
 for rel in paths:
  dest=tmp/rel;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(r/rel,dest)
+save(tmp/'data/source_registry.json',registry);save(tmp/'public/data/source_registry.json',registry)
 rows=[]
 for q in read(tmp/'public/data/manual_answer_review_queue.json')['items']:
  rows.append({k:q[k] for k in FIELDS}|{'official_answer':1,'official_answer_status':'confirmed','user_corrected':True,'locked':True,'confirmation_method':'manual_source_review','updated_at':'2026-09-28T10:00:00Z','machine_answer_at_confirmation':q['official_answer']})

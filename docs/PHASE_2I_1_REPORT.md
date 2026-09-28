@@ -1,3 +1,18 @@
+# Phase 2I.1 — Completed manual import and production release
+
+User confirmation export accepted: AP Q3=1, Q9=1, Q10=2, Q22=2, Q24=3; FA Q7=4, Q21=4, Q27=4. All8 exact source/crop/machine bindings validated. Each is confirmed, user_corrected, locked, manual_source_review.
+
+AP and FA each have36 questions,28/28 MC keys and8/8 U crops. Both registered for Study/Originalprüfung/Modultest. Winter2018/19 now has all3 modules; production total10 modules/312 questions. No PDF scan, new crop, changed question identity, or later season processing. Existing machine artifacts and previously production source records unchanged. Repeated actual import preserves locked answers.
+
+Browser acceptance verified both modules' manual MC scoring, official source display, U self-assessment, cross-year tests, and FA Q13 page8 shared context in Study/Originalprüfung. Evidence: https://neroclaud2015.github.io/AP2/evidence/phase2i1/release/
+
+The release check found and fixed a Unicode canonical-hash mismatch for newly generated reviewed JSON artifacts. An artifact-hash regression assertion now covers the import; no real answer values or original evidence changed. Synthetic fixtures now reconstruct pre-review state independently of live production.
+
+Final local checks:100 frontend tests,99 Python tests,10-module source registry validation, production build passed. Independent release review passed. Stop here for user acceptance. No later season or Firebase work.
+
+---
+## Historical implementation notes (before user confirmation)
+
 # Phase 2I.1 — Official answer manual source review
 
 Review URL: https://neroclaud2015.github.io/AP2/?view=answer-review

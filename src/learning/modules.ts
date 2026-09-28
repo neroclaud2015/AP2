@@ -7,7 +7,7 @@ import type {Attempt,LearningSession} from './model';
 export type ModuleSlug=string;
 export type View='start'|'learn'|'exams'|'tests'|'session'|'study'|'review'|'history'|'settings';
 export interface PartConfig {id:string;title:string;kind:'multiple_choice'|'multi_part';label:string;questionNumbers:string[]}
-export interface ModuleConfig {examId:string;slug:ModuleSlug;title:string;segmentedPath:string;answersPath:string;solutionsPath:string;choiceSolutionPage:number;descriptionPage:number;descriptionLabel?:string;sharedContextForAllQuestions?:boolean;questionContextPages?:Record<string,number[]>;attachmentPages:number[];parts:PartConfig[];durationMinutes:number|null;sourcePageImages?:Record<number,string>;durationSource?:{pdf:string;page:number;image?:string}}
+export interface ModuleConfig {examId:string;slug:ModuleSlug;title:string;segmentedPath:string;answersPath:string;solutionsPath:string;choiceSolutionPage:number;descriptionPage:number;descriptionLabel?:string;sharedContextForAllQuestions?:boolean;questionContextPages?:Record<string,number[]>;attachmentPages:number[];parts:PartConfig[];durationMinutes:number|null;sourcePageImages?:Partial<Record<number,string>>;durationSource?:{pdf:string;page:number;image?:string}}
 const standardParts=():PartConfig[]=>[
  {id:'A',title:'Teil A',kind:'multiple_choice',label:'Auswahlaufgaben',questionNumbers:Array.from({length:28},(_,i)=>String(i+1))},
  {id:'B',title:'Teil B',kind:'multi_part',label:'Offene Aufgaben',questionNumbers:Array.from({length:8},(_,i)=>`U${i+1}`)},

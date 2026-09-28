@@ -1,3 +1,12 @@
+# Phase 2I.1 — Winter2018/19 AP and FA released
+
+All8 user source confirmations imported. AP36 / FA36: each28/28 MC +8/8 U. Winter2018/19 now AP/FA/WiSo production. Total10 modules/312 questions. PDF rescan0; later seasons0. Previous production data preserved. Stop for acceptance; no further imports.
+
+See PHASE_2I_1_REPORT.md and data/ingest/manual_answer_promotion_manifest.json. Raw machine answer checkpoints intentionally retain their historical blocked detection results; the separate reviewed artifacts and Source Registry record resolved production status.
+
+---
+Historical checkpoints:
+
 # Phase 2I.1 — Manual answer review UI ready; awaiting actual user confirmation
 
 Review entry: ?view=answer-review. Actual confirmations0/8. AP23/28 and FA25/28 remain blocked. Source-bound export/import and automatic per-module promotion are implemented and tested only with isolated synthetic records. No PDF scans or later seasons. See PHASE_2I_1_REPORT.md.

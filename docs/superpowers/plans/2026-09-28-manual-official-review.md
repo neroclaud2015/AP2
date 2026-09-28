@@ -8,10 +8,12 @@
 - [x] Build eight-question Previous/Next/Save UI with original crop, explicit five rows, raw measurements, strongest candidate disclaimer, counts and JSON export.
 - [x] Test importer wrong/missing/duplicate/source-tampered answers, partial per-module completion, locked idempotence, complete28+8 gate, no PDF opens.
 - [x] Implement separate reviewed answer artifacts/ledger and audited unblock transition, register eligible modules automatically without rewriting old source evidence or machine outputs.
-- [ ] Browser synthetic acceptance, old-data regression, independent review, CI/Pages release.
-- [ ] Await real user confirmations; production coverage is pending until real confirmations arrive.
+- [x] Browser synthetic acceptance, old-data regression, independent review, CI/Pages release.
+- [x] Await real user confirmations; production coverage is pending until real confirmations arrive.
 
 Review focus: incomplete module stays blocked; forged/stale crop or measurement binding fails closed; later machine revision cannot override manual locks; no personal attempts in export; original test sessions unchanged; failed import cannot partially unblock data.
 Execution: native inline, existing checkout to retain private source caches. Baseline635153791eb6fcb770a1b7d4e092496e9c3bc085. No PDF operations permitted.
 
 Ledger: 100 frontend tests,99 Python tests and production build passed. Isolated browser verified8 synthetic selections/save/reload/export and source hash rejection; no real answers accepted. Independent review P2 fixed: FA13–15 shared page8 now available in Study/Exam via explicit per-question context. Temporary-repository promotion browser test verified both AP/FA test pools. All1657 preexisting data/profile/asset files unchanged. CI/Pages deployment remains the last technical step; real user review remains pending.
+
+User export imported: AP3=1,9=1,10=2,22=2,24=3; FA7=4,21=4,27=4. Actual production10 modules/312 questions; MC28/28 and U8/8 each. Source registry and all99 Python/100 frontend tests passed. Added canonical UTF8 artifact-hash regression and partial source-page map typing. Original evidence immutable. Stop after deployment.
