@@ -43,5 +43,5 @@ export function assertProductionModule(registry:unknown,module:ModuleIdentity):v
 /** New records may snapshot this value; never recompute snapshots on existing records. */
 export function sourceSnapshot(registry:unknown,module:ModuleIdentity){
  const {question,solution}=moduleSources(registry,module);
- return {question_source_id:question.source_id,solution_source_id:solution.source_id,question_source_sha256:question.sha256,solution_source_sha256:solution.sha256,source_revision:question.layout_profile!,official_answer_revision:solution.answer_profile!};
+ return {question_source_id:question.source_id,solution_source_id:solution.source_id,question_source_sha256:question.sha256,solution_source_sha256:solution.sha256,source_revision:question.layout_profile!,official_answer_revision:typeof solution.gates.validated?.manual_confirmation_revision==='string'?solution.gates.validated.manual_confirmation_revision:solution.answer_profile!};
 }

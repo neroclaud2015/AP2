@@ -1,3 +1,5 @@
+import promotedModules from '../../public/data/promoted_modules.json';
+import {productionAdditions} from '../manualReview/productionAdditions';
 import sourceRegistry from '../../public/data/source_registry.json';
 import {assertProductionModule} from '../sources/registry';
 import {parseSourceExams,type SourceExams} from './sourceExams';
@@ -5,7 +7,7 @@ import type {Attempt,LearningSession} from './model';
 export type ModuleSlug=string;
 export type View='start'|'learn'|'exams'|'tests'|'session'|'study'|'review'|'history'|'settings';
 export interface PartConfig {id:string;title:string;kind:'multiple_choice'|'multi_part';label:string;questionNumbers:string[]}
-export interface ModuleConfig {examId:string;slug:ModuleSlug;title:string;segmentedPath:string;answersPath:string;solutionsPath:string;choiceSolutionPage:number;descriptionPage:number;descriptionLabel?:string;sharedContextForAllQuestions?:boolean;attachmentPages:number[];parts:PartConfig[];durationMinutes:number|null;sourcePageImages?:Record<number,string>;durationSource?:{pdf:string;page:number;image?:string}}
+export interface ModuleConfig {examId:string;slug:ModuleSlug;title:string;segmentedPath:string;answersPath:string;solutionsPath:string;choiceSolutionPage:number;descriptionPage:number;descriptionLabel?:string;sharedContextForAllQuestions?:boolean;questionContextPages?:Record<string,number[]>;attachmentPages:number[];parts:PartConfig[];durationMinutes:number|null;sourcePageImages?:Record<number,string>;durationSource?:{pdf:string;page:number;image?:string}}
 const standardParts=():PartConfig[]=>[
  {id:'A',title:'Teil A',kind:'multiple_choice',label:'Auswahlaufgaben',questionNumbers:Array.from({length:28},(_,i)=>String(i+1))},
  {id:'B',title:'Teil B',kind:'multi_part',label:'Offene Aufgaben',questionNumbers:Array.from({length:8},(_,i)=>`U${i+1}`)},
@@ -32,6 +34,7 @@ export const MODULES:ModuleConfig[]=[
   {id:'B',title:'Ungebundene Aufgaben',kind:'multi_part',label:'Offene Aufgaben',questionNumbers:Array.from({length:6},(_,i)=>`U${i+1}`)},
  ]},
 ];
+MODULES.push(...productionAdditions(sourceRegistry,promotedModules as ModuleConfig[],MODULES));
 for(const module of MODULES)assertProductionModule(sourceRegistry,module);
 export const EXAM_SESSIONS=[{id:'2017-sommer',label:'Sommer 2017'},{id:'2017-18-winter',label:'Winter 2017/18'},{id:'2018-sommer',label:'Sommer 2018'},{id:'2018-19-winter',label:'Winter 2018/19'}];
 export const MODULE_TITLES:Record<string,string>={arbeitsplanung:'Arbeitsplanung',funktionsanalyse:'Funktionsanalyse',wiso:'WiSo'};

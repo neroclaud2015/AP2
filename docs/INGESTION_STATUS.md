@@ -1,3 +1,7 @@
+# Phase 2I.1 — Manual answer review UI ready; awaiting actual user confirmation
+
+Review entry: ?view=answer-review. Actual confirmations0/8. AP23/28 and FA25/28 remain blocked. Source-bound export/import and automatic per-module promotion are implemented and tested only with isolated synthetic records. No PDF scans or later seasons. See PHASE_2I_1_REPORT.md.
+
 # Current checkpoint: Phase 2I — Winter 2018/19 WiSo production; AP/FA answer gate blocked
 
 Production: Sommer2017 AP36 / FA36 / WiSo24; Winter2017/18 AP36 / FA36 / WiSo24; Sommer2018 WiSo24; Winter2018/19 WiSo24. Total **8 modules / 240 questions**.

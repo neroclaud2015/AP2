@@ -50,6 +50,7 @@ jobs:
       - run: python scripts/publish_phase2f.py
       - run: python scripts/publish_phase2g.py
       - run: python scripts/publish_phase2i.py
+      - run: python scripts/publish_phase2i1.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

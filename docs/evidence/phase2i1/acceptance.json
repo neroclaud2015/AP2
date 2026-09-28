@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "no_candidate_preselection": true,
+    "eight_synthetic_confirmations_persist": true,
+    "old_learning_tests_reviews_unchanged": true,
+    "export_contains_only_bound_confirmations": true,
+    "changed_machine_does_not_overwrite": true,
+    "source_hash_failure_disables_save": true,
+    "mobile_no_overflow": true
+  },
+  "synthetic_records_only": true,
+  "real_user_confirmations": 0,
+  "production_modules_promoted": 0,
+  "pdf_rescan": 0,
+  "errors": []
+}
