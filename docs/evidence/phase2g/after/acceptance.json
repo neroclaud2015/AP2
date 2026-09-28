@@ -1,6 +1,7 @@
 {
   "url": "http://127.0.0.1:5173/",
   "checks": {
+    "selected_sources_must_finish_loading": true,
     "mobile_nine_scenarios_no_overflow": true,
     "section_gap": 32,
     "history_120_initial20_then40": true,
@@ -152,31 +153,31 @@
         {
           "left": 31,
           "right": 111.65625,
-          "height": 48,
+          "height": 50,
           "radioWidth": 20
         },
         {
           "left": 119.65625,
           "right": 200.328125,
-          "height": 48,
+          "height": 50,
           "radioWidth": 20
         },
         {
           "left": 208.328125,
           "right": 288.984375,
-          "height": 48,
+          "height": 50,
           "radioWidth": 20
         },
         {
           "left": 31,
           "right": 111.65625,
-          "height": 48,
+          "height": 50,
           "radioWidth": 20
         },
         {
           "left": 119.65625,
           "right": 200.328125,
-          "height": 48,
+          "height": 50,
           "radioWidth": 20
         }
       ]
@@ -391,9 +392,9 @@
     {
       "filter": "all",
       "sourceMix": [
-        "2017-18-winter",
         "2018-sommer",
-        "2017-sommer"
+        "2017-sommer",
+        "2017-18-winter"
       ],
       "oldSessionUnchanged": true
     },
@@ -407,8 +408,8 @@
     {
       "filter": "2017-sommer,2017-18-winter",
       "sourceMix": [
-        "2017-18-winter",
-        "2017-sommer"
+        "2017-sommer",
+        "2017-18-winter"
       ],
       "oldSessionUnchanged": true
     }

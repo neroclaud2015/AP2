@@ -7,6 +7,7 @@ const all=p=>p.evaluate(()=>new Promise(resolve=>{const r=indexedDB.open('ap2-pr
 const current=async p=>(await all(p)).find(s=>s.test_id===new URL(p.url()).searchParams.get('session'));
 const card=(p,title)=>p.locator('.exam-card').filter({has:p.getByRole('heading',{name:title,exact:true})});
 try{
+ {const c=await context(),p=await c.newPage();let release;const gate=new Promise(r=>release=r);await p.route('**/data/2017_18_winter_arbeitsplanung_segmented.json',async route=>{await gate;await route.continue();});await go(p,'?view=tests&years=2017-sommer,2017-18-winter&module=arbeitsplanung');const start=card(p,'Arbeitsplanung').getByRole('button',{name:'Kurz starten · 6 MC + 2 U',exact:true});await start.waitFor();assert.equal(await start.isDisabled(),true);release();await start.click();await saved(p);checks.selected_sources_must_finish_loading=true;await c.close();}
  for(const mode of ['study','original','module']){const c=await context(),p=await c.newPage();p.on('pageerror',e=>errors.push(e.message));
   if(mode==='study')await go(p,'?view=study&exam=2017-sommer&module=arbeitsplanung&q=1');
   else if(mode==='original'){await go(p,'?view=exams&exam=2017-sommer&module=arbeitsplanung');await p.getByRole('button',{name:'Neue Originalprüfung · Arbeitsplanung',exact:true}).click();await saved(p);}

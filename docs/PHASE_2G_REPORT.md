@@ -37,3 +37,5 @@ All production question data, crops, answers, source registry and ingestion mani
 ## Stop gate
 
 No Firebase project/Web config exists. The application remains usable locally and displays not configured. Complete the Console steps in FIREBASE_SETUP.md, provide only public Firebase Web config, then request Windows ↔ Android/iPad real-account acceptance. No new years, taxonomy, mastery, adaptive planning or AI question generation are included.
+
+Production smoke exposed a slow-source race: the first loaded module bundle enabled cross-year launch before the other selected year loaded. Launch now waits for every selected source; a controlled delayed-response browser regression verifies disabled-then-ready behavior.
