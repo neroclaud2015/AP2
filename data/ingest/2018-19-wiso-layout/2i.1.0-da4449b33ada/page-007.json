@@ -1,0 +1,137 @@
+{
+  "key": "7d49bb347c45c67aa0c98d0b7fd217d1e07796008192f3ba18041bf22a1d19e0",
+  "record_hash": "ab623634c0f4d467bca0f2be346a7648d0399258922e4294521e30044772f591",
+  "record": {
+    "page": 7,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Individually inspected cached original page, printed labels and separators; exact source pixel hashes, no sequential-number inference.",
+    "anchors": [
+      {
+        "anchor_id": "2018-19-wiso-p7-5",
+        "number": "5",
+        "bbox": [
+          50,
+          55,
+          90,
+          86
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 5 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "cd4c4774cc3d6390c5b84bf3e81df6a1ebb92de38412ed801fb3e4fd91fab9ec"
+      },
+      {
+        "anchor_id": "2018-19-wiso-p7-6",
+        "number": "6",
+        "bbox": [
+          298,
+          55,
+          338,
+          86
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 6 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "20ce73d37e4184976fdd0dd62f9e48176cfd9d1cf6e9462277aa48971cb9c819"
+      },
+      {
+        "anchor_id": "2018-19-wiso-p7-7",
+        "number": "7",
+        "bbox": [
+          50,
+          301,
+          90,
+          332
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 7 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "9d52f7cf6c624a389a0596e549be02c4aa612efb0553749c11a143b6773d2324"
+      }
+    ],
+    "regions": [
+      {
+        "page": 7,
+        "bbox": [
+          50,
+          55,
+          295,
+          299
+        ],
+        "role": "primary",
+        "owner": "2018-19-wiso-p7-5",
+        "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          298,
+          55,
+          538,
+          299
+        ],
+        "role": "primary",
+        "owner": "2018-19-wiso-p7-6",
+        "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          50,
+          301,
+          295,
+          541
+        ],
+        "role": "primary",
+        "owner": "2018-19-wiso-p7-7",
+        "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "5",
+        "bbox": [
+          50,
+          55,
+          90,
+          86
+        ],
+        "pixel_sha256": "cd4c4774cc3d6390c5b84bf3e81df6a1ebb92de38412ed801fb3e4fd91fab9ec",
+        "audited_pixel_sha256": "cd4c4774cc3d6390c5b84bf3e81df6a1ebb92de38412ed801fb3e4fd91fab9ec"
+      },
+      {
+        "kind": "heading",
+        "number": "6",
+        "bbox": [
+          298,
+          55,
+          338,
+          86
+        ],
+        "pixel_sha256": "20ce73d37e4184976fdd0dd62f9e48176cfd9d1cf6e9462277aa48971cb9c819",
+        "audited_pixel_sha256": "20ce73d37e4184976fdd0dd62f9e48176cfd9d1cf6e9462277aa48971cb9c819"
+      },
+      {
+        "kind": "heading",
+        "number": "7",
+        "bbox": [
+          50,
+          301,
+          90,
+          332
+        ],
+        "pixel_sha256": "9d52f7cf6c624a389a0596e549be02c4aa612efb0553749c11a143b6773d2324",
+        "audited_pixel_sha256": "9d52f7cf6c624a389a0596e549be02c4aa612efb0553749c11a143b6773d2324"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

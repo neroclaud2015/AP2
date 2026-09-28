@@ -1,0 +1,46 @@
+{
+  "key": "1dc95252ab7a2a35f53616c6cc7cb87e32d76d95fe875c8c6cfc1427aab25ba9",
+  "record_hash": "17289d8c35abcdfb2d64212b20257e06339ed10fc3e6ffeaa9ba4ab442e75c42",
+  "record": {
+    "page": 23,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "continuation",
+    "classification_evidence": "Cached physical page visually inspected; printed question headings individually read, no sequential label inference.",
+    "anchors": [],
+    "regions": [
+      {
+        "page": 23,
+        "bbox": [
+          39,
+          20,
+          522,
+          808
+        ],
+        "role": "continuation",
+        "owner": "2018-19-fa-p22-U5",
+        "evidence": "Physical page 22 starts U5 subpart 1; physical page 23 explicitly has subparts 2 and 3 and printed Ergebnis U5, proving continuation ownership. Preserve page 22 before page 23."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "ownership",
+        "number": "Ergebnis U5",
+        "bbox": [
+          518,
+          745,
+          558,
+          767
+        ],
+        "pixel_sha256": "00446493399cc969ce12a8d48568d858e9f83128830c8a36bf968c3ef69142a1",
+        "audited_pixel_sha256": "00446493399cc969ce12a8d48568d858e9f83128830c8a36bf968c3ef69142a1"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

@@ -27,9 +27,13 @@ export const MODULES:ModuleConfig[]=[
   {id:'A',title:'Gebundene Aufgaben',kind:'multiple_choice',label:'Auswahlaufgaben',questionNumbers:Array.from({length:18},(_,i)=>String(i+1))},
   {id:'B',title:'Ungebundene Aufgaben',kind:'multi_part',label:'Offene Aufgaben',questionNumbers:Array.from({length:6},(_,i)=>`U${i+1}`)},
  ]},
+ {examId:'2018-19-winter',slug:'wiso',title:'WiSo',segmentedPath:'data/2018_19_winter_wiso_segmented.json',answersPath:'data/2018_19_winter_wiso_answers.json',solutionsPath:'data/2018_19_winter_wiso_u_solutions.json',choiceSolutionPage:1,descriptionPage:3,descriptionLabel:'Prüfungsaufgaben-Beschreibung',sharedContextForAllQuestions:true,attachmentPages:[17],durationMinutes:60,durationSource:{pdf:'',page:2,image:'assets/questions/6432e4aebe0150c2dfe3139e/2i.1.0-da4449b33ada/attachment-2-0.png'},sourcePageImages:{3:'assets/questions/6432e4aebe0150c2dfe3139e/2i.1.0-da4449b33ada/attachment-3-1.png',17:'assets/questions/6432e4aebe0150c2dfe3139e/2i.1.0-da4449b33ada/attachment-17-2.png'},parts:[
+  {id:'A',title:'Gebundene Aufgaben',kind:'multiple_choice',label:'Auswahlaufgaben',questionNumbers:Array.from({length:18},(_,i)=>String(i+1))},
+  {id:'B',title:'Ungebundene Aufgaben',kind:'multi_part',label:'Offene Aufgaben',questionNumbers:Array.from({length:6},(_,i)=>`U${i+1}`)},
+ ]},
 ];
 for(const module of MODULES)assertProductionModule(sourceRegistry,module);
-export const EXAM_SESSIONS=[{id:'2017-sommer',label:'Sommer 2017'},{id:'2017-18-winter',label:'Winter 2017/18'},{id:'2018-sommer',label:'Sommer 2018'}];
+export const EXAM_SESSIONS=[{id:'2017-sommer',label:'Sommer 2017'},{id:'2017-18-winter',label:'Winter 2017/18'},{id:'2018-sommer',label:'Sommer 2018'},{id:'2018-19-winter',label:'Winter 2018/19'}];
 export const MODULE_TITLES:Record<string,string>={arbeitsplanung:'Arbeitsplanung',funktionsanalyse:'Funktionsanalyse',wiso:'WiSo'};
 export function examLabel(id:string){return EXAM_SESSIONS.find(e=>e.id===id)?.label??id;}
 export function moduleKey(config:Pick<ModuleConfig,'examId'|'slug'>){return `${config.examId}/${config.slug}`;}

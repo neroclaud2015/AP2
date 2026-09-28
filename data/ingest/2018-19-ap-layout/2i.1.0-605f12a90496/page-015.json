@@ -1,0 +1,61 @@
+{
+  "key": "2d3d907b17c3361573c5ba18ef1a8814d86d9a86fe71ffb68f2a1b9156446121",
+  "record_hash": "98d1b9016bc3b03cc58a3955f23f27d0abeb7083aeba6ce7d298524f5e7e5a42",
+  "record": {
+    "page": 15,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "mixed_questions",
+    "classification_evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+    "anchors": [
+      {
+        "anchor_id": "2018-19-ap-p15-U1",
+        "number": "U1",
+        "bbox": [
+          43,
+          424,
+          76,
+          446
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U1 visually transcribed on physical page 15.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "7e21298719eee1aff6a0dd009c69125d0b22a018feedcde03009478d945c9a39"
+      }
+    ],
+    "regions": [
+      {
+        "page": 15,
+        "bbox": [
+          37,
+          418,
+          569,
+          813
+        ],
+        "role": "primary",
+        "owner": "2018-19-ap-p15-U1",
+        "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U1",
+        "bbox": [
+          43,
+          424,
+          76,
+          446
+        ],
+        "pixel_sha256": "7e21298719eee1aff6a0dd009c69125d0b22a018feedcde03009478d945c9a39",
+        "audited_pixel_sha256": "7e21298719eee1aff6a0dd009c69125d0b22a018feedcde03009478d945c9a39"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

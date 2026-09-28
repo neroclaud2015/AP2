@@ -1,0 +1,51 @@
+{
+  "key": "74b2fafe8ebe0b339774fa1a7a0c2801bf99a76074e2d7e6bed85fcd2c40aa14",
+  "value": {
+    "question_id": "2018-19-wiso-p14-U6",
+    "question_number": "U6",
+    "exam": "2018_19_winter",
+    "module": "WiSo",
+    "solution_source_pdf": "assets/pdfs/c5752757d63db01fd7b3c638.pdf",
+    "solution_source_pdf_available": false,
+    "solution_source_page": 10,
+    "solution_bbox": [
+      18.9,
+      149.97833333333332,
+      567.7,
+      400.87666666666667
+    ],
+    "regions": [
+      {
+        "source_page": 10,
+        "bbox": [
+          18.9,
+          149.97833333333332,
+          567.7,
+          400.87666666666667
+        ]
+      }
+    ],
+    "cropped_solution_image": "assets/official/2018-19-wiso-2f.1.0-cbac13f30ab8/U6.png",
+    "review_status": "auto_ready",
+    "answer_type": "multi_part",
+    "subparts": [
+      {
+        "id": "whole",
+        "label": "Gesamte Aufgabe · Selbstbewertung",
+        "type": "short_text"
+      }
+    ],
+    "source_hash": "c5752757d63db01fd7b3c638d65a9516116962514136ceeb69c6b13fab8bbddc",
+    "extractor_revision": "2018-19-wiso-2f.1.0-cbac13f30ab8",
+    "association_evidence": "Printed U headings and ruled boundaries individually inspected in cached source pixels; each crop belongs to its explicit U label. Whole-task self-assessment only. Handwritten source annotations retained, never converted into scores.",
+    "grading_policy": "Printed subparts only; user self-assessment; no numeric rubric or answer inference.",
+    "source_cache_hashes": {
+      "10": "7dbf120cc53762ce81f32080d6a80f9b0e9c6697f4f5614d11e015666ed180d2"
+    },
+    "bbox_units": "PDF points, top-left"
+  },
+  "value_hash": "ace9a6540e594a5b2bd25603e6823c646b64d197e88ddd6da5d318248c2b4458",
+  "artifacts": {
+    "public/assets/official/2018-19-wiso-2f.1.0-cbac13f30ab8/U6.png": "ba66bf6caf1b56ef760fe8e59bd0795d35a0230ad92c7ee25dd36dac78cf82ef"
+  }
+}

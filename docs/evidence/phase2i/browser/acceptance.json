@@ -1,0 +1,166 @@
+{
+  "url": "http://127.0.0.1:5173/",
+  "checks": {
+    "only_validated_module_available": true,
+    "mc_scored_from_official_source": true,
+    "u_source_self_assessment_persists": true,
+    "original_exam_order_resume_score": true,
+    "all_single_multi_year_filters": true,
+    "existing_session_unchanged": true,
+    "firebase_not_configured": true,
+    "mobile_no_overflow": true
+  },
+  "mixes": [
+    {
+      "filter": "all",
+      "source_mix": [
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p7-8"
+        },
+        {
+          "exam": "2018-19-winter",
+          "question_id": "2018-19-wiso-p11-10"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p13-18"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p8-slot2"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p5-slot3"
+        },
+        {
+          "exam": "2018-sommer",
+          "question_id": "2018-wiso-p6-4"
+        },
+        {
+          "exam": "2018-sommer",
+          "question_id": "2018-wiso-p7-U3"
+        },
+        {
+          "exam": "2017-18-winter",
+          "question_id": "winter-wiso-p10-U5"
+        }
+      ]
+    },
+    {
+      "filter": "2018-19-winter",
+      "source_mix": [
+        {
+          "exam": "2018-19-winter",
+          "question_id": "2018-19-wiso-p13-12"
+        },
+        {
+          "exam": "2018-19-winter",
+          "question_id": "2018-19-wiso-p11-11"
+        },
+        {
+          "exam": "2018-19-winter",
+          "question_id": "2018-19-wiso-p8-U3"
+        },
+        {
+          "exam": "2018-19-winter",
+          "question_id": "2018-19-wiso-p4-U1"
+        },
+        {
+          "exam": "2018-19-winter",
+          "question_id": "2018-19-wiso-p13-13"
+        },
+        {
+          "exam": "2018-19-winter",
+          "question_id": "2018-19-wiso-p5-1"
+        },
+        {
+          "exam": "2018-19-winter",
+          "question_id": "2018-19-wiso-p5-3"
+        },
+        {
+          "exam": "2018-19-winter",
+          "question_id": "2018-19-wiso-p5-2"
+        }
+      ]
+    },
+    {
+      "filter": "2018-sommer",
+      "source_mix": [
+        {
+          "exam": "2018-sommer",
+          "question_id": "2018-wiso-p11-16"
+        },
+        {
+          "exam": "2018-sommer",
+          "question_id": "2018-wiso-p10-14"
+        },
+        {
+          "exam": "2018-sommer",
+          "question_id": "2018-wiso-p11-U6"
+        },
+        {
+          "exam": "2018-sommer",
+          "question_id": "2018-wiso-p6-7"
+        },
+        {
+          "exam": "2018-sommer",
+          "question_id": "2018-wiso-p6-6"
+        },
+        {
+          "exam": "2018-sommer",
+          "question_id": "2018-wiso-p8-10"
+        },
+        {
+          "exam": "2018-sommer",
+          "question_id": "2018-wiso-p7-9"
+        },
+        {
+          "exam": "2018-sommer",
+          "question_id": "2018-wiso-p7-U3"
+        }
+      ]
+    },
+    {
+      "filter": "2017-sommer,2018-19-winter",
+      "source_mix": [
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p5-slot0"
+        },
+        {
+          "exam": "2018-19-winter",
+          "question_id": "2018-19-wiso-p14-16"
+        },
+        {
+          "exam": "2018-19-winter",
+          "question_id": "2018-19-wiso-p7-6"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p4-slot0"
+        },
+        {
+          "exam": "2018-19-winter",
+          "question_id": "2018-19-wiso-p6-U2"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p4-slot4"
+        },
+        {
+          "exam": "2018-19-winter",
+          "question_id": "2018-19-wiso-p11-11"
+        },
+        {
+          "exam": "2017-sommer",
+          "question_id": "wiso_2017-p8-slot1"
+        }
+      ]
+    }
+  ],
+  "isolated_browser": true,
+  "synthetic_records_only": true,
+  "errors": []
+}

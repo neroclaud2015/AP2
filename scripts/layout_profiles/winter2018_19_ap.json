@@ -1,0 +1,1327 @@
+{
+  "profile_id": "portrait-explicit-regions",
+  "scope": "2018-19-ap",
+  "version": "2i.1.0",
+  "exam": "2018_19_winter",
+  "module": "Arbeitsplanung",
+  "source_hash": "683b59deab6083a9f14b26d90b0ff638c67a8960b76693ff763249a82b0ca80f",
+  "source_id": "src-d279a9e64658b5deb0497972",
+  "solution_source_id": "src-c2633744717d8e25ab799ad4",
+  "validated_sources": [
+    "683b59deab6083a9f14b26d90b0ff638c67a8960b76693ff763249a82b0ca80f"
+  ],
+  "name": "2018_19_winter_arbeitsplanung",
+  "expected": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6",
+    "U7",
+    "U8"
+  ],
+  "timing_minutes": 105,
+  "timing_source_page": 2,
+  "description_page": 15,
+  "configuration_complete": true,
+  "blocking_issues": [],
+  "attachment_refs": {
+    "U2": [
+      27,
+      25
+    ],
+    "U3": [
+      27,
+      25
+    ],
+    "U6": [
+      15,
+      26
+    ]
+  },
+  "pages": {
+    "1": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "cover",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "2": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "instructions",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "3": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [
+        {
+          "observed_number": "1",
+          "heading_box": [
+            52,
+            303,
+            75,
+            326
+          ],
+          "visual_patch_sha256": "5dff49d3464dfebcf25e9c7b6a04f1e1eabcab2d1162155b81a647ebc6def344",
+          "regions": [
+            [
+              47,
+              297,
+              550,
+              537
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 1 visually transcribed on physical page 3.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        },
+        {
+          "observed_number": "2",
+          "heading_box": [
+            52,
+            542,
+            77,
+            568
+          ],
+          "visual_patch_sha256": "361d2c767972474e34d092805521bb1d5a0578f465258d43c52ee62be8755471",
+          "regions": [
+            [
+              47,
+              537,
+              550,
+              790
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 2 visually transcribed on physical page 3.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "4": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [
+        {
+          "observed_number": "3",
+          "heading_box": [
+            51,
+            61,
+            79,
+            86
+          ],
+          "visual_patch_sha256": "0022ba8c5aab1bdcf07d7312ffd110858bff0a689896c396e969afcada5945b7",
+          "regions": [
+            [
+              47,
+              53,
+              550,
+              297
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 3 visually transcribed on physical page 4.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        },
+        {
+          "observed_number": "4",
+          "heading_box": [
+            51,
+            303,
+            82,
+            326
+          ],
+          "visual_patch_sha256": "0b9f1bd3b7b6e519245317df5cd2447bf37c1a61653a24efc0efcc61e6b793b4",
+          "regions": [
+            [
+              47,
+              297,
+              292,
+              537
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 4 visually transcribed on physical page 4.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        },
+        {
+          "observed_number": "5",
+          "heading_box": [
+            299,
+            303,
+            330,
+            328
+          ],
+          "visual_patch_sha256": "e019db2532e983f0b4ee901db78021956efcbcdcb87dd7773e6faf050c6d4db2",
+          "regions": [
+            [
+              292,
+              297,
+              550,
+              537
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 5 visually transcribed on physical page 4.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        },
+        {
+          "observed_number": "6",
+          "heading_box": [
+            50,
+            542,
+            78,
+            570
+          ],
+          "visual_patch_sha256": "6fcbe400aa282bd72d9722c76658671ce4364b4a351730f89db7dda11d4198f9",
+          "regions": [
+            [
+              47,
+              537,
+              550,
+              790
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 6 visually transcribed on physical page 4.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "5": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [
+        {
+          "observed_number": "7",
+          "heading_box": [
+            53,
+            62,
+            80,
+            86
+          ],
+          "visual_patch_sha256": "f70d3d977a9ca1495eb82e8eeff4d9c247d1ada4d3f6fd32e8e90b6ff117533a",
+          "regions": [
+            [
+              47,
+              54,
+              550,
+              298
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 7 visually transcribed on physical page 5.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        },
+        {
+          "observed_number": "8",
+          "heading_box": [
+            52,
+            303,
+            82,
+            330
+          ],
+          "visual_patch_sha256": "fd5cfc97b86a591dd876552274c8a4d42b9e682661c31a98efb174c20096a5ef",
+          "regions": [
+            [
+              47,
+              298,
+              550,
+              538
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 8 visually transcribed on physical page 5.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        },
+        {
+          "observed_number": "9",
+          "heading_box": [
+            52,
+            543,
+            80,
+            567
+          ],
+          "visual_patch_sha256": "c6db0587740a1308d35eedf1766d87e2701a82308dbb256c4cf214f5c3123155",
+          "regions": [
+            [
+              47,
+              538,
+              550,
+              790
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 9 visually transcribed on physical page 5.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "6": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [
+        {
+          "observed_number": "10",
+          "heading_box": [
+            48,
+            62,
+            81,
+            85
+          ],
+          "visual_patch_sha256": "841320f9c9871baa1369003011393ef16ad840b51302f3f043f974506e3f41c2",
+          "regions": [
+            [
+              46,
+              53,
+              290,
+              297
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 10 visually transcribed on physical page 6.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        },
+        {
+          "observed_number": "11",
+          "heading_box": [
+            298,
+            62,
+            333,
+            85
+          ],
+          "visual_patch_sha256": "59f5ddef2d789e88f45bf66a9bfd13d27d722bfe72a0e1ab0cfc8f5b0c58f44a",
+          "regions": [
+            [
+              290,
+              53,
+              546,
+              297
+            ],
+            [
+              46,
+              297,
+              546,
+              537
+            ]
+          ],
+          "roles": [
+            "primary",
+            "calculation"
+          ],
+          "visual_evidence": "Printed 11 visually transcribed on physical page 6.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        },
+        {
+          "observed_number": "12",
+          "heading_box": [
+            45,
+            542,
+            83,
+            566
+          ],
+          "visual_patch_sha256": "1e973bdc8ae987e68d5e6fcbd52eaa59c9ae465962e950d4623f2602bdef7106",
+          "regions": [
+            [
+              44,
+              537,
+              550,
+              790
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 12 visually transcribed on physical page 6.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "7": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [
+        {
+          "observed_number": "13",
+          "heading_box": [
+            49,
+            61,
+            81,
+            86
+          ],
+          "visual_patch_sha256": "eeca0a46d75c82fcfde7ca2098684dfae049d4e55974465e262afa94b54e646e",
+          "regions": [
+            [
+              46,
+              54,
+              293,
+              298
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 13 visually transcribed on physical page 7.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        },
+        {
+          "observed_number": "14",
+          "heading_box": [
+            301,
+            61,
+            336,
+            86
+          ],
+          "visual_patch_sha256": "c9145d30849cac8395ed0a7e16c334b68e73c2cebf6677ef547f877f706ef3ef",
+          "regions": [
+            [
+              293,
+              54,
+              546,
+              298
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 14 visually transcribed on physical page 7.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        },
+        {
+          "observed_number": "15",
+          "heading_box": [
+            47,
+            303,
+            80,
+            327
+          ],
+          "visual_patch_sha256": "8ff158cdb990aa7e63d853726bea14c700d12aa46ea752b405986d3458722339",
+          "regions": [
+            [
+              47,
+              298,
+              550,
+              539
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 15 visually transcribed on physical page 7.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        },
+        {
+          "observed_number": "16",
+          "heading_box": [
+            46,
+            543,
+            81,
+            567
+          ],
+          "visual_patch_sha256": "a3697f079b10df4ac058b08fb2f5c34aa7ce4bf60bbae01b434f8730ce7ba323",
+          "regions": [
+            [
+              46,
+              539,
+              290,
+              790
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 16 visually transcribed on physical page 7.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "8": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [
+        {
+          "observed_number": "17",
+          "heading_box": [
+            53,
+            61,
+            86,
+            86
+          ],
+          "visual_patch_sha256": "5d1bd9a07e78cc433a3a3fe6d561e977a033cca3175862d805694e1d7fe19a46",
+          "regions": [
+            [
+              47,
+              54,
+              550,
+              538
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 17 visually transcribed on physical page 8.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        },
+        {
+          "observed_number": "18",
+          "heading_box": [
+            50,
+            543,
+            85,
+            568
+          ],
+          "visual_patch_sha256": "f11f9c17f84fa963facadca660a51db743d111bdfdc30e20cf576624f6b8307a",
+          "regions": [
+            [
+              48,
+              538,
+              293,
+              790
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 18 visually transcribed on physical page 8.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        },
+        {
+          "observed_number": "19",
+          "heading_box": [
+            299,
+            543,
+            336,
+            568
+          ],
+          "visual_patch_sha256": "26b16849fb727e0d7c2eafc23012036d1ab388e4b30a613051acb2f73f87a39b",
+          "regions": [
+            [
+              293,
+              538,
+              550,
+              790
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 19 visually transcribed on physical page 8.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "9": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [
+        {
+          "observed_number": "20",
+          "heading_box": [
+            51,
+            61,
+            85,
+            85
+          ],
+          "visual_patch_sha256": "5400f8d14349afd8e68e51cf8a3a34bff9d7c4f7dafb172d6372226c93e9ebb5",
+          "regions": [
+            [
+              47,
+              54,
+              550,
+              537
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 20 visually transcribed on physical page 9.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        },
+        {
+          "observed_number": "21",
+          "heading_box": [
+            51,
+            542,
+            85,
+            568
+          ],
+          "visual_patch_sha256": "4c4529e03d20e3489ec6f30ce2bf70ddcb83e5b7a751ebb92fb1a94cf00b74d3",
+          "regions": [
+            [
+              47,
+              537,
+              550,
+              790
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 21 visually transcribed on physical page 9.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "10": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [
+        {
+          "observed_number": "22",
+          "heading_box": [
+            51,
+            60,
+            86,
+            85
+          ],
+          "visual_patch_sha256": "05bb2bd465a7030499199c0cea682e68f6a0123e7c21b3709d469d196543af49",
+          "regions": [
+            [
+              48,
+              53,
+              293,
+              297
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 22 visually transcribed on physical page 10.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        },
+        {
+          "observed_number": "23",
+          "heading_box": [
+            301,
+            60,
+            336,
+            85
+          ],
+          "visual_patch_sha256": "ed92087ff26a4ea729bb242517894269061647209142d1e11386f053ae0a7443",
+          "regions": [
+            [
+              293,
+              53,
+              550,
+              297
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 23 visually transcribed on physical page 10.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        },
+        {
+          "observed_number": "24",
+          "heading_box": [
+            50,
+            301,
+            87,
+            327
+          ],
+          "visual_patch_sha256": "47b7ed1f9cab4ac2a1d1019ed15ed2258a3d80156a4beca4370c0806799f728c",
+          "regions": [
+            [
+              47,
+              297,
+              550,
+              537
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 24 visually transcribed on physical page 10.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        },
+        {
+          "observed_number": "25",
+          "heading_box": [
+            47,
+            541,
+            85,
+            567
+          ],
+          "visual_patch_sha256": "1ec9da6732d6ec8c7d98087c0c94d0bd08c445e71b9169244b3d17b8bb3d2e8c",
+          "regions": [
+            [
+              46,
+              537,
+              291,
+              790
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 25 visually transcribed on physical page 10.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        },
+        {
+          "observed_number": "26",
+          "heading_box": [
+            297,
+            541,
+            334,
+            567
+          ],
+          "visual_patch_sha256": "a56f6c44c72c24a03aba1cba0c7b399862005b7ebc2daab4c39216ff71bcd6db",
+          "regions": [
+            [
+              291,
+              537,
+              550,
+              790
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 26 visually transcribed on physical page 10.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "11": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [
+        {
+          "observed_number": "27",
+          "heading_box": [
+            51,
+            61,
+            86,
+            85
+          ],
+          "visual_patch_sha256": "b8a714d98f92a9ed6ea6b6bbe512f57374f27ba12d7873eed731fc169f4669e3",
+          "regions": [
+            [
+              47,
+              54,
+              550,
+              297
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed 27 visually transcribed on physical page 11.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        },
+        {
+          "observed_number": "28",
+          "heading_box": [
+            50,
+            302,
+            84,
+            327
+          ],
+          "visual_patch_sha256": "ab1a2a97ab80acf4e780682be14dc0c32147e215b09275903d386e353b9a41e1",
+          "regions": [
+            [
+              47,
+              297,
+              548,
+              537
+            ],
+            [
+              47,
+              537,
+              294,
+              790
+            ]
+          ],
+          "roles": [
+            "primary",
+            "calculation"
+          ],
+          "visual_evidence": "Printed 28 visually transcribed on physical page 11.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "12": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "answer_sheet_instructions",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "13": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "cover",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "14": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "instructions",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "15": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [
+        {
+          "observed_number": "U1",
+          "heading_box": [
+            43,
+            424,
+            76,
+            446
+          ],
+          "visual_patch_sha256": "7e21298719eee1aff6a0dd009c69125d0b22a018feedcde03009478d945c9a39",
+          "regions": [
+            [
+              37,
+              418,
+              569,
+              813
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U1 visually transcribed on physical page 15.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "16": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [
+        {
+          "observed_number": "U2",
+          "heading_box": [
+            27,
+            293,
+            61,
+            315
+          ],
+          "visual_patch_sha256": "36ca889265a115644b8b5a7e40e757a2e48fcb64c74abefe5f4a33b175bded60",
+          "regions": [
+            [
+              18,
+              285,
+              552,
+              813
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U2 visually transcribed on physical page 16.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        }
+      ],
+      "explicit_regions": [
+        {
+          "observed_owner_label": "U1",
+          "owner": "2018-19-ap-p15-U1",
+          "bbox": [
+            18,
+            18,
+            552,
+            285
+          ],
+          "role": "continuation",
+          "evidence_box": [
+            505,
+            216,
+            548,
+            242
+          ],
+          "visual_patch_sha256": "68b752790a1af3c3e48fdd973ed68db5dd23c19f24241a2b3d63f0a93620c006",
+          "evidence": "Explicit printed Ergebnis U1 on this continuation panel; subpart 3 follows U1 parts 1 and 2 on page 15, whose footer says Weiter nächste Seite."
+        }
+      ]
+    },
+    "17": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [
+        {
+          "observed_number": "U3",
+          "heading_box": [
+            43,
+            27,
+            76,
+            48
+          ],
+          "visual_patch_sha256": "d232b2b3ba1b56f7b42e327eaa05e1514e041169a69ff169397d3422c6d97854",
+          "regions": [
+            [
+              37,
+              18,
+              569,
+              813
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U3 visually transcribed on physical page 17.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "18": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [
+        {
+          "observed_number": "U4",
+          "heading_box": [
+            28,
+            27,
+            61,
+            48
+          ],
+          "visual_patch_sha256": "d4bfa9e288d5b8f7aa54e704bc09d2bfa41de4ed5421b61f98d11ecadc63da0c",
+          "regions": [
+            [
+              18,
+              18,
+              552,
+              813
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U4 visually transcribed on physical page 18.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "19": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [
+        {
+          "observed_number": "U5",
+          "heading_box": [
+            43,
+            27,
+            76,
+            48
+          ],
+          "visual_patch_sha256": "4211fac50b627198f5e7ba7de3b4385abc1fb915c42c4223432087b03e80fa66",
+          "regions": [
+            [
+              37,
+              18,
+              569,
+              813
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U5 visually transcribed on physical page 19.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "20": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [
+        {
+          "observed_number": "U6",
+          "heading_box": [
+            28,
+            27,
+            61,
+            48
+          ],
+          "visual_patch_sha256": "30412a46107f48c092e58768e21d9a7708f4517d8546096ed49837f1ad5f65ad",
+          "regions": [
+            [
+              18,
+              18,
+              552,
+              813
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U6 visually transcribed on physical page 20.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "21": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [
+        {
+          "observed_number": "U7",
+          "heading_box": [
+            43,
+            27,
+            76,
+            48
+          ],
+          "visual_patch_sha256": "1a7456240bfbf4da0860c08e0efd6efb2bbeb364cda297db9a6cecbe274102d9",
+          "regions": [
+            [
+              37,
+              18,
+              569,
+              813
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U7 visually transcribed on physical page 21.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "22": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [],
+      "explicit_regions": [
+        {
+          "observed_owner_label": "U7",
+          "owner": "2018-19-ap-p21-U7",
+          "bbox": [
+            18,
+            18,
+            552,
+            813
+          ],
+          "role": "continuation",
+          "evidence_box": [
+            505,
+            743,
+            548,
+            765
+          ],
+          "visual_patch_sha256": "d2dfc3ecba9c934d0ccdd67c3d567b78ae89c04eb2a240137fed9472a5281a32",
+          "evidence": "Explicit printed Ergebnis U7 on this continuation page; subpart 3 concerns the same Softstarter as page 21 parts 1 and 2, whose footer says Weiter nächste Seite."
+        }
+      ]
+    },
+    "23": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "mixed_questions",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [
+        {
+          "observed_number": "U8",
+          "heading_box": [
+            43,
+            27,
+            76,
+            48
+          ],
+          "visual_patch_sha256": "eaa820a33e3208e27e91dbe87f15cfaa8185c5f116b4975613385bb325b05fa9",
+          "regions": [
+            [
+              37,
+              18,
+              569,
+              813
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Printed U8 visually transcribed on physical page 23.",
+          "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "24": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "examiner_scoring",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "25": {
+      "geometry": [
+        1190.0,
+        841.0
+      ],
+      "classification": "attachment",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "26": {
+      "geometry": [
+        1190.0,
+        841.0
+      ],
+      "classification": "attachment",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "27": {
+      "geometry": [
+        1190.0,
+        841.0
+      ],
+      "classification": "attachment",
+      "evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+      "slots": [],
+      "explicit_regions": []
+    }
+  },
+  "attachment_crops": [
+    {
+      "page": 2,
+      "bbox": [
+        52,
+        23,
+        370,
+        40
+      ],
+      "title": "Zeitvorgabe · insgesamt 105 Minuten für Teil A und Teil B",
+      "question_numbers": []
+    },
+    {
+      "page": 15,
+      "bbox": [
+        37,
+        18,
+        569,
+        418
+      ],
+      "title": "Prüfungsaufgaben-Beschreibung · Glühofenanlage",
+      "question_numbers": [
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6",
+        "U7",
+        "U8"
+      ]
+    },
+    {
+      "page": 25,
+      "bbox": [
+        30,
+        18,
+        588,
+        816
+      ],
+      "title": "Stückliste · Blatt 2 von 3",
+      "question_numbers": [
+        "U2",
+        "U3"
+      ]
+    },
+    {
+      "page": 26,
+      "bbox": [
+        10,
+        18,
+        1180,
+        820
+      ],
+      "title": "Schaltplan / GRAFCET Glühofenanlage · Blatt 3 von 3",
+      "question_numbers": [
+        "U4",
+        "U5",
+        "U6"
+      ]
+    },
+    {
+      "page": 27,
+      "bbox": [
+        10,
+        18,
+        1180,
+        820
+      ],
+      "title": "Umschaltgetriebe · Blatt 1 von 3",
+      "question_numbers": [
+        "U2",
+        "U3"
+      ]
+    }
+  ],
+  "description_crop": {
+    "page": 15,
+    "bbox": [
+      37,
+      18,
+      569,
+      418
+    ]
+  }
+}

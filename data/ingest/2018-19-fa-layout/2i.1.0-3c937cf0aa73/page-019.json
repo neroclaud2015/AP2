@@ -1,0 +1,61 @@
+{
+  "key": "a0561b5bb9778d0e4bcb2ac3702487f0d8720ec69c0992f83254c8d81ae06460",
+  "record_hash": "2ef5f51a10ecd54dcc9e965f3ec2ea86c83021f2c092320c15668ba6215022ab",
+  "record": {
+    "page": 19,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "mixed_questions",
+    "classification_evidence": "Cached physical page visually inspected; printed question headings individually read, no sequential label inference.",
+    "anchors": [
+      {
+        "anchor_id": "2018-19-fa-p19-U1",
+        "number": "U1",
+        "bbox": [
+          44,
+          347,
+          70,
+          367
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed heading U1 visually read on physical page 19; exact pixel fingerprint binds this transcription.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "ad56286bd0e0fdbe319564bf04fbfd28a6a1fd86f497b1112ee0983a7ca0426c"
+      }
+    ],
+    "regions": [
+      {
+        "page": 19,
+        "bbox": [
+          39,
+          342,
+          520,
+          806
+        ],
+        "role": "primary",
+        "owner": "2018-19-fa-p19-U1",
+        "evidence": "Complete printed question U1 panel including diagrams, tables and response area; neighboring questions and administrative marking examples excluded."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U1",
+        "bbox": [
+          44,
+          347,
+          70,
+          367
+        ],
+        "pixel_sha256": "ad56286bd0e0fdbe319564bf04fbfd28a6a1fd86f497b1112ee0983a7ca0426c",
+        "audited_pixel_sha256": "ad56286bd0e0fdbe319564bf04fbfd28a6a1fd86f497b1112ee0983a7ca0426c"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

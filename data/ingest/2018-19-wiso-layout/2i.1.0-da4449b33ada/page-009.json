@@ -1,0 +1,123 @@
+{
+  "key": "ab23fa23dd1e1eb3c820c3f9d69e9e2ccb07618393faa76ec6c1271462f2b792",
+  "record_hash": "5ba6408e84fad90db7e3c989161a28cfbb39541c7c87d2444e33db8d20762b04",
+  "record": {
+    "page": 9,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Individually inspected cached original page, printed labels and separators; exact source pixel hashes, no sequential-number inference.",
+    "anchors": [
+      {
+        "anchor_id": "2018-19-wiso-p9-8",
+        "number": "8",
+        "bbox": [
+          50,
+          541,
+          90,
+          572
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 8 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "96eabfcfb1fd8f2924374e4f6d52d7339949147b0ac0e2be5aba251806629cd9"
+      },
+      {
+        "anchor_id": "2018-19-wiso-p9-9",
+        "number": "9",
+        "bbox": [
+          298,
+          541,
+          338,
+          572
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 9 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "420b5c2db0aaec8ae7678e29bc116d798c839744923706a0f72d938a3015a06f"
+      }
+    ],
+    "regions": [
+      {
+        "page": 9,
+        "bbox": [
+          50,
+          541,
+          295,
+          778
+        ],
+        "role": "primary",
+        "owner": "2018-19-wiso-p9-8",
+        "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          298,
+          541,
+          538,
+          778
+        ],
+        "role": "primary",
+        "owner": "2018-19-wiso-p9-9",
+        "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          48,
+          50,
+          540,
+          539
+        ],
+        "role": "continuation",
+        "owner": "2018-19-wiso-p8-U3",
+        "evidence": "Printed Ergebnis U3 in this response panel identifies ownership; numbered subquestions continue from the primary page. Separator excludes MC below."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "8",
+        "bbox": [
+          50,
+          541,
+          90,
+          572
+        ],
+        "pixel_sha256": "96eabfcfb1fd8f2924374e4f6d52d7339949147b0ac0e2be5aba251806629cd9",
+        "audited_pixel_sha256": "96eabfcfb1fd8f2924374e4f6d52d7339949147b0ac0e2be5aba251806629cd9"
+      },
+      {
+        "kind": "heading",
+        "number": "9",
+        "bbox": [
+          298,
+          541,
+          338,
+          572
+        ],
+        "pixel_sha256": "420b5c2db0aaec8ae7678e29bc116d798c839744923706a0f72d938a3015a06f",
+        "audited_pixel_sha256": "420b5c2db0aaec8ae7678e29bc116d798c839744923706a0f72d938a3015a06f"
+      },
+      {
+        "kind": "ownership",
+        "number": "U3",
+        "bbox": [
+          490,
+          325,
+          538,
+          425
+        ],
+        "pixel_sha256": "48ef727032d7e9ede4eef29c23ee996057705878709295e4ecccb22709152363",
+        "audited_pixel_sha256": "48ef727032d7e9ede4eef29c23ee996057705878709295e4ecccb22709152363"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

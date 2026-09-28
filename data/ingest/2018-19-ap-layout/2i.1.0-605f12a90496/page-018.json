@@ -1,0 +1,61 @@
+{
+  "key": "fad6f4eb6e2f841de6ea44ad8ff8ece971837449b829a650ded45a42a99dfb2a",
+  "record_hash": "a2491751c546c255941dea28b591090f9835be05588b56804f489c652c016bb4",
+  "record": {
+    "page": 18,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "mixed_questions",
+    "classification_evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+    "anchors": [
+      {
+        "anchor_id": "2018-19-ap-p18-U4",
+        "number": "U4",
+        "bbox": [
+          28,
+          27,
+          61,
+          48
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U4 visually transcribed on physical page 18.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "d4bfa9e288d5b8f7aa54e704bc09d2bfa41de4ed5421b61f98d11ecadc63da0c"
+      }
+    ],
+    "regions": [
+      {
+        "page": 18,
+        "bbox": [
+          18,
+          18,
+          552,
+          813
+        ],
+        "role": "primary",
+        "owner": "2018-19-ap-p18-U4",
+        "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U4",
+        "bbox": [
+          28,
+          27,
+          61,
+          48
+        ],
+        "pixel_sha256": "d4bfa9e288d5b8f7aa54e704bc09d2bfa41de4ed5421b61f98d11ecadc63da0c",
+        "audited_pixel_sha256": "d4bfa9e288d5b8f7aa54e704bc09d2bfa41de4ed5421b61f98d11ecadc63da0c"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

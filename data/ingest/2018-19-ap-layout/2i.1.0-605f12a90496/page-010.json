@@ -1,0 +1,213 @@
+{
+  "key": "f34da6569ddb42f95d1eaca2635ed2fae36532193849f5bfc4bea525d2b06524",
+  "record_hash": "6e68072cfed0f06399e3b21525fa685abbfe3b3bcd5a79e41cf79560c5a6311b",
+  "record": {
+    "page": 10,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "mixed_questions",
+    "classification_evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+    "anchors": [
+      {
+        "anchor_id": "2018-19-ap-p10-22",
+        "number": "22",
+        "bbox": [
+          51,
+          60,
+          86,
+          85
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 22 visually transcribed on physical page 10.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "05bb2bd465a7030499199c0cea682e68f6a0123e7c21b3709d469d196543af49"
+      },
+      {
+        "anchor_id": "2018-19-ap-p10-23",
+        "number": "23",
+        "bbox": [
+          301,
+          60,
+          336,
+          85
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 23 visually transcribed on physical page 10.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "ed92087ff26a4ea729bb242517894269061647209142d1e11386f053ae0a7443"
+      },
+      {
+        "anchor_id": "2018-19-ap-p10-24",
+        "number": "24",
+        "bbox": [
+          50,
+          301,
+          87,
+          327
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 24 visually transcribed on physical page 10.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "47b7ed1f9cab4ac2a1d1019ed15ed2258a3d80156a4beca4370c0806799f728c"
+      },
+      {
+        "anchor_id": "2018-19-ap-p10-25",
+        "number": "25",
+        "bbox": [
+          47,
+          541,
+          85,
+          567
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 25 visually transcribed on physical page 10.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "1ec9da6732d6ec8c7d98087c0c94d0bd08c445e71b9169244b3d17b8bb3d2e8c"
+      },
+      {
+        "anchor_id": "2018-19-ap-p10-26",
+        "number": "26",
+        "bbox": [
+          297,
+          541,
+          334,
+          567
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 26 visually transcribed on physical page 10.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "a56f6c44c72c24a03aba1cba0c7b399862005b7ebc2daab4c39216ff71bcd6db"
+      }
+    ],
+    "regions": [
+      {
+        "page": 10,
+        "bbox": [
+          48,
+          53,
+          293,
+          297
+        ],
+        "role": "primary",
+        "owner": "2018-19-ap-p10-22",
+        "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+      },
+      {
+        "page": 10,
+        "bbox": [
+          293,
+          53,
+          550,
+          297
+        ],
+        "role": "primary",
+        "owner": "2018-19-ap-p10-23",
+        "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+      },
+      {
+        "page": 10,
+        "bbox": [
+          47,
+          297,
+          550,
+          537
+        ],
+        "role": "primary",
+        "owner": "2018-19-ap-p10-24",
+        "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+      },
+      {
+        "page": 10,
+        "bbox": [
+          46,
+          537,
+          291,
+          790
+        ],
+        "role": "primary",
+        "owner": "2018-19-ap-p10-25",
+        "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+      },
+      {
+        "page": 10,
+        "bbox": [
+          291,
+          537,
+          550,
+          790
+        ],
+        "role": "primary",
+        "owner": "2018-19-ap-p10-26",
+        "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "22",
+        "bbox": [
+          51,
+          60,
+          86,
+          85
+        ],
+        "pixel_sha256": "05bb2bd465a7030499199c0cea682e68f6a0123e7c21b3709d469d196543af49",
+        "audited_pixel_sha256": "05bb2bd465a7030499199c0cea682e68f6a0123e7c21b3709d469d196543af49"
+      },
+      {
+        "kind": "heading",
+        "number": "23",
+        "bbox": [
+          301,
+          60,
+          336,
+          85
+        ],
+        "pixel_sha256": "ed92087ff26a4ea729bb242517894269061647209142d1e11386f053ae0a7443",
+        "audited_pixel_sha256": "ed92087ff26a4ea729bb242517894269061647209142d1e11386f053ae0a7443"
+      },
+      {
+        "kind": "heading",
+        "number": "24",
+        "bbox": [
+          50,
+          301,
+          87,
+          327
+        ],
+        "pixel_sha256": "47b7ed1f9cab4ac2a1d1019ed15ed2258a3d80156a4beca4370c0806799f728c",
+        "audited_pixel_sha256": "47b7ed1f9cab4ac2a1d1019ed15ed2258a3d80156a4beca4370c0806799f728c"
+      },
+      {
+        "kind": "heading",
+        "number": "25",
+        "bbox": [
+          47,
+          541,
+          85,
+          567
+        ],
+        "pixel_sha256": "1ec9da6732d6ec8c7d98087c0c94d0bd08c445e71b9169244b3d17b8bb3d2e8c",
+        "audited_pixel_sha256": "1ec9da6732d6ec8c7d98087c0c94d0bd08c445e71b9169244b3d17b8bb3d2e8c"
+      },
+      {
+        "kind": "heading",
+        "number": "26",
+        "bbox": [
+          297,
+          541,
+          334,
+          567
+        ],
+        "pixel_sha256": "a56f6c44c72c24a03aba1cba0c7b399862005b7ebc2daab4c39216ff71bcd6db",
+        "audited_pixel_sha256": "a56f6c44c72c24a03aba1cba0c7b399862005b7ebc2daab4c39216ff71bcd6db"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

@@ -49,6 +49,7 @@ jobs:
       - run: python scripts/publish_module_year_filter.py
       - run: python scripts/publish_phase2f.py
       - run: python scripts/publish_phase2g.py
+      - run: python scripts/publish_phase2i.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

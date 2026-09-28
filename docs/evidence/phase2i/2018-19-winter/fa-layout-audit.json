@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "phase": "2i",
+  "source_id": "src-eb36ca19392dc0cd95f3c9db",
+  "solution_source_id": "src-5e50edfd247e4acb1173cdfc",
+  "source_hash": "6cbd662e2f9f849ffbd55a4aaa6f16ab35a104b833964178901da066a7c6cff8",
+  "source_manifest": "data/ingest/registered-6cbd662e2f9f849ffbd55a4a_source_manifest.json",
+  "layout_config": "scripts/layout_profiles/winter2018_19_fa.json",
+  "config_sha256": "31925c78e4c1b67938990b69307ffcc1d50619d080a1db68ab4072b1319fb839",
+  "status": "layout_verified",
+  "production_status": "not_promoted",
+  "counts": {
+    "multiple_choice": 28,
+    "written": 8,
+    "heading_fingerprints": 36,
+    "continuation_fingerprints": 1,
+    "physical_pages": 30,
+    "layout_needs_review": 0
+  },
+  "validation": {
+    "status": "compatible",
+    "observed": 36,
+    "expected": 36,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 30
+  },
+  "visual_review": {
+    "all_printed_question_headings_individually_observed": true,
+    "heading_proof_contact_sheet": "private/phase2i/fa/heading-proofs.jpg",
+    "question_previews": "private/phase2i/fa/question-*.png",
+    "blank_pages": [
+      14,
+      15,
+      16,
+      27,
+      28
+    ],
+    "cover_pages": [
+      1,
+      17
+    ],
+    "instruction_pages": [
+      2,
+      18
+    ],
+    "answer_marking_examples_excluded": [
+      3,
+      13
+    ],
+    "question_order": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "U1",
+      "U2",
+      "U3",
+      "U4",
+      "U5",
+      "U6",
+      "U7",
+      "U8"
+    ]
+  },
+  "timing": {
+    "minutes": 105,
+    "physical_page": 2,
+    "observed_text": "Vorgabezeit: Insgesamt 105 min für Teil A und Teil B"
+  },
+  "shared_context": {
+    "physical_page": 8,
+    "observed_scope": "Die Aufgaben 13 bis 15 beziehen sich auf die nachfolgende Beschreibung.",
+    "question_numbers": [
+      "13",
+      "14",
+      "15"
+    ],
+    "not_attached_to": [
+      "16",
+      "17",
+      "18"
+    ],
+    "content": [
+      "Technologieschema",
+      "Zeitablaufplan",
+      "Funktionsplan"
+    ]
+  },
+  "description": {
+    "physical_page": 19,
+    "bbox": [
+      39,
+      16,
+      566,
+      341
+    ],
+    "question_numbers": [
+      "U1",
+      "U2",
+      "U3",
+      "U4",
+      "U5",
+      "U6",
+      "U7",
+      "U8"
+    ],
+    "title": "Prüfungsaufgaben-Beschreibung",
+    "subject": "Serviceunternehmen für Drucklufttechnik: Kompressor, Lecksuche, Druckluftkupplung"
+  },
+  "continuations": [
+    {
+      "question_number": "U5",
+      "owner": "2018-19-fa-p22-U5",
+      "ordered_pages": [
+        22,
+        23
+      ],
+      "evidence": "Printed U5 on page22, subpart1; page23 subparts2/3 and explicit Ergebnis U5.",
+      "preserved_content": [
+        "Hubzylinder diagram and values",
+        "Etikettiermaschine layout",
+        "Schlauchlänge/Luftdurchfluss graph",
+        "subparts1,2,3"
+      ]
+    }
+  ],
+  "attachment_mappings": [
+    {
+      "question_numbers": [
+        "U2"
+      ],
+      "page": 29,
+      "printed_reference": "Blatt 1 von 2: Schaltplan",
+      "printed_attachment_label": "Blatt: 1(2)",
+      "bbox": [
+        28,
+        24,
+        548,
+        814
+      ],
+      "content_complete": true,
+      "orientation": "Original scan is sideways; crop preserves pixels. Optional display rotation 90 degrees counterclockwise needed for upright reading; not implemented in shared engine by this task."
+    },
+    {
+      "question_numbers": [
+        "U7"
+      ],
+      "page": 30,
+      "printed_reference": "Blatt 2 von 2: Pneumatische Einscheibenkupplung",
+      "printed_attachment_label": "Blatt: 2(2)",
+      "bbox": [
+        36,
+        27,
+        1150,
+        814
+      ],
+      "content_complete": true,
+      "parts_list_positions": "1–19, present on same sheet",
+      "required_attachments_missing": false
+    }
+  ],
+  "safety_checks": {
+    "cached_artifacts_verified": 60,
+    "heading_tamper_fails_closed": true,
+    "continuation_tamper_fails_closed": true,
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "registry_written": false,
+    "formal_public_records_written": false,
+    "old_data_modified": false
+  },
+  "scope_note": "Layout only. Official answers and approval for promotion are separate gates; parent reported FA Q7/Q21/Q27 official-answer extraction requires Review. This audit does not override that gate."
+}

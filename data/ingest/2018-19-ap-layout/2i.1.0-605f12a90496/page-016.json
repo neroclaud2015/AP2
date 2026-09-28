@@ -1,0 +1,85 @@
+{
+  "key": "09b4ce6ee8d7bb5917d2676c91027ee8379d9ccf3d630d285e4115d6b6b04dda",
+  "record_hash": "f8c12200dc8459b238ea12bf5fccb96b14395fb7f3cb7ce1d950695a5a85758d",
+  "record": {
+    "page": 16,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "mixed_questions",
+    "classification_evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+    "anchors": [
+      {
+        "anchor_id": "2018-19-ap-p16-U2",
+        "number": "U2",
+        "bbox": [
+          27,
+          293,
+          61,
+          315
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U2 visually transcribed on physical page 16.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "36ca889265a115644b8b5a7e40e757a2e48fcb64c74abefe5f4a33b175bded60"
+      }
+    ],
+    "regions": [
+      {
+        "page": 16,
+        "bbox": [
+          18,
+          285,
+          552,
+          813
+        ],
+        "role": "primary",
+        "owner": "2018-19-ap-p16-U2",
+        "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+      },
+      {
+        "page": 16,
+        "bbox": [
+          18,
+          18,
+          552,
+          285
+        ],
+        "role": "continuation",
+        "owner": "2018-19-ap-p15-U1",
+        "evidence": "Explicit printed Ergebnis U1 on this continuation panel; subpart 3 follows U1 parts 1 and 2 on page 15, whose footer says Weiter nächste Seite."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U2",
+        "bbox": [
+          27,
+          293,
+          61,
+          315
+        ],
+        "pixel_sha256": "36ca889265a115644b8b5a7e40e757a2e48fcb64c74abefe5f4a33b175bded60",
+        "audited_pixel_sha256": "36ca889265a115644b8b5a7e40e757a2e48fcb64c74abefe5f4a33b175bded60"
+      },
+      {
+        "kind": "ownership",
+        "number": "U1",
+        "bbox": [
+          505,
+          216,
+          548,
+          242
+        ],
+        "pixel_sha256": "68b752790a1af3c3e48fdd973ed68db5dd23c19f24241a2b3d63f0a93620c006",
+        "audited_pixel_sha256": "68b752790a1af3c3e48fdd973ed68db5dd23c19f24241a2b3d63f0a93620c006"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

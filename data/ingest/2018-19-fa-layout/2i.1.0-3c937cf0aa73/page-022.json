@@ -1,0 +1,99 @@
+{
+  "key": "885554e208f3fa5e693ba8e318f3ed076d4d3fa757ea3b2a4819f6c4391754b0",
+  "record_hash": "8c0642aaf9b6b734f4f620c259b17056cc49cee7b3c6ee2651c0cfd98b1594b0",
+  "record": {
+    "page": 22,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "mixed_questions",
+    "classification_evidence": "Cached physical page visually inspected; printed question headings individually read, no sequential label inference.",
+    "anchors": [
+      {
+        "anchor_id": "2018-19-fa-p22-U4",
+        "number": "U4",
+        "bbox": [
+          29,
+          26,
+          58,
+          44
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed heading U4 visually read on physical page 22; exact pixel fingerprint binds this transcription.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "1b2f78db9229bc837aaa6920b38dbd79c445fa0d26ff9c0b6a35ab71dc6a1f19"
+      },
+      {
+        "anchor_id": "2018-19-fa-p22-U5",
+        "number": "U5",
+        "bbox": [
+          27,
+          422,
+          56,
+          439
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed heading U5 visually read on physical page 22; exact pixel fingerprint binds this transcription.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "f3152f9c771902695d7e0c6b53ce27afb901b293e9ad6ea2f142704be1feb69c"
+      }
+    ],
+    "regions": [
+      {
+        "page": 22,
+        "bbox": [
+          23,
+          20,
+          505,
+          413
+        ],
+        "role": "primary",
+        "owner": "2018-19-fa-p22-U4",
+        "evidence": "Complete printed question U4 panel including diagrams, tables and response area; neighboring questions and administrative marking examples excluded."
+      },
+      {
+        "page": 22,
+        "bbox": [
+          22,
+          417,
+          503,
+          809
+        ],
+        "role": "primary",
+        "owner": "2018-19-fa-p22-U5",
+        "evidence": "Complete printed question U5 panel including diagrams, tables and response area; neighboring questions and administrative marking examples excluded."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U4",
+        "bbox": [
+          29,
+          26,
+          58,
+          44
+        ],
+        "pixel_sha256": "1b2f78db9229bc837aaa6920b38dbd79c445fa0d26ff9c0b6a35ab71dc6a1f19",
+        "audited_pixel_sha256": "1b2f78db9229bc837aaa6920b38dbd79c445fa0d26ff9c0b6a35ab71dc6a1f19"
+      },
+      {
+        "kind": "heading",
+        "number": "U5",
+        "bbox": [
+          27,
+          422,
+          56,
+          439
+        ],
+        "pixel_sha256": "f3152f9c771902695d7e0c6b53ce27afb901b293e9ad6ea2f142704be1feb69c",
+        "audited_pixel_sha256": "f3152f9c771902695d7e0c6b53ce27afb901b293e9ad6ea2f142704be1feb69c"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

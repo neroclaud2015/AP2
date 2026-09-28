@@ -1,0 +1,61 @@
+{
+  "key": "59b3b4dd2b15e5275b215ebe1c56efe7a046809bfe63306d3055c58348022251",
+  "record_hash": "128ba8ca8adf3c85741c5b8f86dd43d5b3731c92bbd4b8ce572eacea6c96237c",
+  "record": {
+    "page": 4,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "U1 is printed sideways in the source. Original orientation retained; heading U1 directly inspected. Entire flow diagram and response fields belong to U1.",
+    "anchors": [
+      {
+        "anchor_id": "2018-19-wiso-p4-U1",
+        "number": "U1",
+        "bbox": [
+          49,
+          715,
+          90,
+          779
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U1 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "fb9a23ba89f964b5578690cb230fa8656c95630e5101ef8d379bd401b3aaf7e0"
+      }
+    ],
+    "regions": [
+      {
+        "page": 4,
+        "bbox": [
+          48,
+          50,
+          540,
+          780
+        ],
+        "role": "primary",
+        "owner": "2018-19-wiso-p4-U1",
+        "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U1",
+        "bbox": [
+          49,
+          715,
+          90,
+          779
+        ],
+        "pixel_sha256": "fb9a23ba89f964b5578690cb230fa8656c95630e5101ef8d379bd401b3aaf7e0",
+        "audited_pixel_sha256": "fb9a23ba89f964b5578690cb230fa8656c95630e5101ef8d379bd401b3aaf7e0"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

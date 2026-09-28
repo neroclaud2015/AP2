@@ -1,0 +1,99 @@
+{
+  "key": "b6892891c2172efabc4bfc278410418d8857c90c00765ea6e9c8424b61fb1e59",
+  "record_hash": "2cbfd17b2cf7f674e18114402970182f615f0dd02cbd002664d9987eefebedd2",
+  "record": {
+    "page": 3,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "mixed_questions",
+    "classification_evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+    "anchors": [
+      {
+        "anchor_id": "2018-19-ap-p3-1",
+        "number": "1",
+        "bbox": [
+          52,
+          303,
+          75,
+          326
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 1 visually transcribed on physical page 3.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "5dff49d3464dfebcf25e9c7b6a04f1e1eabcab2d1162155b81a647ebc6def344"
+      },
+      {
+        "anchor_id": "2018-19-ap-p3-2",
+        "number": "2",
+        "bbox": [
+          52,
+          542,
+          77,
+          568
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 2 visually transcribed on physical page 3.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "361d2c767972474e34d092805521bb1d5a0578f465258d43c52ee62be8755471"
+      }
+    ],
+    "regions": [
+      {
+        "page": 3,
+        "bbox": [
+          47,
+          297,
+          550,
+          537
+        ],
+        "role": "primary",
+        "owner": "2018-19-ap-p3-1",
+        "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+      },
+      {
+        "page": 3,
+        "bbox": [
+          47,
+          537,
+          550,
+          790
+        ],
+        "role": "primary",
+        "owner": "2018-19-ap-p3-2",
+        "evidence": "Complete task panel, options, diagrams and answer areas; adjacent task panels excluded."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "1",
+        "bbox": [
+          52,
+          303,
+          75,
+          326
+        ],
+        "pixel_sha256": "5dff49d3464dfebcf25e9c7b6a04f1e1eabcab2d1162155b81a647ebc6def344",
+        "audited_pixel_sha256": "5dff49d3464dfebcf25e9c7b6a04f1e1eabcab2d1162155b81a647ebc6def344"
+      },
+      {
+        "kind": "heading",
+        "number": "2",
+        "bbox": [
+          52,
+          542,
+          77,
+          568
+        ],
+        "pixel_sha256": "361d2c767972474e34d092805521bb1d5a0578f465258d43c52ee62be8755471",
+        "audited_pixel_sha256": "361d2c767972474e34d092805521bb1d5a0578f465258d43c52ee62be8755471"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

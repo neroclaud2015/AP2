@@ -1,0 +1,99 @@
+{
+  "key": "792354b41b3c48bd6b8b210efaa086fff1f4c33847486792a781501566bd3dfa",
+  "record_hash": "4dd32845f496b30dc7e767407a2875636156d64228ff423c52717650206d2195",
+  "record": {
+    "page": 3,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "mixed_questions",
+    "classification_evidence": "Cached physical page visually inspected; printed question headings individually read, no sequential label inference.",
+    "anchors": [
+      {
+        "anchor_id": "2018-19-fa-p3-1",
+        "number": "1",
+        "bbox": [
+          52,
+          301,
+          69,
+          322
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed heading 1 visually read on physical page 3; exact pixel fingerprint binds this transcription.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "da38bde5b8b74445cf03120aabe501fc4a8debe4a9d169ba0301096fc564d019"
+      },
+      {
+        "anchor_id": "2018-19-fa-p3-2",
+        "number": "2",
+        "bbox": [
+          49,
+          541,
+          67,
+          563
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed heading 2 visually read on physical page 3; exact pixel fingerprint binds this transcription.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "c8186a7abb1cbdc02b132adbb94d9d0440cb61a815efd1e339b83b42b8e6f8d8"
+      }
+    ],
+    "regions": [
+      {
+        "page": 3,
+        "bbox": [
+          50,
+          297,
+          540,
+          534
+        ],
+        "role": "primary",
+        "owner": "2018-19-fa-p3-1",
+        "evidence": "Complete printed question 1 panel including diagrams, tables and response area; neighboring questions and administrative marking examples excluded."
+      },
+      {
+        "page": 3,
+        "bbox": [
+          49,
+          538,
+          290,
+          776
+        ],
+        "role": "primary",
+        "owner": "2018-19-fa-p3-2",
+        "evidence": "Complete printed question 2 panel including diagrams, tables and response area; neighboring questions and administrative marking examples excluded."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "1",
+        "bbox": [
+          52,
+          301,
+          69,
+          322
+        ],
+        "pixel_sha256": "da38bde5b8b74445cf03120aabe501fc4a8debe4a9d169ba0301096fc564d019",
+        "audited_pixel_sha256": "da38bde5b8b74445cf03120aabe501fc4a8debe4a9d169ba0301096fc564d019"
+      },
+      {
+        "kind": "heading",
+        "number": "2",
+        "bbox": [
+          49,
+          541,
+          67,
+          563
+        ],
+        "pixel_sha256": "c8186a7abb1cbdc02b132adbb94d9d0440cb61a815efd1e339b83b42b8e6f8d8",
+        "audited_pixel_sha256": "c8186a7abb1cbdc02b132adbb94d9d0440cb61a815efd1e339b83b42b8e6f8d8"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

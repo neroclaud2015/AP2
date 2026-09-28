@@ -1,0 +1,137 @@
+{
+  "key": "7dd6adf55f6f46e0b0142dfc4dc10d8d8fc7e438121898e73901cbba6c5aefa2",
+  "record_hash": "f3567842c90dedecf9f13655109017d11d350fa8b041c09c3c7e68644020c452",
+  "record": {
+    "page": 11,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "mixed_questions",
+    "classification_evidence": "Cached physical page visually inspected; printed question headings individually read, no sequential label inference.",
+    "anchors": [
+      {
+        "anchor_id": "2018-19-fa-p11-22",
+        "number": "22",
+        "bbox": [
+          53,
+          57,
+          84,
+          78
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed heading 22 visually read on physical page 11; exact pixel fingerprint binds this transcription.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "a9d49a6202e30fe22b9977660aae07348c4efe721efc743d8072ebc698707f75"
+      },
+      {
+        "anchor_id": "2018-19-fa-p11-23",
+        "number": "23",
+        "bbox": [
+          52,
+          299,
+          82,
+          321
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed heading 23 visually read on physical page 11; exact pixel fingerprint binds this transcription.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "6fbd64c1846f2abde8f547e524f4b38179c94f76a83e96720875abdfa4e20af9"
+      },
+      {
+        "anchor_id": "2018-19-fa-p11-24",
+        "number": "24",
+        "bbox": [
+          50,
+          539,
+          81,
+          562
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed heading 24 visually read on physical page 11; exact pixel fingerprint binds this transcription.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "b15dd1bd5b36101a3fa1b5428d111e964050fcd46a57031fdb950af23dd0a98a"
+      }
+    ],
+    "regions": [
+      {
+        "page": 11,
+        "bbox": [
+          51,
+          53,
+          543,
+          294
+        ],
+        "role": "primary",
+        "owner": "2018-19-fa-p11-22",
+        "evidence": "Complete printed question 22 panel including diagrams, tables and response area; neighboring questions and administrative marking examples excluded."
+      },
+      {
+        "page": 11,
+        "bbox": [
+          50,
+          298,
+          538,
+          534
+        ],
+        "role": "primary",
+        "owner": "2018-19-fa-p11-23",
+        "evidence": "Complete printed question 23 panel including diagrams, tables and response area; neighboring questions and administrative marking examples excluded."
+      },
+      {
+        "page": 11,
+        "bbox": [
+          49,
+          538,
+          538,
+          781
+        ],
+        "role": "primary",
+        "owner": "2018-19-fa-p11-24",
+        "evidence": "Complete printed question 24 panel including diagrams, tables and response area; neighboring questions and administrative marking examples excluded."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "22",
+        "bbox": [
+          53,
+          57,
+          84,
+          78
+        ],
+        "pixel_sha256": "a9d49a6202e30fe22b9977660aae07348c4efe721efc743d8072ebc698707f75",
+        "audited_pixel_sha256": "a9d49a6202e30fe22b9977660aae07348c4efe721efc743d8072ebc698707f75"
+      },
+      {
+        "kind": "heading",
+        "number": "23",
+        "bbox": [
+          52,
+          299,
+          82,
+          321
+        ],
+        "pixel_sha256": "6fbd64c1846f2abde8f547e524f4b38179c94f76a83e96720875abdfa4e20af9",
+        "audited_pixel_sha256": "6fbd64c1846f2abde8f547e524f4b38179c94f76a83e96720875abdfa4e20af9"
+      },
+      {
+        "kind": "heading",
+        "number": "24",
+        "bbox": [
+          50,
+          539,
+          81,
+          562
+        ],
+        "pixel_sha256": "b15dd1bd5b36101a3fa1b5428d111e964050fcd46a57031fdb950af23dd0a98a",
+        "audited_pixel_sha256": "b15dd1bd5b36101a3fa1b5428d111e964050fcd46a57031fdb950af23dd0a98a"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

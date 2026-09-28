@@ -1,0 +1,61 @@
+{
+  "key": "85639e203a587cd064225facadf5b0581434209344fa27f95f373c52d118ed94",
+  "record_hash": "105735ad12f8e05dc95599a75e5f4a0336c62253242e633d4d1fd4aa0a69c968",
+  "record": {
+    "page": 10,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Individually inspected cached original page, printed labels and separators; exact source pixel hashes, no sequential-number inference.",
+    "anchors": [
+      {
+        "anchor_id": "2018-19-wiso-p10-U4",
+        "number": "U4",
+        "bbox": [
+          48,
+          50,
+          88,
+          81
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U4 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "4a1af5b184f365adb0f14fa73dad0c7372348de07b62a0d94e15249b2eab6698"
+      }
+    ],
+    "regions": [
+      {
+        "page": 10,
+        "bbox": [
+          48,
+          50,
+          540,
+          780
+        ],
+        "role": "primary",
+        "owner": "2018-19-wiso-p10-U4",
+        "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U4",
+        "bbox": [
+          48,
+          50,
+          88,
+          81
+        ],
+        "pixel_sha256": "4a1af5b184f365adb0f14fa73dad0c7372348de07b62a0d94e15249b2eab6698",
+        "audited_pixel_sha256": "4a1af5b184f365adb0f14fa73dad0c7372348de07b62a0d94e15249b2eab6698"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

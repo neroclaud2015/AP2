@@ -1,0 +1,46 @@
+{
+  "key": "e6eb51ffed69d1e6be5ab08d0d0295f85558661e2e1887e676dce5af8cd8259e",
+  "record_hash": "d7aa935911c2d8007a1dabcfa7c87db9417ba7e18d4614f3fcf22c3de18aad4c",
+  "record": {
+    "page": 22,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "mixed_questions",
+    "classification_evidence": "Cached physical page visually inspected, including printed headings and all figures; no sequence-based heading inference.",
+    "anchors": [],
+    "regions": [
+      {
+        "page": 22,
+        "bbox": [
+          18,
+          18,
+          552,
+          813
+        ],
+        "role": "continuation",
+        "owner": "2018-19-ap-p21-U7",
+        "evidence": "Explicit printed Ergebnis U7 on this continuation page; subpart 3 concerns the same Softstarter as page 21 parts 1 and 2, whose footer says Weiter nächste Seite."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "ownership",
+        "number": "U7",
+        "bbox": [
+          505,
+          743,
+          548,
+          765
+        ],
+        "pixel_sha256": "d2dfc3ecba9c934d0ccdd67c3d567b78ae89c04eb2a240137fed9472a5281a32",
+        "audited_pixel_sha256": "d2dfc3ecba9c934d0ccdd67c3d567b78ae89c04eb2a240137fed9472a5281a32"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

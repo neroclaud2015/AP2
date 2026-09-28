@@ -1,0 +1,261 @@
+{
+  "scope": "2018-19-ap",
+  "profile_id": "official-ring-grid",
+  "version": "2i.1.0",
+  "name": "2018_19_winter_arbeitsplanung",
+  "exam": "2018_19_winter",
+  "module": "Arbeitsplanung",
+  "source_hash": "c5752757d63db01fd7b3c638d65a9516116962514136ceeb69c6b13fab8bbddc",
+  "source_id": "src-c2633744717d8e25ab799ad4",
+  "question_source_id": "src-d279a9e64658b5deb0497972",
+  "solution_source_id": "src-c2633744717d8e25ab799ad4",
+  "validated_sources": [
+    "c5752757d63db01fd7b3c638d65a9516116962514136ceeb69c6b13fab8bbddc"
+  ],
+  "choice_page": 3,
+  "choice_count": 28,
+  "analysis_size": [
+    993,
+    1404
+  ],
+  "groups": [
+    [
+      1,
+      10,
+      145.5,
+      57.6,
+      397,
+      19.2,
+      0.13,
+      368
+    ],
+    [
+      11,
+      10,
+      144,
+      57.6,
+      511.5,
+      19.2,
+      0.15,
+      482
+    ],
+    [
+      21,
+      8,
+      142.8,
+      57.6,
+      624.5,
+      19.2,
+      0.3,
+      595
+    ]
+  ],
+  "grid_crop": [
+    110,
+    365,
+    720,
+    720
+  ],
+  "ring_policy": {
+    "min_ring": 0.4,
+    "support": 0.83,
+    "possible_ring": 0.32,
+    "possible_support": 0.58,
+    "margin": 0.15,
+    "center": 0.1
+  },
+  "header_evidence": "Physical page 3: printed Winter 2018/19 Arbeitsplanung; every numbered column 1–28 visually inspected, five printed dot rows map top-to-bottom to answers 1–5. No semantic inference.",
+  "page_image_hashes": {
+    "11": "86f4e4ac27e1bf035b0699700cb02ff0e4b224497e34b7f93aebbe6e7737e3c5",
+    "3": "fdf189ba7c3f76692216954b88252d8b57be57f37ab64bc557c697959cdcfe81",
+    "12": "7743d6e298c6a0e1e0f2d253859d4a4d1560f7cb3e4690567d97b981c28301e4",
+    "13": "e51fbc53db9047eff67035505127ff10d6184ee6e9556ffd2f7e374b01f3cf77"
+  },
+  "u_evidence": "Printed U headings and ruled boundaries individually inspected in cached source pixels; each crop belongs to its explicit U label. Whole-task self-assessment only. Handwritten source annotations retained, never converted into scores.",
+  "u_regions": {
+    "U1": {
+      "regions": [
+        {
+          "page": 11,
+          "bbox": [
+            39.9,
+            126.85083333333333,
+            575.4,
+            395.97083333333336
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 11,
+      "heading_box": [
+        39.9,
+        126.85083333333333,
+        85.9,
+        150.85083333333333
+      ],
+      "heading_pixel_sha256": "a2bc6149a0ef980076a25872794aa71eac60303a9f600f8a28d0d7f21757a861"
+    },
+    "U2": {
+      "regions": [
+        {
+          "page": 11,
+          "bbox": [
+            39.9,
+            396.6716666666667,
+            575.4,
+            562.0683333333334
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 11,
+      "heading_box": [
+        39.9,
+        396.6716666666667,
+        85.9,
+        420.6716666666667
+      ],
+      "heading_pixel_sha256": "f88e070aa44a0144ab7133d0921b55e2e0044b74dd13b4e6cddfa686ef621852"
+    },
+    "U3": {
+      "regions": [
+        {
+          "page": 11,
+          "bbox": [
+            39.9,
+            563.47,
+            575.4,
+            812.2658333333334
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 11,
+      "heading_box": [
+        39.9,
+        563.47,
+        85.9,
+        587.47
+      ],
+      "heading_pixel_sha256": "f20acc23f299703cbc2ef0fd44a1d86ce60ca519e4e8b504f037d8483f4a3bdf"
+    },
+    "U4": {
+      "regions": [
+        {
+          "page": 12,
+          "bbox": [
+            28.0,
+            26.631666666666668,
+            575.4,
+            332.8958333333333
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 12,
+      "heading_box": [
+        28.0,
+        26.631666666666668,
+        74.0,
+        50.63166666666667
+      ],
+      "heading_pixel_sha256": "f1cc812f5e5ddcc323257b0af4e085f0d20329f20629f998e8fbe86d98244087"
+    },
+    "U5": {
+      "regions": [
+        {
+          "page": 12,
+          "bbox": [
+            28.0,
+            334.2975,
+            575.4,
+            675.6033333333334
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 12,
+      "heading_box": [
+        28.0,
+        334.2975,
+        74.0,
+        358.2975
+      ],
+      "heading_pixel_sha256": "30d631096e3fbda6bb135cb8a9e838fdf6a052085f7aac374dd52e2f47cb3bd8"
+    },
+    "U6": {
+      "regions": [
+        {
+          "page": 12,
+          "bbox": [
+            28.0,
+            677.005,
+            575.4,
+            812.2658333333334
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 12,
+      "heading_box": [
+        28.0,
+        677.005,
+        74.0,
+        701.005
+      ],
+      "heading_pixel_sha256": "f0d64f27d8928d9746048fc33d2f68fa463431a8a4dc5ee60f13fdd9f4441f67"
+    },
+    "U7": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            39.9,
+            126.85083333333333,
+            575.4,
+            271.92333333333335
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 13,
+      "heading_box": [
+        39.9,
+        126.85083333333333,
+        85.9,
+        150.85083333333333
+      ],
+      "heading_pixel_sha256": "c34592abdd062353a5c56fa725d9868a8be98f054f44da912a514a73232b3cd1"
+    },
+    "U8": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            39.9,
+            273.325,
+            575.4,
+            385.4583333333333
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 13,
+      "heading_box": [
+        39.9,
+        273.325,
+        85.9,
+        297.325
+      ],
+      "heading_pixel_sha256": "78a36d6de94b22483a04458d6656e054161448b3466b5f581595ddea5eef6e61"
+    }
+  }
+}

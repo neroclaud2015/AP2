@@ -1,0 +1,61 @@
+{
+  "key": "b5b1e40922ec040f87e1d6907a83b50b6602a967b819e1e507be44f6d5d17c78",
+  "record_hash": "259a14a8c11c097ab5e24af8e52066a7b85ce93c162590f75386a6f5cb1dcf6e",
+  "record": {
+    "page": 13,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "mixed_questions",
+    "classification_evidence": "Cached physical page visually inspected; printed question headings individually read, no sequential label inference.",
+    "anchors": [
+      {
+        "anchor_id": "2018-19-fa-p13-28",
+        "number": "28",
+        "bbox": [
+          55,
+          59,
+          86,
+          82
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed heading 28 visually read on physical page 13; exact pixel fingerprint binds this transcription.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "5314b78de8ea88d4cbd1a6e5e14bcf0150ea4c32512385b96b790c94d9ffeee1"
+      }
+    ],
+    "regions": [
+      {
+        "page": 13,
+        "bbox": [
+          51,
+          56,
+          540,
+          536
+        ],
+        "role": "primary",
+        "owner": "2018-19-fa-p13-28",
+        "evidence": "Complete printed question 28 panel including diagrams, tables and response area; neighboring questions and administrative marking examples excluded."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "28",
+        "bbox": [
+          55,
+          59,
+          86,
+          82
+        ],
+        "pixel_sha256": "5314b78de8ea88d4cbd1a6e5e14bcf0150ea4c32512385b96b790c94d9ffeee1",
+        "audited_pixel_sha256": "5314b78de8ea88d4cbd1a6e5e14bcf0150ea4c32512385b96b790c94d9ffeee1"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

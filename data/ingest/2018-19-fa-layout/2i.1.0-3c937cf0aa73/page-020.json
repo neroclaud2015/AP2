@@ -1,0 +1,61 @@
+{
+  "key": "093bbf6c694b214a473b3f8622a5927eb0273561e651a668a05e4081292b34b7",
+  "record_hash": "630f8a44fb21e4a48dd08e63884fb464d630e87e86958688b6fbf558d207892b",
+  "record": {
+    "page": 20,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "mixed_questions",
+    "classification_evidence": "Cached physical page visually inspected; printed question headings individually read, no sequential label inference.",
+    "anchors": [
+      {
+        "anchor_id": "2018-19-fa-p20-U2",
+        "number": "U2",
+        "bbox": [
+          30,
+          24,
+          58,
+          42
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed heading U2 visually read on physical page 20; exact pixel fingerprint binds this transcription.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "54d695fdb77c104beb383719cc83bdac1ca33b31b4c4400a52aa9e8ca2321588"
+      }
+    ],
+    "regions": [
+      {
+        "page": 20,
+        "bbox": [
+          23,
+          19,
+          505,
+          805
+        ],
+        "role": "primary",
+        "owner": "2018-19-fa-p20-U2",
+        "evidence": "Complete printed question U2 panel including diagrams, tables and response area; neighboring questions and administrative marking examples excluded."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U2",
+        "bbox": [
+          30,
+          24,
+          58,
+          42
+        ],
+        "pixel_sha256": "54d695fdb77c104beb383719cc83bdac1ca33b31b4c4400a52aa9e8ca2321588",
+        "audited_pixel_sha256": "54d695fdb77c104beb383719cc83bdac1ca33b31b4c4400a52aa9e8ca2321588"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

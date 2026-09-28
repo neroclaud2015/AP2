@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "baseline": "6cbd6ba53b3634b083300179683daf0414479178",
+  "phase": "2I",
+  "firebase": "implemented_not_configured",
+  "active_season": "2018-19-winter",
+  "archives": [
+    {
+      "archive": "2018_19 Winter-20260926T101143Z-1-001.zip",
+      "status": "partial_production_stopped_at_answer_gate"
+    },
+    {
+      "archive": "2019 Sommer-20260926T101145Z-1-001.zip",
+      "status": "pending"
+    },
+    {
+      "archive": "2019_20 Winter-20260926T101155Z-1-001.zip",
+      "status": "pending"
+    },
+    {
+      "archive": "2020 Sommer-20260926T101156Z-1-001.zip",
+      "status": "pending"
+    },
+    {
+      "archive": "2020_21 Winter-20260926T101157Z-1-001.zip",
+      "status": "pending"
+    },
+    {
+      "archive": "2021 Sommer-20260926T101159Z-1-001.zip",
+      "status": "pending"
+    },
+    {
+      "archive": "2021_22 Winter-20260926T101200Z-1-001.zip",
+      "status": "pending"
+    },
+    {
+      "archive": "2022 Sommer-20260926T101201Z-1-001.zip",
+      "status": "pending"
+    },
+    {
+      "archive": "2022_23 Winter-20260926T101202Z-1-001.zip",
+      "status": "pending"
+    },
+    {
+      "archive": "2023 Sommer-20260926T101202Z-1-001.zip",
+      "status": "pending"
+    },
+    {
+      "archive": "2023_24 Winter-20260926T101214Z-1-001.zip",
+      "status": "pending"
+    },
+    {
+      "archive": "2024 Sommer-20260926T101216Z-1-001.zip",
+      "status": "pending"
+    },
+    {
+      "archive": "2024_25 Winter-20260926T101221Z-1-001.zip",
+      "status": "pending"
+    }
+  ],
+  "seasons": {
+    "2018-19-winter": {
+      "status": "partial_production_stopped_at_answer_gate",
+      "sources": [
+        {
+          "module": "arbeitsplanung",
+          "type": "question_pdf",
+          "id": "src-d279a9e64658b5deb0497972",
+          "hash": "683b59deab6083a9f14b26d90b0ff638c67a8960b76693ff763249a82b0ca80f",
+          "filename": "2018_19 Winter/18_19 Arbeitsplanung.pdf"
+        },
+        {
+          "module": "arbeitsplanung",
+          "type": "solution_pdf",
+          "id": "src-c2633744717d8e25ab799ad4",
+          "hash": "c5752757d63db01fd7b3c638d65a9516116962514136ceeb69c6b13fab8bbddc",
+          "filename": "2018_19 Winter/18_19 Lösung.pdf"
+        },
+        {
+          "module": "funktionsanalyse",
+          "type": "question_pdf",
+          "id": "src-eb36ca19392dc0cd95f3c9db",
+          "hash": "6cbd662e2f9f849ffbd55a4aaa6f16ab35a104b833964178901da066a7c6cff8",
+          "filename": "2018_19 Winter/18_19 Funktionsanalyse.pdf"
+        },
+        {
+          "module": "funktionsanalyse",
+          "type": "solution_pdf",
+          "id": "src-5e50edfd247e4acb1173cdfc",
+          "hash": "c5752757d63db01fd7b3c638d65a9516116962514136ceeb69c6b13fab8bbddc",
+          "filename": "2018_19 Winter/18_19 Lösung.pdf"
+        },
+        {
+          "module": "wiso",
+          "type": "question_pdf",
+          "id": "src-3b23252a9949aca84ea2a044",
+          "hash": "6432e4aebe0150c2dfe3139e138990b72dd2f907294c9478caae62aa7a3eda22",
+          "filename": "2018_19 Winter/18_19 WiSo.pdf"
+        },
+        {
+          "module": "wiso",
+          "type": "solution_pdf",
+          "id": "src-3916baca507c1ba52d06de19",
+          "hash": "c5752757d63db01fd7b3c638d65a9516116962514136ceeb69c6b13fab8bbddc",
+          "filename": "2018_19 Winter/18_19 Lösung.pdf"
+        }
+      ],
+      "modules": {
+        "arbeitsplanung": {
+          "status": "blocked",
+          "questions": 36,
+          "choice_coverage": 23,
+          "choice_expected": 28,
+          "u_coverage": 8,
+          "needs_review": [
+            {
+              "question_number": 3,
+              "reasons": [
+                "no_unique_circle",
+                "threshold_disagreement"
+              ]
+            },
+            {
+              "question_number": 9,
+              "reasons": [
+                "no_unique_circle",
+                "threshold_disagreement"
+              ]
+            },
+            {
+              "question_number": 10,
+              "reasons": [
+                "no_unique_circle",
+                "threshold_disagreement"
+              ]
+            },
+            {
+              "question_number": 22,
+              "reasons": [
+                "no_unique_circle",
+                "threshold_disagreement"
+              ]
+            },
+            {
+              "question_number": 24,
+              "reasons": [
+                "no_unique_circle",
+                "threshold_disagreement"
+              ]
+            }
+          ],
+          "profile_id": "portrait-explicit-regions",
+          "profile_version": "2i.1.0",
+          "answer_revision": "2018-19-ap-2f.1.0-139814cbaae9",
+          "pdf_rescan": false
+        },
+        "funktionsanalyse": {
+          "status": "blocked",
+          "questions": 36,
+          "choice_coverage": 25,
+          "choice_expected": 28,
+          "u_coverage": 8,
+          "needs_review": [
+            {
+              "question_number": 7,
+              "reasons": [
+                "no_unique_circle",
+                "threshold_disagreement"
+              ]
+            },
+            {
+              "question_number": 21,
+              "reasons": [
+                "no_unique_circle",
+                "threshold_disagreement"
+              ]
+            },
+            {
+              "question_number": 27,
+              "reasons": [
+                "no_unique_circle",
+                "threshold_disagreement"
+              ]
+            }
+          ],
+          "profile_id": "portrait-explicit-regions",
+          "profile_version": "2i.1.0",
+          "answer_revision": "2018-19-fa-2f.1.0-17ded129ee4b",
+          "pdf_rescan": false
+        },
+        "wiso": {
+          "status": "production",
+          "questions": 24,
+          "choice_coverage": 18,
+          "choice_expected": 18,
+          "u_coverage": 6,
+          "needs_review": [],
+          "profile_id": "portrait-explicit-regions",
+          "profile_version": "2i.1.0",
+          "answer_revision": "2018-19-wiso-2f.1.0-cbac13f30ab8",
+          "pdf_rescan": false
+        }
+      }
+    }
+  },
+  "stop_reason": "Official answer association safety gate: AP Q3/9/10/22/24, FA Q7/21/27. WiSo complete. No later season PDFs opened."
+}

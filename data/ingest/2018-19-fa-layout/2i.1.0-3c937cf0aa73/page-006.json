@@ -1,0 +1,99 @@
+{
+  "key": "2ae4213b37a31355e23d4be8b16a1c09020db8db4d70bb41ee59c5a493fb87cd",
+  "record_hash": "c3d42ac27adad057d4be964144367151c1f6e2b708fddbe7d1a4eb6931493ee8",
+  "record": {
+    "page": 6,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "mixed_questions",
+    "classification_evidence": "Cached physical page visually inspected; printed question headings individually read, no sequential label inference.",
+    "anchors": [
+      {
+        "anchor_id": "2018-19-fa-p6-9",
+        "number": "9",
+        "bbox": [
+          50,
+          60,
+          69,
+          82
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed heading 9 visually read on physical page 6; exact pixel fingerprint binds this transcription.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "ec5db08bb08afc33532a6fd338fc4ca24a6ac7cd2253cc65eed71dc9b68fc6af"
+      },
+      {
+        "anchor_id": "2018-19-fa-p6-10",
+        "number": "10",
+        "bbox": [
+          48,
+          540,
+          77,
+          563
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed heading 10 visually read on physical page 6; exact pixel fingerprint binds this transcription.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "185d87d6408b89a99624b2ed40b5874d5df381244aa5a59ec1cd83c400debf4d"
+      }
+    ],
+    "regions": [
+      {
+        "page": 6,
+        "bbox": [
+          49,
+          56,
+          538,
+          534
+        ],
+        "role": "primary",
+        "owner": "2018-19-fa-p6-9",
+        "evidence": "Complete printed question 9 panel including diagrams, tables and response area; neighboring questions and administrative marking examples excluded."
+      },
+      {
+        "page": 6,
+        "bbox": [
+          48,
+          539,
+          290,
+          776
+        ],
+        "role": "primary",
+        "owner": "2018-19-fa-p6-10",
+        "evidence": "Complete printed question 10 panel including diagrams, tables and response area; neighboring questions and administrative marking examples excluded."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "9",
+        "bbox": [
+          50,
+          60,
+          69,
+          82
+        ],
+        "pixel_sha256": "ec5db08bb08afc33532a6fd338fc4ca24a6ac7cd2253cc65eed71dc9b68fc6af",
+        "audited_pixel_sha256": "ec5db08bb08afc33532a6fd338fc4ca24a6ac7cd2253cc65eed71dc9b68fc6af"
+      },
+      {
+        "kind": "heading",
+        "number": "10",
+        "bbox": [
+          48,
+          540,
+          77,
+          563
+        ],
+        "pixel_sha256": "185d87d6408b89a99624b2ed40b5874d5df381244aa5a59ec1cd83c400debf4d",
+        "audited_pixel_sha256": "185d87d6408b89a99624b2ed40b5874d5df381244aa5a59ec1cd83c400debf4d"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

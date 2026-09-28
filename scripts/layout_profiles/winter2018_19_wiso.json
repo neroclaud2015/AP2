@@ -1,0 +1,866 @@
+{
+  "profile_id": "portrait-explicit-regions",
+  "scope": "2018-19-wiso",
+  "version": "2i.1.0",
+  "exam": "2018_19_winter",
+  "module": "WiSo",
+  "source_hash": "6432e4aebe0150c2dfe3139e138990b72dd2f907294c9478caae62aa7a3eda22",
+  "source_id": "src-3b23252a9949aca84ea2a044",
+  "solution_source_id": "src-3916baca507c1ba52d06de19",
+  "validated_sources": [
+    "6432e4aebe0150c2dfe3139e138990b72dd2f907294c9478caae62aa7a3eda22"
+  ],
+  "name": "2018_19_winter_wiso",
+  "expected": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6"
+  ],
+  "timing_minutes": 60,
+  "timing_source_page": 2,
+  "description_page": 3,
+  "attachment_refs": {
+    "U2": [
+      17
+    ]
+  },
+  "attachment_crops": [
+    {
+      "page": 2,
+      "bbox": [
+        45,
+        16,
+        425,
+        57
+      ],
+      "role": "official_timing"
+    },
+    {
+      "page": 3,
+      "bbox": [
+        48,
+        295,
+        540,
+        780
+      ],
+      "role": "shared_description"
+    },
+    {
+      "page": 17,
+      "bbox": [
+        34,
+        14,
+        565,
+        810
+      ],
+      "role": "attachment"
+    }
+  ],
+  "pages": {
+    "1": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "cover",
+      "evidence": "Individually inspected cached original page, printed labels and separators; exact source pixel hashes, no sequential-number inference.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "2": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "instructions",
+      "evidence": "Individually inspected cached original page, printed labels and separators; exact source pixel hashes, no sequential-number inference.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "3": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "shared_description",
+      "evidence": "Individually inspected cached original page, printed labels and separators; exact source pixel hashes, no sequential-number inference.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "4": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "U1 is printed sideways in the source. Original orientation retained; heading U1 directly inspected. Entire flow diagram and response fields belong to U1.",
+      "slots": [
+        {
+          "observed_number": "U1",
+          "heading_box": [
+            49,
+            715,
+            90,
+            779
+          ],
+          "visual_patch_sha256": "fb9a23ba89f964b5578690cb230fa8656c95630e5101ef8d379bd401b3aaf7e0",
+          "visual_evidence": "Printed U1 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              48,
+              50,
+              540,
+              780
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "5": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached original page, printed labels and separators; exact source pixel hashes, no sequential-number inference.",
+      "slots": [
+        {
+          "observed_number": "1",
+          "heading_box": [
+            50,
+            55,
+            90,
+            86
+          ],
+          "visual_patch_sha256": "f602a1db0428f5984129920a07357ccd8c149ca9dd8d44edb8026e9169ad254f",
+          "visual_evidence": "Printed 1 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              50,
+              55,
+              295,
+              296
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        },
+        {
+          "observed_number": "2",
+          "heading_box": [
+            298,
+            55,
+            338,
+            86
+          ],
+          "visual_patch_sha256": "43198362ac67458cadd9e59e529ef8a663c93c997dc9d84ff5b73a485ba65a12",
+          "visual_evidence": "Printed 2 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              298,
+              55,
+              538,
+              296
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        },
+        {
+          "observed_number": "3",
+          "heading_box": [
+            50,
+            299,
+            90,
+            330
+          ],
+          "visual_patch_sha256": "ba13cafd07c555996ddace870fece9379db7c05c108f8a112c9e9277b496d545",
+          "visual_evidence": "Printed 3 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              50,
+              299,
+              295,
+              539
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        },
+        {
+          "observed_number": "4",
+          "heading_box": [
+            298,
+            299,
+            338,
+            330
+          ],
+          "visual_patch_sha256": "8e8f0e2e4fb9471e6f49d6a77f56f3ec28c02fa4f87b591e691f7f966e6d73f7",
+          "visual_evidence": "Printed 4 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              298,
+              299,
+              538,
+              539
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "6": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached original page, printed labels and separators; exact source pixel hashes, no sequential-number inference.",
+      "slots": [
+        {
+          "observed_number": "U2",
+          "heading_box": [
+            48,
+            50,
+            88,
+            81
+          ],
+          "visual_patch_sha256": "46559885aec335297c61c451efd756cb9556fa97b72f7e798c652b25dc4e9816",
+          "visual_evidence": "Printed U2 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              48,
+              50,
+              540,
+              780
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "7": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached original page, printed labels and separators; exact source pixel hashes, no sequential-number inference.",
+      "slots": [
+        {
+          "observed_number": "5",
+          "heading_box": [
+            50,
+            55,
+            90,
+            86
+          ],
+          "visual_patch_sha256": "cd4c4774cc3d6390c5b84bf3e81df6a1ebb92de38412ed801fb3e4fd91fab9ec",
+          "visual_evidence": "Printed 5 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              50,
+              55,
+              295,
+              299
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        },
+        {
+          "observed_number": "6",
+          "heading_box": [
+            298,
+            55,
+            338,
+            86
+          ],
+          "visual_patch_sha256": "20ce73d37e4184976fdd0dd62f9e48176cfd9d1cf6e9462277aa48971cb9c819",
+          "visual_evidence": "Printed 6 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              298,
+              55,
+              538,
+              299
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        },
+        {
+          "observed_number": "7",
+          "heading_box": [
+            50,
+            301,
+            90,
+            332
+          ],
+          "visual_patch_sha256": "9d52f7cf6c624a389a0596e549be02c4aa612efb0553749c11a143b6773d2324",
+          "visual_evidence": "Printed 7 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              50,
+              301,
+              295,
+              541
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "8": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached original page, printed labels and separators; exact source pixel hashes, no sequential-number inference.",
+      "slots": [
+        {
+          "observed_number": "U3",
+          "heading_box": [
+            48,
+            50,
+            88,
+            81
+          ],
+          "visual_patch_sha256": "0cd1d7bcaeda01e3184d365a9d2798c1ba8c51e5078ad59ce281c95a90a53cba",
+          "visual_evidence": "Printed U3 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              48,
+              50,
+              540,
+              780
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "9": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached original page, printed labels and separators; exact source pixel hashes, no sequential-number inference.",
+      "slots": [
+        {
+          "observed_number": "8",
+          "heading_box": [
+            50,
+            541,
+            90,
+            572
+          ],
+          "visual_patch_sha256": "96eabfcfb1fd8f2924374e4f6d52d7339949147b0ac0e2be5aba251806629cd9",
+          "visual_evidence": "Printed 8 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              50,
+              541,
+              295,
+              778
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        },
+        {
+          "observed_number": "9",
+          "heading_box": [
+            298,
+            541,
+            338,
+            572
+          ],
+          "visual_patch_sha256": "420b5c2db0aaec8ae7678e29bc116d798c839744923706a0f72d938a3015a06f",
+          "visual_evidence": "Printed 9 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              298,
+              541,
+              538,
+              778
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        }
+      ],
+      "explicit_regions": [
+        {
+          "observed_owner_label": "U3",
+          "owner": "2018-19-wiso-p8-U3",
+          "bbox": [
+            48,
+            50,
+            540,
+            539
+          ],
+          "role": "continuation",
+          "evidence_box": [
+            490,
+            325,
+            538,
+            425
+          ],
+          "visual_patch_sha256": "48ef727032d7e9ede4eef29c23ee996057705878709295e4ecccb22709152363",
+          "evidence": "Printed Ergebnis U3 in this response panel identifies ownership; numbered subquestions continue from the primary page. Separator excludes MC below."
+        }
+      ]
+    },
+    "10": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached original page, printed labels and separators; exact source pixel hashes, no sequential-number inference.",
+      "slots": [
+        {
+          "observed_number": "U4",
+          "heading_box": [
+            48,
+            50,
+            88,
+            81
+          ],
+          "visual_patch_sha256": "4a1af5b184f365adb0f14fa73dad0c7372348de07b62a0d94e15249b2eab6698",
+          "visual_evidence": "Printed U4 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              48,
+              50,
+              540,
+              780
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "11": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached original page, printed labels and separators; exact source pixel hashes, no sequential-number inference.",
+      "slots": [
+        {
+          "observed_number": "10",
+          "heading_box": [
+            50,
+            300,
+            90,
+            331
+          ],
+          "visual_patch_sha256": "24d4eecc6ed6dd9e7da23ac66470601774f19a7e69fdb35b751416bd82fd52d8",
+          "visual_evidence": "Printed 10 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              50,
+              300,
+              295,
+              540
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        },
+        {
+          "observed_number": "11",
+          "heading_box": [
+            298,
+            300,
+            338,
+            331
+          ],
+          "visual_patch_sha256": "278e9ab572ff5350ba9a7d6011c672e5ba2e0c6e998ee1242c9ff18cd184f1b4",
+          "visual_evidence": "Printed 11 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              298,
+              300,
+              538,
+              540
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        }
+      ],
+      "explicit_regions": [
+        {
+          "observed_owner_label": "U4",
+          "owner": "2018-19-wiso-p10-U4",
+          "bbox": [
+            48,
+            50,
+            540,
+            297
+          ],
+          "role": "continuation",
+          "evidence_box": [
+            488,
+            95,
+            538,
+            150
+          ],
+          "visual_patch_sha256": "58061c55fbc3e4bffa3980bdeb304810864096b6165977e6f9155f5291f1d30b",
+          "evidence": "Printed Ergebnis U4 in this response panel identifies ownership; numbered subquestions continue from the primary page. Separator excludes MC below."
+        }
+      ]
+    },
+    "12": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached original page, printed labels and separators; exact source pixel hashes, no sequential-number inference.",
+      "slots": [
+        {
+          "observed_number": "U5",
+          "heading_box": [
+            48,
+            50,
+            88,
+            81
+          ],
+          "visual_patch_sha256": "82be53f9553488bbd70e3e893a6e78ab202c163577e19318c9ce851ffb7a2d0e",
+          "visual_evidence": "Printed U5 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              48,
+              50,
+              540,
+              780
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "13": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached original page, printed labels and separators; exact source pixel hashes, no sequential-number inference.",
+      "slots": [
+        {
+          "observed_number": "12",
+          "heading_box": [
+            50,
+            55,
+            90,
+            86
+          ],
+          "visual_patch_sha256": "a841d9e6366c0bc67cdb03adea1e231e981b7c822b97a58a5f4ef2b74f5a1141",
+          "visual_evidence": "Printed 12 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              50,
+              55,
+              295,
+              295
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        },
+        {
+          "observed_number": "13",
+          "heading_box": [
+            298,
+            55,
+            338,
+            86
+          ],
+          "visual_patch_sha256": "eb14f1396dfe3218d8eeee9d16c67653ce1b941b2bdbc84de5c60ece8cb73fbf",
+          "visual_evidence": "Printed 13 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              298,
+              55,
+              538,
+              295
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        },
+        {
+          "observed_number": "14",
+          "heading_box": [
+            50,
+            299,
+            90,
+            330
+          ],
+          "visual_patch_sha256": "b35c5176a48f79441642c5f7f19ba12e79b3a9f43e7d13a5b757cb9c9c3679e1",
+          "visual_evidence": "Printed 14 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              50,
+              299,
+              295,
+              539
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        },
+        {
+          "observed_number": "15",
+          "heading_box": [
+            298,
+            299,
+            338,
+            330
+          ],
+          "visual_patch_sha256": "8455689552facf220d425f6c9d44e2f61db6d43ee56a47f97cdb144e40903283",
+          "visual_evidence": "Printed 15 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              298,
+              299,
+              538,
+              539
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "14": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached original page, printed labels and separators; exact source pixel hashes, no sequential-number inference.",
+      "slots": [
+        {
+          "observed_number": "16",
+          "heading_box": [
+            50,
+            542,
+            90,
+            573
+          ],
+          "visual_patch_sha256": "0a10c27aecd8f07ea12ead1a8fe05c455cd68d21ab2f475e3ec72549ffaf362f",
+          "visual_evidence": "Printed 16 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              50,
+              542,
+              290,
+              778
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        },
+        {
+          "observed_number": "17",
+          "heading_box": [
+            295,
+            542,
+            335,
+            573
+          ],
+          "visual_patch_sha256": "937857215abec09e8f8a819b72105009e1f705a78cb29b568d4618ab6b76f92f",
+          "visual_evidence": "Printed 17 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              295,
+              542,
+              538,
+              778
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        },
+        {
+          "observed_number": "U6",
+          "heading_box": [
+            48,
+            50,
+            88,
+            81
+          ],
+          "visual_patch_sha256": "f8ae24aa5e74dccafd191548efc1011bf0973cd290dc599f30053d021b7474d8",
+          "visual_evidence": "Printed U6 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              48,
+              50,
+              540,
+              539
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "15": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached original page, printed labels and separators; exact source pixel hashes, no sequential-number inference.",
+      "slots": [
+        {
+          "observed_number": "18",
+          "heading_box": [
+            50,
+            55,
+            90,
+            86
+          ],
+          "visual_patch_sha256": "b103989f7539fec0906b18ddc762c160402f0aa031c71691bb7862d2e2340429",
+          "visual_evidence": "Printed 18 directly visible in fingerprinted heading patch; all options/content bounded by original printed dividers.",
+          "regions": [
+            [
+              50,
+              55,
+              295,
+              296
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Unique printed heading and visible enclosing question panel. Whole original text/graphics retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "16": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "blank",
+      "evidence": "Individually inspected cached original page, printed labels and separators; exact source pixel hashes, no sequential-number inference.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "17": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "attachment",
+      "evidence": "Individually inspected cached original page, printed labels and separators; exact source pixel hashes, no sequential-number inference.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "18": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "blank",
+      "evidence": "Individually inspected cached original page, printed labels and separators; exact source pixel hashes, no sequential-number inference.",
+      "slots": [],
+      "explicit_regions": []
+    }
+  }
+}
