@@ -1,0 +1,61 @@
+{
+  "key": "d754e41048bb82e59e8fd0d65942fa38718eb5ec72a284dcc317c7586f2cbc5c",
+  "record_hash": "ee9f1740fb3d166853cdb16341cc3e190b45a23eb9c487d17889c126420d2486",
+  "record": {
+    "page": 18,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+    "anchors": [
+      {
+        "anchor_id": "2019-20-fa-p18-U1",
+        "number": "U1",
+        "bbox": [
+          34.0,
+          18.7,
+          76.5,
+          47.6
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Original printed U1 heading on physical page 18, retained exact pixel patch.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "e230043572d40660028f69d869022a800c43c4448af3d5c953002aa2b93467f1"
+      }
+    ],
+    "regions": [
+      {
+        "page": 18,
+        "bbox": [
+          34.0,
+          18.7,
+          566.1,
+          814.3
+        ],
+        "role": "primary",
+        "owner": "2019-20-fa-p18-U1",
+        "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U1",
+        "bbox": [
+          34.0,
+          18.7,
+          76.5,
+          47.6
+        ],
+        "pixel_sha256": "e230043572d40660028f69d869022a800c43c4448af3d5c953002aa2b93467f1",
+        "audited_pixel_sha256": "e230043572d40660028f69d869022a800c43c4448af3d5c953002aa2b93467f1"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

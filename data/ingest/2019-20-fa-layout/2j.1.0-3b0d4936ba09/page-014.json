@@ -1,0 +1,99 @@
+{
+  "key": "60eac234025fd9ca0be2b039bb989a9fba0cff74903d18d7fff1d0115a32a267",
+  "record_hash": "873da6208996fa188a96ccbcc6b2519cbc9b26c54674b06f73dd7835db8bae8c",
+  "record": {
+    "page": 14,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+    "anchors": [
+      {
+        "anchor_id": "2019-20-fa-p14-27",
+        "number": "27",
+        "bbox": [
+          57.8,
+          57.8,
+          100.3,
+          86.7
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Original printed 27 heading on physical page 14, retained exact pixel patch.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "db1df1240997c999dfd2d528b8fb10eb4326dcf75d91106f9dd74bd776a2f1f5"
+      },
+      {
+        "anchor_id": "2019-20-fa-p14-28",
+        "number": "28",
+        "bbox": [
+          309.4,
+          57.8,
+          351.9,
+          86.7
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Original printed 28 heading on physical page 14, retained exact pixel patch.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "96fcfe6b316afb8bb76efd91737c6d1366fc98d5cae669268db1698b61b8e7b0"
+      }
+    ],
+    "regions": [
+      {
+        "page": 14,
+        "bbox": [
+          57.8,
+          57.8,
+          304.3,
+          299.2
+        ],
+        "role": "primary",
+        "owner": "2019-20-fa-p14-27",
+        "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+      },
+      {
+        "page": 14,
+        "bbox": [
+          309.4,
+          57.8,
+          559.3,
+          299.2
+        ],
+        "role": "primary",
+        "owner": "2019-20-fa-p14-28",
+        "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "27",
+        "bbox": [
+          57.8,
+          57.8,
+          100.3,
+          86.7
+        ],
+        "pixel_sha256": "db1df1240997c999dfd2d528b8fb10eb4326dcf75d91106f9dd74bd776a2f1f5",
+        "audited_pixel_sha256": "db1df1240997c999dfd2d528b8fb10eb4326dcf75d91106f9dd74bd776a2f1f5"
+      },
+      {
+        "kind": "heading",
+        "number": "28",
+        "bbox": [
+          309.4,
+          57.8,
+          351.9,
+          86.7
+        ],
+        "pixel_sha256": "96fcfe6b316afb8bb76efd91737c6d1366fc98d5cae669268db1698b61b8e7b0",
+        "audited_pixel_sha256": "96fcfe6b316afb8bb76efd91737c6d1366fc98d5cae669268db1698b61b8e7b0"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

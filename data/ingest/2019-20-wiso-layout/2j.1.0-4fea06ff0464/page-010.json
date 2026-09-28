@@ -1,0 +1,61 @@
+{
+  "key": "cc75a003643217718be7c7f9001605676875add8852ccf0996966ec817c2d25d",
+  "record_hash": "1139e3ed73ebbebbcebba55984b4dc49290f798c341a67b5f196e3c90fc1f0ff",
+  "record": {
+    "page": 10,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+    "anchors": [
+      {
+        "anchor_id": "2019-20-wiso-p10-U5",
+        "number": "U5",
+        "bbox": [
+          59.5,
+          52.7,
+          102.0,
+          81.6
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Original printed U5 heading on physical page 10, retained exact pixel patch.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "ebe8d070f9e9cafb103224b6d4e44755e72d00b7b37be28cd0c7e1adaa60e8d0"
+      }
+    ],
+    "regions": [
+      {
+        "page": 10,
+        "bbox": [
+          59.5,
+          52.7,
+          547.4,
+          537.2
+        ],
+        "role": "primary",
+        "owner": "2019-20-wiso-p10-U5",
+        "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U5",
+        "bbox": [
+          59.5,
+          52.7,
+          102.0,
+          81.6
+        ],
+        "pixel_sha256": "ebe8d070f9e9cafb103224b6d4e44755e72d00b7b37be28cd0c7e1adaa60e8d0",
+        "audited_pixel_sha256": "ebe8d070f9e9cafb103224b6d4e44755e72d00b7b37be28cd0c7e1adaa60e8d0"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

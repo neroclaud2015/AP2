@@ -1,0 +1,46 @@
+{
+  "key": "f6dfb536fc7bc55eaaedd253c365c250580db751c1bc78fc6d3b81f95e49a6df",
+  "record_hash": "395bc27cd1968190c0fbd277114371f632569641f49e155faf9f180724ebe6a9",
+  "record": {
+    "page": 20,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "continuation",
+    "classification_evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+    "anchors": [],
+    "regions": [
+      {
+        "page": 20,
+        "bbox": [
+          40.8,
+          17.0,
+          574.6,
+          814.3
+        ],
+        "role": "continuation",
+        "owner": "2019-20-fa-p19-U2",
+        "evidence": "U2 page19 explicitly says Weiter nächste Seite after subparts1/2; page20 explicitly starts subpart3 referring to the same motor, carries U2 score box and rotor graph; next U3 starts page21."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "ownership",
+        "number": "U2 subpart 3",
+        "bbox": [
+          44.2,
+          17.0,
+          562.7,
+          59.5
+        ],
+        "pixel_sha256": "491c6670fcf9dcaf269c9b4e6877e654963328dfa5bacfd90c7939ef3cfcd5f7",
+        "audited_pixel_sha256": "491c6670fcf9dcaf269c9b4e6877e654963328dfa5bacfd90c7939ef3cfcd5f7"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

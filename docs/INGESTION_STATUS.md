@@ -1,3 +1,11 @@
+# Current checkpoint — Phase 2J / Winter 2019/20
+
+AP36 (MC28/28,U8/8) and WiSo24 (MC18/18,U6/6) production. FA36, MC27/28, U8/8: Q21 requires actual manual_source_review; no promotion. Total15 production modules /468 questions. 79 new physical pages cached once; old PDF rescans0. All12 repeated steps skip with pymupdf.open prohibited. Previous30 source records, datasets, manual confirmations and personal storage code unchanged.
+
+Review: ?view=answer-review&scope=winter-2019-20&item=2019-20-fa-p12-21. Stop awaiting user confirmation; no Sommer2020+, Firebase activation or learning-algorithm changes. See PHASE_2J_REPORT.md and evidence/phase2j.
+
+---
+
 # Current checkpoint — Phase 2I.2 / Sommer 2019
 
 AP36 / FA36 / WiSo24 production. MC28/28 +28/28 +18/18; U8/8 +8/8 +6/6; Needs Review0. Total13 modules /408 questions. Existing24 source records and old datasets unchanged. Sommer2018 AP/FA still blocked: missing Stückliste / Anlage. 89 new pages cached once, old PDF rescans0, 12 repeat steps skipped under PDF-open guard. Stop for per-season acceptance; Winter2019/20 and later pending.

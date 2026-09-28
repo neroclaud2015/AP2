@@ -1,0 +1,204 @@
+{
+  "scope": "2019-20-wiso",
+  "name": "2019_20_winter_wiso",
+  "exam": "2019_20_winter",
+  "module": "WiSo",
+  "profile_id": "official-ring-grid",
+  "version": "2j.1.0",
+  "source_hash": "89cc6247493d8908e5043b95e5e2c1b3c05bf1b986e3df2f68f15754fa07f984",
+  "source_id": "src-f0b191214726743b04f599d9",
+  "question_source_id": "src-7942ae45d042cc5d71ac3921",
+  "solution_source_id": "src-f0b191214726743b04f599d9",
+  "validated_sources": [
+    "89cc6247493d8908e5043b95e5e2c1b3c05bf1b986e3df2f68f15754fa07f984"
+  ],
+  "choice_page": 3,
+  "choice_count": 18,
+  "analysis_size": [
+    993,
+    1404
+  ],
+  "groups": [
+    [
+      1,
+      10,
+      137,
+      59.9,
+      385,
+      20.2,
+      0.15,
+      356
+    ],
+    [
+      11,
+      8,
+      137,
+      59.9,
+      504,
+      20.1,
+      0.15,
+      476
+    ]
+  ],
+  "grid_crop": [
+    105,
+    350,
+    708,
+    601
+  ],
+  "ring_policy": {
+    "min_ring": 0.4,
+    "support": 0.83,
+    "possible_ring": 0.32,
+    "possible_support": 0.58,
+    "margin": 0.15,
+    "center": 0.1
+  },
+  "header_evidence": "All printed column numbers visually verified from cached official sheet: rows group 1-10,11-20,21-28 (WiSo 1-10,11-18). Five vertical dots map top-to-bottom to 1..5. No semantic answer inference.",
+  "u_evidence": "Original printed U headings and cell boundaries individually inspected; complete source cells retain all formulas, tables and diagrams. Whole-question self-assessment; no inferred numerical grading.",
+  "u_regions": {
+    "U1": {
+      "regions": [
+        {
+          "page": 4,
+          "bbox": [
+            30.616,
+            236.427,
+            574.909,
+            336.781
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 4,
+      "heading_box": [
+        30.616,
+        236.427,
+        74.84,
+        263.642
+      ],
+      "heading_pixel_sha256": "686716300273d29ec2154205ff8739acd66542e67ef0031e726329c18d928ae2"
+    },
+    "U2": {
+      "regions": [
+        {
+          "page": 4,
+          "bbox": [
+            30.616,
+            340.183,
+            574.909,
+            477.957
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 4,
+      "heading_box": [
+        30.616,
+        340.183,
+        74.84,
+        367.397
+      ],
+      "heading_pixel_sha256": "1f32f96a3e8ef025ef63583ce058b64421a395d2418b5d554402fa72dc93c099"
+    },
+    "U3": {
+      "regions": [
+        {
+          "page": 4,
+          "bbox": [
+            30.616,
+            481.359,
+            574.909,
+            585.115
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 4,
+      "heading_box": [
+        30.616,
+        481.359,
+        74.84,
+        508.573
+      ],
+      "heading_pixel_sha256": "b430488050149f9a3d55f81e7ba481375471d0657dcc91c02e7436bdffd6e8c9"
+    },
+    "U4": {
+      "regions": [
+        {
+          "page": 4,
+          "bbox": [
+            30.616,
+            588.516,
+            574.909,
+            814.738
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 4,
+      "heading_box": [
+        30.616,
+        588.516,
+        74.84,
+        615.731
+      ],
+      "heading_pixel_sha256": "060303d5e81fbf726c9034ba4d68d3dca24a13a04a16f71ea89938238e50984e"
+    },
+    "U5": {
+      "regions": [
+        {
+          "page": 5,
+          "bbox": [
+            18.71,
+            20.411,
+            568.105,
+            141.176
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 5,
+      "heading_box": [
+        18.71,
+        20.411,
+        62.934,
+        47.626
+      ],
+      "heading_pixel_sha256": "6e3cc49600617c5091b6a1f09c05cc5db454e78f352c48b4ea74324f0df69b5e"
+    },
+    "U6": {
+      "regions": [
+        {
+          "page": 5,
+          "bbox": [
+            18.71,
+            144.578,
+            568.105,
+            814.738
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 5,
+      "heading_box": [
+        18.71,
+        144.578,
+        62.934,
+        171.792
+      ],
+      "heading_pixel_sha256": "7f7540c4a032c7fefbd53abacf27dca6e9f4178fb9a3f89b17ed460f6cd1e385"
+    }
+  },
+  "page_image_hashes": {
+    "3": "3ecef8c7802a9a6239857618e8fe04031fdc8eba0d0f39a7c5d2b9e5080ca371",
+    "4": "7e386a931ea0f348733f42d6d60f89ade5d585fc70478b8baab06b150c82d69a",
+    "5": "bfe70b08ddc508425767360f708ec4adb7eedcd07753dd1182ae8e2a41ff806c"
+  }
+}

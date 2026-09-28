@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "baseline": "6cbd6ba53b3634b083300179683daf0414479178",
-  "phase": "2I.2",
+  "phase": "2J",
   "firebase": "implemented_not_configured",
-  "active_season": "2019-sommer",
+  "active_season": "2019-20-winter",
   "archives": [
     {
       "archive": "2018_19 Winter-20260926T101143Z-1-001.zip",
@@ -11,11 +11,11 @@
     },
     {
       "archive": "2019 Sommer-20260926T101145Z-1-001.zip",
-      "status": "production_awaiting_acceptance"
+      "status": "production_accepted"
     },
     {
       "archive": "2019_20 Winter-20260926T101155Z-1-001.zip",
-      "status": "pending"
+      "status": "awaiting_manual_answer_review"
     },
     {
       "archive": "2020 Sommer-20260926T101156Z-1-001.zip",
@@ -207,7 +207,7 @@
       }
     },
     "2019-sommer": {
-      "status": "production_awaiting_acceptance",
+      "status": "production_accepted",
       "sources": [
         {
           "module": "arbeitsplanung",
@@ -343,8 +343,142 @@
           "page_count": 14
         }
       }
+    },
+    "2019-20-winter": {
+      "status": "awaiting_manual_answer_review",
+      "sources": [
+        {
+          "source_id": "src-8dc887e94657597f5832fa92",
+          "module": "arbeitsplanung",
+          "type": "question_pdf",
+          "sha256": "d4403e31b4f8ab20bdc0bdebd6eab657da5f18abc8a4d3d40191942105102d4d"
+        },
+        {
+          "source_id": "src-902ec6d268ff01eeead2af76",
+          "module": "arbeitsplanung",
+          "type": "solution_pdf",
+          "sha256": "89cc6247493d8908e5043b95e5e2c1b3c05bf1b986e3df2f68f15754fa07f984"
+        },
+        {
+          "source_id": "src-43f38be8fa24939250b98f15",
+          "module": "funktionsanalyse",
+          "type": "question_pdf",
+          "sha256": "80eb003fde0b4bc41f35ad392b22721253171a0003549341d6aad0d50deb64c5"
+        },
+        {
+          "source_id": "src-4ffb58c21326a10d301e85f7",
+          "module": "funktionsanalyse",
+          "type": "solution_pdf",
+          "sha256": "89cc6247493d8908e5043b95e5e2c1b3c05bf1b986e3df2f68f15754fa07f984"
+        },
+        {
+          "source_id": "src-7942ae45d042cc5d71ac3921",
+          "module": "wiso",
+          "type": "question_pdf",
+          "sha256": "21ae506df99a72dbcd2fe073b414086f54adaf9609742f329d724d7122fa3ec3"
+        },
+        {
+          "source_id": "src-f0b191214726743b04f599d9",
+          "module": "wiso",
+          "type": "solution_pdf",
+          "sha256": "89cc6247493d8908e5043b95e5e2c1b3c05bf1b986e3df2f68f15754fa07f984"
+        }
+      ],
+      "modules": {
+        "arbeitsplanung": {
+          "status": "production",
+          "questions": 36,
+          "mc_ready": 28,
+          "mc_expected": 28,
+          "u_coverage": 8,
+          "needs_review": [],
+          "blocked_reason": null,
+          "profile_reuse": "portrait-explicit-regions + official-ring-grid (engines and thresholds unchanged)",
+          "layout_profile_version": "2j.1.0",
+          "config_hash": "e510fb006b47546a49bdef7c20516934ce7989814f6fc4e3d096eab297dad7b1",
+          "source_hash": "d4403e31b4f8ab20bdc0bdebd6eab657da5f18abc8a4d3d40191942105102d4d",
+          "answer_parser_version": "2019-20-ap-2f.1.0-3fa1635f90a0",
+          "pdf_rescan_count": 0,
+          "production_url": "https://neroclaud2015.github.io/AP2/?view=study&exam=2019-20-winter&module=arbeitsplanung&q=1",
+          "preview_url": "https://neroclaud2015.github.io/AP2/evidence/phase2j/arbeitsplanung/"
+        },
+        "funktionsanalyse": {
+          "status": "needs_manual_review",
+          "questions": 36,
+          "mc_ready": 27,
+          "mc_expected": 28,
+          "u_coverage": 8,
+          "needs_review": [
+            21
+          ],
+          "blocked_reason": "FA Q21: no_unique_circle / threshold_disagreement; no candidate accepted",
+          "profile_reuse": "portrait-explicit-regions + official-ring-grid (engines and thresholds unchanged)",
+          "layout_profile_version": "2j.1.0",
+          "config_hash": "056a272fe2b8df609ed9068363cf85439e983fdde29c0876dd7f3c7ac0c24676",
+          "source_hash": "80eb003fde0b4bc41f35ad392b22721253171a0003549341d6aad0d50deb64c5",
+          "answer_parser_version": "2019-20-fa-2f.1.0-1289584449e3",
+          "pdf_rescan_count": 0,
+          "production_url": null,
+          "preview_url": "https://neroclaud2015.github.io/AP2/evidence/phase2j/funktionsanalyse/"
+        },
+        "wiso": {
+          "status": "production",
+          "questions": 24,
+          "mc_ready": 18,
+          "mc_expected": 18,
+          "u_coverage": 6,
+          "needs_review": [],
+          "blocked_reason": null,
+          "profile_reuse": "portrait-explicit-regions + official-ring-grid (engines and thresholds unchanged)",
+          "layout_profile_version": "2j.1.0",
+          "config_hash": "d4366e12cdfd35b27264bff9c0e342d9bcca78f89916b60e0b833523f3e92ea1",
+          "source_hash": "21ae506df99a72dbcd2fe073b414086f54adaf9609742f329d724d7122fa3ec3",
+          "answer_parser_version": "2019-20-wiso-2f.1.0-ce8f14981b72",
+          "pdf_rescan_count": 0,
+          "production_url": "https://neroclaud2015.github.io/AP2/?view=study&exam=2019-20-winter&module=wiso&q=1",
+          "preview_url": "https://neroclaud2015.github.io/AP2/evidence/phase2j/wiso/"
+        }
+      },
+      "cache_results": {
+        "src-8dc887e94657597f5832fa92": {
+          "status": "complete",
+          "pages_processed": 25,
+          "source_hash": "d4403e31b4f8ab20bdc0bdebd6eab657da5f18abc8a4d3d40191942105102d4d",
+          "page_count": 25
+        },
+        "src-902ec6d268ff01eeead2af76": {
+          "status": "complete",
+          "pages_processed": 13,
+          "source_hash": "89cc6247493d8908e5043b95e5e2c1b3c05bf1b986e3df2f68f15754fa07f984",
+          "page_count": 13
+        },
+        "src-43f38be8fa24939250b98f15": {
+          "status": "complete",
+          "pages_processed": 26,
+          "source_hash": "80eb003fde0b4bc41f35ad392b22721253171a0003549341d6aad0d50deb64c5",
+          "page_count": 26
+        },
+        "src-4ffb58c21326a10d301e85f7": {
+          "status": "skipped",
+          "pages_processed": 0,
+          "source_hash": "89cc6247493d8908e5043b95e5e2c1b3c05bf1b986e3df2f68f15754fa07f984",
+          "page_count": 13
+        },
+        "src-7942ae45d042cc5d71ac3921": {
+          "status": "complete",
+          "pages_processed": 15,
+          "source_hash": "21ae506df99a72dbcd2fe073b414086f54adaf9609742f329d724d7122fa3ec3",
+          "page_count": 15
+        },
+        "src-f0b191214726743b04f599d9": {
+          "status": "skipped",
+          "pages_processed": 0,
+          "source_hash": "89cc6247493d8908e5043b95e5e2c1b3c05bf1b986e3df2f68f15754fa07f984",
+          "page_count": 13
+        }
+      }
     }
   },
-  "stop_reason": "Sommer 2019 complete. Stop for requested per-season acceptance; no 2019/20 or later PDFs opened.",
+  "stop_reason": "Winter 2019/20: AP and WiSo production; FA Q21 awaits actual user manual_source_review. Do not process Sommer2020 or later.",
   "previous_stop_reason": "Official answer association safety gate: AP Q3/9/10/22/24, FA Q7/21/27. WiSo complete. No later season PDFs opened."
 }

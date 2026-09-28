@@ -1,0 +1,61 @@
+{
+  "key": "faedafe3a6a522b3e89f1adfe9e059f30dd64a03c4f688223ed1e25d6e848e8a",
+  "record_hash": "9734a81cdf0ce7e493b4b5c41c2e24b3d41fc5c1f9eec13391269bec2fc13e0c",
+  "record": {
+    "page": 23,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+    "anchors": [
+      {
+        "anchor_id": "2019-20-fa-p23-U5",
+        "number": "U5",
+        "bbox": [
+          40.8,
+          17.0,
+          83.3,
+          45.9
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Original printed U5 heading on physical page 23, retained exact pixel patch.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "28706173166ee48b067d3b90a069db6cce84a0f8b36b6b68ac35f873691b350e"
+      }
+    ],
+    "regions": [
+      {
+        "page": 23,
+        "bbox": [
+          40.8,
+          17.0,
+          576.3,
+          814.3
+        ],
+        "role": "primary",
+        "owner": "2019-20-fa-p23-U5",
+        "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U5",
+        "bbox": [
+          40.8,
+          17.0,
+          83.3,
+          45.9
+        ],
+        "pixel_sha256": "28706173166ee48b067d3b90a069db6cce84a0f8b36b6b68ac35f873691b350e",
+        "audited_pixel_sha256": "28706173166ee48b067d3b90a069db6cce84a0f8b36b6b68ac35f873691b350e"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

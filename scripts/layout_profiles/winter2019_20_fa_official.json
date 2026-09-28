@@ -1,0 +1,262 @@
+{
+  "scope": "2019-20-fa",
+  "name": "2019_20_winter_funktionsanalyse",
+  "exam": "2019_20_winter",
+  "module": "Funktionsanalyse",
+  "profile_id": "official-ring-grid",
+  "version": "2j.1.0",
+  "source_hash": "89cc6247493d8908e5043b95e5e2c1b3c05bf1b986e3df2f68f15754fa07f984",
+  "source_id": "src-4ffb58c21326a10d301e85f7",
+  "question_source_id": "src-43f38be8fa24939250b98f15",
+  "solution_source_id": "src-4ffb58c21326a10d301e85f7",
+  "validated_sources": [
+    "89cc6247493d8908e5043b95e5e2c1b3c05bf1b986e3df2f68f15754fa07f984"
+  ],
+  "choice_page": 2,
+  "choice_count": 28,
+  "analysis_size": [
+    993,
+    1404
+  ],
+  "groups": [
+    [
+      1,
+      10,
+      141.5,
+      59.05,
+      391,
+      20,
+      0.12,
+      361
+    ],
+    [
+      11,
+      10,
+      141.5,
+      59.05,
+      509,
+      20,
+      0.12,
+      481
+    ],
+    [
+      21,
+      8,
+      141.5,
+      59.05,
+      627,
+      20.2,
+      0.12,
+      599
+    ]
+  ],
+  "grid_crop": [
+    105,
+    350,
+    708,
+    720
+  ],
+  "ring_policy": {
+    "min_ring": 0.4,
+    "support": 0.83,
+    "possible_ring": 0.32,
+    "possible_support": 0.58,
+    "margin": 0.15,
+    "center": 0.1
+  },
+  "header_evidence": "All printed column numbers visually verified from cached official sheet: rows group 1-10,11-20,21-28 (WiSo 1-10,11-18). Five vertical dots map top-to-bottom to 1..5. No semantic answer inference.",
+  "u_evidence": "Original printed U headings and cell boundaries individually inspected; complete source cells retain all formulas, tables and diagrams. Whole-question self-assessment; no inferred numerical grading.",
+  "u_regions": {
+    "U1": {
+      "regions": [
+        {
+          "page": 10,
+          "bbox": [
+            42.523,
+            125.868,
+            564.704,
+            398.014
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 10,
+      "heading_box": [
+        42.523,
+        125.868,
+        86.747,
+        153.082
+      ],
+      "heading_pixel_sha256": "fb4e185930d9e838977871e7a950c3d71bc6dc42af8a7a53283f0852a8aed69b"
+    },
+    "U2": {
+      "regions": [
+        {
+          "page": 10,
+          "bbox": [
+            42.523,
+            401.416,
+            564.704,
+            814.738
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 10,
+      "heading_box": [
+        42.523,
+        401.416,
+        86.747,
+        428.63
+      ],
+      "heading_pixel_sha256": "2528f90333e3ab6da862e6d25b2b72cddbcefdd4515b6be0636da167238cd4e7"
+    },
+    "U3": {
+      "regions": [
+        {
+          "page": 11,
+          "bbox": [
+            25.514,
+            20.411,
+            551.096,
+            205.811
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 11,
+      "heading_box": [
+        25.514,
+        20.411,
+        69.737,
+        47.626
+      ],
+      "heading_pixel_sha256": "f526c7d41afd57c9698eb51f1f67bc641bae87a3a71f3287910677c6e25a6d4a"
+    },
+    "U4": {
+      "regions": [
+        {
+          "page": 11,
+          "bbox": [
+            25.514,
+            209.212,
+            551.096,
+            814.738
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 11,
+      "heading_box": [
+        25.514,
+        209.212,
+        69.737,
+        236.427
+      ],
+      "heading_pixel_sha256": "1827bdad623ff722ef4c9f444b4ffd4d97f6f5634271a41d323bc86c6bc7d68e"
+    },
+    "U5": {
+      "regions": [
+        {
+          "page": 12,
+          "bbox": [
+            42.523,
+            125.868,
+            568.105,
+            430.331
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 12,
+      "heading_box": [
+        42.523,
+        125.868,
+        86.747,
+        153.082
+      ],
+      "heading_pixel_sha256": "64f03cac6715d630b2a520da139043cfaf477a5416eb483e3ab95ff812bd05fc"
+    },
+    "U6": {
+      "regions": [
+        {
+          "page": 12,
+          "bbox": [
+            42.523,
+            433.733,
+            568.105,
+            814.738
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 12,
+      "heading_box": [
+        42.523,
+        433.733,
+        86.747,
+        460.948
+      ],
+      "heading_pixel_sha256": "278ca5c10e8e9b9ba8a103be9933f956c7e92b85eeb26597e5c4e5e2bc4072c3"
+    },
+    "U7": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            28.916,
+            20.411,
+            557.9,
+            409.92
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 13,
+      "heading_box": [
+        28.916,
+        20.411,
+        73.139,
+        47.626
+      ],
+      "heading_pixel_sha256": "e2dcdc2d9a073e76bd6fa3b54745316d70cbbf40a91625f53d769bf710387535"
+    },
+    "U8": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            28.916,
+            413.322,
+            557.9,
+            814.738
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 13,
+      "heading_box": [
+        28.916,
+        413.322,
+        73.139,
+        440.537
+      ],
+      "heading_pixel_sha256": "0545f001299b713f79f423af7dd5413ea722b58d8e3c16a0d5a7081b8190a998"
+    }
+  },
+  "page_image_hashes": {
+    "2": "50d44d39fe83c4c8fc7490dacabafdb0004f485a1e88065a4e630b994565da5c",
+    "10": "3d043acc733e7ca3a7f419585c052a7bdebdbf5adcb89d9f8dee3fc555c08265",
+    "11": "905b2fc276d6ecf35a0bfcf2543922e2cc6922bdfdcd5e8a6fe62733f4ea907b",
+    "12": "8c63226e884d127bf03a4968398d00957b94f42f8d2f5ebe3a681778f69c4920",
+    "13": "91e90bd63f52ccbd5840a7809373f0a62d47f14beece732243a1d7a66664fc4b"
+  }
+}

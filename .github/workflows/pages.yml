@@ -52,6 +52,7 @@ jobs:
       - run: python scripts/publish_phase2i.py
       - run: python scripts/publish_phase2i1.py
       - run: python scripts/publish_phase2i2.py
+      - run: python scripts/publish_evidence.py phase2j
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

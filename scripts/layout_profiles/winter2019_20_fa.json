@@ -1,0 +1,1238 @@
+{
+  "profile_id": "portrait-explicit-regions",
+  "scope": "2019-20-fa",
+  "version": "2j.1.0",
+  "exam": "2019_20_winter",
+  "module": "Funktionsanalyse",
+  "source_hash": "80eb003fde0b4bc41f35ad392b22721253171a0003549341d6aad0d50deb64c5",
+  "source_id": "src-43f38be8fa24939250b98f15",
+  "solution_source_id": "src-4ffb58c21326a10d301e85f7",
+  "validated_sources": [
+    "80eb003fde0b4bc41f35ad392b22721253171a0003549341d6aad0d50deb64c5"
+  ],
+  "name": "2019_20_winter_funktionsanalyse",
+  "expected": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6",
+    "U7",
+    "U8"
+  ],
+  "pages": {
+    "1": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "context_or_blank",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "2": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "context_or_blank",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "3": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [
+        {
+          "observed_number": "1",
+          "heading_box": [
+            49.3,
+            295.8,
+            91.8,
+            324.7
+          ],
+          "visual_patch_sha256": "366526f52bf3e863485a960ea5aa01ae9ccf73dba37a4ba9b5cb2653845d1cab",
+          "regions": [
+            [
+              49.3,
+              295.8,
+              545.7,
+              533.8
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 1 heading on physical page 3, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        },
+        {
+          "observed_number": "2",
+          "heading_box": [
+            49.3,
+            537.2,
+            91.8,
+            566.1
+          ],
+          "visual_patch_sha256": "895b0a379babedf9249a8e421f73e1286c10ea155da8d0cd85203897c0d46bf0",
+          "regions": [
+            [
+              49.3,
+              537.2,
+              545.7,
+              785.4
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 2 heading on physical page 3, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "4": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [
+        {
+          "observed_number": "3",
+          "heading_box": [
+            57.8,
+            56.1,
+            100.3,
+            85.0
+          ],
+          "visual_patch_sha256": "df2450fa3c862e02a7e46838384c3170220f0609edc81d46723089ddd784b7a1",
+          "regions": [
+            [
+              57.8,
+              56.1,
+              549.1,
+              783.7
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 3 heading on physical page 4, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "5": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [
+        {
+          "observed_number": "4",
+          "heading_box": [
+            51.0,
+            532.1,
+            93.5,
+            561.0
+          ],
+          "visual_patch_sha256": "2917d0564975b5860496ad544bbeb7004f45d0d7a4931db9349afcf5e0bb818f",
+          "regions": [
+            [
+              51.0,
+              532.1,
+              295.8,
+              783.7
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 4 heading on physical page 5, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        },
+        {
+          "observed_number": "5",
+          "heading_box": [
+            302.6,
+            532.1,
+            345.1,
+            561.0
+          ],
+          "visual_patch_sha256": "5695cf860d98e2fdfa2258ecec9aead46ae7b2516a48346f881acf8321fa23e1",
+          "regions": [
+            [
+              302.6,
+              532.1,
+              545.7,
+              783.7
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 5 heading on physical page 5, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "6": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [
+        {
+          "observed_number": "6",
+          "heading_box": [
+            57.8,
+            59.5,
+            100.3,
+            88.4
+          ],
+          "visual_patch_sha256": "43f711bad201bea20fa5754857730b49612100612c1b9c72d294794af3dfcc30",
+          "regions": [
+            [
+              57.8,
+              59.5,
+              554.2,
+              294.1
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 6 heading on physical page 6, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        },
+        {
+          "observed_number": "7",
+          "heading_box": [
+            59.5,
+            299.2,
+            102.0,
+            328.1
+          ],
+          "visual_patch_sha256": "b547556f3d3d864cf5c732f6d85f46a91c90de8a5c9d5ff06f3514e4faffad5d",
+          "regions": [
+            [
+              59.5,
+              299.2,
+              307.7,
+              535.5
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 7 heading on physical page 6, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        },
+        {
+          "observed_number": "8",
+          "heading_box": [
+            59.5,
+            542.3,
+            102.0,
+            571.2
+          ],
+          "visual_patch_sha256": "ed2aae3cfe0c745d7f870d74e942710a0561a4bda28ebcf7840b2ce964efff82",
+          "regions": [
+            [
+              59.5,
+              542.3,
+              552.5,
+              788.8
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 8 heading on physical page 6, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "7": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [
+        {
+          "observed_number": "9",
+          "heading_box": [
+            51.0,
+            52.7,
+            93.5,
+            81.6
+          ],
+          "visual_patch_sha256": "c2d000aa0cd452f5be89aa054cfbcca2449b42e7c01c978086f4ce6f5bb50cf9",
+          "regions": [
+            [
+              51.0,
+              52.7,
+              549.1,
+              589.9
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 9 heading on physical page 7, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "8": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [
+        {
+          "observed_number": "10",
+          "heading_box": [
+            57.8,
+            54.4,
+            100.3,
+            83.3
+          ],
+          "visual_patch_sha256": "093ee3ad53c87587f1b7e002c742441fa4d48a9cc962548abb09afc66ce485d3",
+          "regions": [
+            [
+              57.8,
+              54.4,
+              557.6,
+              295.8
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 10 heading on physical page 8, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        },
+        {
+          "observed_number": "11",
+          "heading_box": [
+            56.1,
+            299.2,
+            98.6,
+            328.1
+          ],
+          "visual_patch_sha256": "a43382c952013b842dd213c8a4feebf78f9dbb34514d128193ad8e3a54c8efdb",
+          "regions": [
+            [
+              56.1,
+              299.2,
+              561.0,
+              787.1
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 11 heading on physical page 8, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "9": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [
+        {
+          "observed_number": "12",
+          "heading_box": [
+            54.4,
+            56.1,
+            96.9,
+            85.0
+          ],
+          "visual_patch_sha256": "b99a798f34b247bc81292caaf194dae7757755122e3f722865b77fd6e2705f84",
+          "regions": [
+            [
+              54.4,
+              56.1,
+              549.1,
+              292.4
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 12 heading on physical page 9, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        },
+        {
+          "observed_number": "13",
+          "heading_box": [
+            54.4,
+            295.8,
+            96.9,
+            324.7
+          ],
+          "visual_patch_sha256": "b8a49844af8e7fd8d3905538692dff379c9fee3785dae0baf62a9475fd6f776e",
+          "regions": [
+            [
+              54.4,
+              295.8,
+              549.1,
+              535.5
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 13 heading on physical page 9, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "10": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "context_or_blank",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "11": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [
+        {
+          "observed_number": "14",
+          "heading_box": [
+            52.7,
+            57.8,
+            95.2,
+            86.7
+          ],
+          "visual_patch_sha256": "357aca6c207776e89ff95bcd5753cd557ade93a112702186d892bf41c3c43490",
+          "regions": [
+            [
+              52.7,
+              57.8,
+              295.8,
+              294.1
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 14 heading on physical page 11, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        },
+        {
+          "observed_number": "15",
+          "heading_box": [
+            300.9,
+            57.8,
+            343.4,
+            86.7
+          ],
+          "visual_patch_sha256": "51a20270514e091e64e2be844ecb9d15a92679da041a68ba24a474e0377e21d8",
+          "regions": [
+            [
+              300.9,
+              57.8,
+              549.1,
+              294.1
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 15 heading on physical page 11, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        },
+        {
+          "observed_number": "16",
+          "heading_box": [
+            52.7,
+            297.5,
+            95.2,
+            326.4
+          ],
+          "visual_patch_sha256": "90018f3978aee6293137a191d4020e538da775506d65fefa5d0888b55c31c51e",
+          "regions": [
+            [
+              52.7,
+              297.5,
+              295.8,
+              533.8
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 16 heading on physical page 11, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        },
+        {
+          "observed_number": "17",
+          "heading_box": [
+            300.9,
+            297.5,
+            343.4,
+            326.4
+          ],
+          "visual_patch_sha256": "c5e44491c52c5098c67fecd62f9abbfabff16f6ded75464c53e1ddf22ed2179d",
+          "regions": [
+            [
+              300.9,
+              297.5,
+              549.1,
+              533.8
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 17 heading on physical page 11, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        },
+        {
+          "observed_number": "18",
+          "heading_box": [
+            52.7,
+            537.2,
+            95.2,
+            566.1
+          ],
+          "visual_patch_sha256": "664c3bb34184573c1e1cca20acec12e7e9762ecf1d715fc63448a7c428861da4",
+          "regions": [
+            [
+              52.7,
+              537.2,
+              295.8,
+              782.0
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 18 heading on physical page 11, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        },
+        {
+          "observed_number": "19",
+          "heading_box": [
+            300.9,
+            537.2,
+            343.4,
+            566.1
+          ],
+          "visual_patch_sha256": "b6f9e585e9001ff0dbeeb05d93810f170b0c9198dedfe47587c6724899fdb2c6",
+          "regions": [
+            [
+              300.9,
+              537.2,
+              549.1,
+              782.0
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 19 heading on physical page 11, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "12": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [
+        {
+          "observed_number": "20",
+          "heading_box": [
+            57.8,
+            57.8,
+            100.3,
+            86.7
+          ],
+          "visual_patch_sha256": "3e103b9fd87d526a10e51ae8beeaf2c4a8978199ace5a26184451e79cf3f42f9",
+          "regions": [
+            [
+              57.8,
+              57.8,
+              559.3,
+              294.1
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 20 heading on physical page 12, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        },
+        {
+          "observed_number": "21",
+          "heading_box": [
+            57.8,
+            297.5,
+            100.3,
+            326.4
+          ],
+          "visual_patch_sha256": "277d2e6f5f8e596ced3d8d591d8b9d8440cf0fe547220da2f47c88b70d2ac13f",
+          "regions": [
+            [
+              57.8,
+              297.5,
+              307.7,
+              537.2
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 21 heading on physical page 12, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        },
+        {
+          "observed_number": "22",
+          "heading_box": [
+            57.8,
+            540.6,
+            100.3,
+            569.5
+          ],
+          "visual_patch_sha256": "98242b2bcd4799caa2a8b2821100fe6c713a7599e131a3acb0ebcd5de0ed2a8c",
+          "regions": [
+            [
+              57.8,
+              540.6,
+              559.3,
+              787.1
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 22 heading on physical page 12, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "13": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [
+        {
+          "observed_number": "23",
+          "heading_box": [
+            52.7,
+            56.1,
+            95.2,
+            85.0
+          ],
+          "visual_patch_sha256": "9d3d9b2b370f92f50da5345f98742fc5393c8b86a1cd858e73c99b36576c1c1d",
+          "regions": [
+            [
+              52.7,
+              56.1,
+              549.1,
+              290.7
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 23 heading on physical page 13, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        },
+        {
+          "observed_number": "24",
+          "heading_box": [
+            52.7,
+            294.1,
+            95.2,
+            323.0
+          ],
+          "visual_patch_sha256": "49277683687ae9d60149854bd8d4af9278e701db41d89577984572659f42ffd0",
+          "regions": [
+            [
+              52.7,
+              294.1,
+              549.1,
+              533.8
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 24 heading on physical page 13, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        },
+        {
+          "observed_number": "25",
+          "heading_box": [
+            52.7,
+            537.2,
+            95.2,
+            566.1
+          ],
+          "visual_patch_sha256": "ee3238d6e41068cdf39469d6a124d4d6e471c12be65a9ac8d47fc0791e7eaba6",
+          "regions": [
+            [
+              52.7,
+              537.2,
+              297.5,
+              783.7
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 25 heading on physical page 13, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        },
+        {
+          "observed_number": "26",
+          "heading_box": [
+            302.6,
+            537.2,
+            345.1,
+            566.1
+          ],
+          "visual_patch_sha256": "f7743e6516b80136718687ac6b1d169d2e0df92fb27aa163f2182bacd7bd1616",
+          "regions": [
+            [
+              302.6,
+              537.2,
+              549.1,
+              783.7
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 26 heading on physical page 13, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "14": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [
+        {
+          "observed_number": "27",
+          "heading_box": [
+            57.8,
+            57.8,
+            100.3,
+            86.7
+          ],
+          "visual_patch_sha256": "db1df1240997c999dfd2d528b8fb10eb4326dcf75d91106f9dd74bd776a2f1f5",
+          "regions": [
+            [
+              57.8,
+              57.8,
+              304.3,
+              299.2
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 27 heading on physical page 14, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        },
+        {
+          "observed_number": "28",
+          "heading_box": [
+            309.4,
+            57.8,
+            351.9,
+            86.7
+          ],
+          "visual_patch_sha256": "96fcfe6b316afb8bb76efd91737c6d1366fc98d5cae669268db1698b61b8e7b0",
+          "regions": [
+            [
+              309.4,
+              57.8,
+              559.3,
+              299.2
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed 28 heading on physical page 14, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "15": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "context_or_blank",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "16": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "context_or_blank",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "17": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "context_or_blank",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "18": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [
+        {
+          "observed_number": "U1",
+          "heading_box": [
+            34.0,
+            18.7,
+            76.5,
+            47.6
+          ],
+          "visual_patch_sha256": "e230043572d40660028f69d869022a800c43c4448af3d5c953002aa2b93467f1",
+          "regions": [
+            [
+              34.0,
+              18.7,
+              566.1,
+              814.3
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed U1 heading on physical page 18, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "19": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [
+        {
+          "observed_number": "U2",
+          "heading_box": [
+            40.8,
+            18.7,
+            83.3,
+            47.6
+          ],
+          "visual_patch_sha256": "80ec3599c17035c9e6479d403474d582b256fe90e4093faae767afe091314b79",
+          "regions": [
+            [
+              40.8,
+              18.7,
+              574.6,
+              814.3
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed U2 heading on physical page 19, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "20": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "continuation",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [],
+      "explicit_regions": [
+        {
+          "bbox": [
+            40.8,
+            17.0,
+            574.6,
+            814.3
+          ],
+          "role": "continuation",
+          "owner": "2019-20-fa-p19-U2",
+          "observed_owner_label": "U2 subpart 3",
+          "evidence_box": [
+            44.2,
+            17.0,
+            562.7,
+            59.5
+          ],
+          "visual_patch_sha256": "491c6670fcf9dcaf269c9b4e6877e654963328dfa5bacfd90c7939ef3cfcd5f7",
+          "evidence": "U2 page19 explicitly says Weiter nächste Seite after subparts1/2; page20 explicitly starts subpart3 referring to the same motor, carries U2 score box and rotor graph; next U3 starts page21."
+        }
+      ]
+    },
+    "21": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [
+        {
+          "observed_number": "U3",
+          "heading_box": [
+            42.5,
+            17.0,
+            85.0,
+            45.9
+          ],
+          "visual_patch_sha256": "225212a3713a02dd642c432a14c9ed0cc154359026c85dbb74552b15b36f1158",
+          "regions": [
+            [
+              42.5,
+              17.0,
+              572.9,
+              814.3
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed U3 heading on physical page 21, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "22": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [
+        {
+          "observed_number": "U4",
+          "heading_box": [
+            32.3,
+            17.0,
+            74.8,
+            45.9
+          ],
+          "visual_patch_sha256": "92f984a87eb36235c838aa58786db8cbc385c96fb7332b735b218671baea91dd",
+          "regions": [
+            [
+              32.3,
+              17.0,
+              564.4,
+              814.3
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed U4 heading on physical page 22, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "23": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [
+        {
+          "observed_number": "U5",
+          "heading_box": [
+            40.8,
+            17.0,
+            83.3,
+            45.9
+          ],
+          "visual_patch_sha256": "28706173166ee48b067d3b90a069db6cce84a0f8b36b6b68ac35f873691b350e",
+          "regions": [
+            [
+              40.8,
+              17.0,
+              576.3,
+              814.3
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed U5 heading on physical page 23, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "24": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [
+        {
+          "observed_number": "U6",
+          "heading_box": [
+            32.3,
+            17.0,
+            74.8,
+            45.9
+          ],
+          "visual_patch_sha256": "7f94f8041d1e936096277c00cdfa8a1641cee42aea3eb3a5fa7ab3f3288df45b",
+          "regions": [
+            [
+              32.3,
+              17.0,
+              566.1,
+              814.3
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed U6 heading on physical page 24, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "25": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [
+        {
+          "observed_number": "U7",
+          "heading_box": [
+            42.5,
+            17.0,
+            85.0,
+            45.9
+          ],
+          "visual_patch_sha256": "17973e4b7da5dda555193b62da6d0dcc6649f923ae7e96193a22b975a81f1004",
+          "regions": [
+            [
+              42.5,
+              17.0,
+              574.6,
+              814.3
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed U7 heading on physical page 25, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "26": {
+      "geometry": [
+        595.0,
+        841.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+      "slots": [
+        {
+          "observed_number": "U8",
+          "heading_box": [
+            32.3,
+            17.0,
+            74.8,
+            45.9
+          ],
+          "visual_patch_sha256": "e3e5a31f18b33735f3e4fa99018f9d6cd9ce5a94211528b1cdf3f86dd70471fa",
+          "regions": [
+            [
+              32.3,
+              17.0,
+              564.4,
+              635.8
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "visual_evidence": "Original printed U8 heading on physical page 26, retained exact pixel patch.",
+          "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+        }
+      ],
+      "explicit_regions": []
+    }
+  },
+  "timing_minutes": 105,
+  "timing_source_page": 2,
+  "description_page": 17,
+  "attachment_refs": {},
+  "attachment_crops": [
+    {
+      "page": 2,
+      "bbox": [
+        0.0,
+        0.0,
+        595.0,
+        833.0
+      ],
+      "role": "timing",
+      "question_numbers": []
+    },
+    {
+      "page": 17,
+      "bbox": [
+        0.0,
+        0.0,
+        595.0,
+        833.0
+      ],
+      "role": "description",
+      "question_numbers": [
+        "U1"
+      ]
+    },
+    {
+      "page": 5,
+      "bbox": [
+        51.0,
+        51.0,
+        547.4,
+        530.4
+      ],
+      "role": "shared_diagram",
+      "question_numbers": [
+        "4",
+        "5"
+      ]
+    },
+    {
+      "page": 10,
+      "bbox": [
+        47.6,
+        81.6,
+        552.5,
+        748.0
+      ],
+      "role": "attachment",
+      "question_numbers": [
+        "14"
+      ]
+    }
+  ]
+}

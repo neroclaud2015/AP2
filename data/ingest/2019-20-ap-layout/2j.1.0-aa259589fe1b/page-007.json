@@ -1,0 +1,213 @@
+{
+  "key": "1eb1ca893458c213e3c1024e097299fd9eac462a732462e41092cced1bc31ca9",
+  "record_hash": "90df23d740d94da71d7d227f67fbe9f53e4e37f8e2f39313ac047dd659e1bd79",
+  "record": {
+    "page": 7,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+    "anchors": [
+      {
+        "anchor_id": "2019-20-ap-p7-14",
+        "number": "14",
+        "bbox": [
+          47.6,
+          59.5,
+          90.1,
+          88.4
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Original printed 14 heading on physical page 7, retained exact pixel patch.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "03e8ccb3953ea3b6674d1ba2faf4d0c4c5020b7888bd6e000cea2fa68dfa8ae0"
+      },
+      {
+        "anchor_id": "2019-20-ap-p7-15",
+        "number": "15",
+        "bbox": [
+          299.2,
+          59.5,
+          341.7,
+          88.4
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Original printed 15 heading on physical page 7, retained exact pixel patch.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "5adf62e30288cbc55240683c33ec08d7e8199ba5a20da7a361816e5a583a3f0a"
+      },
+      {
+        "anchor_id": "2019-20-ap-p7-16",
+        "number": "16",
+        "bbox": [
+          47.6,
+          304.3,
+          90.1,
+          333.2
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Original printed 16 heading on physical page 7, retained exact pixel patch.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "2071c225af645e910a80a733e2aedca1cc202c87492292a14f1e4015acc2ca0a"
+      },
+      {
+        "anchor_id": "2019-20-ap-p7-17",
+        "number": "17",
+        "bbox": [
+          297.5,
+          304.3,
+          340.0,
+          333.2
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Original printed 17 heading on physical page 7, retained exact pixel patch.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "8e79e137c100321bc91fb57f4bca98ffe5a6fb4cf563593248787882644124ec"
+      },
+      {
+        "anchor_id": "2019-20-ap-p7-18",
+        "number": "18",
+        "bbox": [
+          44.2,
+          545.7,
+          86.7,
+          574.6
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Original printed 18 heading on physical page 7, retained exact pixel patch.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "838064035c98264c4e12aa0484919b51d76490461a678188726277962033d72c"
+      }
+    ],
+    "regions": [
+      {
+        "page": 7,
+        "bbox": [
+          47.6,
+          59.5,
+          295.8,
+          300.9
+        ],
+        "role": "primary",
+        "owner": "2019-20-ap-p7-14",
+        "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          299.2,
+          59.5,
+          549.1,
+          300.9
+        ],
+        "role": "primary",
+        "owner": "2019-20-ap-p7-15",
+        "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          47.6,
+          304.3,
+          294.1,
+          542.3
+        ],
+        "role": "primary",
+        "owner": "2019-20-ap-p7-16",
+        "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          297.5,
+          304.3,
+          549.1,
+          542.3
+        ],
+        "role": "primary",
+        "owner": "2019-20-ap-p7-17",
+        "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          44.2,
+          545.7,
+          549.1,
+          788.8
+        ],
+        "role": "primary",
+        "owner": "2019-20-ap-p7-18",
+        "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "14",
+        "bbox": [
+          47.6,
+          59.5,
+          90.1,
+          88.4
+        ],
+        "pixel_sha256": "03e8ccb3953ea3b6674d1ba2faf4d0c4c5020b7888bd6e000cea2fa68dfa8ae0",
+        "audited_pixel_sha256": "03e8ccb3953ea3b6674d1ba2faf4d0c4c5020b7888bd6e000cea2fa68dfa8ae0"
+      },
+      {
+        "kind": "heading",
+        "number": "15",
+        "bbox": [
+          299.2,
+          59.5,
+          341.7,
+          88.4
+        ],
+        "pixel_sha256": "5adf62e30288cbc55240683c33ec08d7e8199ba5a20da7a361816e5a583a3f0a",
+        "audited_pixel_sha256": "5adf62e30288cbc55240683c33ec08d7e8199ba5a20da7a361816e5a583a3f0a"
+      },
+      {
+        "kind": "heading",
+        "number": "16",
+        "bbox": [
+          47.6,
+          304.3,
+          90.1,
+          333.2
+        ],
+        "pixel_sha256": "2071c225af645e910a80a733e2aedca1cc202c87492292a14f1e4015acc2ca0a",
+        "audited_pixel_sha256": "2071c225af645e910a80a733e2aedca1cc202c87492292a14f1e4015acc2ca0a"
+      },
+      {
+        "kind": "heading",
+        "number": "17",
+        "bbox": [
+          297.5,
+          304.3,
+          340.0,
+          333.2
+        ],
+        "pixel_sha256": "8e79e137c100321bc91fb57f4bca98ffe5a6fb4cf563593248787882644124ec",
+        "audited_pixel_sha256": "8e79e137c100321bc91fb57f4bca98ffe5a6fb4cf563593248787882644124ec"
+      },
+      {
+        "kind": "heading",
+        "number": "18",
+        "bbox": [
+          44.2,
+          545.7,
+          86.7,
+          574.6
+        ],
+        "pixel_sha256": "838064035c98264c4e12aa0484919b51d76490461a678188726277962033d72c",
+        "audited_pixel_sha256": "838064035c98264c4e12aa0484919b51d76490461a678188726277962033d72c"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

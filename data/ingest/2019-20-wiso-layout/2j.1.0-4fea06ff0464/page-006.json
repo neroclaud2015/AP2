@@ -1,0 +1,99 @@
+{
+  "key": "8217aa7738f4280217df39bf408e2fb4f8b7a6697d714a42e0ecbc0362a05256",
+  "record_hash": "cbf4ccdce947a2da2b894743cde29b3b63e14a07c6ffd72fb7f75e0a0863cfbc",
+  "record": {
+    "page": 6,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+    "anchors": [
+      {
+        "anchor_id": "2019-20-wiso-p6-5",
+        "number": "5",
+        "bbox": [
+          59.5,
+          51.0,
+          102.0,
+          79.9
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Original printed 5 heading on physical page 6, retained exact pixel patch.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "4e68325713833544ba72c6326dbe814fdef9361a61dc5ebf29182f086dcbb5cb"
+      },
+      {
+        "anchor_id": "2019-20-wiso-p6-U3",
+        "number": "U3",
+        "bbox": [
+          59.5,
+          290.7,
+          102.0,
+          319.6
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Original printed U3 heading on physical page 6, retained exact pixel patch.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "2d0b2a7cd0bb721a2359f53ef768c3865ac28d2674a8123edbd218be118cca3d"
+      }
+    ],
+    "regions": [
+      {
+        "page": 6,
+        "bbox": [
+          59.5,
+          51.0,
+          304.3,
+          287.3
+        ],
+        "role": "primary",
+        "owner": "2019-20-wiso-p6-5",
+        "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+      },
+      {
+        "page": 6,
+        "bbox": [
+          59.5,
+          290.7,
+          547.4,
+          771.8
+        ],
+        "role": "primary",
+        "owner": "2019-20-wiso-p6-U3",
+        "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "5",
+        "bbox": [
+          59.5,
+          51.0,
+          102.0,
+          79.9
+        ],
+        "pixel_sha256": "4e68325713833544ba72c6326dbe814fdef9361a61dc5ebf29182f086dcbb5cb",
+        "audited_pixel_sha256": "4e68325713833544ba72c6326dbe814fdef9361a61dc5ebf29182f086dcbb5cb"
+      },
+      {
+        "kind": "heading",
+        "number": "U3",
+        "bbox": [
+          59.5,
+          290.7,
+          102.0,
+          319.6
+        ],
+        "pixel_sha256": "2d0b2a7cd0bb721a2359f53ef768c3865ac28d2674a8123edbd218be118cca3d",
+        "audited_pixel_sha256": "2d0b2a7cd0bb721a2359f53ef768c3865ac28d2674a8123edbd218be118cca3d"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

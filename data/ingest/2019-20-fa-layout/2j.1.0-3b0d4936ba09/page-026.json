@@ -1,0 +1,61 @@
+{
+  "key": "65cb0eb19ac9483c8de9d163c5faef164f6961587fca3034327799389216fed5",
+  "record_hash": "5f3e8a9ae714b68eb20dd0c64a77900192c1d054361d01971c0d8d8fae20ed9e",
+  "record": {
+    "page": 26,
+    "geometry": [
+      595.0,
+      841.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page inspected; printed headings and ruled boundaries visually transcribed. No inferred question numbers.",
+    "anchors": [
+      {
+        "anchor_id": "2019-20-fa-p26-U8",
+        "number": "U8",
+        "bbox": [
+          32.3,
+          17.0,
+          74.8,
+          45.9
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Original printed U8 heading on physical page 26, retained exact pixel patch.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "e3e5a31f18b33735f3e4fa99018f9d6cd9ce5a94211528b1cdf3f86dd70471fa"
+      }
+    ],
+    "regions": [
+      {
+        "page": 26,
+        "bbox": [
+          32.3,
+          17.0,
+          564.4,
+          635.8
+        ],
+        "role": "primary",
+        "owner": "2019-20-fa-p26-U8",
+        "evidence": "Ruled question panel with original diagrams and response areas. Shared cross-question diagrams are explicitly registered as context."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U8",
+        "bbox": [
+          32.3,
+          17.0,
+          74.8,
+          45.9
+        ],
+        "pixel_sha256": "e3e5a31f18b33735f3e4fa99018f9d6cd9ce5a94211528b1cdf3f86dd70471fa",
+        "audited_pixel_sha256": "e3e5a31f18b33735f3e4fa99018f9d6cd9ce5a94211528b1cdf3f86dd70471fa"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}
