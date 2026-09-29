@@ -1,0 +1,199 @@
+{
+  "key": "c0770c990e4683f5e3b356c5c43f23d0b533e17cebaedd8a4227603a32985528",
+  "record_hash": "a7bc9e1ebb3507ad47b0a520d8fb0be097b3db3674c20739526581f371ba92ce",
+  "record": {
+    "page": 14,
+    "geometry": [
+      595.3200073242188,
+      841.9199829101562
+    ],
+    "classification": "questions",
+    "classification_evidence": "All cached physical pages visually checked: printed anchors, separators and explicit reference labels.",
+    "anchors": [
+      {
+        "anchor_id": "2024-25-wiso-p14-10",
+        "number": "10",
+        "bbox": [
+          50.503,
+          296.968,
+          91.823,
+          322.991
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 10 visually read; not inferred from order.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "cfdb226a1c99a8cda43e18f7613150c1d4c48f428325eba71cd2ba739316d253"
+      },
+      {
+        "anchor_id": "2024-25-wiso-p14-11",
+        "number": "11",
+        "bbox": [
+          303.016,
+          296.968,
+          344.337,
+          322.991
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 11 visually read; not inferred from order.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "8218111ee509e2e29463fdad07117ac78073adebb163ef0575886a0a388c5121"
+      },
+      {
+        "anchor_id": "2024-25-wiso-p14-12",
+        "number": "12",
+        "bbox": [
+          50.503,
+          538.829,
+          91.823,
+          564.852
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 12 visually read; not inferred from order.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "210a3cbdefa0a7150cfdb2e037f73337a2dadd9850c464201e2d44415fdad4cb"
+      },
+      {
+        "anchor_id": "2024-25-wiso-p14-13",
+        "number": "13",
+        "bbox": [
+          303.016,
+          538.829,
+          344.337,
+          564.852
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 13 visually read; not inferred from order.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "532fa4e022afd245128a32f4c9a84b8f170345ace14c0156a1e433ea80daf430"
+      }
+    ],
+    "regions": [
+      {
+        "page": 14,
+        "bbox": [
+          50.503,
+          296.968,
+          295.364,
+          532.706
+        ],
+        "role": "primary",
+        "owner": "2024-25-wiso-p14-10",
+        "evidence": "Original printed heading/ruled panel boundaries, diagrams and response areas included."
+      },
+      {
+        "page": 14,
+        "bbox": [
+          303.016,
+          296.968,
+          544.817,
+          532.706
+        ],
+        "role": "primary",
+        "owner": "2024-25-wiso-p14-11",
+        "evidence": "Original printed heading/ruled panel boundaries, diagrams and response areas included."
+      },
+      {
+        "page": 14,
+        "bbox": [
+          50.503,
+          538.829,
+          295.364,
+          776.097
+        ],
+        "role": "primary",
+        "owner": "2024-25-wiso-p14-12",
+        "evidence": "Original printed heading/ruled panel boundaries, diagrams and response areas included."
+      },
+      {
+        "page": 14,
+        "bbox": [
+          303.016,
+          538.829,
+          544.817,
+          776.097
+        ],
+        "role": "primary",
+        "owner": "2024-25-wiso-p14-13",
+        "evidence": "Original printed heading/ruled panel boundaries, diagrams and response areas included."
+      },
+      {
+        "page": 14,
+        "bbox": [
+          50.503,
+          48.984,
+          544.817,
+          293.907
+        ],
+        "role": "continuation",
+        "owner": "2024-25-wiso-p12-U4",
+        "evidence": "Printed Ergebnis U4 and subpart4; physical pages13/14 are reversed relative to printed pages14/13."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "10",
+        "bbox": [
+          50.503,
+          296.968,
+          91.823,
+          322.991
+        ],
+        "pixel_sha256": "cfdb226a1c99a8cda43e18f7613150c1d4c48f428325eba71cd2ba739316d253",
+        "audited_pixel_sha256": "cfdb226a1c99a8cda43e18f7613150c1d4c48f428325eba71cd2ba739316d253"
+      },
+      {
+        "kind": "heading",
+        "number": "11",
+        "bbox": [
+          303.016,
+          296.968,
+          344.337,
+          322.991
+        ],
+        "pixel_sha256": "8218111ee509e2e29463fdad07117ac78073adebb163ef0575886a0a388c5121",
+        "audited_pixel_sha256": "8218111ee509e2e29463fdad07117ac78073adebb163ef0575886a0a388c5121"
+      },
+      {
+        "kind": "heading",
+        "number": "12",
+        "bbox": [
+          50.503,
+          538.829,
+          91.823,
+          564.852
+        ],
+        "pixel_sha256": "210a3cbdefa0a7150cfdb2e037f73337a2dadd9850c464201e2d44415fdad4cb",
+        "audited_pixel_sha256": "210a3cbdefa0a7150cfdb2e037f73337a2dadd9850c464201e2d44415fdad4cb"
+      },
+      {
+        "kind": "heading",
+        "number": "13",
+        "bbox": [
+          303.016,
+          538.829,
+          344.337,
+          564.852
+        ],
+        "pixel_sha256": "532fa4e022afd245128a32f4c9a84b8f170345ace14c0156a1e433ea80daf430",
+        "audited_pixel_sha256": "532fa4e022afd245128a32f4c9a84b8f170345ace14c0156a1e433ea80daf430"
+      },
+      {
+        "kind": "ownership",
+        "number": "U4",
+        "bbox": [
+          50.503,
+          48.984,
+          544.817,
+          293.907
+        ],
+        "pixel_sha256": "417c119e5119c8a11b3dd452b39b4e970c5b72f6000ebb2b5774ab4bf99da1fe",
+        "audited_pixel_sha256": "417c119e5119c8a11b3dd452b39b4e970c5b72f6000ebb2b5774ab4bf99da1fe"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "key": "31f839eaf77bfa5e786b24d6ab58ad69db09aae22efd9f8f484c479726734bac",
+  "record_hash": "3273fea750aa7e123154810babb9c262dfe79810220f0b324f701738e5798172",
+  "record": {
+    "page": 7,
+    "geometry": [
+      612.0,
+      792.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "All cached physical pages visually checked: printed anchors, separators and explicit reference labels.",
+    "anchors": [
+      {
+        "anchor_id": "2023-24-fa-p7-18",
+        "number": "18",
+        "bbox": [
+          85.867,
+          73.42,
+          128.02,
+          99.976
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 18 visually read; not inferred from order.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "bcb5fd7d4db0b1f3cf10fc2703d1b01237b8d5c482d351b91caca92ecaa13fa2"
+      },
+      {
+        "anchor_id": "2023-24-fa-p7-19",
+        "number": "19",
+        "bbox": [
+          82.745,
+          285.87,
+          124.898,
+          312.426
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 19 visually read; not inferred from order.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "1c86462c59e38258509b52c9db27cf01edc8b50e9ba2efc0e7cde29ff80915c0"
+      }
+    ],
+    "regions": [
+      {
+        "page": 7,
+        "bbox": [
+          85.867,
+          73.42,
+          501.153,
+          284.308
+        ],
+        "role": "primary",
+        "owner": "2023-24-fa-p7-18",
+        "evidence": "Original printed heading/ruled panel boundaries, diagrams and response areas included."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          82.745,
+          285.87,
+          494.908,
+          707.645
+        ],
+        "role": "primary",
+        "owner": "2023-24-fa-p7-19",
+        "evidence": "Original printed heading/ruled panel boundaries, diagrams and response areas included."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "18",
+        "bbox": [
+          85.867,
+          73.42,
+          128.02,
+          99.976
+        ],
+        "pixel_sha256": "bcb5fd7d4db0b1f3cf10fc2703d1b01237b8d5c482d351b91caca92ecaa13fa2",
+        "audited_pixel_sha256": "bcb5fd7d4db0b1f3cf10fc2703d1b01237b8d5c482d351b91caca92ecaa13fa2"
+      },
+      {
+        "kind": "heading",
+        "number": "19",
+        "bbox": [
+          82.745,
+          285.87,
+          124.898,
+          312.426
+        ],
+        "pixel_sha256": "1c86462c59e38258509b52c9db27cf01edc8b50e9ba2efc0e7cde29ff80915c0",
+        "audited_pixel_sha256": "1c86462c59e38258509b52c9db27cf01edc8b50e9ba2efc0e7cde29ff80915c0"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

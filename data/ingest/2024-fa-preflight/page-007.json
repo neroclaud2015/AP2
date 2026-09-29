@@ -1,0 +1,99 @@
+{
+  "key": "d322ed01fa068ba86b5aef498ee36b07100135d206dd3e206980fd64494c6ca3",
+  "record_hash": "130b4cdbea978bf90659da0b1362676b382e29582b4941089cea345ffa5051ee",
+  "record": {
+    "page": 7,
+    "geometry": [
+      595.2000122070312,
+      841.8999633789062
+    ],
+    "classification": "questions",
+    "classification_evidence": "All cached physical pages visually checked: printed anchors, separators and explicit reference labels.",
+    "anchors": [
+      {
+        "anchor_id": "2024-fa-p7-14",
+        "number": "14",
+        "bbox": [
+          41.312,
+          41.33,
+          82.624,
+          67.352
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 14 visually read; not inferred from order.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "c771c57333d48909b096531e23f8d619494302f58cd3d091d46c53ba5b3b279a"
+      },
+      {
+        "anchor_id": "2024-fa-p7-15",
+        "number": "15",
+        "bbox": [
+          41.312,
+          532.693,
+          82.624,
+          558.715
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 15 visually read; not inferred from order.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "2fcd4a85b82be62c0c22d86109a5bb52c0d7dbb3ab854e5a367cf47ebaac342a"
+      }
+    ],
+    "regions": [
+      {
+        "page": 7,
+        "bbox": [
+          41.312,
+          41.33,
+          546.238,
+          526.57
+        ],
+        "role": "primary",
+        "owner": "2024-fa-p7-14",
+        "evidence": "Original printed heading/ruled panel boundaries, diagrams and response areas included."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          41.312,
+          532.693,
+          549.298,
+          788.325
+        ],
+        "role": "primary",
+        "owner": "2024-fa-p7-15",
+        "evidence": "Original printed heading/ruled panel boundaries, diagrams and response areas included."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "14",
+        "bbox": [
+          41.312,
+          41.33,
+          82.624,
+          67.352
+        ],
+        "pixel_sha256": "c771c57333d48909b096531e23f8d619494302f58cd3d091d46c53ba5b3b279a",
+        "audited_pixel_sha256": "c771c57333d48909b096531e23f8d619494302f58cd3d091d46c53ba5b3b279a"
+      },
+      {
+        "kind": "heading",
+        "number": "15",
+        "bbox": [
+          41.312,
+          532.693,
+          82.624,
+          558.715
+        ],
+        "pixel_sha256": "2fcd4a85b82be62c0c22d86109a5bb52c0d7dbb3ab854e5a367cf47ebaac342a",
+        "audited_pixel_sha256": "2fcd4a85b82be62c0c22d86109a5bb52c0d7dbb3ab854e5a367cf47ebaac342a"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

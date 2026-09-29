@@ -1,0 +1,61 @@
+{
+  "key": "785a96cb47a5d9a7f91cb83559374232a06a5d1e963ed9b9722237877e9e1cfc",
+  "record_hash": "23eeb460f2d1091067b6963a174a317052e2294d69a9a42fa6d8a4a779e5c7c6",
+  "record": {
+    "page": 3,
+    "geometry": [
+      595.3200073242188,
+      841.9199829101562
+    ],
+    "classification": "questions",
+    "classification_evidence": "All cached physical pages visually checked: printed anchors, separators and explicit reference labels.",
+    "anchors": [
+      {
+        "anchor_id": "2024-25-ap-p3-1",
+        "number": "1",
+        "bbox": [
+          52.033,
+          296.968,
+          93.354,
+          322.991
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 1 visually read; not inferred from order.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "3f6942199a1bfb781f9d203bdd17a8834fe081066040b941dcb936ec5ccd6c6f"
+      }
+    ],
+    "regions": [
+      {
+        "page": 3,
+        "bbox": [
+          52.033,
+          296.968,
+          546.348,
+          768.443
+        ],
+        "role": "primary",
+        "owner": "2024-25-ap-p3-1",
+        "evidence": "Original printed heading/ruled panel boundaries, diagrams and response areas included."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "1",
+        "bbox": [
+          52.033,
+          296.968,
+          93.354,
+          322.991
+        ],
+        "pixel_sha256": "3f6942199a1bfb781f9d203bdd17a8834fe081066040b941dcb936ec5ccd6c6f",
+        "audited_pixel_sha256": "3f6942199a1bfb781f9d203bdd17a8834fe081066040b941dcb936ec5ccd6c6f"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

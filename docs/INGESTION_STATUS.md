@@ -101,3 +101,7 @@ See PHASE_2I_REPORT.md and data/ingest/historical_expansion_manifest.json. Resum
 
 ## Sommer 2020 AP manual mapping release — 2026-09-29
 Q7 has no M3 reference; Q8 has M3. Explicit user confirmation and highlighted separator screenshot retained. New processing lineage preserves the blocked source and every old event/gate. 36 questions, MC 28/28, U 8/8, Needs Review 0. No PDF access. Winter 2020/21: 94 newly cached pages including correction notice; layout work pending, not production.
+
+## Overnight batch through Sommer 2025
+
+See [Morning Report](../MORNING_REPORT.md). All three supplied remaining archives inspected; Sommer 2025 missing. Winter 2023/24 WiSo newly production. 90 official answer reviews + 2 attachment-mapping reviews; 7 missing/clean-source requests including older blockers. No old PDF rescan. Classification / Fehlerfragen / adaptive selection deferred.

@@ -1,0 +1,111 @@
+{
+  "key": "198bd3468cf330141652a49bba3b66ad7928a0c5692edec71c68c8b5e3052cca",
+  "record_hash": "8baf9a0106b4e948da9ecb98869fd8605dd3636274e4fb0c41abbc2dbdef0e81",
+  "record": {
+    "page": 12,
+    "geometry": [
+      595.2000122070312,
+      841.8999633789062
+    ],
+    "classification": "questions",
+    "classification_evidence": "All cached physical pages visually checked: printed anchors, separators and explicit reference labels.",
+    "anchors": [
+      {
+        "anchor_id": "2024-ap-p12-27",
+        "number": "27",
+        "bbox": [
+          39.782,
+          47.453,
+          81.094,
+          73.475
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 27 visually read; not inferred from order.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "8cb7e2481e05295fbbc8d6cfc590302be699ab2a8de8ff29c0528b75a54d0552"
+      },
+      {
+        "anchor_id": "2024-ap-p12-28",
+        "number": "28",
+        "bbox": [
+          302.955,
+          290.838,
+          344.267,
+          316.861
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 28 visually read; not inferred from order.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "15ac58cca59839013f2d5723c490bc8a08accb3aaca290e0872d48960586a665"
+      }
+    ],
+    "regions": [
+      {
+        "page": 12,
+        "bbox": [
+          39.782,
+          47.453,
+          546.238,
+          290.838
+        ],
+        "role": "primary",
+        "owner": "2024-ap-p12-27",
+        "evidence": "Original printed heading/ruled panel boundaries, diagrams and response areas included."
+      },
+      {
+        "page": 12,
+        "bbox": [
+          42.842,
+          295.43,
+          296.835,
+          538.816
+        ],
+        "role": "diagram",
+        "owner": "2024-ap-p12-27",
+        "evidence": "Original printed heading/ruled panel boundaries, diagrams and response areas included."
+      },
+      {
+        "page": 12,
+        "bbox": [
+          302.955,
+          290.838,
+          550.828,
+          538.816
+        ],
+        "role": "primary",
+        "owner": "2024-ap-p12-28",
+        "evidence": "Original printed heading/ruled panel boundaries, diagrams and response areas included."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "27",
+        "bbox": [
+          39.782,
+          47.453,
+          81.094,
+          73.475
+        ],
+        "pixel_sha256": "8cb7e2481e05295fbbc8d6cfc590302be699ab2a8de8ff29c0528b75a54d0552",
+        "audited_pixel_sha256": "8cb7e2481e05295fbbc8d6cfc590302be699ab2a8de8ff29c0528b75a54d0552"
+      },
+      {
+        "kind": "heading",
+        "number": "28",
+        "bbox": [
+          302.955,
+          290.838,
+          344.267,
+          316.861
+        ],
+        "pixel_sha256": "15ac58cca59839013f2d5723c490bc8a08accb3aaca290e0872d48960586a665",
+        "audited_pixel_sha256": "15ac58cca59839013f2d5723c490bc8a08accb3aaca290e0872d48960586a665"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

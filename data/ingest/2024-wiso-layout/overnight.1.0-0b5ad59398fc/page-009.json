@@ -1,0 +1,123 @@
+{
+  "key": "abbcfc9ee941655d1a5f56f74c0332082b19906f00b3ce5f7a5438cc7b1cd00c",
+  "record_hash": "769375c97a49f6059c5e29de919cdaa7e850b7234eb392d766c4b67c085df955",
+  "record": {
+    "page": 9,
+    "geometry": [
+      595.2000122070312,
+      841.8999633789062
+    ],
+    "classification": "questions",
+    "classification_evidence": "All cached physical pages visually checked: printed anchors, separators and explicit reference labels.",
+    "anchors": [
+      {
+        "anchor_id": "2024-wiso-p9-4",
+        "number": "4",
+        "bbox": [
+          41.312,
+          298.492,
+          82.624,
+          324.514
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 4 visually read; not inferred from order.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "7a506343a660764fa0ee336bdbb6e620cd2b4dd1b24006280223b0f402cb3943"
+      },
+      {
+        "anchor_id": "2024-wiso-p9-5",
+        "number": "5",
+        "bbox": [
+          299.895,
+          298.492,
+          341.207,
+          324.514
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 5 visually read; not inferred from order.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "d6214bf270ceca540e08015c0efc25b4f9802b1acff6ef0dbfe28c0038db24c6"
+      }
+    ],
+    "regions": [
+      {
+        "page": 9,
+        "bbox": [
+          41.312,
+          298.492,
+          293.775,
+          537.285
+        ],
+        "role": "primary",
+        "owner": "2024-wiso-p9-4",
+        "evidence": "Original printed heading/ruled panel boundaries, diagrams and response areas included."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          299.895,
+          298.492,
+          546.238,
+          537.285
+        ],
+        "role": "primary",
+        "owner": "2024-wiso-p9-5",
+        "evidence": "Original printed heading/ruled panel boundaries, diagrams and response areas included."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          41.312,
+          42.86,
+          549.298,
+          293.9
+        ],
+        "role": "continuation",
+        "owner": "2024-wiso-p8-U2",
+        "evidence": "Printed Ergebnis U2 and task continuation before Q4/Q5."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "4",
+        "bbox": [
+          41.312,
+          298.492,
+          82.624,
+          324.514
+        ],
+        "pixel_sha256": "7a506343a660764fa0ee336bdbb6e620cd2b4dd1b24006280223b0f402cb3943",
+        "audited_pixel_sha256": "7a506343a660764fa0ee336bdbb6e620cd2b4dd1b24006280223b0f402cb3943"
+      },
+      {
+        "kind": "heading",
+        "number": "5",
+        "bbox": [
+          299.895,
+          298.492,
+          341.207,
+          324.514
+        ],
+        "pixel_sha256": "d6214bf270ceca540e08015c0efc25b4f9802b1acff6ef0dbfe28c0038db24c6",
+        "audited_pixel_sha256": "d6214bf270ceca540e08015c0efc25b4f9802b1acff6ef0dbfe28c0038db24c6"
+      },
+      {
+        "kind": "ownership",
+        "number": "U2",
+        "bbox": [
+          41.312,
+          42.86,
+          549.298,
+          293.9
+        ],
+        "pixel_sha256": "fedad69f8049b29a033d4a00c36ff558b19fa9b6d0e6b88d86dd4062a18626fd",
+        "audited_pixel_sha256": "fedad69f8049b29a033d4a00c36ff558b19fa9b6d0e6b88d86dd4062a18626fd"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

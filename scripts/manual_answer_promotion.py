@@ -31,7 +31,7 @@ def validate_confirmation(row,queue):
  # Only public review metadata is retained. Never accept user profile or learning history.
  return {k:row[k] for k in FIELDS+['official_answer','official_answer_status','user_corrected','locked','confirmation_method','updated_at','machine_answer_at_confirmation']}
 
-def scope_settings(payload):
+def scope_settings(payload,root=None):
  if payload.get('scope')==SCOPE:
   return dict(scope=SCOPE,targets=TARGETS,exam='2018_19_winter',stamp='2018-19',profile='winter2018_19',queue='manual_answer_review_queue.json',ledger='official_answer_confirmations.json',manifest='manual_answer_promotion_manifest.json')
  if payload.get('scope')=='winter-2019-20':
@@ -40,12 +40,20 @@ def scope_settings(payload):
   return dict(scope='sommer-2021',targets={'funktionsanalyse':[4,23],'wiso':[18]},exam='2021_sommer',stamp='2021',profile='sommer2021',queue='manual_answer_review_sommer2021.json',ledger='sommer-2021-confirmations.json',manifest='sommer-2021-manual-promotion.json')
  if payload.get('scope')=='winter-2021-22':
   return dict(scope='winter-2021-22',targets={'funktionsanalyse':[23,24,26]},exam='2021_22_winter',stamp='2021-22',profile='winter2021_22',layout_paths={'funktionsanalyse':'scripts/layout_profiles/winter2021_22_fa_confirmed.json'},queue='manual_answer_review_winter2021_22.json',ledger='winter-2021-22-confirmations.json',manifest='winter-2021-22-manual-promotion.json')
+ root=Path(root) if root is not None else Path(__file__).resolve().parents[1]
+ matches=[s for s in read(root/'data/ingest/overnight_manual_scopes.json',[]) if s['scope']==payload.get('scope')]
+ if len(matches)==1:
+  config=matches[0]
+  import re
+  if any(not re.fullmatch(r'[a-z0-9_.-]+',config[k]) for k in ['profile','queue','ledger','manifest','exam','stamp']):raise ValueError('Unsafe registered review configuration')
+  if any(m not in MODULE_CODES or any(type(n)!=int or n not in range(1,29) for n in ns) for m,ns in config['targets'].items()):raise ValueError('Invalid review targets')
+  return deepcopy(config)
  raise ValueError('Unknown manual review scope')
 
 def prepare(root,payload,existing=None):
  root=Path(root)
  if not isinstance(payload,dict):raise ValueError('Invalid export')
- settings=scope_settings(payload);targets=settings['targets']
+ settings=scope_settings(payload,root);targets=settings['targets']
  if not isinstance(payload,dict) or payload.get('schema_version')!=1 or payload.get('scope')!=settings['scope'] or not isinstance(payload.get('confirmations'),list):raise ValueError('Invalid scoped confirmation export')
  qdata=read(root/'public/data'/settings['queue']);queue={q['question_id']:q for q in qdata['items']}
  if len(queue)!=sum(len(ns) for ns in targets.values()) or {(q['module'].lower(),q['question_number']) for q in queue.values()}!={(m,n) for m,ns in targets.items() for n in ns}:raise ValueError('Review queue identity mismatch')
@@ -82,6 +90,9 @@ def prepare(root,payload,existing=None):
    elif a['official_answer_status']!='auto_ready' or type(a['official_answer']) is not int or a['official_answer'] not in range(1,6):raise ValueError('Unexpected unresolved machine answer outside scoped review')
   pending[module]=unresolved
   if unresolved:continue
+  holds=[h for h in read(root/'data/ingest/overnight_promotion_holds.json',[]) if h['scope']==settings['scope'] and h['module']==module]
+  if holds:
+   pending[module]=['source_mapping_review: '+h['reason'] for h in holds];continue
   for sid in [config['source_id'],config['solution_source_id']]:
    source=next(s for s in registry['sources'] if s['source_id']==sid)
    if source['status']=='production':continue
@@ -95,12 +106,15 @@ def prepare(root,payload,existing=None):
   ready[module]={'answers':result,'questions':questions,'solutions':solutions,'config':config,'revision':revision}
  return {'confirmations':ledger,'ready':ready,'pending':pending,'pdf_pages_opened':0,'settings':settings}
 
-def module_config(plan,root=None):
+def module_config(plan,root=None,artifact_paths=None):
+ paths=artifact_paths if artifact_paths is not None else [];external=[]
  c=plan['config'];q=plan['questions'];images={str(a['page']):a['image'] for a in q['attachment_images']};prefix=c['name']
  if root is not None:
   from promote_registered_modules import ensure_timing_image
-  ensure_timing_image(root,c,images,[])
- return {'examId':c['exam'].replace('_','-'),'slug':c['module'].lower(),'title':c['module'],'segmentedPath':f'data/{prefix}_segmented.json','answersPath':f'data/{prefix}_reviewed_answers.json','solutionsPath':f'data/{prefix}_u_solutions.json','choiceSolutionPage':plan['answers']['answers'][0]['source_page'],'descriptionPage':c['description_page'],'questionContextPages':{n:[a['page'] for a in c['attachment_crops'] if n in a.get('question_numbers',[])] for n in c['expected']},'attachmentPages':[a['page'] for a in c['attachment_crops'] if a['page'] not in [c['timing_source_page'],c['description_page']]],'sourcePageImages':images,'durationMinutes':c['timing_minutes'],'durationSource':{'pdf':'','page':c['timing_source_page'],'image':images[str(c['timing_source_page'])]},'parts':[{'id':'A','title':'Teil A','kind':'multiple_choice','label':'Auswahlaufgaben','questionNumbers':[n for n in c['expected'] if n.isdigit()]},{'id':'B','title':'Teil B','kind':'multi_part','label':'Offene Aufgaben','questionNumbers':[n for n in c['expected'] if n.startswith('U')]}]}
+  ensure_timing_image(root,c,images,paths)
+  from external_attachments import publish_external_attachments
+  external=[{**v,'label':v.get('label') or v.get('title') or v['filename']} for v in publish_external_attachments(root,c,paths)]
+ return {**({'externalAttachments':external} if external else {}),'examId':c['exam'].replace('_','-'),'slug':c['module'].lower(),'title':c['module'],'segmentedPath':f'data/{prefix}_segmented.json','answersPath':f'data/{prefix}_reviewed_answers.json','solutionsPath':f'data/{prefix}_u_solutions.json','choiceSolutionPage':plan['answers']['answers'][0]['source_page'],'descriptionPage':c['description_page'],'questionContextPages':{n:[a['page'] for a in c['attachment_crops'] if n in a.get('question_numbers',[])] for n in c['expected']},'attachmentPages':[a['page'] for a in c['attachment_crops'] if a['page'] not in [c['timing_source_page'],c['description_page']]],'sourcePageImages':images,'durationMinutes':c['timing_minutes'],'durationSource':{'pdf':'','page':c['timing_source_page'],'image':images[str(c['timing_source_page'])]},'parts':[{'id':'A','title':'Teil A','kind':'multiple_choice','label':'Auswahlaufgaben','questionNumbers':[n for n in c['expected'] if n.isdigit()]},{'id':'B','title':'Teil B','kind':'multi_part','label':'Offene Aufgaben','questionNumbers':[n for n in c['expected'] if n.startswith('U')]}]}
 
 def apply(root,payload):
  root=Path(root);plan=prepare(root,payload);settings=plan['settings'];registry=load_registry(root);promoted=read(root/'public/data/promoted_modules.json',[]);writes={root/'data/reviews'/settings['ledger']:{'schema_version':1,'scope':settings['scope'],'confirmations':plan['confirmations']}};now=datetime.now(timezone.utc).isoformat()
@@ -113,6 +127,8 @@ def apply(root,payload):
   paths=[f'public/data/{prefix}_segmented.json',f'public/data/{prefix}_reviewed_answers.json',f'public/data/{prefix}_u_solutions.json']
   for base in ['data/exams','public/data']:writes[root/f'{base}/{prefix}_reviewed_answers.json']=p['answers']
   artifacts={paths[0]:artifact_digest(root/paths[0]),paths[1]:hashlib.sha256(json.dumps(p['answers'],sort_keys=True,separators=(',',':'),ensure_ascii=False).encode('utf-8')).hexdigest(),paths[2]:artifact_digest(root/paths[2])}
+  extra_paths=[];cfg=module_config(p,root,extra_paths)
+  artifacts.update({path.relative_to(root).as_posix():artifact_digest(path) for path in extra_paths})
   audit={'result':'passed','confirmation_method':'manual_source_review','manual_confirmation_revision':p['revision'],'question_ids':[q['question_id'] for q in p['questions']['questions']],'question_revision':p['questions']['segmentation_revision'],'official_answer_revision':p['revision'],'artifacts':artifacts,'choice_coverage':len(p['answers']['answers']),'u_coverage':len(p['solutions']['solutions'])}
   for sid in [c['source_id'],c['solution_source_id']]:
    source=next(s for s in registry['sources'] if s['source_id']==sid)
@@ -120,7 +136,7 @@ def apply(root,payload):
    source['status']='answers_extracted';source['events'].append({'stage':'manual_source_review_resolved','at':now,'evidence':{'confirmation_revision':p['revision'],'question_ids':[r['question_id'] for r in plan['confirmations'].values() if r['module'].lower()==module]}})
    evidence={**audit,'source_sha256':source['sha256']}
    registry=transition_source(registry,source['source_id'],'validated',evidence);registry=transition_source(registry,source['source_id'],'production',evidence)
-  cfg=module_config(p,root);promoted=[m for m in promoted if (m['examId'],m['slug'])!=(cfg['examId'],cfg['slug'])]+[cfg]
+  promoted=[m for m in promoted if (m['examId'],m['slug'])!=(cfg['examId'],cfg['slug'])]+[cfg]
  writes[root/'public/data/promoted_modules.json']=promoted
  checkpoint=read(root/'data/ingest'/settings['manifest'],{'schema_version':1,'scope':settings['scope'],'modules':{}})
  for module in settings['targets']:

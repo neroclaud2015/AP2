@@ -1,4 +1,6 @@
-import notices from '../../public/data/official_corrections.json';
+import originalNotices from '../../public/data/official_corrections.json';
+import overnightNotices from '../../public/data/official_corrections_overnight.json';
+const notices=[...originalNotices,...overnightNotices];
 import {asset} from '../segmented/types';
 
 /** Render only beside revealed official solutions, never in an active exam. */

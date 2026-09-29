@@ -1,0 +1,99 @@
+{
+  "key": "15625fa66241db201e7711612d6ec646689d48b7d6dcd5baa244c8357238ff72",
+  "record_hash": "2c80c6f61f799284b4f1e43e33dba6e2d52e11c16dfc02070c19856a43d3ef1f",
+  "record": {
+    "page": 10,
+    "geometry": [
+      595.2000122070312,
+      841.8999633789062
+    ],
+    "classification": "questions",
+    "classification_evidence": "All cached physical pages visually checked: printed anchors, separators and explicit reference labels.",
+    "anchors": [
+      {
+        "anchor_id": "2024-fa-p10-27",
+        "number": "27",
+        "bbox": [
+          41.312,
+          42.86,
+          82.624,
+          68.883
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 27 visually read; not inferred from order.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "60035a9a2230cd02df34f71fad778b04b43faa92735158fc136247727aad3888"
+      },
+      {
+        "anchor_id": "2024-fa-p10-28",
+        "number": "28",
+        "bbox": [
+          55.083,
+          532.693,
+          96.395,
+          558.715
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 28 visually read; not inferred from order.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "18fa56aeab4b696c4d54a74b9e31dc644f374bf142d8f2d7d2112893272a9bfd"
+      }
+    ],
+    "regions": [
+      {
+        "page": 10,
+        "bbox": [
+          41.312,
+          42.86,
+          549.298,
+          531.162
+        ],
+        "role": "primary",
+        "owner": "2024-fa-p10-27",
+        "evidence": "Original printed heading/ruled panel boundaries, diagrams and response areas included."
+      },
+      {
+        "page": 10,
+        "bbox": [
+          55.083,
+          532.693,
+          316.726,
+          773.017
+        ],
+        "role": "primary",
+        "owner": "2024-fa-p10-28",
+        "evidence": "Original printed heading/ruled panel boundaries, diagrams and response areas included."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "27",
+        "bbox": [
+          41.312,
+          42.86,
+          82.624,
+          68.883
+        ],
+        "pixel_sha256": "60035a9a2230cd02df34f71fad778b04b43faa92735158fc136247727aad3888",
+        "audited_pixel_sha256": "60035a9a2230cd02df34f71fad778b04b43faa92735158fc136247727aad3888"
+      },
+      {
+        "kind": "heading",
+        "number": "28",
+        "bbox": [
+          55.083,
+          532.693,
+          96.395,
+          558.715
+        ],
+        "pixel_sha256": "18fa56aeab4b696c4d54a74b9e31dc644f374bf142d8f2d7d2112893272a9bfd",
+        "audited_pixel_sha256": "18fa56aeab4b696c4d54a74b9e31dc644f374bf142d8f2d7d2112893272a9bfd"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

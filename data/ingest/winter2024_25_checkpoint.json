@@ -1,0 +1,433 @@
+{
+  "exam": "2024-25-winter",
+  "status": "inspected",
+  "modules": {
+    "ap": {
+      "preview": {
+        "status": "preview_ready",
+        "observed": 36,
+        "expected": 36,
+        "missing": [],
+        "unexpected": [],
+        "duplicates": [],
+        "issues": [],
+        "all_pages_classified": 24,
+        "revision": "overnight.1.0-07b07f897a07",
+        "source_id": "src-ffe8c65c399c1eb7b80099fc",
+        "source_hash": "8c93e99e0b5b84a21fca5020a2a2fa0fca55db2ffd875a256a8333213021ec02",
+        "profile_id": "portrait-explicit-regions",
+        "validated_sources": [
+          "8c93e99e0b5b84a21fca5020a2a2fa0fca55db2ffd875a256a8333213021ec02"
+        ],
+        "pdf_pages_opened": 0,
+        "pdf_pages_rendered": 0,
+        "questions": 36,
+        "attachments": [
+          {
+            "page": 15,
+            "bbox": [
+              38.26,
+              7.654,
+              575.425,
+              817.428
+            ],
+            "role": "Prüfungsaufgaben-Beschreibung",
+            "question_numbers": [
+              "U1",
+              "U2",
+              "U3",
+              "U4",
+              "U5",
+              "U6",
+              "U7",
+              "U8"
+            ],
+            "evidence": "Original explicit task references and sheet labels verified.",
+            "image": "assets/questions/8c93e99e0b5b84a21fca5020/overnight.1.0-07b07f897a07/attachment-15-0.png",
+            "source_sha256": "8c93e99e0b5b84a21fca5020a2a2fa0fca55db2ffd875a256a8333213021ec02"
+          }
+        ]
+      },
+      "segmentation": {
+        "status": "formal_segmented",
+        "observed": 36,
+        "expected": 36,
+        "missing": [],
+        "unexpected": [],
+        "duplicates": [],
+        "issues": [],
+        "all_pages_classified": 24,
+        "revision": "overnight.1.0-07b07f897a07",
+        "source_id": "src-ffe8c65c399c1eb7b80099fc",
+        "source_hash": "8c93e99e0b5b84a21fca5020a2a2fa0fca55db2ffd875a256a8333213021ec02",
+        "profile_id": "portrait-explicit-regions",
+        "validated_sources": [
+          "8c93e99e0b5b84a21fca5020a2a2fa0fca55db2ffd875a256a8333213021ec02"
+        ],
+        "pdf_pages_opened": 0,
+        "pdf_pages_rendered": 0,
+        "questions": 36,
+        "attachments": [
+          {
+            "page": 15,
+            "bbox": [
+              38.26,
+              7.654,
+              575.425,
+              817.428
+            ],
+            "role": "Prüfungsaufgaben-Beschreibung",
+            "question_numbers": [
+              "U1",
+              "U2",
+              "U3",
+              "U4",
+              "U5",
+              "U6",
+              "U7",
+              "U8"
+            ],
+            "evidence": "Original explicit task references and sheet labels verified.",
+            "image": "assets/questions/8c93e99e0b5b84a21fca5020/overnight.1.0-07b07f897a07/attachment-15-0.png",
+            "source_sha256": "8c93e99e0b5b84a21fca5020a2a2fa0fca55db2ffd875a256a8333213021ec02"
+          }
+        ]
+      },
+      "official": {
+        "choice_expected": 28,
+        "choice_records": 28,
+        "u_expected": 8,
+        "u_records": 8,
+        "review_list": [
+          {
+            "question_number": 2,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 4,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 5,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 6,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 10,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 11,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 13,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 14,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 16,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 17,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 18,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 19,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 20,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 21,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 23,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 25,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          }
+        ],
+        "status": "blocked",
+        "revision": "2024-25-ap-2f.1.0-81acaf89f68c",
+        "pdf_pages_opened": 0
+      },
+      "resume_status": "awaiting_human_review"
+    },
+    "wiso": {
+      "preview": {
+        "status": "preview_ready",
+        "observed": 24,
+        "expected": 24,
+        "missing": [],
+        "unexpected": [],
+        "duplicates": [],
+        "issues": [],
+        "all_pages_classified": 18,
+        "revision": "overnight.1.0-5e428b920d21",
+        "source_id": "src-3ab0a002a7f0ec81e3c53aa9",
+        "source_hash": "7fcc4a1d919b004d6bea3fc6f10c29aff7aea06206a0e0c082c86a562cd83e1d",
+        "profile_id": "portrait-explicit-regions",
+        "validated_sources": [
+          "7fcc4a1d919b004d6bea3fc6f10c29aff7aea06206a0e0c082c86a562cd83e1d"
+        ],
+        "pdf_pages_opened": 0,
+        "pdf_pages_rendered": 0,
+        "questions": 24,
+        "attachments": [
+          {
+            "page": 5,
+            "bbox": [
+              48.972,
+              47.454,
+              546.348,
+              298.499
+            ],
+            "role": "Prüfungsaufgaben-Beschreibung",
+            "question_numbers": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "U1",
+              "U2",
+              "U3",
+              "U4",
+              "U5",
+              "U6"
+            ],
+            "evidence": "Original explicit task references and sheet labels verified.",
+            "image": "assets/questions/7fcc4a1d919b004d6bea3fc6/overnight.1.0-5e428b920d21/attachment-5-0.png",
+            "source_sha256": "7fcc4a1d919b004d6bea3fc6f10c29aff7aea06206a0e0c082c86a562cd83e1d"
+          }
+        ]
+      },
+      "segmentation": {
+        "status": "formal_segmented",
+        "observed": 24,
+        "expected": 24,
+        "missing": [],
+        "unexpected": [],
+        "duplicates": [],
+        "issues": [],
+        "all_pages_classified": 18,
+        "revision": "overnight.1.0-5e428b920d21",
+        "source_id": "src-3ab0a002a7f0ec81e3c53aa9",
+        "source_hash": "7fcc4a1d919b004d6bea3fc6f10c29aff7aea06206a0e0c082c86a562cd83e1d",
+        "profile_id": "portrait-explicit-regions",
+        "validated_sources": [
+          "7fcc4a1d919b004d6bea3fc6f10c29aff7aea06206a0e0c082c86a562cd83e1d"
+        ],
+        "pdf_pages_opened": 0,
+        "pdf_pages_rendered": 0,
+        "questions": 24,
+        "attachments": [
+          {
+            "page": 5,
+            "bbox": [
+              48.972,
+              47.454,
+              546.348,
+              298.499
+            ],
+            "role": "Prüfungsaufgaben-Beschreibung",
+            "question_numbers": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "U1",
+              "U2",
+              "U3",
+              "U4",
+              "U5",
+              "U6"
+            ],
+            "evidence": "Original explicit task references and sheet labels verified.",
+            "image": "assets/questions/7fcc4a1d919b004d6bea3fc6/overnight.1.0-5e428b920d21/attachment-5-0.png",
+            "source_sha256": "7fcc4a1d919b004d6bea3fc6f10c29aff7aea06206a0e0c082c86a562cd83e1d"
+          }
+        ]
+      },
+      "official": {
+        "choice_expected": 18,
+        "choice_records": 18,
+        "u_expected": 6,
+        "u_records": 6,
+        "review_list": [
+          {
+            "question_number": 5,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 6,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 7,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 8,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 10,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 11,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 13,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 15,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 16,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 17,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          }
+        ],
+        "status": "blocked",
+        "revision": "2024-25-wiso-2f.1.0-c8193e630567",
+        "pdf_pages_opened": 0
+      },
+      "resume_status": "awaiting_human_review"
+    },
+    "fa": {
+      "resume_status": "blocked_layout"
+    }
+  },
+  "new_pages_rendered": 88,
+  "old_pdf_rescan_count": 0
+}

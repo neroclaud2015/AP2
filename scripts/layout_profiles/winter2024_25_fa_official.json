@@ -1,0 +1,262 @@
+{
+  "scope": "2024-25-fa",
+  "name": "2024_25_winter_funktionsanalyse",
+  "exam": "2024_25_winter",
+  "module": "Funktionsanalyse",
+  "version": "overnight.1.0",
+  "profile_id": "official-ring-grid",
+  "source_hash": "7fe6753ad727cabb78109f6035e6405449f98b3260652e9fa273494242c3b1e3",
+  "source_id": "src-ee5c7944287ba65a3089cdab",
+  "question_source_id": "src-f99f89ce0d2f0dc39a437440",
+  "solution_source_id": "src-ee5c7944287ba65a3089cdab",
+  "validated_sources": [
+    "7fe6753ad727cabb78109f6035e6405449f98b3260652e9fa273494242c3b1e3"
+  ],
+  "choice_page": 2,
+  "choice_count": 28,
+  "analysis_size": [
+    993,
+    1404
+  ],
+  "groups": [
+    [
+      1,
+      10,
+      135.8,
+      60.08,
+      390.6,
+      19.94,
+      0,
+      370
+    ],
+    [
+      11,
+      10,
+      135.8,
+      60.08,
+      510.0,
+      19.94,
+      0,
+      490
+    ],
+    [
+      21,
+      8,
+      135.8,
+      60.08,
+      629.3,
+      19.94,
+      0,
+      609
+    ]
+  ],
+  "grid_crop": [
+    106,
+    356,
+    725,
+    721
+  ],
+  "ring_policy": {
+    "min_ring": 0.4,
+    "support": 0.83,
+    "possible_ring": 0.32,
+    "possible_support": 0.58,
+    "margin": 0.15,
+    "center": 0.1
+  },
+  "header_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+  "u_evidence": "All original U headings and ruled boundaries visually verified; diagrams, formulas, tables and GRAFCET retained. Whole-question self-assessment; no rubric inferred.",
+  "u_regions": {
+    "U1": {
+      "regions": [
+        {
+          "page": 10,
+          "bbox": [
+            12,
+            125.51814763849431,
+            583.2760009765625,
+            344.40955144708806
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 10,
+      "heading_box": [
+        12,
+        125.51814763849431,
+        110,
+        150.51814763849433
+      ],
+      "heading_pixel_sha256": "010ae12fc63c5a51865d39ea5c01504129aa4239bb6d9a1da2498616ff8ad7ec"
+    },
+    "U2": {
+      "regions": [
+        {
+          "page": 10,
+          "bbox": [
+            12,
+            350.5323879172585,
+            583.2760009765625,
+            815.867959650213
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 10,
+      "heading_box": [
+        12,
+        350.5323879172585,
+        110,
+        375.5323879172585
+      ],
+      "heading_pixel_sha256": "1b707b52b2171f9243f826b9bf53c42f6b22fb9843d2dc621f6e5de8f5dea196"
+    },
+    "U3": {
+      "regions": [
+        {
+          "page": 11,
+          "bbox": [
+            12,
+            16.83780029296875,
+            583.2760009765625,
+            511.25684525923293
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 11,
+      "heading_box": [
+        12,
+        16.83780029296875,
+        110,
+        41.83780029296875
+      ],
+      "heading_pixel_sha256": "1399a34c2b5110b5570de3d8daac0278ac8e0a95c73853a239bda3a9fac21d4c"
+    },
+    "U4": {
+      "regions": [
+        {
+          "page": 11,
+          "bbox": [
+            12,
+            517.3796817294034,
+            583.2760009765625,
+            817.3986687677557
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 11,
+      "heading_box": [
+        12,
+        517.3796817294034,
+        110,
+        542.3796817294034
+      ],
+      "heading_pixel_sha256": "24a2fb46e715834d8aae82d4292674528619284b1802c3b22bf66e42d54ab528"
+    },
+    "U5": {
+      "regions": [
+        {
+          "page": 12,
+          "bbox": [
+            12,
+            123.9874385209517,
+            583.2760009765625,
+            327.57175115411934
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 12,
+      "heading_box": [
+        12,
+        123.9874385209517,
+        110,
+        148.98743852095168
+      ],
+      "heading_pixel_sha256": "f6c5b4deaa1ea48969c725fa40955cb9575d35be37d0c59aa9733fdb171b7d68"
+    },
+    "U6": {
+      "regions": [
+        {
+          "page": 12,
+          "bbox": [
+            12,
+            335.2252967418324,
+            583.2760009765625,
+            552.5859914328835
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 12,
+      "heading_box": [
+        12,
+        335.2252967418324,
+        110,
+        360.2252967418324
+      ],
+      "heading_pixel_sha256": "1205a5dc1dcb76d64c2a23cb2ea7bb79675b82ac327ea17a8af316b23cfc8c16"
+    },
+    "U7": {
+      "regions": [
+        {
+          "page": 12,
+          "bbox": [
+            12,
+            560.2395370205966,
+            583.2760009765625,
+            815.867959650213
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 12,
+      "heading_box": [
+        12,
+        560.2395370205966,
+        110,
+        585.2395370205966
+      ],
+      "heading_pixel_sha256": "237f826d4024477400850526c01ebc96d856445068d7dba8af194bcc65bb6d03"
+    },
+    "U8": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            12,
+            16.83780029296875,
+            583.2760009765625,
+            321.4489146839489
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 13,
+      "heading_box": [
+        12,
+        16.83780029296875,
+        110,
+        41.83780029296875
+      ],
+      "heading_pixel_sha256": "883702deea33e40ebf0f0b02769a01bce3027ebc284e52c4f47d79c7134ee80b"
+    }
+  },
+  "page_image_hashes": {
+    "2": "da60e094594b8b2c2b72c94aceee72f6c2274595d77a743d28aa23d702981944",
+    "10": "f15ce44991f847f2bb82dc8c7fac5f01a658942e9cfb44f6d52091450f202657",
+    "11": "8c0c6466d207be2a2cdc351a654194cf5b46aa56be8f0e0cc251d2a4c7ea6dcb",
+    "12": "8e0f920acb962f2c17ade81f62b5ebb48ba8c33dd01b6697c51b25fb671def60",
+    "13": "9013252a43cf088d4915fc0013dae45ab2d04929e4433be13aca29af713b9be9"
+  }
+}

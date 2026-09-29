@@ -1,0 +1,21 @@
+{
+  "checks": [
+    "No machine candidate preselected; source hash required",
+    "Unsaved choice protected",
+    "Synthetic local confirmation persists, no production update",
+    "Unified export scopes and locked source binding",
+    {
+      "personal_learning_unchanged": {
+        "attempts": 0,
+        "testSessions": 0,
+        "questionNotes": 0,
+        "moduleRuns": 0
+      }
+    },
+    "Tampered mapping evidence cannot be confirmed",
+    "Mobile no horizontal overflow",
+    "Browser Back protects unsaved review draft"
+  ],
+  "isolated_context": true,
+  "synthetic_confirmation_not_exported_to_production": true
+}

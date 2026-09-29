@@ -1,0 +1,262 @@
+{
+  "scope": "2024-fa",
+  "name": "2024_sommer_funktionsanalyse",
+  "exam": "2024_sommer",
+  "module": "Funktionsanalyse",
+  "version": "overnight.1.0",
+  "profile_id": "official-ring-grid",
+  "source_hash": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+  "source_id": "src-c2b6552066caaa5578de22ff",
+  "question_source_id": "src-cd28f08815a20a9a5c147d7e",
+  "solution_source_id": "src-c2b6552066caaa5578de22ff",
+  "validated_sources": [
+    "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913"
+  ],
+  "choice_page": 2,
+  "choice_count": 28,
+  "analysis_size": [
+    993,
+    1404
+  ],
+  "groups": [
+    [
+      1,
+      10,
+      135.8,
+      60.08,
+      390.6,
+      19.94,
+      0,
+      370
+    ],
+    [
+      11,
+      10,
+      135.8,
+      60.08,
+      510.0,
+      19.94,
+      0,
+      490
+    ],
+    [
+      21,
+      8,
+      135.8,
+      60.08,
+      629.3,
+      19.94,
+      0,
+      609
+    ]
+  ],
+  "grid_crop": [
+    106,
+    356,
+    725,
+    721
+  ],
+  "ring_policy": {
+    "min_ring": 0.4,
+    "support": 0.83,
+    "possible_ring": 0.32,
+    "possible_support": 0.58,
+    "margin": 0.15,
+    "center": 0.1
+  },
+  "header_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+  "u_evidence": "All original U headings and ruled boundaries visually verified; diagrams, formulas, tables and GRAFCET retained. Whole-question self-assessment; no rubric inferred.",
+  "u_regions": {
+    "U1": {
+      "regions": [
+        {
+          "page": 9,
+          "bbox": [
+            12,
+            122.45817649147727,
+            583.2000122070312,
+            563.3076118607954
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 9,
+      "heading_box": [
+        12,
+        122.45817649147727,
+        110,
+        147.45817649147727
+      ],
+      "heading_pixel_sha256": "9dba8014d12c1863be6195f3c3d99e2153e0e03745c37ba42a2f2486a7bcdc48"
+    },
+    "U2": {
+      "regions": [
+        {
+          "page": 9,
+          "bbox": [
+            12,
+            569.4305206853693,
+            583.2000122070312,
+            817.4083280806108
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 9,
+      "heading_box": [
+        12,
+        569.4305206853693,
+        110,
+        594.4305206853693
+      ],
+      "heading_pixel_sha256": "b87a28ce8fc28e6fe542dbc2740fe48d377c5f0186398b2a7c6e6ec36c183b5d"
+    },
+    "U3": {
+      "regions": [
+        {
+          "page": 10,
+          "bbox": [
+            12,
+            15.30727206143466,
+            583.2000122070312,
+            249.50853460138495
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 10,
+      "heading_box": [
+        12,
+        15.30727206143466,
+        110,
+        40.30727206143466
+      ],
+      "heading_pixel_sha256": "212f5ffb22dae14e2d41a110c9562612e7ad8978cc59b04d8a93a2395bbea69c"
+    },
+    "U4": {
+      "regions": [
+        {
+          "page": 10,
+          "bbox": [
+            12,
+            255.6314434259588,
+            583.2000122070312,
+            817.4083280806108
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 10,
+      "heading_box": [
+        12,
+        255.6314434259588,
+        110,
+        280.63144342595876
+      ],
+      "heading_pixel_sha256": "21f708ca4c34e9cd050c9001c1e660221c176bef911d97e29c272806542ccc7b"
+    },
+    "U5": {
+      "regions": [
+        {
+          "page": 11,
+          "bbox": [
+            12,
+            122.45817649147727,
+            583.2000122070312,
+            817.4083280806108
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 11,
+      "heading_box": [
+        12,
+        122.45817649147727,
+        110,
+        147.45817649147727
+      ],
+      "heading_pixel_sha256": "dac22e0e33700792c3775daa9f5e9f05311e4b1939735ccc28d235bee45980d0"
+    },
+    "U6": {
+      "regions": [
+        {
+          "page": 12,
+          "bbox": [
+            12,
+            12.245817649147726,
+            583.2000122070312,
+            221.95544489080257
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 12,
+      "heading_box": [
+        12,
+        12.245817649147726,
+        110,
+        37.245817649147725
+      ],
+      "heading_pixel_sha256": "06a96bad7702e29da2ee859c989ddf257e4f67d52d40ecad4184260a950ee8d7"
+    },
+    "U7": {
+      "regions": [
+        {
+          "page": 12,
+          "bbox": [
+            12,
+            231.13980812766334,
+            583.2000122070312,
+            546.4696125932173
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 12,
+      "heading_box": [
+        12,
+        231.13980812766334,
+        110,
+        256.13980812766334
+      ],
+      "heading_pixel_sha256": "101eb58071b91b81cfb66cdf6d3348a32a12c89c29ea19e756e05841c66b154e"
+    },
+    "U8": {
+      "regions": [
+        {
+          "page": 12,
+          "bbox": [
+            12,
+            555.6539758300781,
+            583.2000122070312,
+            750.0563310102983
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 12,
+      "heading_box": [
+        12,
+        555.6539758300781,
+        110,
+        580.6539758300781
+      ],
+      "heading_pixel_sha256": "aee02e8a76908b5744dae893db08b2b952a7ad8e593d167f974af58165762086"
+    }
+  },
+  "page_image_hashes": {
+    "2": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+    "9": "fd77175a9f332b67c068a7aae5330a8c336e62be2b222e433490102febabb881",
+    "10": "6115dd91918f8e257b4a4951f794a6c707258b101e0d0e262ce4b04c901eef1a",
+    "11": "6b455628640912f36ff69a6d1a61bb654eed1fb1e0a3ea6081a3ccca8c45318e",
+    "12": "eae3e38b089dfe6778775ae812afece420d159e8edc0b756934037583d8b0840"
+  }
+}

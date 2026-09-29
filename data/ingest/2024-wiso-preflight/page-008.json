@@ -1,0 +1,61 @@
+{
+  "key": "c582f893e49dc9c766517f49b5348a54c94b2a763b49d24220e6896b4bf3c37d",
+  "record_hash": "8cfc7b9f0285cc382df792b7bad5a80e614cb0bce4de970343d10f9aa3b9dfeb",
+  "record": {
+    "page": 8,
+    "geometry": [
+      595.2000122070312,
+      841.8999633789062
+    ],
+    "classification": "questions",
+    "classification_evidence": "All cached physical pages visually checked: printed anchors, separators and explicit reference labels.",
+    "anchors": [
+      {
+        "anchor_id": "2024-wiso-p8-U2",
+        "number": "U2",
+        "bbox": [
+          41.312,
+          41.33,
+          82.624,
+          67.352
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U2 on original page.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "942ab44f508d94c54cb1c4db1a642f9a5ad44841744f7a149dbdd223362f7704"
+      }
+    ],
+    "regions": [
+      {
+        "page": 8,
+        "bbox": [
+          41.312,
+          41.33,
+          552.358,
+          792.917
+        ],
+        "role": "primary",
+        "owner": "2024-wiso-p8-U2",
+        "evidence": "Original U heading and answer area; no OCR reconstruction."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U2",
+        "bbox": [
+          41.312,
+          41.33,
+          82.624,
+          67.352
+        ],
+        "pixel_sha256": "942ab44f508d94c54cb1c4db1a642f9a5ad44841744f7a149dbdd223362f7704",
+        "audited_pixel_sha256": "942ab44f508d94c54cb1c4db1a642f9a5ad44841744f7a149dbdd223362f7704"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

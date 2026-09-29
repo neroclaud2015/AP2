@@ -1,0 +1,61 @@
+{
+  "key": "21696ce6a41a44c8daca489c13c0242c160f361ec835e17fa2ce8b5673e67d0a",
+  "record_hash": "793c3e4408e6c51cac9258a41f7364edac6781f3bfae71731841ea4ebff88acb",
+  "record": {
+    "page": 13,
+    "geometry": [
+      595.3200073242188,
+      841.9199829101562
+    ],
+    "classification": "questions",
+    "classification_evidence": "All cached physical pages visually checked: printed anchors, separators and explicit reference labels.",
+    "anchors": [
+      {
+        "anchor_id": "2024-25-wiso-p13-U5",
+        "number": "U5",
+        "bbox": [
+          50.503,
+          48.984,
+          91.823,
+          75.007
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U5 on original page.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "b06240672fb63fb091716eef8000ef0c0b075990f7d8f1400ba033785332c13e"
+      }
+    ],
+    "regions": [
+      {
+        "page": 13,
+        "bbox": [
+          50.503,
+          48.984,
+          546.348,
+          777.628
+        ],
+        "role": "primary",
+        "owner": "2024-25-wiso-p13-U5",
+        "evidence": "Original U heading and answer area; no OCR reconstruction."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U5",
+        "bbox": [
+          50.503,
+          48.984,
+          91.823,
+          75.007
+        ],
+        "pixel_sha256": "b06240672fb63fb091716eef8000ef0c0b075990f7d8f1400ba033785332c13e",
+        "audited_pixel_sha256": "b06240672fb63fb091716eef8000ef0c0b075990f7d8f1400ba033785332c13e"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

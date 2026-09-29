@@ -1,0 +1,99 @@
+{
+  "key": "c8c75c563979fe3a614f0c80a9f7e994b474df83df06db34d06024efae382da8",
+  "record_hash": "05f6fd41940871f072a8d3891ebef8c17f21f80fe9596f8bbfaec1f4d5c6e003",
+  "record": {
+    "page": 9,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "All cached physical pages visually checked: printed anchors, separators and explicit reference labels.",
+    "anchors": [
+      {
+        "anchor_id": "2023-24-wiso-p9-4",
+        "number": "4",
+        "bbox": [
+          29.071,
+          52.016,
+          70.384,
+          78.024
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 4 visually read; not inferred from order.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "d1c4dc346a7a7db613fbacc73b1b5974bcb23206dc4cdf592c0b67ceda947968"
+      },
+      {
+        "anchor_id": "2023-24-wiso-p9-5",
+        "number": "5",
+        "bbox": [
+          281.534,
+          52.016,
+          322.846,
+          78.024
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 5 visually read; not inferred from order.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "85c3639687ea3d660dd633f427be87bda4e1f4aab8d4828987e2ccc277d6d1d7"
+      }
+    ],
+    "regions": [
+      {
+        "page": 9,
+        "bbox": [
+          29.071,
+          52.016,
+          275.414,
+          292.209
+        ],
+        "role": "primary",
+        "owner": "2023-24-wiso-p9-4",
+        "evidence": "Original printed heading/ruled panel boundaries, diagrams and response areas included."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          281.534,
+          52.016,
+          521.756,
+          292.209
+        ],
+        "role": "primary",
+        "owner": "2023-24-wiso-p9-5",
+        "evidence": "Original printed heading/ruled panel boundaries, diagrams and response areas included."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "4",
+        "bbox": [
+          29.071,
+          52.016,
+          70.384,
+          78.024
+        ],
+        "pixel_sha256": "d1c4dc346a7a7db613fbacc73b1b5974bcb23206dc4cdf592c0b67ceda947968",
+        "audited_pixel_sha256": "d1c4dc346a7a7db613fbacc73b1b5974bcb23206dc4cdf592c0b67ceda947968"
+      },
+      {
+        "kind": "heading",
+        "number": "5",
+        "bbox": [
+          281.534,
+          52.016,
+          322.846,
+          78.024
+        ],
+        "pixel_sha256": "85c3639687ea3d660dd633f427be87bda4e1f4aab8d4828987e2ccc277d6d1d7",
+        "audited_pixel_sha256": "85c3639687ea3d660dd633f427be87bda4e1f4aab8d4828987e2ccc277d6d1d7"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

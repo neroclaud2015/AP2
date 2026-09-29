@@ -1,0 +1,61 @@
+{
+  "key": "7fd159c9235376b15f8660a9481f0105a1b7df5c26d585670e98d4a006be9bbb",
+  "record_hash": "b141c2522d655cbce12487721237d7f4c31bbee35f871aac21b8318e76de5525",
+  "record": {
+    "page": 15,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "All cached physical pages visually checked: printed anchors, separators and explicit reference labels.",
+    "anchors": [
+      {
+        "anchor_id": "2023-24-wiso-p15-14",
+        "number": "14",
+        "bbox": [
+          29.071,
+          50.486,
+          70.384,
+          76.495
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 14 visually read; not inferred from order.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "503897349e7c968a64b206b0a67446f4fcd55a31f095b39c98e85da41c9f6d93"
+      }
+    ],
+    "regions": [
+      {
+        "page": 15,
+        "bbox": [
+          29.071,
+          50.486,
+          276.944,
+          293.739
+        ],
+        "role": "primary",
+        "owner": "2023-24-wiso-p15-14",
+        "evidence": "Original printed heading/ruled panel boundaries, diagrams and response areas included."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "14",
+        "bbox": [
+          29.071,
+          50.486,
+          70.384,
+          76.495
+        ],
+        "pixel_sha256": "503897349e7c968a64b206b0a67446f4fcd55a31f095b39c98e85da41c9f6d93",
+        "audited_pixel_sha256": "503897349e7c968a64b206b0a67446f4fcd55a31f095b39c98e85da41c9f6d93"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

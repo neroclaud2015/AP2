@@ -1,0 +1,61 @@
+{
+  "key": "01b4a47637a7b665efbfd7b2f9af3a75c91250ee32b5e2a9380b965157dbd247",
+  "record_hash": "a3e81d21284bd8f9ba041383c1460a12d1676308a492be610c2996be49704257",
+  "record": {
+    "page": 11,
+    "geometry": [
+      612.0,
+      792.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "All cached physical pages visually checked: printed anchors, separators and explicit reference labels.",
+    "anchors": [
+      {
+        "anchor_id": "2023-24-fa-p11-28",
+        "number": "28",
+        "bbox": [
+          88.99,
+          78.107,
+          131.143,
+          104.663
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 28 visually read; not inferred from order.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "9a6b4a784ea33d34050817ca73ec055397de1de1d5b4a46229e46edd58f79212"
+      }
+    ],
+    "regions": [
+      {
+        "page": 11,
+        "bbox": [
+          88.99,
+          78.107,
+          504.276,
+          496.757
+        ],
+        "role": "primary",
+        "owner": "2023-24-fa-p11-28",
+        "evidence": "Original printed heading/ruled panel boundaries, diagrams and response areas included."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "28",
+        "bbox": [
+          88.99,
+          78.107,
+          131.143,
+          104.663
+        ],
+        "pixel_sha256": "9a6b4a784ea33d34050817ca73ec055397de1de1d5b4a46229e46edd58f79212",
+        "audited_pixel_sha256": "9a6b4a784ea33d34050817ca73ec055397de1de1d5b4a46229e46edd58f79212"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

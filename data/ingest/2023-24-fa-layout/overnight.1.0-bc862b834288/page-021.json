@@ -1,0 +1,61 @@
+{
+  "key": "b43aa12720c91dc195eb00252b29da531a0b5bff8a2938e6d878082c311f9840",
+  "record_hash": "28a5745416bb11dd3f4e0b56d559caf56e7b550870fbf7fb0bf1b582c7625b70",
+  "record": {
+    "page": 21,
+    "geometry": [
+      595.2000122070312,
+      841.4401245117188
+    ],
+    "classification": "questions",
+    "classification_evidence": "All cached physical pages visually checked: printed anchors, separators and explicit reference labels.",
+    "anchors": [
+      {
+        "anchor_id": "2023-24-fa-p21-U8",
+        "number": "U8",
+        "bbox": [
+          15.301,
+          12.239,
+          56.613,
+          38.247
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U8 on original page.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "8a3957521b25e10dc50309c0ab685b11652fa91b3389db150a707bf24b4c59c7"
+      }
+    ],
+    "regions": [
+      {
+        "page": 21,
+        "bbox": [
+          15.301,
+          12.239,
+          555.418,
+          823.081
+        ],
+        "role": "primary",
+        "owner": "2023-24-fa-p21-U8",
+        "evidence": "Original U heading and answer area; no OCR reconstruction."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U8",
+        "bbox": [
+          15.301,
+          12.239,
+          56.613,
+          38.247
+        ],
+        "pixel_sha256": "8a3957521b25e10dc50309c0ab685b11652fa91b3389db150a707bf24b4c59c7",
+        "audited_pixel_sha256": "8a3957521b25e10dc50309c0ab685b11652fa91b3389db150a707bf24b4c59c7"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

@@ -3761,5 +3761,143 @@
         ]
       }
     ]
+  },
+  {
+    "examId": "2023-24-winter",
+    "slug": "wiso",
+    "title": "WiSo",
+    "segmentedPath": "data/2023_24_winter_wiso_segmented.json",
+    "answersPath": "data/2023_24_winter_wiso_answers.json",
+    "solutionsPath": "data/2023_24_winter_wiso_u_solutions.json",
+    "choiceSolutionPage": 3,
+    "descriptionPage": 5,
+    "descriptionLabel": "Prüfungsaufgaben-Beschreibung",
+    "questionContextPages": {
+      "1": [
+        5
+      ],
+      "2": [
+        5
+      ],
+      "3": [
+        5
+      ],
+      "4": [
+        5
+      ],
+      "5": [
+        5
+      ],
+      "6": [
+        5
+      ],
+      "7": [
+        5
+      ],
+      "8": [
+        5
+      ],
+      "9": [
+        5
+      ],
+      "10": [
+        5
+      ],
+      "11": [
+        5
+      ],
+      "12": [
+        5
+      ],
+      "13": [
+        5
+      ],
+      "14": [
+        5
+      ],
+      "15": [
+        5
+      ],
+      "16": [
+        5
+      ],
+      "17": [
+        5
+      ],
+      "18": [
+        5
+      ],
+      "U1": [
+        5
+      ],
+      "U2": [
+        5
+      ],
+      "U3": [
+        5
+      ],
+      "U4": [
+        5
+      ],
+      "U5": [
+        5
+      ],
+      "U6": [
+        5
+      ]
+    },
+    "attachmentPages": [],
+    "sourcePageImages": {
+      "5": "assets/questions/6aea63f2f871edd6be63e74f/overnight.1.0-af2ab393c9ac/attachment-5-0.png",
+      "2": "assets/sources/6aea63f2f871edd6be63e74f/timing-2.png"
+    },
+    "durationMinutes": 60,
+    "durationSource": {
+      "pdf": "",
+      "page": 2,
+      "image": "assets/sources/6aea63f2f871edd6be63e74f/timing-2.png"
+    },
+    "parts": [
+      {
+        "id": "A",
+        "title": "Teil A",
+        "kind": "multiple_choice",
+        "label": "Auswahlaufgaben",
+        "questionNumbers": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18"
+        ]
+      },
+      {
+        "id": "B",
+        "title": "Teil B",
+        "kind": "multi_part",
+        "label": "Offene Aufgaben",
+        "questionNumbers": [
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6"
+        ]
+      }
+    ]
   }
 ]

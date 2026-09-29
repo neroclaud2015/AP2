@@ -1,0 +1,85 @@
+{
+  "key": "e23af41bff280be6980005abd8b1f9d2bc3eadf313a1270b30b00ff88caf4cc5",
+  "record_hash": "d44a912c0a4cf8dfbb00b555ead71c2cc905e76944f6789d0b526be4ef847ed7",
+  "record": {
+    "page": 19,
+    "geometry": [
+      595.2000122070312,
+      841.4401245117188
+    ],
+    "classification": "questions",
+    "classification_evidence": "All cached physical pages visually checked: printed anchors, separators and explicit reference labels.",
+    "anchors": [
+      {
+        "anchor_id": "2023-24-fa-p19-U6",
+        "number": "U6",
+        "bbox": [
+          18.361,
+          231.014,
+          59.673,
+          257.022
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U6 on original page.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "4b8685ae4211a8cf732100a7df12b8bcdf5537114374ebec859d29a81358fd70"
+      }
+    ],
+    "regions": [
+      {
+        "page": 19,
+        "bbox": [
+          18.361,
+          231.014,
+          550.828,
+          824.611
+        ],
+        "role": "primary",
+        "owner": "2023-24-fa-p19-U6",
+        "evidence": "Original U heading and answer area; no OCR reconstruction."
+      },
+      {
+        "page": 19,
+        "bbox": [
+          18.361,
+          12.239,
+          550.828,
+          226.424
+        ],
+        "role": "continuation",
+        "owner": "2023-24-fa-p18-U5",
+        "evidence": "Printed subpart 2 and Ergebnis U5 above ruled boundary; U6 begins below."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U6",
+        "bbox": [
+          18.361,
+          231.014,
+          59.673,
+          257.022
+        ],
+        "pixel_sha256": "4b8685ae4211a8cf732100a7df12b8bcdf5537114374ebec859d29a81358fd70",
+        "audited_pixel_sha256": "4b8685ae4211a8cf732100a7df12b8bcdf5537114374ebec859d29a81358fd70"
+      },
+      {
+        "kind": "ownership",
+        "number": "U5",
+        "bbox": [
+          18.361,
+          12.239,
+          550.828,
+          226.424
+        ],
+        "pixel_sha256": "73595b2e0b37f1a51ffa545da349d574d5e5db98ab8ba849bc433b1aee415bc6",
+        "audited_pixel_sha256": "73595b2e0b37f1a51ffa545da349d574d5e5db98ab8ba849bc433b1aee415bc6"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

@@ -6,10 +6,10 @@ import type {AnswerReview} from '../segmented/answers';
 import {confirmedReview,machineChanged,makeConfirmation,reviewExport,strongestCandidate,type ReviewQueue,type ReviewItem} from './model';
 import './review.css';
 import {resolveReviewScope} from './scopes';
-function SourceCrop({item,onVerified}:{item:ReviewItem;onVerified:(value:boolean)=>void}){
+export function SourceCrop({item,onVerified,label}:{item:Pick<ReviewItem,'question_id'|'source_crop'|'source_crop_sha256'|'module'|'question_number'|'row_positions'>;onVerified:(value:boolean)=>void;label?:string}){
  const [url,setUrl]=useState('');const [error,setError]=useState('');
  useEffect(()=>{let active=true;let objectUrl='';onVerified(false);setUrl('');setError('');void(async()=>{try{const response=await fetch(asset(item.source_crop));if(!response.ok)throw Error();const bytes=await response.arrayBuffer();const hash=[...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(v=>v.toString(16).padStart(2,'0')).join('');if(hash!==item.source_crop_sha256)throw Error();if(!active)return;objectUrl=URL.createObjectURL(new Blob([bytes],{type:'image/png'}));setUrl(objectUrl);}catch{if(active)setError('Quellbild konnte nicht verifiziert werden. Speichern gesperrt. Bitte neu laden.');}})();return()=>{active=false;if(objectUrl)URL.revokeObjectURL(objectUrl)};},[item.question_id,item.source_crop_sha256]);
- return <>{error&&<p role="alert">{error}</p>}{url?<div className="manual-crop"><img src={url} alt={`Originale Antwortquelle ${item.module} Q${item.question_number}`} onLoad={()=>onVerified(true)} onError={()=>{onVerified(false);setError('Quellbild nicht lesbar.');}}/>{item.row_positions.map((top,i)=><span key={i} style={{top:top+'%'}} aria-hidden="true">{i+1} →</span>)}</div>:!error&&<p>Originalquelle wird geprüft…</p>}</>;
+ return <>{error&&<p role="alert">{error}</p>}{url?<div className="manual-crop"><img src={url} alt={label??`Originale Antwortquelle ${item.module} Q${item.question_number}`} onLoad={()=>onVerified(true)} onError={()=>{onVerified(false);setError('Quellbild nicht lesbar.');}}/>{item.row_positions.map((top,i)=><span key={i} style={{top:top+'%'}} aria-hidden="true">{i+1} →</span>)}</div>:!error&&<p>Originalquelle wird geprüft…</p>}</>;
 }
 export default function ManualAnswerReview(){
  const [search,setSearch]=useState(location.search);

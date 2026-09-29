@@ -1,0 +1,269 @@
+{
+  "exam": "2023-24-winter",
+  "status": "inspected",
+  "modules": {
+    "ap": {
+      "preview": {
+        "status": "preview_ready",
+        "observed": 36,
+        "expected": 36,
+        "missing": [],
+        "unexpected": [],
+        "duplicates": [],
+        "issues": [],
+        "all_pages_classified": 19,
+        "revision": "overnight.1.0-fc77c079d013",
+        "source_id": "src-81d0bbb4910b12e37e0e438a",
+        "source_hash": "0e9da22eea16822f01d92586ecfc9be2b5e97912d98a7186ea08d6a7447e3f40",
+        "profile_id": "portrait-explicit-regions",
+        "validated_sources": [
+          "0e9da22eea16822f01d92586ecfc9be2b5e97912d98a7186ea08d6a7447e3f40"
+        ],
+        "pdf_pages_opened": 0,
+        "pdf_pages_rendered": 0,
+        "questions": 36,
+        "attachments": []
+      },
+      "segmentation": {
+        "status": "formal_segmented",
+        "observed": 36,
+        "expected": 36,
+        "missing": [],
+        "unexpected": [],
+        "duplicates": [],
+        "issues": [],
+        "all_pages_classified": 19,
+        "revision": "overnight.1.0-fc77c079d013",
+        "source_id": "src-81d0bbb4910b12e37e0e438a",
+        "source_hash": "0e9da22eea16822f01d92586ecfc9be2b5e97912d98a7186ea08d6a7447e3f40",
+        "profile_id": "portrait-explicit-regions",
+        "validated_sources": [
+          "0e9da22eea16822f01d92586ecfc9be2b5e97912d98a7186ea08d6a7447e3f40"
+        ],
+        "pdf_pages_opened": 0,
+        "pdf_pages_rendered": 0,
+        "questions": 36,
+        "attachments": []
+      },
+      "official": {
+        "choice_expected": 28,
+        "choice_records": 28,
+        "u_expected": 8,
+        "u_records": 8,
+        "review_list": [
+          {
+            "question_number": 6,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 14,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 16,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          }
+        ],
+        "status": "blocked",
+        "revision": "2023-24-ap-2f.1.0-6bcfda8100f1",
+        "pdf_pages_opened": 0
+      },
+      "resume_status": "awaiting_human_review"
+    },
+    "fa": {
+      "preview": {
+        "status": "skipped",
+        "revision": "overnight.1.0-bc862b834288",
+        "questions": 36,
+        "pdf_pages_opened": 0,
+        "processed_pages": 0
+      },
+      "segmentation": {
+        "status": "skipped",
+        "revision": "overnight.1.0-bc862b834288",
+        "questions": 36,
+        "pdf_pages_opened": 0,
+        "processed_pages": 0
+      },
+      "official": {
+        "choice_expected": 28,
+        "choice_records": 28,
+        "u_expected": 8,
+        "u_records": 8,
+        "review_list": [
+          {
+            "question_number": 6,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 10,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          },
+          {
+            "question_number": 21,
+            "reasons": [
+              "no_unique_circle",
+              "threshold_disagreement"
+            ]
+          }
+        ],
+        "status": "blocked",
+        "revision": "2023-24-fa-2f.1.0-71262dd2350b",
+        "pdf_pages_opened": 0
+      },
+      "resume_status": "awaiting_human_review"
+    },
+    "wiso": {
+      "preview": {
+        "status": "preview_ready",
+        "observed": 24,
+        "expected": 24,
+        "missing": [],
+        "unexpected": [],
+        "duplicates": [],
+        "issues": [],
+        "all_pages_classified": 20,
+        "revision": "overnight.1.0-af2ab393c9ac",
+        "source_id": "src-2fc15166e1c7b36668e56510",
+        "source_hash": "6aea63f2f871edd6be63e74f5bf8edaad7c14c7c5c8847102097fe751a43c4ef",
+        "profile_id": "portrait-explicit-regions",
+        "validated_sources": [
+          "6aea63f2f871edd6be63e74f5bf8edaad7c14c7c5c8847102097fe751a43c4ef"
+        ],
+        "pdf_pages_opened": 0,
+        "pdf_pages_rendered": 0,
+        "questions": 24,
+        "attachments": [
+          {
+            "page": 5,
+            "bbox": [
+              30.602,
+              52.016,
+              523.286,
+              295.269
+            ],
+            "role": "Prüfungsaufgaben-Beschreibung",
+            "question_numbers": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "U1",
+              "U2",
+              "U3",
+              "U4",
+              "U5",
+              "U6"
+            ],
+            "evidence": "Original explicit task references and sheet labels verified.",
+            "image": "assets/questions/6aea63f2f871edd6be63e74f/overnight.1.0-af2ab393c9ac/attachment-5-0.png",
+            "source_sha256": "6aea63f2f871edd6be63e74f5bf8edaad7c14c7c5c8847102097fe751a43c4ef"
+          }
+        ]
+      },
+      "segmentation": {
+        "status": "formal_segmented",
+        "observed": 24,
+        "expected": 24,
+        "missing": [],
+        "unexpected": [],
+        "duplicates": [],
+        "issues": [],
+        "all_pages_classified": 20,
+        "revision": "overnight.1.0-af2ab393c9ac",
+        "source_id": "src-2fc15166e1c7b36668e56510",
+        "source_hash": "6aea63f2f871edd6be63e74f5bf8edaad7c14c7c5c8847102097fe751a43c4ef",
+        "profile_id": "portrait-explicit-regions",
+        "validated_sources": [
+          "6aea63f2f871edd6be63e74f5bf8edaad7c14c7c5c8847102097fe751a43c4ef"
+        ],
+        "pdf_pages_opened": 0,
+        "pdf_pages_rendered": 0,
+        "questions": 24,
+        "attachments": [
+          {
+            "page": 5,
+            "bbox": [
+              30.602,
+              52.016,
+              523.286,
+              295.269
+            ],
+            "role": "Prüfungsaufgaben-Beschreibung",
+            "question_numbers": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "U1",
+              "U2",
+              "U3",
+              "U4",
+              "U5",
+              "U6"
+            ],
+            "evidence": "Original explicit task references and sheet labels verified.",
+            "image": "assets/questions/6aea63f2f871edd6be63e74f/overnight.1.0-af2ab393c9ac/attachment-5-0.png",
+            "source_sha256": "6aea63f2f871edd6be63e74f5bf8edaad7c14c7c5c8847102097fe751a43c4ef"
+          }
+        ]
+      },
+      "official": {
+        "choice_expected": 18,
+        "choice_records": 18,
+        "u_expected": 6,
+        "u_records": 6,
+        "review_list": [],
+        "status": "passed",
+        "revision": "2023-24-wiso-2f.1.0-b58435a5b58f",
+        "pdf_pages_opened": 0
+      },
+      "resume_status": "production"
+    }
+  },
+  "new_pages_rendered": 133,
+  "old_pdf_rescan_count": 0
+}

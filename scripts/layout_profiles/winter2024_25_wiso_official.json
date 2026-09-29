@@ -1,0 +1,204 @@
+{
+  "scope": "2024-25-wiso",
+  "name": "2024_25_winter_wiso",
+  "exam": "2024_25_winter",
+  "module": "WiSo",
+  "version": "overnight.1.0",
+  "profile_id": "official-ring-grid",
+  "source_hash": "7fe6753ad727cabb78109f6035e6405449f98b3260652e9fa273494242c3b1e3",
+  "source_id": "src-4e2aa4be8ddd0b99437052a6",
+  "question_source_id": "src-3ab0a002a7f0ec81e3c53aa9",
+  "solution_source_id": "src-4e2aa4be8ddd0b99437052a6",
+  "validated_sources": [
+    "7fe6753ad727cabb78109f6035e6405449f98b3260652e9fa273494242c3b1e3"
+  ],
+  "choice_page": 3,
+  "choice_count": 18,
+  "analysis_size": [
+    993,
+    1404
+  ],
+  "groups": [
+    [
+      1,
+      10,
+      135.8,
+      60.08,
+      390.6,
+      19.94,
+      0,
+      370
+    ],
+    [
+      11,
+      8,
+      135.8,
+      60.08,
+      510.0,
+      19.94,
+      0,
+      490
+    ]
+  ],
+  "grid_crop": [
+    106,
+    356,
+    725,
+    603
+  ],
+  "ring_policy": {
+    "min_ring": 0.4,
+    "support": 0.83,
+    "possible_ring": 0.32,
+    "possible_support": 0.58,
+    "margin": 0.15,
+    "center": 0.1
+  },
+  "header_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+  "u_evidence": "All original U headings and ruled boundaries visually verified; diagrams, formulas, tables and GRAFCET retained. Whole-question self-assessment; no rubric inferred.",
+  "u_regions": {
+    "U1": {
+      "regions": [
+        {
+          "page": 14,
+          "bbox": [
+            12,
+            237.2599132191051,
+            583.2760009765625,
+            413.2914617365057
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 14,
+      "heading_box": [
+        12,
+        237.2599132191051,
+        110,
+        262.2599132191051
+      ],
+      "heading_pixel_sha256": "0a957a2adf4facaf9f0da3690b273c87bb53564138cf5475ae85d2bd3dd7dc87"
+    },
+    "U2": {
+      "regions": [
+        {
+          "page": 14,
+          "bbox": [
+            12,
+            419.41429820667616,
+            583.2760009765625,
+            624.5293199573864
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 14,
+      "heading_box": [
+        12,
+        419.41429820667616,
+        110,
+        444.41429820667616
+      ],
+      "heading_pixel_sha256": "3d33c0c43bceb05b1738cdc7cd0a9686e0121f31a82424f95ccabae6249743f5"
+    },
+    "U3": {
+      "regions": [
+        {
+          "page": 14,
+          "bbox": [
+            12,
+            630.6521564275569,
+            583.2760009765625,
+            812.8065414151279
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 14,
+      "heading_box": [
+        12,
+        630.6521564275569,
+        110,
+        655.6521564275569
+      ],
+      "heading_pixel_sha256": "2244c127c3a6a39a9049e8544e2a738a92e7979446d09b57082af2212874361b"
+    },
+    "U4": {
+      "regions": [
+        {
+          "page": 15,
+          "bbox": [
+            12,
+            18.368509410511365,
+            583.2760009765625,
+            217.36069469105112
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 15,
+      "heading_box": [
+        12,
+        18.368509410511365,
+        110,
+        43.368509410511365
+      ],
+      "heading_pixel_sha256": "017f3f94a820456b97a7ea42b206b8f70c26cf4381afdf7c6b94e66912c62342"
+    },
+    "U5": {
+      "regions": [
+        {
+          "page": 15,
+          "bbox": [
+            12,
+            223.48353116122158,
+            583.2760009765625,
+            511.25684525923293
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 15,
+      "heading_box": [
+        12,
+        223.48353116122158,
+        110,
+        248.48353116122158
+      ],
+      "heading_pixel_sha256": "2a9c83bfb5bdb3e8fa5248c2e358bf3c05540ac3ed924708adbfe7f0681eda61"
+    },
+    "U6": {
+      "regions": [
+        {
+          "page": 15,
+          "bbox": [
+            12,
+            517.3796817294034,
+            583.2760009765625,
+            812.8065414151279
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 15,
+      "heading_box": [
+        12,
+        517.3796817294034,
+        110,
+        542.3796817294034
+      ],
+      "heading_pixel_sha256": "51c4089e0633ab8501cd507d92cae912ed799b9476f8e98564c633873043b254"
+    }
+  },
+  "page_image_hashes": {
+    "3": "2c02b95ab74178dd309a31c957debd032b3b370f42189263426b81e484598c15",
+    "14": "b96ab8f3d1c15034482f6296d00f17009c3ecbac24763cfdfbac3c34469d6cf0",
+    "15": "1bc6aac99dcd6a6ce4b9385a5c299bc43026c6eb0587588428e454ccbd1f28df"
+  }
+}
