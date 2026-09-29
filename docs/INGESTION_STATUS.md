@@ -1,3 +1,9 @@
+# Current: Sommer 2023 partial production
+
+AP36 MC28 U8 Review0 production. FA blocked: source U7/U8 already answered; WiSo question PDF missing.58 new cache pages,0 old rescans. [Report](SOMMER_2023_REPORT.md). Stop before Winter2023/24. Earlier entries below are historical.
+
+---
+
 # Current: Winter 2022/23 complete
 
 AP36 MC28 U8; FA36 MC28 U8; WiSo24 MC18 U6. Production, Review0.88 new cache pages plus1 diagnostic cover,0 old rescans. See [report](WINTER_2022_23_REPORT.md). Stop before Sommer2023. Earlier entries below are historical.

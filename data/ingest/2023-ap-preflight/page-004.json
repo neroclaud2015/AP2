@@ -1,0 +1,99 @@
+{
+  "key": "bd7ffe790f68e051c2fa04d9328291730812bea8c1d48981d0b329da1485330d",
+  "record_hash": "a5aa5ed3a96d4b2bdf452f2da95d90a3a597867f7a3620b7f999c3c8d7321420",
+  "record": {
+    "page": 4,
+    "geometry": [
+      612.0,
+      792.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2023-ap-p4-7",
+        "number": "7",
+        "bbox": [
+          82.745,
+          81.184,
+          124.745,
+          115.184
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 7 read on cached page 4",
+        "review_reasons": [],
+        "heading_pixel_sha256": "776c26e8ca7901b869399c05802d58268b3fd963a41cf75c03743995238b4fb5"
+      },
+      {
+        "anchor_id": "2023-ap-p4-8",
+        "number": "8",
+        "bbox": [
+          82.745,
+          293.51,
+          124.745,
+          327.51
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 8 read on cached page 4",
+        "review_reasons": [],
+        "heading_pixel_sha256": "b0b64b9f088e1b1002678749816aafab6a1a7374aabe0b3808cbf4ed924bd15a"
+      }
+    ],
+    "regions": [
+      {
+        "page": 4,
+        "bbox": [
+          82.745,
+          81.184,
+          515.204,
+          291.949
+        ],
+        "role": "primary",
+        "owner": "2023-ap-p4-7",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      },
+      {
+        "page": 4,
+        "bbox": [
+          82.745,
+          293.51,
+          515.204,
+          719.724
+        ],
+        "role": "primary",
+        "owner": "2023-ap-p4-8",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "7",
+        "bbox": [
+          82.745,
+          81.184,
+          124.745,
+          115.184
+        ],
+        "pixel_sha256": "776c26e8ca7901b869399c05802d58268b3fd963a41cf75c03743995238b4fb5",
+        "audited_pixel_sha256": "776c26e8ca7901b869399c05802d58268b3fd963a41cf75c03743995238b4fb5"
+      },
+      {
+        "kind": "heading",
+        "number": "8",
+        "bbox": [
+          82.745,
+          293.51,
+          124.745,
+          327.51
+        ],
+        "pixel_sha256": "b0b64b9f088e1b1002678749816aafab6a1a7374aabe0b3808cbf4ed924bd15a",
+        "audited_pixel_sha256": "b0b64b9f088e1b1002678749816aafab6a1a7374aabe0b3808cbf4ed924bd15a"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

@@ -826,5 +826,63 @@
       "evidence": "fa-cover.png",
       "evidence_sha256": "c414281bd5ecf6bee52b44a04f7a37be23bd5eefbdbda33285f01fcc25988f7c"
     }
+  },
+  "sommer2023": {
+    "scope": "2023-sommer",
+    "status": "partial_production",
+    "modules": {
+      "arbeitsplanung": {
+        "status": "production",
+        "questions": 36,
+        "mc_ready": 28,
+        "mc_expected": 28,
+        "u": 8,
+        "review": [],
+        "blocker": null,
+        "question_pages_rendered": 22,
+        "layout_profile": "portrait-explicit-regions",
+        "answer_profile": "official-ring-grid",
+        "duration_minutes": null,
+        "production_url": "https://neroclaud2015.github.io/AP2/?view=study&exam=2023-sommer&module=arbeitsplanung&q=1"
+      },
+      "funktionsanalyse": {
+        "status": "blocked",
+        "observed_questions": 36,
+        "formal_questions": 0,
+        "mc_coverage": "not extracted",
+        "u_coverage": "not extracted",
+        "question_pages_rendered": 21,
+        "blocker": "preanswered_question_source",
+        "detail": "U7 p19 / U8 p20 contain blue answers in the supplied original PDF",
+        "source_sha256": "69a95b1998d6182e14e6d36a7c0c1ac30387bab696d03f7dde8c6473d8e093f1",
+        "evidence": {
+          "19": {
+            "image": "fa-source-page-19.png",
+            "sha256": "a29ad4d51827e6341e977a6e25fe0453aa4e01231ac948497c78210a5286f67a",
+            "question": "U7"
+          },
+          "20": {
+            "image": "fa-source-page-20.png",
+            "sha256": "1f491901fa673c0c314ecf415f27afbd5c20d1871e614a5e80024923733c8aa9",
+            "question": "U8"
+          }
+        }
+      },
+      "wiso": {
+        "status": "blocked",
+        "questions": null,
+        "mc_coverage": "not extracted",
+        "u_coverage": "not extracted",
+        "blocker": "missing_question_pdf",
+        "detail": "Supplied archive contains only AP, FA and Lösung; no WiSo question PDF."
+      }
+    },
+    "new_cached_pages_rendered": 58,
+    "solution_pages_rendered": 15,
+    "old_pdf_rescan_count": 0,
+    "repeat_steps_skipped": 6,
+    "repeat_pages_rendered": 0,
+    "official_errata_in_supplied_archive": [],
+    "stop_before": "Winter 2023/24"
   }
 }

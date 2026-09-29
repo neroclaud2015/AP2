@@ -1,0 +1,138 @@
+{
+  "ap": {
+    "preview": {
+      "status": "preview_ready",
+      "observed": 36,
+      "expected": 36,
+      "missing": [],
+      "unexpected": [],
+      "duplicates": [],
+      "issues": [],
+      "all_pages_classified": 22,
+      "revision": "2p.1.0-13edda678101",
+      "source_id": "src-fe9cc7680ee790740950f092",
+      "source_hash": "124557b87cf6735019032cca811413a0500286ffc5b118842f30a235a64a6c4f",
+      "profile_id": "portrait-explicit-regions",
+      "validated_sources": [
+        "124557b87cf6735019032cca811413a0500286ffc5b118842f30a235a64a6c4f"
+      ],
+      "pdf_pages_opened": 0,
+      "pdf_pages_rendered": 0,
+      "questions": 36,
+      "attachments": [
+        {
+          "page": 13,
+          "bbox": [
+            68.694,
+            37.469,
+            537.061,
+            747.827
+          ],
+          "role": "Prüfungsaufgaben-Beschreibung",
+          "question_numbers": [
+            "U1",
+            "U2",
+            "U3",
+            "U4",
+            "U5",
+            "U6",
+            "U7",
+            "U8"
+          ],
+          "evidence": "Printed attachment title and explicit task references verified on original cached page.",
+          "image": "assets/questions/124557b87cf6735019032cca/2p.1.0-13edda678101/attachment-13-0.png",
+          "source_sha256": "124557b87cf6735019032cca811413a0500286ffc5b118842f30a235a64a6c4f"
+        },
+        {
+          "page": 22,
+          "bbox": [
+            39.031,
+            37.469,
+            554.235,
+            747.827
+          ],
+          "role": "Stirnradgetriebe mit Stückliste Blatt 1 von 1",
+          "question_numbers": [
+            "U2",
+            "U3"
+          ],
+          "evidence": "Printed attachment title and explicit task references verified on original cached page.",
+          "image": "assets/questions/124557b87cf6735019032cca/2p.1.0-13edda678101/attachment-22-1.png",
+          "source_sha256": "124557b87cf6735019032cca811413a0500286ffc5b118842f30a235a64a6c4f"
+        }
+      ]
+    },
+    "segmentation": {
+      "status": "formal_segmented",
+      "observed": 36,
+      "expected": 36,
+      "missing": [],
+      "unexpected": [],
+      "duplicates": [],
+      "issues": [],
+      "all_pages_classified": 22,
+      "revision": "2p.1.0-13edda678101",
+      "source_id": "src-fe9cc7680ee790740950f092",
+      "source_hash": "124557b87cf6735019032cca811413a0500286ffc5b118842f30a235a64a6c4f",
+      "profile_id": "portrait-explicit-regions",
+      "validated_sources": [
+        "124557b87cf6735019032cca811413a0500286ffc5b118842f30a235a64a6c4f"
+      ],
+      "pdf_pages_opened": 0,
+      "pdf_pages_rendered": 0,
+      "questions": 36,
+      "attachments": [
+        {
+          "page": 13,
+          "bbox": [
+            68.694,
+            37.469,
+            537.061,
+            747.827
+          ],
+          "role": "Prüfungsaufgaben-Beschreibung",
+          "question_numbers": [
+            "U1",
+            "U2",
+            "U3",
+            "U4",
+            "U5",
+            "U6",
+            "U7",
+            "U8"
+          ],
+          "evidence": "Printed attachment title and explicit task references verified on original cached page.",
+          "image": "assets/questions/124557b87cf6735019032cca/2p.1.0-13edda678101/attachment-13-0.png",
+          "source_sha256": "124557b87cf6735019032cca811413a0500286ffc5b118842f30a235a64a6c4f"
+        },
+        {
+          "page": 22,
+          "bbox": [
+            39.031,
+            37.469,
+            554.235,
+            747.827
+          ],
+          "role": "Stirnradgetriebe mit Stückliste Blatt 1 von 1",
+          "question_numbers": [
+            "U2",
+            "U3"
+          ],
+          "evidence": "Printed attachment title and explicit task references verified on original cached page.",
+          "image": "assets/questions/124557b87cf6735019032cca/2p.1.0-13edda678101/attachment-22-1.png",
+          "source_sha256": "124557b87cf6735019032cca811413a0500286ffc5b118842f30a235a64a6c4f"
+        }
+      ]
+    },
+    "answers": {
+      "choice_expected": 28,
+      "choice_records": 28,
+      "u_expected": 8,
+      "u_records": 8,
+      "review_list": [],
+      "status": "passed",
+      "revision": "2023-ap-2f.1.0-88533f109dc5",
+      "pdf_pages_opened": 0
+    }
+  }
+}
