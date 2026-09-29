@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "baseline": "6cbd6ba53b3634b083300179683daf0414479178",
-  "phase": "2J",
+  "phase": "2K",
   "firebase": "implemented_not_configured",
   "active_season": "2019-20-winter",
   "archives": [
@@ -480,5 +480,137 @@
     }
   },
   "stop_reason": "Winter 2019/20: AP and WiSo production; FA Q21 awaits actual user manual_source_review. Do not process Sommer2020 or later.",
-  "previous_stop_reason": "Official answer association safety gate: AP Q3/9/10/22/24, FA Q7/21/27. WiSo complete. No later season PDFs opened."
+  "previous_stop_reason": "Official answer association safety gate: AP Q3/9/10/22/24, FA Q7/21/27. WiSo complete. No later season PDFs opened.",
+  "active_exam": "2020-sommer",
+  "sommer2020": {
+    "phase": "2K",
+    "exam": "2020-sommer",
+    "new_pages_rendered": 88,
+    "old_pages_rescanned": 0,
+    "duplicate_pdf_opens": 0,
+    "skipped_steps": [
+      {
+        "stage": "cache",
+        "module": "Arbeitsplanung",
+        "kind": "question_pdf",
+        "status": "skipped",
+        "pages_processed": 0,
+        "source_hash": "ac48540e00c49e5c6ca70fa33639ccce2f02f3240aa915d3a7fec37761b5a4c6",
+        "page_count": 30
+      },
+      {
+        "stage": "cache",
+        "module": "Arbeitsplanung",
+        "kind": "solution_pdf",
+        "status": "skipped",
+        "pages_processed": 0,
+        "source_hash": "3ac3d0be5964142d39cdb2ff9aa96427f89689c66ac1e760df56ef1e19830465",
+        "page_count": 14
+      },
+      {
+        "stage": "cache",
+        "module": "Funktionsanalyse",
+        "kind": "question_pdf",
+        "status": "skipped",
+        "pages_processed": 0,
+        "source_hash": "ae805b150fcb8a00b0f703271f0e7c5ebf361ff98b36896d58b9da26a0a97f74",
+        "page_count": 28
+      },
+      {
+        "stage": "cache",
+        "module": "Funktionsanalyse",
+        "kind": "solution_pdf",
+        "status": "skipped",
+        "pages_processed": 0,
+        "source_hash": "3ac3d0be5964142d39cdb2ff9aa96427f89689c66ac1e760df56ef1e19830465",
+        "page_count": 14
+      },
+      {
+        "stage": "cache",
+        "module": "WiSo",
+        "kind": "question_pdf",
+        "status": "skipped",
+        "pages_processed": 0,
+        "source_hash": "d5e84ed5403b04325051493bd72aed226d0513718403eb05e0d9a4cfc402b7b0",
+        "page_count": 16
+      },
+      {
+        "stage": "cache",
+        "module": "WiSo",
+        "kind": "solution_pdf",
+        "status": "skipped",
+        "pages_processed": 0,
+        "source_hash": "3ac3d0be5964142d39cdb2ff9aa96427f89689c66ac1e760df56ef1e19830465",
+        "page_count": 14
+      },
+      {
+        "stage": "layout",
+        "module": "fa",
+        "status": "skipped",
+        "revision": "2k.1.0-da08f607cb9f",
+        "questions": 36,
+        "pdf_pages_opened": 0,
+        "processed_pages": 0
+      },
+      {
+        "stage": "answers",
+        "module": "fa",
+        "status": "skipped",
+        "revision": "2020-fa-2f.1.0-1b917fc1f4f1",
+        "pdf_pages_opened": 0,
+        "processed_pages": 0
+      },
+      {
+        "stage": "layout",
+        "module": "wiso",
+        "status": "skipped",
+        "revision": "2k.1.0-26bdb1167b4c",
+        "questions": 24,
+        "pdf_pages_opened": 0,
+        "processed_pages": 0
+      },
+      {
+        "stage": "answers",
+        "module": "wiso",
+        "status": "skipped",
+        "revision": "2020-wiso-2f.1.0-b803b26f97a8",
+        "pdf_pages_opened": 0,
+        "processed_pages": 0
+      }
+    ],
+    "old_source_records_unchanged": 36,
+    "modules": [
+      {
+        "module": "Arbeitsplanung",
+        "status": "blocked",
+        "detected_questions": 36,
+        "formal_questions": 0,
+        "mc": 0,
+        "u": 0,
+        "rendered": 30,
+        "blocker": "Shared Q7/Q8 diagram overlap in draft; preserve immutable audit history."
+      },
+      {
+        "module": "Funktionsanalyse",
+        "status": "production",
+        "questions": 36,
+        "mc": 28,
+        "u": 8,
+        "review": 0,
+        "rendered": 28
+      },
+      {
+        "module": "WiSo",
+        "status": "production",
+        "questions": 24,
+        "mc": 18,
+        "u": 6,
+        "review": 0,
+        "rendered": 16
+      }
+    ],
+    "shared_solution_pages_rendered": 14,
+    "layout_profile": "portrait-explicit-regions",
+    "answer_profile": "official-ring-grid"
+  }
 }

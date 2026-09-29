@@ -1,0 +1,61 @@
+{
+  "key": "9f01468fb1fa6121a5f9c7cb0ddbf96b7ebd9b2024743e88b67beecf86a7c9e5",
+  "record_hash": "e9f8a7b56519205bca9c6a933cc33736bf05ef1e2f6b7a410fdfa8794055d303",
+  "record": {
+    "page": 23,
+    "geometry": [
+      595.0800170898438,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Every physical cached page visually inspected; printed headings and panel boundaries observed, not inferred from order.",
+    "anchors": [
+      {
+        "anchor_id": "2020-fa-p23-U8",
+        "number": "U8",
+        "bbox": [
+          40.988,
+          22.771,
+          83.493,
+          50.096
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "dd33e80d62a793be8aa0e71c227f8d08ac4ae7bc28c60e0a7cd0e6e0f042c042"
+      }
+    ],
+    "regions": [
+      {
+        "page": 23,
+        "bbox": [
+          40.988,
+          22.771,
+          570.791,
+          640.622
+        ],
+        "role": "primary",
+        "owner": "2020-fa-p23-U8",
+        "evidence": "Printed U8 heading and complete ruled question panel visually verified."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U8",
+        "bbox": [
+          40.988,
+          22.771,
+          83.493,
+          50.096
+        ],
+        "pixel_sha256": "dd33e80d62a793be8aa0e71c227f8d08ac4ae7bc28c60e0a7cd0e6e0f042c042",
+        "audited_pixel_sha256": "dd33e80d62a793be8aa0e71c227f8d08ac4ae7bc28c60e0a7cd0e6e0f042c042"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

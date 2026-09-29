@@ -1,0 +1,199 @@
+{
+  "key": "375cd6336a98597e3ce6edb1f66d6ee267c5125ebe681fa3df80ec03023cc4b0",
+  "record_hash": "8f68ccd88f25d2a27b260f56e0061479db4530cbc055848fd547bc7950cf5293",
+  "record": {
+    "page": 7,
+    "geometry": [
+      595.0800170898438,
+      841.6799926757812
+    ],
+    "classification": "continuation_and_questions",
+    "classification_evidence": "Every physical cached page visually inspected; printed headings and panel boundaries observed, not inferred from order.",
+    "anchors": [
+      {
+        "anchor_id": "2020-wiso-p7-4",
+        "number": "4",
+        "bbox": [
+          53.132,
+          300.576,
+          95.638,
+          327.901
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "65053546451509d548ccb690ba87e8694d71b9649abe17523bf52c3997ebb5b6"
+      },
+      {
+        "anchor_id": "2020-wiso-p7-5",
+        "number": "5",
+        "bbox": [
+          302.094,
+          300.576,
+          344.6,
+          327.901
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "64948525c68e267c9d21c427cd4e262db767678c4c747bf50e4241babb14236a"
+      },
+      {
+        "anchor_id": "2020-wiso-p7-6",
+        "number": "6",
+        "bbox": [
+          53.132,
+          543.466,
+          95.638,
+          570.791
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "67c0a4d0e5f8c9d540bc4c8bea17507d939055c323bd46b287935ef3c5d0138f"
+      },
+      {
+        "anchor_id": "2020-wiso-p7-7",
+        "number": "7",
+        "bbox": [
+          302.094,
+          543.466,
+          344.6,
+          570.791
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "46adc6e93368e181c5b3a8ba0ca0a97290128ebd7f44d7cc9ddcb57c5ade1420"
+      }
+    ],
+    "regions": [
+      {
+        "page": 7,
+        "bbox": [
+          53.132,
+          300.576,
+          296.022,
+          538.912
+        ],
+        "role": "primary",
+        "owner": "2020-wiso-p7-4",
+        "evidence": "Printed 4 heading and complete ruled question panel visually verified."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          302.094,
+          300.576,
+          543.466,
+          538.912
+        ],
+        "role": "primary",
+        "owner": "2020-wiso-p7-5",
+        "evidence": "Printed 5 heading and complete ruled question panel visually verified."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          53.132,
+          543.466,
+          296.022,
+          786.356
+        ],
+        "role": "primary",
+        "owner": "2020-wiso-p7-6",
+        "evidence": "Printed 6 heading and complete ruled question panel visually verified."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          302.094,
+          543.466,
+          543.466,
+          786.356
+        ],
+        "role": "primary",
+        "owner": "2020-wiso-p7-7",
+        "evidence": "Printed 7 heading and complete ruled question panel visually verified."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          53.132,
+          59.204,
+          543.466,
+          299.058
+        ],
+        "role": "continuation",
+        "owner": "2020-wiso-p6-U2",
+        "evidence": "Visible Ergebnis U2 label and subquestion 3 continue U2 Arbeitszeitgesetz on preceding page."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "4",
+        "bbox": [
+          53.132,
+          300.576,
+          95.638,
+          327.901
+        ],
+        "pixel_sha256": "65053546451509d548ccb690ba87e8694d71b9649abe17523bf52c3997ebb5b6",
+        "audited_pixel_sha256": "65053546451509d548ccb690ba87e8694d71b9649abe17523bf52c3997ebb5b6"
+      },
+      {
+        "kind": "heading",
+        "number": "5",
+        "bbox": [
+          302.094,
+          300.576,
+          344.6,
+          327.901
+        ],
+        "pixel_sha256": "64948525c68e267c9d21c427cd4e262db767678c4c747bf50e4241babb14236a",
+        "audited_pixel_sha256": "64948525c68e267c9d21c427cd4e262db767678c4c747bf50e4241babb14236a"
+      },
+      {
+        "kind": "heading",
+        "number": "6",
+        "bbox": [
+          53.132,
+          543.466,
+          95.638,
+          570.791
+        ],
+        "pixel_sha256": "67c0a4d0e5f8c9d540bc4c8bea17507d939055c323bd46b287935ef3c5d0138f",
+        "audited_pixel_sha256": "67c0a4d0e5f8c9d540bc4c8bea17507d939055c323bd46b287935ef3c5d0138f"
+      },
+      {
+        "kind": "heading",
+        "number": "7",
+        "bbox": [
+          302.094,
+          543.466,
+          344.6,
+          570.791
+        ],
+        "pixel_sha256": "46adc6e93368e181c5b3a8ba0ca0a97290128ebd7f44d7cc9ddcb57c5ade1420",
+        "audited_pixel_sha256": "46adc6e93368e181c5b3a8ba0ca0a97290128ebd7f44d7cc9ddcb57c5ade1420"
+      },
+      {
+        "kind": "ownership",
+        "number": "U2",
+        "bbox": [
+          493.37,
+          98.674,
+          541.948,
+          139.662
+        ],
+        "pixel_sha256": "684bf68f578b4f15aac97bd0d8a6e5bbd7a70a072bb044d772af1aaf31ea4ff2",
+        "audited_pixel_sha256": "684bf68f578b4f15aac97bd0d8a6e5bbd7a70a072bb044d772af1aaf31ea4ff2"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

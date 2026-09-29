@@ -1,0 +1,922 @@
+{
+  "profile_id": "portrait-explicit-regions",
+  "scope": "2020-wiso",
+  "version": "2k.1.0",
+  "exam": "2020_sommer",
+  "module": "WiSo",
+  "source_hash": "d5e84ed5403b04325051493bd72aed226d0513718403eb05e0d9a4cfc402b7b0",
+  "source_id": "src-eae3b6215e432c8818dfb998",
+  "solution_source_id": "src-19aee13032099dec7b8772a7",
+  "validated_sources": [
+    "d5e84ed5403b04325051493bd72aed226d0513718403eb05e0d9a4cfc402b7b0"
+  ],
+  "name": "2020_sommer_wiso",
+  "expected": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6"
+  ],
+  "pages": {
+    "1": {
+      "geometry": [
+        595.0800170898438,
+        841.6799926757812
+      ],
+      "classification": "context_or_blank",
+      "evidence": "Every physical cached page visually inspected; printed headings and panel boundaries observed, not inferred from order.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "2": {
+      "geometry": [
+        595.0800170898438,
+        841.6799926757812
+      ],
+      "classification": "context_or_blank",
+      "evidence": "Every physical cached page visually inspected; printed headings and panel boundaries observed, not inferred from order.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "3": {
+      "geometry": [
+        595.0800170898438,
+        841.6799926757812
+      ],
+      "classification": "context_or_blank",
+      "evidence": "Every physical cached page visually inspected; printed headings and panel boundaries observed, not inferred from order.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "4": {
+      "geometry": [
+        595.0800170898438,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Every physical cached page visually inspected; printed headings and panel boundaries observed, not inferred from order.",
+      "slots": [
+        {
+          "observed_number": "U1",
+          "heading_box": [
+            53.132,
+            57.686,
+            95.638,
+            85.011
+          ],
+          "visual_patch_sha256": "f7a8ffdd4a1ec3b227f6614b2e3ea10ab20d2dcea791a615474099d9d10de806",
+          "regions": [
+            [
+              53.132,
+              57.686,
+              541.948,
+              784.838
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed U1 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "5": {
+      "geometry": [
+        595.0800170898438,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Every physical cached page visually inspected; printed headings and panel boundaries observed, not inferred from order.",
+      "slots": [
+        {
+          "observed_number": "1",
+          "heading_box": [
+            53.132,
+            59.204,
+            95.638,
+            86.529
+          ],
+          "visual_patch_sha256": "5722bad76a7dab048807c2d8c73318ec7681e8d18b5f27e6008cf64923b01201",
+          "regions": [
+            [
+              53.132,
+              59.204,
+              296.022,
+              297.54
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed 1 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        },
+        {
+          "observed_number": "2",
+          "heading_box": [
+            302.094,
+            59.204,
+            344.6,
+            86.529
+          ],
+          "visual_patch_sha256": "ef88fa076e699540b5c7afcd9e642f4bc344fb97f1ce893e0e4c4ceb54aa0172",
+          "regions": [
+            [
+              302.094,
+              59.204,
+              543.466,
+              297.54
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed 2 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        },
+        {
+          "observed_number": "3",
+          "heading_box": [
+            53.132,
+            300.576,
+            95.638,
+            327.901
+          ],
+          "visual_patch_sha256": "1ed84274eafb4f55f947ec54aab7fb47ad1d3aeb3e2a734c35ce8b18a63a93c5",
+          "regions": [
+            [
+              53.132,
+              300.576,
+              296.022,
+              538.912
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed 3 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "6": {
+      "geometry": [
+        595.0800170898438,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Every physical cached page visually inspected; printed headings and panel boundaries observed, not inferred from order.",
+      "slots": [
+        {
+          "observed_number": "U2",
+          "heading_box": [
+            53.132,
+            57.686,
+            95.638,
+            85.011
+          ],
+          "visual_patch_sha256": "e5817a9a3aa619067084c4c042bd1d34e2b224c837ffa5ff5e3505dda8be3530",
+          "regions": [
+            [
+              53.132,
+              57.686,
+              543.466,
+              784.838
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed U2 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "7": {
+      "geometry": [
+        595.0800170898438,
+        841.6799926757812
+      ],
+      "classification": "continuation_and_questions",
+      "evidence": "Every physical cached page visually inspected; printed headings and panel boundaries observed, not inferred from order.",
+      "slots": [
+        {
+          "observed_number": "4",
+          "heading_box": [
+            53.132,
+            300.576,
+            95.638,
+            327.901
+          ],
+          "visual_patch_sha256": "65053546451509d548ccb690ba87e8694d71b9649abe17523bf52c3997ebb5b6",
+          "regions": [
+            [
+              53.132,
+              300.576,
+              296.022,
+              538.912
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed 4 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        },
+        {
+          "observed_number": "5",
+          "heading_box": [
+            302.094,
+            300.576,
+            344.6,
+            327.901
+          ],
+          "visual_patch_sha256": "64948525c68e267c9d21c427cd4e262db767678c4c747bf50e4241babb14236a",
+          "regions": [
+            [
+              302.094,
+              300.576,
+              543.466,
+              538.912
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed 5 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        },
+        {
+          "observed_number": "6",
+          "heading_box": [
+            53.132,
+            543.466,
+            95.638,
+            570.791
+          ],
+          "visual_patch_sha256": "67c0a4d0e5f8c9d540bc4c8bea17507d939055c323bd46b287935ef3c5d0138f",
+          "regions": [
+            [
+              53.132,
+              543.466,
+              296.022,
+              786.356
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed 6 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        },
+        {
+          "observed_number": "7",
+          "heading_box": [
+            302.094,
+            543.466,
+            344.6,
+            570.791
+          ],
+          "visual_patch_sha256": "46adc6e93368e181c5b3a8ba0ca0a97290128ebd7f44d7cc9ddcb57c5ade1420",
+          "regions": [
+            [
+              302.094,
+              543.466,
+              543.466,
+              786.356
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed 7 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        }
+      ],
+      "explicit_regions": [
+        {
+          "bbox": [
+            53.132,
+            59.204,
+            543.466,
+            299.058
+          ],
+          "role": "continuation",
+          "owner": "2020-wiso-p6-U2",
+          "evidence_box": [
+            493.37,
+            98.674,
+            541.948,
+            139.662
+          ],
+          "visual_patch_sha256": "684bf68f578b4f15aac97bd0d8a6e5bbd7a70a072bb044d772af1aaf31ea4ff2",
+          "observed_owner_label": "U2",
+          "evidence": "Visible Ergebnis U2 label and subquestion 3 continue U2 Arbeitszeitgesetz on preceding page."
+        }
+      ]
+    },
+    "8": {
+      "geometry": [
+        595.0800170898438,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Every physical cached page visually inspected; printed headings and panel boundaries observed, not inferred from order.",
+      "slots": [
+        {
+          "observed_number": "U3",
+          "heading_box": [
+            53.132,
+            57.686,
+            95.638,
+            85.011
+          ],
+          "visual_patch_sha256": "3b06930ac0c239ff82b406da5b9af714fcec06464a80285edc207b15d895edaa",
+          "regions": [
+            [
+              53.132,
+              57.686,
+              543.466,
+              786.356
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed U3 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "9": {
+      "geometry": [
+        595.0800170898438,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Every physical cached page visually inspected; printed headings and panel boundaries observed, not inferred from order.",
+      "slots": [
+        {
+          "observed_number": "8",
+          "heading_box": [
+            53.132,
+            59.204,
+            95.638,
+            86.529
+          ],
+          "visual_patch_sha256": "e39d83e7cd00f3d3f5185a33f8d0aa02202a9830e8e5aae2350a31479b27e268",
+          "regions": [
+            [
+              53.132,
+              59.204,
+              296.022,
+              299.058
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed 8 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        },
+        {
+          "observed_number": "9",
+          "heading_box": [
+            302.094,
+            59.204,
+            344.6,
+            86.529
+          ],
+          "visual_patch_sha256": "3d9a491045bea9328d802c09087b5549ad52fe56d60527d0f788f063a46fac66",
+          "regions": [
+            [
+              302.094,
+              59.204,
+              543.466,
+              299.058
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed 9 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        },
+        {
+          "observed_number": "10",
+          "heading_box": [
+            53.132,
+            302.094,
+            95.638,
+            329.419
+          ],
+          "visual_patch_sha256": "2789ccd6cf6088468bb6bb5cc4b0d6d494ddafaee264adb281352238e8aa126e",
+          "regions": [
+            [
+              53.132,
+              302.094,
+              296.022,
+              543.466
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed 10 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "10": {
+      "geometry": [
+        595.0800170898438,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Every physical cached page visually inspected; printed headings and panel boundaries observed, not inferred from order.",
+      "slots": [
+        {
+          "observed_number": "U4",
+          "heading_box": [
+            53.132,
+            59.204,
+            95.638,
+            86.529
+          ],
+          "visual_patch_sha256": "fceceff7e0dae40215fef83e1922b8b2aafc8c9000e1452f0e667c4366c0f5c5",
+          "regions": [
+            [
+              53.132,
+              59.204,
+              543.466,
+              786.356
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed U4 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "11": {
+      "geometry": [
+        595.0800170898438,
+        841.6799926757812
+      ],
+      "classification": "continuation_and_questions",
+      "evidence": "Every physical cached page visually inspected; printed headings and panel boundaries observed, not inferred from order.",
+      "slots": [
+        {
+          "observed_number": "11",
+          "heading_box": [
+            53.132,
+            302.094,
+            95.638,
+            329.419
+          ],
+          "visual_patch_sha256": "c966ebd4c20c4fbcd67127ea76e1218b9d6726f4e8dbc20cda3ab8b29092f0f9",
+          "regions": [
+            [
+              53.132,
+              302.094,
+              296.022,
+              538.912
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed 11 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        },
+        {
+          "observed_number": "12",
+          "heading_box": [
+            302.094,
+            302.094,
+            344.6,
+            329.419
+          ],
+          "visual_patch_sha256": "f808c09132277a2199a7c834e79cfcb476f4addd9158239daf26a5c5f29ecb58",
+          "regions": [
+            [
+              302.094,
+              302.094,
+              543.466,
+              538.912
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed 12 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        },
+        {
+          "observed_number": "13",
+          "heading_box": [
+            53.132,
+            543.466,
+            95.638,
+            570.791
+          ],
+          "visual_patch_sha256": "d684a575883b040c805a74ecd1b9d350db16e823f8b13e03f1aeea0b97503c10",
+          "regions": [
+            [
+              53.132,
+              543.466,
+              296.022,
+              786.356
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed 13 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        }
+      ],
+      "explicit_regions": [
+        {
+          "bbox": [
+            53.132,
+            59.204,
+            543.466,
+            299.058
+          ],
+          "role": "continuation",
+          "owner": "2020-wiso-p10-U4",
+          "evidence_box": [
+            493.37,
+            106.264,
+            541.948,
+            145.734
+          ],
+          "visual_patch_sha256": "3e901dc325bc8b4b5496f0652cfaae1d5b08b4adb894f656630ae7eb33b0adfc",
+          "observed_owner_label": "U4",
+          "evidence": "Visible Ergebnis U4 label and subquestion 3 continue U4 safety-officer question."
+        }
+      ]
+    },
+    "12": {
+      "geometry": [
+        595.0800170898438,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Every physical cached page visually inspected; printed headings and panel boundaries observed, not inferred from order.",
+      "slots": [
+        {
+          "observed_number": "U5",
+          "heading_box": [
+            53.132,
+            59.204,
+            95.638,
+            86.529
+          ],
+          "visual_patch_sha256": "e04b807562a3ca2cf16928893f3586780d7053d54fdf86ad596128f004e735a5",
+          "regions": [
+            [
+              53.132,
+              59.204,
+              543.466,
+              786.356
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed U5 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "13": {
+      "geometry": [
+        595.0800170898438,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Every physical cached page visually inspected; printed headings and panel boundaries observed, not inferred from order.",
+      "slots": [
+        {
+          "observed_number": "14",
+          "heading_box": [
+            53.132,
+            59.204,
+            95.638,
+            86.529
+          ],
+          "visual_patch_sha256": "b7223d940b28974fa3ce1515288c78ba05a070aaafa2b5c8ec06dc517ffad688",
+          "regions": [
+            [
+              53.132,
+              59.204,
+              296.022,
+              297.54
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed 14 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        },
+        {
+          "observed_number": "15",
+          "heading_box": [
+            302.094,
+            59.204,
+            344.6,
+            86.529
+          ],
+          "visual_patch_sha256": "5d40545b34d85d6ae06a695ef2d7594c5fe12553bbf2f6e37c43711775a4fb3e",
+          "regions": [
+            [
+              302.094,
+              59.204,
+              543.466,
+              297.54
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed 15 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        },
+        {
+          "observed_number": "16",
+          "heading_box": [
+            53.132,
+            302.094,
+            95.638,
+            329.419
+          ],
+          "visual_patch_sha256": "5b361fa8c0fa01c7204841cc0a4afd7eaa0523692988c32a7b2e23e2c668d435",
+          "regions": [
+            [
+              53.132,
+              302.094,
+              296.022,
+              543.466
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed 16 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "14": {
+      "geometry": [
+        595.0800170898438,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Every physical cached page visually inspected; printed headings and panel boundaries observed, not inferred from order.",
+      "slots": [
+        {
+          "observed_number": "U6",
+          "heading_box": [
+            53.132,
+            57.686,
+            95.638,
+            85.011
+          ],
+          "visual_patch_sha256": "b75d45f2fd88000e747aaaf03f52e0c1de12002a5229739abf6ac7e6ed407c64",
+          "regions": [
+            [
+              53.132,
+              57.686,
+              543.466,
+              538.912
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed U6 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        },
+        {
+          "observed_number": "17",
+          "heading_box": [
+            53.132,
+            543.466,
+            95.638,
+            570.791
+          ],
+          "visual_patch_sha256": "508dd37a7cd4f7d6f26f19f3043ce66657846af3e680a15a3388669588a4b467",
+          "regions": [
+            [
+              53.132,
+              543.466,
+              296.022,
+              786.356
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed 17 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        },
+        {
+          "observed_number": "18",
+          "heading_box": [
+            302.094,
+            543.466,
+            344.6,
+            570.791
+          ],
+          "visual_patch_sha256": "e90e375718d4a0ed8b1e6714ed46a6e86d1266bfcd2ae7bd634f033d386b57db",
+          "regions": [
+            [
+              302.094,
+              543.466,
+              543.466,
+              786.356
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed 18 heading and complete ruled question panel visually verified.",
+          "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "15": {
+      "geometry": [
+        595.0800170898438,
+        841.6799926757812
+      ],
+      "classification": "context_or_blank",
+      "evidence": "Every physical cached page visually inspected; printed headings and panel boundaries observed, not inferred from order.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "16": {
+      "geometry": [
+        595.0800170898438,
+        841.6799926757812
+      ],
+      "classification": "context_or_blank",
+      "evidence": "Every physical cached page visually inspected; printed headings and panel boundaries observed, not inferred from order.",
+      "slots": [],
+      "explicit_regions": []
+    }
+  },
+  "attachment_crops": [
+    {
+      "page": 3,
+      "bbox": [
+        33.397,
+        22.771,
+        576.863,
+        819.753
+      ],
+      "role": "Prüfungsaufgaben-Beschreibung",
+      "question_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6"
+      ],
+      "evidence": "Printed source title and explicit question references visually checked; all referenced sheets present."
+    }
+  ],
+  "attachment_refs": {
+    "1": [
+      3
+    ],
+    "2": [
+      3
+    ],
+    "3": [
+      3
+    ],
+    "4": [
+      3
+    ],
+    "5": [
+      3
+    ],
+    "6": [
+      3
+    ],
+    "7": [
+      3
+    ],
+    "8": [
+      3
+    ],
+    "9": [
+      3
+    ],
+    "10": [
+      3
+    ],
+    "11": [
+      3
+    ],
+    "12": [
+      3
+    ],
+    "13": [
+      3
+    ],
+    "14": [
+      3
+    ],
+    "15": [
+      3
+    ],
+    "16": [
+      3
+    ],
+    "17": [
+      3
+    ],
+    "18": [
+      3
+    ],
+    "U1": [
+      3
+    ],
+    "U2": [
+      3
+    ],
+    "U3": [
+      3
+    ],
+    "U4": [
+      3
+    ],
+    "U5": [
+      3
+    ],
+    "U6": [
+      3
+    ]
+  },
+  "timing_minutes": 60,
+  "timing_source_page": 2,
+  "description_page": 3,
+  "configuration_complete": true
+}

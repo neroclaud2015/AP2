@@ -1,0 +1,204 @@
+{
+  "scope": "2020-wiso",
+  "name": "2020_sommer_wiso",
+  "exam": "2020_sommer",
+  "module": "WiSo",
+  "version": "2k.1.0",
+  "profile_id": "official-ring-grid",
+  "source_hash": "3ac3d0be5964142d39cdb2ff9aa96427f89689c66ac1e760df56ef1e19830465",
+  "source_id": "src-19aee13032099dec7b8772a7",
+  "question_source_id": "src-eae3b6215e432c8818dfb998",
+  "solution_source_id": "src-19aee13032099dec7b8772a7",
+  "validated_sources": [
+    "3ac3d0be5964142d39cdb2ff9aa96427f89689c66ac1e760df56ef1e19830465"
+  ],
+  "choice_page": 3,
+  "choice_count": 18,
+  "analysis_size": [
+    993,
+    1404
+  ],
+  "groups": [
+    [
+      1,
+      10,
+      135.9,
+      60.05,
+      390.5,
+      20,
+      0,
+      360
+    ],
+    [
+      11,
+      8,
+      135.9,
+      60.05,
+      509.8,
+      20,
+      0,
+      480
+    ]
+  ],
+  "grid_crop": [
+    105,
+    355,
+    710,
+    600
+  ],
+  "ring_policy": {
+    "min_ring": 0.4,
+    "support": 0.83,
+    "possible_ring": 0.32,
+    "possible_support": 0.58,
+    "margin": 0.15,
+    "center": 0.1
+  },
+  "header_evidence": "Printed column labels visually checked and corroborated by exact source text coordinates; top-to-bottom rows 1..5. Answer values determined solely from circle geometry.",
+  "u_evidence": "Printed U labels and complete ruled answer cells visually checked on cached original pages. No inferred grading rubric.",
+  "u_regions": {
+    "U1": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            29,
+            234,
+            585,
+            408
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 13,
+      "heading_box": [
+        37.685001373291016,
+        235.3414306640625,
+        63.641998291015625,
+        257.23643493652344
+      ],
+      "heading_pixel_sha256": "ce7ffb16c0ab0a211e180ba76b97c41e7d994b2fa6cfb4a5aafa45fe360e15d6"
+    },
+    "U2": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            29,
+            410,
+            585,
+            545
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 13,
+      "heading_box": [
+        37.685001373291016,
+        412.1859130859375,
+        63.641998291015625,
+        434.0809020996094
+      ],
+      "heading_pixel_sha256": "fdb74609c72e47576bd36279093a75db5b60fca37d1a5619f764ce6d6c6b9e1a"
+    },
+    "U3": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            29,
+            547,
+            585,
+            811
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 13,
+      "heading_box": [
+        37.685001373291016,
+        549.0303955078125,
+        63.641998291015625,
+        570.9254150390625
+      ],
+      "heading_pixel_sha256": "f48a3c5c51cb73a3ae9b2d70e90dc1315d539913cd4ec31e0364b15f1e99c3a9"
+    },
+    "U4": {
+      "regions": [
+        {
+          "page": 14,
+          "bbox": [
+            15,
+            25,
+            585,
+            224
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 14,
+      "heading_box": [
+        22.094499588012695,
+        26.85333251953125,
+        48.05139923095703,
+        48.74833297729492
+      ],
+      "heading_pixel_sha256": "c398cdc420b5d7037570f12131e264fe72b7d912a179cd03984fca1cb31c8a62"
+    },
+    "U5": {
+      "regions": [
+        {
+          "page": 14,
+          "bbox": [
+            15,
+            226,
+            585,
+            526
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 14,
+      "heading_box": [
+        22.094499588012695,
+        228.69769287109375,
+        48.05139923095703,
+        250.5926971435547
+      ],
+      "heading_pixel_sha256": "29772a58c82415b678a7a4313d84027825cbcf4e97fdbc604378934632076a30"
+    },
+    "U6": {
+      "regions": [
+        {
+          "page": 14,
+          "bbox": [
+            15,
+            528,
+            585,
+            811
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 14,
+      "heading_box": [
+        22.094499588012695,
+        530.292236328125,
+        48.05139923095703,
+        552.187255859375
+      ],
+      "heading_pixel_sha256": "247243aadab04d472c44ef95909c35107b0c45daacf035cd4a23ead58fd9241e"
+    }
+  },
+  "page_image_hashes": {
+    "3": "af5be55dbcd968eadb5a406abe98e383cc99a0af7dc8c57a953f0199fcb84fdb",
+    "13": "4b0af4f51d4c99e42d03359dba01d9b391d2b2f6e9b3d8580941834b615d51a6",
+    "14": "13dc484e61c76f719daa91807c678c8e467e8f13d9de253a34f1495012c67d58"
+  }
+}

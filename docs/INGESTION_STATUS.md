@@ -1,3 +1,7 @@
+# Current checkpoint — Phase 2K
+
+Sommer 2020: FA 36/36 + MC28 + U8 Production; WiSo24/24 + MC18 + U6 Production. AP 36 detected, blocked on draft shared-diagram ownership/profile revision; not published. 88 new pages, zero old PDF rescans. Stop before Winter 2020/21. See [Phase 2K report](PHASE_2K_REPORT.md).
+
 # Current checkpoint — Phase 2J.1 / Winter 2019/20 complete
 
 User-confirmed FA Q21 = 2, locked manual_source_review, source hash/crop/evidence verified. FA36 now production: MC28/28, U8/8, unresolved0. Winter2019/20 AP/FA/WiSo complete. Total16 production modules /504 questions. Raw machine answers and checkpoints remain historical evidence; separate reviewed answers resolve the safety gate. No PDF opened/rendered, no new season processed. Sommer2018 AP/FA missing-attachment blocks unchanged.

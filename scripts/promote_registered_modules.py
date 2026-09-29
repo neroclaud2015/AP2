@@ -26,11 +26,28 @@ def validated_bundle(root,layout_path):
   if not all(artifacts_valid(root,g['artifacts']) for g in source['gates'].values()):raise ValueError('Registry evidence changed')
  return c,q,a,u
 
+def ensure_timing_image(root,c,images,paths):
+ """Publish an integrity-checked existing cache page when timing is not a question attachment."""
+ key=str(c['timing_source_page'])
+ if key in images:return
+ import shutil
+ from registered_ingest import cache_metadata
+ cache=cache_metadata(root,c['source_hash']);page=cache['pages'][key]
+ if not artifacts_valid(root,page['artifacts']):raise ValueError('Timing source cache changed')
+ relative=f"assets/sources/{c['source_hash'][:24]}/timing-{key}.png"
+ target=root/'public'/relative;target.parent.mkdir(parents=True,exist_ok=True)
+ if target.exists():
+  if artifact_digest(target)!=artifact_digest(root/page['image']):raise ValueError('Published timing source changed')
+ else:shutil.copyfile(root/page['image'],target)
+ images[key]=relative;paths.append(target)
+
 def promote(root,layout_path):
  root=Path(root);c,q,a,u=validated_bundle(root,layout_path);prefix=c['name'];ids=[r['question_id'] for r in q['questions']]
  paths=[root/f'public/data/{prefix}_{suffix}.json' for suffix in ['segmented','answers','u_solutions']]+[root/'public'/r['source_crop'] for r in a['answers']]+[root/'public'/r['cropped_solution_image'] for r in u['solutions']]
+ images={str(r['page']):r['image'] for r in q['attachment_images']}
+ ensure_timing_image(root,c,images,paths)
  proof={'result':'passed','artifacts':{p.relative_to(root).as_posix():artifact_digest(p) for p in paths},'artifact_hash_algorithm':'canonical-json-utf8-or-binary-sha256','question_ids':ids,'question_revision':q['segmentation_revision'],'official_answer_revision':a['parser_revision'],'official_solution_revision':u['extractor_revision'],'basis':'All cached pages/headings/ownership and final original question/solution crops inspected; unique deterministic official answers required.'}
- images={str(r['page']):r['image'] for r in q['attachment_images']};exam=c['exam'].replace('_','-');slug=c['module'].lower()
+ exam=c['exam'].replace('_','-');slug=c['module'].lower()
  config={'examId':exam,'slug':slug,'title':c['module'],'segmentedPath':f'data/{prefix}_segmented.json','answersPath':f'data/{prefix}_answers.json','solutionsPath':f'data/{prefix}_u_solutions.json','choiceSolutionPage':a['answers'][0]['source_page'],'descriptionPage':c['description_page'],'descriptionLabel':'Prüfungsaufgaben-Beschreibung','questionContextPages':{r['question_number']:[v['page'] for v in c['attachment_crops'] if r['question_number'] in v.get('question_numbers',[])] for r in q['questions']},'attachmentPages':[r['page'] for r in c['attachment_crops'] if r['page'] not in (c['timing_source_page'],c['description_page'])],'sourcePageImages':images,'durationMinutes':c.get('timing_minutes'),'durationSource':{'pdf':'','page':c['timing_source_page'],'image':images[str(c['timing_source_page'])]},'parts':[{'id':'A','title':'Teil A','kind':'multiple_choice','label':'Auswahlaufgaben','questionNumbers':[n for n in c['expected'] if n.isdigit()]},{'id':'B','title':'Teil B','kind':'multi_part','label':'Offene Aufgaben','questionNumbers':[n for n in c['expected'] if n.startswith('U')]}]}
  promoted=read(root/'public/data/promoted_modules.json',[]);prior=next((m for m in promoted if m['examId']==exam and m['slug']==slug),None)
  if prior and prior!=config:raise ValueError('Existing module registration is immutable')

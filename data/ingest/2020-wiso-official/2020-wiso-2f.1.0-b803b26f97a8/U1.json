@@ -1,0 +1,51 @@
+{
+  "key": "67f601ddf76ebe266f5e27f2ffa732a99e3827408dafc2f65253cb64bf79a403",
+  "value": {
+    "question_id": "2020-wiso-p4-U1",
+    "question_number": "U1",
+    "exam": "2020_sommer",
+    "module": "WiSo",
+    "solution_source_pdf": "assets/pdfs/3ac3d0be5964142d39cdb2ff.pdf",
+    "solution_source_pdf_available": false,
+    "solution_source_page": 13,
+    "solution_bbox": [
+      29,
+      234,
+      585,
+      408
+    ],
+    "regions": [
+      {
+        "source_page": 13,
+        "bbox": [
+          29,
+          234,
+          585,
+          408
+        ]
+      }
+    ],
+    "cropped_solution_image": "assets/official/2020-wiso-2f.1.0-b803b26f97a8/U1.png",
+    "review_status": "auto_ready",
+    "answer_type": "multi_part",
+    "subparts": [
+      {
+        "id": "whole",
+        "label": "Gesamte Aufgabe · Selbstbewertung",
+        "type": "short_text"
+      }
+    ],
+    "source_hash": "3ac3d0be5964142d39cdb2ff9aa96427f89689c66ac1e760df56ef1e19830465",
+    "extractor_revision": "2020-wiso-2f.1.0-b803b26f97a8",
+    "association_evidence": "Printed U labels and complete ruled answer cells visually checked on cached original pages. No inferred grading rubric.",
+    "grading_policy": "Printed subparts only; user self-assessment; no numeric rubric or answer inference.",
+    "source_cache_hashes": {
+      "13": "4b0af4f51d4c99e42d03359dba01d9b391d2b2f6e9b3d8580941834b615d51a6"
+    },
+    "bbox_units": "PDF points, top-left"
+  },
+  "value_hash": "2a946350d15fb626a235f7f929b982e9ee0ba4c3bd28f38af55a4c366f2088fd",
+  "artifacts": {
+    "public/assets/official/2020-wiso-2f.1.0-b803b26f97a8/U1.png": "300ed18942e560d07dc17b0a9a2a7592ccbd22d147b80f72a614a8c9c395c9ed"
+  }
+}
