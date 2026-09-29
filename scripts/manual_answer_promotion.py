@@ -38,6 +38,8 @@ def scope_settings(payload):
   return dict(scope='winter-2019-20',targets={'funktionsanalyse':[21]},exam='2019_20_winter',stamp='2019-20',profile='winter2019_20',queue='manual_answer_review_winter2019_20.json',ledger='winter-2019-20-confirmations.json',manifest='winter-2019-20-manual-promotion.json')
  if payload.get('scope')=='sommer-2021':
   return dict(scope='sommer-2021',targets={'funktionsanalyse':[4,23],'wiso':[18]},exam='2021_sommer',stamp='2021',profile='sommer2021',queue='manual_answer_review_sommer2021.json',ledger='sommer-2021-confirmations.json',manifest='sommer-2021-manual-promotion.json')
+ if payload.get('scope')=='winter-2021-22':
+  return dict(scope='winter-2021-22',targets={'funktionsanalyse':[23,24,26]},exam='2021_22_winter',stamp='2021-22',profile='winter2021_22',layout_paths={'funktionsanalyse':'scripts/layout_profiles/winter2021_22_fa_confirmed.json'},queue='manual_answer_review_winter2021_22.json',ledger='winter-2021-22-confirmations.json',manifest='winter-2021-22-manual-promotion.json')
  raise ValueError('Unknown manual review scope')
 
 def prepare(root,payload,existing=None):
@@ -61,8 +63,8 @@ def prepare(root,payload,existing=None):
  registry=load_registry(root);ready={};pending={}
  for module in targets:
   code=MODULE_CODES[module]
-  config=read(root/f'scripts/layout_profiles/{settings["profile"]}_{code}.json');prefix=f'{settings["exam"]}_{module}'
-  state=read(root/f'data/ingest/{settings["stamp"]}-{code}_registered_answers.json');layout=read(root/f'data/ingest/{settings["stamp"]}-{code}_registered_layout.json')
+  config=read(root/settings.get('layout_paths',{}).get(module,f'scripts/layout_profiles/{settings["profile"]}_{code}.json'));prefix=f'{settings["exam"]}_{module}'
+  state=read(root/f'data/ingest/{config["scope"]}_registered_answers.json');layout=read(root/f'data/ingest/{config["scope"]}_registered_layout.json')
   if not state or state['status']!='blocked' or not layout or layout['status']!='formal_segmented' or not artifacts_valid(root,state['artifacts']) or not artifacts_valid(root,layout['artifacts']):raise ValueError('Immutable machine/layout evidence changed or missing')
   questions=read(root/f'public/data/{prefix}_segmented.json');machine=read(root/f'public/data/{prefix}_answers.json');solutions=read(root/f'public/data/{prefix}_u_solutions.json')
   ids={q['question_number']:q['question_id'] for q in questions['questions']};expected=set(config['expected']);mc={int(n) for n in expected if n.isdigit()};written={n for n in expected if n.startswith('U')}

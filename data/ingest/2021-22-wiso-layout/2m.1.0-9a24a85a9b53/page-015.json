@@ -1,0 +1,61 @@
+{
+  "key": "dc9a31b3dc9c9eabb97ded66d80fac61d011da506ef9461fa275bd05d0c737bc",
+  "record_hash": "12c911ddb8595743c659febac6cfc1cfb6f845e9131bdfcfd27f78b2596a03f6",
+  "record": {
+    "page": 15,
+    "geometry": [
+      595.0,
+      842.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2021-22-wiso-p15-18",
+        "number": "18",
+        "bbox": [
+          54.643,
+          53.125,
+          97.143,
+          86.518
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 18 read on cached page 15",
+        "review_reasons": [],
+        "heading_pixel_sha256": "8e0531d536d6eda567a14efc45c38ebabe1768a9fc3314237bfe63583d93a75e"
+      }
+    ],
+    "regions": [
+      {
+        "page": 15,
+        "bbox": [
+          54.643,
+          53.125,
+          303.571,
+          294.464
+        ],
+        "role": "primary",
+        "owner": "2021-22-wiso-p15-18",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "18",
+        "bbox": [
+          54.643,
+          53.125,
+          97.143,
+          86.518
+        ],
+        "pixel_sha256": "8e0531d536d6eda567a14efc45c38ebabe1768a9fc3314237bfe63583d93a75e",
+        "audited_pixel_sha256": "8e0531d536d6eda567a14efc45c38ebabe1768a9fc3314237bfe63583d93a75e"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

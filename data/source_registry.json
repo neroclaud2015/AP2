@@ -24957,6 +24957,2130 @@
           }
         }
       ]
+    },
+    {
+      "source_id": "src-8adec18a1ecbe7879c59c89e",
+      "exam": "2021-22-winter",
+      "module": "arbeitsplanung",
+      "source_type": "question_pdf",
+      "filename": "2021_22 Winter/21_22 Arbeitsplanung.pdf",
+      "sha256": "790af1896890727df6fec14eb27364a72899851f5dd4b187fe740a1d0f503d4a",
+      "version": 1,
+      "status": "production",
+      "layout_profile": "portrait-explicit-regions@2m.1.0-527441af118b",
+      "answer_profile": "ring-annulus-explicit@2f.1.0",
+      "supersedes_source_id": null,
+      "created_at": "2026-09-29T17:46:34.266177+00:00",
+      "identity_migration": null,
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "790af1896890727df6fec14eb27364a72899851f5dd4b187fe740a1d0f503d4a",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/790af1896890727df6fec14eb27364a72899851f5dd4b187fe740a1d0f503d4a.json": "4634a03684fc17b59e9b384f6805a0e531a9355cc33aec238421e1c90c0261cb"
+          }
+        },
+        "profile_matched": {
+          "source_sha256": "790af1896890727df6fec14eb27364a72899851f5dd4b187fe740a1d0f503d4a",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/winter2021_22_ap.json": "95e0fbd18ef12769d6194b276c5b0c0b752587db888696de54afaa5a1fb15fe5"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "profile_id": "portrait-explicit-regions",
+          "validated_sources": [
+            "790af1896890727df6fec14eb27364a72899851f5dd4b187fe740a1d0f503d4a"
+          ]
+        },
+        "layout_validated": {
+          "source_sha256": "790af1896890727df6fec14eb27364a72899851f5dd4b187fe740a1d0f503d4a",
+          "result": "passed",
+          "artifacts": {
+            "docs/evidence/phase2f/2021-22-ap/layout-validation.json": "7cbf470915e3fef573b937d423463b92c320d00a71dd07a52d8d66a9024b6a90"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "preview_ready": {
+          "source_sha256": "790af1896890727df6fec14eb27364a72899851f5dd4b187fe740a1d0f503d4a",
+          "result": "passed",
+          "artifacts": {
+            "docs/evidence/phase2f/2021-22-ap/preview-manifest.json": "adf27497cbae5ff4cc25799254134fa0a5b64a67cabc30773aeeb2faea7b8321",
+            "docs/evidence/phase2f/2021-22-ap/index.html": "12e257d34fe06f9d00fcf1a36454d0a5cd48ac0a19315638315f6c8d3ff0bfe9",
+            "docs/evidence/phase2f/2021-22-ap/layout-validation.json": "7cbf470915e3fef573b937d423463b92c320d00a71dd07a52d8d66a9024b6a90"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "formal_segmented": {
+          "source_sha256": "790af1896890727df6fec14eb27364a72899851f5dd4b187fe740a1d0f503d4a",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2021_22_winter_arbeitsplanung_segmented.json": "80b0fab6e88ac17302bb20e81d1a99529a6d9da1fb6fab6d304734a14c4ab1b8",
+            "public/data/2021_22_winter_arbeitsplanung_segmented.json": "80b0fab6e88ac17302bb20e81d1a99529a6d9da1fb6fab6d304734a14c4ab1b8"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "answers_extracted": {
+          "source_sha256": "790af1896890727df6fec14eb27364a72899851f5dd4b187fe740a1d0f503d4a",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2021_22_winter_arbeitsplanung_answers.json": "5aae2cee4c0a3f681cf05990510b681ea01a5092b7c3413caa034554e7878550",
+            "public/data/2021_22_winter_arbeitsplanung_answers.json": "5aae2cee4c0a3f681cf05990510b681ea01a5092b7c3413caa034554e7878550",
+            "data/exams/2021_22_winter_arbeitsplanung_u_solutions.json": "eb7e5db6d27ed290d66f360e054599084501ba3031c4684259d52ee8e8ec58dd",
+            "public/data/2021_22_winter_arbeitsplanung_u_solutions.json": "eb7e5db6d27ed290d66f360e054599084501ba3031c4684259d52ee8e8ec58dd"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "validated": {
+          "source_sha256": "790af1896890727df6fec14eb27364a72899851f5dd4b187fe740a1d0f503d4a",
+          "result": "passed",
+          "artifacts": {
+            "public/data/2021_22_winter_arbeitsplanung_segmented.json": "80b0fab6e88ac17302bb20e81d1a99529a6d9da1fb6fab6d304734a14c4ab1b8",
+            "public/data/2021_22_winter_arbeitsplanung_answers.json": "5aae2cee4c0a3f681cf05990510b681ea01a5092b7c3413caa034554e7878550",
+            "public/data/2021_22_winter_arbeitsplanung_u_solutions.json": "eb7e5db6d27ed290d66f360e054599084501ba3031c4684259d52ee8e8ec58dd",
+            "docs/evidence/phase2f/2021-22-ap/answer-coverage.json": "b37e3b8a76f5c9fe3ae2e103a7bc669309ab23dae2e5e0083b4d84419a7fb922"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "question_revision": "2m.1.0-527441af118b",
+          "official_answer_revision": "2021-22-ap-2f.1.0-7cdd14b6ee2c",
+          "question_ids": [
+            "2021-22-ap-p3-1",
+            "2021-22-ap-p3-2",
+            "2021-22-ap-p4-3",
+            "2021-22-ap-p4-4",
+            "2021-22-ap-p4-5",
+            "2021-22-ap-p5-6",
+            "2021-22-ap-p5-7",
+            "2021-22-ap-p5-8",
+            "2021-22-ap-p6-9",
+            "2021-22-ap-p6-10",
+            "2021-22-ap-p6-11",
+            "2021-22-ap-p7-12",
+            "2021-22-ap-p7-13",
+            "2021-22-ap-p7-14",
+            "2021-22-ap-p7-15",
+            "2021-22-ap-p7-16",
+            "2021-22-ap-p7-17",
+            "2021-22-ap-p8-18",
+            "2021-22-ap-p8-19",
+            "2021-22-ap-p8-20",
+            "2021-22-ap-p9-21",
+            "2021-22-ap-p9-22",
+            "2021-22-ap-p9-23",
+            "2021-22-ap-p10-24",
+            "2021-22-ap-p10-25",
+            "2021-22-ap-p10-26",
+            "2021-22-ap-p11-27",
+            "2021-22-ap-p11-28",
+            "2021-22-ap-p14-U1",
+            "2021-22-ap-p15-U2",
+            "2021-22-ap-p16-U3",
+            "2021-22-ap-p17-U4",
+            "2021-22-ap-p18-U5",
+            "2021-22-ap-p19-U6",
+            "2021-22-ap-p20-U7",
+            "2021-22-ap-p21-U8"
+          ]
+        },
+        "production": {
+          "result": "passed",
+          "artifacts": {
+            "public/data/2021_22_winter_arbeitsplanung_segmented.json": "80b0fab6e88ac17302bb20e81d1a99529a6d9da1fb6fab6d304734a14c4ab1b8",
+            "public/data/2021_22_winter_arbeitsplanung_answers.json": "5aae2cee4c0a3f681cf05990510b681ea01a5092b7c3413caa034554e7878550",
+            "public/data/2021_22_winter_arbeitsplanung_u_solutions.json": "eb7e5db6d27ed290d66f360e054599084501ba3031c4684259d52ee8e8ec58dd",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q01.png": "07abead38d85920900813c282150c83d80c0f9cc5da760b0ab6003096f396633",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q02.png": "f593c21dd6f4afa28d4c2fde19e407641c65cdeb59113e5fe52c2dcddeded8f4",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q03.png": "e4a54e1259c62d98bbf0e88f3cf2bf5fe15554b6b4dc6f968085cdba60c7ed60",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q04.png": "b800e74452648d0f4510b32e752e893d0f569defb545c28bb3fafcd02216136d",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q05.png": "fa3caef3cc5a3944bfbda2e3b5cc529e9a500ab52321bd8e830749f69a4f9e0c",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q06.png": "376a81ed9c91cf818eee1c1ed1ec4cbb43156cdfd9c14444d4966f6010aa584f",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q07.png": "85493d4225bf8c26b500626462793cfc7d38646a8cb7262fdf1358ad4d3ee21f",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q08.png": "2ee4a9008fb996afc4f1a82793bdd7e2ada18974b5bce6d669f069798f956b4e",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q09.png": "c7c4a53dc124e402b2505c4c4edf430581e0324314c1fa96d4f539374df8e26a",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q10.png": "4e7d9b40907a074bf9c22b88290e31a13449ef3e28c16d9b26e1c423fb2e7acf",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q11.png": "9375c52b455b4a9ff54771eefad15bd705cb8f3abc4e6a621e794c6635ab128d",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q12.png": "23bb226ff1a8dd9a849afa40704520426ffce734a977b26b9b5b88f2f21d972a",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q13.png": "15aa38960af0f172aa2353d3fd2f9457ba4bfaae62de188e6b4875d87d8ee01d",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q14.png": "7d215c8f6f849dc43fcaa372a099d7c4535bb3f832927c28728a90a488f5a3cf",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q15.png": "914b6904bee0f9ef090b844966ba5684503a5a13e7ef65c0e31e6cb0d4f8bf9a",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q16.png": "fb4bed43b65d364a998f7bb112e759aa15e40979ac99230cc551f71163a8fba7",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q17.png": "4ecd653d867526082bc5f18783ea581c1511438cfbb99e8e141b1931ec2a5172",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q18.png": "2ff0a2cd845c731b80eaf18509a3c1a25b2e58460a8a34127d0c722fdfe412c0",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q19.png": "7c24bf4306e4d57cdebd9b55d87cdddbf151decbc9294bf87d8b19cd283fe8b9",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q20.png": "70d0f8e53c81ad988ac8a3fe91fdf1ee109a0c9d6139d3f8a4dc93a13c01ae41",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q21.png": "39bbd183eaced448b1e1a2d89529cfe941d991d7f5fa0660a037486c6004d9a1",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q22.png": "be94df38b53038e189e5dc231fbf5293a4759699a6416dcc36a63189aaae5c2f",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q23.png": "e5755493396022f530fd49032380a4732f952f5f3922c7324a3c1846b134b237",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q24.png": "bfe3dcdf98740cb61b42525da246e58973054a7013493411971ff6326a35a934",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q25.png": "3aac756b9fefe0743b113e16a7511e5faa1beda029d04a8dbc7ed84b402c0dfe",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q26.png": "981a79ad7de5b69eb4134467af87f528e5439079436ee012fe9c3926aacfd3fd",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q27.png": "3737c9887614c3aff76e1d9e5b3c5f3de949a5c70bf3b466f2f4aadc38af12f2",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q28.png": "f8ed277cc14880367c7b9e402b911d7e9dc3ecbc92ccd21dc880b9e0e03ba2e8",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U1.png": "744d341e900419f41ced7864339b0d321765dfd8c35a4d93cf074df5742079ab",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U2.png": "d5bef343decb063a09fc49c7e6e1104a4f9ec9e31743a781a4f8ded7bebaf36d",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U3.png": "cbea48424da458d0b10da3fbaff66fef1c811490262d4dc522c1eed5c14551ce",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U4.png": "ad94c04c92e309a40dccbb5fdc4369bfa73cf56228c35cb68e558fd3d85271c1",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U5.png": "e2e4bce803d1a00763b127d739d0f78a8c534a431dbb0a211f524da8bf7dec35",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U6.png": "6416098cd9cb450c87c5545d15c4fb109337103602bc81c41c5d6e44067b1f9a",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U7.png": "4a79dae50c3261e36762bcf6cd69e166c4f71c322b4918650d7d3c14a6d5b934",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U8.png": "9967b4b89d5dca30bfb2d1b2d07d9e8141691e9ccf828e848317e52ffc533ff5",
+            "public/assets/sources/790af1896890727df6fec14e/timing-2.png": "ffaa2cde240fe39d0c36f154b3f5470095320ce2c0d6594888b760075446751e"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "question_ids": [
+            "2021-22-ap-p3-1",
+            "2021-22-ap-p3-2",
+            "2021-22-ap-p4-3",
+            "2021-22-ap-p4-4",
+            "2021-22-ap-p4-5",
+            "2021-22-ap-p5-6",
+            "2021-22-ap-p5-7",
+            "2021-22-ap-p5-8",
+            "2021-22-ap-p6-9",
+            "2021-22-ap-p6-10",
+            "2021-22-ap-p6-11",
+            "2021-22-ap-p7-12",
+            "2021-22-ap-p7-13",
+            "2021-22-ap-p7-14",
+            "2021-22-ap-p7-15",
+            "2021-22-ap-p7-16",
+            "2021-22-ap-p7-17",
+            "2021-22-ap-p8-18",
+            "2021-22-ap-p8-19",
+            "2021-22-ap-p8-20",
+            "2021-22-ap-p9-21",
+            "2021-22-ap-p9-22",
+            "2021-22-ap-p9-23",
+            "2021-22-ap-p10-24",
+            "2021-22-ap-p10-25",
+            "2021-22-ap-p10-26",
+            "2021-22-ap-p11-27",
+            "2021-22-ap-p11-28",
+            "2021-22-ap-p14-U1",
+            "2021-22-ap-p15-U2",
+            "2021-22-ap-p16-U3",
+            "2021-22-ap-p17-U4",
+            "2021-22-ap-p18-U5",
+            "2021-22-ap-p19-U6",
+            "2021-22-ap-p20-U7",
+            "2021-22-ap-p21-U8"
+          ],
+          "question_revision": "2m.1.0-527441af118b",
+          "official_answer_revision": "2021-22-ap-2f.1.0-7cdd14b6ee2c",
+          "official_solution_revision": "2021-22-ap-2f.1.0-7cdd14b6ee2c",
+          "basis": "All cached pages/headings/ownership and final original question/solution crops inspected; unique deterministic official answers required.",
+          "source_sha256": "790af1896890727df6fec14eb27364a72899851f5dd4b187fe740a1d0f503d4a"
+        }
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-09-29T17:46:34.266177+00:00"
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-09-29T17:46:34.512173+00:00",
+          "evidence": {
+            "source_sha256": "790af1896890727df6fec14eb27364a72899851f5dd4b187fe740a1d0f503d4a",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/790af1896890727df6fec14eb27364a72899851f5dd4b187fe740a1d0f503d4a.json": "4634a03684fc17b59e9b384f6805a0e531a9355cc33aec238421e1c90c0261cb"
+            }
+          }
+        },
+        {
+          "stage": "profile_matched",
+          "at": "2026-09-29T17:58:07.081310+00:00",
+          "evidence": {
+            "source_sha256": "790af1896890727df6fec14eb27364a72899851f5dd4b187fe740a1d0f503d4a",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/winter2021_22_ap.json": "95e0fbd18ef12769d6194b276c5b0c0b752587db888696de54afaa5a1fb15fe5"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "profile_id": "portrait-explicit-regions",
+            "validated_sources": [
+              "790af1896890727df6fec14eb27364a72899851f5dd4b187fe740a1d0f503d4a"
+            ]
+          }
+        },
+        {
+          "stage": "layout_validated",
+          "at": "2026-09-29T17:58:07.636558+00:00",
+          "evidence": {
+            "source_sha256": "790af1896890727df6fec14eb27364a72899851f5dd4b187fe740a1d0f503d4a",
+            "result": "passed",
+            "artifacts": {
+              "docs/evidence/phase2f/2021-22-ap/layout-validation.json": "7cbf470915e3fef573b937d423463b92c320d00a71dd07a52d8d66a9024b6a90"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "preview_ready",
+          "at": "2026-09-29T17:58:11.987006+00:00",
+          "evidence": {
+            "source_sha256": "790af1896890727df6fec14eb27364a72899851f5dd4b187fe740a1d0f503d4a",
+            "result": "passed",
+            "artifacts": {
+              "docs/evidence/phase2f/2021-22-ap/preview-manifest.json": "adf27497cbae5ff4cc25799254134fa0a5b64a67cabc30773aeeb2faea7b8321",
+              "docs/evidence/phase2f/2021-22-ap/index.html": "12e257d34fe06f9d00fcf1a36454d0a5cd48ac0a19315638315f6c8d3ff0bfe9",
+              "docs/evidence/phase2f/2021-22-ap/layout-validation.json": "7cbf470915e3fef573b937d423463b92c320d00a71dd07a52d8d66a9024b6a90"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "formal_segmented",
+          "at": "2026-09-29T17:58:17.020851+00:00",
+          "evidence": {
+            "source_sha256": "790af1896890727df6fec14eb27364a72899851f5dd4b187fe740a1d0f503d4a",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2021_22_winter_arbeitsplanung_segmented.json": "80b0fab6e88ac17302bb20e81d1a99529a6d9da1fb6fab6d304734a14c4ab1b8",
+              "public/data/2021_22_winter_arbeitsplanung_segmented.json": "80b0fab6e88ac17302bb20e81d1a99529a6d9da1fb6fab6d304734a14c4ab1b8"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "answers_extracted",
+          "at": "2026-09-29T18:03:44.689866+00:00",
+          "evidence": {
+            "source_sha256": "790af1896890727df6fec14eb27364a72899851f5dd4b187fe740a1d0f503d4a",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2021_22_winter_arbeitsplanung_answers.json": "5aae2cee4c0a3f681cf05990510b681ea01a5092b7c3413caa034554e7878550",
+              "public/data/2021_22_winter_arbeitsplanung_answers.json": "5aae2cee4c0a3f681cf05990510b681ea01a5092b7c3413caa034554e7878550",
+              "data/exams/2021_22_winter_arbeitsplanung_u_solutions.json": "eb7e5db6d27ed290d66f360e054599084501ba3031c4684259d52ee8e8ec58dd",
+              "public/data/2021_22_winter_arbeitsplanung_u_solutions.json": "eb7e5db6d27ed290d66f360e054599084501ba3031c4684259d52ee8e8ec58dd"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "validated",
+          "at": "2026-09-29T18:03:45.062741+00:00",
+          "evidence": {
+            "source_sha256": "790af1896890727df6fec14eb27364a72899851f5dd4b187fe740a1d0f503d4a",
+            "result": "passed",
+            "artifacts": {
+              "public/data/2021_22_winter_arbeitsplanung_segmented.json": "80b0fab6e88ac17302bb20e81d1a99529a6d9da1fb6fab6d304734a14c4ab1b8",
+              "public/data/2021_22_winter_arbeitsplanung_answers.json": "5aae2cee4c0a3f681cf05990510b681ea01a5092b7c3413caa034554e7878550",
+              "public/data/2021_22_winter_arbeitsplanung_u_solutions.json": "eb7e5db6d27ed290d66f360e054599084501ba3031c4684259d52ee8e8ec58dd",
+              "docs/evidence/phase2f/2021-22-ap/answer-coverage.json": "b37e3b8a76f5c9fe3ae2e103a7bc669309ab23dae2e5e0083b4d84419a7fb922"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "question_revision": "2m.1.0-527441af118b",
+            "official_answer_revision": "2021-22-ap-2f.1.0-7cdd14b6ee2c",
+            "question_ids": [
+              "2021-22-ap-p3-1",
+              "2021-22-ap-p3-2",
+              "2021-22-ap-p4-3",
+              "2021-22-ap-p4-4",
+              "2021-22-ap-p4-5",
+              "2021-22-ap-p5-6",
+              "2021-22-ap-p5-7",
+              "2021-22-ap-p5-8",
+              "2021-22-ap-p6-9",
+              "2021-22-ap-p6-10",
+              "2021-22-ap-p6-11",
+              "2021-22-ap-p7-12",
+              "2021-22-ap-p7-13",
+              "2021-22-ap-p7-14",
+              "2021-22-ap-p7-15",
+              "2021-22-ap-p7-16",
+              "2021-22-ap-p7-17",
+              "2021-22-ap-p8-18",
+              "2021-22-ap-p8-19",
+              "2021-22-ap-p8-20",
+              "2021-22-ap-p9-21",
+              "2021-22-ap-p9-22",
+              "2021-22-ap-p9-23",
+              "2021-22-ap-p10-24",
+              "2021-22-ap-p10-25",
+              "2021-22-ap-p10-26",
+              "2021-22-ap-p11-27",
+              "2021-22-ap-p11-28",
+              "2021-22-ap-p14-U1",
+              "2021-22-ap-p15-U2",
+              "2021-22-ap-p16-U3",
+              "2021-22-ap-p17-U4",
+              "2021-22-ap-p18-U5",
+              "2021-22-ap-p19-U6",
+              "2021-22-ap-p20-U7",
+              "2021-22-ap-p21-U8"
+            ]
+          }
+        },
+        {
+          "stage": "production",
+          "at": "2026-09-29T18:13:01.748719+00:00",
+          "evidence": {
+            "result": "passed",
+            "artifacts": {
+              "public/data/2021_22_winter_arbeitsplanung_segmented.json": "80b0fab6e88ac17302bb20e81d1a99529a6d9da1fb6fab6d304734a14c4ab1b8",
+              "public/data/2021_22_winter_arbeitsplanung_answers.json": "5aae2cee4c0a3f681cf05990510b681ea01a5092b7c3413caa034554e7878550",
+              "public/data/2021_22_winter_arbeitsplanung_u_solutions.json": "eb7e5db6d27ed290d66f360e054599084501ba3031c4684259d52ee8e8ec58dd",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q01.png": "07abead38d85920900813c282150c83d80c0f9cc5da760b0ab6003096f396633",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q02.png": "f593c21dd6f4afa28d4c2fde19e407641c65cdeb59113e5fe52c2dcddeded8f4",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q03.png": "e4a54e1259c62d98bbf0e88f3cf2bf5fe15554b6b4dc6f968085cdba60c7ed60",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q04.png": "b800e74452648d0f4510b32e752e893d0f569defb545c28bb3fafcd02216136d",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q05.png": "fa3caef3cc5a3944bfbda2e3b5cc529e9a500ab52321bd8e830749f69a4f9e0c",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q06.png": "376a81ed9c91cf818eee1c1ed1ec4cbb43156cdfd9c14444d4966f6010aa584f",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q07.png": "85493d4225bf8c26b500626462793cfc7d38646a8cb7262fdf1358ad4d3ee21f",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q08.png": "2ee4a9008fb996afc4f1a82793bdd7e2ada18974b5bce6d669f069798f956b4e",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q09.png": "c7c4a53dc124e402b2505c4c4edf430581e0324314c1fa96d4f539374df8e26a",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q10.png": "4e7d9b40907a074bf9c22b88290e31a13449ef3e28c16d9b26e1c423fb2e7acf",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q11.png": "9375c52b455b4a9ff54771eefad15bd705cb8f3abc4e6a621e794c6635ab128d",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q12.png": "23bb226ff1a8dd9a849afa40704520426ffce734a977b26b9b5b88f2f21d972a",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q13.png": "15aa38960af0f172aa2353d3fd2f9457ba4bfaae62de188e6b4875d87d8ee01d",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q14.png": "7d215c8f6f849dc43fcaa372a099d7c4535bb3f832927c28728a90a488f5a3cf",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q15.png": "914b6904bee0f9ef090b844966ba5684503a5a13e7ef65c0e31e6cb0d4f8bf9a",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q16.png": "fb4bed43b65d364a998f7bb112e759aa15e40979ac99230cc551f71163a8fba7",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q17.png": "4ecd653d867526082bc5f18783ea581c1511438cfbb99e8e141b1931ec2a5172",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q18.png": "2ff0a2cd845c731b80eaf18509a3c1a25b2e58460a8a34127d0c722fdfe412c0",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q19.png": "7c24bf4306e4d57cdebd9b55d87cdddbf151decbc9294bf87d8b19cd283fe8b9",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q20.png": "70d0f8e53c81ad988ac8a3fe91fdf1ee109a0c9d6139d3f8a4dc93a13c01ae41",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q21.png": "39bbd183eaced448b1e1a2d89529cfe941d991d7f5fa0660a037486c6004d9a1",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q22.png": "be94df38b53038e189e5dc231fbf5293a4759699a6416dcc36a63189aaae5c2f",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q23.png": "e5755493396022f530fd49032380a4732f952f5f3922c7324a3c1846b134b237",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q24.png": "bfe3dcdf98740cb61b42525da246e58973054a7013493411971ff6326a35a934",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q25.png": "3aac756b9fefe0743b113e16a7511e5faa1beda029d04a8dbc7ed84b402c0dfe",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q26.png": "981a79ad7de5b69eb4134467af87f528e5439079436ee012fe9c3926aacfd3fd",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q27.png": "3737c9887614c3aff76e1d9e5b3c5f3de949a5c70bf3b466f2f4aadc38af12f2",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q28.png": "f8ed277cc14880367c7b9e402b911d7e9dc3ecbc92ccd21dc880b9e0e03ba2e8",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U1.png": "744d341e900419f41ced7864339b0d321765dfd8c35a4d93cf074df5742079ab",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U2.png": "d5bef343decb063a09fc49c7e6e1104a4f9ec9e31743a781a4f8ded7bebaf36d",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U3.png": "cbea48424da458d0b10da3fbaff66fef1c811490262d4dc522c1eed5c14551ce",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U4.png": "ad94c04c92e309a40dccbb5fdc4369bfa73cf56228c35cb68e558fd3d85271c1",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U5.png": "e2e4bce803d1a00763b127d739d0f78a8c534a431dbb0a211f524da8bf7dec35",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U6.png": "6416098cd9cb450c87c5545d15c4fb109337103602bc81c41c5d6e44067b1f9a",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U7.png": "4a79dae50c3261e36762bcf6cd69e166c4f71c322b4918650d7d3c14a6d5b934",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U8.png": "9967b4b89d5dca30bfb2d1b2d07d9e8141691e9ccf828e848317e52ffc533ff5",
+              "public/assets/sources/790af1896890727df6fec14e/timing-2.png": "ffaa2cde240fe39d0c36f154b3f5470095320ce2c0d6594888b760075446751e"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "question_ids": [
+              "2021-22-ap-p3-1",
+              "2021-22-ap-p3-2",
+              "2021-22-ap-p4-3",
+              "2021-22-ap-p4-4",
+              "2021-22-ap-p4-5",
+              "2021-22-ap-p5-6",
+              "2021-22-ap-p5-7",
+              "2021-22-ap-p5-8",
+              "2021-22-ap-p6-9",
+              "2021-22-ap-p6-10",
+              "2021-22-ap-p6-11",
+              "2021-22-ap-p7-12",
+              "2021-22-ap-p7-13",
+              "2021-22-ap-p7-14",
+              "2021-22-ap-p7-15",
+              "2021-22-ap-p7-16",
+              "2021-22-ap-p7-17",
+              "2021-22-ap-p8-18",
+              "2021-22-ap-p8-19",
+              "2021-22-ap-p8-20",
+              "2021-22-ap-p9-21",
+              "2021-22-ap-p9-22",
+              "2021-22-ap-p9-23",
+              "2021-22-ap-p10-24",
+              "2021-22-ap-p10-25",
+              "2021-22-ap-p10-26",
+              "2021-22-ap-p11-27",
+              "2021-22-ap-p11-28",
+              "2021-22-ap-p14-U1",
+              "2021-22-ap-p15-U2",
+              "2021-22-ap-p16-U3",
+              "2021-22-ap-p17-U4",
+              "2021-22-ap-p18-U5",
+              "2021-22-ap-p19-U6",
+              "2021-22-ap-p20-U7",
+              "2021-22-ap-p21-U8"
+            ],
+            "question_revision": "2m.1.0-527441af118b",
+            "official_answer_revision": "2021-22-ap-2f.1.0-7cdd14b6ee2c",
+            "official_solution_revision": "2021-22-ap-2f.1.0-7cdd14b6ee2c",
+            "basis": "All cached pages/headings/ownership and final original question/solution crops inspected; unique deterministic official answers required.",
+            "source_sha256": "790af1896890727df6fec14eb27364a72899851f5dd4b187fe740a1d0f503d4a"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "src-c3ccd1db1c9d34f8ed988613",
+      "exam": "2021-22-winter",
+      "module": "arbeitsplanung",
+      "source_type": "solution_pdf",
+      "filename": "2021_22 Winter/21_22 Lösung.pdf",
+      "sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+      "version": 1,
+      "status": "production",
+      "layout_profile": "portrait-explicit-regions@2m.1.0-527441af118b",
+      "answer_profile": "official-ring-grid@2021-22-ap-2f.1.0-7cdd14b6ee2c",
+      "supersedes_source_id": null,
+      "created_at": "2026-09-29T17:46:34.275608+00:00",
+      "identity_migration": null,
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23.json": "3e397b631b4fc0e609bc27d84f4e0e0012473735f1ad9693acfc17962c061e9d"
+          }
+        },
+        "profile_matched": {
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/winter2021_22_ap_official.json": "1d2277a964800e209eaec96988adca68086544f0461da8ecdcc0668293498197"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "layout_validated": {
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/winter2021_22_ap_official.json": "1d2277a964800e209eaec96988adca68086544f0461da8ecdcc0668293498197",
+            "public/data/2021_22_winter_arbeitsplanung_segmented.json": "80b0fab6e88ac17302bb20e81d1a99529a6d9da1fb6fab6d304734a14c4ab1b8"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "preview_ready": {
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/winter2021_22_ap_official.json": "1d2277a964800e209eaec96988adca68086544f0461da8ecdcc0668293498197",
+            "public/data/2021_22_winter_arbeitsplanung_segmented.json": "80b0fab6e88ac17302bb20e81d1a99529a6d9da1fb6fab6d304734a14c4ab1b8"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "formal_segmented": {
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/winter2021_22_ap_official.json": "1d2277a964800e209eaec96988adca68086544f0461da8ecdcc0668293498197",
+            "public/data/2021_22_winter_arbeitsplanung_segmented.json": "80b0fab6e88ac17302bb20e81d1a99529a6d9da1fb6fab6d304734a14c4ab1b8"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "answers_extracted": {
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2021_22_winter_arbeitsplanung_answers.json": "5aae2cee4c0a3f681cf05990510b681ea01a5092b7c3413caa034554e7878550",
+            "public/data/2021_22_winter_arbeitsplanung_answers.json": "5aae2cee4c0a3f681cf05990510b681ea01a5092b7c3413caa034554e7878550",
+            "data/exams/2021_22_winter_arbeitsplanung_u_solutions.json": "eb7e5db6d27ed290d66f360e054599084501ba3031c4684259d52ee8e8ec58dd",
+            "public/data/2021_22_winter_arbeitsplanung_u_solutions.json": "eb7e5db6d27ed290d66f360e054599084501ba3031c4684259d52ee8e8ec58dd"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "validated": {
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+          "result": "passed",
+          "artifacts": {
+            "public/data/2021_22_winter_arbeitsplanung_segmented.json": "80b0fab6e88ac17302bb20e81d1a99529a6d9da1fb6fab6d304734a14c4ab1b8",
+            "public/data/2021_22_winter_arbeitsplanung_answers.json": "5aae2cee4c0a3f681cf05990510b681ea01a5092b7c3413caa034554e7878550",
+            "public/data/2021_22_winter_arbeitsplanung_u_solutions.json": "eb7e5db6d27ed290d66f360e054599084501ba3031c4684259d52ee8e8ec58dd",
+            "docs/evidence/phase2f/2021-22-ap/answer-coverage.json": "b37e3b8a76f5c9fe3ae2e103a7bc669309ab23dae2e5e0083b4d84419a7fb922"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "question_revision": "2m.1.0-527441af118b",
+          "official_answer_revision": "2021-22-ap-2f.1.0-7cdd14b6ee2c",
+          "question_ids": [
+            "2021-22-ap-p3-1",
+            "2021-22-ap-p3-2",
+            "2021-22-ap-p4-3",
+            "2021-22-ap-p4-4",
+            "2021-22-ap-p4-5",
+            "2021-22-ap-p5-6",
+            "2021-22-ap-p5-7",
+            "2021-22-ap-p5-8",
+            "2021-22-ap-p6-9",
+            "2021-22-ap-p6-10",
+            "2021-22-ap-p6-11",
+            "2021-22-ap-p7-12",
+            "2021-22-ap-p7-13",
+            "2021-22-ap-p7-14",
+            "2021-22-ap-p7-15",
+            "2021-22-ap-p7-16",
+            "2021-22-ap-p7-17",
+            "2021-22-ap-p8-18",
+            "2021-22-ap-p8-19",
+            "2021-22-ap-p8-20",
+            "2021-22-ap-p9-21",
+            "2021-22-ap-p9-22",
+            "2021-22-ap-p9-23",
+            "2021-22-ap-p10-24",
+            "2021-22-ap-p10-25",
+            "2021-22-ap-p10-26",
+            "2021-22-ap-p11-27",
+            "2021-22-ap-p11-28",
+            "2021-22-ap-p14-U1",
+            "2021-22-ap-p15-U2",
+            "2021-22-ap-p16-U3",
+            "2021-22-ap-p17-U4",
+            "2021-22-ap-p18-U5",
+            "2021-22-ap-p19-U6",
+            "2021-22-ap-p20-U7",
+            "2021-22-ap-p21-U8"
+          ]
+        },
+        "production": {
+          "result": "passed",
+          "artifacts": {
+            "public/data/2021_22_winter_arbeitsplanung_segmented.json": "80b0fab6e88ac17302bb20e81d1a99529a6d9da1fb6fab6d304734a14c4ab1b8",
+            "public/data/2021_22_winter_arbeitsplanung_answers.json": "5aae2cee4c0a3f681cf05990510b681ea01a5092b7c3413caa034554e7878550",
+            "public/data/2021_22_winter_arbeitsplanung_u_solutions.json": "eb7e5db6d27ed290d66f360e054599084501ba3031c4684259d52ee8e8ec58dd",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q01.png": "07abead38d85920900813c282150c83d80c0f9cc5da760b0ab6003096f396633",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q02.png": "f593c21dd6f4afa28d4c2fde19e407641c65cdeb59113e5fe52c2dcddeded8f4",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q03.png": "e4a54e1259c62d98bbf0e88f3cf2bf5fe15554b6b4dc6f968085cdba60c7ed60",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q04.png": "b800e74452648d0f4510b32e752e893d0f569defb545c28bb3fafcd02216136d",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q05.png": "fa3caef3cc5a3944bfbda2e3b5cc529e9a500ab52321bd8e830749f69a4f9e0c",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q06.png": "376a81ed9c91cf818eee1c1ed1ec4cbb43156cdfd9c14444d4966f6010aa584f",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q07.png": "85493d4225bf8c26b500626462793cfc7d38646a8cb7262fdf1358ad4d3ee21f",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q08.png": "2ee4a9008fb996afc4f1a82793bdd7e2ada18974b5bce6d669f069798f956b4e",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q09.png": "c7c4a53dc124e402b2505c4c4edf430581e0324314c1fa96d4f539374df8e26a",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q10.png": "4e7d9b40907a074bf9c22b88290e31a13449ef3e28c16d9b26e1c423fb2e7acf",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q11.png": "9375c52b455b4a9ff54771eefad15bd705cb8f3abc4e6a621e794c6635ab128d",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q12.png": "23bb226ff1a8dd9a849afa40704520426ffce734a977b26b9b5b88f2f21d972a",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q13.png": "15aa38960af0f172aa2353d3fd2f9457ba4bfaae62de188e6b4875d87d8ee01d",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q14.png": "7d215c8f6f849dc43fcaa372a099d7c4535bb3f832927c28728a90a488f5a3cf",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q15.png": "914b6904bee0f9ef090b844966ba5684503a5a13e7ef65c0e31e6cb0d4f8bf9a",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q16.png": "fb4bed43b65d364a998f7bb112e759aa15e40979ac99230cc551f71163a8fba7",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q17.png": "4ecd653d867526082bc5f18783ea581c1511438cfbb99e8e141b1931ec2a5172",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q18.png": "2ff0a2cd845c731b80eaf18509a3c1a25b2e58460a8a34127d0c722fdfe412c0",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q19.png": "7c24bf4306e4d57cdebd9b55d87cdddbf151decbc9294bf87d8b19cd283fe8b9",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q20.png": "70d0f8e53c81ad988ac8a3fe91fdf1ee109a0c9d6139d3f8a4dc93a13c01ae41",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q21.png": "39bbd183eaced448b1e1a2d89529cfe941d991d7f5fa0660a037486c6004d9a1",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q22.png": "be94df38b53038e189e5dc231fbf5293a4759699a6416dcc36a63189aaae5c2f",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q23.png": "e5755493396022f530fd49032380a4732f952f5f3922c7324a3c1846b134b237",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q24.png": "bfe3dcdf98740cb61b42525da246e58973054a7013493411971ff6326a35a934",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q25.png": "3aac756b9fefe0743b113e16a7511e5faa1beda029d04a8dbc7ed84b402c0dfe",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q26.png": "981a79ad7de5b69eb4134467af87f528e5439079436ee012fe9c3926aacfd3fd",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q27.png": "3737c9887614c3aff76e1d9e5b3c5f3de949a5c70bf3b466f2f4aadc38af12f2",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q28.png": "f8ed277cc14880367c7b9e402b911d7e9dc3ecbc92ccd21dc880b9e0e03ba2e8",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U1.png": "744d341e900419f41ced7864339b0d321765dfd8c35a4d93cf074df5742079ab",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U2.png": "d5bef343decb063a09fc49c7e6e1104a4f9ec9e31743a781a4f8ded7bebaf36d",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U3.png": "cbea48424da458d0b10da3fbaff66fef1c811490262d4dc522c1eed5c14551ce",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U4.png": "ad94c04c92e309a40dccbb5fdc4369bfa73cf56228c35cb68e558fd3d85271c1",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U5.png": "e2e4bce803d1a00763b127d739d0f78a8c534a431dbb0a211f524da8bf7dec35",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U6.png": "6416098cd9cb450c87c5545d15c4fb109337103602bc81c41c5d6e44067b1f9a",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U7.png": "4a79dae50c3261e36762bcf6cd69e166c4f71c322b4918650d7d3c14a6d5b934",
+            "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U8.png": "9967b4b89d5dca30bfb2d1b2d07d9e8141691e9ccf828e848317e52ffc533ff5",
+            "public/assets/sources/790af1896890727df6fec14e/timing-2.png": "ffaa2cde240fe39d0c36f154b3f5470095320ce2c0d6594888b760075446751e"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "question_ids": [
+            "2021-22-ap-p3-1",
+            "2021-22-ap-p3-2",
+            "2021-22-ap-p4-3",
+            "2021-22-ap-p4-4",
+            "2021-22-ap-p4-5",
+            "2021-22-ap-p5-6",
+            "2021-22-ap-p5-7",
+            "2021-22-ap-p5-8",
+            "2021-22-ap-p6-9",
+            "2021-22-ap-p6-10",
+            "2021-22-ap-p6-11",
+            "2021-22-ap-p7-12",
+            "2021-22-ap-p7-13",
+            "2021-22-ap-p7-14",
+            "2021-22-ap-p7-15",
+            "2021-22-ap-p7-16",
+            "2021-22-ap-p7-17",
+            "2021-22-ap-p8-18",
+            "2021-22-ap-p8-19",
+            "2021-22-ap-p8-20",
+            "2021-22-ap-p9-21",
+            "2021-22-ap-p9-22",
+            "2021-22-ap-p9-23",
+            "2021-22-ap-p10-24",
+            "2021-22-ap-p10-25",
+            "2021-22-ap-p10-26",
+            "2021-22-ap-p11-27",
+            "2021-22-ap-p11-28",
+            "2021-22-ap-p14-U1",
+            "2021-22-ap-p15-U2",
+            "2021-22-ap-p16-U3",
+            "2021-22-ap-p17-U4",
+            "2021-22-ap-p18-U5",
+            "2021-22-ap-p19-U6",
+            "2021-22-ap-p20-U7",
+            "2021-22-ap-p21-U8"
+          ],
+          "question_revision": "2m.1.0-527441af118b",
+          "official_answer_revision": "2021-22-ap-2f.1.0-7cdd14b6ee2c",
+          "official_solution_revision": "2021-22-ap-2f.1.0-7cdd14b6ee2c",
+          "basis": "All cached pages/headings/ownership and final original question/solution crops inspected; unique deterministic official answers required.",
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23"
+        }
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-09-29T17:46:34.275608+00:00"
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-09-29T17:46:41.804817+00:00",
+          "evidence": {
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23.json": "3e397b631b4fc0e609bc27d84f4e0e0012473735f1ad9693acfc17962c061e9d"
+            }
+          }
+        },
+        {
+          "stage": "profile_matched",
+          "at": "2026-09-29T18:03:40.704900+00:00",
+          "evidence": {
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/winter2021_22_ap_official.json": "1d2277a964800e209eaec96988adca68086544f0461da8ecdcc0668293498197"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "layout_validated",
+          "at": "2026-09-29T18:03:40.940692+00:00",
+          "evidence": {
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/winter2021_22_ap_official.json": "1d2277a964800e209eaec96988adca68086544f0461da8ecdcc0668293498197",
+              "public/data/2021_22_winter_arbeitsplanung_segmented.json": "80b0fab6e88ac17302bb20e81d1a99529a6d9da1fb6fab6d304734a14c4ab1b8"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "preview_ready",
+          "at": "2026-09-29T18:03:41.200230+00:00",
+          "evidence": {
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/winter2021_22_ap_official.json": "1d2277a964800e209eaec96988adca68086544f0461da8ecdcc0668293498197",
+              "public/data/2021_22_winter_arbeitsplanung_segmented.json": "80b0fab6e88ac17302bb20e81d1a99529a6d9da1fb6fab6d304734a14c4ab1b8"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "formal_segmented",
+          "at": "2026-09-29T18:03:41.422456+00:00",
+          "evidence": {
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/winter2021_22_ap_official.json": "1d2277a964800e209eaec96988adca68086544f0461da8ecdcc0668293498197",
+              "public/data/2021_22_winter_arbeitsplanung_segmented.json": "80b0fab6e88ac17302bb20e81d1a99529a6d9da1fb6fab6d304734a14c4ab1b8"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "answers_extracted",
+          "at": "2026-09-29T18:03:44.867777+00:00",
+          "evidence": {
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2021_22_winter_arbeitsplanung_answers.json": "5aae2cee4c0a3f681cf05990510b681ea01a5092b7c3413caa034554e7878550",
+              "public/data/2021_22_winter_arbeitsplanung_answers.json": "5aae2cee4c0a3f681cf05990510b681ea01a5092b7c3413caa034554e7878550",
+              "data/exams/2021_22_winter_arbeitsplanung_u_solutions.json": "eb7e5db6d27ed290d66f360e054599084501ba3031c4684259d52ee8e8ec58dd",
+              "public/data/2021_22_winter_arbeitsplanung_u_solutions.json": "eb7e5db6d27ed290d66f360e054599084501ba3031c4684259d52ee8e8ec58dd"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "validated",
+          "at": "2026-09-29T18:03:45.196060+00:00",
+          "evidence": {
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+            "result": "passed",
+            "artifacts": {
+              "public/data/2021_22_winter_arbeitsplanung_segmented.json": "80b0fab6e88ac17302bb20e81d1a99529a6d9da1fb6fab6d304734a14c4ab1b8",
+              "public/data/2021_22_winter_arbeitsplanung_answers.json": "5aae2cee4c0a3f681cf05990510b681ea01a5092b7c3413caa034554e7878550",
+              "public/data/2021_22_winter_arbeitsplanung_u_solutions.json": "eb7e5db6d27ed290d66f360e054599084501ba3031c4684259d52ee8e8ec58dd",
+              "docs/evidence/phase2f/2021-22-ap/answer-coverage.json": "b37e3b8a76f5c9fe3ae2e103a7bc669309ab23dae2e5e0083b4d84419a7fb922"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "question_revision": "2m.1.0-527441af118b",
+            "official_answer_revision": "2021-22-ap-2f.1.0-7cdd14b6ee2c",
+            "question_ids": [
+              "2021-22-ap-p3-1",
+              "2021-22-ap-p3-2",
+              "2021-22-ap-p4-3",
+              "2021-22-ap-p4-4",
+              "2021-22-ap-p4-5",
+              "2021-22-ap-p5-6",
+              "2021-22-ap-p5-7",
+              "2021-22-ap-p5-8",
+              "2021-22-ap-p6-9",
+              "2021-22-ap-p6-10",
+              "2021-22-ap-p6-11",
+              "2021-22-ap-p7-12",
+              "2021-22-ap-p7-13",
+              "2021-22-ap-p7-14",
+              "2021-22-ap-p7-15",
+              "2021-22-ap-p7-16",
+              "2021-22-ap-p7-17",
+              "2021-22-ap-p8-18",
+              "2021-22-ap-p8-19",
+              "2021-22-ap-p8-20",
+              "2021-22-ap-p9-21",
+              "2021-22-ap-p9-22",
+              "2021-22-ap-p9-23",
+              "2021-22-ap-p10-24",
+              "2021-22-ap-p10-25",
+              "2021-22-ap-p10-26",
+              "2021-22-ap-p11-27",
+              "2021-22-ap-p11-28",
+              "2021-22-ap-p14-U1",
+              "2021-22-ap-p15-U2",
+              "2021-22-ap-p16-U3",
+              "2021-22-ap-p17-U4",
+              "2021-22-ap-p18-U5",
+              "2021-22-ap-p19-U6",
+              "2021-22-ap-p20-U7",
+              "2021-22-ap-p21-U8"
+            ]
+          }
+        },
+        {
+          "stage": "production",
+          "at": "2026-09-29T18:13:01.758957+00:00",
+          "evidence": {
+            "result": "passed",
+            "artifacts": {
+              "public/data/2021_22_winter_arbeitsplanung_segmented.json": "80b0fab6e88ac17302bb20e81d1a99529a6d9da1fb6fab6d304734a14c4ab1b8",
+              "public/data/2021_22_winter_arbeitsplanung_answers.json": "5aae2cee4c0a3f681cf05990510b681ea01a5092b7c3413caa034554e7878550",
+              "public/data/2021_22_winter_arbeitsplanung_u_solutions.json": "eb7e5db6d27ed290d66f360e054599084501ba3031c4684259d52ee8e8ec58dd",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q01.png": "07abead38d85920900813c282150c83d80c0f9cc5da760b0ab6003096f396633",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q02.png": "f593c21dd6f4afa28d4c2fde19e407641c65cdeb59113e5fe52c2dcddeded8f4",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q03.png": "e4a54e1259c62d98bbf0e88f3cf2bf5fe15554b6b4dc6f968085cdba60c7ed60",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q04.png": "b800e74452648d0f4510b32e752e893d0f569defb545c28bb3fafcd02216136d",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q05.png": "fa3caef3cc5a3944bfbda2e3b5cc529e9a500ab52321bd8e830749f69a4f9e0c",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q06.png": "376a81ed9c91cf818eee1c1ed1ec4cbb43156cdfd9c14444d4966f6010aa584f",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q07.png": "85493d4225bf8c26b500626462793cfc7d38646a8cb7262fdf1358ad4d3ee21f",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q08.png": "2ee4a9008fb996afc4f1a82793bdd7e2ada18974b5bce6d669f069798f956b4e",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q09.png": "c7c4a53dc124e402b2505c4c4edf430581e0324314c1fa96d4f539374df8e26a",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q10.png": "4e7d9b40907a074bf9c22b88290e31a13449ef3e28c16d9b26e1c423fb2e7acf",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q11.png": "9375c52b455b4a9ff54771eefad15bd705cb8f3abc4e6a621e794c6635ab128d",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q12.png": "23bb226ff1a8dd9a849afa40704520426ffce734a977b26b9b5b88f2f21d972a",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q13.png": "15aa38960af0f172aa2353d3fd2f9457ba4bfaae62de188e6b4875d87d8ee01d",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q14.png": "7d215c8f6f849dc43fcaa372a099d7c4535bb3f832927c28728a90a488f5a3cf",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q15.png": "914b6904bee0f9ef090b844966ba5684503a5a13e7ef65c0e31e6cb0d4f8bf9a",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q16.png": "fb4bed43b65d364a998f7bb112e759aa15e40979ac99230cc551f71163a8fba7",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q17.png": "4ecd653d867526082bc5f18783ea581c1511438cfbb99e8e141b1931ec2a5172",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q18.png": "2ff0a2cd845c731b80eaf18509a3c1a25b2e58460a8a34127d0c722fdfe412c0",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q19.png": "7c24bf4306e4d57cdebd9b55d87cdddbf151decbc9294bf87d8b19cd283fe8b9",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q20.png": "70d0f8e53c81ad988ac8a3fe91fdf1ee109a0c9d6139d3f8a4dc93a13c01ae41",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q21.png": "39bbd183eaced448b1e1a2d89529cfe941d991d7f5fa0660a037486c6004d9a1",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q22.png": "be94df38b53038e189e5dc231fbf5293a4759699a6416dcc36a63189aaae5c2f",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q23.png": "e5755493396022f530fd49032380a4732f952f5f3922c7324a3c1846b134b237",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q24.png": "bfe3dcdf98740cb61b42525da246e58973054a7013493411971ff6326a35a934",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q25.png": "3aac756b9fefe0743b113e16a7511e5faa1beda029d04a8dbc7ed84b402c0dfe",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q26.png": "981a79ad7de5b69eb4134467af87f528e5439079436ee012fe9c3926aacfd3fd",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q27.png": "3737c9887614c3aff76e1d9e5b3c5f3de949a5c70bf3b466f2f4aadc38af12f2",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/Q28.png": "f8ed277cc14880367c7b9e402b911d7e9dc3ecbc92ccd21dc880b9e0e03ba2e8",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U1.png": "744d341e900419f41ced7864339b0d321765dfd8c35a4d93cf074df5742079ab",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U2.png": "d5bef343decb063a09fc49c7e6e1104a4f9ec9e31743a781a4f8ded7bebaf36d",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U3.png": "cbea48424da458d0b10da3fbaff66fef1c811490262d4dc522c1eed5c14551ce",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U4.png": "ad94c04c92e309a40dccbb5fdc4369bfa73cf56228c35cb68e558fd3d85271c1",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U5.png": "e2e4bce803d1a00763b127d739d0f78a8c534a431dbb0a211f524da8bf7dec35",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U6.png": "6416098cd9cb450c87c5545d15c4fb109337103602bc81c41c5d6e44067b1f9a",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U7.png": "4a79dae50c3261e36762bcf6cd69e166c4f71c322b4918650d7d3c14a6d5b934",
+              "public/assets/official/2021-22-ap-2f.1.0-7cdd14b6ee2c/U8.png": "9967b4b89d5dca30bfb2d1b2d07d9e8141691e9ccf828e848317e52ffc533ff5",
+              "public/assets/sources/790af1896890727df6fec14e/timing-2.png": "ffaa2cde240fe39d0c36f154b3f5470095320ce2c0d6594888b760075446751e"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "question_ids": [
+              "2021-22-ap-p3-1",
+              "2021-22-ap-p3-2",
+              "2021-22-ap-p4-3",
+              "2021-22-ap-p4-4",
+              "2021-22-ap-p4-5",
+              "2021-22-ap-p5-6",
+              "2021-22-ap-p5-7",
+              "2021-22-ap-p5-8",
+              "2021-22-ap-p6-9",
+              "2021-22-ap-p6-10",
+              "2021-22-ap-p6-11",
+              "2021-22-ap-p7-12",
+              "2021-22-ap-p7-13",
+              "2021-22-ap-p7-14",
+              "2021-22-ap-p7-15",
+              "2021-22-ap-p7-16",
+              "2021-22-ap-p7-17",
+              "2021-22-ap-p8-18",
+              "2021-22-ap-p8-19",
+              "2021-22-ap-p8-20",
+              "2021-22-ap-p9-21",
+              "2021-22-ap-p9-22",
+              "2021-22-ap-p9-23",
+              "2021-22-ap-p10-24",
+              "2021-22-ap-p10-25",
+              "2021-22-ap-p10-26",
+              "2021-22-ap-p11-27",
+              "2021-22-ap-p11-28",
+              "2021-22-ap-p14-U1",
+              "2021-22-ap-p15-U2",
+              "2021-22-ap-p16-U3",
+              "2021-22-ap-p17-U4",
+              "2021-22-ap-p18-U5",
+              "2021-22-ap-p19-U6",
+              "2021-22-ap-p20-U7",
+              "2021-22-ap-p21-U8"
+            ],
+            "question_revision": "2m.1.0-527441af118b",
+            "official_answer_revision": "2021-22-ap-2f.1.0-7cdd14b6ee2c",
+            "official_solution_revision": "2021-22-ap-2f.1.0-7cdd14b6ee2c",
+            "basis": "All cached pages/headings/ownership and final original question/solution crops inspected; unique deterministic official answers required.",
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "src-de04964332d443aa97b96d78",
+      "exam": "2021-22-winter",
+      "module": "funktionsanalyse",
+      "source_type": "question_pdf",
+      "filename": "2021_22 Winter/21_22 Funktionsanalyse.pdf",
+      "sha256": "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd",
+      "version": 1,
+      "status": "blocked",
+      "layout_profile": "portrait-explicit-regions@2m.1.0-8146b9d92266",
+      "answer_profile": "ring-annulus-explicit@2f.1.0",
+      "supersedes_source_id": null,
+      "created_at": "2026-09-29T17:46:34.283038+00:00",
+      "identity_migration": null,
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd.json": "4f74589abc67b5c8a634fff8d2c4aa0197524d7b5bc163dc076a86822e2172fa"
+          }
+        },
+        "profile_matched": {
+          "source_sha256": "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/winter2021_22_fa.json": "17594e62605b4f3346b037c98872b77278b42db095f797fbcb0a30bcb5aced6e"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "profile_id": "portrait-explicit-regions",
+          "validated_sources": [
+            "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd"
+          ]
+        },
+        "layout_validated": {
+          "source_sha256": "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd",
+          "result": "passed",
+          "artifacts": {
+            "docs/evidence/phase2f/2021-22-fa/layout-validation.json": "491c0b8fe6b3da1ada2c677c569c99fc12fe2fd82e9c4e1d33162770d8a4bac2"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        }
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-09-29T17:46:34.283038+00:00"
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-09-29T17:46:45.208784+00:00",
+          "evidence": {
+            "source_sha256": "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd.json": "4f74589abc67b5c8a634fff8d2c4aa0197524d7b5bc163dc076a86822e2172fa"
+            }
+          }
+        },
+        {
+          "stage": "profile_matched",
+          "at": "2026-09-29T17:58:17.831151+00:00",
+          "evidence": {
+            "source_sha256": "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/winter2021_22_fa.json": "17594e62605b4f3346b037c98872b77278b42db095f797fbcb0a30bcb5aced6e"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "profile_id": "portrait-explicit-regions",
+            "validated_sources": [
+              "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd"
+            ]
+          }
+        },
+        {
+          "stage": "layout_validated",
+          "at": "2026-09-29T17:58:18.508879+00:00",
+          "evidence": {
+            "source_sha256": "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd",
+            "result": "passed",
+            "artifacts": {
+              "docs/evidence/phase2f/2021-22-fa/layout-validation.json": "491c0b8fe6b3da1ada2c677c569c99fc12fe2fd82e9c4e1d33162770d8a4bac2"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "blocked",
+          "at": "2026-09-29T18:09:29.801438+00:00",
+          "evidence": {
+            "reason": "Attachment page26 configured y1=1189.969 exceeds original page height1188.0; invalid portrait region geometry",
+            "source_sha256": "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd",
+            "config_sha256": "17594e62605b4f3346b037c98872b77278b42db095f797fbcb0a30bcb5aced6e",
+            "page": 26,
+            "original_bbox": [
+              0.0,
+              0.0,
+              842.0,
+              1189.969
+            ],
+            "actual_geometry": [
+              842.0,
+              1188.0
+            ],
+            "pdf_pages_opened": 0
+          }
+        },
+        {
+          "stage": "profile_revision_proposed",
+          "proposal_hash": "70ea5ae9f99b5f09f89ac3a276ad04a13f0a20a183689202ceec95abb491ada2",
+          "previous_profile_revision": "portrait-explicit-regions@2m.1.0-8146b9d92266",
+          "new_profile_revision": "portrait-explicit-regions@2m.1.1-8d69ec8301a9",
+          "supersedes_profile_revision": "portrait-explicit-regions@2m.1.0-8146b9d92266",
+          "change_reason": "manual_attachment_bounds_review",
+          "evidence": {
+            "proposal_path": "docs/evidence/winter2021-22/fa-bounds/proposal.json",
+            "sha256": "1ce3000ea96613d1774e841cebf82823273ead9755a28be281e071661aec0efc"
+          },
+          "at": "2026-09-29T18:09:29.947225+00:00"
+        },
+        {
+          "stage": "profile_revision_confirmed",
+          "proposal_hash": "70ea5ae9f99b5f09f89ac3a276ad04a13f0a20a183689202ceec95abb491ada2",
+          "previous_profile_revision": "portrait-explicit-regions@2m.1.0-8146b9d92266",
+          "new_profile_revision": "portrait-explicit-regions@2m.1.1-8d69ec8301a9",
+          "supersedes_profile_revision": "portrait-explicit-regions@2m.1.0-8146b9d92266",
+          "change_reason": "manual_attachment_bounds_review",
+          "evidence": {
+            "confirmation": "data/reviews/shared-region-70ea5ae9f99b5f09f89ac3a276ad04a13f0a20a183689202ceec95abb491ada2.json",
+            "sha256": "5afc91ad5383fe7c89bcbd1f4168f0bec83993d93f59438dc0d0ab9035c7ba8b"
+          },
+          "at": "2026-09-29T18:09:50.162235+00:00"
+        }
+      ],
+      "blocked_after": "layout_validated"
+    },
+    {
+      "source_id": "src-cb0684fc8fc0b48839dc6ed8",
+      "exam": "2021-22-winter",
+      "module": "funktionsanalyse",
+      "source_type": "solution_pdf",
+      "filename": "2021_22 Winter/21_22 Lösung.pdf",
+      "sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+      "version": 1,
+      "status": "answers_extracted",
+      "layout_profile": "portrait-explicit-regions@2m.1.1-4c9e78a33acf",
+      "answer_profile": "official-ring-grid@2021-22-fa-r2-2f.1.0-e39d1c4ce5d9",
+      "supersedes_source_id": null,
+      "created_at": "2026-09-29T17:46:34.294162+00:00",
+      "identity_migration": null,
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23.json": "3e397b631b4fc0e609bc27d84f4e0e0012473735f1ad9693acfc17962c061e9d"
+          }
+        },
+        "profile_matched": {
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/winter2021_22_fa_official.json": "b43654bbe60d41b048980e3e438a33f9579434510406a3cd630ca710f1fe026e"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "layout_validated": {
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/winter2021_22_fa_official.json": "b43654bbe60d41b048980e3e438a33f9579434510406a3cd630ca710f1fe026e",
+            "public/data/2021_22_winter_funktionsanalyse_segmented.json": "6c7d8e27d4f5102c0f884c9a938b4a1cb9e5be1046fb59dccba5e9167f5d00a3"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "preview_ready": {
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/winter2021_22_fa_official.json": "b43654bbe60d41b048980e3e438a33f9579434510406a3cd630ca710f1fe026e",
+            "public/data/2021_22_winter_funktionsanalyse_segmented.json": "6c7d8e27d4f5102c0f884c9a938b4a1cb9e5be1046fb59dccba5e9167f5d00a3"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "formal_segmented": {
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/winter2021_22_fa_official.json": "b43654bbe60d41b048980e3e438a33f9579434510406a3cd630ca710f1fe026e",
+            "public/data/2021_22_winter_funktionsanalyse_segmented.json": "6c7d8e27d4f5102c0f884c9a938b4a1cb9e5be1046fb59dccba5e9167f5d00a3"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "answers_extracted": {
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2021_22_winter_funktionsanalyse_answers.json": "0c80b5d82ca98594eadd4f3f17655efdeb6ea0216e609d292c3847ff1ce5c97b",
+            "public/data/2021_22_winter_funktionsanalyse_answers.json": "0c80b5d82ca98594eadd4f3f17655efdeb6ea0216e609d292c3847ff1ce5c97b",
+            "data/exams/2021_22_winter_funktionsanalyse_u_solutions.json": "73e4412611ba7a556492a53f63973f6f53b1c689b85e54605b418902b3510f44",
+            "public/data/2021_22_winter_funktionsanalyse_u_solutions.json": "73e4412611ba7a556492a53f63973f6f53b1c689b85e54605b418902b3510f44"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        }
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-09-29T17:46:34.294162+00:00"
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-09-29T17:46:52.353232+00:00",
+          "evidence": {
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23.json": "3e397b631b4fc0e609bc27d84f4e0e0012473735f1ad9693acfc17962c061e9d"
+            }
+          }
+        },
+        {
+          "stage": "profile_matched",
+          "at": "2026-09-29T18:11:34.920618+00:00",
+          "evidence": {
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/winter2021_22_fa_official.json": "b43654bbe60d41b048980e3e438a33f9579434510406a3cd630ca710f1fe026e"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "layout_validated",
+          "at": "2026-09-29T18:11:35.049691+00:00",
+          "evidence": {
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/winter2021_22_fa_official.json": "b43654bbe60d41b048980e3e438a33f9579434510406a3cd630ca710f1fe026e",
+              "public/data/2021_22_winter_funktionsanalyse_segmented.json": "6c7d8e27d4f5102c0f884c9a938b4a1cb9e5be1046fb59dccba5e9167f5d00a3"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "preview_ready",
+          "at": "2026-09-29T18:11:35.172920+00:00",
+          "evidence": {
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/winter2021_22_fa_official.json": "b43654bbe60d41b048980e3e438a33f9579434510406a3cd630ca710f1fe026e",
+              "public/data/2021_22_winter_funktionsanalyse_segmented.json": "6c7d8e27d4f5102c0f884c9a938b4a1cb9e5be1046fb59dccba5e9167f5d00a3"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "formal_segmented",
+          "at": "2026-09-29T18:11:35.311774+00:00",
+          "evidence": {
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/winter2021_22_fa_official.json": "b43654bbe60d41b048980e3e438a33f9579434510406a3cd630ca710f1fe026e",
+              "public/data/2021_22_winter_funktionsanalyse_segmented.json": "6c7d8e27d4f5102c0f884c9a938b4a1cb9e5be1046fb59dccba5e9167f5d00a3"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "answers_extracted",
+          "at": "2026-09-29T18:11:37.441484+00:00",
+          "evidence": {
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2021_22_winter_funktionsanalyse_answers.json": "0c80b5d82ca98594eadd4f3f17655efdeb6ea0216e609d292c3847ff1ce5c97b",
+              "public/data/2021_22_winter_funktionsanalyse_answers.json": "0c80b5d82ca98594eadd4f3f17655efdeb6ea0216e609d292c3847ff1ce5c97b",
+              "data/exams/2021_22_winter_funktionsanalyse_u_solutions.json": "73e4412611ba7a556492a53f63973f6f53b1c689b85e54605b418902b3510f44",
+              "public/data/2021_22_winter_funktionsanalyse_u_solutions.json": "73e4412611ba7a556492a53f63973f6f53b1c689b85e54605b418902b3510f44"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "src-f122ee9270e0513f567e8273",
+      "exam": "2021-22-winter",
+      "module": "wiso",
+      "source_type": "question_pdf",
+      "filename": "2021_22 Winter/21_22 WiSo.pdf",
+      "sha256": "88751d5943ebf2480ea8bf3782018289033be52589e9b5b1d58a2cd02d35a719",
+      "version": 1,
+      "status": "production",
+      "layout_profile": "portrait-explicit-regions@2m.1.0-9a24a85a9b53",
+      "answer_profile": "ring-annulus-explicit@2f.1.0",
+      "supersedes_source_id": null,
+      "created_at": "2026-09-29T17:46:34.303364+00:00",
+      "identity_migration": null,
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "88751d5943ebf2480ea8bf3782018289033be52589e9b5b1d58a2cd02d35a719",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/88751d5943ebf2480ea8bf3782018289033be52589e9b5b1d58a2cd02d35a719.json": "01bb3e37869d095d74a1e431975b2c5c4ba42434b32e7fc056985e4b5978854c"
+          }
+        },
+        "profile_matched": {
+          "source_sha256": "88751d5943ebf2480ea8bf3782018289033be52589e9b5b1d58a2cd02d35a719",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/winter2021_22_wiso.json": "531f82f2823e01ad305376fbd1b1fb4686531772355f6de803afd297257db797"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "profile_id": "portrait-explicit-regions",
+          "validated_sources": [
+            "88751d5943ebf2480ea8bf3782018289033be52589e9b5b1d58a2cd02d35a719"
+          ]
+        },
+        "layout_validated": {
+          "source_sha256": "88751d5943ebf2480ea8bf3782018289033be52589e9b5b1d58a2cd02d35a719",
+          "result": "passed",
+          "artifacts": {
+            "docs/evidence/phase2f/2021-22-wiso/layout-validation.json": "916f239b00f397f694d9235545a08bbee84e7d3aee0a0c70674e3b50a161f57e"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "preview_ready": {
+          "source_sha256": "88751d5943ebf2480ea8bf3782018289033be52589e9b5b1d58a2cd02d35a719",
+          "result": "passed",
+          "artifacts": {
+            "docs/evidence/phase2f/2021-22-wiso/preview-manifest.json": "19e79c91ccf7d4c53ed1663453c571c6292db32d4edff65f0c6cda6a50896921",
+            "docs/evidence/phase2f/2021-22-wiso/index.html": "1103d10fa3d884bf6a351e89169936eb18d092085cdeff92fc6180bbe024f802",
+            "docs/evidence/phase2f/2021-22-wiso/layout-validation.json": "916f239b00f397f694d9235545a08bbee84e7d3aee0a0c70674e3b50a161f57e"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "formal_segmented": {
+          "source_sha256": "88751d5943ebf2480ea8bf3782018289033be52589e9b5b1d58a2cd02d35a719",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2021_22_winter_wiso_segmented.json": "258a0b6181928c9b299bf40b227472064e4961cbaf697977c876d638b95b9d6a",
+            "public/data/2021_22_winter_wiso_segmented.json": "258a0b6181928c9b299bf40b227472064e4961cbaf697977c876d638b95b9d6a"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "answers_extracted": {
+          "source_sha256": "88751d5943ebf2480ea8bf3782018289033be52589e9b5b1d58a2cd02d35a719",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2021_22_winter_wiso_answers.json": "ce3b1bc110947e5b4930efb6c158d6a1b28f76be0b7bdab6d9432d310c7d6918",
+            "public/data/2021_22_winter_wiso_answers.json": "ce3b1bc110947e5b4930efb6c158d6a1b28f76be0b7bdab6d9432d310c7d6918",
+            "data/exams/2021_22_winter_wiso_u_solutions.json": "65e5e28a8e31d98e0c9d37c5629ec969ee601db551adf4a1adc333ee5245e55a",
+            "public/data/2021_22_winter_wiso_u_solutions.json": "65e5e28a8e31d98e0c9d37c5629ec969ee601db551adf4a1adc333ee5245e55a"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "validated": {
+          "source_sha256": "88751d5943ebf2480ea8bf3782018289033be52589e9b5b1d58a2cd02d35a719",
+          "result": "passed",
+          "artifacts": {
+            "public/data/2021_22_winter_wiso_segmented.json": "258a0b6181928c9b299bf40b227472064e4961cbaf697977c876d638b95b9d6a",
+            "public/data/2021_22_winter_wiso_answers.json": "ce3b1bc110947e5b4930efb6c158d6a1b28f76be0b7bdab6d9432d310c7d6918",
+            "public/data/2021_22_winter_wiso_u_solutions.json": "65e5e28a8e31d98e0c9d37c5629ec969ee601db551adf4a1adc333ee5245e55a",
+            "docs/evidence/phase2f/2021-22-wiso/answer-coverage.json": "851aba812852743a1f7fa35cb31252bd64735be246beb785927e6eac6e2fb9a3"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "question_revision": "2m.1.0-9a24a85a9b53",
+          "official_answer_revision": "2021-22-wiso-2f.1.0-9530561566e5",
+          "question_ids": [
+            "2021-22-wiso-p5-1",
+            "2021-22-wiso-p5-2",
+            "2021-22-wiso-p7-3",
+            "2021-22-wiso-p7-4",
+            "2021-22-wiso-p7-5",
+            "2021-22-wiso-p9-6",
+            "2021-22-wiso-p9-7",
+            "2021-22-wiso-p9-8",
+            "2021-22-wiso-p9-9",
+            "2021-22-wiso-p11-10",
+            "2021-22-wiso-p11-11",
+            "2021-22-wiso-p11-12",
+            "2021-22-wiso-p13-13",
+            "2021-22-wiso-p13-14",
+            "2021-22-wiso-p13-15",
+            "2021-22-wiso-p14-16",
+            "2021-22-wiso-p14-17",
+            "2021-22-wiso-p15-18",
+            "2021-22-wiso-p4-U1",
+            "2021-22-wiso-p6-U2",
+            "2021-22-wiso-p8-U3",
+            "2021-22-wiso-p10-U4",
+            "2021-22-wiso-p12-U5",
+            "2021-22-wiso-p14-U6"
+          ]
+        },
+        "production": {
+          "result": "passed",
+          "artifacts": {
+            "public/data/2021_22_winter_wiso_segmented.json": "258a0b6181928c9b299bf40b227472064e4961cbaf697977c876d638b95b9d6a",
+            "public/data/2021_22_winter_wiso_answers.json": "ce3b1bc110947e5b4930efb6c158d6a1b28f76be0b7bdab6d9432d310c7d6918",
+            "public/data/2021_22_winter_wiso_u_solutions.json": "65e5e28a8e31d98e0c9d37c5629ec969ee601db551adf4a1adc333ee5245e55a",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q01.png": "4dd23ed7a351547694ce433956b1ae517f0e9ee08d9cb0d88c44ef383fe162d1",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q02.png": "46cb2cc3be052b2ae979fa1b960f4f71124564ac30cc7d289dc7ae85a612dbc6",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q03.png": "1534ed25eeea67ae79a77d9c27d235bb9c3b50ae8080999fd9dc953e05244eff",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q04.png": "cfd45f9c9736077fe914322ca851f79164de23ac8134fa866682e0ff96fd6c10",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q05.png": "6646cc3e7823d13b069f984bd25aaf37ce40ee5067c8475521c51f45d163595b",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q06.png": "5b02fb24aec063e522e63435ebb5068672a49b036218c9e4025c01faf240b573",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q07.png": "b2b2526bd61a69425ce107a5b6538d66086dfa5d605cb91d35a109827c9563c4",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q08.png": "c27289443c32e33d5d2e3aa5ee8d2561cf85feb8d7db70712fc1049ac4c2f5bd",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q09.png": "c43bb5aa34d7f06f509537ea13c057528577577aa9d22ad6d1731b47cc1deae0",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q10.png": "96f2cd3de2447de0562f4c17edd7a23f2a47a18efd4537ed2e9451c0ec418c1c",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q11.png": "2cee68966c216d1a5742b7521d3cbf7adfea3265bcbe278920f4ec992ca175fd",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q12.png": "2dfe4a4d9cbff6e6be2374f58c17d7cf59959064487d472ff9d20ed89f5d36c7",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q13.png": "7cae6eed0caa97ab0eb1c03247e2d30a8c8feb64d906dc81499aa2156221ab97",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q14.png": "67c31fde3ac673ddc6ec06849b6b832d71038a373d76a12712e8c6298419e1e9",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q15.png": "0f2ca6e8d6fe587e267fae172dba8635246854940bab74ed9e661ba8ee614f85",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q16.png": "0b2cde310c8ec28f79603ea3bb241a48c3d3020645b3d9a856acb8f65433fe6b",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q17.png": "01b4b99d4a015f8646bb6d82170a71b83cfc88cd548f13472dacf079b5f2db92",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q18.png": "99c44f3198f62fa01cd354cf65d8d7fc535dbca85352c1971b490e889bc86c4f",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U1.png": "7fbc850fd9f60fcb36f914b0c9bfd7584fa11d3662b8c223e69a8ce6301f2b49",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U2.png": "85a01c0e9886854cc36508fa7e489651eafe2b2dbb703c9e349113a4b2fd1131",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U3.png": "f8f5fea67d8e2bedfeedf751ec0efbcfa3d04da9d0794603ec926da9f307d9f3",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U4.png": "03c6fc6aa9e2b93dc4b975f8a5373a1390e8c23e9d6d16b785614d4bd2410545",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U5.png": "f77ce3b465f39e21cd0edabfd33c57d03155c99966d1d110939532b6e632e02f",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U6.png": "69c9567b1d5d30351f316ce5babe8d8da763a84c54bba4bf58dff8a8cbf0dada",
+            "public/assets/sources/88751d5943ebf2480ea8bf37/timing-2.png": "f51333960bdd6aa5814edf0ada92623f38c5a8edc7e8e39f1b8f0ed9a0225e40"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "question_ids": [
+            "2021-22-wiso-p5-1",
+            "2021-22-wiso-p5-2",
+            "2021-22-wiso-p7-3",
+            "2021-22-wiso-p7-4",
+            "2021-22-wiso-p7-5",
+            "2021-22-wiso-p9-6",
+            "2021-22-wiso-p9-7",
+            "2021-22-wiso-p9-8",
+            "2021-22-wiso-p9-9",
+            "2021-22-wiso-p11-10",
+            "2021-22-wiso-p11-11",
+            "2021-22-wiso-p11-12",
+            "2021-22-wiso-p13-13",
+            "2021-22-wiso-p13-14",
+            "2021-22-wiso-p13-15",
+            "2021-22-wiso-p14-16",
+            "2021-22-wiso-p14-17",
+            "2021-22-wiso-p15-18",
+            "2021-22-wiso-p4-U1",
+            "2021-22-wiso-p6-U2",
+            "2021-22-wiso-p8-U3",
+            "2021-22-wiso-p10-U4",
+            "2021-22-wiso-p12-U5",
+            "2021-22-wiso-p14-U6"
+          ],
+          "question_revision": "2m.1.0-9a24a85a9b53",
+          "official_answer_revision": "2021-22-wiso-2f.1.0-9530561566e5",
+          "official_solution_revision": "2021-22-wiso-2f.1.0-9530561566e5",
+          "basis": "All cached pages/headings/ownership and final original question/solution crops inspected; unique deterministic official answers required.",
+          "source_sha256": "88751d5943ebf2480ea8bf3782018289033be52589e9b5b1d58a2cd02d35a719"
+        }
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-09-29T17:46:34.303364+00:00"
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-09-29T17:46:52.567223+00:00",
+          "evidence": {
+            "source_sha256": "88751d5943ebf2480ea8bf3782018289033be52589e9b5b1d58a2cd02d35a719",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/88751d5943ebf2480ea8bf3782018289033be52589e9b5b1d58a2cd02d35a719.json": "01bb3e37869d095d74a1e431975b2c5c4ba42434b32e7fc056985e4b5978854c"
+            }
+          }
+        },
+        {
+          "stage": "profile_matched",
+          "at": "2026-09-29T18:01:00.980453+00:00",
+          "evidence": {
+            "source_sha256": "88751d5943ebf2480ea8bf3782018289033be52589e9b5b1d58a2cd02d35a719",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/winter2021_22_wiso.json": "531f82f2823e01ad305376fbd1b1fb4686531772355f6de803afd297257db797"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "profile_id": "portrait-explicit-regions",
+            "validated_sources": [
+              "88751d5943ebf2480ea8bf3782018289033be52589e9b5b1d58a2cd02d35a719"
+            ]
+          }
+        },
+        {
+          "stage": "layout_validated",
+          "at": "2026-09-29T18:01:01.578153+00:00",
+          "evidence": {
+            "source_sha256": "88751d5943ebf2480ea8bf3782018289033be52589e9b5b1d58a2cd02d35a719",
+            "result": "passed",
+            "artifacts": {
+              "docs/evidence/phase2f/2021-22-wiso/layout-validation.json": "916f239b00f397f694d9235545a08bbee84e7d3aee0a0c70674e3b50a161f57e"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "preview_ready",
+          "at": "2026-09-29T18:01:05.910273+00:00",
+          "evidence": {
+            "source_sha256": "88751d5943ebf2480ea8bf3782018289033be52589e9b5b1d58a2cd02d35a719",
+            "result": "passed",
+            "artifacts": {
+              "docs/evidence/phase2f/2021-22-wiso/preview-manifest.json": "19e79c91ccf7d4c53ed1663453c571c6292db32d4edff65f0c6cda6a50896921",
+              "docs/evidence/phase2f/2021-22-wiso/index.html": "1103d10fa3d884bf6a351e89169936eb18d092085cdeff92fc6180bbe024f802",
+              "docs/evidence/phase2f/2021-22-wiso/layout-validation.json": "916f239b00f397f694d9235545a08bbee84e7d3aee0a0c70674e3b50a161f57e"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "formal_segmented",
+          "at": "2026-09-29T18:01:11.370291+00:00",
+          "evidence": {
+            "source_sha256": "88751d5943ebf2480ea8bf3782018289033be52589e9b5b1d58a2cd02d35a719",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2021_22_winter_wiso_segmented.json": "258a0b6181928c9b299bf40b227472064e4961cbaf697977c876d638b95b9d6a",
+              "public/data/2021_22_winter_wiso_segmented.json": "258a0b6181928c9b299bf40b227472064e4961cbaf697977c876d638b95b9d6a"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "answers_extracted",
+          "at": "2026-09-29T18:03:48.252751+00:00",
+          "evidence": {
+            "source_sha256": "88751d5943ebf2480ea8bf3782018289033be52589e9b5b1d58a2cd02d35a719",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2021_22_winter_wiso_answers.json": "ce3b1bc110947e5b4930efb6c158d6a1b28f76be0b7bdab6d9432d310c7d6918",
+              "public/data/2021_22_winter_wiso_answers.json": "ce3b1bc110947e5b4930efb6c158d6a1b28f76be0b7bdab6d9432d310c7d6918",
+              "data/exams/2021_22_winter_wiso_u_solutions.json": "65e5e28a8e31d98e0c9d37c5629ec969ee601db551adf4a1adc333ee5245e55a",
+              "public/data/2021_22_winter_wiso_u_solutions.json": "65e5e28a8e31d98e0c9d37c5629ec969ee601db551adf4a1adc333ee5245e55a"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "validated",
+          "at": "2026-09-29T18:03:48.555433+00:00",
+          "evidence": {
+            "source_sha256": "88751d5943ebf2480ea8bf3782018289033be52589e9b5b1d58a2cd02d35a719",
+            "result": "passed",
+            "artifacts": {
+              "public/data/2021_22_winter_wiso_segmented.json": "258a0b6181928c9b299bf40b227472064e4961cbaf697977c876d638b95b9d6a",
+              "public/data/2021_22_winter_wiso_answers.json": "ce3b1bc110947e5b4930efb6c158d6a1b28f76be0b7bdab6d9432d310c7d6918",
+              "public/data/2021_22_winter_wiso_u_solutions.json": "65e5e28a8e31d98e0c9d37c5629ec969ee601db551adf4a1adc333ee5245e55a",
+              "docs/evidence/phase2f/2021-22-wiso/answer-coverage.json": "851aba812852743a1f7fa35cb31252bd64735be246beb785927e6eac6e2fb9a3"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "question_revision": "2m.1.0-9a24a85a9b53",
+            "official_answer_revision": "2021-22-wiso-2f.1.0-9530561566e5",
+            "question_ids": [
+              "2021-22-wiso-p5-1",
+              "2021-22-wiso-p5-2",
+              "2021-22-wiso-p7-3",
+              "2021-22-wiso-p7-4",
+              "2021-22-wiso-p7-5",
+              "2021-22-wiso-p9-6",
+              "2021-22-wiso-p9-7",
+              "2021-22-wiso-p9-8",
+              "2021-22-wiso-p9-9",
+              "2021-22-wiso-p11-10",
+              "2021-22-wiso-p11-11",
+              "2021-22-wiso-p11-12",
+              "2021-22-wiso-p13-13",
+              "2021-22-wiso-p13-14",
+              "2021-22-wiso-p13-15",
+              "2021-22-wiso-p14-16",
+              "2021-22-wiso-p14-17",
+              "2021-22-wiso-p15-18",
+              "2021-22-wiso-p4-U1",
+              "2021-22-wiso-p6-U2",
+              "2021-22-wiso-p8-U3",
+              "2021-22-wiso-p10-U4",
+              "2021-22-wiso-p12-U5",
+              "2021-22-wiso-p14-U6"
+            ]
+          }
+        },
+        {
+          "stage": "production",
+          "at": "2026-09-29T18:13:02.054453+00:00",
+          "evidence": {
+            "result": "passed",
+            "artifacts": {
+              "public/data/2021_22_winter_wiso_segmented.json": "258a0b6181928c9b299bf40b227472064e4961cbaf697977c876d638b95b9d6a",
+              "public/data/2021_22_winter_wiso_answers.json": "ce3b1bc110947e5b4930efb6c158d6a1b28f76be0b7bdab6d9432d310c7d6918",
+              "public/data/2021_22_winter_wiso_u_solutions.json": "65e5e28a8e31d98e0c9d37c5629ec969ee601db551adf4a1adc333ee5245e55a",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q01.png": "4dd23ed7a351547694ce433956b1ae517f0e9ee08d9cb0d88c44ef383fe162d1",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q02.png": "46cb2cc3be052b2ae979fa1b960f4f71124564ac30cc7d289dc7ae85a612dbc6",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q03.png": "1534ed25eeea67ae79a77d9c27d235bb9c3b50ae8080999fd9dc953e05244eff",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q04.png": "cfd45f9c9736077fe914322ca851f79164de23ac8134fa866682e0ff96fd6c10",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q05.png": "6646cc3e7823d13b069f984bd25aaf37ce40ee5067c8475521c51f45d163595b",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q06.png": "5b02fb24aec063e522e63435ebb5068672a49b036218c9e4025c01faf240b573",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q07.png": "b2b2526bd61a69425ce107a5b6538d66086dfa5d605cb91d35a109827c9563c4",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q08.png": "c27289443c32e33d5d2e3aa5ee8d2561cf85feb8d7db70712fc1049ac4c2f5bd",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q09.png": "c43bb5aa34d7f06f509537ea13c057528577577aa9d22ad6d1731b47cc1deae0",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q10.png": "96f2cd3de2447de0562f4c17edd7a23f2a47a18efd4537ed2e9451c0ec418c1c",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q11.png": "2cee68966c216d1a5742b7521d3cbf7adfea3265bcbe278920f4ec992ca175fd",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q12.png": "2dfe4a4d9cbff6e6be2374f58c17d7cf59959064487d472ff9d20ed89f5d36c7",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q13.png": "7cae6eed0caa97ab0eb1c03247e2d30a8c8feb64d906dc81499aa2156221ab97",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q14.png": "67c31fde3ac673ddc6ec06849b6b832d71038a373d76a12712e8c6298419e1e9",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q15.png": "0f2ca6e8d6fe587e267fae172dba8635246854940bab74ed9e661ba8ee614f85",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q16.png": "0b2cde310c8ec28f79603ea3bb241a48c3d3020645b3d9a856acb8f65433fe6b",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q17.png": "01b4b99d4a015f8646bb6d82170a71b83cfc88cd548f13472dacf079b5f2db92",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q18.png": "99c44f3198f62fa01cd354cf65d8d7fc535dbca85352c1971b490e889bc86c4f",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U1.png": "7fbc850fd9f60fcb36f914b0c9bfd7584fa11d3662b8c223e69a8ce6301f2b49",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U2.png": "85a01c0e9886854cc36508fa7e489651eafe2b2dbb703c9e349113a4b2fd1131",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U3.png": "f8f5fea67d8e2bedfeedf751ec0efbcfa3d04da9d0794603ec926da9f307d9f3",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U4.png": "03c6fc6aa9e2b93dc4b975f8a5373a1390e8c23e9d6d16b785614d4bd2410545",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U5.png": "f77ce3b465f39e21cd0edabfd33c57d03155c99966d1d110939532b6e632e02f",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U6.png": "69c9567b1d5d30351f316ce5babe8d8da763a84c54bba4bf58dff8a8cbf0dada",
+              "public/assets/sources/88751d5943ebf2480ea8bf37/timing-2.png": "f51333960bdd6aa5814edf0ada92623f38c5a8edc7e8e39f1b8f0ed9a0225e40"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "question_ids": [
+              "2021-22-wiso-p5-1",
+              "2021-22-wiso-p5-2",
+              "2021-22-wiso-p7-3",
+              "2021-22-wiso-p7-4",
+              "2021-22-wiso-p7-5",
+              "2021-22-wiso-p9-6",
+              "2021-22-wiso-p9-7",
+              "2021-22-wiso-p9-8",
+              "2021-22-wiso-p9-9",
+              "2021-22-wiso-p11-10",
+              "2021-22-wiso-p11-11",
+              "2021-22-wiso-p11-12",
+              "2021-22-wiso-p13-13",
+              "2021-22-wiso-p13-14",
+              "2021-22-wiso-p13-15",
+              "2021-22-wiso-p14-16",
+              "2021-22-wiso-p14-17",
+              "2021-22-wiso-p15-18",
+              "2021-22-wiso-p4-U1",
+              "2021-22-wiso-p6-U2",
+              "2021-22-wiso-p8-U3",
+              "2021-22-wiso-p10-U4",
+              "2021-22-wiso-p12-U5",
+              "2021-22-wiso-p14-U6"
+            ],
+            "question_revision": "2m.1.0-9a24a85a9b53",
+            "official_answer_revision": "2021-22-wiso-2f.1.0-9530561566e5",
+            "official_solution_revision": "2021-22-wiso-2f.1.0-9530561566e5",
+            "basis": "All cached pages/headings/ownership and final original question/solution crops inspected; unique deterministic official answers required.",
+            "source_sha256": "88751d5943ebf2480ea8bf3782018289033be52589e9b5b1d58a2cd02d35a719"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "src-1f660bb1374b59df761fe329",
+      "exam": "2021-22-winter",
+      "module": "wiso",
+      "source_type": "solution_pdf",
+      "filename": "2021_22 Winter/21_22 Lösung.pdf",
+      "sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+      "version": 1,
+      "status": "production",
+      "layout_profile": "portrait-explicit-regions@2m.1.0-9a24a85a9b53",
+      "answer_profile": "official-ring-grid@2021-22-wiso-2f.1.0-9530561566e5",
+      "supersedes_source_id": null,
+      "created_at": "2026-09-29T17:46:34.312864+00:00",
+      "identity_migration": null,
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23.json": "3e397b631b4fc0e609bc27d84f4e0e0012473735f1ad9693acfc17962c061e9d"
+          }
+        },
+        "profile_matched": {
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/winter2021_22_wiso_official.json": "2befa436f3694c563d374c6325c439535d1b013f9a145e45cae0417e9728bda3"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "layout_validated": {
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/winter2021_22_wiso_official.json": "2befa436f3694c563d374c6325c439535d1b013f9a145e45cae0417e9728bda3",
+            "public/data/2021_22_winter_wiso_segmented.json": "258a0b6181928c9b299bf40b227472064e4961cbaf697977c876d638b95b9d6a"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "preview_ready": {
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/winter2021_22_wiso_official.json": "2befa436f3694c563d374c6325c439535d1b013f9a145e45cae0417e9728bda3",
+            "public/data/2021_22_winter_wiso_segmented.json": "258a0b6181928c9b299bf40b227472064e4961cbaf697977c876d638b95b9d6a"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "formal_segmented": {
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/winter2021_22_wiso_official.json": "2befa436f3694c563d374c6325c439535d1b013f9a145e45cae0417e9728bda3",
+            "public/data/2021_22_winter_wiso_segmented.json": "258a0b6181928c9b299bf40b227472064e4961cbaf697977c876d638b95b9d6a"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "answers_extracted": {
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2021_22_winter_wiso_answers.json": "ce3b1bc110947e5b4930efb6c158d6a1b28f76be0b7bdab6d9432d310c7d6918",
+            "public/data/2021_22_winter_wiso_answers.json": "ce3b1bc110947e5b4930efb6c158d6a1b28f76be0b7bdab6d9432d310c7d6918",
+            "data/exams/2021_22_winter_wiso_u_solutions.json": "65e5e28a8e31d98e0c9d37c5629ec969ee601db551adf4a1adc333ee5245e55a",
+            "public/data/2021_22_winter_wiso_u_solutions.json": "65e5e28a8e31d98e0c9d37c5629ec969ee601db551adf4a1adc333ee5245e55a"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "validated": {
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+          "result": "passed",
+          "artifacts": {
+            "public/data/2021_22_winter_wiso_segmented.json": "258a0b6181928c9b299bf40b227472064e4961cbaf697977c876d638b95b9d6a",
+            "public/data/2021_22_winter_wiso_answers.json": "ce3b1bc110947e5b4930efb6c158d6a1b28f76be0b7bdab6d9432d310c7d6918",
+            "public/data/2021_22_winter_wiso_u_solutions.json": "65e5e28a8e31d98e0c9d37c5629ec969ee601db551adf4a1adc333ee5245e55a",
+            "docs/evidence/phase2f/2021-22-wiso/answer-coverage.json": "851aba812852743a1f7fa35cb31252bd64735be246beb785927e6eac6e2fb9a3"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "question_revision": "2m.1.0-9a24a85a9b53",
+          "official_answer_revision": "2021-22-wiso-2f.1.0-9530561566e5",
+          "question_ids": [
+            "2021-22-wiso-p5-1",
+            "2021-22-wiso-p5-2",
+            "2021-22-wiso-p7-3",
+            "2021-22-wiso-p7-4",
+            "2021-22-wiso-p7-5",
+            "2021-22-wiso-p9-6",
+            "2021-22-wiso-p9-7",
+            "2021-22-wiso-p9-8",
+            "2021-22-wiso-p9-9",
+            "2021-22-wiso-p11-10",
+            "2021-22-wiso-p11-11",
+            "2021-22-wiso-p11-12",
+            "2021-22-wiso-p13-13",
+            "2021-22-wiso-p13-14",
+            "2021-22-wiso-p13-15",
+            "2021-22-wiso-p14-16",
+            "2021-22-wiso-p14-17",
+            "2021-22-wiso-p15-18",
+            "2021-22-wiso-p4-U1",
+            "2021-22-wiso-p6-U2",
+            "2021-22-wiso-p8-U3",
+            "2021-22-wiso-p10-U4",
+            "2021-22-wiso-p12-U5",
+            "2021-22-wiso-p14-U6"
+          ]
+        },
+        "production": {
+          "result": "passed",
+          "artifacts": {
+            "public/data/2021_22_winter_wiso_segmented.json": "258a0b6181928c9b299bf40b227472064e4961cbaf697977c876d638b95b9d6a",
+            "public/data/2021_22_winter_wiso_answers.json": "ce3b1bc110947e5b4930efb6c158d6a1b28f76be0b7bdab6d9432d310c7d6918",
+            "public/data/2021_22_winter_wiso_u_solutions.json": "65e5e28a8e31d98e0c9d37c5629ec969ee601db551adf4a1adc333ee5245e55a",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q01.png": "4dd23ed7a351547694ce433956b1ae517f0e9ee08d9cb0d88c44ef383fe162d1",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q02.png": "46cb2cc3be052b2ae979fa1b960f4f71124564ac30cc7d289dc7ae85a612dbc6",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q03.png": "1534ed25eeea67ae79a77d9c27d235bb9c3b50ae8080999fd9dc953e05244eff",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q04.png": "cfd45f9c9736077fe914322ca851f79164de23ac8134fa866682e0ff96fd6c10",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q05.png": "6646cc3e7823d13b069f984bd25aaf37ce40ee5067c8475521c51f45d163595b",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q06.png": "5b02fb24aec063e522e63435ebb5068672a49b036218c9e4025c01faf240b573",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q07.png": "b2b2526bd61a69425ce107a5b6538d66086dfa5d605cb91d35a109827c9563c4",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q08.png": "c27289443c32e33d5d2e3aa5ee8d2561cf85feb8d7db70712fc1049ac4c2f5bd",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q09.png": "c43bb5aa34d7f06f509537ea13c057528577577aa9d22ad6d1731b47cc1deae0",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q10.png": "96f2cd3de2447de0562f4c17edd7a23f2a47a18efd4537ed2e9451c0ec418c1c",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q11.png": "2cee68966c216d1a5742b7521d3cbf7adfea3265bcbe278920f4ec992ca175fd",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q12.png": "2dfe4a4d9cbff6e6be2374f58c17d7cf59959064487d472ff9d20ed89f5d36c7",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q13.png": "7cae6eed0caa97ab0eb1c03247e2d30a8c8feb64d906dc81499aa2156221ab97",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q14.png": "67c31fde3ac673ddc6ec06849b6b832d71038a373d76a12712e8c6298419e1e9",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q15.png": "0f2ca6e8d6fe587e267fae172dba8635246854940bab74ed9e661ba8ee614f85",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q16.png": "0b2cde310c8ec28f79603ea3bb241a48c3d3020645b3d9a856acb8f65433fe6b",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q17.png": "01b4b99d4a015f8646bb6d82170a71b83cfc88cd548f13472dacf079b5f2db92",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q18.png": "99c44f3198f62fa01cd354cf65d8d7fc535dbca85352c1971b490e889bc86c4f",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U1.png": "7fbc850fd9f60fcb36f914b0c9bfd7584fa11d3662b8c223e69a8ce6301f2b49",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U2.png": "85a01c0e9886854cc36508fa7e489651eafe2b2dbb703c9e349113a4b2fd1131",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U3.png": "f8f5fea67d8e2bedfeedf751ec0efbcfa3d04da9d0794603ec926da9f307d9f3",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U4.png": "03c6fc6aa9e2b93dc4b975f8a5373a1390e8c23e9d6d16b785614d4bd2410545",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U5.png": "f77ce3b465f39e21cd0edabfd33c57d03155c99966d1d110939532b6e632e02f",
+            "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U6.png": "69c9567b1d5d30351f316ce5babe8d8da763a84c54bba4bf58dff8a8cbf0dada",
+            "public/assets/sources/88751d5943ebf2480ea8bf37/timing-2.png": "f51333960bdd6aa5814edf0ada92623f38c5a8edc7e8e39f1b8f0ed9a0225e40"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "question_ids": [
+            "2021-22-wiso-p5-1",
+            "2021-22-wiso-p5-2",
+            "2021-22-wiso-p7-3",
+            "2021-22-wiso-p7-4",
+            "2021-22-wiso-p7-5",
+            "2021-22-wiso-p9-6",
+            "2021-22-wiso-p9-7",
+            "2021-22-wiso-p9-8",
+            "2021-22-wiso-p9-9",
+            "2021-22-wiso-p11-10",
+            "2021-22-wiso-p11-11",
+            "2021-22-wiso-p11-12",
+            "2021-22-wiso-p13-13",
+            "2021-22-wiso-p13-14",
+            "2021-22-wiso-p13-15",
+            "2021-22-wiso-p14-16",
+            "2021-22-wiso-p14-17",
+            "2021-22-wiso-p15-18",
+            "2021-22-wiso-p4-U1",
+            "2021-22-wiso-p6-U2",
+            "2021-22-wiso-p8-U3",
+            "2021-22-wiso-p10-U4",
+            "2021-22-wiso-p12-U5",
+            "2021-22-wiso-p14-U6"
+          ],
+          "question_revision": "2m.1.0-9a24a85a9b53",
+          "official_answer_revision": "2021-22-wiso-2f.1.0-9530561566e5",
+          "official_solution_revision": "2021-22-wiso-2f.1.0-9530561566e5",
+          "basis": "All cached pages/headings/ownership and final original question/solution crops inspected; unique deterministic official answers required.",
+          "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23"
+        }
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-09-29T17:46:34.312864+00:00"
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-09-29T17:46:58.219003+00:00",
+          "evidence": {
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23.json": "3e397b631b4fc0e609bc27d84f4e0e0012473735f1ad9693acfc17962c061e9d"
+            }
+          }
+        },
+        {
+          "stage": "profile_matched",
+          "at": "2026-09-29T18:03:45.754939+00:00",
+          "evidence": {
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/winter2021_22_wiso_official.json": "2befa436f3694c563d374c6325c439535d1b013f9a145e45cae0417e9728bda3"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "layout_validated",
+          "at": "2026-09-29T18:03:45.897152+00:00",
+          "evidence": {
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/winter2021_22_wiso_official.json": "2befa436f3694c563d374c6325c439535d1b013f9a145e45cae0417e9728bda3",
+              "public/data/2021_22_winter_wiso_segmented.json": "258a0b6181928c9b299bf40b227472064e4961cbaf697977c876d638b95b9d6a"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "preview_ready",
+          "at": "2026-09-29T18:03:46.041983+00:00",
+          "evidence": {
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/winter2021_22_wiso_official.json": "2befa436f3694c563d374c6325c439535d1b013f9a145e45cae0417e9728bda3",
+              "public/data/2021_22_winter_wiso_segmented.json": "258a0b6181928c9b299bf40b227472064e4961cbaf697977c876d638b95b9d6a"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "formal_segmented",
+          "at": "2026-09-29T18:03:46.361807+00:00",
+          "evidence": {
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/winter2021_22_wiso_official.json": "2befa436f3694c563d374c6325c439535d1b013f9a145e45cae0417e9728bda3",
+              "public/data/2021_22_winter_wiso_segmented.json": "258a0b6181928c9b299bf40b227472064e4961cbaf697977c876d638b95b9d6a"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "answers_extracted",
+          "at": "2026-09-29T18:03:48.394190+00:00",
+          "evidence": {
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2021_22_winter_wiso_answers.json": "ce3b1bc110947e5b4930efb6c158d6a1b28f76be0b7bdab6d9432d310c7d6918",
+              "public/data/2021_22_winter_wiso_answers.json": "ce3b1bc110947e5b4930efb6c158d6a1b28f76be0b7bdab6d9432d310c7d6918",
+              "data/exams/2021_22_winter_wiso_u_solutions.json": "65e5e28a8e31d98e0c9d37c5629ec969ee601db551adf4a1adc333ee5245e55a",
+              "public/data/2021_22_winter_wiso_u_solutions.json": "65e5e28a8e31d98e0c9d37c5629ec969ee601db551adf4a1adc333ee5245e55a"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "validated",
+          "at": "2026-09-29T18:03:48.714082+00:00",
+          "evidence": {
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+            "result": "passed",
+            "artifacts": {
+              "public/data/2021_22_winter_wiso_segmented.json": "258a0b6181928c9b299bf40b227472064e4961cbaf697977c876d638b95b9d6a",
+              "public/data/2021_22_winter_wiso_answers.json": "ce3b1bc110947e5b4930efb6c158d6a1b28f76be0b7bdab6d9432d310c7d6918",
+              "public/data/2021_22_winter_wiso_u_solutions.json": "65e5e28a8e31d98e0c9d37c5629ec969ee601db551adf4a1adc333ee5245e55a",
+              "docs/evidence/phase2f/2021-22-wiso/answer-coverage.json": "851aba812852743a1f7fa35cb31252bd64735be246beb785927e6eac6e2fb9a3"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "question_revision": "2m.1.0-9a24a85a9b53",
+            "official_answer_revision": "2021-22-wiso-2f.1.0-9530561566e5",
+            "question_ids": [
+              "2021-22-wiso-p5-1",
+              "2021-22-wiso-p5-2",
+              "2021-22-wiso-p7-3",
+              "2021-22-wiso-p7-4",
+              "2021-22-wiso-p7-5",
+              "2021-22-wiso-p9-6",
+              "2021-22-wiso-p9-7",
+              "2021-22-wiso-p9-8",
+              "2021-22-wiso-p9-9",
+              "2021-22-wiso-p11-10",
+              "2021-22-wiso-p11-11",
+              "2021-22-wiso-p11-12",
+              "2021-22-wiso-p13-13",
+              "2021-22-wiso-p13-14",
+              "2021-22-wiso-p13-15",
+              "2021-22-wiso-p14-16",
+              "2021-22-wiso-p14-17",
+              "2021-22-wiso-p15-18",
+              "2021-22-wiso-p4-U1",
+              "2021-22-wiso-p6-U2",
+              "2021-22-wiso-p8-U3",
+              "2021-22-wiso-p10-U4",
+              "2021-22-wiso-p12-U5",
+              "2021-22-wiso-p14-U6"
+            ]
+          }
+        },
+        {
+          "stage": "production",
+          "at": "2026-09-29T18:13:02.063582+00:00",
+          "evidence": {
+            "result": "passed",
+            "artifacts": {
+              "public/data/2021_22_winter_wiso_segmented.json": "258a0b6181928c9b299bf40b227472064e4961cbaf697977c876d638b95b9d6a",
+              "public/data/2021_22_winter_wiso_answers.json": "ce3b1bc110947e5b4930efb6c158d6a1b28f76be0b7bdab6d9432d310c7d6918",
+              "public/data/2021_22_winter_wiso_u_solutions.json": "65e5e28a8e31d98e0c9d37c5629ec969ee601db551adf4a1adc333ee5245e55a",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q01.png": "4dd23ed7a351547694ce433956b1ae517f0e9ee08d9cb0d88c44ef383fe162d1",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q02.png": "46cb2cc3be052b2ae979fa1b960f4f71124564ac30cc7d289dc7ae85a612dbc6",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q03.png": "1534ed25eeea67ae79a77d9c27d235bb9c3b50ae8080999fd9dc953e05244eff",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q04.png": "cfd45f9c9736077fe914322ca851f79164de23ac8134fa866682e0ff96fd6c10",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q05.png": "6646cc3e7823d13b069f984bd25aaf37ce40ee5067c8475521c51f45d163595b",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q06.png": "5b02fb24aec063e522e63435ebb5068672a49b036218c9e4025c01faf240b573",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q07.png": "b2b2526bd61a69425ce107a5b6538d66086dfa5d605cb91d35a109827c9563c4",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q08.png": "c27289443c32e33d5d2e3aa5ee8d2561cf85feb8d7db70712fc1049ac4c2f5bd",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q09.png": "c43bb5aa34d7f06f509537ea13c057528577577aa9d22ad6d1731b47cc1deae0",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q10.png": "96f2cd3de2447de0562f4c17edd7a23f2a47a18efd4537ed2e9451c0ec418c1c",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q11.png": "2cee68966c216d1a5742b7521d3cbf7adfea3265bcbe278920f4ec992ca175fd",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q12.png": "2dfe4a4d9cbff6e6be2374f58c17d7cf59959064487d472ff9d20ed89f5d36c7",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q13.png": "7cae6eed0caa97ab0eb1c03247e2d30a8c8feb64d906dc81499aa2156221ab97",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q14.png": "67c31fde3ac673ddc6ec06849b6b832d71038a373d76a12712e8c6298419e1e9",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q15.png": "0f2ca6e8d6fe587e267fae172dba8635246854940bab74ed9e661ba8ee614f85",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q16.png": "0b2cde310c8ec28f79603ea3bb241a48c3d3020645b3d9a856acb8f65433fe6b",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q17.png": "01b4b99d4a015f8646bb6d82170a71b83cfc88cd548f13472dacf079b5f2db92",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/Q18.png": "99c44f3198f62fa01cd354cf65d8d7fc535dbca85352c1971b490e889bc86c4f",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U1.png": "7fbc850fd9f60fcb36f914b0c9bfd7584fa11d3662b8c223e69a8ce6301f2b49",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U2.png": "85a01c0e9886854cc36508fa7e489651eafe2b2dbb703c9e349113a4b2fd1131",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U3.png": "f8f5fea67d8e2bedfeedf751ec0efbcfa3d04da9d0794603ec926da9f307d9f3",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U4.png": "03c6fc6aa9e2b93dc4b975f8a5373a1390e8c23e9d6d16b785614d4bd2410545",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U5.png": "f77ce3b465f39e21cd0edabfd33c57d03155c99966d1d110939532b6e632e02f",
+              "public/assets/official/2021-22-wiso-2f.1.0-9530561566e5/U6.png": "69c9567b1d5d30351f316ce5babe8d8da763a84c54bba4bf58dff8a8cbf0dada",
+              "public/assets/sources/88751d5943ebf2480ea8bf37/timing-2.png": "f51333960bdd6aa5814edf0ada92623f38c5a8edc7e8e39f1b8f0ed9a0225e40"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "question_ids": [
+              "2021-22-wiso-p5-1",
+              "2021-22-wiso-p5-2",
+              "2021-22-wiso-p7-3",
+              "2021-22-wiso-p7-4",
+              "2021-22-wiso-p7-5",
+              "2021-22-wiso-p9-6",
+              "2021-22-wiso-p9-7",
+              "2021-22-wiso-p9-8",
+              "2021-22-wiso-p9-9",
+              "2021-22-wiso-p11-10",
+              "2021-22-wiso-p11-11",
+              "2021-22-wiso-p11-12",
+              "2021-22-wiso-p13-13",
+              "2021-22-wiso-p13-14",
+              "2021-22-wiso-p13-15",
+              "2021-22-wiso-p14-16",
+              "2021-22-wiso-p14-17",
+              "2021-22-wiso-p15-18",
+              "2021-22-wiso-p4-U1",
+              "2021-22-wiso-p6-U2",
+              "2021-22-wiso-p8-U3",
+              "2021-22-wiso-p10-U4",
+              "2021-22-wiso-p12-U5",
+              "2021-22-wiso-p14-U6"
+            ],
+            "question_revision": "2m.1.0-9a24a85a9b53",
+            "official_answer_revision": "2021-22-wiso-2f.1.0-9530561566e5",
+            "official_solution_revision": "2021-22-wiso-2f.1.0-9530561566e5",
+            "basis": "All cached pages/headings/ownership and final original question/solution crops inspected; unique deterministic official answers required.",
+            "source_sha256": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23"
+          }
+        }
+      ]
+    },
+    {
+      "exam": "2021-22-winter",
+      "module": "funktionsanalyse",
+      "source_type": "question_pdf",
+      "filename": "2021_22 Winter/21_22 Funktionsanalyse.pdf",
+      "sha256": "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd",
+      "source_id": "src-91a906ddfef625d6c68de391",
+      "version": 2,
+      "status": "answers_extracted",
+      "layout_profile": "portrait-explicit-regions@2m.1.1-4c9e78a33acf",
+      "answer_profile": "ring-annulus-explicit@2f.1.0",
+      "supersedes_source_id": null,
+      "created_at": "2026-09-29T18:09:50.264051+00:00",
+      "identity_migration": null,
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd.json": "4f74589abc67b5c8a634fff8d2c4aa0197524d7b5bc163dc076a86822e2172fa"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "profile_matched": {
+          "source_sha256": "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/winter2021_22_fa_confirmed.json": "32caa19f59395f6e74499895e7c850f0c2e9b1c6a1a54633087c6894c97256c4"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "profile_id": "portrait-explicit-regions",
+          "validated_sources": [
+            "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd"
+          ]
+        },
+        "layout_validated": {
+          "source_sha256": "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd",
+          "result": "passed",
+          "artifacts": {
+            "docs/evidence/phase2f/2021-22-fa-r2/layout-validation.json": "969fe0b9a1b5fe89364fa0d743154ff1b58e469956d219aa06ea9635b02f0c13"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "preview_ready": {
+          "source_sha256": "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd",
+          "result": "passed",
+          "artifacts": {
+            "docs/evidence/phase2f/2021-22-fa-r2/preview-manifest.json": "fcf4256acb1527048fd5b825a688a4583dbceee466ca713962401262f41fab43",
+            "docs/evidence/phase2f/2021-22-fa-r2/index.html": "aafb16f35fa87109584a22fdc9899569cf660c2df718c9682838527faa9d8502",
+            "docs/evidence/phase2f/2021-22-fa-r2/layout-validation.json": "969fe0b9a1b5fe89364fa0d743154ff1b58e469956d219aa06ea9635b02f0c13"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "formal_segmented": {
+          "source_sha256": "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2021_22_winter_funktionsanalyse_segmented.json": "6c7d8e27d4f5102c0f884c9a938b4a1cb9e5be1046fb59dccba5e9167f5d00a3",
+            "public/data/2021_22_winter_funktionsanalyse_segmented.json": "6c7d8e27d4f5102c0f884c9a938b4a1cb9e5be1046fb59dccba5e9167f5d00a3"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "answers_extracted": {
+          "source_sha256": "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2021_22_winter_funktionsanalyse_answers.json": "0c80b5d82ca98594eadd4f3f17655efdeb6ea0216e609d292c3847ff1ce5c97b",
+            "public/data/2021_22_winter_funktionsanalyse_answers.json": "0c80b5d82ca98594eadd4f3f17655efdeb6ea0216e609d292c3847ff1ce5c97b",
+            "data/exams/2021_22_winter_funktionsanalyse_u_solutions.json": "73e4412611ba7a556492a53f63973f6f53b1c689b85e54605b418902b3510f44",
+            "public/data/2021_22_winter_funktionsanalyse_u_solutions.json": "73e4412611ba7a556492a53f63973f6f53b1c689b85e54605b418902b3510f44"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        }
+      },
+      "profile_revision_of_source_id": "src-de04964332d443aa97b96d78",
+      "profile_confirmation": {
+        "proposal_hash": "70ea5ae9f99b5f09f89ac3a276ad04a13f0a20a183689202ceec95abb491ada2",
+        "proposal_path": "docs/evidence/winter2021-22/fa-bounds/proposal.json",
+        "proposal_sha256": "1ce3000ea96613d1774e841cebf82823273ead9755a28be281e071661aec0efc",
+        "confirmation_path": "docs/evidence/winter2021-22/fa-bounds/confirmation.json",
+        "confirmation_sha256": "5afc91ad5383fe7c89bcbd1f4168f0bec83993d93f59438dc0d0ab9035c7ba8b"
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-09-29T18:09:50.264051+00:00",
+          "change_reason": "manual_attachment_bounds_review",
+          "previous_source_id": "src-de04964332d443aa97b96d78",
+          "evidence": {
+            "proposal_hash": "70ea5ae9f99b5f09f89ac3a276ad04a13f0a20a183689202ceec95abb491ada2",
+            "proposal_path": "docs/evidence/winter2021-22/fa-bounds/proposal.json",
+            "proposal_sha256": "1ce3000ea96613d1774e841cebf82823273ead9755a28be281e071661aec0efc",
+            "confirmation_path": "docs/evidence/winter2021-22/fa-bounds/confirmation.json",
+            "confirmation_sha256": "5afc91ad5383fe7c89bcbd1f4168f0bec83993d93f59438dc0d0ab9035c7ba8b"
+          }
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-09-29T18:09:50.388282+00:00",
+          "evidence": {
+            "source_sha256": "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd.json": "4f74589abc67b5c8a634fff8d2c4aa0197524d7b5bc163dc076a86822e2172fa"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "profile_matched",
+          "at": "2026-09-29T18:09:50.695416+00:00",
+          "evidence": {
+            "source_sha256": "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/winter2021_22_fa_confirmed.json": "32caa19f59395f6e74499895e7c850f0c2e9b1c6a1a54633087c6894c97256c4"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "profile_id": "portrait-explicit-regions",
+            "validated_sources": [
+              "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd"
+            ]
+          }
+        },
+        {
+          "stage": "layout_validated",
+          "at": "2026-09-29T18:09:51.457796+00:00",
+          "evidence": {
+            "source_sha256": "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd",
+            "result": "passed",
+            "artifacts": {
+              "docs/evidence/phase2f/2021-22-fa-r2/layout-validation.json": "969fe0b9a1b5fe89364fa0d743154ff1b58e469956d219aa06ea9635b02f0c13"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "preview_ready",
+          "at": "2026-09-29T18:09:58.090116+00:00",
+          "evidence": {
+            "source_sha256": "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd",
+            "result": "passed",
+            "artifacts": {
+              "docs/evidence/phase2f/2021-22-fa-r2/preview-manifest.json": "fcf4256acb1527048fd5b825a688a4583dbceee466ca713962401262f41fab43",
+              "docs/evidence/phase2f/2021-22-fa-r2/index.html": "aafb16f35fa87109584a22fdc9899569cf660c2df718c9682838527faa9d8502",
+              "docs/evidence/phase2f/2021-22-fa-r2/layout-validation.json": "969fe0b9a1b5fe89364fa0d743154ff1b58e469956d219aa06ea9635b02f0c13"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "formal_segmented",
+          "at": "2026-09-29T18:10:05.869079+00:00",
+          "evidence": {
+            "source_sha256": "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2021_22_winter_funktionsanalyse_segmented.json": "6c7d8e27d4f5102c0f884c9a938b4a1cb9e5be1046fb59dccba5e9167f5d00a3",
+              "public/data/2021_22_winter_funktionsanalyse_segmented.json": "6c7d8e27d4f5102c0f884c9a938b4a1cb9e5be1046fb59dccba5e9167f5d00a3"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "answers_extracted",
+          "at": "2026-09-29T18:11:37.315390+00:00",
+          "evidence": {
+            "source_sha256": "ae47428288ba5c7832d2aa2ab3e975f24bc6910561bed3c80b100db9cd8e4bcd",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2021_22_winter_funktionsanalyse_answers.json": "0c80b5d82ca98594eadd4f3f17655efdeb6ea0216e609d292c3847ff1ce5c97b",
+              "public/data/2021_22_winter_funktionsanalyse_answers.json": "0c80b5d82ca98594eadd4f3f17655efdeb6ea0216e609d292c3847ff1ce5c97b",
+              "data/exams/2021_22_winter_funktionsanalyse_u_solutions.json": "73e4412611ba7a556492a53f63973f6f53b1c689b85e54605b418902b3510f44",
+              "public/data/2021_22_winter_funktionsanalyse_u_solutions.json": "73e4412611ba7a556492a53f63973f6f53b1c689b85e54605b418902b3510f44"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        }
+      ]
     }
   ]
 }

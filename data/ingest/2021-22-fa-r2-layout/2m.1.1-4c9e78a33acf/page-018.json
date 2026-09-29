@@ -1,0 +1,85 @@
+{
+  "key": "1bba4e7d0ff97c2ddaaaa5419f11c4ece447d5d4607188d656627cc96a94bdb4",
+  "record_hash": "13ff9cb6087a4e22544f2626cb1ff60ee8675ef955cbb776a53a868715676c93",
+  "record": {
+    "page": 18,
+    "geometry": [
+      595.0,
+      842.0
+    ],
+    "classification": "continuation_and_questions",
+    "classification_evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2021-22-fa-r2-p18-U4",
+        "number": "U4",
+        "bbox": [
+          34.911,
+          417.411,
+          77.411,
+          450.804
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U4 read on cached page 18",
+        "review_reasons": [],
+        "heading_pixel_sha256": "b96a86f195291f1489f26166829ef5b76c3dfa56b98a07f2120b8524535782b7"
+      }
+    ],
+    "regions": [
+      {
+        "page": 18,
+        "bbox": [
+          34.911,
+          417.411,
+          569.196,
+          816.607
+        ],
+        "role": "primary",
+        "owner": "2021-22-fa-r2-p18-U4",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      },
+      {
+        "page": 18,
+        "bbox": [
+          34.911,
+          13.661,
+          569.196,
+          411.339
+        ],
+        "role": "continuation",
+        "owner": "2021-22-fa-r2-p17-U3",
+        "evidence": "U3 response continuation and subpart4 with Ergebnis U3 above ruled U4 boundary."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U4",
+        "bbox": [
+          34.911,
+          417.411,
+          77.411,
+          450.804
+        ],
+        "pixel_sha256": "b96a86f195291f1489f26166829ef5b76c3dfa56b98a07f2120b8524535782b7",
+        "audited_pixel_sha256": "b96a86f195291f1489f26166829ef5b76c3dfa56b98a07f2120b8524535782b7"
+      },
+      {
+        "kind": "ownership",
+        "number": "U3",
+        "bbox": [
+          34.911,
+          13.661,
+          569.196,
+          411.339
+        ],
+        "pixel_sha256": "0ec794c9d606e3728aa841ee4a2dca3a5bbb47f6201421f585dae33705a84010",
+        "audited_pixel_sha256": "0ec794c9d606e3728aa841ee4a2dca3a5bbb47f6201421f585dae33705a84010"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

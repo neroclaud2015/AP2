@@ -1,0 +1,271 @@
+{
+  "scope": "2021-22-fa-r2",
+  "name": "2021_22_winter_funktionsanalyse",
+  "exam": "2021_22_winter",
+  "module": "Funktionsanalyse",
+  "version": "2m.1.0",
+  "profile_id": "official-ring-grid",
+  "source_hash": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+  "source_id": "src-cb0684fc8fc0b48839dc6ed8",
+  "question_source_id": "src-91a906ddfef625d6c68de391",
+  "solution_source_id": "src-cb0684fc8fc0b48839dc6ed8",
+  "validated_sources": [
+    "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23"
+  ],
+  "choice_page": 2,
+  "choice_count": 28,
+  "analysis_size": [
+    993,
+    1404
+  ],
+  "groups": [
+    [
+      1,
+      10,
+      149.94,
+      57.72,
+      399.04,
+      19.22,
+      -0.092,
+      372
+    ],
+    [
+      11,
+      10,
+      150.3,
+      57.73,
+      513.82,
+      19.21,
+      -0.086,
+      488
+    ],
+    [
+      21,
+      8,
+      150.68,
+      57.74,
+      629.0,
+      19.27,
+      -0.08,
+      603
+    ]
+  ],
+  "grid_crop": [
+    120,
+    370,
+    705,
+    717
+  ],
+  "ring_policy": {
+    "min_ring": 0.4,
+    "support": 0.83,
+    "possible_ring": 0.32,
+    "possible_support": 0.58,
+    "margin": 0.15,
+    "center": 0.1
+  },
+  "header_evidence": "Printed module title and individual Q column labels visually checked on cached original grid. Five rows measured from dot connected components, top-to-bottom 1..5. No semantic/OCR answer inference.",
+  "u_evidence": "Original raster solution headings and ruled boundaries individually inspected. Explicit zu U3 continuation included for FA. Whole-question self-assessment; no grading rubric inferred.",
+  "u_regions": {
+    "U1": {
+      "regions": [
+        {
+          "page": 10,
+          "bbox": [
+            25,
+            133,
+            575,
+            357
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 10,
+      "heading_box": [
+        30,
+        135,
+        95,
+        163
+      ],
+      "heading_pixel_sha256": "73ae21a9b34d2d7645ba69d0d36c2e9e63c37f7786f1d451d0e27735489592dd"
+    },
+    "U2": {
+      "regions": [
+        {
+          "page": 10,
+          "bbox": [
+            25,
+            361,
+            575,
+            578
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 10,
+      "heading_box": [
+        30,
+        363,
+        95,
+        391
+      ],
+      "heading_pixel_sha256": "8a2dd9aa438c5ead15761e716e0b8b9ca666cbe659f07860f7949ad28e4c13ff"
+    },
+    "U3": {
+      "regions": [
+        {
+          "page": 10,
+          "bbox": [
+            25,
+            582,
+            575,
+            795
+          ]
+        },
+        {
+          "page": 11,
+          "bbox": [
+            25,
+            34,
+            575,
+            232
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 10,
+      "heading_box": [
+        30,
+        584,
+        95,
+        612
+      ],
+      "heading_pixel_sha256": "c2f4166abad431f7ec695869f46a2a1b6ac92953d8009525856502a555c10c20"
+    },
+    "U4": {
+      "regions": [
+        {
+          "page": 11,
+          "bbox": [
+            25,
+            236,
+            575,
+            484
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 11,
+      "heading_box": [
+        30,
+        238,
+        95,
+        266
+      ],
+      "heading_pixel_sha256": "734dacac5f801a0d92ecd0970a1019e2934c8b28e7b61fb55a58e4d8f3c2eabb"
+    },
+    "U5": {
+      "regions": [
+        {
+          "page": 11,
+          "bbox": [
+            25,
+            488,
+            575,
+            794
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 11,
+      "heading_box": [
+        30,
+        490,
+        95,
+        518
+      ],
+      "heading_pixel_sha256": "1944f20444a985b4984d3ce183be3dbaf4a29193f67461dd85555cf264528589"
+    },
+    "U6": {
+      "regions": [
+        {
+          "page": 12,
+          "bbox": [
+            25,
+            135,
+            575,
+            796
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 12,
+      "heading_box": [
+        30,
+        137,
+        95,
+        165
+      ],
+      "heading_pixel_sha256": "844067609024015e887b17ad2ca7320e05bbee507b12701fef89f84989fae6ff"
+    },
+    "U7": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            25,
+            35,
+            575,
+            242
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 13,
+      "heading_box": [
+        30,
+        37,
+        95,
+        65
+      ],
+      "heading_pixel_sha256": "d54ec3d70c7aee5ec435be5cabcdb48781f41259bdaf73dd4ab16c5b9b4aa4bd"
+    },
+    "U8": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            25,
+            246,
+            575,
+            529
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 13,
+      "heading_box": [
+        30,
+        248,
+        95,
+        276
+      ],
+      "heading_pixel_sha256": "23f39751571cc56b4aa92772f12c2e426cfe75dde990e187ad27a3d9e29514ad"
+    }
+  },
+  "page_image_hashes": {
+    "2": "bb065614d42d88990320793e2049d28f0c5e55c98c05dfe7a7ced4710c74ec47",
+    "10": "a20b192a9dc2d5d2070e7698bffc8d79b6d88f9b19ba304f0a34311e6177b0ae",
+    "11": "61e96884aaf8b2ba35431592770cc5557e880c96142649f08297aa305e475fb9",
+    "12": "801c6924f7bfec29f5948575d2f0b3a759c299e5cf10aed6be3c196f0121de25",
+    "13": "606b9a43766f050b7d43de18052803a5c6a317bf8ca89515cd1b8aa3f0d53b88"
+  }
+}

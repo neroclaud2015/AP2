@@ -1,5 +1,9 @@
 # Current: Phase 2L — Sommer 2021 (2026-09-29)
 
+## Current: Winter 2021/22 (Phase 2M)
+
+AP36/36 MC28/28 U8/8 and WiSo24/24 MC18/18 U6/6 are Production. FA36/36 MC25/28 U8/8 awaits manual Q23/Q24/Q26 confirmation. Approved attachment bounds revision completed with old audit intact. New rendered80, old scans0, repeated12 steps skipped. See PHASE_2M_REPORT.md. Stop before Sommer2022.
+
 ## Manual confirmation completed — 2026-09-29
 
 User export validated against source, crop, parser and evidence hashes: FA Q4=1, FA Q23=2, WiSo Q18=4. All locked with manual_source_review. FA now 36 questions, MC28/28, U8/8; WiSo24 questions, MC18/18, U6/6. Both registered in production. Original detector outputs, crops and audit history retained. This promotion rendered0 pages and opened0 PDFs. Prior review statistics below describe the initial gate, not current status.

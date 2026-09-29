@@ -28,7 +28,12 @@ def immutable_save(path,value):
 def validate_confirmation(proposal,row):
  for key in ['proposal_hash','source_id','source_sha256','previous_profile_revision','new_profile_revision','config_sha256','evidence_hashes']:
   if row.get(key)!=proposal.get(key):raise ValueError('Confirmation evidence mismatch: '+key)
- if row.get('status')!='confirmed' or row.get('confirmation_method')!='manual_shared_region_review' or row.get('confirmed') is not True:raise ValueError('Explicit manual confirmation required')
+ method=proposal.get('confirmation_method','manual_shared_region_review')
+ if method=='manual_attachment_bounds_review':
+  from attachment_bounds_review import validate_bounds_proposal
+  validate_bounds_proposal(proposal)
+ elif method!='manual_shared_region_review':raise ValueError('Unknown confirmation method')
+ if row.get('status')!='confirmed' or row.get('confirmation_method')!=method or row.get('confirmed') is not True:raise ValueError('Explicit manual confirmation required')
  if row.get('references')!=proposal['references']:raise ValueError('Changed mapping needs a new reviewed proposal; cannot activate')
  try:stamp=datetime.fromisoformat(row['confirmed_at'].replace('Z','+00:00'))
  except (KeyError,TypeError,ValueError):raise ValueError('Confirmation timestamp required')
@@ -38,7 +43,7 @@ def validate_confirmation(proposal,row):
 def append_event(root,proposal,stage,evidence):
  registry=load_registry(root);source=next(x for x in registry['sources'] if x['source_id']==proposal['source_id'])
  if source['sha256']!=proposal['source_sha256'] or source['status']!='blocked':raise ValueError('Expected blocked source; never mutate production')
- event={'stage':stage,'proposal_hash':proposal['proposal_hash'],'previous_profile_revision':proposal['previous_profile_revision'],'new_profile_revision':proposal['new_profile_revision'],'supersedes_profile_revision':proposal['previous_profile_revision'],'change_reason':'manual_shared_region_review','evidence':evidence}
+ event={'stage':stage,'proposal_hash':proposal['proposal_hash'],'previous_profile_revision':proposal['previous_profile_revision'],'new_profile_revision':proposal['new_profile_revision'],'supersedes_profile_revision':proposal['previous_profile_revision'],'change_reason':proposal.get('confirmation_method','manual_shared_region_review'),'evidence':evidence}
  existing=[e for e in source['events'] if e.get('stage')==stage and e.get('proposal_hash')==proposal['proposal_hash']]
  if existing:
   if any({k:v for k,v in e.items() if k!='at'}!=event for e in existing):raise ValueError('Conflicting immutable event')

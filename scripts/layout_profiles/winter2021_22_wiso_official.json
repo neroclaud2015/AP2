@@ -1,0 +1,204 @@
+{
+  "scope": "2021-22-wiso",
+  "name": "2021_22_winter_wiso",
+  "exam": "2021_22_winter",
+  "module": "WiSo",
+  "version": "2m.1.0",
+  "profile_id": "official-ring-grid",
+  "source_hash": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+  "source_id": "src-1f660bb1374b59df761fe329",
+  "question_source_id": "src-f122ee9270e0513f567e8273",
+  "solution_source_id": "src-1f660bb1374b59df761fe329",
+  "validated_sources": [
+    "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23"
+  ],
+  "choice_page": 3,
+  "choice_count": 18,
+  "analysis_size": [
+    993,
+    1404
+  ],
+  "groups": [
+    [
+      1,
+      10,
+      149.05,
+      57.78,
+      398.93,
+      19.19,
+      -0.033,
+      372
+    ],
+    [
+      11,
+      8,
+      149.51,
+      57.73,
+      513.64,
+      19.27,
+      -0.049,
+      488
+    ]
+  ],
+  "grid_crop": [
+    120,
+    370,
+    705,
+    600
+  ],
+  "ring_policy": {
+    "min_ring": 0.4,
+    "support": 0.83,
+    "possible_ring": 0.32,
+    "possible_support": 0.58,
+    "margin": 0.15,
+    "center": 0.1
+  },
+  "header_evidence": "Printed module title and individual Q column labels visually checked on cached original grid. Five rows measured from dot connected components, top-to-bottom 1..5. No semantic/OCR answer inference.",
+  "u_evidence": "Original raster solution headings and ruled boundaries individually inspected. Explicit zu U3 continuation included for FA. Whole-question self-assessment; no grading rubric inferred.",
+  "u_regions": {
+    "U1": {
+      "regions": [
+        {
+          "page": 14,
+          "bbox": [
+            25,
+            238,
+            575,
+            381
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 14,
+      "heading_box": [
+        30,
+        240,
+        95,
+        268
+      ],
+      "heading_pixel_sha256": "ee93f5b2e2d79c7b820913d2fa7d4088e218a3bf3bac4c7cbafc437bd08a72c1"
+    },
+    "U2": {
+      "regions": [
+        {
+          "page": 14,
+          "bbox": [
+            25,
+            388,
+            575,
+            533
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 14,
+      "heading_box": [
+        30,
+        390,
+        95,
+        418
+      ],
+      "heading_pixel_sha256": "cb4b850564d55158c51a779db492d265ec000421cc1c4d62186a663beab09ac9"
+    },
+    "U3": {
+      "regions": [
+        {
+          "page": 14,
+          "bbox": [
+            25,
+            539,
+            575,
+            790
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 14,
+      "heading_box": [
+        30,
+        541,
+        95,
+        569
+      ],
+      "heading_pixel_sha256": "fa81d0d0b086b4b4a882fbf90b3c5c7fd3527f0287d95014d9d6d2a835fe96df"
+    },
+    "U4": {
+      "regions": [
+        {
+          "page": 15,
+          "bbox": [
+            25,
+            36,
+            575,
+            308
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 15,
+      "heading_box": [
+        30,
+        38,
+        95,
+        66
+      ],
+      "heading_pixel_sha256": "6c329d39d77d340438fd616e5d4bb26d725462515818805286fe0e4363084d19"
+    },
+    "U5": {
+      "regions": [
+        {
+          "page": 15,
+          "bbox": [
+            25,
+            315,
+            575,
+            538
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 15,
+      "heading_box": [
+        30,
+        317,
+        95,
+        345
+      ],
+      "heading_pixel_sha256": "8648669bed01853bd3540fc63195152064077167b0bbfce9fed5b31ee3ebd297"
+    },
+    "U6": {
+      "regions": [
+        {
+          "page": 15,
+          "bbox": [
+            25,
+            545,
+            575,
+            678
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 15,
+      "heading_box": [
+        30,
+        547,
+        95,
+        575
+      ],
+      "heading_pixel_sha256": "0ec9401218269da90b8c24969cfc1fce1fd6e1f643728ac45f2816e120d80b03"
+    }
+  },
+  "page_image_hashes": {
+    "3": "70f133a272f89496352ad26666c26b08c6466407f12a56c4c7b9313f830aa273",
+    "14": "1eaa61830a32d1fd209e2f67aa2422b80dcc4b292aebf9fdb090fff889302195",
+    "15": "b46fc34d9d6a087de4e26661696017fbbd3966a21d6ea1b1e9252584b2cab38e"
+  }
+}

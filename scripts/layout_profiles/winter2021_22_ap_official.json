@@ -1,0 +1,262 @@
+{
+  "scope": "2021-22-ap",
+  "name": "2021_22_winter_arbeitsplanung",
+  "exam": "2021_22_winter",
+  "module": "Arbeitsplanung",
+  "version": "2m.1.0",
+  "profile_id": "official-ring-grid",
+  "source_hash": "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23",
+  "source_id": "src-c3ccd1db1c9d34f8ed988613",
+  "question_source_id": "src-8adec18a1ecbe7879c59c89e",
+  "solution_source_id": "src-c3ccd1db1c9d34f8ed988613",
+  "validated_sources": [
+    "87cc19b45d04b08fffc1eee21e19e182dcddfd39ab4fbc1be762c3f24f396b23"
+  ],
+  "choice_page": 1,
+  "choice_count": 28,
+  "analysis_size": [
+    993,
+    1404
+  ],
+  "groups": [
+    [
+      1,
+      10,
+      150.83,
+      57.84,
+      399.09,
+      19.2,
+      -0.01,
+      372
+    ],
+    [
+      11,
+      10,
+      151.0,
+      57.85,
+      513.89,
+      19.21,
+      -0.01,
+      488
+    ],
+    [
+      21,
+      8,
+      151.3,
+      57.85,
+      629.18,
+      19.34,
+      -0.01,
+      603
+    ]
+  ],
+  "grid_crop": [
+    120,
+    370,
+    705,
+    717
+  ],
+  "ring_policy": {
+    "min_ring": 0.4,
+    "support": 0.83,
+    "possible_ring": 0.32,
+    "possible_support": 0.58,
+    "margin": 0.15,
+    "center": 0.1
+  },
+  "header_evidence": "Printed module title and individual Q column labels visually checked on cached original grid. Five rows measured from dot connected components, top-to-bottom 1..5. No semantic/OCR answer inference.",
+  "u_evidence": "Original raster solution headings and ruled boundaries individually inspected. Explicit zu U3 continuation included for FA. Whole-question self-assessment; no grading rubric inferred.",
+  "u_regions": {
+    "U1": {
+      "regions": [
+        {
+          "page": 6,
+          "bbox": [
+            25,
+            133,
+            575,
+            410
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 6,
+      "heading_box": [
+        30,
+        135,
+        95,
+        163
+      ],
+      "heading_pixel_sha256": "a47c33f0d8d9c284379a0fcf6326bb8d7e30e96f05855ff7fc3d0737f28a649e"
+    },
+    "U2": {
+      "regions": [
+        {
+          "page": 6,
+          "bbox": [
+            25,
+            414,
+            575,
+            795
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 6,
+      "heading_box": [
+        30,
+        416,
+        95,
+        444
+      ],
+      "heading_pixel_sha256": "df0b4b4a9d082131d9b50c3b74f15893a9eacb29872e91c0116c5b746f3faa88"
+    },
+    "U3": {
+      "regions": [
+        {
+          "page": 7,
+          "bbox": [
+            25,
+            34,
+            575,
+            317
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 7,
+      "heading_box": [
+        30,
+        36,
+        95,
+        64
+      ],
+      "heading_pixel_sha256": "3b2bb96affe5adb6cf4320aea9a46a325736fa67a5a6816d04ca65a22574674e"
+    },
+    "U4": {
+      "regions": [
+        {
+          "page": 7,
+          "bbox": [
+            25,
+            321,
+            575,
+            565
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 7,
+      "heading_box": [
+        30,
+        323,
+        95,
+        351
+      ],
+      "heading_pixel_sha256": "adbe6801f9e980e7e01fe81969ebc2aa9fd852aa7b988bc769ab2ba58a18b99f"
+    },
+    "U5": {
+      "regions": [
+        {
+          "page": 7,
+          "bbox": [
+            25,
+            569,
+            575,
+            794
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 7,
+      "heading_box": [
+        30,
+        571,
+        95,
+        599
+      ],
+      "heading_pixel_sha256": "433c54e074e9c9184e06b572ca1193688fcfdecc5ccbb2a6637d3e149f835d69"
+    },
+    "U6": {
+      "regions": [
+        {
+          "page": 8,
+          "bbox": [
+            25,
+            133,
+            575,
+            450
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 8,
+      "heading_box": [
+        30,
+        135,
+        95,
+        163
+      ],
+      "heading_pixel_sha256": "2c19880911b6a20decec29ffdbe745d7c5d9dbfa8e475cf3eb2754dcdf07b9bb"
+    },
+    "U7": {
+      "regions": [
+        {
+          "page": 8,
+          "bbox": [
+            25,
+            454,
+            575,
+            794
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 8,
+      "heading_box": [
+        30,
+        456,
+        95,
+        484
+      ],
+      "heading_pixel_sha256": "7881335cff006be0d8f3e7ed74f29ba749dc4fed1c3b67951d4a1fe3bbebc7c6"
+    },
+    "U8": {
+      "regions": [
+        {
+          "page": 9,
+          "bbox": [
+            25,
+            34,
+            575,
+            333
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 9,
+      "heading_box": [
+        30,
+        36,
+        95,
+        64
+      ],
+      "heading_pixel_sha256": "3a3e02c9dd52314d81538eb0838be65196bccfd4d914bac161559539d0f0c633"
+    }
+  },
+  "page_image_hashes": {
+    "1": "e48086d22278c2394433deff1da1b3f604da38a027ae9a67f402819ae9911eca",
+    "6": "51614df73bb927cbda0c57958c2163b03596848db69d42bc48fb232498b0d132",
+    "7": "66720eb16017eca02e76e2d206ddce57cce497195c2644d31cc6a7e35ce567fb",
+    "8": "a96a6fdb43cbf4c48f8dfa6b723ded9cbf990abe1be27b6104e1dc2be2db635c",
+    "9": "8438782e80066559e46d274bbc1172db23573defd84dc2da24f48942a2b0ec52"
+  }
+}

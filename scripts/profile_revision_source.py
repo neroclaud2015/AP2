@@ -25,6 +25,6 @@ def resume_confirmed_profile(root, proposal_path, confirmation_path):
  sid='src-'+hashlib.sha256((old['source_id']+'|profile|'+proposal['proposal_hash']).encode()).hexdigest()[:24]
  evidence={'proposal_hash':proposal['proposal_hash'],'proposal_path':Path(proposal_path).relative_to(root).as_posix(),'proposal_sha256':artifact_digest(proposal_path),'confirmation_path':Path(confirmation_path).relative_to(root).as_posix(),'confirmation_sha256':artifact_digest(confirmation_path)}
  new={k:deepcopy(old[k]) for k in ['exam','module','source_type','filename','sha256']}
- new.update(source_id=sid,version=max(versions)+1,status='registered',layout_profile=None,answer_profile=None,supersedes_source_id=None,created_at=now(),identity_migration=None,gates={},profile_revision_of_source_id=old['source_id'],profile_confirmation=evidence,events=[{'stage':'registered','at':now(),'change_reason':'manual_shared_region_review','previous_source_id':old['source_id'],'evidence':evidence}])
+ new.update(source_id=sid,version=max(versions)+1,status='registered',layout_profile=None,answer_profile=None,supersedes_source_id=None,created_at=now(),identity_migration=None,gates={},profile_revision_of_source_id=old['source_id'],profile_confirmation=evidence,events=[{'stage':'registered','at':now(),'change_reason':proposal.get('confirmation_method','manual_shared_region_review'),'previous_source_id':old['source_id'],'evidence':evidence}])
  registry['sources'].append(new);save_registry(root,registry)
  return sid
