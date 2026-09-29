@@ -1,3 +1,9 @@
+# Current checkpoint — Winter 2020/21 complete
+
+Sommer2020 AP released after explicit Q7=no M3 / Q8=M3 confirmation. Winter2020/21 AP36 MC28 U8; FA36 MC28 U8; WiSo24 MC18 U6. All Production, Needs Review0. Official WiSo U1.1 correction retained and shown with solutions.94 new pages cached once,0 old rescans. Stop before Sommer2021. See [report](WINTER_2020_21_REPORT.md).
+
+---
+
 # Current checkpoint — Phase 2K.1
 
 AP Q7/Q8 shared M3 revision structurally compatible (36/36), awaiting human source mapping confirmation. Old blocked event/config retained; two candidate proposal events appended. No PDF rendering, formal segmentation or answer extraction. Review: https://neroclaud2015.github.io/AP2/evidence/phase2k1/ . See [report](PHASE_2K1_REPORT.md).

@@ -1,0 +1,61 @@
+{
+  "key": "6bd93ec1280da46fdf034d9aefe119fa9f0ea40dc6b4309a90cbd7015b969552",
+  "record_hash": "e211c62c2e621cf3d06daf1b86779ca7d817df4dadfa88767b9698702549ce5d",
+  "record": {
+    "page": 12,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "All physical cached pages visually inspected; exact printed headings, ruled boundaries and explicit continuation labels used. No ownership inferred from numbering order.",
+    "anchors": [
+      {
+        "anchor_id": "2020-21-wiso-p12-U5",
+        "number": "U5",
+        "bbox": [
+          60.735,
+          56.18,
+          106.286,
+          91.102
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U5 individually read on cached physical page 12",
+        "review_reasons": [],
+        "heading_pixel_sha256": "740f17dd4080cbfe0570a58ee62c6bcdd274e977b0e0095631004009b83425eb"
+      }
+    ],
+    "regions": [
+      {
+        "page": 12,
+        "bbox": [
+          60.735,
+          56.18,
+          552.686,
+          783.478
+        ],
+        "role": "primary",
+        "owner": "2020-21-wiso-p12-U5",
+        "evidence": "Source ruled boundaries and printed task heading visually verified; diagram/response regions retain their explicit owner."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U5",
+        "bbox": [
+          60.735,
+          56.18,
+          106.286,
+          91.102
+        ],
+        "pixel_sha256": "740f17dd4080cbfe0570a58ee62c6bcdd274e977b0e0095631004009b83425eb",
+        "audited_pixel_sha256": "740f17dd4080cbfe0570a58ee62c6bcdd274e977b0e0095631004009b83425eb"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

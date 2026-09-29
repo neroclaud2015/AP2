@@ -1,0 +1,61 @@
+{
+  "key": "07a72840782d31cb62f6bc48dacbad1c9cac9112a8363884b9edace19e052799",
+  "record_hash": "ec287d4ce1676da98b6e9ead833c8f82924103a3525192bd5e758e3e0f20b0a6",
+  "record": {
+    "page": 22,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "All physical cached pages visually inspected; exact printed headings, ruled boundaries and explicit continuation labels used. No ownership inferred from numbering order.",
+    "anchors": [
+      {
+        "anchor_id": "2020-21-fa-p22-U7",
+        "number": "U7",
+        "bbox": [
+          27.331,
+          15.184,
+          72.882,
+          50.106
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U7 individually read on cached physical page 22",
+        "review_reasons": [],
+        "heading_pixel_sha256": "9f81601bcea4a3009d87dcd1cf467dbd71ddb99509a553f9e95c7dcddf07545d"
+      }
+    ],
+    "regions": [
+      {
+        "page": 22,
+        "bbox": [
+          27.331,
+          15.184,
+          573.943,
+          816.882
+        ],
+        "role": "primary",
+        "owner": "2020-21-fa-p22-U7",
+        "evidence": "Source ruled boundaries and printed task heading visually verified; diagram/response regions retain their explicit owner."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U7",
+        "bbox": [
+          27.331,
+          15.184,
+          72.882,
+          50.106
+        ],
+        "pixel_sha256": "9f81601bcea4a3009d87dcd1cf467dbd71ddb99509a553f9e95c7dcddf07545d",
+        "audited_pixel_sha256": "9f81601bcea4a3009d87dcd1cf467dbd71ddb99509a553f9e95c7dcddf07545d"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

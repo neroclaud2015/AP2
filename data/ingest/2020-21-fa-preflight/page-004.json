@@ -1,0 +1,175 @@
+{
+  "key": "4f6ff677f57ecc4335b5dfc6fd86dec7bf9d2b370016cfa1192f43373627842f",
+  "record_hash": "872b61e1372c62e1b146177b8b260d0245fc5b398f2fcf0a0158844397778bd4",
+  "record": {
+    "page": 4,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "All physical cached pages visually inspected; exact printed headings, ruled boundaries and explicit continuation labels used. No ownership inferred from numbering order.",
+    "anchors": [
+      {
+        "anchor_id": "2020-21-fa-p4-4",
+        "number": "4",
+        "bbox": [
+          60.735,
+          59.216,
+          106.286,
+          94.139
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 4 individually read on cached physical page 4",
+        "review_reasons": [],
+        "heading_pixel_sha256": "2f0c2231f014af6a3f29efaf47b5e1e0f22b7c937bb2e7c6c1baf13da0b28944"
+      },
+      {
+        "anchor_id": "2020-21-fa-p4-5",
+        "number": "5",
+        "bbox": [
+          60.735,
+          302.155,
+          106.286,
+          337.078
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 5 individually read on cached physical page 4",
+        "review_reasons": [],
+        "heading_pixel_sha256": "9155458cf1ff82a0da9d8a8848e641b933b74258548d3ad89d75569142a7616c"
+      },
+      {
+        "anchor_id": "2020-21-fa-p4-6",
+        "number": "6",
+        "bbox": [
+          308.229,
+          302.155,
+          353.78,
+          337.078
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 6 individually read on cached physical page 4",
+        "review_reasons": [],
+        "heading_pixel_sha256": "72f171afd7151560bd9c11f788564b25500a853a4450c95b547e6b64650a2e4f"
+      },
+      {
+        "anchor_id": "2020-21-fa-p4-7",
+        "number": "7",
+        "bbox": [
+          60.735,
+          542.057,
+          106.286,
+          576.98
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 7 individually read on cached physical page 4",
+        "review_reasons": [],
+        "heading_pixel_sha256": "ec0292d50d55dffafe14f1ba802858eb235fbce9bacb1253bd864eada894a66e"
+      }
+    ],
+    "regions": [
+      {
+        "page": 4,
+        "bbox": [
+          60.735,
+          59.216,
+          551.167,
+          296.082
+        ],
+        "role": "primary",
+        "owner": "2020-21-fa-p4-4",
+        "evidence": "Source ruled boundaries and printed task heading visually verified; diagram/response regions retain their explicit owner."
+      },
+      {
+        "page": 4,
+        "bbox": [
+          60.735,
+          302.155,
+          303.673,
+          535.984
+        ],
+        "role": "primary",
+        "owner": "2020-21-fa-p4-5",
+        "evidence": "Source ruled boundaries and printed task heading visually verified; diagram/response regions retain their explicit owner."
+      },
+      {
+        "page": 4,
+        "bbox": [
+          308.229,
+          302.155,
+          551.167,
+          535.984
+        ],
+        "role": "primary",
+        "owner": "2020-21-fa-p4-6",
+        "evidence": "Source ruled boundaries and printed task heading visually verified; diagram/response regions retain their explicit owner."
+      },
+      {
+        "page": 4,
+        "bbox": [
+          60.735,
+          542.057,
+          551.167,
+          789.551
+        ],
+        "role": "primary",
+        "owner": "2020-21-fa-p4-7",
+        "evidence": "Source ruled boundaries and printed task heading visually verified; diagram/response regions retain their explicit owner."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "4",
+        "bbox": [
+          60.735,
+          59.216,
+          106.286,
+          94.139
+        ],
+        "pixel_sha256": "2f0c2231f014af6a3f29efaf47b5e1e0f22b7c937bb2e7c6c1baf13da0b28944",
+        "audited_pixel_sha256": "2f0c2231f014af6a3f29efaf47b5e1e0f22b7c937bb2e7c6c1baf13da0b28944"
+      },
+      {
+        "kind": "heading",
+        "number": "5",
+        "bbox": [
+          60.735,
+          302.155,
+          106.286,
+          337.078
+        ],
+        "pixel_sha256": "9155458cf1ff82a0da9d8a8848e641b933b74258548d3ad89d75569142a7616c",
+        "audited_pixel_sha256": "9155458cf1ff82a0da9d8a8848e641b933b74258548d3ad89d75569142a7616c"
+      },
+      {
+        "kind": "heading",
+        "number": "6",
+        "bbox": [
+          308.229,
+          302.155,
+          353.78,
+          337.078
+        ],
+        "pixel_sha256": "72f171afd7151560bd9c11f788564b25500a853a4450c95b547e6b64650a2e4f",
+        "audited_pixel_sha256": "72f171afd7151560bd9c11f788564b25500a853a4450c95b547e6b64650a2e4f"
+      },
+      {
+        "kind": "heading",
+        "number": "7",
+        "bbox": [
+          60.735,
+          542.057,
+          106.286,
+          576.98
+        ],
+        "pixel_sha256": "ec0292d50d55dffafe14f1ba802858eb235fbce9bacb1253bd864eada894a66e",
+        "audited_pixel_sha256": "ec0292d50d55dffafe14f1ba802858eb235fbce9bacb1253bd864eada894a66e"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

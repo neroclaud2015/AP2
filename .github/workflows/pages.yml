@@ -58,6 +58,7 @@ jobs:
       - run: python scripts/publish_evidence.py phase2k
       - run: python scripts/publish_evidence.py phase2k1
       - run: python scripts/publish_evidence.py phase2k1-release
+      - run: python scripts/publish_evidence.py winter2020-21
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

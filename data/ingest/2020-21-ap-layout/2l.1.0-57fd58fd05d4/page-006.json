@@ -1,0 +1,123 @@
+{
+  "key": "f8c9c7db1862654ddeb1b29173a2635e917409c006659657b96194b7c50aab0d",
+  "record_hash": "f3dffb75cabd7b6236fd46c117bc1b5893c9de5dc3e70da0a2ed4cd34b89506e",
+  "record": {
+    "page": 6,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "All physical cached pages visually inspected; exact printed headings, ruled boundaries and explicit continuation labels used. No ownership inferred from numbering order.",
+    "anchors": [
+      {
+        "anchor_id": "2020-21-ap-p6-13",
+        "number": "13",
+        "bbox": [
+          60.735,
+          59.216,
+          106.286,
+          94.139
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 13 individually read on cached physical page 6",
+        "review_reasons": [],
+        "heading_pixel_sha256": "f1dfe2e387cae4919f79e7125fac626de9db35879c085dc179875438f0e674fd"
+      },
+      {
+        "anchor_id": "2020-21-ap-p6-14",
+        "number": "14",
+        "bbox": [
+          60.735,
+          302.155,
+          106.286,
+          337.078
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 14 individually read on cached physical page 6",
+        "review_reasons": [],
+        "heading_pixel_sha256": "582572a4420512f78585f3364954c76e94485a95416d87c1d5ca62df25300d70"
+      }
+    ],
+    "regions": [
+      {
+        "page": 6,
+        "bbox": [
+          60.735,
+          59.216,
+          305.192,
+          297.6
+        ],
+        "role": "primary",
+        "owner": "2020-21-ap-p6-13",
+        "evidence": "Source ruled boundaries and printed task heading visually verified; diagram/response regions retain their explicit owner."
+      },
+      {
+        "page": 6,
+        "bbox": [
+          309.747,
+          59.216,
+          548.131,
+          535.984
+        ],
+        "role": "diagram",
+        "owner": "2020-21-ap-p6-13",
+        "evidence": "Source ruled boundaries and printed task heading visually verified; diagram/response regions retain their explicit owner."
+      },
+      {
+        "page": 6,
+        "bbox": [
+          60.735,
+          302.155,
+          305.192,
+          535.984
+        ],
+        "role": "primary",
+        "owner": "2020-21-ap-p6-14",
+        "evidence": "Source ruled boundaries and printed task heading visually verified; diagram/response regions retain their explicit owner."
+      },
+      {
+        "page": 6,
+        "bbox": [
+          60.735,
+          542.057,
+          548.131,
+          789.551
+        ],
+        "role": "diagram",
+        "owner": "2020-21-ap-p6-14",
+        "evidence": "Source ruled boundaries and printed task heading visually verified; diagram/response regions retain their explicit owner."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "13",
+        "bbox": [
+          60.735,
+          59.216,
+          106.286,
+          94.139
+        ],
+        "pixel_sha256": "f1dfe2e387cae4919f79e7125fac626de9db35879c085dc179875438f0e674fd",
+        "audited_pixel_sha256": "f1dfe2e387cae4919f79e7125fac626de9db35879c085dc179875438f0e674fd"
+      },
+      {
+        "kind": "heading",
+        "number": "14",
+        "bbox": [
+          60.735,
+          302.155,
+          106.286,
+          337.078
+        ],
+        "pixel_sha256": "582572a4420512f78585f3364954c76e94485a95416d87c1d5ca62df25300d70",
+        "audited_pixel_sha256": "582572a4420512f78585f3364954c76e94485a95416d87c1d5ca62df25300d70"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

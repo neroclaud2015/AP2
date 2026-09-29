@@ -1,0 +1,61 @@
+{
+  "key": "f61112704f4b9a20da344a9179c0f463bef7537eac4ad89b60d9ad2037c120d6",
+  "record_hash": "264c0e3b90b397a21539009cfdb9d1259dc6b4c2215b1a4fab77c3f78d3c4a11",
+  "record": {
+    "page": 4,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "All physical cached pages visually inspected; exact printed headings, ruled boundaries and explicit continuation labels used. No ownership inferred from numbering order.",
+    "anchors": [
+      {
+        "anchor_id": "2020-21-wiso-p4-U1",
+        "number": "U1",
+        "bbox": [
+          60.735,
+          56.18,
+          106.286,
+          91.102
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U1 individually read on cached physical page 4",
+        "review_reasons": [],
+        "heading_pixel_sha256": "287a4e1a8ccd04646a44e2f258a2a4b1d347e2b99433de752e7ed7161e7b7b3d"
+      }
+    ],
+    "regions": [
+      {
+        "page": 4,
+        "bbox": [
+          60.735,
+          56.18,
+          552.686,
+          783.478
+        ],
+        "role": "primary",
+        "owner": "2020-21-wiso-p4-U1",
+        "evidence": "Source ruled boundaries and printed task heading visually verified; diagram/response regions retain their explicit owner."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U1",
+        "bbox": [
+          60.735,
+          56.18,
+          106.286,
+          91.102
+        ],
+        "pixel_sha256": "287a4e1a8ccd04646a44e2f258a2a4b1d347e2b99433de752e7ed7161e7b7b3d",
+        "audited_pixel_sha256": "287a4e1a8ccd04646a44e2f258a2a4b1d347e2b99433de752e7ed7161e7b7b3d"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

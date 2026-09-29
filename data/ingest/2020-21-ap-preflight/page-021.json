@@ -1,0 +1,46 @@
+{
+  "key": "79d783c79c77e462c82a399f975e9a0539be0d4eda7a0bc0ff4ce7abbd14c765",
+  "record_hash": "5a629d073df3ebb8921066b828d429c46d99954afcb95e915299435235ea9802",
+  "record": {
+    "page": 21,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "continuation",
+    "classification_evidence": "All physical cached pages visually inspected; exact printed headings, ruled boundaries and explicit continuation labels used. No ownership inferred from numbering order.",
+    "anchors": [],
+    "regions": [
+      {
+        "page": 21,
+        "bbox": [
+          27.331,
+          15.184,
+          573.943,
+          816.882
+        ],
+        "role": "continuation",
+        "owner": "2020-21-ap-p20-U5",
+        "evidence": "Printed continuation subparts and Ergebnis U5 identify ownership; adjacent headings excluded."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "ownership",
+        "number": "U5",
+        "bbox": [
+          27.331,
+          15.184,
+          573.943,
+          816.882
+        ],
+        "pixel_sha256": "e298befd76ce00ad941113cd96b9affd9c480e90dd25fcefbfc48c99fedcd636",
+        "audited_pixel_sha256": "e298befd76ce00ad941113cd96b9affd9c480e90dd25fcefbfc48c99fedcd636"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

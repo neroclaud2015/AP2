@@ -1,0 +1,137 @@
+{
+  "key": "22260128caf9819a9cabc2a235c024d583a0657f9ecdeb0ca4e01e465a2640a6",
+  "record_hash": "44fcc85cf65a25dabdbb2eca23fb4c07f2e175d7560fe3d6d033b13bca26352e",
+  "record": {
+    "page": 13,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "All physical cached pages visually inspected; exact printed headings, ruled boundaries and explicit continuation labels used. No ownership inferred from numbering order.",
+    "anchors": [
+      {
+        "anchor_id": "2020-21-wiso-p13-13",
+        "number": "13",
+        "bbox": [
+          44.033,
+          59.216,
+          89.584,
+          94.139
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 13 individually read on cached physical page 13",
+        "review_reasons": [],
+        "heading_pixel_sha256": "f954dc3aefe1575c1ac80c9f8d302ed3e00f2b90caba101f2c45ac14dff6c901"
+      },
+      {
+        "anchor_id": "2020-21-wiso-p13-14",
+        "number": "14",
+        "bbox": [
+          293.045,
+          59.216,
+          338.596,
+          94.139
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 14 individually read on cached physical page 13",
+        "review_reasons": [],
+        "heading_pixel_sha256": "1d6c5eb5bd771895f0404dc2a23f320d8e6fe9cc49d63a441ea4bfcda1c9f1d0"
+      },
+      {
+        "anchor_id": "2020-21-wiso-p13-15",
+        "number": "15",
+        "bbox": [
+          44.033,
+          302.155,
+          89.584,
+          337.078
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 15 individually read on cached physical page 13",
+        "review_reasons": [],
+        "heading_pixel_sha256": "e1ccd8f5e1d702e33ad202b3209a791ab9ef9a65aa88b16dc524344138a1dbbd"
+      }
+    ],
+    "regions": [
+      {
+        "page": 13,
+        "bbox": [
+          44.033,
+          59.216,
+          286.971,
+          294.563
+        ],
+        "role": "primary",
+        "owner": "2020-21-wiso-p13-13",
+        "evidence": "Source ruled boundaries and printed task heading visually verified; diagram/response regions retain their explicit owner."
+      },
+      {
+        "page": 13,
+        "bbox": [
+          293.045,
+          59.216,
+          535.984,
+          294.563
+        ],
+        "role": "primary",
+        "owner": "2020-21-wiso-p13-14",
+        "evidence": "Source ruled boundaries and printed task heading visually verified; diagram/response regions retain their explicit owner."
+      },
+      {
+        "page": 13,
+        "bbox": [
+          44.033,
+          302.155,
+          286.971,
+          535.984
+        ],
+        "role": "primary",
+        "owner": "2020-21-wiso-p13-15",
+        "evidence": "Source ruled boundaries and printed task heading visually verified; diagram/response regions retain their explicit owner."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "13",
+        "bbox": [
+          44.033,
+          59.216,
+          89.584,
+          94.139
+        ],
+        "pixel_sha256": "f954dc3aefe1575c1ac80c9f8d302ed3e00f2b90caba101f2c45ac14dff6c901",
+        "audited_pixel_sha256": "f954dc3aefe1575c1ac80c9f8d302ed3e00f2b90caba101f2c45ac14dff6c901"
+      },
+      {
+        "kind": "heading",
+        "number": "14",
+        "bbox": [
+          293.045,
+          59.216,
+          338.596,
+          94.139
+        ],
+        "pixel_sha256": "1d6c5eb5bd771895f0404dc2a23f320d8e6fe9cc49d63a441ea4bfcda1c9f1d0",
+        "audited_pixel_sha256": "1d6c5eb5bd771895f0404dc2a23f320d8e6fe9cc49d63a441ea4bfcda1c9f1d0"
+      },
+      {
+        "kind": "heading",
+        "number": "15",
+        "bbox": [
+          44.033,
+          302.155,
+          89.584,
+          337.078
+        ],
+        "pixel_sha256": "e1ccd8f5e1d702e33ad202b3209a791ab9ef9a65aa88b16dc524344138a1dbbd",
+        "audited_pixel_sha256": "e1ccd8f5e1d702e33ad202b3209a791ab9ef9a65aa88b16dc524344138a1dbbd"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

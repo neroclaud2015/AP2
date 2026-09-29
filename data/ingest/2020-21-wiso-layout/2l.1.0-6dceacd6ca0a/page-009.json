@@ -1,0 +1,99 @@
+{
+  "key": "f060efe280f9a2004e59509f47e3a479982ac9c1dd98d17cd3d853fa9fb07e59",
+  "record_hash": "713f1172358b1313c72da9cd82f6648cb64f1062ffa5493f98b94a60e8fb1264",
+  "record": {
+    "page": 9,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "All physical cached pages visually inspected; exact printed headings, ruled boundaries and explicit continuation labels used. No ownership inferred from numbering order.",
+    "anchors": [
+      {
+        "anchor_id": "2020-21-wiso-p9-7",
+        "number": "7",
+        "bbox": [
+          45.551,
+          59.216,
+          91.102,
+          94.139
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 7 individually read on cached physical page 9",
+        "review_reasons": [],
+        "heading_pixel_sha256": "19154c96d7ca508eff5260e339a4de3c92344e62005d0a1e9bdcac6d73120d7d"
+      },
+      {
+        "anchor_id": "2020-21-wiso-p9-8",
+        "number": "8",
+        "bbox": [
+          293.045,
+          59.216,
+          338.596,
+          94.139
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 8 individually read on cached physical page 9",
+        "review_reasons": [],
+        "heading_pixel_sha256": "d3376e66892065c28d4169a5518cea0f787d4a99f2ce6ff2b5fae0ae6741c3f2"
+      }
+    ],
+    "regions": [
+      {
+        "page": 9,
+        "bbox": [
+          45.551,
+          59.216,
+          286.971,
+          294.563
+        ],
+        "role": "primary",
+        "owner": "2020-21-wiso-p9-7",
+        "evidence": "Source ruled boundaries and printed task heading visually verified; diagram/response regions retain their explicit owner."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          293.045,
+          59.216,
+          535.984,
+          294.563
+        ],
+        "role": "primary",
+        "owner": "2020-21-wiso-p9-8",
+        "evidence": "Source ruled boundaries and printed task heading visually verified; diagram/response regions retain their explicit owner."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "7",
+        "bbox": [
+          45.551,
+          59.216,
+          91.102,
+          94.139
+        ],
+        "pixel_sha256": "19154c96d7ca508eff5260e339a4de3c92344e62005d0a1e9bdcac6d73120d7d",
+        "audited_pixel_sha256": "19154c96d7ca508eff5260e339a4de3c92344e62005d0a1e9bdcac6d73120d7d"
+      },
+      {
+        "kind": "heading",
+        "number": "8",
+        "bbox": [
+          293.045,
+          59.216,
+          338.596,
+          94.139
+        ],
+        "pixel_sha256": "d3376e66892065c28d4169a5518cea0f787d4a99f2ce6ff2b5fae0ae6741c3f2",
+        "audited_pixel_sha256": "d3376e66892065c28d4169a5518cea0f787d4a99f2ce6ff2b5fae0ae6741c3f2"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

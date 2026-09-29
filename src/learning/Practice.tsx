@@ -1,3 +1,4 @@
+import OfficialCorrection from './OfficialCorrection';
 import QuestionNoteEditor from './QuestionNoteEditor';
 import {useAppServices} from '../services/context';
 import {useEffect,useRef,useState} from 'react';
@@ -63,7 +64,7 @@ export default function Practice({provenance,questionId,number,answer,u,session,
   {u&&!revealed&&<button className="primary reveal-button" disabled={saving||!u.subparts.some(p=>draft[p.id]?.trim())} onClick={reveal}>Lösung anzeigen</button>}
   {revealed&&<div className="learning-result">
    {attempt&&<div className={`result-banner ${attempt.correctness??'pending'}`} role="status"><strong>{attempt.correctness==='richtig'?'Richtig':attempt.correctness==='falsch'?'Falsch':attempt.correctness==='teilweise'?'Teilweise richtig':'Bewertung offen'}</strong><span>{u?'Deine abschließende Selbstbewertung':'Deine Antwort: '+attempt.user_answer.choice+' · Offizielle Antwort: '+(attempt.official_answer_snapshot??'noch nicht eindeutig')}</span></div>}
-   {u?<><h3>Offizielle Lösung · {number}</h3><img className="u-solution-image" src={asset(u.cropped_solution_image)} alt={`Offizielle Lösung ${number}`}/><div className="source-links">{u.regions.map((r,i)=><a key={i} href={u.solution_source_pdf_available===false?asset(u.cropped_solution_image):asset(u.solution_source_pdf)+`#page=${r.source_page}`} target="_blank" rel="noreferrer">{u.solution_source_pdf_available===false?'Lösungsausschnitt aus Seite':'Lösung · PDF-Seite'} {r.source_page} ↗</a>)}</div>
+   {u?<><OfficialCorrection questionId={questionId}/><h3>Offizielle Lösung · {number}</h3><img className="u-solution-image" src={asset(u.cropped_solution_image)} alt={`Offizielle Lösung ${number}`}/><div className="source-links">{u.regions.map((r,i)=><a key={i} href={u.solution_source_pdf_available===false?asset(u.cropped_solution_image):asset(u.solution_source_pdf)+`#page=${r.source_page}`} target="_blank" rel="noreferrer">{u.solution_source_pdf_available===false?'Lösungsausschnitt aus Seite':'Lösung · PDF-Seite'} {r.source_page} ↗</a>)}</div>
     <p className="hint">Vergleiche Inhalt und Rechenweg selbst. Eine numerische Prüfung ist eine Lernhilfe; du entscheidest die abschließende Bewertung jedes Teilauftrags. KI-Bewertung ist in dieser Version nicht aktiv.</p>
     {u.subparts.map(p=><div className="part-assessment" key={p.id}><strong>{p.label}</strong>
      {p.numeric&&<p data-testid="numeric-result">Numerische Prüfung: {checkNumeric(draft[p.id]??'',p.numeric.unit,p.numeric)==='richtig'?'Richtig':checkNumeric(draft[p.id]??'',p.numeric.unit,p.numeric)==='falsch'?'Falsch':'Keine gültige Zahl'} · Offiziell {p.numeric.value} {p.numeric.unit}. {p.numeric.tolerance_policy}</p>}

@@ -1,0 +1,161 @@
+{
+  "key": "95a16958168d453ae0dc7c8da73eea4d8cb1a467c35920879769fff1736b4c94",
+  "record_hash": "4dd67ed10ae2e6c843caa579d51a15eb663a7a06f290b24c655dbd4db37f5982",
+  "record": {
+    "page": 7,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "continuation_and_questions",
+    "classification_evidence": "All physical cached pages visually inspected; exact printed headings, ruled boundaries and explicit continuation labels used. No ownership inferred from numbering order.",
+    "anchors": [
+      {
+        "anchor_id": "2020-21-wiso-p7-4",
+        "number": "4",
+        "bbox": [
+          45.551,
+          302.155,
+          91.102,
+          337.078
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 4 individually read on cached physical page 7",
+        "review_reasons": [],
+        "heading_pixel_sha256": "f0aca4aa31acd1bda13970d7fc349e6b2e388083164527f6a0a9bc948bec319a"
+      },
+      {
+        "anchor_id": "2020-21-wiso-p7-5",
+        "number": "5",
+        "bbox": [
+          293.045,
+          302.155,
+          338.596,
+          337.078
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 5 individually read on cached physical page 7",
+        "review_reasons": [],
+        "heading_pixel_sha256": "6e1f1b7ec63b32e5eeea8242b29f6cbd788395063ac14db14c1a78b0d7aa53f3"
+      },
+      {
+        "anchor_id": "2020-21-wiso-p7-6",
+        "number": "6",
+        "bbox": [
+          45.551,
+          540.539,
+          91.102,
+          575.461
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 6 individually read on cached physical page 7",
+        "review_reasons": [],
+        "heading_pixel_sha256": "c30c06dae09bf72d34a9e42f511241c1f47e82729be616cbdaca081a0fa8d806"
+      }
+    ],
+    "regions": [
+      {
+        "page": 7,
+        "bbox": [
+          45.551,
+          302.155,
+          288.49,
+          534.465
+        ],
+        "role": "primary",
+        "owner": "2020-21-wiso-p7-4",
+        "evidence": "Source ruled boundaries and printed task heading visually verified; diagram/response regions retain their explicit owner."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          293.045,
+          302.155,
+          535.984,
+          534.465
+        ],
+        "role": "primary",
+        "owner": "2020-21-wiso-p7-5",
+        "evidence": "Source ruled boundaries and printed task heading visually verified; diagram/response regions retain their explicit owner."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          45.551,
+          540.539,
+          288.49,
+          789.551
+        ],
+        "role": "primary",
+        "owner": "2020-21-wiso-p7-6",
+        "evidence": "Source ruled boundaries and printed task heading visually verified; diagram/response regions retain their explicit owner."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          45.551,
+          56.18,
+          535.984,
+          296.082
+        ],
+        "role": "continuation",
+        "owner": "2020-21-wiso-p6-U2",
+        "evidence": "Printed continuation subparts and Ergebnis U2 identify ownership; adjacent headings excluded."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "4",
+        "bbox": [
+          45.551,
+          302.155,
+          91.102,
+          337.078
+        ],
+        "pixel_sha256": "f0aca4aa31acd1bda13970d7fc349e6b2e388083164527f6a0a9bc948bec319a",
+        "audited_pixel_sha256": "f0aca4aa31acd1bda13970d7fc349e6b2e388083164527f6a0a9bc948bec319a"
+      },
+      {
+        "kind": "heading",
+        "number": "5",
+        "bbox": [
+          293.045,
+          302.155,
+          338.596,
+          337.078
+        ],
+        "pixel_sha256": "6e1f1b7ec63b32e5eeea8242b29f6cbd788395063ac14db14c1a78b0d7aa53f3",
+        "audited_pixel_sha256": "6e1f1b7ec63b32e5eeea8242b29f6cbd788395063ac14db14c1a78b0d7aa53f3"
+      },
+      {
+        "kind": "heading",
+        "number": "6",
+        "bbox": [
+          45.551,
+          540.539,
+          91.102,
+          575.461
+        ],
+        "pixel_sha256": "c30c06dae09bf72d34a9e42f511241c1f47e82729be616cbdaca081a0fa8d806",
+        "audited_pixel_sha256": "c30c06dae09bf72d34a9e42f511241c1f47e82729be616cbdaca081a0fa8d806"
+      },
+      {
+        "kind": "ownership",
+        "number": "U2",
+        "bbox": [
+          45.551,
+          56.18,
+          535.984,
+          296.082
+        ],
+        "pixel_sha256": "248d59f9e77596ff63df70a064ae9daff622ef3e2232e2a873cc351fcf13722a",
+        "audited_pixel_sha256": "248d59f9e77596ff63df70a064ae9daff622ef3e2232e2a873cc351fcf13722a"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}
