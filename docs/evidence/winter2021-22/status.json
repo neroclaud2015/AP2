@@ -1,6 +1,6 @@
 {
   "scope": "2021-22-winter",
-  "status": "awaiting_manual_answer_confirmation",
+  "status": "production",
   "modules": {
     "arbeitsplanung": {
       "status": "production",
@@ -12,16 +12,12 @@
       "question_pages_rendered": 23
     },
     "funktionsanalyse": {
-      "status": "needs_review",
+      "status": "production",
       "questions": 36,
-      "mc_ready": 25,
+      "mc_ready": 28,
       "mc_expected": 28,
       "u": 8,
-      "review": [
-        23,
-        24,
-        26
-      ],
+      "review": [],
       "question_pages_rendered": 27
     },
     "wiso": {
@@ -40,5 +36,10 @@
   "answer_profile": "official-ring-grid",
   "repeat_steps_skipped": 12,
   "official_errata_in_supplied_archive": [],
-  "missing_materials": []
+  "missing_materials": [],
+  "manual_confirmations": {
+    "FA Q23": 3,
+    "FA Q24": 3,
+    "FA Q26": 4
+  }
 }

@@ -1,0 +1,99 @@
+{
+  "key": "e2350f12a4adeed564bae2868192543f636adc9da89c905791fe1dcc972cfa93",
+  "record_hash": "170106334d1de2427dca57ce4ebe7a0d59cd6a121dd8b02e3ea28c924b8535a1",
+  "record": {
+    "page": 11,
+    "geometry": [
+      595.4400024414062,
+      842.0399780273438
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2022-fa-p11-26",
+        "number": "26",
+        "bbox": [
+          42.531,
+          50.126,
+          85.063,
+          83.544
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 26 read on cached page 11",
+        "review_reasons": [],
+        "heading_pixel_sha256": "e55081156e85fe21b1c821aeba1514224554e3af39d2795e42114b2b39069b03"
+      },
+      {
+        "anchor_id": "2022-fa-p11-27",
+        "number": "27",
+        "bbox": [
+          42.531,
+          537.719,
+          85.063,
+          571.136
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 27 read on cached page 11",
+        "review_reasons": [],
+        "heading_pixel_sha256": "8d01ae50de6065e5cee8802dcae4e33aad246602b67f4032d1dc15aadf7c071f"
+      }
+    ],
+    "regions": [
+      {
+        "page": 11,
+        "bbox": [
+          42.531,
+          50.126,
+          528.605,
+          531.643
+        ],
+        "role": "primary",
+        "owner": "2022-fa-p11-26",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      },
+      {
+        "page": 11,
+        "bbox": [
+          42.531,
+          537.719,
+          528.605,
+          786.831
+        ],
+        "role": "primary",
+        "owner": "2022-fa-p11-27",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "26",
+        "bbox": [
+          42.531,
+          50.126,
+          85.063,
+          83.544
+        ],
+        "pixel_sha256": "e55081156e85fe21b1c821aeba1514224554e3af39d2795e42114b2b39069b03",
+        "audited_pixel_sha256": "e55081156e85fe21b1c821aeba1514224554e3af39d2795e42114b2b39069b03"
+      },
+      {
+        "kind": "heading",
+        "number": "27",
+        "bbox": [
+          42.531,
+          537.719,
+          85.063,
+          571.136
+        ],
+        "pixel_sha256": "8d01ae50de6065e5cee8802dcae4e33aad246602b67f4032d1dc15aadf7c071f",
+        "audited_pixel_sha256": "8d01ae50de6065e5cee8802dcae4e33aad246602b67f4032d1dc15aadf7c071f"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

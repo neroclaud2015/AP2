@@ -41,16 +41,20 @@ def ensure_timing_image(root,c,images,paths):
  else:shutil.copyfile(root/page['image'],target)
  images[key]=relative;paths.append(target)
 
-def promote(root,layout_path):
+def promote(root,layout_path,*,solution_review=None):
  root=Path(root);c,q,a,u=validated_bundle(root,layout_path);prefix=c['name'];ids=[r['question_id'] for r in q['questions']]
- paths=[root/f'public/data/{prefix}_{suffix}.json' for suffix in ['segmented','answers','u_solutions']]+[root/'public'/r['source_crop'] for r in a['answers']]+[root/'public'/r['cropped_solution_image'] for r in u['solutions']]
+ solution_path=f'public/data/{prefix}_u_solutions.json';review_paths=[]
+ if solution_review is not None:
+  from review_u_crops import load_review
+  u,solution_path,review_paths=load_review(root,c,u,solution_review)
+ paths=review_paths+[root/f'public/data/{prefix}_{suffix}.json' for suffix in ['segmented','answers']]+[root/solution_path]+[root/'public'/r['source_crop'] for r in a['answers']]+[root/'public'/r['cropped_solution_image'] for r in u['solutions']]
  images={str(r['page']):r['image'] for r in q['attachment_images']}
  ensure_timing_image(root,c,images,paths)
  from external_attachments import publish_external_attachments
  external=publish_external_attachments(root,c,paths)
  proof={'result':'passed','artifacts':{p.relative_to(root).as_posix():artifact_digest(p) for p in paths},'artifact_hash_algorithm':'canonical-json-utf8-or-binary-sha256','question_ids':ids,'question_revision':q['segmentation_revision'],'official_answer_revision':a['parser_revision'],'official_solution_revision':u['extractor_revision'],'basis':'All cached pages/headings/ownership and final original question/solution crops inspected; unique deterministic official answers required.'}
  exam=c['exam'].replace('_','-');slug=c['module'].lower()
- config={'examId':exam,'slug':slug,'title':c['module'],'segmentedPath':f'data/{prefix}_segmented.json','answersPath':f'data/{prefix}_answers.json','solutionsPath':f'data/{prefix}_u_solutions.json','choiceSolutionPage':a['answers'][0]['source_page'],'descriptionPage':c['description_page'],'descriptionLabel':'Prüfungsaufgaben-Beschreibung','questionContextPages':{r['question_number']:[v['page'] for v in c['attachment_crops'] if r['question_number'] in v.get('question_numbers',[])] for r in q['questions']},'attachmentPages':[r['page'] for r in c['attachment_crops'] if r['page'] not in (c['timing_source_page'],c['description_page'])],'sourcePageImages':images,'durationMinutes':c.get('timing_minutes'),'durationSource':{'pdf':'','page':c['timing_source_page'],'image':images[str(c['timing_source_page'])]},'parts':[{'id':'A','title':'Teil A','kind':'multiple_choice','label':'Auswahlaufgaben','questionNumbers':[n for n in c['expected'] if n.isdigit()]},{'id':'B','title':'Teil B','kind':'multi_part','label':'Offene Aufgaben','questionNumbers':[n for n in c['expected'] if n.startswith('U')]}]}
+ config={'examId':exam,'slug':slug,'title':c['module'],'segmentedPath':f'data/{prefix}_segmented.json','answersPath':f'data/{prefix}_answers.json','solutionsPath':solution_path.removeprefix('public/'),'choiceSolutionPage':a['answers'][0]['source_page'],'descriptionPage':c['description_page'],'descriptionLabel':'Prüfungsaufgaben-Beschreibung','questionContextPages':{r['question_number']:[v['page'] for v in c['attachment_crops'] if r['question_number'] in v.get('question_numbers',[])] for r in q['questions']},'attachmentPages':[r['page'] for r in c['attachment_crops'] if r['page'] not in (c['timing_source_page'],c['description_page'])],'sourcePageImages':images,'durationMinutes':c.get('timing_minutes'),'durationSource':{'pdf':'','page':c['timing_source_page'],'image':images[str(c['timing_source_page'])]},'parts':[{'id':'A','title':'Teil A','kind':'multiple_choice','label':'Auswahlaufgaben','questionNumbers':[n for n in c['expected'] if n.isdigit()]},{'id':'B','title':'Teil B','kind':'multi_part','label':'Offene Aufgaben','questionNumbers':[n for n in c['expected'] if n.startswith('U')]}]}
  if external:config['externalAttachments']=external
  promoted=read(root/'public/data/promoted_modules.json',[]);prior=next((m for m in promoted if m['examId']==exam and m['slug']==slug),None)
  if prior and prior!=config:raise ValueError('Existing module registration is immutable')

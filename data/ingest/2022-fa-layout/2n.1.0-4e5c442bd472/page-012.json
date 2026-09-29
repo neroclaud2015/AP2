@@ -1,0 +1,61 @@
+{
+  "key": "ce0cb5b916f443294d7cdfde3fc9f26607f8258250e89f450ac88557cc5d6832",
+  "record_hash": "742be50b5501011b90ccccdeedb5a7d604bc2d533e1c697f0ed36d1fe0c9d4fb",
+  "record": {
+    "page": 12,
+    "geometry": [
+      595.4400024414062,
+      842.0399780273438
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2022-fa-p12-28",
+        "number": "28",
+        "bbox": [
+          53.164,
+          50.126,
+          95.696,
+          83.544
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 28 read on cached page 12",
+        "review_reasons": [],
+        "heading_pixel_sha256": "6b3a8a0265608c59151d946e70198a0b8e5f2aa569259dd7e1b1fc8e22e18029"
+      }
+    ],
+    "regions": [
+      {
+        "page": 12,
+        "bbox": [
+          53.164,
+          50.126,
+          537.719,
+          288.606
+        ],
+        "role": "primary",
+        "owner": "2022-fa-p12-28",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "28",
+        "bbox": [
+          53.164,
+          50.126,
+          95.696,
+          83.544
+        ],
+        "pixel_sha256": "6b3a8a0265608c59151d946e70198a0b8e5f2aa569259dd7e1b1fc8e22e18029",
+        "audited_pixel_sha256": "6b3a8a0265608c59151d946e70198a0b8e5f2aa569259dd7e1b1fc8e22e18029"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

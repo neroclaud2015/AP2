@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "scope": "2022-fa",
+  "source_hash": "74543bf8b39dcdbfdc7f19151907c48e52aa1994ab726eee45bd789185a591d5",
+  "previous_revision": "2022-fa-2f.1.0-0d5856535cd0",
+  "revision": "u-crop-review-22b1220541a84bda",
+  "review_method": "visual_source_boundary_review",
+  "reviewed_by": "assistant",
+  "reason": "Restore complete printed U headings; align FA U5/U6 boundary to the original ruled separator. Source pages, identities, answers and rubric unchanged.",
+  "changes": {
+    "U5": [
+      {
+        "source_page": 10,
+        "bbox": [
+          25,
+          123.037,
+          580,
+          451.013
+        ]
+      }
+    ],
+    "U6": [
+      {
+        "source_page": 10,
+        "bbox": [
+          25,
+          457.087,
+          580,
+          811.135
+        ]
+      }
+    ]
+  },
+  "base_path": "public/data/2022_sommer_funktionsanalyse_u_solutions.json",
+  "reviewed_path": "public/data/2022_sommer_funktionsanalyse_reviewed_u_solutions.json",
+  "artifacts": {
+    "public/data/2022_sommer_funktionsanalyse_u_solutions.json": "c90bdfe9150e1729bdd67dda86e0da56aeec0990cf6e6bb75e24d5b53d2dc8fc",
+    "scripts/layout_profiles/sommer2022_fa_official.json": "68e1a8da310063adc573e656c093411cfb4330e073749ef2993eacf739aeeaec",
+    "public/data/2022_sommer_funktionsanalyse_reviewed_u_solutions.json": "6b9234f74ea255041675ecf60eee9195940c5eee4a18fb001bd5a2281d3bc0ad",
+    "public/assets/official/2022-fa-2f.1.0-0d5856535cd0/U1.png": "82827099f3b741ee5344b5783aa29ba71420bb1825f8f34303e644d55663c15e",
+    "public/assets/official/2022-fa-2f.1.0-0d5856535cd0/U2.png": "a878360f68624849811a526235270e790612b132b80fe85e4c0232d8052187b1",
+    "public/assets/official/2022-fa-2f.1.0-0d5856535cd0/U3.png": "bf51a98be0e90deb71e5ad5520b0b19ea836a611ecdb72804e17c96491afb317",
+    "public/assets/official/2022-fa-2f.1.0-0d5856535cd0/U4.png": "a7b55a555575e31190894f84dcaa383c81dd91504bdf8739b809372fdcaeefc9",
+    "public/assets/official/u-crop-review-22b1220541a84bda/U5.png": "6dc74190b44e2b6f9fd8e1ae33854685c3b71d7010d97baa927c5c0cc5cc3039",
+    "public/assets/official/u-crop-review-22b1220541a84bda/U6.png": "aa3f58af832f62ac5f5858c8a9c31fecaea2ba2ffe49e19d2e89c211f83d5790",
+    "public/assets/official/2022-fa-2f.1.0-0d5856535cd0/U7.png": "7b9d9b61a900d9f29fad2c1ece5719b1c9db77fa2b9ce1757c875340bc9f21c1",
+    "public/assets/official/2022-fa-2f.1.0-0d5856535cd0/U8.png": "8c43d6651f4c6f79cde7e5f5500d2a14de74851ddeb0752444c92c3dff8915ca"
+  }
+}

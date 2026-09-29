@@ -1,0 +1,213 @@
+{
+  "key": "5801687773f3f21fe4e23a32207697f9f6ad13a3a4622b6e7eadd81371dda6fa",
+  "record_hash": "dfd6084e54ad63e591e63701cd2fa38165df14fb3975cdcebec56f0b8d0d1d75",
+  "record": {
+    "page": 6,
+    "geometry": [
+      595.4400024414062,
+      842.0399780273438
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2022-fa-p6-8",
+        "number": "8",
+        "bbox": [
+          53.164,
+          51.645,
+          95.696,
+          85.063
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 8 read on cached page 6",
+        "review_reasons": [],
+        "heading_pixel_sha256": "7ba1920a7c6d0a536c71d5af6bf0bfa10a31373e1a3ba5630676fe786b242c31"
+      },
+      {
+        "anchor_id": "2022-fa-p6-9",
+        "number": "9",
+        "bbox": [
+          53.164,
+          299.239,
+          95.696,
+          332.657
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 9 read on cached page 6",
+        "review_reasons": [],
+        "heading_pixel_sha256": "87a8dc0acb6ff5142322e3c65d7fdc5341ee73fd748854f246888f2f5f990622"
+      },
+      {
+        "anchor_id": "2022-fa-p6-10",
+        "number": "10",
+        "bbox": [
+          300.758,
+          299.239,
+          343.289,
+          332.657
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 10 read on cached page 6",
+        "review_reasons": [],
+        "heading_pixel_sha256": "f5455d87114885f0635e22295a9e1f71a03ee74023ff3fc666c83e289f2f2eca"
+      },
+      {
+        "anchor_id": "2022-fa-p6-11",
+        "number": "11",
+        "bbox": [
+          53.164,
+          539.238,
+          95.696,
+          572.655
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 11 read on cached page 6",
+        "review_reasons": [],
+        "heading_pixel_sha256": "0e37b7d6a17d877f4f347feb978f49844971cb950e5c31c47312a7611f7e387a"
+      },
+      {
+        "anchor_id": "2022-fa-p6-12",
+        "number": "12",
+        "bbox": [
+          300.758,
+          539.238,
+          343.289,
+          572.655
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 12 read on cached page 6",
+        "review_reasons": [],
+        "heading_pixel_sha256": "d08a088dc0250bad7eacf3defbf3e5f5a011329e65e48fbd436d91c1abba8a7b"
+      }
+    ],
+    "regions": [
+      {
+        "page": 6,
+        "bbox": [
+          53.164,
+          51.645,
+          537.719,
+          293.163
+        ],
+        "role": "primary",
+        "owner": "2022-fa-p6-8",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      },
+      {
+        "page": 6,
+        "bbox": [
+          53.164,
+          299.239,
+          294.682,
+          533.162
+        ],
+        "role": "primary",
+        "owner": "2022-fa-p6-9",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      },
+      {
+        "page": 6,
+        "bbox": [
+          300.758,
+          299.239,
+          537.719,
+          533.162
+        ],
+        "role": "primary",
+        "owner": "2022-fa-p6-10",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      },
+      {
+        "page": 6,
+        "bbox": [
+          53.164,
+          539.238,
+          294.682,
+          782.274
+        ],
+        "role": "primary",
+        "owner": "2022-fa-p6-11",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      },
+      {
+        "page": 6,
+        "bbox": [
+          300.758,
+          539.238,
+          537.719,
+          782.274
+        ],
+        "role": "primary",
+        "owner": "2022-fa-p6-12",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "8",
+        "bbox": [
+          53.164,
+          51.645,
+          95.696,
+          85.063
+        ],
+        "pixel_sha256": "7ba1920a7c6d0a536c71d5af6bf0bfa10a31373e1a3ba5630676fe786b242c31",
+        "audited_pixel_sha256": "7ba1920a7c6d0a536c71d5af6bf0bfa10a31373e1a3ba5630676fe786b242c31"
+      },
+      {
+        "kind": "heading",
+        "number": "9",
+        "bbox": [
+          53.164,
+          299.239,
+          95.696,
+          332.657
+        ],
+        "pixel_sha256": "87a8dc0acb6ff5142322e3c65d7fdc5341ee73fd748854f246888f2f5f990622",
+        "audited_pixel_sha256": "87a8dc0acb6ff5142322e3c65d7fdc5341ee73fd748854f246888f2f5f990622"
+      },
+      {
+        "kind": "heading",
+        "number": "10",
+        "bbox": [
+          300.758,
+          299.239,
+          343.289,
+          332.657
+        ],
+        "pixel_sha256": "f5455d87114885f0635e22295a9e1f71a03ee74023ff3fc666c83e289f2f2eca",
+        "audited_pixel_sha256": "f5455d87114885f0635e22295a9e1f71a03ee74023ff3fc666c83e289f2f2eca"
+      },
+      {
+        "kind": "heading",
+        "number": "11",
+        "bbox": [
+          53.164,
+          539.238,
+          95.696,
+          572.655
+        ],
+        "pixel_sha256": "0e37b7d6a17d877f4f347feb978f49844971cb950e5c31c47312a7611f7e387a",
+        "audited_pixel_sha256": "0e37b7d6a17d877f4f347feb978f49844971cb950e5c31c47312a7611f7e387a"
+      },
+      {
+        "kind": "heading",
+        "number": "12",
+        "bbox": [
+          300.758,
+          539.238,
+          343.289,
+          572.655
+        ],
+        "pixel_sha256": "d08a088dc0250bad7eacf3defbf3e5f5a011329e65e48fbd436d91c1abba8a7b",
+        "audited_pixel_sha256": "d08a088dc0250bad7eacf3defbf3e5f5a011329e65e48fbd436d91c1abba8a7b"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

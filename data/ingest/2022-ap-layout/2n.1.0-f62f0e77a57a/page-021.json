@@ -1,0 +1,46 @@
+{
+  "key": "de89a616a0638fd3adaf87ee33043c0ac5b1a14bf60f192be018405a6e5557ed",
+  "record_hash": "1c13a465fc75902cdad15a1617c5dacf2e89cf504e1a5db28ba71bef25f328d4",
+  "record": {
+    "page": 21,
+    "geometry": [
+      595.4400024414062,
+      842.0399780273438
+    ],
+    "classification": "continuation",
+    "classification_evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+    "anchors": [],
+    "regions": [
+      {
+        "page": 21,
+        "bbox": [
+          27.342,
+          13.671,
+          572.655,
+          817.211
+        ],
+        "role": "continuation",
+        "owner": "2022-ap-p20-U1",
+        "evidence": "U1 subparts 2-4 and Ergebnis U1 continue the connection drawing."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "ownership",
+        "number": "U1",
+        "bbox": [
+          27.342,
+          13.671,
+          572.655,
+          817.211
+        ],
+        "pixel_sha256": "e4aac07bee591e66aa303c7b03169b4dfe459db1885a63d9adb2988f242e481b",
+        "audited_pixel_sha256": "e4aac07bee591e66aa303c7b03169b4dfe459db1885a63d9adb2988f242e481b"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

@@ -62,6 +62,7 @@ jobs:
       - run: python scripts/publish_evidence.py practice-ux
       - run: python scripts/publish_evidence.py sommer2021
       - run: python scripts/publish_evidence.py winter2021-22
+      - run: python scripts/publish_evidence.py sommer2022
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

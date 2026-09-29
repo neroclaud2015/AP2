@@ -1,4 +1,14 @@
+# Current: Sommer 2022 complete
+
+AP36 MC28 U8; FA36 MC28 U8; WiSo24 MC18 U6. All Production, Review0.97 new pages,0 old rescans,12 duplicate steps skipped. Winter2021/22 FA user confirmations also promoted. See [Sommer 2022 report](SOMMER_2022_REPORT.md). Stop before Winter2022/23. Earlier entries below are historical.
+
+---
+
 # Current: Phase 2L — Sommer 2021 (2026-09-29)
+
+## Manual promotion completed
+
+User confirmed FA Q23=3,Q24=3,Q26=4, source/crop/parser hashes verified, locked manual_source_review. FA now Production:36/36 MC28/28 U8/8. No PDF opened. Earlier pending figures below describe historical gate.
 
 ## Current: Winter 2021/22 (Phase 2M)
 

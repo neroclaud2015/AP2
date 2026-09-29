@@ -18,6 +18,6 @@ class Winter202122Safety(unittest.TestCase):
   reg=read(ROOT/'data/source_registry.json');old=next(s for s in reg['sources'] if s['source_id']==p['source_id']);self.assertEqual(old['status'],'blocked');self.assertNotIn('formal_segmented',old['gates'])
   self.assertEqual(p['previous_config']['attachment_crops'][1]['bbox'][3],1189.969);self.assertEqual(p['corrected_config']['attachment_crops'][1]['bbox'][3],1188)
  def test_production_scope_and_identity(self):
-  modules=[m for m in read(ROOT/'public/data/promoted_modules.json') if m['examId']=='2021-22-winter'];self.assertEqual([m['slug'] for m in modules],['arbeitsplanung','wiso'])
+  modules=[m for m in read(ROOT/'public/data/promoted_modules.json') if m['examId']=='2021-22-winter'];self.assertEqual([m['slug'] for m in modules],['arbeitsplanung','wiso','funktionsanalyse'])
   for slug,n in [('arbeitsplanung',36),('funktionsanalyse',36),('wiso',24)]:
    q=read(ROOT/f'public/data/2021_22_winter_{slug}_segmented.json')['questions'];self.assertEqual(len(q),n);self.assertEqual(len({x['question_id'] for x in q}),n)

@@ -1,5 +1,9 @@
 # Phase 2M — Winter 2021/22
 
+## Manual promotion completed
+
+User confirmed FA Q23=3,Q24=3,Q26=4, source/crop/parser hashes verified, locked manual_source_review. FA now Production:36/36 MC28/28 U8/8. No PDF opened. Earlier pending figures below describe historical gate.
+
 | Module | Questions | MC reliable | U crops | Review | State |
 |---|---:|---:|---:|---|---|
 | Arbeitsplanung |36/36|28/28|8/8|0|Production|

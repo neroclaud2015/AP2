@@ -8,6 +8,9 @@ import argparse,html
 
 def build(root,layout_path,out):
  c=read(layout_path);q=read(root/f'public/data/{c["name"]}_segmented.json');u=read(root/f'public/data/{c["name"]}_u_solutions.json');a=read(root/f'public/data/{c["name"]}_answers.json');cache=cache_metadata(root,c['source_hash']);folder=out/c['module'].lower();folder.mkdir(parents=True,exist_ok=True)
+ registered=next((m for m in read(root/'public/data/promoted_modules.json',[]) if m['examId']==c['exam'].replace('_','-') and m['slug']==c['module'].lower()),None)
+ if registered:
+  u=read(root/'public'/registered['solutionsPath']);a=read(root/'public'/registered['answersPath'])
  links=[]
  for n,p in c['pages'].items():
   with Image.open(root/cache['pages'][n]['image']) as original:im=original.convert('RGB')

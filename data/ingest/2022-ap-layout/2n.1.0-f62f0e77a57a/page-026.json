@@ -1,0 +1,61 @@
+{
+  "key": "4af4b4bf11f84fef7288eadc93984265661a421a538d4dcf9c243e6fa82ce3f7",
+  "record_hash": "88bfb91fc7705bead0d18b9834ea982921328bcec25baf0f9e72c53364ea5bad",
+  "record": {
+    "page": 26,
+    "geometry": [
+      595.4400024414062,
+      842.0399780273438
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2022-ap-p26-U5",
+        "number": "U5",
+        "bbox": [
+          27.342,
+          13.671,
+          69.873,
+          47.088
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U5 read on cached page 26",
+        "review_reasons": [],
+        "heading_pixel_sha256": "ac08b14f1a97c52ae129c8369f2fad436564b0928255621547c5d19a2c12c8fc"
+      }
+    ],
+    "regions": [
+      {
+        "page": 26,
+        "bbox": [
+          27.342,
+          13.671,
+          572.655,
+          817.211
+        ],
+        "role": "primary",
+        "owner": "2022-ap-p26-U5",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U5",
+        "bbox": [
+          27.342,
+          13.671,
+          69.873,
+          47.088
+        ],
+        "pixel_sha256": "ac08b14f1a97c52ae129c8369f2fad436564b0928255621547c5d19a2c12c8fc",
+        "audited_pixel_sha256": "ac08b14f1a97c52ae129c8369f2fad436564b0928255621547c5d19a2c12c8fc"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}
