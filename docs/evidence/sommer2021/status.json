@@ -1,6 +1,6 @@
 {
   "scope": "2021-sommer",
-  "status": "awaiting_manual_answer_confirmation",
+  "status": "production",
   "modules": {
     "arbeitsplanung": {
       "status": "production",
@@ -12,26 +12,21 @@
       "question_pages_rendered": 23
     },
     "funktionsanalyse": {
-      "status": "needs_review",
+      "status": "production",
       "questions": 36,
-      "mc_ready": 26,
+      "mc_ready": 28,
       "mc_expected": 28,
       "u": 8,
-      "review": [
-        4,
-        23
-      ],
+      "review": [],
       "question_pages_rendered": 30
     },
     "wiso": {
-      "status": "needs_review",
+      "status": "production",
       "questions": 24,
-      "mc_ready": 17,
+      "mc_ready": 18,
       "mc_expected": 18,
       "u": 6,
-      "review": [
-        18
-      ],
+      "review": [],
       "question_pages_rendered": 16
     }
   },
@@ -43,5 +38,11 @@
   "answer_profile": "official-ring-grid",
   "next_exam_authorized": false,
   "review_scope": "sommer-2021",
-  "repeat_steps_skipped": 12
+  "repeat_steps_skipped": 12,
+  "manual_confirmations": {
+    "FA Q4": 1,
+    "FA Q23": 2,
+    "WiSo Q18": 4
+  },
+  "promotion_pages_rendered": 0
 }

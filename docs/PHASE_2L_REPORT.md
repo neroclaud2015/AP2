@@ -1,5 +1,10 @@
 # Phase 2L — Sommer 2021
 
+## Manual confirmation completed — 2026-09-29
+
+User export validated against source, crop, parser and evidence hashes: FA Q4=1, FA Q23=2, WiSo Q18=4. All locked with manual_source_review. FA now 36 questions, MC28/28, U8/8; WiSo24 questions, MC18/18, U6/6. Both registered in production. Original detector outputs, crops and audit history retained. This promotion rendered0 pages and opened0 PDFs. Prior review statistics below describe the initial gate, not current status.
+
+
 | Module | Questions | MC reliable | U solution crops | Needs Review | State |
 |---|---:|---:|---:|---|---|
 | Arbeitsplanung | 36/36 | 28/28 | 8/8 | None | Production |

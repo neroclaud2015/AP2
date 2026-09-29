@@ -1,5 +1,10 @@
 # Current: Phase 2L — Sommer 2021 (2026-09-29)
 
+## Manual confirmation completed — 2026-09-29
+
+User export validated against source, crop, parser and evidence hashes: FA Q4=1, FA Q23=2, WiSo Q18=4. All locked with manual_source_review. FA now 36 questions, MC28/28, U8/8; WiSo24 questions, MC18/18, U6/6. Both registered in production. Original detector outputs, crops and audit history retained. This promotion rendered0 pages and opened0 PDFs. Prior review statistics below describe the initial gate, not current status.
+
+
 AP Production36/36, MC28/28, U8/8. FA36/36, MC26/28, U8/8: Q4/Q23 await manual review. WiSo24/24, MC17/18, U6/6: Q18 awaits manual review. 87 new cached pages,0 old PDF rescans. Stop for confirmation; no Winter2021/22. Earlier checkpoints below remain historical. See PHASE_2L_REPORT.md.
 
 # Current checkpoint — Winter 2020/21 complete
