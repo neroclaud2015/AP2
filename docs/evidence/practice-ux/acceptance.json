@@ -1,0 +1,13 @@
+{
+  "base": "http://127.0.0.1:5174/",
+  "checks": [
+    "Blank MC reveal + refresh: zero attempts, 0/36 progress, Unsicher draft persists",
+    "MC submits Unsicher snapshot exactly once; re-reveal retains attempt; retry resets Unsicher",
+    "Blank U reveals solution without assessment or attempt",
+    "Partial U persists through reveal/refresh and stays editable; assessed U creates one attempt",
+    "Active Originalprüfung still hides solutions",
+    "Desktop actions aligned; mobile MC/U no horizontal overflow"
+  ],
+  "isolated_context": true,
+  "real_user_data_touched": false
+}
