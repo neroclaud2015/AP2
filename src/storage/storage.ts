@@ -1,3 +1,4 @@
+import {legacyQuestionNotes,validQuestionNote,type QuestionNote} from '../learning/questionNotes';
 import {validateEntity,canonical} from '../sync/validation';
 import {SyncPersistence} from '../sync/persistence';
 import {PERSONAL_STORES,ID_FIELDS,type OutboxItem} from '../sync/localTypes';
@@ -28,6 +29,7 @@ export class IndexedDBProgressRepository implements ProgressRepository {
     this.db.version(5).stores({testSessions:'[userId+test_id],userId,[userId+module],[userId+status]'});
     this.db.version(6).stores({testSessions:'[userId+test_id],userId,[userId+module],[userId+status]'}).upgrade(tx=>tx.table('testSessions').toCollection().modify(record=>{if(record.status==='submitted')record.status='completed';}));
     this.db.version(7).stores({settings:'[userId+id],userId',syncMeta:'[userId+entity+id],userId',outbox:'[userId+entity+id],userId',tombstones:'[userId+entity+id],userId',syncConflicts:'[userId+entity+id],userId',deviceState:'key'});
+    this.db.version(8).stores({questionNotes:'[userId+question_id],userId'});
     this.syncStore=new SyncPersistence(this.db);
     this.records = this.db.table('records');
   }
@@ -71,6 +73,29 @@ export class IndexedDBProgressRepository implements ProgressRepository {
   async saveAnswerReview(review: AnswerReview) {
     if(!validAnswerReview(review)) throw new Error('Invalid answer review');
     await this.syncStore.put('answerReviews',review as unknown as Record<string,unknown>);
+  }
+  private async migrateQuestionNotes(userId:string,enqueue=true,force=false){
+    await this.db.transaction('rw',this.syncStore.tables(),async()=>{
+      const key='question-notes-migration-v1:'+userId;
+      if(!force&&await this.db.table('deviceState').get(key))return;
+      const existing=await this.db.table<QuestionNote>('questionNotes').where('userId').equals(userId).toArray();
+      const deleted=(await this.db.table('tombstones').where('userId').equals(userId).toArray()).filter(r=>r.entity==='questionNotes').map(r=>r.id);
+      const migrated=legacyQuestionNotes(userId,existing,await this.getAttempts(userId),await this.getLearningSessions(userId),new Date().toISOString(),deleted);
+      for(const note of migrated){if(enqueue)await this.syncStore.put('questionNotes',note as unknown as Record<string,unknown>);else await this.db.table('questionNotes').put(note);}
+      await this.db.table('deviceState').put({key,value:true});
+    });
+  }
+  async getQuestionNotes(userId:string):Promise<QuestionNote[]>{await this.migrateQuestionNotes(userId);return this.db.table<QuestionNote>('questionNotes').where('userId').equals(userId).toArray();}
+  async getQuestionNote(userId:string,questionId:string):Promise<QuestionNote|undefined>{await this.migrateQuestionNotes(userId);return this.db.table<QuestionNote>('questionNotes').get([userId,questionId]);}
+  async saveQuestionNote(userId:string,questionId:string,text:string,expectedRevision:number,expectedText:string):Promise<QuestionNote>{
+    await this.migrateQuestionNotes(userId);
+    return this.db.transaction('rw',this.syncStore.tables(),async()=>{
+      const old=await this.db.table<QuestionNote>('questionNotes').get([userId,questionId]);
+      if((old?.revision??0)!==expectedRevision||(old?.text??'')!==expectedText)throw Error('Die Notiz wurde inzwischen geändert. Bitte neu laden und beide Texte vergleichen.');
+      const stamp=new Date().toISOString();const note={userId,question_id:questionId,text,created_at:old?.created_at??stamp,updated_at:stamp,revision:(old?.revision??0)+1};
+      if(!validQuestionNote(note))throw Error('Ungültige Notiz.');
+      await this.syncStore.put('questionNotes',note as unknown as Record<string,unknown>);return note;
+    });
   }
   async getAttempts(userId:string):Promise<Attempt[]> {return this.db.table<Attempt>('attempts').where('userId').equals(userId).toArray();}
   async getLearningSessions(userId:string):Promise<LearningSession[]> {return this.db.table<LearningSession>('learningSessions').where('userId').equals(userId).toArray();}
@@ -129,8 +154,9 @@ export class IndexedDBProgressRepository implements ProgressRepository {
   }
   async getRecords(userId:string):Promise<ProgressRecord[]>{return this.records.where('userId').equals(userId).toArray();}
   async exportSnapshot(userId:string){
+    await this.migrateQuestionNotes(userId);
     const names=[...PERSONAL_STORES];
-    return this.db.transaction('r',names,async()=>({schema_version:1 as const,userId,records:await this.getRecords(userId),reviews:await this.getReviews(userId),answerReviews:await this.getAnswerReviews(userId),attempts:await this.getAttempts(userId),learningSessions:await this.getLearningSessions(userId),testSessions:await this.getTestSessions(userId),settings:await this.getSettings(userId)}));
+    return this.db.transaction('r',names,async()=>({schema_version:1 as const,userId,records:await this.getRecords(userId),reviews:await this.getReviews(userId),answerReviews:await this.getAnswerReviews(userId),attempts:await this.getAttempts(userId),learningSessions:await this.getLearningSessions(userId),testSessions:await this.getTestSessions(userId),settings:await this.getSettings(userId),questionNotes:await this.db.table<QuestionNote>('questionNotes').where('userId').equals(userId).toArray()}));
   }
   getOutbox(userId:string){return this.syncStore.outbox(userId);}
   getSyncConflicts(userId:string){return this.syncStore.conflicts(userId);}
@@ -144,12 +170,13 @@ export class IndexedDBProgressRepository implements ProgressRepository {
   async saveSetting(userId:string,id:string,value:unknown){await this.syncStore.put('settings',{userId,id,value});}
   async importSnapshot(snapshot:import('../types').PersonalDataSnapshot,userId:string,sync:boolean){
     if(snapshot.schema_version!==1||!snapshot.userId||!userId)throw Error('Ungültige Sicherung.');
-    for(const entity of PERSONAL_STORES){const list=entity==='settings'?(snapshot.settings??[]):snapshot[entity];if(!Array.isArray(list))throw Error('Ungültige Sicherung.');for(const row of list){if(!row||typeof row!=='object'||typeof (row as unknown as Record<string,unknown>)[ID_FIELDS[entity]]!=='string'||row.userId!==snapshot.userId)throw Error('Ungültige Datensatzidentität.');}}
+    for(const entity of PERSONAL_STORES){const list=entity==='settings'||entity==='questionNotes'?(snapshot[entity]??[]):snapshot[entity];if(!Array.isArray(list))throw Error('Ungültige Sicherung.');for(const row of list){if(!row||typeof row!=='object'||typeof (row as unknown as Record<string,unknown>)[ID_FIELDS[entity]]!=='string'||row.userId!==snapshot.userId)throw Error('Ungültige Datensatzidentität.');}}
     await this.db.transaction('rw',this.syncStore.tables(),async()=>{
       for(const entity of PERSONAL_STORES)for(const row of snapshot[entity]??[]){const value={...row,userId} as unknown as Record<string,unknown>,id=String(value[ID_FIELDS[entity]]),existing=await this.db.table(entity).get([userId,id]);
         if(existing&&canonical(existing)!==canonical(value))throw Error('Gleiche ID mit anderem Inhalt. Import wurde ohne Änderungen abgebrochen.');
         validateEntity(entity,id,userId,value);if(!existing){if(sync)await this.syncStore.put(entity,value);else await this.db.table(entity).put(value);}else if(sync&&!(await this.db.table('syncMeta').get([userId,entity,id])))await this.syncStore.mark(entity,userId,id,value);
       }
+      await this.migrateQuestionNotes(userId,sync,true);
     });
   }
   close() { this.db.close(); }

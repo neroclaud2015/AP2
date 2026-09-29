@@ -8,7 +8,7 @@ before(async()=>{if(!process.env.FIRESTORE_EMULATOR_HOST)throw Error('Emulator r
 after(async()=>{await env?.cleanup();});beforeEach(async()=>{await env.clearFirestore();});
 const key='a'.repeat(64);
 function value(entity='attempts'){return entity==='attempts'?{userId:'alice',attempt_id:'a',answer:{choice:'1'},source_revision:'r1',note:'old'}:{userId:'alice',test_id:'a',status:'completed',completed_at:'2026-01-01',answers:{U1:{'1':'submitted'}},source_mix:[{revision:'r1'}],subpart_assessments:{},result:{pending:1}};}
-async function write(db,entity,data,deleted=false){return runTransaction(db,async tx=>{const rp=doc(db,'users','alice','records',key),sp=doc(db,'users','alice','sync','state');const [r,s]=await Promise.all([tx.get(rp),tx.get(sp)]);const old=r.data();const e={entity,id:'a',revision:(old?.envelope.revision??0)+1,cursor:(s.data()?.cursor??0)+1,deviceId:'device',updatedAt:'2026-01-01',deleted,value:deleted?null:data};tx.set(sp,{userId:'alice',cursor:e.cursor});tx.set(rp,{userId:'alice',envelope:e,history:deleted?old?.history??null:data});return e;});}
+async function write(db,entity,data,deleted=false){return runTransaction(db,async tx=>{const rp=doc(db,'users','alice','records',key),sp=doc(db,'users','alice','sync','state');const [r,s]=await Promise.all([tx.get(rp),tx.get(sp)]);const old=r.data();const e={entity,id:'a',revision:(old?.envelope.revision??0)+1,cursor:(s.data()?.cursor??0)+1,deviceId:'device',updatedAt:'2026-01-01',deleted,value:deleted?null:data};tx.set(sp,{userId:'alice',cursor:e.cursor});tx.set(rp,{userId:'alice',envelope:e,history:deleted?old?.history??null:['attempts','testSessions'].includes(entity)?data:null});return e;});}
 test('anonymous and foreign uid cannot read or write any personal collection',async()=>{
  await assertSucceeds(write(alice,'attempts',value()));
  for(const db of [bob,anonymous]){await assertFails(getDoc(doc(db,'users','alice','records',key)));await assertFails(write(db,'attempts',value()));for(const name of ['sync','devices','mutations','conflicts'])await assertFails(setDoc(doc(db,'users','alice',name,'x'),{userId:'alice'}));}
@@ -30,4 +30,10 @@ test('completed U self-assessment and lifecycle allowed; original answer/source 
 test('mutation receipt must match resulting record and is immutable',async()=>{
  const record=await write(alice,'attempts',value());const rp=doc(alice,'users','alice','mutations','b'.repeat(64));const receipt={userId:'alice',recordKey:key,createdAt:'now',mutation:{mutationId:'m',entity:'attempts',id:'a',baseRevision:0,deleted:false,value:value()},result:{mutationId:'m',status:'applied',record}};
  await assertSucceeds(setDoc(rp,receipt));await assertFails(setDoc(rp,{...receipt,createdAt:'changed'}));await assertFails(deleteDoc(rp));await assertFails(setDoc(doc(alice,'users','alice','mutations','c'.repeat(64)),{...receipt,result:{...receipt.result,record:{...record,revision:9}}}));
+});
+
+test('question notes accept owned updates and reject foreign UID or malformed content',async()=>{
+ const note={userId:'alice',question_id:'a',text:'Persistent',created_at:'2026-01-01',updated_at:'2026-01-01',revision:1};
+ await assertSucceeds(write(alice,'questionNotes',note));await assertSucceeds(write(alice,'questionNotes',{...note,text:'Edited',revision:2}));
+ await assertFails(write(bob,'questionNotes',note));await assertFails(getDoc(doc(bob,'users','alice','records',key)));await assertFails(write(alice,'questionNotes',{...note,text:7}));await assertFails(write(alice,'questionNotes',{...note,userId:'bob'}));
 });

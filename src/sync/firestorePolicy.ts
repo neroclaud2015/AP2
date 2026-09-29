@@ -1,10 +1,12 @@
+import {validQuestionNote} from '../learning/questionNotes';
 import {SYNC_ENTITIES,type EntityType,type PushMutation,type SyncEnvelope,type SyncValue} from './protocol';
-export const ID_FIELDS:Record<EntityType,string>={records:'questionId',reviews:'question_id',answerReviews:'question_id',attempts:'attempt_id',learningSessions:'question_id',testSessions:'test_id',settings:'id'};
+export const ID_FIELDS:Record<EntityType,string>={records:'questionId',reviews:'question_id',answerReviews:'question_id',attempts:'attempt_id',learningSessions:'question_id',testSessions:'test_id',settings:'id',questionNotes:'question_id'};
 export const canonical=(v:unknown):string=>Array.isArray(v)?'['+v.map(canonical).join(',')+']':v&&typeof v==='object'?'{'+Object.keys(v).sort().map(k=>JSON.stringify(k)+':'+canonical((v as Record<string,unknown>)[k])).join(',')+'}':JSON.stringify(v)??'undefined';
 export function validateMutation(m:PushMutation,uid:string){
  if(!SYNC_ENTITIES.includes(m.entity)||typeof m.id!=='string'||!m.id.length||m.id.length>200||typeof m.mutationId!=='string'||!m.mutationId.length||m.mutationId.length>200||!Number.isSafeInteger(m.baseRevision)||m.baseRevision<0||typeof m.deleted!=='boolean'||new TextEncoder().encode(JSON.stringify(m)).length>200_000)throw Error('Ungültiger Sync-Datensatz.');
  if(m.deleted){if(m.value!==null)throw Error('Ungültiger Löschmarker.');}
  else if(!m.value||Array.isArray(m.value)||m.value.userId!==uid||m.value[ID_FIELDS[m.entity]]!==m.id)throw Error('Datensatz gehört nicht zu diesem Konto oder dieser Identität.');
+ if(!m.deleted&&m.entity==='questionNotes'&&!validQuestionNote(m.value))throw Error('Ungültige Notiz.');
 }
 const without=(v:Record<string,unknown>,keys:string[])=>Object.fromEntries(Object.entries(v).filter(([k])=>!keys.includes(k)));
 export function immutableCompatible(entity:EntityType,old:Record<string,unknown>,next:Record<string,unknown>):boolean{

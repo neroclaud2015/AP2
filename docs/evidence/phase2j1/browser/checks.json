@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "Real v7 → v8 migration: session wins, old attempts/error_reason unchanged",
+    "Migration: latest nonempty attempt wins, latest empty ignored",
+    "Saved note survives refresh, question switch and two new attempts; Why-wrong removed",
+    "Latest note survives module/year switch and actual browser close/relaunch",
+    "original: note hidden before submission, available in review",
+    "module: note hidden before submission, available in review",
+    "Discard/delete both test types preserve question notes and ordinary attempts",
+    "FA Q21 user-confirmed 2 scores correctly with official source crop"
+  ],
+  "isolated_profile": true,
+  "real_user_data_touched": false,
+  "pdf_rescans": 0,
+  "errors": []
+}

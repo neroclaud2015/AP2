@@ -77,4 +77,18 @@ class ManualPromotionTests(unittest.TestCase):
  def test_changed_machine_never_overwrites_manual_confirmation(self):
   machine=copy.deepcopy(self.queue['items'][0]);manual=self.records[0];machine['official_answer']=5;machine['parser_revision']='new';result=merge_confirmed(machine,manual)
   self.assertEqual(result['official_answer'],1);self.assertTrue(result['machine_suggestion_changed']);self.assertEqual(result['measurements'],machine['measurements']);self.assertEqual(result['manual_source_evidence']['source_crop_sha256'],manual['source_crop_sha256'])
+class Winter2019ManualTests(unittest.TestCase):
+ def test_actual_user_confirmation_and_no_pdf_access(self):
+  payload=json.loads((ROOT/'data/reviews/winter-2019-20-user-export.json').read_text())
+  with patch('pymupdf.open',side_effect=AssertionError('No PDF')),patch('zipfile.ZipFile',side_effect=AssertionError('No archive')):
+   plan=prepare(ROOT,payload,{})
+  answer=next(a for a in plan['ready']['funktionsanalyse']['answers']['answers'] if a['question_number']==21)
+  self.assertEqual(answer['official_answer'],2);self.assertTrue(answer['locked']);self.assertIsNone(answer['machine_official_answer']);self.assertEqual(len(plan['ready']['funktionsanalyse']['solutions']['solutions']),8)
+  pending=prepare(ROOT,{**payload,'confirmations':[]},{})
+  self.assertEqual(pending['ready'],{});self.assertEqual(pending['pending']['funktionsanalyse'],[21])
+  for field,value in [('source_crop_sha256','bad'),('locked',False),('confirmation_method','machine'),('official_answer',0)]:
+   broken=copy.deepcopy(payload);broken['confirmations'][0][field]=value
+   with self.subTest(field=field),self.assertRaises(ValueError):prepare(ROOT,broken,{})
+  ledger={r['question_id']:r for r in payload['confirmations']};broken=copy.deepcopy(payload);broken['confirmations'][0]['official_answer']=3
+  with self.assertRaisesRegex(ValueError,'locked'):prepare(ROOT,broken,ledger)
 if __name__=='__main__':unittest.main()

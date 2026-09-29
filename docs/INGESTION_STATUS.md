@@ -1,3 +1,13 @@
+# Current checkpoint — Phase 2J.1 / Winter 2019/20 complete
+
+User-confirmed FA Q21 = 2, locked manual_source_review, source hash/crop/evidence verified. FA36 now production: MC28/28, U8/8, unresolved0. Winter2019/20 AP/FA/WiSo complete. Total16 production modules /504 questions. Raw machine answers and checkpoints remain historical evidence; separate reviewed answers resolve the safety gate. No PDF opened/rendered, no new season processed. Sommer2018 AP/FA missing-attachment blocks unchanged.
+
+Persistent QuestionNotes are separate from attempt drafts, included in backup/sync, with non-destructive legacy migration. Firebase remains implemented but not configured. Stop for user acceptance, no Sommer2020.
+
+See PHASE_2J_1_REPORT.md and evidence/phase2j1.
+
+---
+
 # Current checkpoint — Phase 2J / Winter 2019/20
 
 AP36 (MC28/28,U8/8) and WiSo24 (MC18/18,U6/6) production. FA36, MC27/28, U8/8: Q21 requires actual manual_source_review; no promotion. Total15 production modules /468 questions. 79 new physical pages cached once; old PDF rescans0. All12 repeated steps skip with pymupdf.open prohibited. Previous30 source records, datasets, manual confirmations and personal storage code unchanged.

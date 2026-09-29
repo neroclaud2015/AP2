@@ -31,12 +31,21 @@ def validate_confirmation(row,queue):
  # Only public review metadata is retained. Never accept user profile or learning history.
  return {k:row[k] for k in FIELDS+['official_answer','official_answer_status','user_corrected','locked','confirmation_method','updated_at','machine_answer_at_confirmation']}
 
+def scope_settings(payload):
+ if payload.get('scope')==SCOPE:
+  return dict(scope=SCOPE,targets=TARGETS,exam='2018_19_winter',stamp='2018-19',profile='winter2018_19',queue='manual_answer_review_queue.json',ledger='official_answer_confirmations.json',manifest='manual_answer_promotion_manifest.json')
+ if payload.get('scope')=='winter-2019-20':
+  return dict(scope='winter-2019-20',targets={'funktionsanalyse':[21]},exam='2019_20_winter',stamp='2019-20',profile='winter2019_20',queue='manual_answer_review_winter2019_20.json',ledger='winter-2019-20-confirmations.json',manifest='winter-2019-20-manual-promotion.json')
+ raise ValueError('Unknown manual review scope')
+
 def prepare(root,payload,existing=None):
  root=Path(root)
- if not isinstance(payload,dict) or payload.get('schema_version')!=1 or payload.get('scope')!=SCOPE or not isinstance(payload.get('confirmations'),list):raise ValueError('Invalid scoped confirmation export')
- qdata=read(root/'public/data/manual_answer_review_queue.json');queue={q['question_id']:q for q in qdata['items']}
- if len(queue)!=8 or {(q['module'].lower(),q['question_number']) for q in queue.values()}!={(m,n) for m,ns in TARGETS.items() for n in ns}:raise ValueError('Review queue identity mismatch')
- ledger=deepcopy(existing if existing is not None else read(root/'data/reviews/official_answer_confirmations.json',{}).get('confirmations',{}));seen=set()
+ if not isinstance(payload,dict):raise ValueError('Invalid export')
+ settings=scope_settings(payload);targets=settings['targets']
+ if not isinstance(payload,dict) or payload.get('schema_version')!=1 or payload.get('scope')!=settings['scope'] or not isinstance(payload.get('confirmations'),list):raise ValueError('Invalid scoped confirmation export')
+ qdata=read(root/'public/data'/settings['queue']);queue={q['question_id']:q for q in qdata['items']}
+ if len(queue)!=sum(len(ns) for ns in targets.values()) or {(q['module'].lower(),q['question_number']) for q in queue.values()}!={(m,n) for m,ns in targets.items() for n in ns}:raise ValueError('Review queue identity mismatch')
+ ledger=deepcopy(existing if existing is not None else read(root/'data/reviews'/settings['ledger'],{}).get('confirmations',{}));seen=set()
  for row in payload['confirmations']:
   r=validate_confirmation(row,queue);qid=r['question_id']
   if qid in seen:raise ValueError('Duplicate confirmation')
@@ -48,9 +57,10 @@ def prepare(root,payload,existing=None):
   if qid!=row.get('question_id'):raise ValueError('Ledger identity mismatch')
   validate_confirmation(row,queue)
  registry=load_registry(root);ready={};pending={}
- for module,code in MODULE_CODES.items():
-  config=read(root/f'scripts/layout_profiles/winter2018_19_{code}.json');prefix=f'2018_19_winter_{module}'
-  state=read(root/f'data/ingest/2018-19-{code}_registered_answers.json');layout=read(root/f'data/ingest/2018-19-{code}_registered_layout.json')
+ for module in targets:
+  code=MODULE_CODES[module]
+  config=read(root/f'scripts/layout_profiles/{settings["profile"]}_{code}.json');prefix=f'{settings["exam"]}_{module}'
+  state=read(root/f'data/ingest/{settings["stamp"]}-{code}_registered_answers.json');layout=read(root/f'data/ingest/{settings["stamp"]}-{code}_registered_layout.json')
   if not state or state['status']!='blocked' or not layout or layout['status']!='formal_segmented' or not artifacts_valid(root,state['artifacts']) or not artifacts_valid(root,layout['artifacts']):raise ValueError('Immutable machine/layout evidence changed or missing')
   questions=read(root/f'public/data/{prefix}_segmented.json');machine=read(root/f'public/data/{prefix}_answers.json');solutions=read(root/f'public/data/{prefix}_u_solutions.json')
   ids={q['question_number']:q['question_id'] for q in questions['questions']};expected={str(i) for i in range(1,29)}|{f'U{i}' for i in range(1,9)}
@@ -60,7 +70,7 @@ def prepare(root,payload,existing=None):
   result=deepcopy(machine);unresolved=[]
   for i,a in enumerate(machine['answers']):
    qid=a['question_id']
-   if a['question_number'] in TARGETS[module]:
+   if a['question_number'] in targets[module]:
     q=queue.get(qid)
     if not q or any(q.get(k)!=a[k] for k in FIELDS if k not in ['source_crop_sha256','evidence_hash']) or objhash(a)!=q['evidence_hash'] or artifact_digest(root/'public'/a['source_crop'])!=q['source_crop_sha256']:raise ValueError('Original crop or measurements differ from review queue')
     if qid not in ledger:unresolved.append(a['question_number']);continue
@@ -71,7 +81,7 @@ def prepare(root,payload,existing=None):
   for sid in [config['source_id'],config['solution_source_id']]:
    source=next(s for s in registry['sources'] if s['source_id']==sid)
    if source['status']=='production':continue
-   if source['status']!='blocked' or source.get('blocked_after')!='answers_extracted':raise ValueError('Only the official-answer safety gate may be resolved')
+   if not (source['status']=='answers_extracted' or (source['status']=='blocked' and source.get('blocked_after')=='answers_extracted')):raise ValueError('Only the official-answer safety gate may be resolved')
    for gate in source['gates'].values():
     if not artifacts_valid(root,gate['artifacts']):raise ValueError('Source gate evidence changed')
   revision='manual-source-review-'+objhash({qid:r for qid,r in ledger.items() if qid in ids.values()})[:16]
@@ -79,16 +89,16 @@ def prepare(root,payload,existing=None):
    if answer.get('confirmation_method')=='manual_source_review':answer.update(original_parser_revision=answer['parser_revision'],parser_revision=revision)
   result.update(parser_revision=revision,original_parser_revision=machine['parser_revision'],manual_confirmation_revision=revision,completeness={'expected':28,'records':28,'unique_complete':True,'problems':[]})
   ready[module]={'answers':result,'questions':questions,'solutions':solutions,'config':config,'revision':revision}
- return {'confirmations':ledger,'ready':ready,'pending':pending,'pdf_pages_opened':0}
+ return {'confirmations':ledger,'ready':ready,'pending':pending,'pdf_pages_opened':0,'settings':settings}
 
 def module_config(plan):
- c=plan['config'];q=plan['questions'];images={str(a['page']):a['image'] for a in q['attachment_images']};prefix=f'2018_19_winter_{c["module"].lower()}'
- return {'examId':'2018-19-winter','slug':c['module'].lower(),'title':c['module'],'segmentedPath':f'data/{prefix}_segmented.json','answersPath':f'data/{prefix}_reviewed_answers.json','solutionsPath':f'data/{prefix}_u_solutions.json','choiceSolutionPage':plan['answers']['answers'][0]['source_page'],'descriptionPage':c['description_page'],'questionContextPages':{n:[a['page'] for a in c['attachment_crops'] if n in a.get('question_numbers',[])] for n in [str(i) for i in range(1,29)]+[f'U{i}' for i in range(1,9)]},'attachmentPages':[a['page'] for a in c['attachment_crops'] if a['page'] not in [c['timing_source_page'],c['description_page']]],'sourcePageImages':images,'durationMinutes':c['timing_minutes'],'durationSource':{'pdf':'','page':c['timing_source_page'],'image':images[str(c['timing_source_page'])]},'parts':[{'id':'A','title':'Teil A','kind':'multiple_choice','label':'Auswahlaufgaben','questionNumbers':[str(i) for i in range(1,29)]},{'id':'B','title':'Teil B','kind':'multi_part','label':'Offene Aufgaben','questionNumbers':[f'U{i}' for i in range(1,9)]}]}
+ c=plan['config'];q=plan['questions'];images={str(a['page']):a['image'] for a in q['attachment_images']};prefix=c['name']
+ return {'examId':c['exam'].replace('_','-'),'slug':c['module'].lower(),'title':c['module'],'segmentedPath':f'data/{prefix}_segmented.json','answersPath':f'data/{prefix}_reviewed_answers.json','solutionsPath':f'data/{prefix}_u_solutions.json','choiceSolutionPage':plan['answers']['answers'][0]['source_page'],'descriptionPage':c['description_page'],'questionContextPages':{n:[a['page'] for a in c['attachment_crops'] if n in a.get('question_numbers',[])] for n in [str(i) for i in range(1,29)]+[f'U{i}' for i in range(1,9)]},'attachmentPages':[a['page'] for a in c['attachment_crops'] if a['page'] not in [c['timing_source_page'],c['description_page']]],'sourcePageImages':images,'durationMinutes':c['timing_minutes'],'durationSource':{'pdf':'','page':c['timing_source_page'],'image':images[str(c['timing_source_page'])]},'parts':[{'id':'A','title':'Teil A','kind':'multiple_choice','label':'Auswahlaufgaben','questionNumbers':[str(i) for i in range(1,29)]},{'id':'B','title':'Teil B','kind':'multi_part','label':'Offene Aufgaben','questionNumbers':[f'U{i}' for i in range(1,9)]}]}
 
 def apply(root,payload):
- root=Path(root);plan=prepare(root,payload);registry=load_registry(root);promoted=read(root/'public/data/promoted_modules.json',[]);writes={root/'data/reviews/official_answer_confirmations.json':{'schema_version':1,'scope':SCOPE,'confirmations':plan['confirmations']}};now=datetime.now(timezone.utc).isoformat()
+ root=Path(root);plan=prepare(root,payload);settings=plan['settings'];registry=load_registry(root);promoted=read(root/'public/data/promoted_modules.json',[]);writes={root/'data/reviews'/settings['ledger']:{'schema_version':1,'scope':settings['scope'],'confirmations':plan['confirmations']}};now=datetime.now(timezone.utc).isoformat()
  for module,p in plan['ready'].items():
-  prefix=f'2018_19_winter_{module}';c=p['config'];pair=[s for s in registry['sources'] if s['source_id'] in [c['source_id'],c['solution_source_id']]]
+  prefix=f'{settings["exam"]}_{module}';c=p['config'];pair=[s for s in registry['sources'] if s['source_id'] in [c['source_id'],c['solution_source_id']]]
   if all(s['status']=='production' for s in pair):
    current=read(root/f'public/data/{prefix}_reviewed_answers.json')
    if current!=p['answers']:raise ValueError('Published manual answers are immutable')
@@ -105,10 +115,10 @@ def apply(root,payload):
    registry=transition_source(registry,source['source_id'],'validated',evidence);registry=transition_source(registry,source['source_id'],'production',evidence)
   cfg=module_config(p);promoted=[m for m in promoted if (m['examId'],m['slug'])!=(cfg['examId'],cfg['slug'])]+[cfg]
  writes[root/'public/data/promoted_modules.json']=promoted
- checkpoint=read(root/'data/ingest/manual_answer_promotion_manifest.json',{'schema_version':1,'scope':SCOPE,'modules':{}})
- for module in MODULE_CODES:
+ checkpoint=read(root/'data/ingest'/settings['manifest'],{'schema_version':1,'scope':settings['scope'],'modules':{}})
+ for module in settings['targets']:
   checkpoint['modules'][module]={'status':'production' if module in plan['ready'] else 'awaiting_manual_review','missing_question_numbers':plan['pending'][module],'manual_confirmation_revision':plan['ready'][module]['revision'] if module in plan['ready'] else None,'pdf_pages_opened':0}
- writes[root/'data/ingest/manual_answer_promotion_manifest.json']=checkpoint
+ writes[root/'data/ingest'/settings['manifest']]=checkpoint
  # No writes before all inputs and modules validate; registry written last.
  backups={p:p.read_bytes() if p.exists() else None for p in list(writes)+[root/'data/source_registry.json',root/'public/data/source_registry.json']}
  try:

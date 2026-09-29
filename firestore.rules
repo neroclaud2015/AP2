@@ -2,9 +2,9 @@ rules_version = '2';
 service cloud.firestore {
  match /databases/{database}/documents {
   function own(uid) { return request.auth != null && request.auth.uid == uid; }
-  function entity(e) { return e in ['records','reviews','answerReviews','attempts','learningSessions','testSessions','settings']; }
+  function entity(e) { return e in ['records','reviews','answerReviews','attempts','learningSessions','testSessions','settings','questionNotes']; }
   function idField(e) { return e == 'records' ? 'questionId' : e == 'attempts' ? 'attempt_id' : e == 'testSessions' ? 'test_id' : e == 'settings' ? 'id' : 'question_id'; }
-  function validValue(uid,e,id,deleted,value) { return deleted ? value == null : value is map && value.userId == uid && value[idField(e)] == id; }
+  function validValue(uid,e,id,deleted,value) { return deleted ? value == null : value is map && value.userId == uid && value[idField(e)] == id && (e != 'questionNotes' || (value.text is string && value.revision is int && value.revision > 0 && value.created_at is string && value.updated_at is string)); }
   function validEnvelope(uid,e) {
    return e.keys().hasOnly(['entity','id','revision','cursor','updatedAt','deviceId','deleted','value'])
     && entity(e.entity) && e.id is string && e.id.size() > 0 && e.id.size() <= 200

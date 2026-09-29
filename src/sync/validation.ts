@@ -1,3 +1,4 @@
+import {validQuestionNote} from '../learning/questionNotes';
 import {validTestSession,stringMap} from './sessionValidation';
 import {validAttempt} from '../learning/model';
 import {validReview} from '../segmented/types';
@@ -11,6 +12,7 @@ export function validateEntity(entity:EntityType,id:string,userId:string,value:u
  const object=(x:unknown)=>!!x&&typeof x==='object'&&!Array.isArray(x);
  if(entity==='attempts'&&!validAttempt(v as never)||entity==='reviews'&&!validReview(v)||entity==='answerReviews'&&!validAnswerReview(v))throw Error('Ungültiges Datenschema.');
  if(entity==='records'&&(!object(v.fields)||v.schema_version!==1)||entity==='learningSessions'&&(!stringMap(v.draft)||typeof v.revealed!=='boolean'))throw Error('Ungültiges Datenschema.');
+ if(entity==='questionNotes'&&!validQuestionNote(v))throw Error('Ungültige Frage-Notiz.');
  if(entity==='testSessions'&&!validTestSession(v))throw Error('Ungültige Prüfungssitzung.');
 }
 export function validateEnvelope(userId:string,r:SyncEnvelope){if(!r||!PERSONAL_STORES.includes(r.entity)||!r.id||!Number.isInteger(r.revision)||r.revision<1||typeof r.deleted!=='boolean')throw Error('Ungültige Synchronisierungsantwort.');if(!r.deleted)validateEntity(r.entity,r.id,userId,r.value);else if(r.value!==null)throw Error('Ungültige Löschmarkierung.');}

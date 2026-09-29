@@ -28,7 +28,7 @@ VITE_FIREBASE_STORAGE_BUCKET=
 
 ## 数据和同步合同
 
-- `users/{uid}/records/{sha256(entity + NUL + stableId)}`：七类个人实体的 envelope（revision、cursor、deviceId、updatedAt、value 或 tombstone），以及历史不可变字段的保护数据。
+- `users/{uid}/records/{sha256(entity + NUL + stableId)}`：八类个人实体的 envelope（revision、cursor、deviceId、updatedAt、value 或 tombstone），以及历史不可变字段的保护数据。
 - `users/{uid}/sync/state`：账号级事务计数器。每次成功变更与记录一起原子提交，pull 使用 cursor 分页。时间不参与覆盖判定。
 - `users/{uid}/mutations/{sha256(mutationId)}`：不可变重试收据。相同 mutation 重试不增加记录；相同 ID 携带不同内容会拒绝。
 - `users/{uid}/conflicts/{sha256(mutationId)}`：保留提交版本与当时远端版本，不自动最后写入覆盖。用户明确选择后发送新 mutation 与当前 baseRevision。
@@ -53,3 +53,9 @@ npx firebase emulators:exec --only firestore --project demo-ap2-sync "node --tes
 普通 `npm test` 没有模拟器时会明确跳过 emulator integration；不伪造 Rules 成功。模拟器测试只使用 demo 项目，不需要真实 Firebase 配置。没有部署过真实项目，也未进行真实 Windows ↔ Android/iPad 云验收。
 
 官方参考：[Google 登录](https://firebase.google.com/docs/auth/web/google-signin)、[Web 初始化](https://firebase.google.com/docs/web/setup)、[Firestore 事务](https://firebase.google.com/docs/firestore/manage-data/transactions)、[安全规则](https://firebase.google.com/docs/firestore/security/rules-conditions)、[Firebase API keys](https://firebase.google.com/docs/projects/api-keys)。
+
+## Phase 2J.1 — 独立 QuestionNote
+
+新增 `questionNotes` 同步实体，稳定键为 `userId + question_id`，字段为 `text / created_at / updated_at / revision`。IndexedDB v8 新增表；schema_version=1 的备份可选包含 questionNotes，旧备份仍可导入。迁移优先保留已有 QuestionNote（包括用户清空后的空文本），否则使用当前 LearningSession 的非空 note，最后取最新非空 Attempt.note。迁移不修改历史 Attempt 或 error_reason。
+
+笔记编辑同时比对加载时的 revision 与文本；远端同版本但不同内容也不能被旧编辑器覆盖。离线队列、显式冲突选择与幂等重试沿用原同步协议。模拟测试不等同于真实 Firebase 验收；项目仍未配置，未部署 Firebase 服务。

@@ -18,11 +18,12 @@ it('discards completed results without erasing them and excludes all ineligible 
 });
 it('revision checks serialize discard/delete and never delete free attempts or another session',async()=>{
  const name='lifecycle-delete-'+crypto.randomUUID(),repo=new IndexedDBProgressRepository(name);const created=await repo.createTestSession({...fixture(),answers:{}});const other=await repo.createTestSession({...fixture(),answers:{},module:'funktionsanalyse'});
+ const note=await repo.saveQuestionNote('local','q','Keep after test deletion',0,'');
  const answered=await repo.updateTestSession('local',created.test_id,0,{type:'answer',questionId:'q',answer:{choice:'2'}});await expect(repo.discardTestSession('local',created.test_id,0)).rejects.toThrow();await expect(repo.deleteTestSession('local',created.test_id,0)).rejects.toThrow();
  const completed=await repo.updateTestSession('local',created.test_id,answered.revision,{type:'submit'});expect((await repo.getAnalysisTestSessions('local')).map(s=>s.test_id)).toEqual([created.test_id]);
- const discarded=await repo.discardTestSession('local',created.test_id,completed.revision);expect(await repo.getAnalysisTestSessions('local')).toEqual([]);expect(discarded.result?.richtig).toBe(1);
+ const discarded=await repo.discardTestSession('local',created.test_id,completed.revision);expect(await repo.getAnalysisTestSessions('local')).toEqual([]);expect(discarded.result?.richtig).toBe(1);expect(await repo.getQuestionNote('local','q')).toEqual(note);
  const raw=new Dexie(name);await raw.open();const ordinary={userId:'local',attempt_id:'same-id',question_id:'q',test_id:created.test_id};await raw.table('attempts').put(ordinary);
- await expect(repo.deleteTestSession('other-user',created.test_id,discarded.revision)).rejects.toThrow();await repo.deleteTestSession('local',created.test_id,discarded.revision);expect(await repo.getTestSession('local',created.test_id)).toBeUndefined();expect(await repo.getTestSession('local',other.test_id)).toEqual(other);expect(await repo.getAttempts('local')).toEqual([ordinary]);raw.close();repo.close();await Dexie.delete(name);
+ await expect(repo.deleteTestSession('other-user',created.test_id,discarded.revision)).rejects.toThrow();await repo.deleteTestSession('local',created.test_id,discarded.revision);expect(await repo.getTestSession('local',created.test_id)).toBeUndefined();expect(await repo.getQuestionNote('local','q')).toEqual(note);expect(await repo.getTestSession('local',other.test_id)).toEqual(other);expect(await repo.getAttempts('local')).toEqual([ordinary]);raw.close();repo.close();await Dexie.delete(name);
 });
 it('allows only one mixed module session across seasons while keeping originals separate',async()=>{
  const name='lifecycle-crossyear-'+crypto.randomUUID(),repo=new IndexedDBProgressRepository(name);const summer={...fixture(),test_type:'module' as const,answers:{}};await repo.createTestSession(summer);

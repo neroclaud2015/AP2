@@ -1,0 +1,34 @@
+{
+  "checks": [
+    "funktionsanalyse MC / source",
+    "funktionsanalyse U / refresh",
+    "funktionsanalyse Originalprüfung",
+    {
+      "module": "funktionsanalyse",
+      "filter": "all",
+      "source_mix": [
+        "2017-18-winter",
+        "2017-sommer",
+        "2018-19-winter",
+        "2019-20-winter",
+        "2019-sommer"
+      ]
+    },
+    {
+      "module": "funktionsanalyse",
+      "filter": "2019-20-winter",
+      "source_mix": [
+        "2019-20-winter"
+      ]
+    },
+    {
+      "module": "funktionsanalyse",
+      "filter": "2019-sommer,2019-20-winter",
+      "source_mix": [
+        "2019-20-winter",
+        "2019-sommer"
+      ]
+    }
+  ],
+  "isolated_context": true
+}
