@@ -1,0 +1,123 @@
+{
+  "key": "bbddc2a47dfebf1da0f8de93b3a3c5b218cc0c62791430d6b2f55625f863cabf",
+  "record_hash": "a840bc74142fb9b43bc913de42aea7ff7a95aea914d378ebe0b74fcd8d7bbfc6",
+  "record": {
+    "page": 5,
+    "geometry": [
+      595.0,
+      842.0
+    ],
+    "classification": "continuation_and_questions",
+    "classification_evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2021-wiso-p5-1",
+        "number": "1",
+        "bbox": [
+          53.125,
+          300.536,
+          95.625,
+          333.929
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 1 read on cached page 5",
+        "review_reasons": [],
+        "heading_pixel_sha256": "d78a644bbc02088585b54251ffc2043461baafff2d3d3f04394f3b422ae9c408"
+      },
+      {
+        "anchor_id": "2021-wiso-p5-2",
+        "number": "2",
+        "bbox": [
+          299.018,
+          300.536,
+          341.518,
+          333.929
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 2 read on cached page 5",
+        "review_reasons": [],
+        "heading_pixel_sha256": "caac201518e1d8168d1aba74ba45d3231b429c8f3399d4498ca32a69659b19e0"
+      }
+    ],
+    "regions": [
+      {
+        "page": 5,
+        "bbox": [
+          53.125,
+          300.536,
+          294.464,
+          535.804
+        ],
+        "role": "primary",
+        "owner": "2021-wiso-p5-1",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      },
+      {
+        "page": 5,
+        "bbox": [
+          299.018,
+          300.536,
+          573.75,
+          535.804
+        ],
+        "role": "primary",
+        "owner": "2021-wiso-p5-2",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      },
+      {
+        "page": 5,
+        "bbox": [
+          53.125,
+          51.607,
+          573.75,
+          294.464
+        ],
+        "role": "continuation",
+        "owner": "2021-wiso-p4-U1",
+        "evidence": "U1 subpart3 and Ergebnis U1 identify continuation above Q1/Q2."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "1",
+        "bbox": [
+          53.125,
+          300.536,
+          95.625,
+          333.929
+        ],
+        "pixel_sha256": "d78a644bbc02088585b54251ffc2043461baafff2d3d3f04394f3b422ae9c408",
+        "audited_pixel_sha256": "d78a644bbc02088585b54251ffc2043461baafff2d3d3f04394f3b422ae9c408"
+      },
+      {
+        "kind": "heading",
+        "number": "2",
+        "bbox": [
+          299.018,
+          300.536,
+          341.518,
+          333.929
+        ],
+        "pixel_sha256": "caac201518e1d8168d1aba74ba45d3231b429c8f3399d4498ca32a69659b19e0",
+        "audited_pixel_sha256": "caac201518e1d8168d1aba74ba45d3231b429c8f3399d4498ca32a69659b19e0"
+      },
+      {
+        "kind": "ownership",
+        "number": "U1",
+        "bbox": [
+          53.125,
+          51.607,
+          573.75,
+          294.464
+        ],
+        "pixel_sha256": "806754c25524c06463f19e995657fe253fca4597935af6bdbfb7345d533cc221",
+        "audited_pixel_sha256": "806754c25524c06463f19e995657fe253fca4597935af6bdbfb7345d533cc221"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

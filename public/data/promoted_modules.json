@@ -1963,5 +1963,167 @@
         ]
       }
     ]
+  },
+  {
+    "examId": "2021-sommer",
+    "slug": "arbeitsplanung",
+    "title": "Arbeitsplanung",
+    "segmentedPath": "data/2021_sommer_arbeitsplanung_segmented.json",
+    "answersPath": "data/2021_sommer_arbeitsplanung_answers.json",
+    "solutionsPath": "data/2021_sommer_arbeitsplanung_u_solutions.json",
+    "choiceSolutionPage": 2,
+    "descriptionPage": 14,
+    "descriptionLabel": "Prüfungsaufgaben-Beschreibung",
+    "questionContextPages": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": [],
+      "7": [],
+      "8": [],
+      "9": [],
+      "10": [],
+      "11": [],
+      "12": [],
+      "13": [],
+      "14": [],
+      "15": [],
+      "16": [],
+      "17": [],
+      "18": [],
+      "19": [],
+      "20": [],
+      "21": [],
+      "22": [],
+      "23": [],
+      "24": [],
+      "25": [],
+      "26": [],
+      "27": [],
+      "28": [],
+      "U1": [
+        14
+      ],
+      "U2": [
+        14
+      ],
+      "U3": [
+        14
+      ],
+      "U4": [
+        14
+      ],
+      "U5": [
+        14
+      ],
+      "U6": [
+        14,
+        23
+      ],
+      "U7": [
+        14
+      ],
+      "U8": [
+        14
+      ]
+    },
+    "attachmentPages": [
+      23
+    ],
+    "sourcePageImages": {
+      "14": "assets/questions/9cf77fecb21d9878957c7d7a/2l.2.0-d07ef4d2d378/attachment-14-0.png",
+      "23": "assets/questions/9cf77fecb21d9878957c7d7a/2l.2.0-d07ef4d2d378/attachment-23-1.png",
+      "2": "assets/sources/9cf77fecb21d9878957c7d7a/timing-2.png"
+    },
+    "durationMinutes": 105,
+    "durationSource": {
+      "pdf": "",
+      "page": 2,
+      "image": "assets/sources/9cf77fecb21d9878957c7d7a/timing-2.png"
+    },
+    "parts": [
+      {
+        "id": "A",
+        "title": "Teil A",
+        "kind": "multiple_choice",
+        "label": "Auswahlaufgaben",
+        "questionNumbers": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27",
+          "28"
+        ]
+      },
+      {
+        "id": "B",
+        "title": "Teil B",
+        "kind": "multi_part",
+        "label": "Offene Aufgaben",
+        "questionNumbers": [
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6",
+          "U7",
+          "U8"
+        ]
+      }
+    ],
+    "externalAttachments": [
+      {
+        "filename": "2021 Sommer/21 Technische Zeichnung.pdf",
+        "sha256": "7a2666b8d76eb7b594286eb267a415892d990e0a1ee80a5ddc2b2e9077212ae3",
+        "role": "shared_attachment",
+        "id": "gearbox-sheet-1",
+        "source_page": 1,
+        "bbox": [
+          0,
+          0,
+          842,
+          1188
+        ],
+        "rotation_degrees": 90,
+        "label": "Stirnradgetriebe mit Stückliste · Blatt 1 von 2",
+        "question_numbers": [
+          "U1",
+          "U2",
+          "U3"
+        ],
+        "evidence": "AP U1/U2/U3 explicitly reference Blatt 1 von 2: Stirnradgetriebe. Separate original sheet title and parts list visually verified.",
+        "image": "assets/supplements/7a2666b8d76eb7b594286eb267a415892d990e0a1ee80a5ddc2b2e9077212ae3/gearbox-sheet-1.png",
+        "image_sha256": "deb14ceea5ddae52d21cb6b169e2be3535a578a57d828d22785f118c47f3328b",
+        "source_id": "supplement-7a2666b8d76eb7b594286eb2",
+        "exam": "2021_sommer",
+        "module": "Arbeitsplanung"
+      }
+    ]
   }
 ]

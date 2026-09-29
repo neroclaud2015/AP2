@@ -1,0 +1,46 @@
+{
+  "key": "9030cb528103bdb8384929dfdbc1aefe3dd29df3fe3cafa1b715a081d78889b0",
+  "record_hash": "ae234cb3d6605472e90dc533b047e32256d9d881671a15eaf8d4348e64c2e638",
+  "record": {
+    "page": 20,
+    "geometry": [
+      595.0,
+      842.0
+    ],
+    "classification": "continuation",
+    "classification_evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+    "anchors": [],
+    "regions": [
+      {
+        "page": 20,
+        "bbox": [
+          30.357,
+          15.179,
+          573.75,
+          816.607
+        ],
+        "role": "continuation",
+        "owner": "2021-fa-p19-U2",
+        "evidence": "U2 subparts 2/3 and Ergebnis U2."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "ownership",
+        "number": "U2",
+        "bbox": [
+          30.357,
+          15.179,
+          573.75,
+          816.607
+        ],
+        "pixel_sha256": "69108ac47dd6b6f5289cc5e5ec366e090d13251225436df13ffb559f5c5b9feb",
+        "audited_pixel_sha256": "69108ac47dd6b6f5289cc5e5ec366e090d13251225436df13ffb559f5c5b9feb"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

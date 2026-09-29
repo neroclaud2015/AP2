@@ -1,0 +1,61 @@
+{
+  "key": "4599d8499f30d58116b0c95bbde6b1f32972a773b38fa56645005666ce1ee0df",
+  "record_hash": "7c23679bb8b7c190fc2389cee18d50b61df2d85625a9ca3f76a4ee5f94626323",
+  "record": {
+    "page": 19,
+    "geometry": [
+      595.0,
+      842.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2021-ap-p19-U6",
+        "number": "U6",
+        "bbox": [
+          30.357,
+          15.179,
+          72.857,
+          48.571
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U6 read on cached page 19",
+        "review_reasons": [],
+        "heading_pixel_sha256": "61d7eff95771cbebb4cd9753fd5db1ec4908af07d5ee6bf63e68d04dbe0a9f76"
+      }
+    ],
+    "regions": [
+      {
+        "page": 19,
+        "bbox": [
+          30.357,
+          15.179,
+          573.75,
+          816.607
+        ],
+        "role": "primary",
+        "owner": "2021-ap-p19-U6",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U6",
+        "bbox": [
+          30.357,
+          15.179,
+          72.857,
+          48.571
+        ],
+        "pixel_sha256": "61d7eff95771cbebb4cd9753fd5db1ec4908af07d5ee6bf63e68d04dbe0a9f76",
+        "audited_pixel_sha256": "61d7eff95771cbebb4cd9753fd5db1ec4908af07d5ee6bf63e68d04dbe0a9f76"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

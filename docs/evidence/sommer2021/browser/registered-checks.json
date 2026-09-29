@@ -1,0 +1,36 @@
+{
+  "checks": [
+    "arbeitsplanung MC / source",
+    "arbeitsplanung U / refresh",
+    "arbeitsplanung Originalprüfung",
+    {
+      "module": "arbeitsplanung",
+      "filter": "all",
+      "source_mix": [
+        "2017-sommer",
+        "2018-19-winter",
+        "2019-20-winter",
+        "2019-sommer",
+        "2020-21-winter",
+        "2020-sommer",
+        "2021-sommer"
+      ]
+    },
+    {
+      "module": "arbeitsplanung",
+      "filter": "2021-sommer",
+      "source_mix": [
+        "2021-sommer"
+      ]
+    },
+    {
+      "module": "arbeitsplanung",
+      "filter": "2020-21-winter,2021-sommer",
+      "source_mix": [
+        "2020-21-winter",
+        "2021-sommer"
+      ]
+    }
+  ],
+  "isolated_context": true
+}

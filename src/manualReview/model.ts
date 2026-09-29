@@ -2,7 +2,7 @@ import type {AnswerReview,OfficialAnswer} from '../segmented/answers';
 export interface Measurement {row:number;ring_ink:number;angular_support:number;center_ink?:number;threshold_offset:number;center?:number[]}
 export interface ReviewItem extends OfficialAnswer {source_pdf_sha256:string;source_crop_sha256:string;evidence_hash:string;measurements:Measurement[];row_positions:number[];overlay:string}
 export interface ManualReview extends AnswerReview {confirmation_method:'manual_source_review';exam:string;module:string;question_number:number;source_pdf_sha256:string;source_crop:string;source_crop_sha256:string;evidence_hash:string;machine_answer_at_confirmation:number|null}
-export interface ReviewQueue {schema_version:1;scope:string;items:ReviewItem[]}
+export interface ReviewQueue {schema_version:1;scope:string;items:ReviewItem[];module_coverage?:Record<string,{mc:number;u:number}>}
 export function strongestCandidate(item:ReviewItem):number|null {
  const scores=[1,2,3,4,5].map(row=>({row,score:Math.max(0,...item.measurements.filter(m=>m.row===row).map(m=>m.ring_ink))})).sort((a,b)=>b.score-a.score);
  return scores[0].score>0&&scores[0].score>scores[1].score?scores[0].row:null;

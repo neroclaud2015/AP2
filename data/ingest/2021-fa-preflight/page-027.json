@@ -1,0 +1,85 @@
+{
+  "key": "9b4253e2c0a9823e0311e5d0e6e015d9c317ae0c52c06b5f18b8c60f77113845",
+  "record_hash": "a4de8b739db8a676251ecd1a1788da2bc05e007a10771498df32ebfe6b3b269c",
+  "record": {
+    "page": 27,
+    "geometry": [
+      595.0,
+      842.0
+    ],
+    "classification": "continuation_and_questions",
+    "classification_evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2021-fa-p27-U8",
+        "number": "U8",
+        "bbox": [
+          30.357,
+          544.911,
+          72.857,
+          578.304
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U8 read on cached page 27",
+        "review_reasons": [],
+        "heading_pixel_sha256": "22cce2c11dee4ca86d44b146a8bfaa2bd8565699042e83474889febc06b8dfe2"
+      }
+    ],
+    "regions": [
+      {
+        "page": 27,
+        "bbox": [
+          30.357,
+          544.911,
+          573.75,
+          816.607
+        ],
+        "role": "primary",
+        "owner": "2021-fa-p27-U8",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      },
+      {
+        "page": 27,
+        "bbox": [
+          30.357,
+          15.179,
+          573.75,
+          540.357
+        ],
+        "role": "continuation",
+        "owner": "2021-fa-p26-U7",
+        "evidence": "U7 subparts3/4/5 and Ergebnis U7 above U8 boundary."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U8",
+        "bbox": [
+          30.357,
+          544.911,
+          72.857,
+          578.304
+        ],
+        "pixel_sha256": "22cce2c11dee4ca86d44b146a8bfaa2bd8565699042e83474889febc06b8dfe2",
+        "audited_pixel_sha256": "22cce2c11dee4ca86d44b146a8bfaa2bd8565699042e83474889febc06b8dfe2"
+      },
+      {
+        "kind": "ownership",
+        "number": "U7",
+        "bbox": [
+          30.357,
+          15.179,
+          573.75,
+          540.357
+        ],
+        "pixel_sha256": "4f690588964245c1fc2180f0b3918b7a6382edb232ae3fb4c1e7dbbb8ed39857",
+        "audited_pixel_sha256": "4f690588964245c1fc2180f0b3918b7a6382edb232ae3fb4c1e7dbbb8ed39857"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

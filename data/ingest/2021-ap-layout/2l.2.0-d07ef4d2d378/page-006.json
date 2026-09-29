@@ -1,0 +1,137 @@
+{
+  "key": "7af6f8bf5db8e0e362232ed4ca582603a3766122963e4a3ba9add8d6fbee4d57",
+  "record_hash": "f4575f08fc172efc8078bc68fabcf8f5f6a3c99e0b99a39be473111500e4a7a0",
+  "record": {
+    "page": 6,
+    "geometry": [
+      595.0,
+      842.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2021-ap-p6-11",
+        "number": "11",
+        "bbox": [
+          60.714,
+          59.196,
+          103.214,
+          92.589
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 11 read on cached page 6",
+        "review_reasons": [],
+        "heading_pixel_sha256": "e57139912ebbb202987ace478fef352a1a87b97c4e1610e067f0a4cdd888dc00"
+      },
+      {
+        "anchor_id": "2021-ap-p6-12",
+        "number": "12",
+        "bbox": [
+          60.714,
+          300.536,
+          103.214,
+          333.929
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 12 read on cached page 6",
+        "review_reasons": [],
+        "heading_pixel_sha256": "22468f1e62b1e0c131d476fe97be1307b58a31b8adc5f477f948142e939e36cc"
+      },
+      {
+        "anchor_id": "2021-ap-p6-13",
+        "number": "13",
+        "bbox": [
+          60.714,
+          541.875,
+          103.214,
+          575.268
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 13 read on cached page 6",
+        "review_reasons": [],
+        "heading_pixel_sha256": "f494cb1b1ab64f13f19dc084ac974fefc297e2a88e88bb58ec11d0776eb2e799"
+      }
+    ],
+    "regions": [
+      {
+        "page": 6,
+        "bbox": [
+          60.714,
+          59.196,
+          573.75,
+          294.464
+        ],
+        "role": "primary",
+        "owner": "2021-ap-p6-11",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      },
+      {
+        "page": 6,
+        "bbox": [
+          60.714,
+          300.536,
+          573.75,
+          535.804
+        ],
+        "role": "primary",
+        "owner": "2021-ap-p6-12",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      },
+      {
+        "page": 6,
+        "bbox": [
+          60.714,
+          541.875,
+          573.75,
+          789.286
+        ],
+        "role": "primary",
+        "owner": "2021-ap-p6-13",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "11",
+        "bbox": [
+          60.714,
+          59.196,
+          103.214,
+          92.589
+        ],
+        "pixel_sha256": "e57139912ebbb202987ace478fef352a1a87b97c4e1610e067f0a4cdd888dc00",
+        "audited_pixel_sha256": "e57139912ebbb202987ace478fef352a1a87b97c4e1610e067f0a4cdd888dc00"
+      },
+      {
+        "kind": "heading",
+        "number": "12",
+        "bbox": [
+          60.714,
+          300.536,
+          103.214,
+          333.929
+        ],
+        "pixel_sha256": "22468f1e62b1e0c131d476fe97be1307b58a31b8adc5f477f948142e939e36cc",
+        "audited_pixel_sha256": "22468f1e62b1e0c131d476fe97be1307b58a31b8adc5f477f948142e939e36cc"
+      },
+      {
+        "kind": "heading",
+        "number": "13",
+        "bbox": [
+          60.714,
+          541.875,
+          103.214,
+          575.268
+        ],
+        "pixel_sha256": "f494cb1b1ab64f13f19dc084ac974fefc297e2a88e88bb58ec11d0776eb2e799",
+        "audited_pixel_sha256": "f494cb1b1ab64f13f19dc084ac974fefc297e2a88e88bb58ec11d0776eb2e799"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

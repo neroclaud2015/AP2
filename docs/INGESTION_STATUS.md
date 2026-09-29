@@ -1,3 +1,7 @@
+# Current: Phase 2L — Sommer 2021 (2026-09-29)
+
+AP Production36/36, MC28/28, U8/8. FA36/36, MC26/28, U8/8: Q4/Q23 await manual review. WiSo24/24, MC17/18, U6/6: Q18 awaits manual review. 87 new cached pages,0 old PDF rescans. Stop for confirmation; no Winter2021/22. Earlier checkpoints below remain historical. See PHASE_2L_REPORT.md.
+
 # Current checkpoint — Winter 2020/21 complete
 
 Sommer2020 AP released after explicit Q7=no M3 / Q8=M3 confirmation. Winter2020/21 AP36 MC28 U8; FA36 MC28 U8; WiSo24 MC18 U6. All Production, Needs Review0. Official WiSo U1.1 correction retained and shown with solutions.94 new pages cached once,0 old rescans. Stop before Sommer2021. See [report](WINTER_2020_21_REPORT.md).

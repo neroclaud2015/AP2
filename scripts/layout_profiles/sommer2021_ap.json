@@ -1,0 +1,1233 @@
+{
+  "profile_id": "portrait-explicit-regions",
+  "scope": "2021-ap",
+  "version": "2l.2.0",
+  "exam": "2021_sommer",
+  "module": "Arbeitsplanung",
+  "source_hash": "9cf77fecb21d9878957c7d7aaf2433464c471e73b8f01481b0c675c04edd8417",
+  "source_id": "src-3eb9eb1f9c8b5c75a6623b68",
+  "solution_source_id": "src-c055f681710efa87f5667d06",
+  "validated_sources": [
+    "9cf77fecb21d9878957c7d7aaf2433464c471e73b8f01481b0c675c04edd8417"
+  ],
+  "name": "2021_sommer_arbeitsplanung",
+  "expected": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6",
+    "U7",
+    "U8"
+  ],
+  "pages": {
+    "1": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "2": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "3": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [
+        {
+          "observed_number": "1",
+          "heading_box": [
+            53.125,
+            300.536,
+            95.625,
+            333.929
+          ],
+          "visual_patch_sha256": "91a71f9be12c8d3c65297ec5125af53cd34c9c70623d5dfdcfa79fcff3579527",
+          "visual_evidence": "Printed 1 read on cached page 3",
+          "regions": [
+            [
+              53.125,
+              300.536,
+              299.018,
+              537.321
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        },
+        {
+          "observed_number": "2",
+          "heading_box": [
+            302.054,
+            300.536,
+            344.554,
+            333.929
+          ],
+          "visual_patch_sha256": "7701e9db39ab4cd50a47e2bd74bf547a39ed49e643df1cc736750e10b77c9e98",
+          "visual_evidence": "Printed 2 read on cached page 3",
+          "regions": [
+            [
+              302.054,
+              300.536,
+              573.75,
+              537.321
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        },
+        {
+          "observed_number": "3",
+          "heading_box": [
+            53.125,
+            543.393,
+            95.625,
+            576.786
+          ],
+          "visual_patch_sha256": "f11761ec56cb490215f451b76c6a6cf77a4c7a46843cc0e6f6ce62facf1f38e1",
+          "visual_evidence": "Printed 3 read on cached page 3",
+          "regions": [
+            [
+              53.125,
+              543.393,
+              573.75,
+              789.286
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "4": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [
+        {
+          "observed_number": "4",
+          "heading_box": [
+            60.714,
+            59.196,
+            103.214,
+            92.589
+          ],
+          "visual_patch_sha256": "0fc84d967abf19a772fcd77b838d3f14275d3b269ccb767bffbfc09e62fd64a8",
+          "visual_evidence": "Printed 4 read on cached page 4",
+          "regions": [
+            [
+              60.714,
+              59.196,
+              573.75,
+              294.464
+            ],
+            [
+              60.714,
+              300.536,
+              306.607,
+              535.804
+            ]
+          ],
+          "roles": [
+            "primary",
+            "diagram"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        },
+        {
+          "observed_number": "5",
+          "heading_box": [
+            311.161,
+            300.536,
+            353.661,
+            333.929
+          ],
+          "visual_patch_sha256": "72ef685fda4d7bb51b76599b9e33e861c8cfd0b65fa8ede041bd05d35cbe0b47",
+          "visual_evidence": "Printed 5 read on cached page 4",
+          "regions": [
+            [
+              311.161,
+              300.536,
+              573.75,
+              535.804
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        },
+        {
+          "observed_number": "6",
+          "heading_box": [
+            60.714,
+            541.875,
+            103.214,
+            575.268
+          ],
+          "visual_patch_sha256": "82343396e354821128be4ea301412d7bfe303bf8f5b6885b381ae6f279adaffb",
+          "visual_evidence": "Printed 6 read on cached page 4",
+          "regions": [
+            [
+              60.714,
+              541.875,
+              573.75,
+              789.286
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "5": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [
+        {
+          "observed_number": "7",
+          "heading_box": [
+            53.125,
+            59.196,
+            95.625,
+            92.589
+          ],
+          "visual_patch_sha256": "db10b0bf2c14211f62f0a4a2403380d66dec8f07394a8079acc61f0179806adb",
+          "visual_evidence": "Printed 7 read on cached page 5",
+          "regions": [
+            [
+              53.125,
+              59.196,
+              297.5,
+              294.464
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        },
+        {
+          "observed_number": "8",
+          "heading_box": [
+            302.054,
+            59.196,
+            344.554,
+            92.589
+          ],
+          "visual_patch_sha256": "9e3b979f0cd5897a9654d9c2833856b2dc43b3f2bb9ae1ccd463d2bad567b877",
+          "visual_evidence": "Printed 8 read on cached page 5",
+          "regions": [
+            [
+              302.054,
+              59.196,
+              573.75,
+              294.464
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        },
+        {
+          "observed_number": "9",
+          "heading_box": [
+            53.125,
+            300.536,
+            95.625,
+            333.929
+          ],
+          "visual_patch_sha256": "296cb1a4ceac460d625f6ddd365957ee2ffc1ca10867936d94b206289b64f44e",
+          "visual_evidence": "Printed 9 read on cached page 5",
+          "regions": [
+            [
+              53.125,
+              300.536,
+              573.75,
+              535.804
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        },
+        {
+          "observed_number": "10",
+          "heading_box": [
+            53.125,
+            541.875,
+            95.625,
+            575.268
+          ],
+          "visual_patch_sha256": "b936d2e029bc8bccca228ca21d01076ad2172e8ce71191fab1188f661fa730ba",
+          "visual_evidence": "Printed 10 read on cached page 5",
+          "regions": [
+            [
+              53.125,
+              541.875,
+              573.75,
+              789.286
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "6": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [
+        {
+          "observed_number": "11",
+          "heading_box": [
+            60.714,
+            59.196,
+            103.214,
+            92.589
+          ],
+          "visual_patch_sha256": "e57139912ebbb202987ace478fef352a1a87b97c4e1610e067f0a4cdd888dc00",
+          "visual_evidence": "Printed 11 read on cached page 6",
+          "regions": [
+            [
+              60.714,
+              59.196,
+              573.75,
+              294.464
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        },
+        {
+          "observed_number": "12",
+          "heading_box": [
+            60.714,
+            300.536,
+            103.214,
+            333.929
+          ],
+          "visual_patch_sha256": "22468f1e62b1e0c131d476fe97be1307b58a31b8adc5f477f948142e939e36cc",
+          "visual_evidence": "Printed 12 read on cached page 6",
+          "regions": [
+            [
+              60.714,
+              300.536,
+              573.75,
+              535.804
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        },
+        {
+          "observed_number": "13",
+          "heading_box": [
+            60.714,
+            541.875,
+            103.214,
+            575.268
+          ],
+          "visual_patch_sha256": "f494cb1b1ab64f13f19dc084ac974fefc297e2a88e88bb58ec11d0776eb2e799",
+          "visual_evidence": "Printed 13 read on cached page 6",
+          "regions": [
+            [
+              60.714,
+              541.875,
+              573.75,
+              789.286
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "7": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [
+        {
+          "observed_number": "14",
+          "heading_box": [
+            53.125,
+            59.196,
+            95.625,
+            92.589
+          ],
+          "visual_patch_sha256": "1ffaebf956e639e52cb5a327649a8edc1469c2593c82286b8e1c5dfc29daa309",
+          "visual_evidence": "Printed 14 read on cached page 7",
+          "regions": [
+            [
+              53.125,
+              59.196,
+              299.018,
+              294.464
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        },
+        {
+          "observed_number": "15",
+          "heading_box": [
+            303.571,
+            59.196,
+            346.071,
+            92.589
+          ],
+          "visual_patch_sha256": "7c00d38885132c015f5179efc34b67f7e3f23d7a027bbc5c23011a3ec193622b",
+          "visual_evidence": "Printed 15 read on cached page 7",
+          "regions": [
+            [
+              303.571,
+              59.196,
+              573.75,
+              294.464
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        },
+        {
+          "observed_number": "16",
+          "heading_box": [
+            53.125,
+            300.536,
+            95.625,
+            333.929
+          ],
+          "visual_patch_sha256": "ef207b7b20b5373761e549aadb89f91a5af5a53476eb9a5bafb8b789dcfbd6b4",
+          "visual_evidence": "Printed 16 read on cached page 7",
+          "regions": [
+            [
+              53.125,
+              300.536,
+              299.018,
+              535.804
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        },
+        {
+          "observed_number": "17",
+          "heading_box": [
+            303.571,
+            300.536,
+            346.071,
+            333.929
+          ],
+          "visual_patch_sha256": "5c58194cb99dc89dfee4481d5f84d348fcc9aaf67e0220e99488c6ea5aee8c17",
+          "visual_evidence": "Printed 17 read on cached page 7",
+          "regions": [
+            [
+              303.571,
+              300.536,
+              573.75,
+              535.804
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        },
+        {
+          "observed_number": "18",
+          "heading_box": [
+            53.125,
+            541.875,
+            95.625,
+            575.268
+          ],
+          "visual_patch_sha256": "1192180bdb113767cc0478f9d84005079b26cd283993254014a117cd0c3e80ea",
+          "visual_evidence": "Printed 18 read on cached page 7",
+          "regions": [
+            [
+              53.125,
+              541.875,
+              573.75,
+              789.286
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "8": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [
+        {
+          "observed_number": "19",
+          "heading_box": [
+            60.714,
+            59.196,
+            103.214,
+            92.589
+          ],
+          "visual_patch_sha256": "8239b2899cdbd1ab6d08741f902fedaddb231cf1ffe56ed01daf9d129963aa9f",
+          "visual_evidence": "Printed 19 read on cached page 8",
+          "regions": [
+            [
+              60.714,
+              59.196,
+              573.75,
+              294.464
+            ],
+            [
+              60.714,
+              300.536,
+              311.161,
+              535.804
+            ]
+          ],
+          "roles": [
+            "primary",
+            "diagram"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        },
+        {
+          "observed_number": "20",
+          "heading_box": [
+            60.714,
+            541.875,
+            103.214,
+            575.268
+          ],
+          "visual_patch_sha256": "2d1e743e1cc085845e258def76a604365b4c6b55bdd2539aa9c2cd91d45fba06",
+          "visual_evidence": "Printed 20 read on cached page 8",
+          "regions": [
+            [
+              60.714,
+              541.875,
+              573.75,
+              789.286
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "9": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [
+        {
+          "observed_number": "21",
+          "heading_box": [
+            53.125,
+            59.196,
+            95.625,
+            92.589
+          ],
+          "visual_patch_sha256": "6b7f84fcce215c86146e2342c704a9062889558231ea32bfe021c7b01359af95",
+          "visual_evidence": "Printed 21 read on cached page 9",
+          "regions": [
+            [
+              53.125,
+              59.196,
+              573.75,
+              294.464
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        },
+        {
+          "observed_number": "22",
+          "heading_box": [
+            53.125,
+            300.536,
+            95.625,
+            333.929
+          ],
+          "visual_patch_sha256": "89b78853800f2cb34decc18e2105178f3f365328bb0fa8d82cd4e939a0ad7335",
+          "visual_evidence": "Printed 22 read on cached page 9",
+          "regions": [
+            [
+              53.125,
+              300.536,
+              299.018,
+              535.804
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        },
+        {
+          "observed_number": "23",
+          "heading_box": [
+            303.571,
+            300.536,
+            346.071,
+            333.929
+          ],
+          "visual_patch_sha256": "1f369650ae6d5696969dbb04ef59f25631200f9dd7fc9951c42b6a4557d4bb19",
+          "visual_evidence": "Printed 23 read on cached page 9",
+          "regions": [
+            [
+              303.571,
+              300.536,
+              573.75,
+              535.804
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        },
+        {
+          "observed_number": "24",
+          "heading_box": [
+            53.125,
+            541.875,
+            95.625,
+            575.268
+          ],
+          "visual_patch_sha256": "c6d0abc7d549e40402e2e95a7c4bf8fcaaeecdbb3b6cf28f2a5903d3cc895548",
+          "visual_evidence": "Printed 24 read on cached page 9",
+          "regions": [
+            [
+              53.125,
+              541.875,
+              573.75,
+              789.286
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "10": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [
+        {
+          "observed_number": "25",
+          "heading_box": [
+            60.714,
+            59.196,
+            103.214,
+            92.589
+          ],
+          "visual_patch_sha256": "d0fb163eab0934704b0f71d9531a383d22391aa433bf8a1dcb26da37c10de255",
+          "visual_evidence": "Printed 25 read on cached page 10",
+          "regions": [
+            [
+              60.714,
+              59.196,
+              573.75,
+              294.464
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        },
+        {
+          "observed_number": "26",
+          "heading_box": [
+            60.714,
+            300.536,
+            103.214,
+            333.929
+          ],
+          "visual_patch_sha256": "8e66b2ae3813db0398bc8f0a944c6971b000e6e3689ef8b01ea26df74c107390",
+          "visual_evidence": "Printed 26 read on cached page 10",
+          "regions": [
+            [
+              60.714,
+              300.536,
+              573.75,
+              535.804
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        },
+        {
+          "observed_number": "27",
+          "heading_box": [
+            60.714,
+            541.875,
+            103.214,
+            575.268
+          ],
+          "visual_patch_sha256": "189e1c3d1ae0034cdddf8ddb498576febdc230586fd54d0de5a560fca90211a0",
+          "visual_evidence": "Printed 27 read on cached page 10",
+          "regions": [
+            [
+              60.714,
+              541.875,
+              306.607,
+              789.286
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        },
+        {
+          "observed_number": "28",
+          "heading_box": [
+            311.161,
+            541.875,
+            353.661,
+            575.268
+          ],
+          "visual_patch_sha256": "f510acf8cb332f0bdcaf4de124e50946021761ce77e3bc4269afb51b6039bad7",
+          "visual_evidence": "Printed 28 read on cached page 10",
+          "regions": [
+            [
+              311.161,
+              541.875,
+              573.75,
+              789.286
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "11": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "12": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "13": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "14": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [
+        {
+          "observed_number": "U1",
+          "heading_box": [
+            30.357,
+            315.714,
+            72.857,
+            349.107
+          ],
+          "visual_patch_sha256": "4f0cfb413e81c6f12713b574d59052ca82552d4cf7510b77cf1118e1bd50a16f",
+          "visual_evidence": "Printed U1 read on cached page 14",
+          "regions": [
+            [
+              30.357,
+              315.714,
+              573.75,
+              816.607
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "15": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [
+        {
+          "observed_number": "U2",
+          "heading_box": [
+            30.357,
+            15.179,
+            72.857,
+            48.571
+          ],
+          "visual_patch_sha256": "917ac5a4ef85a8bae15cbff517c6f1fd7cc264eb2d500f11e26f87d9bffb1cae",
+          "visual_evidence": "Printed U2 read on cached page 15",
+          "regions": [
+            [
+              30.357,
+              15.179,
+              573.75,
+              816.607
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "16": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [
+        {
+          "observed_number": "U3",
+          "heading_box": [
+            30.357,
+            15.179,
+            72.857,
+            48.571
+          ],
+          "visual_patch_sha256": "23ebc22847530c5c15b613901e93403345bda9737ef3fbc55b2c6ee64cf51d41",
+          "visual_evidence": "Printed U3 read on cached page 16",
+          "regions": [
+            [
+              30.357,
+              15.179,
+              573.75,
+              816.607
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "17": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [
+        {
+          "observed_number": "U4",
+          "heading_box": [
+            30.357,
+            15.179,
+            72.857,
+            48.571
+          ],
+          "visual_patch_sha256": "3fd38ba7bbbfbd84b01292223914e5867d4a24a535d7efdab3490a8854b48153",
+          "visual_evidence": "Printed U4 read on cached page 17",
+          "regions": [
+            [
+              30.357,
+              15.179,
+              573.75,
+              816.607
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "18": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [
+        {
+          "observed_number": "U5",
+          "heading_box": [
+            30.357,
+            15.179,
+            72.857,
+            48.571
+          ],
+          "visual_patch_sha256": "43a17ea2e15d6ace0dad89c0e3939e0308dd21f95122b4e4d579daebadb7e46b",
+          "visual_evidence": "Printed U5 read on cached page 18",
+          "regions": [
+            [
+              30.357,
+              15.179,
+              573.75,
+              816.607
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "19": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [
+        {
+          "observed_number": "U6",
+          "heading_box": [
+            30.357,
+            15.179,
+            72.857,
+            48.571
+          ],
+          "visual_patch_sha256": "61d7eff95771cbebb4cd9753fd5db1ec4908af07d5ee6bf63e68d04dbe0a9f76",
+          "visual_evidence": "Printed U6 read on cached page 19",
+          "regions": [
+            [
+              30.357,
+              15.179,
+              573.75,
+              816.607
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "20": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [
+        {
+          "observed_number": "U7",
+          "heading_box": [
+            30.357,
+            15.179,
+            72.857,
+            48.571
+          ],
+          "visual_patch_sha256": "d522d62804661551551eecb0d539b4dba7ab714f3bd45ba90db53d9878a0dc15",
+          "visual_evidence": "Printed U7 read on cached page 20",
+          "regions": [
+            [
+              30.357,
+              15.179,
+              573.75,
+              816.607
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "21": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "questions",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [
+        {
+          "observed_number": "U8",
+          "heading_box": [
+            30.357,
+            15.179,
+            72.857,
+            48.571
+          ],
+          "visual_patch_sha256": "6016d2e87228381af07e59e172a3d4ec1ec3413f1cf8287a0ced5f5c5008faa9",
+          "visual_evidence": "Printed U8 read on cached page 21",
+          "regions": [
+            [
+              30.357,
+              15.179,
+              573.75,
+              816.607
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "22": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "23": {
+      "geometry": [
+        595.0,
+        842.0
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+      "slots": [],
+      "explicit_regions": []
+    }
+  },
+  "attachment_crops": [
+    {
+      "page": 14,
+      "bbox": [
+        30.357,
+        15.179,
+        573.75,
+        311.161
+      ],
+      "role": "Prüfungsaufgaben-Beschreibung",
+      "question_numbers": [
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6",
+        "U7",
+        "U8"
+      ],
+      "evidence": "Printed attachment title and explicit task references verified on original cached page."
+    },
+    {
+      "page": 23,
+      "bbox": [
+        30.357,
+        15.179,
+        576.786,
+        816.607
+      ],
+      "role": "Datenblatt Not-Aus-Schaltgerät · Blatt 2 von 2",
+      "question_numbers": [
+        "U6"
+      ],
+      "evidence": "Printed attachment title and explicit task references verified on original cached page."
+    }
+  ],
+  "attachment_refs": {
+    "U1": [
+      14
+    ],
+    "U2": [
+      14
+    ],
+    "U3": [
+      14
+    ],
+    "U4": [
+      14
+    ],
+    "U5": [
+      14
+    ],
+    "U6": [
+      14,
+      23
+    ],
+    "U7": [
+      14
+    ],
+    "U8": [
+      14
+    ]
+  },
+  "timing_minutes": 105,
+  "timing_source_page": 2,
+  "description_page": 14,
+  "configuration_complete": true,
+  "external_attachments": [
+    {
+      "filename": "2021 Sommer/21 Technische Zeichnung.pdf",
+      "sha256": "7a2666b8d76eb7b594286eb267a415892d990e0a1ee80a5ddc2b2e9077212ae3",
+      "role": "technical_drawing",
+      "id": "gearbox-sheet-1",
+      "source_page": 1,
+      "bbox": [
+        0,
+        0,
+        842,
+        1188
+      ],
+      "rotation_degrees": 90,
+      "label": "Stirnradgetriebe mit Stückliste · Blatt 1 von 2",
+      "question_numbers": [
+        "U1",
+        "U2",
+        "U3"
+      ],
+      "evidence": "AP U1/U2/U3 explicitly reference Blatt 1 von 2: Stirnradgetriebe. Separate original sheet title and parts list visually verified."
+    }
+  ]
+}

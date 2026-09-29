@@ -1,0 +1,51 @@
+{
+  "key": "a7fe2b89ce96636786ef16a63214e84a8d9ef47f975912cba72bf30323e6d447",
+  "value": {
+    "question_id": "2021-wiso-p12-U5",
+    "question_number": "U5",
+    "exam": "2021_sommer",
+    "module": "WiSo",
+    "solution_source_pdf": "assets/pdfs/a536ef97c9abcfc5a221e172.pdf",
+    "solution_source_pdf_available": false,
+    "solution_source_page": 17,
+    "solution_bbox": [
+      25,
+      36,
+      575,
+      215
+    ],
+    "regions": [
+      {
+        "source_page": 17,
+        "bbox": [
+          25,
+          36,
+          575,
+          215
+        ]
+      }
+    ],
+    "cropped_solution_image": "assets/official/2021-wiso-2f.1.0-d7911416ace3/U5.png",
+    "review_status": "auto_ready",
+    "answer_type": "multi_part",
+    "subparts": [
+      {
+        "id": "whole",
+        "label": "Gesamte Aufgabe · Selbstbewertung",
+        "type": "short_text"
+      }
+    ],
+    "source_hash": "a536ef97c9abcfc5a221e172df28e498b007b5178730a06548209c242ce56e1e",
+    "extractor_revision": "2021-wiso-2f.1.0-d7911416ace3",
+    "association_evidence": "Original raster solution headings and ruled boundaries individually inspected. Explicit zu U2 and zu U5 continuations included. Whole-question self-assessment; no grading rubric inferred.",
+    "grading_policy": "Printed subparts only; user self-assessment; no numeric rubric or answer inference.",
+    "source_cache_hashes": {
+      "17": "deb20134ce5802f72f7c9fd4ab0ad21a596987c3e24be1c94a6403d7b151f8de"
+    },
+    "bbox_units": "PDF points, top-left"
+  },
+  "value_hash": "37a1befa068c428884dd2bf191d322c4c5a11d75a334798b13cec7c3d282681b",
+  "artifacts": {
+    "public/assets/official/2021-wiso-2f.1.0-d7911416ace3/U5.png": "940fac4cb541329e7f9e0f9a383dbe4c07fb684497b72af34e1b15cc26b5d6c1"
+  }
+}

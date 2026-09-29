@@ -1,0 +1,137 @@
+{
+  "key": "7d3e0c1f58a2268f8cdaf174d1d8c234ac16a18f2cf6f4dc24a3fe980cebbcdf",
+  "record_hash": "0ccf69f45519d0d5512f1032f4f645d7aa05d25e5d7873d0db7001d383f7ca7a",
+  "record": {
+    "page": 7,
+    "geometry": [
+      595.0,
+      842.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2021-wiso-p7-3",
+        "number": "3",
+        "bbox": [
+          54.643,
+          54.643,
+          97.143,
+          88.036
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 3 read on cached page 7",
+        "review_reasons": [],
+        "heading_pixel_sha256": "e5faeaf846e2e2a99885bf6e007e8c34af87941d8158fe230630dab4a7cae0d8"
+      },
+      {
+        "anchor_id": "2021-wiso-p7-4",
+        "number": "4",
+        "bbox": [
+          303.571,
+          54.643,
+          346.071,
+          88.036
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 4 read on cached page 7",
+        "review_reasons": [],
+        "heading_pixel_sha256": "190a38dea6ae5c95154dbdaf7ddf295860cdc18ac1fae8486a06ec01b6c8b0b8"
+      },
+      {
+        "anchor_id": "2021-wiso-p7-5",
+        "number": "5",
+        "bbox": [
+          54.643,
+          297.5,
+          97.143,
+          330.893
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 5 read on cached page 7",
+        "review_reasons": [],
+        "heading_pixel_sha256": "7d808c031a672b504d39ccd82e010c807fc962f8015888619b11b73a3ea23e24"
+      }
+    ],
+    "regions": [
+      {
+        "page": 7,
+        "bbox": [
+          54.643,
+          54.643,
+          299.018,
+          291.429
+        ],
+        "role": "primary",
+        "owner": "2021-wiso-p7-3",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          303.571,
+          54.643,
+          573.75,
+          291.429
+        ],
+        "role": "primary",
+        "owner": "2021-wiso-p7-4",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          54.643,
+          297.5,
+          299.018,
+          532.768
+        ],
+        "role": "primary",
+        "owner": "2021-wiso-p7-5",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "3",
+        "bbox": [
+          54.643,
+          54.643,
+          97.143,
+          88.036
+        ],
+        "pixel_sha256": "e5faeaf846e2e2a99885bf6e007e8c34af87941d8158fe230630dab4a7cae0d8",
+        "audited_pixel_sha256": "e5faeaf846e2e2a99885bf6e007e8c34af87941d8158fe230630dab4a7cae0d8"
+      },
+      {
+        "kind": "heading",
+        "number": "4",
+        "bbox": [
+          303.571,
+          54.643,
+          346.071,
+          88.036
+        ],
+        "pixel_sha256": "190a38dea6ae5c95154dbdaf7ddf295860cdc18ac1fae8486a06ec01b6c8b0b8",
+        "audited_pixel_sha256": "190a38dea6ae5c95154dbdaf7ddf295860cdc18ac1fae8486a06ec01b6c8b0b8"
+      },
+      {
+        "kind": "heading",
+        "number": "5",
+        "bbox": [
+          54.643,
+          297.5,
+          97.143,
+          330.893
+        ],
+        "pixel_sha256": "7d808c031a672b504d39ccd82e010c807fc962f8015888619b11b73a3ea23e24",
+        "audited_pixel_sha256": "7d808c031a672b504d39ccd82e010c807fc962f8015888619b11b73a3ea23e24"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

@@ -612,5 +612,52 @@
     "shared_solution_pages_rendered": 14,
     "layout_profile": "portrait-explicit-regions",
     "answer_profile": "official-ring-grid"
+  },
+  "sommer2021": {
+    "scope": "2021-sommer",
+    "status": "awaiting_manual_answer_confirmation",
+    "modules": {
+      "arbeitsplanung": {
+        "status": "production",
+        "questions": 36,
+        "mc_ready": 28,
+        "mc_expected": 28,
+        "u": 8,
+        "review": [],
+        "question_pages_rendered": 23
+      },
+      "funktionsanalyse": {
+        "status": "needs_review",
+        "questions": 36,
+        "mc_ready": 26,
+        "mc_expected": 28,
+        "u": 8,
+        "review": [
+          4,
+          23
+        ],
+        "question_pages_rendered": 30
+      },
+      "wiso": {
+        "status": "needs_review",
+        "questions": 24,
+        "mc_ready": 17,
+        "mc_expected": 18,
+        "u": 6,
+        "review": [
+          18
+        ],
+        "question_pages_rendered": 16
+      }
+    },
+    "new_pages_rendered": 87,
+    "shared_solution_pages_rendered": 17,
+    "supplement_pages_rendered": 1,
+    "old_pdf_rescan_count": 0,
+    "layout_profile": "portrait-explicit-regions",
+    "answer_profile": "official-ring-grid",
+    "next_exam_authorized": false,
+    "review_scope": "sommer-2021",
+    "repeat_steps_skipped": 12
   }
 }

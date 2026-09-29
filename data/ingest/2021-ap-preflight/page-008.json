@@ -1,0 +1,111 @@
+{
+  "key": "8fe0718eb419d58ce1f6acdfa2efe78e177baea31eedbf6069d68ec4474402c6",
+  "record_hash": "ca327d5cc133c571121d45f83f97fdb6b30abfa4f6baaa4a9996b5e44d4358cf",
+  "record": {
+    "page": 8,
+    "geometry": [
+      595.0,
+      842.0
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2021-ap-p8-19",
+        "number": "19",
+        "bbox": [
+          60.714,
+          59.196,
+          103.214,
+          92.589
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 19 read on cached page 8",
+        "review_reasons": [],
+        "heading_pixel_sha256": "8239b2899cdbd1ab6d08741f902fedaddb231cf1ffe56ed01daf9d129963aa9f"
+      },
+      {
+        "anchor_id": "2021-ap-p8-20",
+        "number": "20",
+        "bbox": [
+          60.714,
+          541.875,
+          103.214,
+          575.268
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 20 read on cached page 8",
+        "review_reasons": [],
+        "heading_pixel_sha256": "2d1e743e1cc085845e258def76a604365b4c6b55bdd2539aa9c2cd91d45fba06"
+      }
+    ],
+    "regions": [
+      {
+        "page": 8,
+        "bbox": [
+          60.714,
+          59.196,
+          573.75,
+          294.464
+        ],
+        "role": "primary",
+        "owner": "2021-ap-p8-19",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      },
+      {
+        "page": 8,
+        "bbox": [
+          60.714,
+          300.536,
+          311.161,
+          535.804
+        ],
+        "role": "diagram",
+        "owner": "2021-ap-p8-19",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      },
+      {
+        "page": 8,
+        "bbox": [
+          60.714,
+          541.875,
+          573.75,
+          789.286
+        ],
+        "role": "primary",
+        "owner": "2021-ap-p8-20",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "19",
+        "bbox": [
+          60.714,
+          59.196,
+          103.214,
+          92.589
+        ],
+        "pixel_sha256": "8239b2899cdbd1ab6d08741f902fedaddb231cf1ffe56ed01daf9d129963aa9f",
+        "audited_pixel_sha256": "8239b2899cdbd1ab6d08741f902fedaddb231cf1ffe56ed01daf9d129963aa9f"
+      },
+      {
+        "kind": "heading",
+        "number": "20",
+        "bbox": [
+          60.714,
+          541.875,
+          103.214,
+          575.268
+        ],
+        "pixel_sha256": "2d1e743e1cc085845e258def76a604365b4c6b55bdd2539aa9c2cd91d45fba06",
+        "audited_pixel_sha256": "2d1e743e1cc085845e258def76a604365b4c6b55bdd2539aa9c2cd91d45fba06"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

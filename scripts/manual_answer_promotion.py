@@ -11,7 +11,7 @@ from answers import artifact_digest,artifacts_valid
 from portrait_dataset import objhash
 from manual_review_queue import TARGETS,SCOPE
 from source_registry import load_registry,save_registry,transition_source
-MODULE_CODES={'arbeitsplanung':'ap','funktionsanalyse':'fa'}
+MODULE_CODES={'arbeitsplanung':'ap','funktionsanalyse':'fa','wiso':'wiso'}
 FIELDS=['question_id','question_number','exam','module','parser_revision','source_pdf_sha256','source_crop','source_crop_sha256','evidence_hash']
 
 def merge_confirmed(machine,manual):
@@ -36,6 +36,8 @@ def scope_settings(payload):
   return dict(scope=SCOPE,targets=TARGETS,exam='2018_19_winter',stamp='2018-19',profile='winter2018_19',queue='manual_answer_review_queue.json',ledger='official_answer_confirmations.json',manifest='manual_answer_promotion_manifest.json')
  if payload.get('scope')=='winter-2019-20':
   return dict(scope='winter-2019-20',targets={'funktionsanalyse':[21]},exam='2019_20_winter',stamp='2019-20',profile='winter2019_20',queue='manual_answer_review_winter2019_20.json',ledger='winter-2019-20-confirmations.json',manifest='winter-2019-20-manual-promotion.json')
+ if payload.get('scope')=='sommer-2021':
+  return dict(scope='sommer-2021',targets={'funktionsanalyse':[4,23],'wiso':[18]},exam='2021_sommer',stamp='2021',profile='sommer2021',queue='manual_answer_review_sommer2021.json',ledger='sommer-2021-confirmations.json',manifest='sommer-2021-manual-promotion.json')
  raise ValueError('Unknown manual review scope')
 
 def prepare(root,payload,existing=None):
@@ -63,10 +65,10 @@ def prepare(root,payload,existing=None):
   state=read(root/f'data/ingest/{settings["stamp"]}-{code}_registered_answers.json');layout=read(root/f'data/ingest/{settings["stamp"]}-{code}_registered_layout.json')
   if not state or state['status']!='blocked' or not layout or layout['status']!='formal_segmented' or not artifacts_valid(root,state['artifacts']) or not artifacts_valid(root,layout['artifacts']):raise ValueError('Immutable machine/layout evidence changed or missing')
   questions=read(root/f'public/data/{prefix}_segmented.json');machine=read(root/f'public/data/{prefix}_answers.json');solutions=read(root/f'public/data/{prefix}_u_solutions.json')
-  ids={q['question_number']:q['question_id'] for q in questions['questions']};expected={str(i) for i in range(1,29)}|{f'U{i}' for i in range(1,9)}
-  if len(questions['questions'])!=36 or set(ids)!=expected or len(set(ids.values()))!=36:raise ValueError('Question identity coverage invalid')
-  if len(machine['answers'])!=28 or {a['question_number'] for a in machine['answers']}!=set(range(1,29)) or any(a['question_id']!=ids[str(a['question_number'])] for a in machine['answers']):raise ValueError('MC identity coverage invalid')
-  if len(solutions['solutions'])!=8 or {u['question_number'] for u in solutions['solutions']}!={f'U{i}' for i in range(1,9)} or any(u['question_id']!=ids[u['question_number']] or not (root/'public'/u['cropped_solution_image']).is_file() for u in solutions['solutions']):raise ValueError('U source coverage invalid')
+  ids={q['question_number']:q['question_id'] for q in questions['questions']};expected=set(config['expected']);mc={int(n) for n in expected if n.isdigit()};written={n for n in expected if n.startswith('U')}
+  if len(questions['questions'])!=len(expected) or set(ids)!=expected or len(set(ids.values()))!=len(expected):raise ValueError('Question identity coverage invalid')
+  if len(machine['answers'])!=len(mc) or {a['question_number'] for a in machine['answers']}!=mc or any(a['question_id']!=ids[str(a['question_number'])] for a in machine['answers']):raise ValueError('MC identity coverage invalid')
+  if len(solutions['solutions'])!=len(written) or {u['question_number'] for u in solutions['solutions']}!=written or any(u['question_id']!=ids[u['question_number']] or not (root/'public'/u['cropped_solution_image']).is_file() for u in solutions['solutions']):raise ValueError('U source coverage invalid')
   result=deepcopy(machine);unresolved=[]
   for i,a in enumerate(machine['answers']):
    qid=a['question_id']
@@ -87,13 +89,16 @@ def prepare(root,payload,existing=None):
   revision='manual-source-review-'+objhash({qid:r for qid,r in ledger.items() if qid in ids.values()})[:16]
   for answer in result['answers']:
    if answer.get('confirmation_method')=='manual_source_review':answer.update(original_parser_revision=answer['parser_revision'],parser_revision=revision)
-  result.update(parser_revision=revision,original_parser_revision=machine['parser_revision'],manual_confirmation_revision=revision,completeness={'expected':28,'records':28,'unique_complete':True,'problems':[]})
+  result.update(parser_revision=revision,original_parser_revision=machine['parser_revision'],manual_confirmation_revision=revision,completeness={'expected':len(mc),'records':len(mc),'unique_complete':True,'problems':[]})
   ready[module]={'answers':result,'questions':questions,'solutions':solutions,'config':config,'revision':revision}
  return {'confirmations':ledger,'ready':ready,'pending':pending,'pdf_pages_opened':0,'settings':settings}
 
-def module_config(plan):
+def module_config(plan,root=None):
  c=plan['config'];q=plan['questions'];images={str(a['page']):a['image'] for a in q['attachment_images']};prefix=c['name']
- return {'examId':c['exam'].replace('_','-'),'slug':c['module'].lower(),'title':c['module'],'segmentedPath':f'data/{prefix}_segmented.json','answersPath':f'data/{prefix}_reviewed_answers.json','solutionsPath':f'data/{prefix}_u_solutions.json','choiceSolutionPage':plan['answers']['answers'][0]['source_page'],'descriptionPage':c['description_page'],'questionContextPages':{n:[a['page'] for a in c['attachment_crops'] if n in a.get('question_numbers',[])] for n in [str(i) for i in range(1,29)]+[f'U{i}' for i in range(1,9)]},'attachmentPages':[a['page'] for a in c['attachment_crops'] if a['page'] not in [c['timing_source_page'],c['description_page']]],'sourcePageImages':images,'durationMinutes':c['timing_minutes'],'durationSource':{'pdf':'','page':c['timing_source_page'],'image':images[str(c['timing_source_page'])]},'parts':[{'id':'A','title':'Teil A','kind':'multiple_choice','label':'Auswahlaufgaben','questionNumbers':[str(i) for i in range(1,29)]},{'id':'B','title':'Teil B','kind':'multi_part','label':'Offene Aufgaben','questionNumbers':[f'U{i}' for i in range(1,9)]}]}
+ if root is not None:
+  from promote_registered_modules import ensure_timing_image
+  ensure_timing_image(root,c,images,[])
+ return {'examId':c['exam'].replace('_','-'),'slug':c['module'].lower(),'title':c['module'],'segmentedPath':f'data/{prefix}_segmented.json','answersPath':f'data/{prefix}_reviewed_answers.json','solutionsPath':f'data/{prefix}_u_solutions.json','choiceSolutionPage':plan['answers']['answers'][0]['source_page'],'descriptionPage':c['description_page'],'questionContextPages':{n:[a['page'] for a in c['attachment_crops'] if n in a.get('question_numbers',[])] for n in c['expected']},'attachmentPages':[a['page'] for a in c['attachment_crops'] if a['page'] not in [c['timing_source_page'],c['description_page']]],'sourcePageImages':images,'durationMinutes':c['timing_minutes'],'durationSource':{'pdf':'','page':c['timing_source_page'],'image':images[str(c['timing_source_page'])]},'parts':[{'id':'A','title':'Teil A','kind':'multiple_choice','label':'Auswahlaufgaben','questionNumbers':[n for n in c['expected'] if n.isdigit()]},{'id':'B','title':'Teil B','kind':'multi_part','label':'Offene Aufgaben','questionNumbers':[n for n in c['expected'] if n.startswith('U')]}]}
 
 def apply(root,payload):
  root=Path(root);plan=prepare(root,payload);settings=plan['settings'];registry=load_registry(root);promoted=read(root/'public/data/promoted_modules.json',[]);writes={root/'data/reviews'/settings['ledger']:{'schema_version':1,'scope':settings['scope'],'confirmations':plan['confirmations']}};now=datetime.now(timezone.utc).isoformat()
@@ -106,14 +111,14 @@ def apply(root,payload):
   paths=[f'public/data/{prefix}_segmented.json',f'public/data/{prefix}_reviewed_answers.json',f'public/data/{prefix}_u_solutions.json']
   for base in ['data/exams','public/data']:writes[root/f'{base}/{prefix}_reviewed_answers.json']=p['answers']
   artifacts={paths[0]:artifact_digest(root/paths[0]),paths[1]:hashlib.sha256(json.dumps(p['answers'],sort_keys=True,separators=(',',':'),ensure_ascii=False).encode('utf-8')).hexdigest(),paths[2]:artifact_digest(root/paths[2])}
-  audit={'result':'passed','confirmation_method':'manual_source_review','manual_confirmation_revision':p['revision'],'question_ids':[q['question_id'] for q in p['questions']['questions']],'question_revision':p['questions']['segmentation_revision'],'official_answer_revision':p['revision'],'artifacts':artifacts,'choice_coverage':28,'u_coverage':8}
+  audit={'result':'passed','confirmation_method':'manual_source_review','manual_confirmation_revision':p['revision'],'question_ids':[q['question_id'] for q in p['questions']['questions']],'question_revision':p['questions']['segmentation_revision'],'official_answer_revision':p['revision'],'artifacts':artifacts,'choice_coverage':len(p['answers']['answers']),'u_coverage':len(p['solutions']['solutions'])}
   for sid in [c['source_id'],c['solution_source_id']]:
    source=next(s for s in registry['sources'] if s['source_id']==sid)
    # Append an explicit resolution event; keep every previous blocked event/gate.
    source['status']='answers_extracted';source['events'].append({'stage':'manual_source_review_resolved','at':now,'evidence':{'confirmation_revision':p['revision'],'question_ids':[r['question_id'] for r in plan['confirmations'].values() if r['module'].lower()==module]}})
    evidence={**audit,'source_sha256':source['sha256']}
    registry=transition_source(registry,source['source_id'],'validated',evidence);registry=transition_source(registry,source['source_id'],'production',evidence)
-  cfg=module_config(p);promoted=[m for m in promoted if (m['examId'],m['slug'])!=(cfg['examId'],cfg['slug'])]+[cfg]
+  cfg=module_config(p,root);promoted=[m for m in promoted if (m['examId'],m['slug'])!=(cfg['examId'],cfg['slug'])]+[cfg]
  writes[root/'public/data/promoted_modules.json']=promoted
  checkpoint=read(root/'data/ingest'/settings['manifest'],{'schema_version':1,'scope':settings['scope'],'modules':{}})
  for module in settings['targets']:
