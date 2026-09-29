@@ -5,14 +5,15 @@ import {asset} from '../segmented/types';
 import type {OfficialAnswer} from '../segmented/answers';
 import {checkNumeric,combineAssessments,type Attempt,type AttemptProvenance,type Correctness,type LearningSession,type USolution} from './model';
 
-export default function Practice({provenance,questionId,number,answer,u,session,history,onSession,onAttempt,onAnnotate,onBusy}:{
+export default function Practice({provenance,questionId,number,answer,u,session,history,onSession,onAttempt,onAnnotate,onDelete,onBusy}:{
  provenance?:AttemptProvenance;questionId:string;number:string;answer?:OfficialAnswer;u?:USolution;session?:LearningSession;history:Attempt[];
  onSession:(session:LearningSession)=>Promise<void>;onAttempt:(attempt:Attempt,session:LearningSession)=>Promise<void>;
- onAnnotate:(id:string,values:Pick<Attempt,'note'|'error_reason'|'unsure'|'confidence'>)=>Promise<void>;onBusy:(busy:boolean)=>void;
+ onAnnotate:(id:string,values:Pick<Attempt,'note'|'error_reason'|'unsure'|'confidence'>)=>Promise<void>;onDelete:(id:string)=>Promise<void>;onBusy:(busy:boolean)=>void;
 }) {
  const {user,repository}=useAppServices();
+ const [deleteTarget,setDeleteTarget]=useState<Attempt>();
  const [practiceBusy,setPracticeBusy]=useState(false);const [noteBusy,setNoteBusy]=useState(false);
- useEffect(()=>{onBusy(practiceBusy||noteBusy);},[practiceBusy,noteBusy,onBusy]);
+ useEffect(()=>{onBusy(practiceBusy||noteBusy||!!deleteTarget);},[practiceBusy,noteBusy,deleteTarget,onBusy]);
  const [draft,setDraft]=useState<Record<string,string>>(session?.draft??{});
  const [revealed,setRevealed]=useState(session?.revealed??false);
  const [attemptId,setAttemptId]=useState(session?.attempt_id);
@@ -28,7 +29,7 @@ export default function Practice({provenance,questionId,number,answer,u,session,
  const update=(key:string,value:string)=>persist({...draft,[key]:value});
  const act=async(action:()=>Promise<void>)=>{
   if(guard.current)return;guard.current=true;setSaving(true);setPracticeBusy(true);setError('');
-  try{await pending.current;await action();}catch{setError('Nicht gespeichert. Deine Eingaben bleiben sichtbar. Bitte erneut versuchen.');}
+  try{await pending.current;await action();}catch(e){setError(e instanceof Error?e.message:'Nicht gespeichert. Deine Eingaben bleiben sichtbar. Bitte erneut versuchen.');}
   finally{guard.current=false;setSaving(false);setPracticeBusy(pendingCount.current>0);}
  };
  const submit=()=>void act(async()=>{
@@ -72,9 +73,11 @@ export default function Practice({provenance,questionId,number,answer,u,session,
    <details><summary>Erklärung</summary><p>{u?'Die Original-Lösung zeigt den offiziellen Lösungsweg.':'Der offizielle Schlüssel kennzeichnet die richtige Option. Eine fachlich geprüfte Erklärung ist noch nicht hinterlegt.'}</p><p>Ergänze deine eigene Erklärung in der Notiz.</p></details>
   </div>}
   <QuestionNoteEditor key={user.id+':'+questionId} questionId={questionId} onBusy={setNoteBusy}/>
-  {attempt&&<div className="learning-tools"><button className="outline" disabled={saving} onClick={reset}>Neuer Versuch</button></div>}
-  {!attempt&&revealed&&u&&<button className="outline" disabled={saving} onClick={reset}>Neu beantworten</button>}
+  {attempt&&<div className="learning-tools"><button className="outline" disabled={saving} onClick={reset}>Aufgabe erneut versuchen</button></div>}
+  {!attempt&&revealed&&u&&<button className="outline" disabled={saving} onClick={reset}>Aufgabe erneut versuchen</button>}
   {error&&<p role="alert">{error}</p>}<p className="save-status" role="status">{message}</p>
-  {history.length>0&&<details><summary>Deine Versuche ({history.length})</summary>{[...history].sort((a,b)=>b.timestamp.localeCompare(a.timestamp)).map(a=><p key={a.attempt_id}>{new Date(a.timestamp).toLocaleString('de-DE')} · {a.correctness??'offen'} · {a.self_assessed?'selbst bewertet':'automatisch verglichen'}{a.unsure?' · unsicher':''}</p>)}</details>}
+  {history.length>0&&<details className="attempt-history"><summary>Deine Versuche ({history.length})</summary>{[...history].sort((a,b)=>b.timestamp.localeCompare(a.timestamp)).map(a=><article key={a.attempt_id} data-attempt-id={a.attempt_id}><span>{new Date(a.timestamp).toLocaleString('de-DE')} · {a.correctness??'offen'} · {a.self_assessed?'selbst bewertet':'automatisch verglichen'}{a.unsure?' · unsicher':''}{a.progress_generation?` · Runde ${a.progress_generation}`:''}</span><button className="outline destructive-outline" disabled={saving||noteBusy} onClick={()=>setDeleteTarget(a)}>Versuch löschen</button></article>)}</details>}
+  {deleteTarget&&<section className="session-confirm" role="alertdialog" aria-label="Lernversuch löschen bestätigen"><h3>Diesen Lernversuch dauerhaft löschen?</h3><p>{new Date(deleteTarget.timestamp).toLocaleString('de-DE')} · {deleteTarget.correctness??'offen'}. Deine Notiz, andere Versuche und Prüfungen bleiben erhalten.</p><button className="primary" disabled={saving} onClick={()=>void act(async()=>{await onDelete(deleteTarget.attempt_id);setDeleteTarget(undefined);})}>Lernversuch dauerhaft löschen</button><button className="outline" disabled={saving} onClick={()=>setDeleteTarget(undefined)}>Abbrechen</button></section>}
+
  </section>;
 }

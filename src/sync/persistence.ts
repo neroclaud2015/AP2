@@ -36,12 +36,15 @@ export class SyncPersistence {
  private async apply(userId:string,r:SyncEnvelope){
   const existing=await this.db.table(r.entity).get([userId,r.id]);
   if(existing&&r.value){
+    if(r.entity==='moduleProgress'&&Number(r.value.generation)<existing.generation)throw Error('Eine ältere Lernrunde darf den aktuellen Fortschritt nicht ersetzen.');
+    if(r.entity==='moduleRuns'&&canonical(existing)!==canonical(r.value))throw Error('Historische Lernrunde wurde verändert.');
     const keys=r.entity==='attempts'?Object.keys(existing).filter(k=>!['note','error_reason','unsure','confidence'].includes(k)):r.entity==='testSessions'?['question_ids','question_models','source_mix','official_answers','started_at','seed','sourceExams','exam','module']:[];
     if(keys.some(k=>canonical(existing[k])!==canonical(r.value![k])))throw Error('Historische Herkunft oder Antwort wurde verändert. Keine Daten überschrieben.');
   }
   if(r.deleted){await this.db.table(r.entity).delete([userId,r.id]);await this.db.table('tombstones').put({userId,entity:r.entity,id:r.id,updated_at:r.updatedAt});}else{if(!r.value||String(r.value[ID_FIELDS[r.entity]])!==r.id)throw Error('Invalid remote identity');await this.db.table(r.entity).put(r.value);await this.db.table('tombstones').delete([userId,r.entity,r.id]);}}
  async resolve(userId:string,entity:EntityType,id:string,choice:'local'|'remote',expected?:{mutationId:string;revision:number}){await this.db.transaction('rw',this.tables(),async()=>{
   const key=[userId,entity,id],c=await this.db.table<StoredConflict>('syncConflicts').get(key);if(!c)throw Error('Conflict no longer exists');if(expected&&(expected.mutationId!==c.local.mutationId||expected.revision!==c.remote.revision))throw Error('Der Konflikt wurde geändert. Bitte beide Versionen erneut prüfen.');const pending=await this.db.table<OutboxItem>('outbox').get(key);
+  if(entity==='moduleProgress'){const selected=choice==='local'?(pending??c.local).value:c.remote.value,other=choice==='local'?c.remote.value:(pending??c.local).value;if(selected&&other&&Number(selected.generation)<Number(other.generation))throw Error('Eine neuere Lernrunde ist vorhanden. Bitte die neuere Version übernehmen.');}
   if(choice==='remote'&&pending?.mutationId!==c.local.mutationId)throw Error('Local data changed. Review the new conflict before replacing it.');
   const meta=await this.db.table('syncMeta').get(key);
   if(choice==='remote'){await this.apply(userId,c.remote);await this.db.table('outbox').delete(key);await this.db.table('syncMeta').put({...meta,revision:c.remote.revision,sync_state:'synced'});}

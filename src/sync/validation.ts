@@ -1,3 +1,4 @@
+import {validModuleProgress,validModuleRun} from '../learning/moduleProgress';
 import {validQuestionNote} from '../learning/questionNotes';
 import {validTestSession,stringMap} from './sessionValidation';
 import {validAttempt} from '../learning/model';
@@ -12,6 +13,8 @@ export function validateEntity(entity:EntityType,id:string,userId:string,value:u
  const object=(x:unknown)=>!!x&&typeof x==='object'&&!Array.isArray(x);
  if(entity==='attempts'&&!validAttempt(v as never)||entity==='reviews'&&!validReview(v)||entity==='answerReviews'&&!validAnswerReview(v))throw Error('Ungültiges Datenschema.');
  if(entity==='records'&&(!object(v.fields)||v.schema_version!==1)||entity==='learningSessions'&&(!stringMap(v.draft)||typeof v.revealed!=='boolean'))throw Error('Ungültiges Datenschema.');
+ if(entity==='moduleProgress'&&!validModuleProgress(v)||entity==='moduleRuns'&&!validModuleRun(v))throw Error('Ungültige Lernrunde.');
+ if((entity==='attempts'||entity==='learningSessions')&&v.progress_run_id!==undefined&&(typeof v.progress_run_id!=='string'||!v.progress_run_id||!Number.isSafeInteger(v.progress_generation)||(v.progress_generation as number)<1))throw Error('Ungültige Rundenzuordnung.');
  if(entity==='questionNotes'&&!validQuestionNote(v))throw Error('Ungültige Frage-Notiz.');
  if(entity==='testSessions'&&!validTestSession(v))throw Error('Ungültige Prüfungssitzung.');
 }

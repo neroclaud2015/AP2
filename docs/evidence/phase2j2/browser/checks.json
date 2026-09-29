@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "1 new module 0/N with no misleading 0%",
+    "2–5 Q1 correct, Q2 wrong→correct counted once; two historical Q2 attempts",
+    "6–10 confirmed module reset: 0/N, all markers cleared, Q1 note and attempts preserved",
+    "11 new-run Q3 does not resurrect pre-reset Q1/Q2",
+    "12–13 delete old attempt preserves notes/current run; delete current latest falls back within run, then unanswered",
+    "14 Originalprüfung and Modultest leave free-learning progress exactly unchanged",
+    "15 UI backup export/import preserves progress, runs, notes, attempts and tests",
+    "16 browser restart and refresh preserve generation2 and no old-state resurrection"
+  ],
+  "isolated": true,
+  "real_user_data_touched": false,
+  "pdf_reads": 0,
+  "errors": []
+}

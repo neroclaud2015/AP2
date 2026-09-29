@@ -28,7 +28,7 @@ VITE_FIREBASE_STORAGE_BUCKET=
 
 ## 数据和同步合同
 
-- `users/{uid}/records/{sha256(entity + NUL + stableId)}`：八类个人实体的 envelope（revision、cursor、deviceId、updatedAt、value 或 tombstone），以及历史不可变字段的保护数据。
+- `users/{uid}/records/{sha256(entity + NUL + stableId)}`：十类个人实体的 envelope（revision、cursor、deviceId、updatedAt、value 或 tombstone），以及历史不可变字段的保护数据。
 - `users/{uid}/sync/state`：账号级事务计数器。每次成功变更与记录一起原子提交，pull 使用 cursor 分页。时间不参与覆盖判定。
 - `users/{uid}/mutations/{sha256(mutationId)}`：不可变重试收据。相同 mutation 重试不增加记录；相同 ID 携带不同内容会拒绝。
 - `users/{uid}/conflicts/{sha256(mutationId)}`：保留提交版本与当时远端版本，不自动最后写入覆盖。用户明确选择后发送新 mutation 与当前 baseRevision。
@@ -59,3 +59,9 @@ npx firebase emulators:exec --only firestore --project demo-ap2-sync "node --tes
 新增 `questionNotes` 同步实体，稳定键为 `userId + question_id`，字段为 `text / created_at / updated_at / revision`。IndexedDB v8 新增表；schema_version=1 的备份可选包含 questionNotes，旧备份仍可导入。迁移优先保留已有 QuestionNote（包括用户清空后的空文本），否则使用当前 LearningSession 的非空 note，最后取最新非空 Attempt.note。迁移不修改历史 Attempt 或 error_reason。
 
 笔记编辑同时比对加载时的 revision 与文本；远端同版本但不同内容也不能被旧编辑器覆盖。离线队列、显式冲突选择与幂等重试沿用原同步协议。模拟测试不等同于真实 Firebase 验收；项目仍未配置，未部署 Firebase 服务。
+
+## Phase 2J.2 — 当前模块进度与轮次
+
+新增 moduleProgress（stableId = exam/module）及 moduleRuns（stableId = unique run_id），IndexedDB v9 / schema1 可选备份字段。首次迁移以 generation1 的 legacy_attempt_ids 保留旧历史关联，不回写旧 Attempt。新作答带 progress_run_id / progress_generation / progress_order。模块重置在事务中开启新 run 并清空该模块草稿，长期 QuestionNotes 和历史记录不变。
+
+同步保持原有 CAS 协议；较低 generation 不能覆盖较高 generation，即使用户在冲突界面选择旧本地版本也会拒绝。ModuleRun 元数据不可变且不提供删除。当前阶段仍未配置 Firebase，无真实云端验收。

@@ -1,3 +1,5 @@
+import {ModuleProgressStore} from './moduleProgressStore';
+import {inRun,stateFor,type ModuleDescriptor} from '../learning/moduleProgress';
 import {legacyQuestionNotes,validQuestionNote,type QuestionNote} from '../learning/questionNotes';
 import {validateEntity,canonical} from '../sync/validation';
 import {SyncPersistence} from '../sync/persistence';
@@ -19,6 +21,7 @@ export class LocalUserProvider implements AuthProvider {
 export class IndexedDBProgressRepository implements ProgressRepository {
   private db: Dexie;
   private syncStore:SyncPersistence;
+  private moduleStore:ModuleProgressStore;
   private records: Table<ProgressRecord, [string, string]>;
   constructor(name = 'ap2-private-learning') {
     this.db = new Dexie(name);
@@ -30,9 +33,18 @@ export class IndexedDBProgressRepository implements ProgressRepository {
     this.db.version(6).stores({testSessions:'[userId+test_id],userId,[userId+module],[userId+status]'}).upgrade(tx=>tx.table('testSessions').toCollection().modify(record=>{if(record.status==='submitted')record.status='completed';}));
     this.db.version(7).stores({settings:'[userId+id],userId',syncMeta:'[userId+entity+id],userId',outbox:'[userId+entity+id],userId',tombstones:'[userId+entity+id],userId',syncConflicts:'[userId+entity+id],userId',deviceState:'key'});
     this.db.version(8).stores({questionNotes:'[userId+question_id],userId'});
+    this.db.version(9).stores({moduleProgress:'[userId+id],userId',moduleRuns:'[userId+run_id],userId,[userId+progress_id]'});
     this.syncStore=new SyncPersistence(this.db);
+    this.moduleStore=new ModuleProgressStore(this.db,this.syncStore);
     this.records = this.db.table('records');
   }
+  getModuleProgress(userId:string){return this.moduleStore.list(userId);}
+  getModuleRuns(userId:string){return this.moduleStore.runs(userId);}
+  ensureModuleProgress(userId:string,d:ModuleDescriptor){return this.moduleStore.ensure(userId,d);}
+  savePracticeSession(session:LearningSession,id:string,runId:string){return this.moduleStore.saveSession(session,id,runId);}
+  savePracticeAttempt(attempt:Attempt,session:LearningSession,id:string,runId:string){return this.moduleStore.saveAttempt(attempt,session,id,runId);}
+  async resetModuleProgress(userId:string,id:string,revision:number,runId:string){await this.migrateQuestionNotes(userId);return this.moduleStore.reset(userId,id,revision,runId);}
+  async deletePracticeAttempt(userId:string,id:string,attemptId:string,runId:string){await this.migrateQuestionNotes(userId);return this.moduleStore.deleteAttempt(userId,id,attemptId,runId);}
   async get(userId: string, questionId: string) { return this.records.get([userId, questionId]); }
   private async write(userId: string, questionId: string, field: string, value: LocalField) {
     await this.db.transaction('rw', this.syncStore.tables(), async () => {
@@ -156,7 +168,7 @@ export class IndexedDBProgressRepository implements ProgressRepository {
   async exportSnapshot(userId:string){
     await this.migrateQuestionNotes(userId);
     const names=[...PERSONAL_STORES];
-    return this.db.transaction('r',names,async()=>({schema_version:1 as const,userId,records:await this.getRecords(userId),reviews:await this.getReviews(userId),answerReviews:await this.getAnswerReviews(userId),attempts:await this.getAttempts(userId),learningSessions:await this.getLearningSessions(userId),testSessions:await this.getTestSessions(userId),settings:await this.getSettings(userId),questionNotes:await this.db.table<QuestionNote>('questionNotes').where('userId').equals(userId).toArray()}));
+    return this.db.transaction('r',names,async()=>({schema_version:1 as const,userId,records:await this.getRecords(userId),reviews:await this.getReviews(userId),answerReviews:await this.getAnswerReviews(userId),attempts:await this.getAttempts(userId),learningSessions:await this.getLearningSessions(userId),testSessions:await this.getTestSessions(userId),settings:await this.getSettings(userId),moduleProgress:await this.getModuleProgress(userId),moduleRuns:await this.getModuleRuns(userId),questionNotes:await this.db.table<QuestionNote>('questionNotes').where('userId').equals(userId).toArray()}));
   }
   getOutbox(userId:string){return this.syncStore.outbox(userId);}
   getSyncConflicts(userId:string){return this.syncStore.conflicts(userId);}
@@ -170,11 +182,17 @@ export class IndexedDBProgressRepository implements ProgressRepository {
   async saveSetting(userId:string,id:string,value:unknown){await this.syncStore.put('settings',{userId,id,value});}
   async importSnapshot(snapshot:import('../types').PersonalDataSnapshot,userId:string,sync:boolean){
     if(snapshot.schema_version!==1||!snapshot.userId||!userId)throw Error('Ungültige Sicherung.');
-    for(const entity of PERSONAL_STORES){const list=entity==='settings'||entity==='questionNotes'?(snapshot[entity]??[]):snapshot[entity];if(!Array.isArray(list))throw Error('Ungültige Sicherung.');for(const row of list){if(!row||typeof row!=='object'||typeof (row as unknown as Record<string,unknown>)[ID_FIELDS[entity]]!=='string'||row.userId!==snapshot.userId)throw Error('Ungültige Datensatzidentität.');}}
+    for(const entity of PERSONAL_STORES){const list=['settings','questionNotes','moduleProgress','moduleRuns'].includes(entity)?(snapshot[entity]??[]):snapshot[entity];if(!Array.isArray(list))throw Error('Ungültige Sicherung.');for(const row of list){if(!row||typeof row!=='object'||typeof (row as unknown as Record<string,unknown>)[ID_FIELDS[entity]]!=='string'||row.userId!==snapshot.userId)throw Error('Ungültige Datensatzidentität.');}}
     await this.db.transaction('rw',this.syncStore.tables(),async()=>{
       for(const entity of PERSONAL_STORES)for(const row of snapshot[entity]??[]){const value={...row,userId} as unknown as Record<string,unknown>,id=String(value[ID_FIELDS[entity]]),existing=await this.db.table(entity).get([userId,id]);
         if(existing&&canonical(existing)!==canonical(value))throw Error('Gleiche ID mit anderem Inhalt. Import wurde ohne Änderungen abgebrochen.');
         validateEntity(entity,id,userId,value);if(!existing){if(sync)await this.syncStore.put(entity,value);else await this.db.table(entity).put(value);}else if(sync&&!(await this.db.table('syncMeta').get([userId,entity,id])))await this.syncStore.mark(entity,userId,id,value);
+      }
+      const runs=await this.getModuleRuns(userId),attempts=await this.getAttempts(userId);
+      for(const p of await this.getModuleProgress(userId)){
+        const run=runs.find(r=>r.run_id===p.run_id);
+        if(!run||run.progress_id!==p.id||run.generation!==p.generation||canonical(run.question_ids)!==canonical(p.question_ids))throw Error('Sicherung enthält eine unvollständige Lernrunde.');
+        for(const [qid,state] of Object.entries(p.questionStates))if(state.attempt_id){const a=attempts.find(a=>a.attempt_id===state.attempt_id);if(!a||a.question_id!==qid||!inRun(a,run)||stateFor(a).state!==state.state)throw Error('Sicherung enthält eine ungültige Fortschrittsquelle.');}
       }
       await this.migrateQuestionNotes(userId,sync,true);
     });

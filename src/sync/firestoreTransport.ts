@@ -41,7 +41,7 @@ export class FirestoreTransport {
    }else{
     const cursor=Number(stateSnap.data()?.cursor??0)+1;if(!Number.isSafeInteger(cursor))throw Error('Sync-Cursor erschöpft.');
     const envelope:SyncEnvelope={entity:m.entity,id:m.id,revision:(current?.revision??0)+1,cursor,updatedAt:now,deviceId:this.deviceId,deleted:m.deleted,value:m.value};
-    const history=['attempts','testSessions'].includes(m.entity)?m.deleted?(stored?.history??null):m.value:null;
+    const history=['attempts','testSessions','moduleRuns','moduleProgress'].includes(m.entity)?m.deleted?(stored?.history??null):m.value:null;
     tx.set(recordRef,{userId:uid,envelope,history});tx.set(stateRef,{userId:uid,cursor});result={mutationId:m.mutationId,status:'applied',record:envelope};
    }
    tx.set(receiptRef,{userId:uid,mutation:m,result,recordKey,createdAt:now} satisfies Receipt);

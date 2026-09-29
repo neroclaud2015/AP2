@@ -18,11 +18,12 @@ describe('module routes',()=>{
  });
 });
 describe('module progress isolation',()=>{
- it('filters by stable IDs and resumes the latest draft within each module',()=>{
+ it('uses explicit state and resumes first unanswered, then incorrect/partial',()=>{
   const questions=[{question_id:'ap-q1',question_number:'1'},{question_id:'ap-u1',question_number:'U1'}];
-  const attempts=[{question_id:'ap-q1',timestamp:'2026-01-01',correctness:'falsch'},{question_id:'ap-q1',timestamp:'2026-01-02',correctness:'richtig'},{question_id:'fa-q1',timestamp:'2026-01-03',correctness:'richtig'}] as Attempt[];
-  const sessions=[{question_id:'ap-u1',updated_at:'2026-01-04'},{question_id:'fa-q1',updated_at:'2026-01-05'}] as LearningSession[];
-  expect(moduleProgress(questions,attempts,sessions)).toMatchObject({practiced:1,attempts:2,correct:1,lastActivity:'2026-01-04',resumeNumber:'U1'});
+  const p={questionStates:{'ap-q1':{state:'correct'},'ap-u1':{state:'unanswered'}},updated_at:'2026-01-04',revision:2} as unknown as import('./moduleProgress').ModuleProgress;
+  expect(moduleProgress(questions,p)).toMatchObject({practiced:1,correct:1,lastActivity:'2026-01-04',resumeNumber:'U1',rate:100});
+  p.questionStates['ap-u1']={state:'partial'};expect(moduleProgress(questions,p).resumeNumber).toBe('U1');
+  p.questionStates['ap-u1']={state:'correct'};expect(moduleProgress(questions,p).resumeNumber).toBe('1');
  });
 });
 import 'fake-indexeddb/auto';
@@ -35,8 +36,8 @@ it('retains separate drafts and results for equally numbered AP/FA questions aft
  repo.close();const reopened=new IndexedDBProgressRepository(name);const sessions=await reopened.getLearningSessions('local');const attempts=await reopened.getAttempts('local');
  expect(sessions.find(s=>s.question_id==='ap-q1')?.draft).toEqual({choice:'2',note:'AP'});
  expect(sessions.find(s=>s.question_id==='fa_2017-p2-h1')?.draft).toEqual({choice:'4',note:'FA'});
- expect(moduleProgress([{question_id:'ap-q1',question_number:'1'}],attempts,sessions).attempts).toBe(1);
- expect(moduleProgress([{question_id:'fa_2017-p2-h1',question_number:'1'}],attempts,sessions).attempts).toBe(1);
+ expect(attempts.filter(a=>a.question_id==='ap-q1')).toHaveLength(1);
+ expect(attempts.filter(a=>a.question_id==='fa_2017-p2-h1')).toHaveLength(1);
  reopened.close();
 });
 

@@ -4,7 +4,7 @@ import {productionAdditions} from '../manualReview/productionAdditions';
 import sourceRegistry from '../../public/data/source_registry.json';
 import {assertProductionModule} from '../sources/registry';
 import {parseSourceExams,type SourceExams} from './sourceExams';
-import type {Attempt,LearningSession} from './model';
+import {summarizeProgress,nextQuestion,type ModuleProgress} from './moduleProgress';
 export type ModuleSlug=string;
 export type View='start'|'learn'|'exams'|'tests'|'session'|'study'|'review'|'history'|'settings';
 export interface PartConfig {id:string;title:string;kind:'multiple_choice'|'multi_part';label:string;questionNumbers:string[]}
@@ -57,11 +57,8 @@ export function routeUrl(route:LearningRoute,href:string):URL {
  const url=new URL(href);if(route.view==='tests'||route.view==='session'&&route.sourceExams!==undefined){const filter=route.sourceExams??'all';url.searchParams.set('years',filter==='all'?'all':filter.join(','));}else url.searchParams.delete('years');url.searchParams.set('view',route.view);url.searchParams.set('exam',route.examId);url.searchParams.set('module',route.module);
  if(route.view==='study'||route.view==='review')url.searchParams.set('q',route.number);else url.searchParams.delete('q');if(route.view==='session'&&route.sessionId)url.searchParams.set('session',route.sessionId);else url.searchParams.delete('session');return url;
 }
-export function moduleProgress(questions:{question_id:string;question_number:string}[],allAttempts:Attempt[],allSessions:LearningSession[]){
- const ids=new Set(questions.map(q=>q.question_id));const attempts=allAttempts.filter(a=>ids.has(a.question_id));const sessions=allSessions.filter(s=>ids.has(s.question_id));
- const latest=new Map<string,Attempt>();for(const a of [...attempts].sort((a,b)=>a.timestamp.localeCompare(b.timestamp)))latest.set(a.question_id,a);
- const activity=[...attempts.map(a=>({id:a.question_id,date:a.timestamp})),...sessions.map(s=>({id:s.question_id,date:s.updated_at??''}))].sort((a,b)=>a.date.localeCompare(b.date)).at(-1);
- return {practiced:latest.size,attempts:attempts.length,correct:[...latest.values()].filter(a=>a.correctness==='richtig').length,unsure:[...latest.values()].filter(a=>a.unsure).length,lastActivity:activity?.date??'',resumeNumber:questions.find(q=>q.question_id===activity?.id)?.question_number??questions[0]?.question_number??'1',done:new Set(latest.keys())};
+export function moduleProgress(questions:{question_id:string;question_number:string}[],current?:ModuleProgress){
+ const ids=questions.map(q=>q.question_id),s=summarizeProgress(current,ids);return {...s,practiced:s.completed,lastActivity:current&&(current.revision>1||s.completed>0)?current.updated_at:'',resumeNumber:questions.find(q=>q.question_id===nextQuestion(current,ids))?.question_number??questions[0]?.question_number??'1',done:new Set(ids.filter(id=>current?.questionStates[id]?.state&&current.questionStates[id].state!=='unanswered'))};
 }
 
 export function originalPageLink(config:ModuleConfig,pdf:string,page:number){const image=config.sourcePageImages?.[page];return image?import.meta.env.BASE_URL+image:import.meta.env.BASE_URL+pdf+`#page=${page}`;}
