@@ -46,3 +46,19 @@ it('uses final production evidence for reviewed crops without replacing validate
  expect(JSON.stringify(copy.sources.map(s=>s.gates.validated))).toBe(before);
  expect(()=>moduleSources(copy,{examId:'2017-sommer',slug:'arbeitsplanung',solutionsPath:'data/unreviewed.json'})).toThrow();
 });
+
+it('requires a confirmed, never-segmented parent for processing revisions',()=>{
+ const original=structuredClone(registry) as unknown as SourceRegistry;
+ const identity={examId:'2020-sommer',slug:'arbeitsplanung'};
+ const selected=moduleSources(original,identity).question;
+ expect(selected.profile_revision_of_source_id).toBeTruthy();
+ for(const kind of ['missing-parent','formal-parent','missing-proof','wrong-hash']){
+  const copy=structuredClone(original);const child=copy.sources.find(s=>s.source_id===selected.source_id)!;
+  const parent=copy.sources.find(s=>s.source_id===child.profile_revision_of_source_id)!;
+  if(kind==='missing-parent')copy.sources=copy.sources.filter(s=>s!==parent);
+  if(kind==='formal-parent')parent.gates.formal_segmented=child.gates.formal_segmented;
+  if(kind==='missing-proof')delete child.profile_confirmation;
+  if(kind==='wrong-hash')parent.sha256='0'.repeat(64);
+  expect(()=>moduleSources(copy,identity)).toThrow(/Profilrevision/);
+ }
+});

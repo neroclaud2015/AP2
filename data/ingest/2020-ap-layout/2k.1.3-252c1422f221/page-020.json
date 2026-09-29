@@ -1,0 +1,61 @@
+{
+  "key": "eab90cf7dbda6f2242831dee67c060bdab86682a4be6c256e38f2ef7b1955b08",
+  "record_hash": "9629461142843332826b3bcb525b25cd42da647f850cd0fafb281e203d6d8a54",
+  "record": {
+    "page": 20,
+    "geometry": [
+      595.0800170898438,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Every physical cached page visually inspected; printed headings and panel boundaries observed, not inferred from order.",
+    "anchors": [
+      {
+        "anchor_id": "2020-ap-p20-U5",
+        "number": "U5",
+        "bbox": [
+          40.988,
+          22.771,
+          83.493,
+          50.096
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "d53afe6c3d45201b72a84fc68f6b9db8799567275834fd023373584fb2b3b781"
+      }
+    ],
+    "regions": [
+      {
+        "page": 20,
+        "bbox": [
+          40.988,
+          22.771,
+          570.791,
+          819.753
+        ],
+        "role": "primary",
+        "owner": "2020-ap-p20-U5",
+        "evidence": "Printed U5 heading and complete ruled question panel visually verified."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U5",
+        "bbox": [
+          40.988,
+          22.771,
+          83.493,
+          50.096
+        ],
+        "pixel_sha256": "d53afe6c3d45201b72a84fc68f6b9db8799567275834fd023373584fb2b3b781",
+        "audited_pixel_sha256": "d53afe6c3d45201b72a84fc68f6b9db8799567275834fd023373584fb2b3b781"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

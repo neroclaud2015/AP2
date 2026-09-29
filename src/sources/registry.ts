@@ -12,6 +12,14 @@ function registryValue(value:unknown):SourceRegistry {
  return r;
 }
 function validated(source:RegisteredSource,registry:SourceRegistry){
+ if(source.profile_revision_of_source_id){
+  const parent=registry.sources.find(s=>s.source_id===source.profile_revision_of_source_id);
+  const proof=source.profile_confirmation as {proposal_hash?:string;proposal_path?:string;proposal_sha256?:string;confirmation_path?:string;confirmation_sha256?:string}|undefined;
+  const events=parent?.events as {stage:string;proposal_hash?:string;evidence?:{sha256?:string;proposal_path?:string}}[]|undefined;
+  const proposed=events?.find(e=>e.stage==='profile_revision_proposed'&&e.proposal_hash===proof?.proposal_hash);
+  const confirmed=events?.find(e=>e.stage==='profile_revision_confirmed'&&e.proposal_hash===proof?.proposal_hash);
+  if(!parent||parent.status!=='blocked'||parent.gates.formal_segmented||source.supersedes_source_id||source.version<=parent.version||['exam','module','source_type','filename','sha256'].some(k=>parent[k]!==source[k])||!proof||!hash(proof.proposal_hash)||!hash(proof.proposal_sha256)||!hash(proof.confirmation_sha256)||!proof.confirmation_path||proposed?.evidence?.proposal_path!==proof.proposal_path||proposed?.evidence?.sha256!==proof.proposal_sha256||confirmed?.evidence?.sha256!==proof.confirmation_sha256)throw Error('Profilrevision ohne unveränderte Quelle und bestätigte Prüfspur.');
+ }
  if(!source.layout_profile||!source.answer_profile||!source.gates||SOURCE_STAGES.slice(1).some(stage=>{
   const e=source.gates[stage];return !e||e.source_sha256!==source.sha256||e.result!=='passed'||!e.artifacts||!Object.keys(e.artifacts).length||Object.entries(e.artifacts).some(([path,sha])=>!path||!hash(sha));
  }))throw Error('Die Prüfungsquelle hat nicht alle Freigaben.');

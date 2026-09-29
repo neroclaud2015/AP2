@@ -51,6 +51,8 @@ class ManualPromotionTests(unittest.TestCase):
     for kind in ['answers','layout']:
      rel=f'data/ingest/2018-19-{code}_registered_{kind}.json';paths.add(rel);paths.update(read(ROOT/rel)['artifacts'])
    for source in before['sources']:
+    if source.get('profile_revision_of_source_id'):
+     proof=source['profile_confirmation'];paths.update([proof['proposal_path'],proof['confirmation_path']]);paths.update(read(ROOT/proof['proposal_path'])['artifact_hashes']);paths.update(source['gates']['profile_matched']['artifacts'])
     if source['exam']=='2018-19-winter' and source['module'] in ['arbeitsplanung','funktionsanalyse']:
      for gate in source['gates'].values():paths.update(gate['artifacts'])
    for rel in paths:

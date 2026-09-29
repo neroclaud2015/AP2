@@ -132,6 +132,11 @@ def validate_registry(registry):
    old=_source(registry,s['supersedes_source_id'])
    if (old['exam'],old['module'],old['source_type'])!=(s['exam'],s['module'],s['source_type']) or old['version']+1!=s['version'] or old['sha256']==s['sha256']:raise ValueError('Invalid supersedes chain')
    if s['status']=='production':_validate_identity_decision(registry,s)
+  if s.get('profile_revision_of_source_id'):
+   old=_source(registry,s['profile_revision_of_source_id'])
+   if old['status']!='blocked' or 'formal_segmented' in old['gates'] or any(old[k]!=s[k] for k in ('exam','module','source_type','filename','sha256')) or s['version']<=old['version'] or s['supersedes_source_id']:raise ValueError('Invalid processing revision lineage')
+   proof=s.get('profile_confirmation',{})
+   if not any(e.get('stage')=='profile_revision_confirmed' and e.get('proposal_hash')==proof.get('proposal_hash') for e in old['events']):raise ValueError('Processing revision requires confirmed audit event')
  return registry
 
 def save_registry(root,registry):
@@ -139,11 +144,35 @@ def save_registry(root,registry):
  validate_registry(registry);previous=load_registry(root)
  for source in registry['sources']:
   if source['status']=='production':validate_identity_artifacts(root,registry,source)
+  if source.get('profile_revision_of_source_id'):
+   if not any(s['source_id']==source['source_id'] for s in previous['sources']) and any((s['exam'],s['module'],s['source_type'])==(source['exam'],source['module'],source['source_type']) and 'formal_segmented' in s['gates'] for s in previous['sources']):raise ValueError('Formal dataset already exists; processing revision cannot bypass identity migration')
+   from answers import artifact_digest,artifacts_valid
+   from shared_region_review import validate_confirmation
+   proof=source['profile_confirmation'];proposal_path=Path(root)/proof['proposal_path'];confirmation_path=Path(root)/proof['confirmation_path']
+   if artifact_digest(proposal_path)!=proof['proposal_sha256'] or artifact_digest(confirmation_path)!=proof['confirmation_sha256']:raise ValueError('Profile revision proof changed')
+   proposal=json.loads(proposal_path.read_text(encoding='utf-8-sig'));confirmation=json.loads(confirmation_path.read_text(encoding='utf-8-sig'))
+   from portrait_dataset import objhash
+   if proposal.get('proposal_hash')!=proof['proposal_hash'] or objhash({k:v for k,v in proposal.items() if k!='proposal_hash'})!=proof['proposal_hash']:raise ValueError('Profile proposal content hash mismatch')
+   parent=_source(registry,source['profile_revision_of_source_id'])
+   proposed=[e for e in parent['events'] if e.get('stage')=='profile_revision_proposed' and e.get('proposal_hash')==proof['proposal_hash']]
+   confirmed=[e for e in parent['events'] if e.get('stage')=='profile_revision_confirmed' and e.get('proposal_hash')==proof['proposal_hash']]
+   if len(proposed)!=1 or len(confirmed)!=1 or proposed[0]['evidence']!={'proposal_path':proof['proposal_path'],'sha256':proof['proposal_sha256']} or confirmed[0]['evidence']['sha256']!=proof['confirmation_sha256']:raise ValueError('Profile proof differs from append-only audit evidence')
+   validate_confirmation(proposal,confirmation)
+   if proposal['source_id']!=source['profile_revision_of_source_id'] or proposal['source_sha256']!=source['sha256'] or not artifacts_valid(root,proposal['artifact_hashes']):raise ValueError('Profile revision artifact mismatch')
+   profile_gate=source['gates'].get('profile_matched')
+   if profile_gate:
+    approved=json.loads((Path(root)/proposal['config_path']).read_text(encoding='utf-8-sig'))
+    bound=profile_gate['artifacts']
+    if len(bound)!=1 or not artifacts_valid(root,bound):raise ValueError('Confirmed profile requires one intact bound config')
+    actual=json.loads((Path(root)/next(iter(bound))).read_text(encoding='utf-8-sig'))
+    expected={**approved,'source_id':source['source_id'],'confirmed_profile_revision':proposal['new_profile_revision'],'confirmation_proposal_hash':proposal['proposal_hash']}
+    if actual!=expected:raise ValueError('Bound configuration differs from manually confirmed profile')
  for old in previous['sources']:
   current=_source(registry,old['source_id'])
   immutable=('source_id','exam','module','source_type','filename','sha256','version','supersedes_source_id','created_at')
   if any(current[k]!=old[k] for k in immutable) or any(current['gates'].get(k)!=v for k,v in old['gates'].items()) or current['events'][:len(old['events'])]!=old['events']:raise ValueError('Historical source identity/evidence cannot be overwritten')
   if old['identity_migration'] and current['identity_migration']!=old['identity_migration']:raise ValueError('Identity decision is immutable')
+  if any(current.get(k)!=old.get(k) for k in ('profile_revision_of_source_id','profile_confirmation')):raise ValueError('Profile revision lineage is immutable')
   if old['status'] not in ('registered','hash_verified') and any(current[k]!=old[k] for k in ('layout_profile','answer_profile')):raise ValueError('Validated profiles cannot be changed')
   if old['status']=='production' and current!=old:raise ValueError('Production source is immutable; register replacement')
  # Metadata only. No bytes, credentials, user records or private cache contents.

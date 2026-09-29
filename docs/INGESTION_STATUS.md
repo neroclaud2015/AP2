@@ -56,3 +56,7 @@ Sommer2018 AP/FA retain missing-attachment blockers. No old production source ch
 91 new physical pages cached once; 0 old PDF rescans. Repeated extraction skipped completed work. Four new physical PDFs / six logical sources. Later12 archives remain pending; no later PDFs opened. Stop at official answer association safety gate, not a completed archive import.
 
 See PHASE_2I_REPORT.md and data/ingest/historical_expansion_manifest.json. Resume uses exact source hashes, page/module checkpoints, config hashes, and versioned profiles. Firebase implemented but not configured; real activation deferred by user.
+
+
+## Sommer 2020 AP manual mapping release — 2026-09-29
+Q7 has no M3 reference; Q8 has M3. Explicit user confirmation and highlighted separator screenshot retained. New processing lineage preserves the blocked source and every old event/gate. 36 questions, MC 28/28, U 8/8, Needs Review 0. No PDF access. Winter 2020/21: 94 newly cached pages including correction notice; layout work pending, not production.

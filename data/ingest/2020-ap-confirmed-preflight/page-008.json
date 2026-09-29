@@ -1,0 +1,199 @@
+{
+  "key": "685e86ce49be3e403a61da920d52064497a6e7c3b679a73cf9b27a48678d3ebe",
+  "record_hash": "8277835423213b0cfa0d4d82b50fa488616bbaf8c33d451db0d22966427fe69f",
+  "record": {
+    "page": 8,
+    "geometry": [
+      595.0800170898438,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Every physical cached page visually inspected; printed headings and panel boundaries observed, not inferred from order.",
+    "anchors": [
+      {
+        "anchor_id": "2020-ap-p8-17",
+        "number": "17",
+        "bbox": [
+          53.132,
+          59.204,
+          95.638,
+          86.529
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "18f22e5786c35a0e4bda8bfa0db065a78be3a37747bb12668b3f030ed72a37cc"
+      },
+      {
+        "anchor_id": "2020-ap-p8-18",
+        "number": "18",
+        "bbox": [
+          300.576,
+          59.204,
+          343.082,
+          86.529
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "92933f54926601db381cdbec47a4cf76ff1961415710a11eb8c152410a05543a"
+      },
+      {
+        "anchor_id": "2020-ap-p8-19",
+        "number": "19",
+        "bbox": [
+          53.132,
+          300.576,
+          95.638,
+          327.901
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "fb821e49ce029851c446bc315f5ee8bb6779f9824f3ccec6ec68eb0fe92269b5"
+      },
+      {
+        "anchor_id": "2020-ap-p8-20",
+        "number": "20",
+        "bbox": [
+          300.576,
+          543.466,
+          343.082,
+          570.791
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "b7ff13c760f425de827612fb2afdb10734be4eb9d881baf43b6f46746d496491"
+      }
+    ],
+    "regions": [
+      {
+        "page": 8,
+        "bbox": [
+          53.132,
+          59.204,
+          294.504,
+          296.022
+        ],
+        "role": "primary",
+        "owner": "2020-ap-p8-17",
+        "evidence": "Printed 17 heading and complete ruled question panel visually verified."
+      },
+      {
+        "page": 8,
+        "bbox": [
+          300.576,
+          59.204,
+          543.466,
+          296.022
+        ],
+        "role": "primary",
+        "owner": "2020-ap-p8-18",
+        "evidence": "Printed 18 heading and complete ruled question panel visually verified."
+      },
+      {
+        "page": 8,
+        "bbox": [
+          53.132,
+          300.576,
+          543.466,
+          538.912
+        ],
+        "role": "primary",
+        "owner": "2020-ap-p8-19",
+        "evidence": "Printed 19 heading and complete ruled question panel visually verified."
+      },
+      {
+        "page": 8,
+        "bbox": [
+          300.576,
+          543.466,
+          543.466,
+          786.356
+        ],
+        "role": "primary",
+        "owner": "2020-ap-p8-20",
+        "evidence": "Printed 20 heading and complete ruled question panel visually verified."
+      },
+      {
+        "page": 8,
+        "bbox": [
+          53.132,
+          543.466,
+          296.022,
+          786.356
+        ],
+        "role": "response_area",
+        "owner": "2020-ap-p8-19",
+        "evidence": "Printed Nebenrechnung Aufgabe 19 identifies this response panel."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "17",
+        "bbox": [
+          53.132,
+          59.204,
+          95.638,
+          86.529
+        ],
+        "pixel_sha256": "18f22e5786c35a0e4bda8bfa0db065a78be3a37747bb12668b3f030ed72a37cc",
+        "audited_pixel_sha256": "18f22e5786c35a0e4bda8bfa0db065a78be3a37747bb12668b3f030ed72a37cc"
+      },
+      {
+        "kind": "heading",
+        "number": "18",
+        "bbox": [
+          300.576,
+          59.204,
+          343.082,
+          86.529
+        ],
+        "pixel_sha256": "92933f54926601db381cdbec47a4cf76ff1961415710a11eb8c152410a05543a",
+        "audited_pixel_sha256": "92933f54926601db381cdbec47a4cf76ff1961415710a11eb8c152410a05543a"
+      },
+      {
+        "kind": "heading",
+        "number": "19",
+        "bbox": [
+          53.132,
+          300.576,
+          95.638,
+          327.901
+        ],
+        "pixel_sha256": "fb821e49ce029851c446bc315f5ee8bb6779f9824f3ccec6ec68eb0fe92269b5",
+        "audited_pixel_sha256": "fb821e49ce029851c446bc315f5ee8bb6779f9824f3ccec6ec68eb0fe92269b5"
+      },
+      {
+        "kind": "heading",
+        "number": "20",
+        "bbox": [
+          300.576,
+          543.466,
+          343.082,
+          570.791
+        ],
+        "pixel_sha256": "b7ff13c760f425de827612fb2afdb10734be4eb9d881baf43b6f46746d496491",
+        "audited_pixel_sha256": "b7ff13c760f425de827612fb2afdb10734be4eb9d881baf43b6f46746d496491"
+      },
+      {
+        "kind": "ownership",
+        "number": "19",
+        "bbox": [
+          53.132,
+          543.466,
+          273.251,
+          569.273
+        ],
+        "pixel_sha256": "47a279ffc666929962234669a9c4749fdf698b595156bf32ee54545d5df4e60b",
+        "audited_pixel_sha256": "47a279ffc666929962234669a9c4749fdf698b595156bf32ee54545d5df4e60b"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

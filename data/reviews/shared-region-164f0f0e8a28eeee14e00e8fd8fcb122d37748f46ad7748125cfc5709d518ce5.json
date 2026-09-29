@@ -1,0 +1,27 @@
+{
+  "proposal_hash": "164f0f0e8a28eeee14e00e8fd8fcb122d37748f46ad7748125cfc5709d518ce5",
+  "source_id": "src-d93fb74a58f45d19d294de5b",
+  "source_sha256": "ac48540e00c49e5c6ca70fa33639ccce2f02f3240aa915d3a7fec37761b5a4c6",
+  "previous_profile_revision": "portrait-explicit-regions@2k.1.2-858b8b40d916",
+  "new_profile_revision": "portrait-explicit-regions@2k.1.3-9b16fef31083",
+  "config_sha256": "9b16fef310839be7bb533a9bedd359627f12e38b3e1cde4769424456b9336631",
+  "evidence_hashes": {
+    "Q7": "a0a4fbf9f33c2c223a4d187144e64e7c231f12e1bae8361e0c09131e1db3b342",
+    "Q8": "c06423991e68c17c48a880bc9bfc6cb46b19d267a5d3f4bb5be12041aa9059d2",
+    "shared-m3": "163a1eb5648f42a477da98b6015bd9123b65de0dbeccacd6da6dc698e89e2bf8"
+  },
+  "references": {
+    "7": [],
+    "8": [
+      "shared-m3"
+    ]
+  },
+  "schema_version": 1,
+  "status": "confirmed",
+  "confirmed": true,
+  "confirmation_method": "manual_shared_region_review",
+  "confirmed_at": "2026-09-29T14:39:05.841104+00:00",
+  "confirmation_origin": "Explicit user chat confirmation with highlighted separator screenshot",
+  "user_statement": "Q7 不引用 M3 图，Q8 引用 我确认",
+  "annotation_evidence": "docs/evidence/phase2k1/confirmed/user-separator-evidence.png"
+}

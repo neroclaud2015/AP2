@@ -1,0 +1,99 @@
+{
+  "key": "496d43c2049123650645a5cb4c408a13039472a72f1ba485cf034cf059941c15",
+  "record_hash": "c9d86b1a6481643522db2fdc23a5e8a0af359ed1cc6746ed44be95afd90b4b9a",
+  "record": {
+    "page": 3,
+    "geometry": [
+      595.0800170898438,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Every physical cached page visually inspected; printed headings and panel boundaries observed, not inferred from order.",
+    "anchors": [
+      {
+        "anchor_id": "2020-ap-p3-1",
+        "number": "1",
+        "bbox": [
+          53.132,
+          302.094,
+          95.638,
+          329.419
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "ff39b0fcc9205401d09364e34acdbbd88e4161310d85ec7e2146914c10f2a1d0"
+      },
+      {
+        "anchor_id": "2020-ap-p3-2",
+        "number": "2",
+        "bbox": [
+          53.132,
+          544.984,
+          95.638,
+          572.309
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Exact cached heading image fingerprint; complete diagram and response space retained.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "66e081787ddfe7af586cdcb444900932ed06832ad2c35f854131c5909bfcace7"
+      }
+    ],
+    "regions": [
+      {
+        "page": 3,
+        "bbox": [
+          53.132,
+          302.094,
+          541.948,
+          541.948
+        ],
+        "role": "primary",
+        "owner": "2020-ap-p3-1",
+        "evidence": "Printed 1 heading and complete ruled question panel visually verified."
+      },
+      {
+        "page": 3,
+        "bbox": [
+          53.132,
+          544.984,
+          541.948,
+          786.356
+        ],
+        "role": "primary",
+        "owner": "2020-ap-p3-2",
+        "evidence": "Printed 2 heading and complete ruled question panel visually verified."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "1",
+        "bbox": [
+          53.132,
+          302.094,
+          95.638,
+          329.419
+        ],
+        "pixel_sha256": "ff39b0fcc9205401d09364e34acdbbd88e4161310d85ec7e2146914c10f2a1d0",
+        "audited_pixel_sha256": "ff39b0fcc9205401d09364e34acdbbd88e4161310d85ec7e2146914c10f2a1d0"
+      },
+      {
+        "kind": "heading",
+        "number": "2",
+        "bbox": [
+          53.132,
+          544.984,
+          95.638,
+          572.309
+        ],
+        "pixel_sha256": "66e081787ddfe7af586cdcb444900932ed06832ad2c35f854131c5909bfcace7",
+        "audited_pixel_sha256": "66e081787ddfe7af586cdcb444900932ed06832ad2c35f854131c5909bfcace7"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}
