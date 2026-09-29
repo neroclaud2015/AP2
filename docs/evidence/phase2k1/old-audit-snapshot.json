@@ -1,0 +1,84 @@
+{
+  "source": {
+    "source_id": "src-d93fb74a58f45d19d294de5b",
+    "exam": "2020-sommer",
+    "module": "arbeitsplanung",
+    "source_type": "question_pdf",
+    "filename": "2020 Sommer/20 Arbeitsplanung.pdf",
+    "sha256": "ac48540e00c49e5c6ca70fa33639ccce2f02f3240aa915d3a7fec37761b5a4c6",
+    "version": 1,
+    "status": "blocked",
+    "layout_profile": "portrait-explicit-regions@2k.1.0-6c3034f72486",
+    "answer_profile": "ring-annulus-explicit@2f.1.0",
+    "supersedes_source_id": null,
+    "created_at": "2026-09-29T13:36:40.922383+00:00",
+    "identity_migration": null,
+    "gates": {
+      "hash_verified": {
+        "source_sha256": "ac48540e00c49e5c6ca70fa33639ccce2f02f3240aa915d3a7fec37761b5a4c6",
+        "result": "passed",
+        "artifacts": {
+          "data/ingest/registered-receipts/ac48540e00c49e5c6ca70fa33639ccce2f02f3240aa915d3a7fec37761b5a4c6.json": "5e3150a5b05b5304ccdae5790fe2432eaa03c27e4a7b8189d5834fb1bea3fe67"
+        }
+      },
+      "profile_matched": {
+        "source_sha256": "ac48540e00c49e5c6ca70fa33639ccce2f02f3240aa915d3a7fec37761b5a4c6",
+        "result": "passed",
+        "artifacts": {
+          "scripts/layout_profiles/sommer2020_ap.json": "2fbbe81c9599562406d57e6d1d1c50b78ba38d15b953ca5827e9932bf9c62f1b"
+        },
+        "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+        "profile_id": "portrait-explicit-regions",
+        "validated_sources": [
+          "ac48540e00c49e5c6ca70fa33639ccce2f02f3240aa915d3a7fec37761b5a4c6"
+        ]
+      }
+    },
+    "events": [
+      {
+        "stage": "registered",
+        "at": "2026-09-29T13:36:40.922383+00:00"
+      },
+      {
+        "stage": "hash_verified",
+        "at": "2026-09-29T13:36:41.192921+00:00",
+        "evidence": {
+          "source_sha256": "ac48540e00c49e5c6ca70fa33639ccce2f02f3240aa915d3a7fec37761b5a4c6",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/ac48540e00c49e5c6ca70fa33639ccce2f02f3240aa915d3a7fec37761b5a4c6.json": "5e3150a5b05b5304ccdae5790fe2432eaa03c27e4a7b8189d5834fb1bea3fe67"
+          }
+        }
+      },
+      {
+        "stage": "profile_matched",
+        "at": "2026-09-29T13:42:04.378991+00:00",
+        "evidence": {
+          "source_sha256": "ac48540e00c49e5c6ca70fa33639ccce2f02f3240aa915d3a7fec37761b5a4c6",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2020_ap.json": "2fbbe81c9599562406d57e6d1d1c50b78ba38d15b953ca5827e9932bf9c62f1b"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "profile_id": "portrait-explicit-regions",
+          "validated_sources": [
+            "ac48540e00c49e5c6ca70fa33639ccce2f02f3240aa915d3a7fec37761b5a4c6"
+          ]
+        }
+      },
+      {
+        "stage": "blocked",
+        "at": "2026-09-29T13:50:39.106768+00:00",
+        "evidence": {
+          "reason": "Shared electrical diagram Q7/Q8 mapped to overlapping owners by unaccepted draft configuration. Requires append-only profile revision; no rollback of recorded profile gate is permitted.",
+          "artifacts": {
+            "docs/evidence/phase2k/ap-blocked.json": "81aba695e6e670a3436600cab906ec089210fbdbfa8ab1845ebc4f4fd8fc4467"
+          }
+        }
+      }
+    ],
+    "blocked_after": "profile_matched"
+  },
+  "old_config_sha256": "2fbbe81c9599562406d57e6d1d1c50b78ba38d15b953ca5827e9932bf9c62f1b",
+  "old_failure_sha256": "81aba695e6e670a3436600cab906ec089210fbdbfa8ab1845ebc4f4fd8fc4467"
+}

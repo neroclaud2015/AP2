@@ -17405,6 +17405,32 @@
               "docs/evidence/phase2k/ap-blocked.json": "81aba695e6e670a3436600cab906ec089210fbdbfa8ab1845ebc4f4fd8fc4467"
             }
           }
+        },
+        {
+          "stage": "profile_revision_proposed",
+          "proposal_hash": "1342c22610532c31ab20a4193bb8668dbca2552664732ed2aa345868e1c7ee8c",
+          "previous_profile_revision": "portrait-explicit-regions@2k.1.0-6c3034f72486",
+          "new_profile_revision": "portrait-explicit-regions@2k.1.1-45d5abe596d9",
+          "supersedes_profile_revision": "portrait-explicit-regions@2k.1.0-6c3034f72486",
+          "change_reason": "manual_shared_region_review",
+          "evidence": {
+            "proposal_path": "docs/evidence/phase2k1/proposal.json",
+            "sha256": "d8ddfd4ca2e60a6a82fb0b608b7b770b719a453c7bd94699b8ac352b94260a86"
+          },
+          "at": "2026-09-29T14:09:36.047517+00:00"
+        },
+        {
+          "stage": "profile_revision_proposed",
+          "proposal_hash": "d334ec713c852885fe7e8f2a8f9d0d6ed3c514a81adbe3f923c3bb6625dbc42a",
+          "previous_profile_revision": "portrait-explicit-regions@2k.1.1-45d5abe596d9",
+          "new_profile_revision": "portrait-explicit-regions@2k.1.2-858b8b40d916",
+          "supersedes_profile_revision": "portrait-explicit-regions@2k.1.1-45d5abe596d9",
+          "change_reason": "manual_shared_region_review",
+          "evidence": {
+            "proposal_path": "docs/evidence/phase2k1/revised/proposal.json",
+            "sha256": "a31620f3d2432cd9235b9e26563eab876b2b206e5f29e796bb5a38deedbc03f9"
+          },
+          "at": "2026-09-29T14:15:53.582364+00:00"
         }
       ],
       "blocked_after": "profile_matched"

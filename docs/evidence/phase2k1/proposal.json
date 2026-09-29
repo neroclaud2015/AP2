@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "source_id": "src-d93fb74a58f45d19d294de5b",
+  "source_sha256": "ac48540e00c49e5c6ca70fa33639ccce2f02f3240aa915d3a7fec37761b5a4c6",
+  "source_page": 5,
+  "exam": "2020-sommer",
+  "module": "arbeitsplanung",
+  "status": "pending_manual_review",
+  "previous_profile_revision": "portrait-explicit-regions@2k.1.0-6c3034f72486",
+  "new_profile_revision": "portrait-explicit-regions@2k.1.1-45d5abe596d9",
+  "supersedes_profile_revision": "portrait-explicit-regions@2k.1.0-6c3034f72486",
+  "change_reason": "manual_shared_region_review",
+  "config_path": "scripts/layout_profiles/sommer2020_ap_shared_v2.json",
+  "config_sha256": "45d5abe596d980f5ec0bec82509acc2533e944f4afaec8df12fc510ee52a81d0",
+  "references": {
+    "7": [
+      "shared-m3"
+    ],
+    "8": [
+      "shared-m3"
+    ]
+  },
+  "shared_regions": {
+    "shared-m3": {
+      "page": 5,
+      "bbox": [
+        300.576,
+        59.204,
+        543.466,
+        538.912
+      ],
+      "role": "shared_context",
+      "referenced_by": [
+        "7",
+        "8"
+      ],
+      "evidence": [
+        "Q7/Q8 explicitly refer to motor M3 on the shared right-hand electrical drawing.",
+        "Q7/Q8 explicitly refer to motor M3 on the shared right-hand electrical drawing."
+      ]
+    }
+  },
+  "evidence_hashes": {
+    "Q7": "aa6d670e90337d60333bfee2ff3a6fc9f191d741dea8e8b5d1bde9469a74cbe1",
+    "Q8": "5b3591a43132a6aa79560d1a859de69fbdb7dab8e4ebc4c1919887657761fef9",
+    "shared-m3": "163a1eb5648f42a477da98b6015bd9123b65de0dbeccacd6da6dc698e89e2bf8"
+  },
+  "artifact_hashes": {
+    "scripts/layout_profiles/sommer2020_ap.json": "2fbbe81c9599562406d57e6d1d1c50b78ba38d15b953ca5827e9932bf9c62f1b",
+    "scripts/layout_profiles/sommer2020_ap_shared_v2.json": "45d5abe596d980f5ec0bec82509acc2533e944f4afaec8df12fc510ee52a81d0",
+    "docs/evidence/phase2k1/old-audit-snapshot.json": "613662b328cc77d6e3ee68b65b0639b58042e5944446c46291014c1d1a7dd115",
+    "docs/evidence/phase2k1/validation.json": "0011d67d633e42b4d86216ed323a28ebde504ea2c4d76e12a19e7945a1ff6b2e",
+    "docs/evidence/phase2k1/ownership-overlay.jpg": "340c509f5cb9de2dc3b16834870aea869fa72a009419dc37d07db182155f7210",
+    "docs/evidence/phase2k1/Q7.png": "aa6d670e90337d60333bfee2ff3a6fc9f191d741dea8e8b5d1bde9469a74cbe1",
+    "docs/evidence/phase2k1/Q8.png": "5b3591a43132a6aa79560d1a859de69fbdb7dab8e4ebc4c1919887657761fef9",
+    "docs/evidence/phase2k1/shared-m3.png": "163a1eb5648f42a477da98b6015bd9123b65de0dbeccacd6da6dc698e89e2bf8",
+    "docs/evidence/phase2k/ap-blocked.json": "81aba695e6e670a3436600cab906ec089210fbdbfa8ab1845ebc4f4fd8fc4467"
+  },
+  "proposal_hash": "1342c22610532c31ab20a4193bb8668dbca2552664732ed2aa345868e1c7ee8c"
+}

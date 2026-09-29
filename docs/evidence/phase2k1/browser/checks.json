@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "three image hashes verified",
+    "both assertions required",
+    "simulated confirmation download + local persistence",
+    "changed mapping exports needs_review and clears old local confirmation",
+    "mobile390 no overflow",
+    "tampered crop disables review"
+  ],
+  "isolated_context": true,
+  "simulated_confirmation_only": true,
+  "production_confirmation_imported": false,
+  "real_user_data_touched": false
+}
