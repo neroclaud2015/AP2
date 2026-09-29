@@ -1,0 +1,61 @@
+{
+  "key": "2ffdaf744b6e03b4c79d622f1b3f16d281c2147acc9baf2c81675aa3b98d4ab7",
+  "record_hash": "6ecf88ef4c059d454c3f7e6243cba343ef287a78b3bef0d136c3106c0783d177",
+  "record": {
+    "page": 16,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2022-23-wiso-p16-U6",
+        "number": "U6",
+        "bbox": [
+          40.996,
+          42.514,
+          83.51,
+          75.918
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U6 read on cached page 16",
+        "review_reasons": [],
+        "heading_pixel_sha256": "3183480475ef49ae73f7d1005267ac40992add0161e8622f68cdffd46c246c33"
+      }
+    ],
+    "regions": [
+      {
+        "page": 16,
+        "bbox": [
+          40.996,
+          42.514,
+          560.278,
+          791.069
+        ],
+        "role": "primary",
+        "owner": "2022-23-wiso-p16-U6",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U6",
+        "bbox": [
+          40.996,
+          42.514,
+          83.51,
+          75.918
+        ],
+        "pixel_sha256": "3183480475ef49ae73f7d1005267ac40992add0161e8622f68cdffd46c246c33",
+        "audited_pixel_sha256": "3183480475ef49ae73f7d1005267ac40992add0161e8622f68cdffd46c246c33"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

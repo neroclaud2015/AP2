@@ -1,0 +1,261 @@
+{
+  "scope": "2022-23-fa",
+  "name": "2022_23_winter_funktionsanalyse",
+  "exam": "2022_23_winter",
+  "module": "Funktionsanalyse",
+  "version": "2o.1.0",
+  "profile_id": "official-ring-grid",
+  "source_hash": "0a65fdde8a40945cdd327789026ccc8c6913e2918889c5644e963900e88e4eb8",
+  "source_id": "src-d565b292f5936a32b4f37281",
+  "question_source_id": "src-bf2e44c03da88854e4b048f6",
+  "solution_source_id": "src-d565b292f5936a32b4f37281",
+  "validated_sources": [
+    "0a65fdde8a40945cdd327789026ccc8c6913e2918889c5644e963900e88e4eb8"
+  ],
+  "choice_page": 2,
+  "choice_count": 28,
+  "analysis_size": [
+    993,
+    1404
+  ],
+  "groups": [
+    [
+      1,
+      10,
+      135.8,
+      60.08,
+      390.6,
+      19.94,
+      0,
+      370
+    ],
+    [
+      11,
+      10,
+      135.8,
+      60.08,
+      510.0,
+      19.94,
+      0,
+      490
+    ],
+    [
+      21,
+      8,
+      135.8,
+      60.08,
+      629.3,
+      19.94,
+      0,
+      609
+    ]
+  ],
+  "grid_crop": [
+    106,
+    356,
+    725,
+    721
+  ],
+  "ring_policy": {
+    "min_ring": 0.4,
+    "support": 0.83,
+    "possible_ring": 0.32,
+    "possible_support": 0.58,
+    "margin": 0.15,
+    "center": 0.1
+  },
+  "header_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+  "u_evidence": "All original U headings and ruled boundaries visually verified; diagrams, formulas, tables and GRAFCET retained. Whole-question self-assessment; no rubric inferred.",
+  "u_regions": {
+    "U1": {
+      "regions": [
+        {
+          "page": 10,
+          "bbox": [
+            18,
+            123.003,
+            580,
+            305.231
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 10,
+      "heading_box": [
+        18,
+        123.00345938546316,
+        95,
+        150.33756147112163
+      ],
+      "heading_pixel_sha256": "c6129c73049c315875afb8cdba47ecc54b93b1829fa7802412aeb43a1ddb373e"
+    },
+    "U2": {
+      "regions": [
+        {
+          "page": 10,
+          "bbox": [
+            18,
+            308.268,
+            580,
+            479.865
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 10,
+      "heading_box": [
+        18,
+        308.26792907714844,
+        95,
+        335.6020311628069
+      ],
+      "heading_pixel_sha256": "06643c5aba7fb5e706a5d911e7143f1ba00cde48ae00b34f9c9339e678be87ce"
+    },
+    "U3": {
+      "regions": [
+        {
+          "page": 10,
+          "bbox": [
+            18,
+            482.902,
+            580,
+            812.43
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 10,
+      "heading_box": [
+        18,
+        482.9024701799665,
+        95,
+        510.23657226562494
+      ],
+      "heading_pixel_sha256": "e2f00784ea3213555db13ef5eab001dc2433190cefd0bd3f3dc83d3b216f0936"
+    },
+    "U4": {
+      "regions": [
+        {
+          "page": 11,
+          "bbox": [
+            18,
+            21.26,
+            580,
+            218.673
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 11,
+      "heading_box": [
+        18,
+        21.259857177734375,
+        95,
+        48.593959263392854
+      ],
+      "heading_pixel_sha256": "7c98e28a9534c1b071cb4c1ea0026d8de39a72a35efc7a07acc6f71b78fed8be"
+    },
+    "U5": {
+      "regions": [
+        {
+          "page": 11,
+          "bbox": [
+            18,
+            221.71,
+            580,
+            365.973
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 11,
+      "heading_box": [
+        18,
+        221.7099391392299,
+        95,
+        249.0440412248884
+      ],
+      "heading_pixel_sha256": "3fea9866955be5b45d73614b42c27ad252273cd0c6a2331795bd46abb9992968"
+    },
+    "U6": {
+      "regions": [
+        {
+          "page": 11,
+          "bbox": [
+            18,
+            369.01,
+            580,
+            812.43
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 11,
+      "heading_box": [
+        18,
+        369.0103781563895,
+        95,
+        396.34448024204795
+      ],
+      "heading_pixel_sha256": "334d559eee4b10a25aeca17dfac5ac12b0e32c8ffce36bf9e73ad861e69b7290"
+    },
+    "U7": {
+      "regions": [
+        {
+          "page": 12,
+          "bbox": [
+            18,
+            123.003,
+            580,
+            300.675
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 12,
+      "heading_box": [
+        18,
+        123.00345938546316,
+        95,
+        150.33756147112163
+      ],
+      "heading_pixel_sha256": "f4d7ff71afb38f7372d1ce8059b76ae99fae5607a7a67fad9fb20b23f264b1ca"
+    },
+    "U8": {
+      "regions": [
+        {
+          "page": 12,
+          "bbox": [
+            18,
+            303.712,
+            580,
+            431.271
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 12,
+      "heading_box": [
+        18,
+        303.71224539620533,
+        95,
+        331.0463474818638
+      ],
+      "heading_pixel_sha256": "662d0baff38009c6aeb72abfeca7181dfec0171c76cc5e4d6f258db3a657d4d2"
+    }
+  },
+  "page_image_hashes": {
+    "2": "a5bdbbd29afba00fb30d45d90a0b5a2cbc557bc040d727935a11258daf0c5990",
+    "10": "5968f6e74fb8a93d88de7e0e0cdb2e5c6d13d9284c315db74f0394841077a5ff",
+    "11": "5930a2ed881d6e067867415017e05a1c9cbf224cbfaf19104adb0ca96f08cdf9",
+    "12": "fe4640ab02c033d7738eced9b0a164038c085a4bef0bb8768eee15f796c80b08"
+  }
+}

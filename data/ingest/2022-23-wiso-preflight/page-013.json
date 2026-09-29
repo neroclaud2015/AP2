@@ -1,0 +1,123 @@
+{
+  "key": "5976ef565d3525727c3c3b86c4a803eaa6125957d5d56d45e8d231be691f00d3",
+  "record_hash": "d179bff63710ef641b76999c03746c891360cbff2993953cc6397a73e695a174",
+  "record": {
+    "page": 13,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "continuation_and_questions",
+    "classification_evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2022-23-wiso-p13-11",
+        "number": "11",
+        "bbox": [
+          30.367,
+          296.082,
+          72.367,
+          330.082
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 11 read on cached page 13",
+        "review_reasons": [],
+        "heading_pixel_sha256": "8bf3f9dd921b90574a1ca4a96661bbbd848a4adc5cd45abb574a5c8cc4aeb2be"
+      },
+      {
+        "anchor_id": "2022-23-wiso-p13-12",
+        "number": "12",
+        "bbox": [
+          288.49,
+          296.082,
+          330.49,
+          330.082
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 12 read on cached page 13",
+        "review_reasons": [],
+        "heading_pixel_sha256": "3b21bbf7f55807270e4426aaa4b268aae40fe8c34504ae6fd2376bb5f132052d"
+      }
+    ],
+    "regions": [
+      {
+        "page": 13,
+        "bbox": [
+          30.367,
+          296.082,
+          285.453,
+          535.984
+        ],
+        "role": "primary",
+        "owner": "2022-23-wiso-p13-11",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      },
+      {
+        "page": 13,
+        "bbox": [
+          288.49,
+          296.082,
+          561.796,
+          535.984
+        ],
+        "role": "primary",
+        "owner": "2022-23-wiso-p13-12",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      },
+      {
+        "page": 13,
+        "bbox": [
+          40.996,
+          42.514,
+          560.278,
+          293.045
+        ],
+        "role": "continuation",
+        "owner": "2022-23-wiso-p12-U4",
+        "evidence": "Explicit subpart 4 and Ergebnis U4 continue page 12."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "11",
+        "bbox": [
+          30.367,
+          296.082,
+          72.367,
+          330.082
+        ],
+        "pixel_sha256": "8bf3f9dd921b90574a1ca4a96661bbbd848a4adc5cd45abb574a5c8cc4aeb2be",
+        "audited_pixel_sha256": "8bf3f9dd921b90574a1ca4a96661bbbd848a4adc5cd45abb574a5c8cc4aeb2be"
+      },
+      {
+        "kind": "heading",
+        "number": "12",
+        "bbox": [
+          288.49,
+          296.082,
+          330.49,
+          330.082
+        ],
+        "pixel_sha256": "3b21bbf7f55807270e4426aaa4b268aae40fe8c34504ae6fd2376bb5f132052d",
+        "audited_pixel_sha256": "3b21bbf7f55807270e4426aaa4b268aae40fe8c34504ae6fd2376bb5f132052d"
+      },
+      {
+        "kind": "ownership",
+        "number": "U4",
+        "bbox": [
+          40.996,
+          42.514,
+          560.278,
+          293.045
+        ],
+        "pixel_sha256": "9a4b6f244f8d5fce3030f02f213b59e3b472cc14b20de44f08ebce6fc09527c5",
+        "audited_pixel_sha256": "9a4b6f244f8d5fce3030f02f213b59e3b472cc14b20de44f08ebce6fc09527c5"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

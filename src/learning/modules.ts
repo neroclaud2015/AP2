@@ -38,7 +38,7 @@ export const MODULES:ModuleConfig[]=[
 ];
 MODULES.push(...productionAdditions(sourceRegistry,promotedModules as ModuleConfig[],MODULES));
 for(const module of MODULES)assertProductionModule(sourceRegistry,module);
-export const EXAM_SESSIONS=[{id:'2017-sommer',label:'Sommer 2017'},{id:'2017-18-winter',label:'Winter 2017/18'},{id:'2018-sommer',label:'Sommer 2018'},{id:'2018-19-winter',label:'Winter 2018/19'},{id:'2019-sommer',label:'Sommer 2019'},{id:'2019-20-winter',label:'Winter 2019/20'},{id:'2020-sommer',label:'Sommer 2020'},{id:'2020-21-winter',label:'Winter 2020/21'},{id:'2021-sommer',label:'Sommer 2021'},{id:'2021-22-winter',label:'Winter 2021/22'},{id:'2022-sommer',label:'Sommer 2022'}];
+export const EXAM_SESSIONS=[{id:'2017-sommer',label:'Sommer 2017'},{id:'2017-18-winter',label:'Winter 2017/18'},{id:'2018-sommer',label:'Sommer 2018'},{id:'2018-19-winter',label:'Winter 2018/19'},{id:'2019-sommer',label:'Sommer 2019'},{id:'2019-20-winter',label:'Winter 2019/20'},{id:'2020-sommer',label:'Sommer 2020'},{id:'2020-21-winter',label:'Winter 2020/21'},{id:'2021-sommer',label:'Sommer 2021'},{id:'2021-22-winter',label:'Winter 2021/22'},{id:'2022-sommer',label:'Sommer 2022'},{id:'2022-23-winter',label:'Winter 2022/23'}];
 MODULES.sort((a,b)=>EXAM_SESSIONS.findIndex(e=>e.id===a.examId)-EXAM_SESSIONS.findIndex(e=>e.id===b.examId)||(MODULE_ORDER[a.slug]??100)-(MODULE_ORDER[b.slug]??100)||a.slug.localeCompare(b.slug));
 export const MODULE_TITLES:Record<string,string>={arbeitsplanung:'Arbeitsplanung',funktionsanalyse:'Funktionsanalyse',wiso:'WiSo'};
 export function examLabel(id:string){return EXAM_SESSIONS.find(e=>e.id===id)?.label??id;}

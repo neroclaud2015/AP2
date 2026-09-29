@@ -1,0 +1,61 @@
+{
+  "key": "6a316bc95ab06e833659e8d0a343a26e1f46ae5a3d98ffaf4ce632248adf2da0",
+  "record_hash": "81ef1658d1c438fbde2d3aaa2123f9c3cb7471eccef9eed982cc7d1bc074ae6d",
+  "record": {
+    "page": 16,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page visually inspected. Exact printed headings, ruled boundaries and continuation/result labels establish ownership.",
+    "anchors": [
+      {
+        "anchor_id": "2022-23-ap-p16-U3",
+        "number": "U3",
+        "bbox": [
+          24.294,
+          12.147,
+          66.808,
+          45.551
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U3 read on cached page 16",
+        "review_reasons": [],
+        "heading_pixel_sha256": "8ec3b1c84cc65684aec8d7f359a86837d9479f396a707b011931781a33f79f58"
+      }
+    ],
+    "regions": [
+      {
+        "page": 16,
+        "bbox": [
+          24.294,
+          12.147,
+          573.943,
+          816.882
+        ],
+        "role": "primary",
+        "owner": "2022-23-ap-p16-U3",
+        "evidence": "Printed heading and ruled panel boundaries visually verified, including response and diagram regions."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U3",
+        "bbox": [
+          24.294,
+          12.147,
+          66.808,
+          45.551
+        ],
+        "pixel_sha256": "8ec3b1c84cc65684aec8d7f359a86837d9479f396a707b011931781a33f79f58",
+        "audited_pixel_sha256": "8ec3b1c84cc65684aec8d7f359a86837d9479f396a707b011931781a33f79f58"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}
