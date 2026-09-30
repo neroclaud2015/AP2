@@ -13,6 +13,7 @@ export function validTestSession(v:Record<string,unknown>):boolean {
  if(v.sourceExams!==undefined&&v.sourceExams!=='all'&&!strings(v.sourceExams))return false;
  if(!object(v.question_models)||!object(v.answers)||!object(v.official_answers)||!object(v.subpart_assessments))return false;
  const models=v.question_models,ids=v.question_ids;
+ if(v.assessment_updated_at!==undefined&&(!object(v.assessment_updated_at)||Object.entries(v.assessment_updated_at).some(([id,time])=>!ids.includes(id)||typeof time!=='string'||!Number.isFinite(Date.parse(time)))))return false;
  for(const id of ids){const m=models[id];if(!object(m)||!['multiple_choice','multi_part'].includes(String(m.kind))||typeof m.number!=='string'||typeof m.part!=='string'||!strings(m.subpart_ids)||new Set(m.subpart_ids).size!==m.subpart_ids.length)return false;
   if(m.subpart_models!==undefined&&(!Array.isArray(m.subpart_models)||!m.subpart_models.every(subpart)||m.subpart_ids.some(p=>!(m.subpart_models as Record<string,unknown>[]).some(s=>s.id===p))))return false;
   const official=v.official_answers[id];if(!(official===null||Number.isInteger(official)&&Number(official)>=1&&Number(official)<=5))return false;

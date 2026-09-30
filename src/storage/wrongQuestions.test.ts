@@ -1,0 +1,50 @@
+import 'fake-indexeddb/auto';
+import {expect,test} from 'vitest';
+import {IndexedDBProgressRepository} from './storage';
+import type {Attempt} from '../learning/model';
+const attempt=(id:string,result:Attempt['correctness']):Attempt=>({attempt_id:id,userId:'u',question_id:'q',timestamp:`2026-09-30T10:00:0${id}Z`,user_answer:{choice:1},correctness:result,partial_status:false,unsure:false,confidence:'sure',hints_used:[],error_reason:'',note:'',self_assessed:false,auto_scored:true,subparts:[]});
+test('wrong state reconciles formal history, hide watermark, streak and backup without rewriting attempts',async()=>{
+ const r=new IndexedDBProgressRepository('wrong-'+crypto.randomUUID());
+ await r.saveAttempt(attempt('1','teilweise'));
+ expect((await r.getWrongQuestions('u'))[0]).toMatchObject({active:true,wrong_count:1});
+ await r.hideWrongQuestion('u','q');
+ expect((await r.getWrongQuestions('u'))[0].active).toBe(false);
+ await r.saveAttempt(attempt('2',null));expect((await r.getWrongQuestions('u'))[0].active).toBe(false);
+ await r.saveAttempt(attempt('3','falsch'));expect((await r.getWrongQuestions('u'))[0].active).toBe(true);
+ await r.saveAttempt(attempt('4','richtig'));await r.saveAttempt(attempt('5','richtig'));
+ expect((await r.getWrongQuestions('u'))[0]).toMatchObject({active:false,wrong_count:2,consecutive_correct:2});
+ const before=await r.getAttempts('u'),snapshot=await r.exportSnapshot('u');
+ expect(snapshot.wrongQuestions).toHaveLength(1);expect(await r.getAttempts('u')).toEqual(before);
+ const copy=new IndexedDBProgressRepository('copy-'+crypto.randomUUID());await copy.importSnapshot(snapshot,'u',false);
+ expect(await copy.getWrongQuestions('u')).toEqual(await r.getWrongQuestions('u'));
+ expect(await r.getWrongQuestions('other')).toEqual([]);r.close();copy.close();
+});
+import {validateEntity} from '../sync/validation';
+import {validateMutation} from '../sync/firestorePolicy';
+test('module reset preserves wrong history, deletion withdraws it and legacy backup is accepted',async()=>{
+ const r=new IndexedDBProgressRepository('reset-wrong-'+crypto.randomUUID());await r.saveAttempt({...attempt('1','falsch'),exam:'exam',module:'module'});
+ let p=await r.ensureModuleProgress('u',{exam:'exam',module:'module',question_ids:['q']});
+ expect((await r.getWrongQuestions('u'))[0].active).toBe(true);
+ p=await r.resetModuleProgress('u',p.id,p.revision,p.run_id);expect((await r.getWrongQuestions('u'))[0].active).toBe(true);
+ await r.deletePracticeAttempt('u',p.id,'1',p.run_id);expect((await r.getWrongQuestions('u'))[0]).toMatchObject({active:false,wrong_count:0});
+ const snap=await r.exportSnapshot('u');delete (snap as {wrongQuestions?:unknown}).wrongQuestions;
+ const copy=new IndexedDBProgressRepository('legacy-wrong-'+crypto.randomUUID());await copy.importSnapshot(snap,'u',false);expect(await copy.getWrongQuestions('u')).toEqual([]);r.close();copy.close();
+});
+test('wrong entity validates sync and dismissal survives import, rejection is atomic',async()=>{
+ const r=new IndexedDBProgressRepository('sync-wrong-'+crypto.randomUUID());await r.saveAttempt(attempt('1','falsch'));await r.hideWrongQuestion('u','q');const snap=await r.exportSnapshot('u'),state=snap.wrongQuestions[0];
+ expect(()=>validateEntity('wrongQuestions','q','u',state)).not.toThrow();expect(()=>validateMutation({entity:'wrongQuestions',id:'q',baseRevision:0,mutationId:'x',deleted:false,value:{...state}},'u')).not.toThrow();
+ expect(()=>validateEntity('wrongQuestions','q','u',{...state,wrong_count:-1})).toThrow();expect(()=>validateEntity('wrongQuestions','q','other',state)).toThrow();
+ const copy=new IndexedDBProgressRepository('sync-copy-'+crypto.randomUUID());await copy.importSnapshot(snap,'u',true);expect((await copy.getWrongQuestions('u'))[0].active).toBe(false);
+ expect((await copy.getOutbox('u')).some(x=>x.entity==='wrongQuestions')).toBe(true);r.close();copy.close();
+});
+import type {TestSession} from '../exams/model';
+test('test discard, restore and deletion reconcile one contribution without touching mirrored history',async()=>{
+ const r=new IndexedDBProgressRepository('test-wrong-'+crypto.randomUUID());
+ const fixture:TestSession={test_id:'t',exam_session_id:'t',userId:'u',test_type:'original',exam:'exam',module:'module',mode:'kurz',seed:'seed',question_ids:['q'],question_models:{q:{kind:'multiple_choice',subpart_ids:[],number:'1',part:'A'}},source_mix:[],answers:{},subpart_assessments:{},official_answers:{q:2},started_at:'2026-01-01T00:00:00Z',completed_at:null,status:'active',current_question:'q',elapsed_time:0,active_since:1000,revision:0,duration_minutes:105,result:null};
+ let t=await r.createTestSession(fixture);t=await r.updateTestSession('u','t',t.revision,{type:'answer',questionId:'q',answer:{choice:'1'}});t=await r.updateTestSession('u','t',t.revision,{type:'submit'});
+ await r.saveAttempt({...attempt('1','falsch'),test_id:'t'});expect((await r.getWrongQuestions('u'))[0]).toMatchObject({active:true,wrong_count:1});
+ t=await r.discardTestSession('u','t',t.revision);expect((await r.getWrongQuestions('u'))[0]).toMatchObject({active:false,wrong_count:0});
+ t=await r.updateTestSession('u','t',t.revision,{type:'restore'});expect((await r.getWrongQuestions('u'))[0]).toMatchObject({active:true,wrong_count:1});
+ await r.hideWrongQuestion('u','q');t=await r.discardTestSession('u','t',t.revision);await r.getWrongQuestions('u');t=await r.updateTestSession('u','t',t.revision,{type:'restore'});expect((await r.getWrongQuestions('u'))[0].active).toBe(false);
+ await r.deleteTestSession('u','t',t.revision);expect((await r.getWrongQuestions('u'))[0]).toMatchObject({active:false,wrong_count:0});expect(await r.getAttempts('u')).toHaveLength(1);r.close();
+});

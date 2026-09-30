@@ -49,3 +49,5 @@
 .compact-module label{min-width:0;max-width:100%}.compact-module select{min-width:0;max-width:100%;width:100%}
 
 .practice-unsure{display:flex;align-items:center;gap:8px;margin:12px 0}.practice-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.practice-actions button{max-width:100%;margin:0}.practice .learning-result{border-top:1px solid #d6dce2;margin-top:20px;padding-top:16px}
+
+.source-year-picker{position:relative;margin:1rem 0;max-width:100%}.source-year-picker>button{max-width:100%;white-space:normal}.source-year-popup{position:absolute;z-index:20;top:100%;left:0;box-sizing:border-box;width:min(360px,calc(100vw - 48px));max-width:100%;background:#fff;border:1px solid #cbd5e1;border-radius:12px;box-shadow:0 12px 32px #172b4d25;padding:1rem}.source-year-popup label{display:flex;align-items:center;gap:.6rem;padding:.55rem 0}.source-year-scroll{max-height:270px;overflow-y:auto;overscroll-behavior:contain;border-top:1px solid #e2e8f0;margin-top:.6rem}.source-year-popup .selection-actions{display:flex;flex-wrap:wrap;gap:.4rem}.source-year-popup button{font-size:.85rem;padding:.45rem .65rem}

@@ -7,7 +7,9 @@
     "dev": "vite --host 127.0.0.1",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "vitest run"
+    "test": "vitest run",
+    "prebuild": "node scripts/reconcile_classifications.mjs",
+    "classify": "node scripts/reconcile_classifications.mjs"
   },
   "dependencies": {
     "dexie": "^4.0.11",

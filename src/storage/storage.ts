@@ -1,3 +1,4 @@
+import {wrongResults,reconcileWrongQuestions,resultKey,type WrongQuestionState} from '../learning/wrongQuestions';
 import {ModuleProgressStore} from './moduleProgressStore';
 import {inRun,stateFor,type ModuleDescriptor} from '../learning/moduleProgress';
 import {legacyQuestionNotes,validQuestionNote,type QuestionNote} from '../learning/questionNotes';
@@ -34,9 +35,26 @@ export class IndexedDBProgressRepository implements ProgressRepository {
     this.db.version(7).stores({settings:'[userId+id],userId',syncMeta:'[userId+entity+id],userId',outbox:'[userId+entity+id],userId',tombstones:'[userId+entity+id],userId',syncConflicts:'[userId+entity+id],userId',deviceState:'key'});
     this.db.version(8).stores({questionNotes:'[userId+question_id],userId'});
     this.db.version(9).stores({moduleProgress:'[userId+id],userId',moduleRuns:'[userId+run_id],userId,[userId+progress_id]'});
+    this.db.version(10).stores({wrongQuestions:'[userId+question_id],userId'});
     this.syncStore=new SyncPersistence(this.db);
     this.moduleStore=new ModuleProgressStore(this.db,this.syncStore);
     this.records = this.db.table('records');
+  }
+  async getWrongQuestions(userId:string):Promise<WrongQuestionState[]>{
+    return this.db.transaction('rw',this.syncStore.tables(),async()=>{
+      const previous=await this.db.table<WrongQuestionState>('wrongQuestions').where('userId').equals(userId).toArray();
+      const results=wrongResults(userId,await this.getAttempts(userId),await this.getTestSessions(userId));
+      const states=reconcileWrongQuestions(userId,results,previous,new Date().toISOString());
+      for(const state of states)if(previous.find(s=>s.question_id===state.question_id)?.revision!==state.revision)await this.syncStore.put('wrongQuestions',state as unknown as Record<string,unknown>);
+      return states;
+    });
+  }
+  async hideWrongQuestion(userId:string,questionId:string):Promise<void>{
+    await this.db.transaction('rw',this.syncStore.tables(),async()=>{
+      const state=(await this.getWrongQuestions(userId)).find(s=>s.question_id===questionId);if(!state)return;
+      const stamp=new Date().toISOString(),ids=wrongResults(userId,await this.getAttempts(userId),await this.getTestSessions(userId)).filter(r=>r.question_id===questionId).map(resultKey);
+      await this.syncStore.put('wrongQuestions',{...state,active:false,entered_at:null,dismissed_at:stamp,dismissed_result_ids:[...new Set([...state.dismissed_result_ids,...ids])],updated_at:stamp,revision:state.revision+1});
+    });
   }
   getModuleProgress(userId:string){return this.moduleStore.list(userId);}
   getModuleRuns(userId:string){return this.moduleStore.runs(userId);}
@@ -167,8 +185,9 @@ export class IndexedDBProgressRepository implements ProgressRepository {
   async getRecords(userId:string):Promise<ProgressRecord[]>{return this.records.where('userId').equals(userId).toArray();}
   async exportSnapshot(userId:string){
     await this.migrateQuestionNotes(userId);
+    await this.getWrongQuestions(userId);
     const names=[...PERSONAL_STORES];
-    return this.db.transaction('r',names,async()=>({schema_version:1 as const,userId,records:await this.getRecords(userId),reviews:await this.getReviews(userId),answerReviews:await this.getAnswerReviews(userId),attempts:await this.getAttempts(userId),learningSessions:await this.getLearningSessions(userId),testSessions:await this.getTestSessions(userId),settings:await this.getSettings(userId),moduleProgress:await this.getModuleProgress(userId),moduleRuns:await this.getModuleRuns(userId),questionNotes:await this.db.table<QuestionNote>('questionNotes').where('userId').equals(userId).toArray()}));
+    return this.db.transaction('r',names,async()=>({schema_version:1 as const,userId,records:await this.getRecords(userId),reviews:await this.getReviews(userId),answerReviews:await this.getAnswerReviews(userId),attempts:await this.getAttempts(userId),learningSessions:await this.getLearningSessions(userId),testSessions:await this.getTestSessions(userId),wrongQuestions:await this.db.table<WrongQuestionState>('wrongQuestions').where('userId').equals(userId).toArray(),settings:await this.getSettings(userId),moduleProgress:await this.getModuleProgress(userId),moduleRuns:await this.getModuleRuns(userId),questionNotes:await this.db.table<QuestionNote>('questionNotes').where('userId').equals(userId).toArray()}));
   }
   getOutbox(userId:string){return this.syncStore.outbox(userId);}
   getSyncConflicts(userId:string){return this.syncStore.conflicts(userId);}
@@ -182,7 +201,7 @@ export class IndexedDBProgressRepository implements ProgressRepository {
   async saveSetting(userId:string,id:string,value:unknown){await this.syncStore.put('settings',{userId,id,value});}
   async importSnapshot(snapshot:import('../types').PersonalDataSnapshot,userId:string,sync:boolean){
     if(snapshot.schema_version!==1||!snapshot.userId||!userId)throw Error('Ungültige Sicherung.');
-    for(const entity of PERSONAL_STORES){const list=['settings','questionNotes','moduleProgress','moduleRuns'].includes(entity)?(snapshot[entity]??[]):snapshot[entity];if(!Array.isArray(list))throw Error('Ungültige Sicherung.');for(const row of list){if(!row||typeof row!=='object'||typeof (row as unknown as Record<string,unknown>)[ID_FIELDS[entity]]!=='string'||row.userId!==snapshot.userId)throw Error('Ungültige Datensatzidentität.');}}
+    for(const entity of PERSONAL_STORES){const list=['settings','questionNotes','moduleProgress','moduleRuns','wrongQuestions'].includes(entity)?(snapshot[entity]??[]):snapshot[entity];if(!Array.isArray(list))throw Error('Ungültige Sicherung.');for(const row of list){if(!row||typeof row!=='object'||typeof (row as unknown as Record<string,unknown>)[ID_FIELDS[entity]]!=='string'||row.userId!==snapshot.userId)throw Error('Ungültige Datensatzidentität.');}}
     await this.db.transaction('rw',this.syncStore.tables(),async()=>{
       for(const entity of PERSONAL_STORES)for(const row of snapshot[entity]??[]){const value={...row,userId} as unknown as Record<string,unknown>,id=String(value[ID_FIELDS[entity]]),existing=await this.db.table(entity).get([userId,id]);
         if(existing&&canonical(existing)!==canonical(value))throw Error('Gleiche ID mit anderem Inhalt. Import wurde ohne Änderungen abgebrochen.');

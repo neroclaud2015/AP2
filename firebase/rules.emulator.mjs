@@ -45,3 +45,10 @@ test('module progress cannot roll back a reset generation; runs are immutable',a
 test('learning run metadata cannot be edited or deleted',async()=>{
  const run={userId:'alice',run_id:'a',progress_id:'exam/ap',exam:'exam',module:'ap',question_ids:['q'],generation:1,started_at:'now',legacy_attempt_ids:[]};await assertSucceeds(write(alice,'moduleRuns',run));await assertFails(write(alice,'moduleRuns',{...run,legacy_attempt_ids:['fake']}));await assertFails(write(alice,'moduleRuns',null,true));
 });
+test('wrong question state supports ownership, shape validation and durable dismissal',async()=>{
+ const state={userId:'alice',question_id:'a',active:false,entered_at:null,last_wrong_at:'2026-01-01',wrong_count:1,consecutive_correct:0,dismissed_at:'2026-01-02',dismissed_result_ids:['practice:1:falsch'],updated_at:'2026-01-02',revision:1};
+ await assertSucceeds(write(alice,'wrongQuestions',state));
+ await assertFails(write(bob,'wrongQuestions',state));
+ await assertFails(write(alice,'wrongQuestions',{...state,wrong_count:-1}));
+ await assertSucceeds(write(alice,'wrongQuestions',{...state,active:true,revision:2}));
+});

@@ -2,9 +2,9 @@ rules_version = '2';
 service cloud.firestore {
  match /databases/{database}/documents {
   function own(uid) { return request.auth != null && request.auth.uid == uid; }
-  function entity(e) { return e in ['records','reviews','answerReviews','attempts','learningSessions','testSessions','settings','questionNotes','moduleProgress','moduleRuns']; }
+  function entity(e) { return e in ['records','reviews','answerReviews','attempts','learningSessions','testSessions','settings','questionNotes','moduleProgress','moduleRuns','wrongQuestions']; }
   function idField(e) { return e == 'records' ? 'questionId' : e == 'attempts' ? 'attempt_id' : e == 'testSessions' ? 'test_id' : e == 'moduleRuns' ? 'run_id' : e in ['settings','moduleProgress'] ? 'id' : 'question_id'; }
-  function validValue(uid,e,id,deleted,value) { return deleted ? !(e in ['moduleProgress','moduleRuns']) && value == null : value is map && value.userId == uid && value[idField(e)] == id && (e != 'questionNotes' || (value.text is string && value.revision is int && value.revision > 0 && value.created_at is string && value.updated_at is string)) && (!(e in ['moduleProgress','moduleRuns']) || (value.exam is string && value.module is string && value.run_id is string && value.generation is int && value.generation > 0 && value.question_ids is list && value.question_ids.size() > 0)); }
+  function validValue(uid,e,id,deleted,value) { return deleted ? !(e in ['moduleProgress','moduleRuns']) && value == null : value is map && value.userId == uid && value[idField(e)] == id && (e != 'wrongQuestions' || (value.active is bool && value.wrong_count is int && value.wrong_count >= 0 && value.consecutive_correct is int && value.consecutive_correct >= 0 && value.dismissed_result_ids is list && value.revision is int && value.revision > 0 && value.updated_at is string)) && (e != 'questionNotes' || (value.text is string && value.revision is int && value.revision > 0 && value.created_at is string && value.updated_at is string)) && (!(e in ['moduleProgress','moduleRuns']) || (value.exam is string && value.module is string && value.run_id is string && value.generation is int && value.generation > 0 && value.question_ids is list && value.question_ids.size() > 0)); }
   function validEnvelope(uid,e) {
    return e.keys().hasOnly(['entity','id','revision','cursor','updatedAt','deviceId','deleted','value'])
     && entity(e.entity) && e.id is string && e.id.size() > 0 && e.id.size() <= 200
@@ -18,7 +18,7 @@ service cloud.firestore {
     : kind != 'testSessions' || (
       !next.diff(old).affectedKeys().hasAny(['test_id','userId','exam_session_id','test_type','exam','module','mode','seed','sourceExams','question_ids','question_models','source_mix','official_answers','started_at'])
       && (!(old.get('completed_at',null) != null || old.get('status','') == 'completed' || old.get('discarded_from','') == 'completed' || old.get('previous_status','') == 'completed')
-       || next.diff(old).affectedKeys().hasOnly(['status','previous_status','discarded_from','discarded_at','deleted_at','revision','updated_at','sync_state','device_id','current_question','note','notes','reflection','subpart_assessments','result']))));
+       || next.diff(old).affectedKeys().hasOnly(['status','previous_status','discarded_from','discarded_at','deleted_at','revision','updated_at','sync_state','device_id','current_question','note','notes','reflection','subpart_assessments','assessment_updated_at','result']))));
   }
   function historyValid(data,old) {
    return data.envelope.deleted ? data.history == old :

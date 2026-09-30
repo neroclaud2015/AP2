@@ -1,0 +1,332 @@
+{
+  "version": "1.1.0",
+  "nodes": [
+    {
+      "id": "wiso",
+      "kind": "knowledge",
+      "label": "Wirtschaft und Soziales",
+      "parent_id": null,
+      "active": true,
+      "aliases": [
+        "WiSo"
+      ],
+      "version": "1.1.0",
+      "module_cues": [
+        "wiso"
+      ]
+    },
+    {
+      "id": "wiso-employment",
+      "kind": "knowledge",
+      "label": "Arbeitsrecht und Ausbildung",
+      "parent_id": "wiso",
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "berufsausbildungsvertrag",
+        "kündigungsschutz",
+        "betriebsrat",
+        "tarifvertrag"
+      ]
+    },
+    {
+      "id": "wiso-social",
+      "kind": "knowledge",
+      "label": "Sozialversicherung",
+      "parent_id": "wiso",
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "sozialversicherung",
+        "rentenversicherung",
+        "krankenversicherung"
+      ]
+    },
+    {
+      "id": "electrical",
+      "kind": "knowledge",
+      "label": "Elektrotechnik",
+      "parent_id": null,
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "elektrischen spannung",
+        "elektrische spannung",
+        "stromstärke",
+        "ohmschen"
+      ]
+    },
+    {
+      "id": "manufacturing",
+      "kind": "knowledge",
+      "label": "Fertigungstechnik",
+      "parent_id": null,
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "schnittgeschwindigkeit",
+        "vorschubgeschwindigkeit",
+        "spanende",
+        "fräsmaschine",
+        "drehmaschine"
+      ]
+    },
+    {
+      "id": "pneumatics",
+      "kind": "knowledge",
+      "label": "Pneumatik und Hydraulik",
+      "parent_id": null,
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "pneumatik",
+        "pneumatisch",
+        "hydraulik",
+        "hydraulisch"
+      ]
+    },
+    {
+      "id": "calculate",
+      "kind": "question_type",
+      "label": "Berechnung",
+      "parent_id": null,
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "berechnen",
+        "berechnet"
+      ]
+    },
+    {
+      "id": "explain",
+      "kind": "question_type",
+      "label": "Erklären und Begründen",
+      "parent_id": null,
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "begründen sie",
+        "erklären sie",
+        "erläutern sie"
+      ]
+    },
+    {
+      "id": "name",
+      "kind": "question_type",
+      "label": "Benennen",
+      "parent_id": null,
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "nennen sie",
+        "benennen sie"
+      ]
+    },
+    {
+      "id": "selection",
+      "kind": "question_type",
+      "label": "Auswahlaufgabe",
+      "parent_id": null,
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "kind_cues": [
+        "multiple_choice"
+      ]
+    },
+    {
+      "id": "mechanics",
+      "kind": "knowledge",
+      "label": "Mechanik",
+      "parent_id": null,
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "drehmoment",
+        "übersetzungsverhältnis",
+        "zugfestigkeit"
+      ]
+    },
+    {
+      "id": "hydraulics",
+      "kind": "knowledge",
+      "label": "Hydraulik",
+      "parent_id": "pneumatics",
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "hydraulik",
+        "hydraulisch"
+      ]
+    },
+    {
+      "id": "pneumatic-systems",
+      "kind": "knowledge",
+      "label": "Pneumatik",
+      "parent_id": "pneumatics",
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "pneumatik",
+        "pneumatisch"
+      ]
+    },
+    {
+      "id": "controls",
+      "kind": "knowledge",
+      "label": "SPS / Steuerungstechnik",
+      "parent_id": null,
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "grafcet",
+        "speicherprogrammierbare",
+        "sps-programm"
+      ]
+    },
+    {
+      "id": "metrology",
+      "kind": "knowledge",
+      "label": "Messtechnik",
+      "parent_id": null,
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "messschieber",
+        "messunsicherheit",
+        "messbereich"
+      ]
+    },
+    {
+      "id": "quality",
+      "kind": "knowledge",
+      "label": "Qualitätssicherung",
+      "parent_id": null,
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "qualitätsregelkarte",
+        "toleranzgrenze",
+        "prozessfähigkeit"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "kind": "knowledge",
+      "label": "Instandhaltung",
+      "parent_id": null,
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "instandhaltung",
+        "wartungsplan",
+        "inspektion"
+      ]
+    },
+    {
+      "id": "drawing",
+      "kind": "question_type",
+      "label": "Zeichnen / Ergänzen",
+      "parent_id": null,
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "zeichnen sie",
+        "ergänzen sie"
+      ]
+    },
+    {
+      "id": "diagram",
+      "kind": "question_type",
+      "label": "Diagramm / Kennlinie auswerten",
+      "parent_id": null,
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "diagramm",
+        "kennlinie"
+      ]
+    },
+    {
+      "id": "table",
+      "kind": "question_type",
+      "label": "Tabelle / Daten auswerten",
+      "parent_id": null,
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "entnehmen sie der tabelle",
+        "wertetabelle"
+      ]
+    },
+    {
+      "id": "circuit",
+      "kind": "question_type",
+      "label": "Schaltplan / Stromlaufplan",
+      "parent_id": null,
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "stromlaufplan",
+        "schaltplan"
+      ]
+    },
+    {
+      "id": "sequence",
+      "kind": "question_type",
+      "label": "SPS / GRAFCET / Ablauf",
+      "parent_id": null,
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "grafcet",
+        "ablaufsteuerung"
+      ]
+    },
+    {
+      "id": "reference",
+      "kind": "question_type",
+      "label": "Tabellenbuch / Nachschlagen",
+      "parent_id": null,
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "tabellenbuch"
+      ]
+    },
+    {
+      "id": "measurement",
+      "kind": "question_type",
+      "label": "Prüfen / Messen",
+      "parent_id": null,
+      "active": true,
+      "aliases": [],
+      "version": "1.1.0",
+      "text_cues": [
+        "messen sie",
+        "prüfen sie"
+      ]
+    }
+  ]
+}

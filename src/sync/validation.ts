@@ -1,3 +1,4 @@
+import {validWrongQuestionState} from '../learning/wrongQuestions';
 import {validModuleProgress,validModuleRun} from '../learning/moduleProgress';
 import {validQuestionNote} from '../learning/questionNotes';
 import {validTestSession,stringMap} from './sessionValidation';
@@ -10,6 +11,7 @@ export function validateEntity(entity:EntityType,id:string,userId:string,value:u
  if(!PERSONAL_STORES.includes(entity)||!value||typeof value!=='object'||Array.isArray(value))throw Error('Ungültiger synchronisierter Datensatz.');
  const v=value as Record<string,unknown>;
  if(v.userId!==userId||v[ID_FIELDS[entity]]!==id||!id)throw Error('Datensatz gehört zu einem anderen Konto.');
+ if(entity==='wrongQuestions'&&!validWrongQuestionState(v))throw Error('Ungültige Fehlerfrage.');
  const object=(x:unknown)=>!!x&&typeof x==='object'&&!Array.isArray(x);
  if(entity==='attempts'&&!validAttempt(v as never)||entity==='reviews'&&!validReview(v)||entity==='answerReviews'&&!validAnswerReview(v))throw Error('Ungültiges Datenschema.');
  if(entity==='records'&&(!object(v.fields)||v.schema_version!==1)||entity==='learningSessions'&&(!stringMap(v.draft)||typeof v.revealed!=='boolean'))throw Error('Ungültiges Datenschema.');

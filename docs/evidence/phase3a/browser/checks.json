@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "Bank dynamic count, type view, AND module/year/MC filters and provenance",
+    "Unknown classifications remain discoverable",
+    "Human classification persists and remains locked across source change; re-review shown",
+    "Solution-only creates no wrong result or Attempt",
+    "Wrong activates; two formal correct answers hide; new wrong reactivates; manual hide persists and leaves attempts untouched",
+    "Module reset preserves wrong state independently of ModuleProgress",
+    "Formal partial U self-assessment enters Fehlerfragen",
+    "Year dropdown all/single/multiple, refresh/back/forward URL persistence",
+    "Mobile bank/dropdown no horizontal overflow"
+  ],
+  "isolated_browser": true,
+  "real_user_data_touched": false,
+  "errors": []
+}

@@ -9,6 +9,8 @@ import {combineAssessments} from '../learning/model';
 
 export type TestType='original'|'module';
 export type TestMode='kurz'|'standard';
+/** Reserved configuration contract only. The current sampler remains random. */
+export interface FutureSelectionOptions {selectionMode:'random'|'adaptive';knowledgeTopicIds:string[];questionTypeIds:string[]}
 export type TestStatus='active'|'paused'|'completed'|'abandoned'|'discarded';
 export interface QuestionModel {kind:'multiple_choice'|'multi_part';subpart_ids:string[];number:string;part:string;subpart_models?:USolution['subparts']}
 export interface TestSource {question_id:string;exam:string;module:string;question_number:string;source_pdf:string;source_page:number;revision:string;answer_source_pdf?:string;answer_source_page?:number;answer_source_crop?:string;solution_image?:string;question_source_id?:string;solution_source_id?:string;question_source_sha256?:string;solution_source_sha256?:string;official_answer_revision?:string;answer_review_revision?:string;question_snapshot?:SegmentedQuestion}
@@ -16,7 +18,7 @@ export interface TestResult {total:number;beantwortet:number;richtig:number;fals
 export interface TestSession {
  test_id:string;exam_session_id:string;userId:string;test_type:TestType;exam:string;module:string;mode:TestMode;seed:string;
  sourceExams?:SourceExams;question_ids:string[];question_models:Record<string,QuestionModel>;source_mix:TestSource[];
- answers:Record<string,Record<string,string>>;subpart_assessments:Record<string,Record<string,Correctness>>;official_answers:Record<string,number|null>;
+ assessment_updated_at?:Record<string,string>;answers:Record<string,Record<string,string>>;subpart_assessments:Record<string,Record<string,Correctness>>;official_answers:Record<string,number|null>;
  started_at:string;completed_at:string|null;status:TestStatus;current_question:string;discarded_at?:string;discarded_from?:TestStatus;previous_status?:TestStatus;deleted_at?:string;
  elapsed_time:number;active_since:number|null;revision:number;duration_minutes:number|null;result:TestResult|null;
 }
@@ -112,6 +114,8 @@ export function reduceSession(s:TestSession,action:SessionAction,now=Date.now())
   if(model.kind!=='multi_part'||!questionAnswered(s,action.questionId))throw Error('Keine beantwortete offene Aufgabe.');
   if(Object.entries(action.assessments).some(([id,value])=>!model.subpart_ids.includes(id)||!['richtig','teilweise','falsch'].includes(value)))throw Error('Ungültige Selbstbewertung.');
   next.subpart_assessments={...s.subpart_assessments,[action.questionId]:{...action.assessments}};
+  const old=s.subpart_assessments[action.questionId]??{};
+  if(Object.keys(old).length!==Object.keys(action.assessments).length||Object.entries(action.assessments).some(([id,value])=>old[id]!==value))next.assessment_updated_at={...s.assessment_updated_at,[action.questionId]:new Date(now).toISOString()};
  }
  next.revision=s.revision+1;next.result=next.status==='completed'?(action.type==='restore'?s.result:sessionResult(next)):next.status==='discarded'?s.result:null;return next;
 }

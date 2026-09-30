@@ -1,0 +1,23 @@
+import {describe,it,expect} from 'vitest';
+import {reconcileClassifications,filterInventory,classificationCounts,parseClassificationOverrides,type InventoryQuestion,type Taxonomy} from './model';
+const taxonomy:Taxonomy={version:'1',nodes:[{id:'wiso',kind:'knowledge',label:'WiSo',parent_id:null,active:true,aliases:[],version:'1',module_cues:['wiso']},{id:'calculate',kind:'question_type',label:'Rechnen',parent_id:null,active:true,aliases:[],version:'1',text_cues:['berechnen']}]};
+const q=(id='q',revision='r1'):InventoryQuestion=>({question_id:id,examId:'2030-sommer',examLabel:'Sommer 2030',module:'test',moduleTitle:'Test',number:'1',kind:'multiple_choice',crop:'crop.png',text:'',extraction_confidence:1,question_source_revision:revision});
+describe('classification reconciliation',()=>{
+ it('adds unknowns without hiding them and dynamically counts new seasons',()=>{const inventory=[q(),q('new')];const result=reconcileClassifications(inventory,[],taxonomy,'now');expect(result).toHaveLength(2);expect(filterInventory(inventory,result,{})).toHaveLength(2);expect(filterInventory(inventory,result,{unclassified:true})).toHaveLength(2);expect(classificationCounts(inventory,result).total).toBe(2);});
+ it('reclassifies source changes, retains removed records as inactive and is idempotent',()=>{const old=reconcileClassifications([q(),q('removed')],[],taxonomy,'one');const changed={...q('q','r2'),text:'Bitte berechnen'};const next=reconcileClassifications([changed],old,taxonomy,'two');expect(next.find(c=>c.question_id==='q')?.primary_question_type_id).toBe('calculate');expect(next.find(c=>c.question_id==='removed')?.active).toBe(false);expect(reconcileClassifications([changed],next,taxonomy,'three')).toEqual(next);expect(classificationCounts([changed],next).total).toBe(1);});
+ it('preserves human labels and confirmed revision while marking changed sources',()=>{const old=reconcileClassifications([q()],[],taxonomy,'one').map(c=>({...c,source:'human_confirmed' as const,locked:true,knowledge_topic_ids:['wiso']}));const next=reconcileClassifications([q('q','r2')],old,taxonomy,'two')[0];expect(next.question_source_revision).toBe('r1');expect(next.knowledge_topic_ids).toEqual(['wiso']);expect(next.review_reasons).toContain('source_changed_since_confirmation');expect(reconcileClassifications([q('q','r2')],[next],taxonomy,'three')).toEqual([next]);});
+ it('validates human override imports including taxonomy and source binding',()=>{const record={...reconcileClassifications([q()],[],taxonomy,'2026-09-30T00:00:00.000Z')[0],source:'human_confirmed',locked:true};expect(parseClassificationOverrides({schema_version:1,classifications:[record]},taxonomy,[q()])).toHaveLength(1);expect(()=>parseClassificationOverrides({schema_version:1,classifications:[{...record,knowledge_topic_ids:['invented']}]},taxonomy,[q()])).toThrow();expect(()=>parseClassificationOverrides({schema_version:1,classifications:[{...record,question_source_revision:'stale'}]},taxonomy,[q()])).toThrow();});
+});
+
+it('keeps stale locked imports auditable and flags disabled labels without hiding questions',()=>{
+ const original={...reconcileClassifications([q()],[],taxonomy,'2026-09-30T00:00:00Z')[0],source:'human_confirmed' as const,locked:true,knowledge_topic_ids:['wiso']};
+ const stale=parseClassificationOverrides({schema_version:1,classifications:[original]},taxonomy,[q('q','r2')],{allowStale:true});
+ const disabled={...taxonomy,nodes:taxonomy.nodes.map(n=>({...n,active:false}))};const reconciled=reconcileClassifications([q('q','r2')],stale,disabled,'2026-10-01T00:00:00Z');expect(reconciled[0].review_reasons).toContain('taxonomy_labels_inactive');expect(filterInventory([q('q','r2')],reconciled,{})).toHaveLength(1);
+});
+it('combines independent filters with AND and preserves unknown records without labels',()=>{
+ const inventory=[q(),{...q('w'),module:'wiso',examId:'2031-winter',kind:'multi_part' as const}];const records=reconcileClassifications(inventory,[],taxonomy,'now');
+ expect(filterInventory(inventory,records,{knowledgeTopicIds:['wiso'],examIds:['2030-sommer']})).toEqual([]);
+ expect(filterInventory(inventory,records,{modules:['wiso'],wrongOnly:true,wrongQuestionIds:['w']})).toHaveLength(1);
+ expect(filterInventory(inventory,[],{})).toHaveLength(2);
+});
+it('parent filters include child-only labels',()=>{const tree={...taxonomy,nodes:[...taxonomy.nodes,{id:'labor',kind:'knowledge' as const,label:'Arbeitsrecht',parent_id:'wiso',active:true,aliases:[],version:'1'}]};const records=reconcileClassifications([q()],[],tree,'now').map(c=>({...c,knowledge_topic_ids:['labor']}));expect(filterInventory([q()],records,{knowledgeTopicIds:['wiso']},tree)).toHaveLength(1);});

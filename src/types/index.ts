@@ -1,3 +1,4 @@
+import type {WrongQuestionState} from '../learning/wrongQuestions';
 import type {ModuleDescriptor,ModuleProgress,ModuleRun} from '../learning/moduleProgress';
 import type {QuestionNote} from '../learning/questionNotes';
 import type {Attempt,LearningSession} from '../learning/model';
@@ -30,8 +31,10 @@ export type SyncResult = {status:'noop';reason:string}|{status:'completed';pulle
 export interface SyncProvider {pull(user:UserContext):Promise<SyncResult>;push(user:UserContext):Promise<SyncResult>;sync(user:UserContext):Promise<SyncResult>;resolveConflict(user:UserContext,conflict:SyncConflict,resolution:'local'|'remote'):Promise<SyncResult>}
 export interface LocalField { value: string; locked: boolean; origin: 'user' | 'machine' }
 export interface ProgressRecord { schema_version: 1; userId: string; questionId: string; fields: Record<string, LocalField>; updatedAt: string }
-export interface PersonalDataSnapshot {schema_version:1;userId:string;records:ProgressRecord[];reviews:QuestionReview[];answerReviews:AnswerReview[];attempts:Attempt[];learningSessions:LearningSession[];testSessions:TestSession[];questionNotes?:QuestionNote[];moduleProgress?:ModuleProgress[];moduleRuns?:ModuleRun[];settings?:Array<{userId:string;id:string;value:unknown}>}
+export interface PersonalDataSnapshot {schema_version:1;userId:string;records:ProgressRecord[];reviews:QuestionReview[];answerReviews:AnswerReview[];attempts:Attempt[];learningSessions:LearningSession[];testSessions:TestSession[];wrongQuestions?:WrongQuestionState[];questionNotes?:QuestionNote[];moduleProgress?:ModuleProgress[];moduleRuns?:ModuleRun[];settings?:Array<{userId:string;id:string;value:unknown}>}
 export interface ProgressRepository {
+ getWrongQuestions(userId:string):Promise<WrongQuestionState[]>;
+ hideWrongQuestion(userId:string,questionId:string):Promise<void>;
  getModuleProgress(userId:string):Promise<ModuleProgress[]>;
  getModuleRuns(userId:string):Promise<ModuleRun[]>;
  ensureModuleProgress(userId:string,descriptor:ModuleDescriptor):Promise<ModuleProgress>;

@@ -25,3 +25,6 @@ Automated tests: add mock season/question then modify/remove; no UI edits; locke
 
 ## Constraint self-review
 All ten supplemental constraints mapped above: data taxonomy; source revision; locked invalidation; unknown visibility; progress independence; discarded/deleted exclusion; formal-only streak; registry years; mock dynamic growth; adaptive interface only. No destructive migration or change to historical personal-data meaning required. Additive stores and derived state only.
+
+## Review ruling: delayed U assessment
+Add optional assessment_updated_at per test question on a changed self-assessment only. Wrong result ordering uses that effective timestamp, with completed_at fallback for legacy records (no rewrite). Identical save retries retain time. This additive field preserves existing grading semantics and fixes newly derived wrong-state chronology.

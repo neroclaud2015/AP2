@@ -1,5 +1,5 @@
 /** Versioned personal records. Authentication/ownership comes from Firebase uid, never a pairing secret. */
-export const SYNC_ENTITIES = ['records','reviews','answerReviews','attempts','learningSessions','testSessions','settings','questionNotes','moduleProgress','moduleRuns'] as const;
+export const SYNC_ENTITIES = ['records','reviews','answerReviews','attempts','learningSessions','testSessions','settings','questionNotes','moduleProgress','moduleRuns','wrongQuestions'] as const;
 export type EntityType = typeof SYNC_ENTITIES[number];
 export type SyncValue = Record<string,unknown> | null;
 export interface SyncEnvelope {entity:EntityType;id:string;revision:number;cursor:number;updatedAt:string;deviceId:string;deleted:boolean;value:SyncValue}
