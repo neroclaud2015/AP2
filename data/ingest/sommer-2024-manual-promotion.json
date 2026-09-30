@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "scope": "sommer-2024",
+  "modules": {
+    "arbeitsplanung": {
+      "status": "production",
+      "missing_question_numbers": [],
+      "manual_confirmation_revision": "manual-source-review-96dbc1bfc874e9be",
+      "pdf_pages_opened": 0
+    },
+    "funktionsanalyse": {
+      "status": "awaiting_manual_review",
+      "missing_question_numbers": [
+        "source_mapping_review: Q25 is a general question; proposed attachment refs remove Q25 and retain U3 only. Preserve bound original; do not activate without manual source review."
+      ],
+      "manual_confirmation_revision": null,
+      "pdf_pages_opened": 0
+    },
+    "wiso": {
+      "status": "production",
+      "missing_question_numbers": [],
+      "manual_confirmation_revision": "manual-source-review-adec7494a85b2d78",
+      "pdf_pages_opened": 0
+    }
+  }
+}

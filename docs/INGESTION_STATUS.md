@@ -105,3 +105,6 @@ Q7 has no M3 reference; Q8 has M3. Explicit user confirmation and highlighted se
 ## Overnight batch through Sommer 2025
 
 See [Morning Report](../MORNING_REPORT.md). All three supplied remaining archives inspected; Sommer 2025 missing. Winter 2023/24 WiSo newly production. 90 official answer reviews + 2 attachment-mapping reviews; 7 missing/clean-source requests including older blockers. No old PDF rescan. Classification / Fehlerfragen / adaptive selection deferred.
+
+## 2026-09-30 user confirmation release
+90 source-bound answers locked; 6 modules promoted. Winter 2023/24 now complete; Sommer 2024 AP/WiSo and Winter 2024/25 AP/WiSo production. Remaining9 source/mapping items detailed in evidence/overnight-release. PDF rescans0.

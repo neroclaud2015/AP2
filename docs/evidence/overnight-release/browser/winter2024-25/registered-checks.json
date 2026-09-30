@@ -1,0 +1,67 @@
+{
+  "checks": [
+    "arbeitsplanung MC / source",
+    "arbeitsplanung U / refresh",
+    "arbeitsplanung Originalprüfung",
+    {
+      "module": "arbeitsplanung",
+      "filter": "all",
+      "source_mix": [
+        "2017-18-winter",
+        "2018-19-winter",
+        "2020-sommer",
+        "2021-sommer",
+        "2022-23-winter",
+        "2023-sommer",
+        "2024-sommer"
+      ]
+    },
+    {
+      "module": "arbeitsplanung",
+      "filter": "2024-25-winter",
+      "source_mix": [
+        "2024-25-winter"
+      ]
+    },
+    {
+      "module": "arbeitsplanung",
+      "filter": "2022-23-winter,2024-25-winter",
+      "source_mix": [
+        "2022-23-winter",
+        "2024-25-winter"
+      ]
+    },
+    "wiso MC / source",
+    "wiso U / refresh",
+    "wiso Originalprüfung",
+    {
+      "module": "wiso",
+      "filter": "all",
+      "source_mix": [
+        "2017-18-winter",
+        "2017-sommer",
+        "2018-19-winter",
+        "2018-sommer",
+        "2020-sommer",
+        "2022-23-winter",
+        "2022-sommer"
+      ]
+    },
+    {
+      "module": "wiso",
+      "filter": "2024-25-winter",
+      "source_mix": [
+        "2024-25-winter"
+      ]
+    },
+    {
+      "module": "wiso",
+      "filter": "2022-23-winter,2024-25-winter",
+      "source_mix": [
+        "2022-23-winter",
+        "2024-25-winter"
+      ]
+    }
+  ],
+  "isolated_context": true
+}

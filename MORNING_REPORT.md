@@ -1,3 +1,5 @@
+> 2026-09-30 更新：90道人工答案确认已导入，新增6模块上线。最新状态见 [发布与剩余审核](https://neroclaud2015.github.io/AP2/evidence/overnight-release/)。以下保留昨夜历史报告。
+
 # Morning Report — Overnight historical batch
 
 ## Historical import summary
