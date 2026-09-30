@@ -32,6 +32,9 @@ def validate_confirmation(proposal,row):
  if method=='manual_attachment_bounds_review':
   from attachment_bounds_review import validate_bounds_proposal
   validate_bounds_proposal(proposal)
+ elif method=='manual_2024_attachment_mapping_review':
+  from attachment_mapping_2024 import validate_winter_proposal
+  validate_winter_proposal(proposal)
  elif method!='manual_shared_region_review':raise ValueError('Unknown confirmation method')
  if row.get('status')!='confirmed' or row.get('confirmation_method')!=method or row.get('confirmed') is not True:raise ValueError('Explicit manual confirmation required')
  if row.get('references')!=proposal['references']:raise ValueError('Changed mapping needs a new reviewed proposal; cannot activate')

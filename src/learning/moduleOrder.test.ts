@@ -9,9 +9,16 @@ describe('explicit module display order',()=>{
   expect(entries.map(e=>e.slug)).toEqual(order);
   if(exam==='2018-sommer'){
    expect(entries.slice(0,2).every(e=>!e.config)).toBe(true);
-   expect(entries.slice(0,2).map(e=>e.reason)).toEqual(['Fehlende Stückliste / Anlage','Fehlende Stückliste / Anlage']);
+   expect(entries.slice(0,2).map(e=>e.reason)).toEqual(['Quellenhinweis akzeptiert · Aufbereitung ausstehend','Quellenhinweis akzeptiert · Aufbereitung ausstehend']);
    expect(entries[2].config?.slug).toBe('wiso');
   }else expect(entries.every(e=>e.config)).toBe(true);
+ });
+ it('shows accepted and deferred source decisions without publishing incomplete modules',()=>{
+  const entries=moduleEntries(MODULES,'2023-sommer');
+  expect(entries[1].config).toBeUndefined();
+  expect(entries[1].reason).toBe('Quellenhinweis akzeptiert · Aufbereitung ausstehend');
+  expect(entries[2].config).toBeUndefined();
+  expect(entries[2].reason).toBe('Originalaufgaben fehlen · vorerst zurückgestellt');
  });
  it('keeps test cards ordered regardless of pool/registration order',()=>{
   expect(moduleEntries([...MODULES].reverse()).map(e=>e.slug)).toEqual(order);

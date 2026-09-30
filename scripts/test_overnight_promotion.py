@@ -15,7 +15,8 @@ class OvernightPromotionTests(unittest.TestCase):
   from manual_answer_promotion import FIELDS
   for item in q['items']:
    rows.append({k:item[k] for k in FIELDS}|{'official_answer':1,'official_answer_status':'confirmed','user_corrected':True,'locked':True,'confirmation_method':'manual_source_review','updated_at':'2026-09-29T12:00:00Z','machine_answer_at_confirmation':item['official_answer']})
-  plan=prepare(R,{'schema_version':1,'scope':'sommer-2024','confirmations':rows},{})
+  with patch('attachment_mapping_2024.summer_config',side_effect=lambda root,c:(c,[])):
+   plan=prepare(R,{'schema_version':1,'scope':'sommer-2024','confirmations':rows},{})
   self.assertNotIn('funktionsanalyse',plan['ready']);self.assertIn('source_mapping_review',plan['pending']['funktionsanalyse'][0])
  def test_external_material_survives_manual_promotion_config(self):
   c=read(R/'scripts/layout_profiles/sommer2024_ap.json');q=read(R/'public/data/2024_sommer_arbeitsplanung_segmented.json');a=read(R/'public/data/2024_sommer_arbeitsplanung_answers.json');published={'label':'Drawing','image':'existing.png','question_numbers':['U4']}

@@ -72,6 +72,9 @@ def prepare(root,payload,existing=None):
  for module in targets:
   code=MODULE_CODES[module]
   config=read(root/settings.get('layout_paths',{}).get(module,f'scripts/layout_profiles/{settings["profile"]}_{code}.json'));prefix=f'{settings["exam"]}_{module}'
+  prefix=config['name']
+  import re
+  if not re.fullmatch(r'[a-z0-9_]+',prefix):raise ValueError('Unsafe dataset name')
   state=read(root/f'data/ingest/{config["scope"]}_registered_answers.json');layout=read(root/f'data/ingest/{config["scope"]}_registered_layout.json')
   if not state or state['status']!='blocked' or not layout or layout['status']!='formal_segmented' or not artifacts_valid(root,state['artifacts']) or not artifacts_valid(root,layout['artifacts']):raise ValueError('Immutable machine/layout evidence changed or missing')
   questions=read(root/f'public/data/{prefix}_segmented.json');machine=read(root/f'public/data/{prefix}_answers.json');solutions=read(root/f'public/data/{prefix}_u_solutions.json')
@@ -91,6 +94,9 @@ def prepare(root,payload,existing=None):
   pending[module]=unresolved
   if unresolved:continue
   holds=[h for h in read(root/'data/ingest/overnight_promotion_holds.json',[]) if h['scope']==settings['scope'] and h['module']==module]
+  from attachment_mapping_2024 import summer_config
+  revised,mapping_paths=summer_config(root,config)
+  if mapping_paths:config=revised;holds=[h for h in holds if h.get('proposal')!='data/reviews/sommer2024_fa_attachment_change_proposal.json']
   if holds:
    pending[module]=['source_mapping_review: '+h['reason'] for h in holds];continue
   for sid in [config['source_id'],config['solution_source_id']]:
@@ -112,6 +118,9 @@ def module_config(plan,root=None,artifact_paths=None):
  if root is not None:
   from promote_registered_modules import ensure_timing_image
   ensure_timing_image(root,c,images,paths)
+  from attachment_mapping_2024 import summer_config
+  original=read(Path(root)/'scripts/layout_profiles/sommer2024_fa.json') if c['scope']=='2024-fa' else c
+  c,mapping_paths=summer_config(root,original);paths.extend(mapping_paths)
   from external_attachments import publish_external_attachments
   external=[{**v,'label':v.get('label') or v.get('title') or v['filename']} for v in publish_external_attachments(root,c,paths)]
  return {**({'externalAttachments':external} if external else {}),'examId':c['exam'].replace('_','-'),'slug':c['module'].lower(),'title':c['module'],'segmentedPath':f'data/{prefix}_segmented.json','answersPath':f'data/{prefix}_reviewed_answers.json','solutionsPath':f'data/{prefix}_u_solutions.json','choiceSolutionPage':plan['answers']['answers'][0]['source_page'],'descriptionPage':c['description_page'],'questionContextPages':{n:[a['page'] for a in c['attachment_crops'] if n in a.get('question_numbers',[])] for n in c['expected']},'attachmentPages':[a['page'] for a in c['attachment_crops'] if a['page'] not in [c['timing_source_page'],c['description_page']]],'sourcePageImages':images,'durationMinutes':c['timing_minutes'],'durationSource':{'pdf':'','page':c['timing_source_page'],'image':images[str(c['timing_source_page'])]},'parts':[{'id':'A','title':'Teil A','kind':'multiple_choice','label':'Auswahlaufgaben','questionNumbers':[n for n in c['expected'] if n.isdigit()]},{'id':'B','title':'Teil B','kind':'multi_part','label':'Offene Aufgaben','questionNumbers':[n for n in c['expected'] if n.startswith('U')]}]}
@@ -119,7 +128,7 @@ def module_config(plan,root=None,artifact_paths=None):
 def apply(root,payload):
  root=Path(root);plan=prepare(root,payload);settings=plan['settings'];registry=load_registry(root);promoted=read(root/'public/data/promoted_modules.json',[]);writes={root/'data/reviews'/settings['ledger']:{'schema_version':1,'scope':settings['scope'],'confirmations':plan['confirmations']}};now=datetime.now(timezone.utc).isoformat()
  for module,p in plan['ready'].items():
-  prefix=f'{settings["exam"]}_{module}';c=p['config'];pair=[s for s in registry['sources'] if s['source_id'] in [c['source_id'],c['solution_source_id']]]
+  c=p['config'];prefix=c['name'];pair=[s for s in registry['sources'] if s['source_id'] in [c['source_id'],c['solution_source_id']]]
   if all(s['status']=='production' for s in pair):
    current=read(root/f'public/data/{prefix}_reviewed_answers.json')
    if current!=p['answers']:raise ValueError('Published manual answers are immutable')

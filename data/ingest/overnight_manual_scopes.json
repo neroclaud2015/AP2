@@ -135,5 +135,38 @@
     "queue": "manual_answer_review_winter2024_25.json",
     "ledger": "winter-2024-25-confirmations.json",
     "manifest": "winter-2024-25-manual-promotion.json"
+  },
+  {
+    "scope": "winter-2024-25-fa-mapping-v2",
+    "targets": {
+      "funktionsanalyse": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        23
+      ]
+    },
+    "exam": "2024_25_winter",
+    "stamp": "2024-25",
+    "profile": "winter2024_25",
+    "layout_paths": {
+      "funktionsanalyse": "scripts/layout_profiles/winter2024_25_fa_mapping_v2.json"
+    },
+    "queue": "manual_answer_review_winter2024_25_fa_mapping_v2.json",
+    "ledger": "winter-2024-25-fa-mapping-v2-confirmations.json",
+    "manifest": "winter-2024-25-fa-mapping-v2-manual-promotion.json"
   }
 ]

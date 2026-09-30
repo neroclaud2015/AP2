@@ -4854,5 +4854,184 @@
         ]
       }
     ]
+  },
+  {
+    "externalAttachments": [
+      {
+        "id": "fa-attachment-1",
+        "filename": "2024 Sommer/24 Funktionsanalyse Anhang.pdf",
+        "sha256": "670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571",
+        "source_page": 1,
+        "bbox": [
+          0,
+          0,
+          595.2000122070312,
+          841.9000244140625
+        ],
+        "question_numbers": [
+          "U3"
+        ],
+        "title": "Planetengetriebe Zeichnung / Stückliste",
+        "evidence": "Explicit Blatt references in original U task, all sheet labels visually verified.",
+        "image": "assets/supplements/670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571/fa-attachment-1.png",
+        "image_sha256": "7453de096e601e9098995d45f03f5c5bfb497198d1f86d7d55704516060dbe31",
+        "source_id": "supplement-670bb6fea2c87079b6c5901c",
+        "role": "shared_attachment",
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "label": "Planetengetriebe Zeichnung / Stückliste"
+      },
+      {
+        "id": "fa-attachment-2",
+        "filename": "2024 Sommer/24 Funktionsanalyse Anhang.pdf",
+        "sha256": "670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571",
+        "source_page": 2,
+        "bbox": [
+          0,
+          0,
+          1190.6500244140625,
+          840.9500122070312
+        ],
+        "question_numbers": [
+          "U3"
+        ],
+        "title": "Planetengetriebe Zeichnung / Stückliste",
+        "evidence": "Explicit Blatt references in original U task, all sheet labels visually verified.",
+        "image": "assets/supplements/670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571/fa-attachment-2.png",
+        "image_sha256": "a2e0f1c97a2297ea9bf6fb0a0c864398cf3a8ebd9dd9274be7bd63de33450d29",
+        "source_id": "supplement-670bb6fea2c87079b6c5901c",
+        "role": "shared_attachment",
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "label": "Planetengetriebe Zeichnung / Stückliste"
+      }
+    ],
+    "examId": "2024-sommer",
+    "slug": "funktionsanalyse",
+    "title": "Funktionsanalyse",
+    "segmentedPath": "data/2024_sommer_funktionsanalyse_segmented.json",
+    "answersPath": "data/2024_sommer_funktionsanalyse_reviewed_answers.json",
+    "solutionsPath": "data/2024_sommer_funktionsanalyse_u_solutions.json",
+    "choiceSolutionPage": 2,
+    "descriptionPage": 14,
+    "questionContextPages": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": [],
+      "7": [],
+      "8": [],
+      "9": [],
+      "10": [],
+      "11": [],
+      "12": [],
+      "13": [],
+      "14": [],
+      "15": [],
+      "16": [],
+      "17": [],
+      "18": [],
+      "19": [],
+      "20": [],
+      "21": [],
+      "22": [],
+      "23": [],
+      "24": [],
+      "25": [],
+      "26": [],
+      "27": [],
+      "28": [],
+      "U1": [
+        14
+      ],
+      "U2": [
+        14
+      ],
+      "U3": [
+        14
+      ],
+      "U4": [
+        14
+      ],
+      "U5": [
+        14
+      ],
+      "U6": [
+        14
+      ],
+      "U7": [
+        14
+      ],
+      "U8": [
+        14
+      ]
+    },
+    "attachmentPages": [],
+    "sourcePageImages": {
+      "14": "assets/questions/abe45f06d1758e3bff58dd33/overnight.1.0-6e41b6a28821/attachment-14-0.png",
+      "2": "assets/sources/abe45f06d1758e3bff58dd33/timing-2.png"
+    },
+    "durationMinutes": 105,
+    "durationSource": {
+      "pdf": "",
+      "page": 2,
+      "image": "assets/sources/abe45f06d1758e3bff58dd33/timing-2.png"
+    },
+    "parts": [
+      {
+        "id": "A",
+        "title": "Teil A",
+        "kind": "multiple_choice",
+        "label": "Auswahlaufgaben",
+        "questionNumbers": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27",
+          "28"
+        ]
+      },
+      {
+        "id": "B",
+        "title": "Teil B",
+        "kind": "multi_part",
+        "label": "Offene Aufgaben",
+        "questionNumbers": [
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6",
+          "U7",
+          "U8"
+        ]
+      }
+    ]
   }
 ]

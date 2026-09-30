@@ -36852,7 +36852,7 @@
       "filename": "2024 Sommer/24 Funktionsanalyse.pdf",
       "sha256": "abe45f06d1758e3bff58dd339a05fb9e7c157074a3602a76ae28e519caeb765c",
       "version": 1,
-      "status": "answers_extracted",
+      "status": "production",
       "layout_profile": "portrait-explicit-regions@overnight.1.0-6e41b6a28821",
       "answer_profile": "ring-annulus-explicit@2f.1.0",
       "supersedes_source_id": null,
@@ -36915,6 +36915,122 @@
             "public/data/2024_sommer_funktionsanalyse_u_solutions.json": "2743638e215092787302fcc80fa3ec02feda2f68f5c422eadbe712d94f6af224"
           },
           "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "validated": {
+          "result": "passed",
+          "confirmation_method": "manual_source_review",
+          "manual_confirmation_revision": "manual-source-review-c13b0166b3891904",
+          "question_ids": [
+            "2024-fa-p3-1",
+            "2024-fa-p3-2",
+            "2024-fa-p3-3",
+            "2024-fa-p3-4",
+            "2024-fa-p4-5",
+            "2024-fa-p4-6",
+            "2024-fa-p4-7",
+            "2024-fa-p5-8",
+            "2024-fa-p5-9",
+            "2024-fa-p5-10",
+            "2024-fa-p5-11",
+            "2024-fa-p6-12",
+            "2024-fa-p6-13",
+            "2024-fa-p7-14",
+            "2024-fa-p7-15",
+            "2024-fa-p8-16",
+            "2024-fa-p8-17",
+            "2024-fa-p8-18",
+            "2024-fa-p8-19",
+            "2024-fa-p8-20",
+            "2024-fa-p9-21",
+            "2024-fa-p9-22",
+            "2024-fa-p9-23",
+            "2024-fa-p9-24",
+            "2024-fa-p9-25",
+            "2024-fa-p9-26",
+            "2024-fa-p10-27",
+            "2024-fa-p10-28",
+            "2024-fa-p15-U1",
+            "2024-fa-p16-U2",
+            "2024-fa-p17-U3",
+            "2024-fa-p18-U4",
+            "2024-fa-p19-U5",
+            "2024-fa-p20-U6",
+            "2024-fa-p21-U7",
+            "2024-fa-p22-U8"
+          ],
+          "question_revision": "overnight.1.0-6e41b6a28821",
+          "official_answer_revision": "manual-source-review-c13b0166b3891904",
+          "artifacts": {
+            "public/data/2024_sommer_funktionsanalyse_segmented.json": "f875d2f15b8501b6d18552b36bf174208657d27146da50455329d09df95feb77",
+            "public/data/2024_sommer_funktionsanalyse_reviewed_answers.json": "7713d44d99af3018fde8cbae47a8f240aba0f9ef10be77d6d50ee20cc8b5dd77",
+            "public/data/2024_sommer_funktionsanalyse_u_solutions.json": "2743638e215092787302fcc80fa3ec02feda2f68f5c422eadbe712d94f6af224",
+            "public/assets/sources/abe45f06d1758e3bff58dd33/timing-2.png": "2716d2f0db987b7eb00bdac1c35cd7114d7e513d1fcf7e6700bfb5fdcf585dd8",
+            "data/reviews/2024-attachment-mapping-resolution.json": "7f129482428486c93ec6a3948b46410e51e5d10f81b20369c058464875fe409f",
+            "data/reviews/overnight-user-export-2026-09-30-2.json": "0cda83f910de1c9841855d55e9143f3e3de033e5a667eb52cc5bcedd344a3f63",
+            "public/assets/supplements/670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571/fa-attachment-1.png": "7453de096e601e9098995d45f03f5c5bfb497198d1f86d7d55704516060dbe31",
+            "public/assets/supplements/670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571/fa-attachment-2.png": "a2e0f1c97a2297ea9bf6fb0a0c864398cf3a8ebd9dd9274be7bd63de33450d29"
+          },
+          "choice_coverage": 28,
+          "u_coverage": 8,
+          "source_sha256": "abe45f06d1758e3bff58dd339a05fb9e7c157074a3602a76ae28e519caeb765c"
+        },
+        "production": {
+          "result": "passed",
+          "confirmation_method": "manual_source_review",
+          "manual_confirmation_revision": "manual-source-review-c13b0166b3891904",
+          "question_ids": [
+            "2024-fa-p3-1",
+            "2024-fa-p3-2",
+            "2024-fa-p3-3",
+            "2024-fa-p3-4",
+            "2024-fa-p4-5",
+            "2024-fa-p4-6",
+            "2024-fa-p4-7",
+            "2024-fa-p5-8",
+            "2024-fa-p5-9",
+            "2024-fa-p5-10",
+            "2024-fa-p5-11",
+            "2024-fa-p6-12",
+            "2024-fa-p6-13",
+            "2024-fa-p7-14",
+            "2024-fa-p7-15",
+            "2024-fa-p8-16",
+            "2024-fa-p8-17",
+            "2024-fa-p8-18",
+            "2024-fa-p8-19",
+            "2024-fa-p8-20",
+            "2024-fa-p9-21",
+            "2024-fa-p9-22",
+            "2024-fa-p9-23",
+            "2024-fa-p9-24",
+            "2024-fa-p9-25",
+            "2024-fa-p9-26",
+            "2024-fa-p10-27",
+            "2024-fa-p10-28",
+            "2024-fa-p15-U1",
+            "2024-fa-p16-U2",
+            "2024-fa-p17-U3",
+            "2024-fa-p18-U4",
+            "2024-fa-p19-U5",
+            "2024-fa-p20-U6",
+            "2024-fa-p21-U7",
+            "2024-fa-p22-U8"
+          ],
+          "question_revision": "overnight.1.0-6e41b6a28821",
+          "official_answer_revision": "manual-source-review-c13b0166b3891904",
+          "artifacts": {
+            "public/data/2024_sommer_funktionsanalyse_segmented.json": "f875d2f15b8501b6d18552b36bf174208657d27146da50455329d09df95feb77",
+            "public/data/2024_sommer_funktionsanalyse_reviewed_answers.json": "7713d44d99af3018fde8cbae47a8f240aba0f9ef10be77d6d50ee20cc8b5dd77",
+            "public/data/2024_sommer_funktionsanalyse_u_solutions.json": "2743638e215092787302fcc80fa3ec02feda2f68f5c422eadbe712d94f6af224",
+            "public/assets/sources/abe45f06d1758e3bff58dd33/timing-2.png": "2716d2f0db987b7eb00bdac1c35cd7114d7e513d1fcf7e6700bfb5fdcf585dd8",
+            "data/reviews/2024-attachment-mapping-resolution.json": "7f129482428486c93ec6a3948b46410e51e5d10f81b20369c058464875fe409f",
+            "data/reviews/overnight-user-export-2026-09-30-2.json": "0cda83f910de1c9841855d55e9143f3e3de033e5a667eb52cc5bcedd344a3f63",
+            "public/assets/supplements/670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571/fa-attachment-1.png": "7453de096e601e9098995d45f03f5c5bfb497198d1f86d7d55704516060dbe31",
+            "public/assets/supplements/670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571/fa-attachment-2.png": "a2e0f1c97a2297ea9bf6fb0a0c864398cf3a8ebd9dd9274be7bd63de33450d29"
+          },
+          "choice_coverage": 28,
+          "u_coverage": 8,
+          "source_sha256": "abe45f06d1758e3bff58dd339a05fb9e7c157074a3602a76ae28e519caeb765c"
         }
       },
       "events": [
@@ -37002,6 +37118,167 @@
             },
             "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
           }
+        },
+        {
+          "stage": "manual_source_review_resolved",
+          "at": "2026-09-30T14:44:36.133856+00:00",
+          "evidence": {
+            "confirmation_revision": "manual-source-review-c13b0166b3891904",
+            "question_ids": [
+              "2024-fa-p3-1",
+              "2024-fa-p3-2",
+              "2024-fa-p3-3",
+              "2024-fa-p3-4",
+              "2024-fa-p4-5",
+              "2024-fa-p4-6",
+              "2024-fa-p4-7",
+              "2024-fa-p5-8",
+              "2024-fa-p5-9",
+              "2024-fa-p5-10",
+              "2024-fa-p5-11",
+              "2024-fa-p6-12",
+              "2024-fa-p6-13",
+              "2024-fa-p7-14",
+              "2024-fa-p7-15",
+              "2024-fa-p8-16",
+              "2024-fa-p8-17",
+              "2024-fa-p8-18",
+              "2024-fa-p8-19",
+              "2024-fa-p8-20",
+              "2024-fa-p9-21",
+              "2024-fa-p9-22",
+              "2024-fa-p9-23",
+              "2024-fa-p9-24",
+              "2024-fa-p9-25",
+              "2024-fa-p9-26",
+              "2024-fa-p10-27",
+              "2024-fa-p10-28"
+            ]
+          }
+        },
+        {
+          "stage": "validated",
+          "at": "2026-09-30T14:44:36.833056+00:00",
+          "evidence": {
+            "result": "passed",
+            "confirmation_method": "manual_source_review",
+            "manual_confirmation_revision": "manual-source-review-c13b0166b3891904",
+            "question_ids": [
+              "2024-fa-p3-1",
+              "2024-fa-p3-2",
+              "2024-fa-p3-3",
+              "2024-fa-p3-4",
+              "2024-fa-p4-5",
+              "2024-fa-p4-6",
+              "2024-fa-p4-7",
+              "2024-fa-p5-8",
+              "2024-fa-p5-9",
+              "2024-fa-p5-10",
+              "2024-fa-p5-11",
+              "2024-fa-p6-12",
+              "2024-fa-p6-13",
+              "2024-fa-p7-14",
+              "2024-fa-p7-15",
+              "2024-fa-p8-16",
+              "2024-fa-p8-17",
+              "2024-fa-p8-18",
+              "2024-fa-p8-19",
+              "2024-fa-p8-20",
+              "2024-fa-p9-21",
+              "2024-fa-p9-22",
+              "2024-fa-p9-23",
+              "2024-fa-p9-24",
+              "2024-fa-p9-25",
+              "2024-fa-p9-26",
+              "2024-fa-p10-27",
+              "2024-fa-p10-28",
+              "2024-fa-p15-U1",
+              "2024-fa-p16-U2",
+              "2024-fa-p17-U3",
+              "2024-fa-p18-U4",
+              "2024-fa-p19-U5",
+              "2024-fa-p20-U6",
+              "2024-fa-p21-U7",
+              "2024-fa-p22-U8"
+            ],
+            "question_revision": "overnight.1.0-6e41b6a28821",
+            "official_answer_revision": "manual-source-review-c13b0166b3891904",
+            "artifacts": {
+              "public/data/2024_sommer_funktionsanalyse_segmented.json": "f875d2f15b8501b6d18552b36bf174208657d27146da50455329d09df95feb77",
+              "public/data/2024_sommer_funktionsanalyse_reviewed_answers.json": "7713d44d99af3018fde8cbae47a8f240aba0f9ef10be77d6d50ee20cc8b5dd77",
+              "public/data/2024_sommer_funktionsanalyse_u_solutions.json": "2743638e215092787302fcc80fa3ec02feda2f68f5c422eadbe712d94f6af224",
+              "public/assets/sources/abe45f06d1758e3bff58dd33/timing-2.png": "2716d2f0db987b7eb00bdac1c35cd7114d7e513d1fcf7e6700bfb5fdcf585dd8",
+              "data/reviews/2024-attachment-mapping-resolution.json": "7f129482428486c93ec6a3948b46410e51e5d10f81b20369c058464875fe409f",
+              "data/reviews/overnight-user-export-2026-09-30-2.json": "0cda83f910de1c9841855d55e9143f3e3de033e5a667eb52cc5bcedd344a3f63",
+              "public/assets/supplements/670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571/fa-attachment-1.png": "7453de096e601e9098995d45f03f5c5bfb497198d1f86d7d55704516060dbe31",
+              "public/assets/supplements/670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571/fa-attachment-2.png": "a2e0f1c97a2297ea9bf6fb0a0c864398cf3a8ebd9dd9274be7bd63de33450d29"
+            },
+            "choice_coverage": 28,
+            "u_coverage": 8,
+            "source_sha256": "abe45f06d1758e3bff58dd339a05fb9e7c157074a3602a76ae28e519caeb765c"
+          }
+        },
+        {
+          "stage": "production",
+          "at": "2026-09-30T14:44:36.847886+00:00",
+          "evidence": {
+            "result": "passed",
+            "confirmation_method": "manual_source_review",
+            "manual_confirmation_revision": "manual-source-review-c13b0166b3891904",
+            "question_ids": [
+              "2024-fa-p3-1",
+              "2024-fa-p3-2",
+              "2024-fa-p3-3",
+              "2024-fa-p3-4",
+              "2024-fa-p4-5",
+              "2024-fa-p4-6",
+              "2024-fa-p4-7",
+              "2024-fa-p5-8",
+              "2024-fa-p5-9",
+              "2024-fa-p5-10",
+              "2024-fa-p5-11",
+              "2024-fa-p6-12",
+              "2024-fa-p6-13",
+              "2024-fa-p7-14",
+              "2024-fa-p7-15",
+              "2024-fa-p8-16",
+              "2024-fa-p8-17",
+              "2024-fa-p8-18",
+              "2024-fa-p8-19",
+              "2024-fa-p8-20",
+              "2024-fa-p9-21",
+              "2024-fa-p9-22",
+              "2024-fa-p9-23",
+              "2024-fa-p9-24",
+              "2024-fa-p9-25",
+              "2024-fa-p9-26",
+              "2024-fa-p10-27",
+              "2024-fa-p10-28",
+              "2024-fa-p15-U1",
+              "2024-fa-p16-U2",
+              "2024-fa-p17-U3",
+              "2024-fa-p18-U4",
+              "2024-fa-p19-U5",
+              "2024-fa-p20-U6",
+              "2024-fa-p21-U7",
+              "2024-fa-p22-U8"
+            ],
+            "question_revision": "overnight.1.0-6e41b6a28821",
+            "official_answer_revision": "manual-source-review-c13b0166b3891904",
+            "artifacts": {
+              "public/data/2024_sommer_funktionsanalyse_segmented.json": "f875d2f15b8501b6d18552b36bf174208657d27146da50455329d09df95feb77",
+              "public/data/2024_sommer_funktionsanalyse_reviewed_answers.json": "7713d44d99af3018fde8cbae47a8f240aba0f9ef10be77d6d50ee20cc8b5dd77",
+              "public/data/2024_sommer_funktionsanalyse_u_solutions.json": "2743638e215092787302fcc80fa3ec02feda2f68f5c422eadbe712d94f6af224",
+              "public/assets/sources/abe45f06d1758e3bff58dd33/timing-2.png": "2716d2f0db987b7eb00bdac1c35cd7114d7e513d1fcf7e6700bfb5fdcf585dd8",
+              "data/reviews/2024-attachment-mapping-resolution.json": "7f129482428486c93ec6a3948b46410e51e5d10f81b20369c058464875fe409f",
+              "data/reviews/overnight-user-export-2026-09-30-2.json": "0cda83f910de1c9841855d55e9143f3e3de033e5a667eb52cc5bcedd344a3f63",
+              "public/assets/supplements/670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571/fa-attachment-1.png": "7453de096e601e9098995d45f03f5c5bfb497198d1f86d7d55704516060dbe31",
+              "public/assets/supplements/670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571/fa-attachment-2.png": "a2e0f1c97a2297ea9bf6fb0a0c864398cf3a8ebd9dd9274be7bd63de33450d29"
+            },
+            "choice_coverage": 28,
+            "u_coverage": 8,
+            "source_sha256": "abe45f06d1758e3bff58dd339a05fb9e7c157074a3602a76ae28e519caeb765c"
+          }
         }
       ]
     },
@@ -37013,7 +37290,7 @@
       "filename": "2024 Sommer/24 Lösungen.pdf",
       "sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
       "version": 1,
-      "status": "answers_extracted",
+      "status": "production",
       "layout_profile": "portrait-explicit-regions@overnight.1.0-6e41b6a28821",
       "answer_profile": "official-ring-grid@2024-fa-2f.1.0-a806ce9cda33",
       "supersedes_source_id": null,
@@ -37075,6 +37352,122 @@
             "public/data/2024_sommer_funktionsanalyse_u_solutions.json": "2743638e215092787302fcc80fa3ec02feda2f68f5c422eadbe712d94f6af224"
           },
           "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "validated": {
+          "result": "passed",
+          "confirmation_method": "manual_source_review",
+          "manual_confirmation_revision": "manual-source-review-c13b0166b3891904",
+          "question_ids": [
+            "2024-fa-p3-1",
+            "2024-fa-p3-2",
+            "2024-fa-p3-3",
+            "2024-fa-p3-4",
+            "2024-fa-p4-5",
+            "2024-fa-p4-6",
+            "2024-fa-p4-7",
+            "2024-fa-p5-8",
+            "2024-fa-p5-9",
+            "2024-fa-p5-10",
+            "2024-fa-p5-11",
+            "2024-fa-p6-12",
+            "2024-fa-p6-13",
+            "2024-fa-p7-14",
+            "2024-fa-p7-15",
+            "2024-fa-p8-16",
+            "2024-fa-p8-17",
+            "2024-fa-p8-18",
+            "2024-fa-p8-19",
+            "2024-fa-p8-20",
+            "2024-fa-p9-21",
+            "2024-fa-p9-22",
+            "2024-fa-p9-23",
+            "2024-fa-p9-24",
+            "2024-fa-p9-25",
+            "2024-fa-p9-26",
+            "2024-fa-p10-27",
+            "2024-fa-p10-28",
+            "2024-fa-p15-U1",
+            "2024-fa-p16-U2",
+            "2024-fa-p17-U3",
+            "2024-fa-p18-U4",
+            "2024-fa-p19-U5",
+            "2024-fa-p20-U6",
+            "2024-fa-p21-U7",
+            "2024-fa-p22-U8"
+          ],
+          "question_revision": "overnight.1.0-6e41b6a28821",
+          "official_answer_revision": "manual-source-review-c13b0166b3891904",
+          "artifacts": {
+            "public/data/2024_sommer_funktionsanalyse_segmented.json": "f875d2f15b8501b6d18552b36bf174208657d27146da50455329d09df95feb77",
+            "public/data/2024_sommer_funktionsanalyse_reviewed_answers.json": "7713d44d99af3018fde8cbae47a8f240aba0f9ef10be77d6d50ee20cc8b5dd77",
+            "public/data/2024_sommer_funktionsanalyse_u_solutions.json": "2743638e215092787302fcc80fa3ec02feda2f68f5c422eadbe712d94f6af224",
+            "public/assets/sources/abe45f06d1758e3bff58dd33/timing-2.png": "2716d2f0db987b7eb00bdac1c35cd7114d7e513d1fcf7e6700bfb5fdcf585dd8",
+            "data/reviews/2024-attachment-mapping-resolution.json": "7f129482428486c93ec6a3948b46410e51e5d10f81b20369c058464875fe409f",
+            "data/reviews/overnight-user-export-2026-09-30-2.json": "0cda83f910de1c9841855d55e9143f3e3de033e5a667eb52cc5bcedd344a3f63",
+            "public/assets/supplements/670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571/fa-attachment-1.png": "7453de096e601e9098995d45f03f5c5bfb497198d1f86d7d55704516060dbe31",
+            "public/assets/supplements/670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571/fa-attachment-2.png": "a2e0f1c97a2297ea9bf6fb0a0c864398cf3a8ebd9dd9274be7bd63de33450d29"
+          },
+          "choice_coverage": 28,
+          "u_coverage": 8,
+          "source_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913"
+        },
+        "production": {
+          "result": "passed",
+          "confirmation_method": "manual_source_review",
+          "manual_confirmation_revision": "manual-source-review-c13b0166b3891904",
+          "question_ids": [
+            "2024-fa-p3-1",
+            "2024-fa-p3-2",
+            "2024-fa-p3-3",
+            "2024-fa-p3-4",
+            "2024-fa-p4-5",
+            "2024-fa-p4-6",
+            "2024-fa-p4-7",
+            "2024-fa-p5-8",
+            "2024-fa-p5-9",
+            "2024-fa-p5-10",
+            "2024-fa-p5-11",
+            "2024-fa-p6-12",
+            "2024-fa-p6-13",
+            "2024-fa-p7-14",
+            "2024-fa-p7-15",
+            "2024-fa-p8-16",
+            "2024-fa-p8-17",
+            "2024-fa-p8-18",
+            "2024-fa-p8-19",
+            "2024-fa-p8-20",
+            "2024-fa-p9-21",
+            "2024-fa-p9-22",
+            "2024-fa-p9-23",
+            "2024-fa-p9-24",
+            "2024-fa-p9-25",
+            "2024-fa-p9-26",
+            "2024-fa-p10-27",
+            "2024-fa-p10-28",
+            "2024-fa-p15-U1",
+            "2024-fa-p16-U2",
+            "2024-fa-p17-U3",
+            "2024-fa-p18-U4",
+            "2024-fa-p19-U5",
+            "2024-fa-p20-U6",
+            "2024-fa-p21-U7",
+            "2024-fa-p22-U8"
+          ],
+          "question_revision": "overnight.1.0-6e41b6a28821",
+          "official_answer_revision": "manual-source-review-c13b0166b3891904",
+          "artifacts": {
+            "public/data/2024_sommer_funktionsanalyse_segmented.json": "f875d2f15b8501b6d18552b36bf174208657d27146da50455329d09df95feb77",
+            "public/data/2024_sommer_funktionsanalyse_reviewed_answers.json": "7713d44d99af3018fde8cbae47a8f240aba0f9ef10be77d6d50ee20cc8b5dd77",
+            "public/data/2024_sommer_funktionsanalyse_u_solutions.json": "2743638e215092787302fcc80fa3ec02feda2f68f5c422eadbe712d94f6af224",
+            "public/assets/sources/abe45f06d1758e3bff58dd33/timing-2.png": "2716d2f0db987b7eb00bdac1c35cd7114d7e513d1fcf7e6700bfb5fdcf585dd8",
+            "data/reviews/2024-attachment-mapping-resolution.json": "7f129482428486c93ec6a3948b46410e51e5d10f81b20369c058464875fe409f",
+            "data/reviews/overnight-user-export-2026-09-30-2.json": "0cda83f910de1c9841855d55e9143f3e3de033e5a667eb52cc5bcedd344a3f63",
+            "public/assets/supplements/670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571/fa-attachment-1.png": "7453de096e601e9098995d45f03f5c5bfb497198d1f86d7d55704516060dbe31",
+            "public/assets/supplements/670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571/fa-attachment-2.png": "a2e0f1c97a2297ea9bf6fb0a0c864398cf3a8ebd9dd9274be7bd63de33450d29"
+          },
+          "choice_coverage": 28,
+          "u_coverage": 8,
+          "source_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913"
         }
       },
       "events": [
@@ -37160,6 +37553,167 @@
               "public/data/2024_sommer_funktionsanalyse_u_solutions.json": "2743638e215092787302fcc80fa3ec02feda2f68f5c422eadbe712d94f6af224"
             },
             "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "manual_source_review_resolved",
+          "at": "2026-09-30T14:44:36.133856+00:00",
+          "evidence": {
+            "confirmation_revision": "manual-source-review-c13b0166b3891904",
+            "question_ids": [
+              "2024-fa-p3-1",
+              "2024-fa-p3-2",
+              "2024-fa-p3-3",
+              "2024-fa-p3-4",
+              "2024-fa-p4-5",
+              "2024-fa-p4-6",
+              "2024-fa-p4-7",
+              "2024-fa-p5-8",
+              "2024-fa-p5-9",
+              "2024-fa-p5-10",
+              "2024-fa-p5-11",
+              "2024-fa-p6-12",
+              "2024-fa-p6-13",
+              "2024-fa-p7-14",
+              "2024-fa-p7-15",
+              "2024-fa-p8-16",
+              "2024-fa-p8-17",
+              "2024-fa-p8-18",
+              "2024-fa-p8-19",
+              "2024-fa-p8-20",
+              "2024-fa-p9-21",
+              "2024-fa-p9-22",
+              "2024-fa-p9-23",
+              "2024-fa-p9-24",
+              "2024-fa-p9-25",
+              "2024-fa-p9-26",
+              "2024-fa-p10-27",
+              "2024-fa-p10-28"
+            ]
+          }
+        },
+        {
+          "stage": "validated",
+          "at": "2026-09-30T14:44:36.868836+00:00",
+          "evidence": {
+            "result": "passed",
+            "confirmation_method": "manual_source_review",
+            "manual_confirmation_revision": "manual-source-review-c13b0166b3891904",
+            "question_ids": [
+              "2024-fa-p3-1",
+              "2024-fa-p3-2",
+              "2024-fa-p3-3",
+              "2024-fa-p3-4",
+              "2024-fa-p4-5",
+              "2024-fa-p4-6",
+              "2024-fa-p4-7",
+              "2024-fa-p5-8",
+              "2024-fa-p5-9",
+              "2024-fa-p5-10",
+              "2024-fa-p5-11",
+              "2024-fa-p6-12",
+              "2024-fa-p6-13",
+              "2024-fa-p7-14",
+              "2024-fa-p7-15",
+              "2024-fa-p8-16",
+              "2024-fa-p8-17",
+              "2024-fa-p8-18",
+              "2024-fa-p8-19",
+              "2024-fa-p8-20",
+              "2024-fa-p9-21",
+              "2024-fa-p9-22",
+              "2024-fa-p9-23",
+              "2024-fa-p9-24",
+              "2024-fa-p9-25",
+              "2024-fa-p9-26",
+              "2024-fa-p10-27",
+              "2024-fa-p10-28",
+              "2024-fa-p15-U1",
+              "2024-fa-p16-U2",
+              "2024-fa-p17-U3",
+              "2024-fa-p18-U4",
+              "2024-fa-p19-U5",
+              "2024-fa-p20-U6",
+              "2024-fa-p21-U7",
+              "2024-fa-p22-U8"
+            ],
+            "question_revision": "overnight.1.0-6e41b6a28821",
+            "official_answer_revision": "manual-source-review-c13b0166b3891904",
+            "artifacts": {
+              "public/data/2024_sommer_funktionsanalyse_segmented.json": "f875d2f15b8501b6d18552b36bf174208657d27146da50455329d09df95feb77",
+              "public/data/2024_sommer_funktionsanalyse_reviewed_answers.json": "7713d44d99af3018fde8cbae47a8f240aba0f9ef10be77d6d50ee20cc8b5dd77",
+              "public/data/2024_sommer_funktionsanalyse_u_solutions.json": "2743638e215092787302fcc80fa3ec02feda2f68f5c422eadbe712d94f6af224",
+              "public/assets/sources/abe45f06d1758e3bff58dd33/timing-2.png": "2716d2f0db987b7eb00bdac1c35cd7114d7e513d1fcf7e6700bfb5fdcf585dd8",
+              "data/reviews/2024-attachment-mapping-resolution.json": "7f129482428486c93ec6a3948b46410e51e5d10f81b20369c058464875fe409f",
+              "data/reviews/overnight-user-export-2026-09-30-2.json": "0cda83f910de1c9841855d55e9143f3e3de033e5a667eb52cc5bcedd344a3f63",
+              "public/assets/supplements/670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571/fa-attachment-1.png": "7453de096e601e9098995d45f03f5c5bfb497198d1f86d7d55704516060dbe31",
+              "public/assets/supplements/670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571/fa-attachment-2.png": "a2e0f1c97a2297ea9bf6fb0a0c864398cf3a8ebd9dd9274be7bd63de33450d29"
+            },
+            "choice_coverage": 28,
+            "u_coverage": 8,
+            "source_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913"
+          }
+        },
+        {
+          "stage": "production",
+          "at": "2026-09-30T14:44:36.882607+00:00",
+          "evidence": {
+            "result": "passed",
+            "confirmation_method": "manual_source_review",
+            "manual_confirmation_revision": "manual-source-review-c13b0166b3891904",
+            "question_ids": [
+              "2024-fa-p3-1",
+              "2024-fa-p3-2",
+              "2024-fa-p3-3",
+              "2024-fa-p3-4",
+              "2024-fa-p4-5",
+              "2024-fa-p4-6",
+              "2024-fa-p4-7",
+              "2024-fa-p5-8",
+              "2024-fa-p5-9",
+              "2024-fa-p5-10",
+              "2024-fa-p5-11",
+              "2024-fa-p6-12",
+              "2024-fa-p6-13",
+              "2024-fa-p7-14",
+              "2024-fa-p7-15",
+              "2024-fa-p8-16",
+              "2024-fa-p8-17",
+              "2024-fa-p8-18",
+              "2024-fa-p8-19",
+              "2024-fa-p8-20",
+              "2024-fa-p9-21",
+              "2024-fa-p9-22",
+              "2024-fa-p9-23",
+              "2024-fa-p9-24",
+              "2024-fa-p9-25",
+              "2024-fa-p9-26",
+              "2024-fa-p10-27",
+              "2024-fa-p10-28",
+              "2024-fa-p15-U1",
+              "2024-fa-p16-U2",
+              "2024-fa-p17-U3",
+              "2024-fa-p18-U4",
+              "2024-fa-p19-U5",
+              "2024-fa-p20-U6",
+              "2024-fa-p21-U7",
+              "2024-fa-p22-U8"
+            ],
+            "question_revision": "overnight.1.0-6e41b6a28821",
+            "official_answer_revision": "manual-source-review-c13b0166b3891904",
+            "artifacts": {
+              "public/data/2024_sommer_funktionsanalyse_segmented.json": "f875d2f15b8501b6d18552b36bf174208657d27146da50455329d09df95feb77",
+              "public/data/2024_sommer_funktionsanalyse_reviewed_answers.json": "7713d44d99af3018fde8cbae47a8f240aba0f9ef10be77d6d50ee20cc8b5dd77",
+              "public/data/2024_sommer_funktionsanalyse_u_solutions.json": "2743638e215092787302fcc80fa3ec02feda2f68f5c422eadbe712d94f6af224",
+              "public/assets/sources/abe45f06d1758e3bff58dd33/timing-2.png": "2716d2f0db987b7eb00bdac1c35cd7114d7e513d1fcf7e6700bfb5fdcf585dd8",
+              "data/reviews/2024-attachment-mapping-resolution.json": "7f129482428486c93ec6a3948b46410e51e5d10f81b20369c058464875fe409f",
+              "data/reviews/overnight-user-export-2026-09-30-2.json": "0cda83f910de1c9841855d55e9143f3e3de033e5a667eb52cc5bcedd344a3f63",
+              "public/assets/supplements/670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571/fa-attachment-1.png": "7453de096e601e9098995d45f03f5c5bfb497198d1f86d7d55704516060dbe31",
+              "public/assets/supplements/670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571/fa-attachment-2.png": "a2e0f1c97a2297ea9bf6fb0a0c864398cf3a8ebd9dd9274be7bd63de33450d29"
+            },
+            "choice_coverage": 28,
+            "u_coverage": 8,
+            "source_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913"
           }
         }
       ]
@@ -38796,6 +39350,32 @@
               "data/ingest/winter2024_25_fa_bounds_review.json": "d4ca8069e6b79c32e9f3df3f1e6075fddcb3422c4fc3c258b81c1db290ce49c0"
             }
           }
+        },
+        {
+          "stage": "profile_revision_proposed",
+          "proposal_hash": "e19a011d9cda8959b5d2ebdf0327e2cee6c0f232a9c555982f73f1d56006786d",
+          "previous_profile_revision": "portrait-explicit-regions@overnight.1.0-ffae6f3130aa",
+          "new_profile_revision": "mapping-review.2.0-b99ae00413ea",
+          "supersedes_profile_revision": "portrait-explicit-regions@overnight.1.0-ffae6f3130aa",
+          "change_reason": "manual_2024_attachment_mapping_review",
+          "evidence": {
+            "proposal_path": "data/reviews/winter2024-fa-mapping-v2/proposal.json",
+            "sha256": "7492debd378be7ae90b0c356b35e936935807483a2e2ddd7aea5ca98ca3ca3a1"
+          },
+          "at": "2026-09-30T14:44:37.215410+00:00"
+        },
+        {
+          "stage": "profile_revision_confirmed",
+          "proposal_hash": "e19a011d9cda8959b5d2ebdf0327e2cee6c0f232a9c555982f73f1d56006786d",
+          "previous_profile_revision": "portrait-explicit-regions@overnight.1.0-ffae6f3130aa",
+          "new_profile_revision": "mapping-review.2.0-b99ae00413ea",
+          "supersedes_profile_revision": "portrait-explicit-regions@overnight.1.0-ffae6f3130aa",
+          "change_reason": "manual_2024_attachment_mapping_review",
+          "evidence": {
+            "confirmation": "data/reviews/shared-region-e19a011d9cda8959b5d2ebdf0327e2cee6c0f232a9c555982f73f1d56006786d.json",
+            "sha256": "f202118ed615a8b25996d892c714c6b389cad27f361a5ea26110abaa23e2d9ba"
+          },
+          "at": "2026-09-30T14:44:37.474979+00:00"
         }
       ],
       "blocked_after": "layout_validated"
@@ -38808,9 +39388,9 @@
       "filename": "2024_25 Winter/24_25 Lösungen.pdf",
       "sha256": "7fe6753ad727cabb78109f6035e6405449f98b3260652e9fa273494242c3b1e3",
       "version": 1,
-      "status": "hash_verified",
-      "layout_profile": null,
-      "answer_profile": null,
+      "status": "answers_extracted",
+      "layout_profile": "portrait-explicit-regions@mapping-review.2.0-3b6c0c824ad4",
+      "answer_profile": "official-ring-grid@2024-25-fa-mapping-v2-2f.1.0-c07a5d64bb93",
       "supersedes_source_id": null,
       "created_at": "2026-09-29T21:06:14.476191+00:00",
       "identity_migration": null,
@@ -38821,6 +39401,55 @@
           "artifacts": {
             "data/ingest/registered-receipts/7fe6753ad727cabb78109f6035e6405449f98b3260652e9fa273494242c3b1e3.json": "58dd296e425e3ceca1e09044c751abf37ed13d9a65a7a748d1f3b734c8926ce6"
           }
+        },
+        "profile_matched": {
+          "source_sha256": "7fe6753ad727cabb78109f6035e6405449f98b3260652e9fa273494242c3b1e3",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/winter2024_25_fa_mapping_v2_official.json": "8256ba42857e2fd38e9d214c74d03ed13edd9eb27c479e878066d8c0fa0aa46a"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "layout_validated": {
+          "source_sha256": "7fe6753ad727cabb78109f6035e6405449f98b3260652e9fa273494242c3b1e3",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/winter2024_25_fa_mapping_v2_official.json": "8256ba42857e2fd38e9d214c74d03ed13edd9eb27c479e878066d8c0fa0aa46a",
+            "public/data/2024_25_winter_funktionsanalyse_mapping_v2_segmented.json": "739996dc5a60d775f90f0b4602f394ac475e1c12315bf873458cded46dddaa36"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "preview_ready": {
+          "source_sha256": "7fe6753ad727cabb78109f6035e6405449f98b3260652e9fa273494242c3b1e3",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/winter2024_25_fa_mapping_v2_official.json": "8256ba42857e2fd38e9d214c74d03ed13edd9eb27c479e878066d8c0fa0aa46a",
+            "public/data/2024_25_winter_funktionsanalyse_mapping_v2_segmented.json": "739996dc5a60d775f90f0b4602f394ac475e1c12315bf873458cded46dddaa36"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "formal_segmented": {
+          "source_sha256": "7fe6753ad727cabb78109f6035e6405449f98b3260652e9fa273494242c3b1e3",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/winter2024_25_fa_mapping_v2_official.json": "8256ba42857e2fd38e9d214c74d03ed13edd9eb27c479e878066d8c0fa0aa46a",
+            "public/data/2024_25_winter_funktionsanalyse_mapping_v2_segmented.json": "739996dc5a60d775f90f0b4602f394ac475e1c12315bf873458cded46dddaa36"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "answers_extracted": {
+          "source_sha256": "7fe6753ad727cabb78109f6035e6405449f98b3260652e9fa273494242c3b1e3",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2024_25_winter_funktionsanalyse_mapping_v2_answers.json": "ad8630e5b7d1d96ca586683e7d83f1e4b788025d22597b2d272576a781ea36e2",
+            "public/data/2024_25_winter_funktionsanalyse_mapping_v2_answers.json": "ad8630e5b7d1d96ca586683e7d83f1e4b788025d22597b2d272576a781ea36e2",
+            "data/exams/2024_25_winter_funktionsanalyse_mapping_v2_u_solutions.json": "045554c54492c8e8b5e279e7c73637cb7f44f9352cd2c872248c2ad84c4c9a45",
+            "public/data/2024_25_winter_funktionsanalyse_mapping_v2_u_solutions.json": "045554c54492c8e8b5e279e7c73637cb7f44f9352cd2c872248c2ad84c4c9a45"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
         }
       },
       "events": [
@@ -38837,6 +39466,75 @@
             "artifacts": {
               "data/ingest/registered-receipts/7fe6753ad727cabb78109f6035e6405449f98b3260652e9fa273494242c3b1e3.json": "58dd296e425e3ceca1e09044c751abf37ed13d9a65a7a748d1f3b734c8926ce6"
             }
+          }
+        },
+        {
+          "stage": "profile_matched",
+          "at": "2026-09-30T14:44:45.749502+00:00",
+          "evidence": {
+            "source_sha256": "7fe6753ad727cabb78109f6035e6405449f98b3260652e9fa273494242c3b1e3",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/winter2024_25_fa_mapping_v2_official.json": "8256ba42857e2fd38e9d214c74d03ed13edd9eb27c479e878066d8c0fa0aa46a"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "layout_validated",
+          "at": "2026-09-30T14:44:45.965735+00:00",
+          "evidence": {
+            "source_sha256": "7fe6753ad727cabb78109f6035e6405449f98b3260652e9fa273494242c3b1e3",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/winter2024_25_fa_mapping_v2_official.json": "8256ba42857e2fd38e9d214c74d03ed13edd9eb27c479e878066d8c0fa0aa46a",
+              "public/data/2024_25_winter_funktionsanalyse_mapping_v2_segmented.json": "739996dc5a60d775f90f0b4602f394ac475e1c12315bf873458cded46dddaa36"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "preview_ready",
+          "at": "2026-09-30T14:44:46.177742+00:00",
+          "evidence": {
+            "source_sha256": "7fe6753ad727cabb78109f6035e6405449f98b3260652e9fa273494242c3b1e3",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/winter2024_25_fa_mapping_v2_official.json": "8256ba42857e2fd38e9d214c74d03ed13edd9eb27c479e878066d8c0fa0aa46a",
+              "public/data/2024_25_winter_funktionsanalyse_mapping_v2_segmented.json": "739996dc5a60d775f90f0b4602f394ac475e1c12315bf873458cded46dddaa36"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "formal_segmented",
+          "at": "2026-09-30T14:44:46.412542+00:00",
+          "evidence": {
+            "source_sha256": "7fe6753ad727cabb78109f6035e6405449f98b3260652e9fa273494242c3b1e3",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/winter2024_25_fa_mapping_v2_official.json": "8256ba42857e2fd38e9d214c74d03ed13edd9eb27c479e878066d8c0fa0aa46a",
+              "public/data/2024_25_winter_funktionsanalyse_mapping_v2_segmented.json": "739996dc5a60d775f90f0b4602f394ac475e1c12315bf873458cded46dddaa36"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "answers_extracted",
+          "at": "2026-09-30T14:44:48.508033+00:00",
+          "evidence": {
+            "source_sha256": "7fe6753ad727cabb78109f6035e6405449f98b3260652e9fa273494242c3b1e3",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2024_25_winter_funktionsanalyse_mapping_v2_answers.json": "ad8630e5b7d1d96ca586683e7d83f1e4b788025d22597b2d272576a781ea36e2",
+              "public/data/2024_25_winter_funktionsanalyse_mapping_v2_answers.json": "ad8630e5b7d1d96ca586683e7d83f1e4b788025d22597b2d272576a781ea36e2",
+              "data/exams/2024_25_winter_funktionsanalyse_mapping_v2_u_solutions.json": "045554c54492c8e8b5e279e7c73637cb7f44f9352cd2c872248c2ad84c4c9a45",
+              "public/data/2024_25_winter_funktionsanalyse_mapping_v2_u_solutions.json": "045554c54492c8e8b5e279e7c73637cb7f44f9352cd2c872248c2ad84c4c9a45"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
           }
         }
       ]
@@ -39547,6 +40245,184 @@
             "choice_coverage": 18,
             "u_coverage": 6,
             "source_sha256": "7fe6753ad727cabb78109f6035e6405449f98b3260652e9fa273494242c3b1e3"
+          }
+        }
+      ]
+    },
+    {
+      "exam": "2024-25-winter",
+      "module": "funktionsanalyse",
+      "source_type": "question_pdf",
+      "filename": "2024_25 Winter/24_25 Funktionsanalyse.pdf",
+      "sha256": "8e3f52fd06133c24b1b542512043b7d392777f17fc56e7a616837fbd4438bf33",
+      "source_id": "src-00039682caf29c6203d9cc0c",
+      "version": 2,
+      "status": "answers_extracted",
+      "layout_profile": "portrait-explicit-regions@mapping-review.2.0-3b6c0c824ad4",
+      "answer_profile": "ring-annulus-explicit@2f.1.0",
+      "supersedes_source_id": null,
+      "created_at": "2026-09-30T14:44:37.688360+00:00",
+      "identity_migration": null,
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "8e3f52fd06133c24b1b542512043b7d392777f17fc56e7a616837fbd4438bf33",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/8e3f52fd06133c24b1b542512043b7d392777f17fc56e7a616837fbd4438bf33.json": "e1b6ced2cfe81772c65a14a0fb9bb915327ff37620f67a9f9b27d73f2c1757e2"
+          }
+        },
+        "profile_matched": {
+          "source_sha256": "8e3f52fd06133c24b1b542512043b7d392777f17fc56e7a616837fbd4438bf33",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/winter2024_25_fa_mapping_v2.json": "e79244a3bd0c2551a1bc0b7fbf8d7eab95702d4642e09723677a1b394c6806cb"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "profile_id": "portrait-explicit-regions",
+          "validated_sources": [
+            "8e3f52fd06133c24b1b542512043b7d392777f17fc56e7a616837fbd4438bf33"
+          ]
+        },
+        "layout_validated": {
+          "source_sha256": "8e3f52fd06133c24b1b542512043b7d392777f17fc56e7a616837fbd4438bf33",
+          "result": "passed",
+          "artifacts": {
+            "docs/evidence/phase2f/2024-25-fa-mapping-v2/layout-validation.json": "bde81204d21e7fa35d59f241cda759569cf4f4dcccfc39a889e5543b5db5aa42"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "preview_ready": {
+          "source_sha256": "8e3f52fd06133c24b1b542512043b7d392777f17fc56e7a616837fbd4438bf33",
+          "result": "passed",
+          "artifacts": {
+            "docs/evidence/phase2f/2024-25-fa-mapping-v2/preview-manifest.json": "023a58eda97d94093e33d2e5762ad408446fca0050324bb60795d529e65aba8e",
+            "docs/evidence/phase2f/2024-25-fa-mapping-v2/index.html": "a10b4d21eb6223fb100d748bd11304dd06a3b8fd0c197dd3f6e8b538f1c34970",
+            "docs/evidence/phase2f/2024-25-fa-mapping-v2/layout-validation.json": "bde81204d21e7fa35d59f241cda759569cf4f4dcccfc39a889e5543b5db5aa42"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "formal_segmented": {
+          "source_sha256": "8e3f52fd06133c24b1b542512043b7d392777f17fc56e7a616837fbd4438bf33",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2024_25_winter_funktionsanalyse_mapping_v2_segmented.json": "739996dc5a60d775f90f0b4602f394ac475e1c12315bf873458cded46dddaa36",
+            "public/data/2024_25_winter_funktionsanalyse_mapping_v2_segmented.json": "739996dc5a60d775f90f0b4602f394ac475e1c12315bf873458cded46dddaa36"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "answers_extracted": {
+          "source_sha256": "8e3f52fd06133c24b1b542512043b7d392777f17fc56e7a616837fbd4438bf33",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2024_25_winter_funktionsanalyse_mapping_v2_answers.json": "ad8630e5b7d1d96ca586683e7d83f1e4b788025d22597b2d272576a781ea36e2",
+            "public/data/2024_25_winter_funktionsanalyse_mapping_v2_answers.json": "ad8630e5b7d1d96ca586683e7d83f1e4b788025d22597b2d272576a781ea36e2",
+            "data/exams/2024_25_winter_funktionsanalyse_mapping_v2_u_solutions.json": "045554c54492c8e8b5e279e7c73637cb7f44f9352cd2c872248c2ad84c4c9a45",
+            "public/data/2024_25_winter_funktionsanalyse_mapping_v2_u_solutions.json": "045554c54492c8e8b5e279e7c73637cb7f44f9352cd2c872248c2ad84c4c9a45"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        }
+      },
+      "profile_revision_of_source_id": "src-f99f89ce0d2f0dc39a437440",
+      "profile_confirmation": {
+        "proposal_hash": "e19a011d9cda8959b5d2ebdf0327e2cee6c0f232a9c555982f73f1d56006786d",
+        "proposal_path": "data/reviews/winter2024-fa-mapping-v2/proposal.json",
+        "proposal_sha256": "7492debd378be7ae90b0c356b35e936935807483a2e2ddd7aea5ca98ca3ca3a1",
+        "confirmation_path": "data/reviews/winter2024-fa-mapping-v2/confirmation.json",
+        "confirmation_sha256": "f202118ed615a8b25996d892c714c6b389cad27f361a5ea26110abaa23e2d9ba"
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-09-30T14:44:37.688360+00:00",
+          "change_reason": "manual_2024_attachment_mapping_review",
+          "previous_source_id": "src-f99f89ce0d2f0dc39a437440",
+          "evidence": {
+            "proposal_hash": "e19a011d9cda8959b5d2ebdf0327e2cee6c0f232a9c555982f73f1d56006786d",
+            "proposal_path": "data/reviews/winter2024-fa-mapping-v2/proposal.json",
+            "proposal_sha256": "7492debd378be7ae90b0c356b35e936935807483a2e2ddd7aea5ca98ca3ca3a1",
+            "confirmation_path": "data/reviews/winter2024-fa-mapping-v2/confirmation.json",
+            "confirmation_sha256": "f202118ed615a8b25996d892c714c6b389cad27f361a5ea26110abaa23e2d9ba"
+          }
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-09-30T14:44:37.927366+00:00",
+          "evidence": {
+            "source_sha256": "8e3f52fd06133c24b1b542512043b7d392777f17fc56e7a616837fbd4438bf33",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/8e3f52fd06133c24b1b542512043b7d392777f17fc56e7a616837fbd4438bf33.json": "e1b6ced2cfe81772c65a14a0fb9bb915327ff37620f67a9f9b27d73f2c1757e2"
+            }
+          }
+        },
+        {
+          "stage": "profile_matched",
+          "at": "2026-09-30T14:44:38.430255+00:00",
+          "evidence": {
+            "source_sha256": "8e3f52fd06133c24b1b542512043b7d392777f17fc56e7a616837fbd4438bf33",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/winter2024_25_fa_mapping_v2.json": "e79244a3bd0c2551a1bc0b7fbf8d7eab95702d4642e09723677a1b394c6806cb"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "profile_id": "portrait-explicit-regions",
+            "validated_sources": [
+              "8e3f52fd06133c24b1b542512043b7d392777f17fc56e7a616837fbd4438bf33"
+            ]
+          }
+        },
+        {
+          "stage": "layout_validated",
+          "at": "2026-09-30T14:44:39.320118+00:00",
+          "evidence": {
+            "source_sha256": "8e3f52fd06133c24b1b542512043b7d392777f17fc56e7a616837fbd4438bf33",
+            "result": "passed",
+            "artifacts": {
+              "docs/evidence/phase2f/2024-25-fa-mapping-v2/layout-validation.json": "bde81204d21e7fa35d59f241cda759569cf4f4dcccfc39a889e5543b5db5aa42"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "preview_ready",
+          "at": "2026-09-30T14:44:44.193949+00:00",
+          "evidence": {
+            "source_sha256": "8e3f52fd06133c24b1b542512043b7d392777f17fc56e7a616837fbd4438bf33",
+            "result": "passed",
+            "artifacts": {
+              "docs/evidence/phase2f/2024-25-fa-mapping-v2/preview-manifest.json": "023a58eda97d94093e33d2e5762ad408446fca0050324bb60795d529e65aba8e",
+              "docs/evidence/phase2f/2024-25-fa-mapping-v2/index.html": "a10b4d21eb6223fb100d748bd11304dd06a3b8fd0c197dd3f6e8b538f1c34970",
+              "docs/evidence/phase2f/2024-25-fa-mapping-v2/layout-validation.json": "bde81204d21e7fa35d59f241cda759569cf4f4dcccfc39a889e5543b5db5aa42"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "formal_segmented",
+          "at": "2026-09-30T14:44:44.490638+00:00",
+          "evidence": {
+            "source_sha256": "8e3f52fd06133c24b1b542512043b7d392777f17fc56e7a616837fbd4438bf33",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2024_25_winter_funktionsanalyse_mapping_v2_segmented.json": "739996dc5a60d775f90f0b4602f394ac475e1c12315bf873458cded46dddaa36",
+              "public/data/2024_25_winter_funktionsanalyse_mapping_v2_segmented.json": "739996dc5a60d775f90f0b4602f394ac475e1c12315bf873458cded46dddaa36"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "answers_extracted",
+          "at": "2026-09-30T14:44:48.271262+00:00",
+          "evidence": {
+            "source_sha256": "8e3f52fd06133c24b1b542512043b7d392777f17fc56e7a616837fbd4438bf33",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2024_25_winter_funktionsanalyse_mapping_v2_answers.json": "ad8630e5b7d1d96ca586683e7d83f1e4b788025d22597b2d272576a781ea36e2",
+              "public/data/2024_25_winter_funktionsanalyse_mapping_v2_answers.json": "ad8630e5b7d1d96ca586683e7d83f1e4b788025d22597b2d272576a781ea36e2",
+              "data/exams/2024_25_winter_funktionsanalyse_mapping_v2_u_solutions.json": "045554c54492c8e8b5e279e7c73637cb7f44f9352cd2c872248c2ad84c4c9a45",
+              "public/data/2024_25_winter_funktionsanalyse_mapping_v2_u_solutions.json": "045554c54492c8e8b5e279e7c73637cb7f44f9352cd2c872248c2ad84c4c9a45"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
           }
         }
       ]

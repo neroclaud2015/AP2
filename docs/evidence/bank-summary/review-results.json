@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "export": "data/reviews/overnight-user-export-2026-09-30-2.json",
+  "verified_decisions": 6,
+  "newly_production": {
+    "exam": "2024-sommer",
+    "module": "funktionsanalyse",
+    "questions": 36,
+    "mc": 28,
+    "u": 8,
+    "attachment_owners": [
+      "U3"
+    ]
+  },
+  "winter_fa": {
+    "mapping": "resolved; 23/24 -> U2; 25/26 excluded",
+    "questions": 36,
+    "mc_auto_ready": 11,
+    "mc_expected": 28,
+    "u": 8,
+    "new_answer_review": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      10,
+      11,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23
+    ],
+    "scope": "winter-2024-25-fa-mapping-v2"
+  },
+  "accepted_source_limitations": [
+    {
+      "review_id": "2018_sommer-arbeitsplanung-missing-source",
+      "examId": "2018-sommer",
+      "module": "arbeitsplanung",
+      "status": "source_accepted_pending_extraction",
+      "affected_question_numbers": [
+        "U6",
+        "U7"
+      ],
+      "notice": "Stückliste, Blatt 2 von 2 fehlt. Nutzung der vorhandenen Unterlagen vom Nutzer ausdrücklich erlaubt.",
+      "remaining_work": "Formal segmentation and official answer extraction still required.",
+      "manual_decision": {
+        "id": "2018_sommer-arbeitsplanung-missing-source",
+        "evidence_hash": "7b745ae78b9d9ce0370676e4068ed4666be90eb98ea62d8297846402609bbac6",
+        "decision": "change_requested",
+        "comment": "第二张零件清单确实缺失。但是没关系。 你就只上传有的那也然后标注上此题确实一页附件之类的。 不要因此block整个模块",
+        "updated_at": "2026-09-30T14:03:23.691Z"
+      },
+      "confirmation_source": "data/reviews/overnight-user-export-2026-09-30-2.json",
+      "does_not_assert_complete_sources": true
+    },
+    {
+      "review_id": "2018_sommer-funktionsanalyse-missing-source",
+      "examId": "2018-sommer",
+      "module": "funktionsanalyse",
+      "status": "source_accepted_pending_extraction",
+      "affected_question_numbers": [
+        "U1",
+        "U2",
+        "U3"
+      ],
+      "notice": "Stückliste, Blatt 2 von 2 fehlt. Nutzung der vorhandenen Unterlagen vom Nutzer ausdrücklich erlaubt.",
+      "remaining_work": "Question layout and official answer extraction still required.",
+      "manual_decision": {
+        "id": "2018_sommer-funktionsanalyse-missing-source",
+        "evidence_hash": "f9e791230227a3f7baf9baa1d58bc1c11217b015096310bc83130a0842c2fb3c",
+        "decision": "change_requested",
+        "comment": "第二张零件清单确实缺失。但是没关系。 你就只上传有的那也然后标注上此题确实一页附件之类的。 不要因此block整个模块",
+        "updated_at": "2026-09-30T14:11:33.288Z"
+      },
+      "confirmation_source": "data/reviews/overnight-user-export-2026-09-30-2.json",
+      "does_not_assert_complete_sources": true
+    },
+    {
+      "review_id": "2023_sommer-funktionsanalyse-missing-source",
+      "examId": "2023-sommer",
+      "module": "funktionsanalyse",
+      "status": "source_accepted_pending_extraction",
+      "affected_question_numbers": [
+        "U7",
+        "U8"
+      ],
+      "notice": "Die Originalseiten enthalten bereits handschriftliche Antworten. Unveränderte Nutzung vom Nutzer ausdrücklich erlaubt.",
+      "remaining_work": "Question layout and official answer extraction still required.",
+      "manual_decision": {
+        "id": "2023_sommer-funktionsanalyse-missing-source",
+        "evidence_hash": "ff58c2dabbe4d648329b6a3637d5f347fc857b6b711756ab5906d2abb5deb33d",
+        "decision": "change_requested",
+        "comment": "不需要 就带着那两个手写作答就行没关系。",
+        "updated_at": "2026-09-30T14:17:50.758Z"
+      },
+      "confirmation_source": "data/reviews/overnight-user-export-2026-09-30-2.json",
+      "does_not_assert_complete_sources": true
+    },
+    {
+      "review_id": "2023_sommer-wiso-missing-source",
+      "examId": "2023-sommer",
+      "module": "wiso",
+      "status": "deferred_missing_source",
+      "affected_question_numbers": [],
+      "notice": "Originalaufgaben fehlen; auf Wunsch des Nutzers bleibt dieses Modul vorerst leer.",
+      "remaining_work": "Await original question PDF.",
+      "manual_decision": {
+        "id": "2023_sommer-wiso-missing-source",
+        "evidence_hash": "d6363ddfe8b8226f47837df1520b7042369325f2eae54e82da43d7a8ef7479ad",
+        "decision": "change_requested",
+        "comment": "暂时空着就行",
+        "updated_at": "2026-09-30T14:18:16.364Z"
+      },
+      "confirmation_source": "data/reviews/overnight-user-export-2026-09-30-2.json",
+      "does_not_assert_complete_sources": true
+    }
+  ],
+  "awaiting_sources": [
+    "Sommer 2025 AP/FA/WiSo"
+  ],
+  "pdf_rescans": 0,
+  "new_pdf_renders": 0,
+  "personal_data_modified": false
+}

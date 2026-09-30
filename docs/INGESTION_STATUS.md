@@ -108,3 +108,7 @@ See [Morning Report](../MORNING_REPORT.md). All three supplied remaining archive
 
 ## 2026-09-30 user confirmation release
 90 source-bound answers locked; 6 modules promoted. Winter 2023/24 now complete; Sommer 2024 AP/WiSo and Winter 2024/25 AP/WiSo production. Remaining9 source/mapping items detailed in evidence/overnight-release. PDF rescans0.
+
+
+## 2026-09-30 second review export and Aufgabenbank card
+Sommer 2024 FA now production (36/28/8); total43 modules /1,368 questions. Winter2024/25 FA attachment mapping resolved;36 formal questions,8 U crops;17 MC answers await new source review (not production). Sommer2018 AP/FA missing-sheet usage and Sommer2023 FA annotated-source usage authorized; incomplete extraction still pending, no further source confirmation needed. Sommer2023 WiSo deferred; Sommer2025 sources not supplied. See evidence/bank-summary/REPORT.md. All old events/gates and1,332 existing question records preserved; no PDF rescans.

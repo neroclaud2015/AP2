@@ -7,10 +7,10 @@ from portrait_dataset import objhash
 SCOPE='winter-2018-19-ap-fa'
 TARGETS={'arbeitsplanung':[3,9,10,22,24],'funktionsanalyse':[7,21,27]}
 
-def queue(root,*,scope=SCOPE,targets=None,exam='2018_19_winter'):
+def queue(root,*,scope=SCOPE,targets=None,exam='2018_19_winter',prefixes=None):
  root=Path(root);items=[];coverage={}
  for module,numbers in (TARGETS if targets is None else targets).items():
-  prefix=f'{exam}_{module}';data=read(root/f'public/data/{prefix}_answers.json')
+  prefix=(prefixes or {}).get(module,f'{exam}_{module}');data=read(root/f'public/data/{prefix}_answers.json')
   solutions=read(root/f'public/data/{prefix}_u_solutions.json')
   coverage[data['module']]={'mc':len(data['answers']),'u':len(solutions['solutions'])}
   for n in numbers:

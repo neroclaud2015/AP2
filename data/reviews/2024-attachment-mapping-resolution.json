@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "decision": {
+    "id": "sommer2024-fa-attachment-ownership",
+    "evidence_hash": "a05875a4c030593529eb1e6630f4dfa0750c873d63b9eccb1170ebe31df057a1",
+    "decision": "confirmed",
+    "comment": "关联U3、取消Q25",
+    "updated_at": "2026-09-30T14:16:55.140Z"
+  },
+  "review_item": {
+    "id": "sommer2024-fa-attachment-ownership",
+    "exam": "2024_sommer",
+    "examLabel": "Sommer 2024",
+    "module": "Funktionsanalyse",
+    "question": "Q25 / U3",
+    "type": "attachment_mapping",
+    "reason": "全部28道MC答案已确认，U解答8/8完整。唯一剩余门槛：旧配置把附件关联到Q25和U3；新提案只关联U3、取消Q25。请根据下方原题和两张附件确认提案，或写明不同归属。",
+    "source_crop": "assets/questions/abe45f06d1758e3bff58dd33/overnight.1.0-6e41b6a28821/2024-fa-p9-25.png",
+    "source_crop_sha256": "964190548b1f115840c3ac732b6fd2ca4f50162bf1ec5bc6523236b5df637275",
+    "proposal": {
+      "previous_owners": [
+        "25",
+        "U3"
+      ],
+      "proposed_owners": [
+        "U3"
+      ],
+      "attachment_sha256": "670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571",
+      "source_id": "src-cd28f08815a20a9a5c147d7e"
+    },
+    "evidence_hash": "a05875a4c030593529eb1e6630f4dfa0750c873d63b9eccb1170ebe31df057a1",
+    "evidence_images": [
+      {
+        "src": "assets/questions/abe45f06d1758e3bff58dd33/overnight.1.0-6e41b6a28821/2024-fa-p9-25.png",
+        "sha256": "964190548b1f115840c3ac732b6fd2ca4f50162bf1ec5bc6523236b5df637275",
+        "label": "Originale Aufgabe 25"
+      },
+      {
+        "src": "assets/questions/abe45f06d1758e3bff58dd33/overnight.1.0-6e41b6a28821/2024-fa-p17-U3.png",
+        "sha256": "785d22c180d980f0c79889582b88b9f35733518876081fddca36de2be208f00d",
+        "label": "Originale Aufgabe U3"
+      },
+      {
+        "src": "assets/review/overnight/sommer2024-fa-attachment-1.png",
+        "sha256": "113d939634514a72aad4fdde0b969b5765f8325759c5d3533d2070f36d5dfe09",
+        "label": "Originale Anlage, Blatt 1"
+      },
+      {
+        "src": "assets/review/overnight/sommer2024-fa-attachment-2.png",
+        "sha256": "5da8e8bc97ea5a32f3a09cb8560658f41bb8991f3d36fd379ef8ec34be4ff23a",
+        "label": "Originale Anlage, Blatt 2"
+      }
+    ]
+  },
+  "original_config_sha256": "f14fedacc9c9381161ec68c0b6cf09c049ca1db21d6a31362bd6970b2c06b536",
+  "resolved_hold": {
+    "scope": "sommer-2024",
+    "module": "funktionsanalyse"
+  },
+  "mapping": {
+    "owners": [
+      "U3"
+    ],
+    "removed": [
+      "25"
+    ]
+  },
+  "artifacts": {
+    "data/reviews/overnight-user-export-2026-09-30-2.json": "0cda83f910de1c9841855d55e9143f3e3de033e5a667eb52cc5bcedd344a3f63",
+    "scripts/layout_profiles/sommer2024_fa.json": "f14fedacc9c9381161ec68c0b6cf09c049ca1db21d6a31362bd6970b2c06b536"
+  }
+}

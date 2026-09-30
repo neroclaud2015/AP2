@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "scope": "overnight",
+  "exported_at": "2026-09-30T14:18:26.830Z",
+  "confirmations": [],
+  "scopes": [],
+  "mapping_decisions": [
+    {
+      "id": "2018_sommer-arbeitsplanung-missing-source",
+      "evidence_hash": "7b745ae78b9d9ce0370676e4068ed4666be90eb98ea62d8297846402609bbac6",
+      "decision": "change_requested",
+      "comment": "第二张零件清单确实缺失。但是没关系。 你就只上传有的那也然后标注上此题确实一页附件之类的。 不要因此block整个模块",
+      "updated_at": "2026-09-30T14:03:23.691Z"
+    },
+    {
+      "id": "2018_sommer-funktionsanalyse-missing-source",
+      "evidence_hash": "f9e791230227a3f7baf9baa1d58bc1c11217b015096310bc83130a0842c2fb3c",
+      "decision": "change_requested",
+      "comment": "第二张零件清单确实缺失。但是没关系。 你就只上传有的那也然后标注上此题确实一页附件之类的。 不要因此block整个模块",
+      "updated_at": "2026-09-30T14:11:33.288Z"
+    },
+    {
+      "id": "sommer2024-fa-attachment-ownership",
+      "evidence_hash": "a05875a4c030593529eb1e6630f4dfa0750c873d63b9eccb1170ebe31df057a1",
+      "decision": "confirmed",
+      "comment": "关联U3、取消Q25",
+      "updated_at": "2026-09-30T14:16:55.140Z"
+    },
+    {
+      "id": "winter2024-25-fa-unresolved-pages25-26",
+      "evidence_hash": "f0e4832bb4911676e3d4524a643f3bb547e0e127d6af28ad430a78b4f9613a1b",
+      "decision": "confirmed",
+      "comment": "这两页没有归属。 不用放进去",
+      "updated_at": "2026-09-30T14:17:16.886Z"
+    },
+    {
+      "id": "2023_sommer-funktionsanalyse-missing-source",
+      "evidence_hash": "ff58c2dabbe4d648329b6a3637d5f347fc857b6b711756ab5906d2abb5deb33d",
+      "decision": "change_requested",
+      "comment": "不需要 就带着那两个手写作答就行没关系。",
+      "updated_at": "2026-09-30T14:17:50.758Z"
+    },
+    {
+      "id": "2023_sommer-wiso-missing-source",
+      "evidence_hash": "d6363ddfe8b8226f47837df1520b7042369325f2eae54e82da43d7a8ef7479ad",
+      "decision": "change_requested",
+      "comment": "暂时空着就行",
+      "updated_at": "2026-09-30T14:18:16.364Z"
+    }
+  ]
+}

@@ -1,0 +1,5031 @@
+{
+  "schema_version": 1,
+  "exam": "2024_sommer",
+  "module": "Funktionsanalyse",
+  "parser_revision": "manual-source-review-c13b0166b3891904",
+  "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+  "overlay": "assets/official/2024-fa-2f.1.0-a806ce9cda33/grid-overlay.png",
+  "answers": [
+    {
+      "question_id": "2024-fa-p3-1",
+      "question_number": 1,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 5,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            132.8,
+            387.6
+          ],
+          "ring_ink": 0.0241,
+          "angular_support": 0.0,
+          "center_ink": 0.2759,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            132.8,
+            407.54
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.25,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            132.8,
+            427.48
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            132.8,
+            447.42
+          ],
+          "ring_ink": 0.0837,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            138.8,
+            473.36
+          ],
+          "ring_ink": 0.22,
+          "angular_support": 0.4167,
+          "center_ink": 0.4828,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            132.8,
+            387.6
+          ],
+          "ring_ink": 0.0241,
+          "angular_support": 0.0,
+          "center_ink": 0.2759,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            132.8,
+            407.54
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.25,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            132.8,
+            427.48
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            132.8,
+            447.42
+          ],
+          "ring_ink": 0.0837,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            138.8,
+            473.36
+          ],
+          "ring_ink": 0.2,
+          "angular_support": 0.4167,
+          "center_ink": 0.4828,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q01.png",
+      "answer_bbox": [
+        67.612,
+        221.868,
+        95.184,
+        289.844
+      ],
+      "source_crop_bbox_pixels": [
+        169,
+        555,
+        238,
+        725
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:30:04.367Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p3-1",
+        "question_number": 1,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q01.png",
+        "source_crop_sha256": "89d3e2335b7c22e832039273a90ccd7b4f406450c68940785ed93dcc977dec73",
+        "evidence_hash": "cbb8c2b6621ec13c774d893cde454d0f42390b91efdad18ddddbf0b7113e2203",
+        "official_answer": 5,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:30:04.367Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p3-2",
+      "question_number": 2,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 5,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            192.88,
+            387.6
+          ],
+          "ring_ink": 0.0236,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            192.88,
+            407.54
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            192.88,
+            427.48
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            192.88,
+            447.42
+          ],
+          "ring_ink": 0.0824,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            198.88,
+            473.36
+          ],
+          "ring_ink": 0.2778,
+          "angular_support": 0.5,
+          "center_ink": 0.4643,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            192.88,
+            387.6
+          ],
+          "ring_ink": 0.0236,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            192.88,
+            407.54
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            192.88,
+            427.48
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            192.88,
+            447.42
+          ],
+          "ring_ink": 0.0824,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            198.88,
+            473.36
+          ],
+          "ring_ink": 0.2778,
+          "angular_support": 0.5,
+          "center_ink": 0.4286,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q02.png",
+      "answer_bbox": [
+        103.624,
+        221.868,
+        131.196,
+        289.844
+      ],
+      "source_crop_bbox_pixels": [
+        259,
+        555,
+        328,
+        725
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:30:07.839Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p3-2",
+        "question_number": 2,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q02.png",
+        "source_crop_sha256": "a5b584dde1f9f4181c94179d19667b21741a600efaf403531d66258d7d02c299",
+        "evidence_hash": "d89128695e153008ef516c9f181853298faf17b06a681b364968b06e60bd9486",
+        "official_answer": 5,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:30:07.839Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p3-3",
+      "question_number": 3,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 3,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            252.96,
+            387.6
+          ],
+          "ring_ink": 0.0275,
+          "angular_support": 0.0,
+          "center_ink": 0.3333,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            252.96,
+            413.54
+          ],
+          "ring_ink": 0.0859,
+          "angular_support": 0.25,
+          "center_ink": 0.2593,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            258.96,
+            433.48
+          ],
+          "ring_ink": 0.0977,
+          "angular_support": 0.25,
+          "center_ink": 0.3704,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            252.96,
+            447.42
+          ],
+          "ring_ink": 0.0591,
+          "angular_support": 0.1667,
+          "center_ink": 0.3704,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            252.96,
+            467.36
+          ],
+          "ring_ink": 0.1818,
+          "angular_support": 0.3333,
+          "center_ink": 0.2963,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            252.96,
+            387.6
+          ],
+          "ring_ink": 0.0275,
+          "angular_support": 0.0,
+          "center_ink": 0.3333,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            252.96,
+            413.54
+          ],
+          "ring_ink": 0.0859,
+          "angular_support": 0.25,
+          "center_ink": 0.2222,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            258.96,
+            433.48
+          ],
+          "ring_ink": 0.0938,
+          "angular_support": 0.25,
+          "center_ink": 0.3704,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            252.96,
+            447.42
+          ],
+          "ring_ink": 0.0591,
+          "angular_support": 0.1667,
+          "center_ink": 0.3704,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            252.96,
+            467.36
+          ],
+          "ring_ink": 0.1818,
+          "angular_support": 0.3333,
+          "center_ink": 0.2963,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q03.png",
+      "answer_bbox": [
+        139.635,
+        221.868,
+        167.207,
+        289.844
+      ],
+      "source_crop_bbox_pixels": [
+        349,
+        555,
+        418,
+        725
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:30:12.573Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p3-3",
+        "question_number": 3,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q03.png",
+        "source_crop_sha256": "732223958619bbfc83d34e2e30f2ef348249707080ab0a0d71576483bcedf5f1",
+        "evidence_hash": "eb36b43a0c6061f16635d1bea303731a560ff5d3b4608c77d6e1ef4fc5fb22b7",
+        "official_answer": 3,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:30:12.573Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p3-4",
+      "question_number": 4,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 2,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            313.04,
+            387.6
+          ],
+          "ring_ink": 0.1647,
+          "angular_support": 0.4167,
+          "center_ink": 0.2963,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            318.04,
+            413.54
+          ],
+          "ring_ink": 0.1094,
+          "angular_support": 0.25,
+          "center_ink": 0.4074,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            313.04,
+            427.48
+          ],
+          "ring_ink": 0.0703,
+          "angular_support": 0.1667,
+          "center_ink": 0.3333,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            313.04,
+            447.42
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2963,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            313.04,
+            467.36
+          ],
+          "ring_ink": 0.1265,
+          "angular_support": 0.3333,
+          "center_ink": 0.1852,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            313.04,
+            387.6
+          ],
+          "ring_ink": 0.149,
+          "angular_support": 0.4167,
+          "center_ink": 0.2963,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            318.04,
+            413.54
+          ],
+          "ring_ink": 0.1055,
+          "angular_support": 0.25,
+          "center_ink": 0.4074,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            313.04,
+            427.48
+          ],
+          "ring_ink": 0.0664,
+          "angular_support": 0.1667,
+          "center_ink": 0.3333,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            313.04,
+            447.42
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2593,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            313.04,
+            467.36
+          ],
+          "ring_ink": 0.1265,
+          "angular_support": 0.3333,
+          "center_ink": 0.1852,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q04.png",
+      "answer_bbox": [
+        175.647,
+        221.868,
+        203.219,
+        289.844
+      ],
+      "source_crop_bbox_pixels": [
+        439,
+        555,
+        508,
+        725
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:30:16.968Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p3-4",
+        "question_number": 4,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q04.png",
+        "source_crop_sha256": "2a508f31287f5ebc0bfe4621e0bcea6fab2a7ddcf6072f50e6ad9374fd4d8979",
+        "evidence_hash": "47ef7aa1b5a6d28afb3ccb514a449811f82d129761098b6950725a69e5ade9c4",
+        "official_answer": 2,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:30:16.968Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p4-5",
+      "question_number": 5,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 4,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            373.12,
+            387.6
+          ],
+          "ring_ink": 0.0669,
+          "angular_support": 0.1667,
+          "center_ink": 0.2143,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            373.12,
+            407.54
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2143,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            373.12,
+            427.48
+          ],
+          "ring_ink": 0.0941,
+          "angular_support": 0.25,
+          "center_ink": 0.2143,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            379.12,
+            453.42
+          ],
+          "ring_ink": 0.102,
+          "angular_support": 0.25,
+          "center_ink": 0.4286,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            373.12,
+            467.36
+          ],
+          "ring_ink": 0.1984,
+          "angular_support": 0.5,
+          "center_ink": 0.2143,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            373.12,
+            387.6
+          ],
+          "ring_ink": 0.0512,
+          "angular_support": 0.1667,
+          "center_ink": 0.2143,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            373.12,
+            407.54
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2143,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            373.12,
+            427.48
+          ],
+          "ring_ink": 0.0941,
+          "angular_support": 0.25,
+          "center_ink": 0.2143,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            379.12,
+            453.42
+          ],
+          "ring_ink": 0.102,
+          "angular_support": 0.25,
+          "center_ink": 0.3929,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            373.12,
+            467.36
+          ],
+          "ring_ink": 0.1944,
+          "angular_support": 0.5,
+          "center_ink": 0.1786,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q05.png",
+      "answer_bbox": [
+        211.659,
+        221.868,
+        239.231,
+        289.844
+      ],
+      "source_crop_bbox_pixels": [
+        529,
+        555,
+        598,
+        725
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:30:20.432Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p4-5",
+        "question_number": 5,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q05.png",
+        "source_crop_sha256": "78f94fd77bcf764b49e7a694026f27de8d25a6adeebbff971987c43c87cf0d82",
+        "evidence_hash": "dabd2742d3af4cad0932eee7e3b476a4626b2ae91815b0026dd931dff8f779fc",
+        "official_answer": 4,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:30:20.432Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p4-6",
+      "question_number": 6,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 3,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            433.2,
+            387.6
+          ],
+          "ring_ink": 0.0683,
+          "angular_support": 0.1667,
+          "center_ink": 0.2069,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            433.2,
+            407.54
+          ],
+          "ring_ink": 0.0913,
+          "angular_support": 0.25,
+          "center_ink": 0.2143,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            439.2,
+            433.48
+          ],
+          "ring_ink": 0.1071,
+          "angular_support": 0.25,
+          "center_ink": 0.3929,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            433.2,
+            447.42
+          ],
+          "ring_ink": 0.0677,
+          "angular_support": 0.1667,
+          "center_ink": 0.2143,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            433.2,
+            467.36
+          ],
+          "ring_ink": 0.124,
+          "angular_support": 0.3333,
+          "center_ink": 0.1724,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            433.2,
+            387.6
+          ],
+          "ring_ink": 0.0683,
+          "angular_support": 0.1667,
+          "center_ink": 0.2069,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            433.2,
+            407.54
+          ],
+          "ring_ink": 0.0913,
+          "angular_support": 0.25,
+          "center_ink": 0.2143,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            439.2,
+            433.48
+          ],
+          "ring_ink": 0.1071,
+          "angular_support": 0.25,
+          "center_ink": 0.3929,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            433.2,
+            447.42
+          ],
+          "ring_ink": 0.0677,
+          "angular_support": 0.1667,
+          "center_ink": 0.2143,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            433.2,
+            467.36
+          ],
+          "ring_ink": 0.124,
+          "angular_support": 0.3333,
+          "center_ink": 0.1724,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q06.png",
+      "answer_bbox": [
+        247.67,
+        221.868,
+        275.243,
+        289.844
+      ],
+      "source_crop_bbox_pixels": [
+        619,
+        555,
+        688,
+        725
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:30:23.964Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p4-6",
+        "question_number": 6,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q06.png",
+        "source_crop_sha256": "df76382c1b97a4c435dd205f038a82ca117be4f46a177cec3ff017ea26c7dfb1",
+        "evidence_hash": "3a14a9d7738a854ec2a4619954adbf5c6968facf05fcb84769b953d27dacbe90",
+        "official_answer": 3,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:30:23.964Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p4-7",
+      "question_number": 7,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 3,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            493.28,
+            387.6
+          ],
+          "ring_ink": 0.0675,
+          "angular_support": 0.1667,
+          "center_ink": 0.2069,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            493.28,
+            407.54
+          ],
+          "ring_ink": 0.0866,
+          "angular_support": 0.1667,
+          "center_ink": 0.2143,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            499.28,
+            433.48
+          ],
+          "ring_ink": 0.1063,
+          "angular_support": 0.25,
+          "center_ink": 0.4286,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            493.28,
+            447.42
+          ],
+          "ring_ink": 0.076,
+          "angular_support": 0.1667,
+          "center_ink": 0.2069,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            493.28,
+            467.36
+          ],
+          "ring_ink": 0.123,
+          "angular_support": 0.3333,
+          "center_ink": 0.1724,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            493.28,
+            387.6
+          ],
+          "ring_ink": 0.0675,
+          "angular_support": 0.1667,
+          "center_ink": 0.2069,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            493.28,
+            407.54
+          ],
+          "ring_ink": 0.0866,
+          "angular_support": 0.1667,
+          "center_ink": 0.2143,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            499.28,
+            433.48
+          ],
+          "ring_ink": 0.1063,
+          "angular_support": 0.25,
+          "center_ink": 0.4286,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            493.28,
+            447.42
+          ],
+          "ring_ink": 0.076,
+          "angular_support": 0.1667,
+          "center_ink": 0.2069,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            493.28,
+            467.36
+          ],
+          "ring_ink": 0.123,
+          "angular_support": 0.3333,
+          "center_ink": 0.1379,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q07.png",
+      "answer_bbox": [
+        283.682,
+        221.868,
+        311.254,
+        289.844
+      ],
+      "source_crop_bbox_pixels": [
+        709,
+        555,
+        778,
+        725
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:30:28.179Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p4-7",
+        "question_number": 7,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q07.png",
+        "source_crop_sha256": "e562f4f7126073dbdad63b65d6289c8621a34f23fd286e98ff6e0444b0e003f2",
+        "evidence_hash": "8fee14df62dd26315b89f00501f282bedff89e86b9ba4a3fa33accd74afcc4fb",
+        "official_answer": 3,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:30:28.179Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p5-8",
+      "question_number": 8,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 5,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            553.36,
+            387.6
+          ],
+          "ring_ink": 0.0438,
+          "angular_support": 0.1667,
+          "center_ink": 0.2333,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            553.36,
+            407.54
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2069,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            553.36,
+            427.48
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2069,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            553.36,
+            447.42
+          ],
+          "ring_ink": 0.0833,
+          "angular_support": 0.1667,
+          "center_ink": 0.2,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            559.36,
+            473.36
+          ],
+          "ring_ink": 0.2369,
+          "angular_support": 0.5,
+          "center_ink": 0.4,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            553.36,
+            387.6
+          ],
+          "ring_ink": 0.0438,
+          "angular_support": 0.1667,
+          "center_ink": 0.2,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            553.36,
+            407.54
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2069,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            553.36,
+            427.48
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2069,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            553.36,
+            447.42
+          ],
+          "ring_ink": 0.0833,
+          "angular_support": 0.1667,
+          "center_ink": 0.2,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            559.36,
+            473.36
+          ],
+          "ring_ink": 0.2329,
+          "angular_support": 0.5,
+          "center_ink": 0.4,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q08.png",
+      "answer_bbox": [
+        319.694,
+        221.868,
+        347.266,
+        289.844
+      ],
+      "source_crop_bbox_pixels": [
+        799,
+        555,
+        868,
+        725
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:30:32.261Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p5-8",
+        "question_number": 8,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q08.png",
+        "source_crop_sha256": "146c6621e6f9f9a86a59a96cfc0018f24f968db147f0b25f15989e13f1b7b6cf",
+        "evidence_hash": "dda6878aa1392885c60dde260a3ab49ca4a4de24f39edceffea9293e7932f917",
+        "official_answer": 5,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:30:32.261Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p5-9",
+      "question_number": 9,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 4,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            613.44,
+            387.6
+          ],
+          "ring_ink": 0.0518,
+          "angular_support": 0.1667,
+          "center_ink": 0.2,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            613.44,
+            407.54
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1875,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            613.44,
+            427.48
+          ],
+          "ring_ink": 0.0857,
+          "angular_support": 0.1667,
+          "center_ink": 0.1875,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            619.44,
+            453.42
+          ],
+          "ring_ink": 0.1048,
+          "angular_support": 0.25,
+          "center_ink": 0.4667,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            613.44,
+            467.36
+          ],
+          "ring_ink": 0.251,
+          "angular_support": 0.5,
+          "center_ink": 0.1724,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            613.44,
+            387.6
+          ],
+          "ring_ink": 0.0478,
+          "angular_support": 0.1667,
+          "center_ink": 0.2,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            613.44,
+            407.54
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1562,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            613.44,
+            427.48
+          ],
+          "ring_ink": 0.0857,
+          "angular_support": 0.1667,
+          "center_ink": 0.1875,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            619.44,
+            453.42
+          ],
+          "ring_ink": 0.1008,
+          "angular_support": 0.25,
+          "center_ink": 0.4667,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            613.44,
+            467.36
+          ],
+          "ring_ink": 0.251,
+          "angular_support": 0.5,
+          "center_ink": 0.1724,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q09.png",
+      "answer_bbox": [
+        355.705,
+        221.868,
+        383.278,
+        289.844
+      ],
+      "source_crop_bbox_pixels": [
+        889,
+        555,
+        958,
+        725
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:30:37.622Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p5-9",
+        "question_number": 9,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q09.png",
+        "source_crop_sha256": "fe1878ca457955c7e66d0d9ccd3456020177e10a619ecb367b5e6c18b5b18d7a",
+        "evidence_hash": "bbdbf427474632c1d4d0d407b782896e56155f3b6021ac9864253d05f8397ddb",
+        "official_answer": 4,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:30:37.622Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p5-10",
+      "question_number": 10,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 4,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            673.52,
+            387.6
+          ],
+          "ring_ink": 0.0976,
+          "angular_support": 0.1667,
+          "center_ink": 0.1935,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            673.52,
+            407.54
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1562,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            673.52,
+            427.48
+          ],
+          "ring_ink": 0.0905,
+          "angular_support": 0.1667,
+          "center_ink": 0.1562,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            678.52,
+            453.42
+          ],
+          "ring_ink": 0.1061,
+          "angular_support": 0.25,
+          "center_ink": 0.4375,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            673.52,
+            467.36
+          ],
+          "ring_ink": 0.2421,
+          "angular_support": 0.5,
+          "center_ink": 0.1724,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            673.52,
+            387.6
+          ],
+          "ring_ink": 0.0976,
+          "angular_support": 0.1667,
+          "center_ink": 0.1935,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            673.52,
+            407.54
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1562,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            673.52,
+            427.48
+          ],
+          "ring_ink": 0.0864,
+          "angular_support": 0.1667,
+          "center_ink": 0.1562,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            678.52,
+            453.42
+          ],
+          "ring_ink": 0.1061,
+          "angular_support": 0.25,
+          "center_ink": 0.4375,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            673.52,
+            467.36
+          ],
+          "ring_ink": 0.2421,
+          "angular_support": 0.5,
+          "center_ink": 0.1724,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q10.png",
+      "answer_bbox": [
+        391.717,
+        221.868,
+        419.289,
+        289.844
+      ],
+      "source_crop_bbox_pixels": [
+        979,
+        555,
+        1048,
+        725
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:30:45.347Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p5-10",
+        "question_number": 10,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q10.png",
+        "source_crop_sha256": "9177e35fcdc9b975eede6764739a84d97261a21c56c11ade76733757c61d6743",
+        "evidence_hash": "949beb61d01cb5bf80c25610356f3832af5aef9fbe67d27952bc17261bcc6d34",
+        "official_answer": 4,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:30:45.347Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p5-11",
+      "question_number": 11,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 1,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            138.8,
+            512.0
+          ],
+          "ring_ink": 0.1129,
+          "angular_support": 0.25,
+          "center_ink": 0.4286,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            132.8,
+            526.94
+          ],
+          "ring_ink": 0.0398,
+          "angular_support": 0.1667,
+          "center_ink": 0.25,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            132.8,
+            546.88
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            132.8,
+            566.82
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            138.8,
+            592.76
+          ],
+          "ring_ink": 0.1786,
+          "angular_support": 0.3333,
+          "center_ink": 0.3214,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            138.8,
+            512.0
+          ],
+          "ring_ink": 0.1089,
+          "angular_support": 0.25,
+          "center_ink": 0.4286,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            132.8,
+            526.94
+          ],
+          "ring_ink": 0.0359,
+          "angular_support": 0.1667,
+          "center_ink": 0.25,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            132.8,
+            546.88
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            132.8,
+            566.82
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            138.8,
+            592.76
+          ],
+          "ring_ink": 0.1706,
+          "angular_support": 0.3333,
+          "center_ink": 0.3214,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q11.png",
+      "answer_bbox": [
+        67.612,
+        293.825,
+        95.184,
+        361.441
+      ],
+      "source_crop_bbox_pixels": [
+        169,
+        735,
+        238,
+        904
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:30:54.086Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p5-11",
+        "question_number": 11,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q11.png",
+        "source_crop_sha256": "bac52e51e9b43d9d1f296c302366030516e4c38e89aab9f38761442a1a003a86",
+        "evidence_hash": "8d130842f6b4c2031ec8759037e6f8dec0546d6ba0956ae1f3da6643baee67a8",
+        "official_answer": 1,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:30:54.086Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p6-12",
+      "question_number": 12,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 1,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            198.88,
+            513.0
+          ],
+          "ring_ink": 0.1008,
+          "angular_support": 0.25,
+          "center_ink": 0.5,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            192.88,
+            526.94
+          ],
+          "ring_ink": 0.0484,
+          "angular_support": 0.1667,
+          "center_ink": 0.2593,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            192.88,
+            546.88
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2593,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            192.88,
+            566.82
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            198.88,
+            592.76
+          ],
+          "ring_ink": 0.2016,
+          "angular_support": 0.4167,
+          "center_ink": 0.3103,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            198.88,
+            513.0
+          ],
+          "ring_ink": 0.1008,
+          "angular_support": 0.25,
+          "center_ink": 0.5,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            192.88,
+            526.94
+          ],
+          "ring_ink": 0.0484,
+          "angular_support": 0.1667,
+          "center_ink": 0.2593,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            192.88,
+            546.88
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2593,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            192.88,
+            566.82
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            198.88,
+            592.76
+          ],
+          "ring_ink": 0.2016,
+          "angular_support": 0.4167,
+          "center_ink": 0.3103,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q12.png",
+      "answer_bbox": [
+        103.624,
+        293.825,
+        131.196,
+        361.441
+      ],
+      "source_crop_bbox_pixels": [
+        259,
+        735,
+        328,
+        904
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:31:00.357Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p6-12",
+        "question_number": 12,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q12.png",
+        "source_crop_sha256": "7033295421337b4578b6dde5e89e4f62dec0ffcf3bf147a7058553c675cac6c3",
+        "evidence_hash": "5ae29dcab1601dc0d3865ac5e9ff6a6e6edb728a43cb1dd588b2f935a88f67ba",
+        "official_answer": 1,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:31:00.357Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p6-13",
+      "question_number": 13,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 3,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            252.96,
+            507.0
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.3077,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            252.96,
+            526.94
+          ],
+          "ring_ink": 0.1016,
+          "angular_support": 0.25,
+          "center_ink": 0.2222,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            257.96,
+            552.88
+          ],
+          "ring_ink": 0.1044,
+          "angular_support": 0.25,
+          "center_ink": 0.4444,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            252.96,
+            566.82
+          ],
+          "ring_ink": 0.0478,
+          "angular_support": 0.1667,
+          "center_ink": 0.25,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            252.96,
+            592.76
+          ],
+          "ring_ink": 0.2749,
+          "angular_support": 0.5,
+          "center_ink": 0.3214,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            252.96,
+            507.0
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.3077,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            252.96,
+            526.94
+          ],
+          "ring_ink": 0.0976,
+          "angular_support": 0.25,
+          "center_ink": 0.2222,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            257.96,
+            552.88
+          ],
+          "ring_ink": 0.1004,
+          "angular_support": 0.25,
+          "center_ink": 0.4444,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            252.96,
+            566.82
+          ],
+          "ring_ink": 0.0438,
+          "angular_support": 0.1667,
+          "center_ink": 0.25,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            252.96,
+            592.76
+          ],
+          "ring_ink": 0.2749,
+          "angular_support": 0.5,
+          "center_ink": 0.3214,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q13.png",
+      "answer_bbox": [
+        139.635,
+        293.825,
+        167.207,
+        361.441
+      ],
+      "source_crop_bbox_pixels": [
+        349,
+        735,
+        418,
+        904
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:31:13.503Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p6-13",
+        "question_number": 13,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q13.png",
+        "source_crop_sha256": "14e1afbf010a08f215fd9df609732854d13913601aef1cd58da42f69313e6d9a",
+        "evidence_hash": "9d10f1598c882e70807488059ebff50e67d6faab5f7d08dcbdbd1f108229d71f",
+        "official_answer": 3,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:31:13.503Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p7-14",
+      "question_number": 14,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 5,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            313.04,
+            507.0
+          ],
+          "ring_ink": 0.0287,
+          "angular_support": 0.0833,
+          "center_ink": 0.3077,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            313.04,
+            526.94
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2222,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            313.04,
+            546.88
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2222,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            313.04,
+            566.82
+          ],
+          "ring_ink": 0.1036,
+          "angular_support": 0.25,
+          "center_ink": 0.1429,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            319.04,
+            592.76
+          ],
+          "ring_ink": 0.2032,
+          "angular_support": 0.4167,
+          "center_ink": 0.4643,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            313.04,
+            507.0
+          ],
+          "ring_ink": 0.0246,
+          "angular_support": 0.0833,
+          "center_ink": 0.3077,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            313.04,
+            526.94
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1852,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            313.04,
+            546.88
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2222,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            313.04,
+            566.82
+          ],
+          "ring_ink": 0.0996,
+          "angular_support": 0.25,
+          "center_ink": 0.1429,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            319.04,
+            592.76
+          ],
+          "ring_ink": 0.2032,
+          "angular_support": 0.4167,
+          "center_ink": 0.4643,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q14.png",
+      "answer_bbox": [
+        175.647,
+        293.825,
+        203.219,
+        361.441
+      ],
+      "source_crop_bbox_pixels": [
+        439,
+        735,
+        508,
+        904
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:31:21.613Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p7-14",
+        "question_number": 14,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q14.png",
+        "source_crop_sha256": "6901496607f7f0595156812890772f85f370377d9c0353dc86d9037c5062556c",
+        "evidence_hash": "f81da6ac03cd896034a7c5c57047e7e32447edd21b8e13ef067facbb9e9b2065",
+        "official_answer": 5,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:31:21.613Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p7-15",
+      "question_number": 15,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 5,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            373.12,
+            507.0
+          ],
+          "ring_ink": 0.0363,
+          "angular_support": 0.1667,
+          "center_ink": 0.2308,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            373.12,
+            526.94
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2222,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            373.12,
+            546.88
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2222,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            373.12,
+            566.82
+          ],
+          "ring_ink": 0.1036,
+          "angular_support": 0.25,
+          "center_ink": 0.2143,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            379.12,
+            592.76
+          ],
+          "ring_ink": 0.1937,
+          "angular_support": 0.5,
+          "center_ink": 0.4483,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            373.12,
+            507.0
+          ],
+          "ring_ink": 0.0363,
+          "angular_support": 0.1667,
+          "center_ink": 0.2308,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            373.12,
+            526.94
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2222,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            373.12,
+            546.88
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2222,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            373.12,
+            566.82
+          ],
+          "ring_ink": 0.0996,
+          "angular_support": 0.25,
+          "center_ink": 0.2143,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            379.12,
+            592.76
+          ],
+          "ring_ink": 0.1937,
+          "angular_support": 0.5,
+          "center_ink": 0.4483,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q15.png",
+      "answer_bbox": [
+        211.659,
+        293.825,
+        239.231,
+        361.441
+      ],
+      "source_crop_bbox_pixels": [
+        529,
+        735,
+        598,
+        904
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:31:26.261Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p7-15",
+        "question_number": 15,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q15.png",
+        "source_crop_sha256": "53a09cd2da08559ccc9e87bc15f503c74e2dc9603d3458efd1abe99e913e9e6a",
+        "evidence_hash": "b563e1cf1b48a2103fb7e9d900b9b76669063fd7ad1ecd56642c54ec5eb90527",
+        "official_answer": 5,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:31:26.261Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p8-16",
+      "question_number": 16,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 1,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            438.2,
+            513.0
+          ],
+          "ring_ink": 0.1089,
+          "angular_support": 0.25,
+          "center_ink": 0.4286,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            433.2,
+            526.94
+          ],
+          "ring_ink": 0.0598,
+          "angular_support": 0.1667,
+          "center_ink": 0.2143,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            433.2,
+            546.88
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2143,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            433.2,
+            566.82
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1786,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            433.2,
+            592.76
+          ],
+          "ring_ink": 0.2063,
+          "angular_support": 0.5,
+          "center_ink": 0.1429,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            438.2,
+            513.0
+          ],
+          "ring_ink": 0.1089,
+          "angular_support": 0.25,
+          "center_ink": 0.4286,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            433.2,
+            526.94
+          ],
+          "ring_ink": 0.0598,
+          "angular_support": 0.1667,
+          "center_ink": 0.2143,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            433.2,
+            546.88
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2143,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            433.2,
+            566.82
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1786,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            433.2,
+            592.76
+          ],
+          "ring_ink": 0.2024,
+          "angular_support": 0.5,
+          "center_ink": 0.1429,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q16.png",
+      "answer_bbox": [
+        247.67,
+        293.825,
+        275.243,
+        361.441
+      ],
+      "source_crop_bbox_pixels": [
+        619,
+        735,
+        688,
+        904
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:31:30.784Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p8-16",
+        "question_number": 16,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q16.png",
+        "source_crop_sha256": "dc20d77130a106c2f94768af42b07019ae9b54a0f4a8d42c6536afa97cf50680",
+        "evidence_hash": "c0fa29bb371bdefa20ebeb7cff54d95ab1095a82d3b1478517bffa85c313bf48",
+        "official_answer": 1,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:31:30.784Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p8-17",
+      "question_number": 17,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 2,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            493.28,
+            507.0
+          ],
+          "ring_ink": 0.1389,
+          "angular_support": 0.4167,
+          "center_ink": 0.1923,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            498.28,
+            532.94
+          ],
+          "ring_ink": 0.1076,
+          "angular_support": 0.25,
+          "center_ink": 0.3571,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            493.28,
+            546.88
+          ],
+          "ring_ink": 0.0556,
+          "angular_support": 0.1667,
+          "center_ink": 0.2069,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            493.28,
+            566.82
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2069,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            493.28,
+            592.76
+          ],
+          "ring_ink": 0.22,
+          "angular_support": 0.4167,
+          "center_ink": 0.1379,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            493.28,
+            507.0
+          ],
+          "ring_ink": 0.1389,
+          "angular_support": 0.4167,
+          "center_ink": 0.1923,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            498.28,
+            532.94
+          ],
+          "ring_ink": 0.1076,
+          "angular_support": 0.25,
+          "center_ink": 0.3571,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            493.28,
+            546.88
+          ],
+          "ring_ink": 0.0556,
+          "angular_support": 0.1667,
+          "center_ink": 0.2069,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            493.28,
+            566.82
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2069,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            493.28,
+            592.76
+          ],
+          "ring_ink": 0.22,
+          "angular_support": 0.4167,
+          "center_ink": 0.1379,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q17.png",
+      "answer_bbox": [
+        283.682,
+        293.825,
+        311.254,
+        361.441
+      ],
+      "source_crop_bbox_pixels": [
+        709,
+        735,
+        778,
+        904
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:31:36.012Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p8-17",
+        "question_number": 17,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q17.png",
+        "source_crop_sha256": "e7d7030e917882036ac5d1168ca8512457da475403c0724b7b2b3f0529681823",
+        "evidence_hash": "5b5853b6818554e34ed3575db271e32f6a8cb791b66657052a5d7f2e12ccb878",
+        "official_answer": 2,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:31:36.012Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p8-18",
+      "question_number": 18,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 5,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            553.36,
+            507.0
+          ],
+          "ring_ink": 0.0397,
+          "angular_support": 0.1667,
+          "center_ink": 0.1923,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            553.36,
+            526.94
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1852,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            553.36,
+            546.88
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1786,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            553.36,
+            566.82
+          ],
+          "ring_ink": 0.092,
+          "angular_support": 0.25,
+          "center_ink": 0.1724,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            558.36,
+            592.76
+          ],
+          "ring_ink": 0.2032,
+          "angular_support": 0.5,
+          "center_ink": 0.3793,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            553.36,
+            507.0
+          ],
+          "ring_ink": 0.0397,
+          "angular_support": 0.1667,
+          "center_ink": 0.1923,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            553.36,
+            526.94
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1481,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            553.36,
+            546.88
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1786,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            553.36,
+            566.82
+          ],
+          "ring_ink": 0.092,
+          "angular_support": 0.25,
+          "center_ink": 0.1724,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            558.36,
+            592.76
+          ],
+          "ring_ink": 0.2032,
+          "angular_support": 0.5,
+          "center_ink": 0.3793,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q18.png",
+      "answer_bbox": [
+        319.694,
+        293.825,
+        347.266,
+        361.441
+      ],
+      "source_crop_bbox_pixels": [
+        799,
+        735,
+        868,
+        904
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:31:47.585Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p8-18",
+        "question_number": 18,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q18.png",
+        "source_crop_sha256": "b14529072cf3054865af83df591d789d10066441d376eda4db0e5bf6dcad6388",
+        "evidence_hash": "028cd080a1bcf0490187e11f7a64af374607f2231ce9840b7068aa1caf72a9a9",
+        "official_answer": 5,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:31:47.585Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p8-19",
+      "question_number": 19,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 3,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            613.44,
+            507.0
+          ],
+          "ring_ink": 0.0391,
+          "angular_support": 0.1667,
+          "center_ink": 0.1538,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            613.44,
+            526.94
+          ],
+          "ring_ink": 0.0984,
+          "angular_support": 0.25,
+          "center_ink": 0.1429,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            618.44,
+            552.88
+          ],
+          "ring_ink": 0.1055,
+          "angular_support": 0.25,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            613.44,
+            566.82
+          ],
+          "ring_ink": 0.0635,
+          "angular_support": 0.1667,
+          "center_ink": 0.1429,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            619.44,
+            592.76
+          ],
+          "ring_ink": 0.0873,
+          "angular_support": 0.25,
+          "center_ink": 0.1429,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            613.44,
+            507.0
+          ],
+          "ring_ink": 0.0391,
+          "angular_support": 0.1667,
+          "center_ink": 0.1538,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            613.44,
+            526.94
+          ],
+          "ring_ink": 0.0984,
+          "angular_support": 0.25,
+          "center_ink": 0.1429,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            618.44,
+            552.88
+          ],
+          "ring_ink": 0.1055,
+          "angular_support": 0.25,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            613.44,
+            566.82
+          ],
+          "ring_ink": 0.0635,
+          "angular_support": 0.1667,
+          "center_ink": 0.1429,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            619.44,
+            592.76
+          ],
+          "ring_ink": 0.0873,
+          "angular_support": 0.25,
+          "center_ink": 0.1429,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q19.png",
+      "answer_bbox": [
+        355.705,
+        293.825,
+        383.278,
+        361.441
+      ],
+      "source_crop_bbox_pixels": [
+        889,
+        735,
+        958,
+        904
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:31:52.129Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p8-19",
+        "question_number": 19,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q19.png",
+        "source_crop_sha256": "621211dc9297c750cb5db67b9545a89fe24c263177cfde55fc1e9924809a25db",
+        "evidence_hash": "aca0cd841b54c196c0ba1f19d8175c7d741c9f0a7c050d355baea6eb985060fe",
+        "official_answer": 3,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:31:52.129Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p8-20",
+      "question_number": 20,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 3,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            673.52,
+            507.0
+          ],
+          "ring_ink": 0.0391,
+          "angular_support": 0.1667,
+          "center_ink": 0.1923,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            673.52,
+            532.94
+          ],
+          "ring_ink": 0.0898,
+          "angular_support": 0.25,
+          "center_ink": 0.1071,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            677.52,
+            552.88
+          ],
+          "ring_ink": 0.1098,
+          "angular_support": 0.25,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            673.52,
+            566.82
+          ],
+          "ring_ink": 0.0637,
+          "angular_support": 0.1667,
+          "center_ink": 0.1071,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            673.52,
+            592.76
+          ],
+          "ring_ink": 0.0909,
+          "angular_support": 0.1667,
+          "center_ink": 0.1429,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            673.52,
+            507.0
+          ],
+          "ring_ink": 0.0391,
+          "angular_support": 0.1667,
+          "center_ink": 0.1923,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            673.52,
+            532.94
+          ],
+          "ring_ink": 0.082,
+          "angular_support": 0.25,
+          "center_ink": 0.1071,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            677.52,
+            552.88
+          ],
+          "ring_ink": 0.1098,
+          "angular_support": 0.25,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            673.52,
+            566.82
+          ],
+          "ring_ink": 0.0637,
+          "angular_support": 0.1667,
+          "center_ink": 0.1071,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            673.52,
+            592.76
+          ],
+          "ring_ink": 0.087,
+          "angular_support": 0.1667,
+          "center_ink": 0.1429,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q20.png",
+      "answer_bbox": [
+        391.717,
+        293.825,
+        419.289,
+        361.441
+      ],
+      "source_crop_bbox_pixels": [
+        979,
+        735,
+        1048,
+        904
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:31:56.269Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p8-20",
+        "question_number": 20,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q20.png",
+        "source_crop_sha256": "cc9d802421cea9c37a21252108bc2a950cb68cc4cdc2dc91abebf6e34fa18720",
+        "evidence_hash": "e414db3e9f3f77cc365ef78f738c874d93cc048a7f7a380b454435f031978c89",
+        "official_answer": 3,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:31:56.269Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p9-21",
+      "question_number": 21,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 5,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            132.8,
+            626.3
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2759,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            132.8,
+            646.24
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.3214,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            132.8,
+            666.18
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.3214,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            132.8,
+            686.12
+          ],
+          "ring_ink": 0.0988,
+          "angular_support": 0.25,
+          "center_ink": 0.3214,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            138.8,
+            712.06
+          ],
+          "ring_ink": 0.1753,
+          "angular_support": 0.3333,
+          "center_ink": 0.6071,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            132.8,
+            626.3
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2759,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            132.8,
+            646.24
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.3214,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            132.8,
+            666.18
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.3214,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            132.8,
+            686.12
+          ],
+          "ring_ink": 0.0988,
+          "angular_support": 0.25,
+          "center_ink": 0.3214,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            138.8,
+            712.06
+          ],
+          "ring_ink": 0.1673,
+          "angular_support": 0.3333,
+          "center_ink": 0.6071,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q21.png",
+      "answer_bbox": [
+        67.612,
+        365.183,
+        95.184,
+        432.979
+      ],
+      "source_crop_bbox_pixels": [
+        169,
+        913,
+        238,
+        1083
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:32:01.355Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p9-21",
+        "question_number": 21,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q21.png",
+        "source_crop_sha256": "bc1e83a7c2fc2d3491720143137d8e649183d116fbec6e157ca3c9bbdf4a8e56",
+        "evidence_hash": "5d553ed5c8cace487e960ffdfc1d71a2ad490437c7dd16f649af0b755f5c464b",
+        "official_answer": 5,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:32:01.355Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p9-22",
+      "question_number": 22,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 3,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            192.88,
+            626.3
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.3103,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            192.88,
+            646.24
+          ],
+          "ring_ink": 0.083,
+          "angular_support": 0.25,
+          "center_ink": 0.2759,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            197.88,
+            672.18
+          ],
+          "ring_ink": 0.1076,
+          "angular_support": 0.25,
+          "center_ink": 0.3929,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            192.88,
+            686.12
+          ],
+          "ring_ink": 0.0488,
+          "angular_support": 0.1667,
+          "center_ink": 0.3333,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            192.88,
+            712.06
+          ],
+          "ring_ink": 0.1048,
+          "angular_support": 0.1667,
+          "center_ink": 0.4074,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            192.88,
+            626.3
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.3103,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            192.88,
+            646.24
+          ],
+          "ring_ink": 0.083,
+          "angular_support": 0.25,
+          "center_ink": 0.2759,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            197.88,
+            672.18
+          ],
+          "ring_ink": 0.1076,
+          "angular_support": 0.25,
+          "center_ink": 0.3929,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            192.88,
+            686.12
+          ],
+          "ring_ink": 0.0488,
+          "angular_support": 0.1667,
+          "center_ink": 0.2963,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            192.88,
+            712.06
+          ],
+          "ring_ink": 0.1048,
+          "angular_support": 0.1667,
+          "center_ink": 0.4074,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q22.png",
+      "answer_bbox": [
+        103.624,
+        365.183,
+        131.196,
+        432.979
+      ],
+      "source_crop_bbox_pixels": [
+        259,
+        913,
+        328,
+        1083
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:32:05.471Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p9-22",
+        "question_number": 22,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q22.png",
+        "source_crop_sha256": "a390828592edbf81810df888fcf0d5e4ad8c511e49366642dae34828887aba3f",
+        "evidence_hash": "36d72385538c7c29e20053a7dced3c1aec28aaa044c79cd1662da6237ffb2270",
+        "official_answer": 3,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:32:05.471Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p9-23",
+      "question_number": 23,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 1,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            257.96,
+            632.3
+          ],
+          "ring_ink": 0.0992,
+          "angular_support": 0.25,
+          "center_ink": 0.3704,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            252.96,
+            646.24
+          ],
+          "ring_ink": 0.0478,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            252.96,
+            666.18
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.25,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            252.96,
+            686.12
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2593,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            252.96,
+            712.06
+          ],
+          "ring_ink": 0.065,
+          "angular_support": 0.1667,
+          "center_ink": 0.2222,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            257.96,
+            632.3
+          ],
+          "ring_ink": 0.0952,
+          "angular_support": 0.25,
+          "center_ink": 0.3704,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            252.96,
+            646.24
+          ],
+          "ring_ink": 0.0478,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            252.96,
+            666.18
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.25,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            252.96,
+            686.12
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2593,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            252.96,
+            712.06
+          ],
+          "ring_ink": 0.065,
+          "angular_support": 0.1667,
+          "center_ink": 0.2222,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q23.png",
+      "answer_bbox": [
+        139.635,
+        365.183,
+        167.207,
+        432.979
+      ],
+      "source_crop_bbox_pixels": [
+        349,
+        913,
+        418,
+        1083
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:32:11.636Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p9-23",
+        "question_number": 23,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q23.png",
+        "source_crop_sha256": "ee54683068ab3520c51667bd584bcb3b7aae12671f20a6b288246eafd83392f3",
+        "evidence_hash": "69309804a6b76f37ced4767368511d4ff3cde2f0a71518dc945669d2da93b1af",
+        "official_answer": 1,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:32:11.636Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p9-24",
+      "question_number": 24,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 1,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            318.04,
+            632.3
+          ],
+          "ring_ink": 0.1032,
+          "angular_support": 0.25,
+          "center_ink": 0.3333,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            313.04,
+            646.24
+          ],
+          "ring_ink": 0.0558,
+          "angular_support": 0.0833,
+          "center_ink": 0.1786,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            313.04,
+            666.18
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2143,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            313.04,
+            686.12
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1852,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            313.04,
+            712.06
+          ],
+          "ring_ink": 0.0732,
+          "angular_support": 0.1667,
+          "center_ink": 0.2222,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            318.04,
+            632.3
+          ],
+          "ring_ink": 0.1032,
+          "angular_support": 0.25,
+          "center_ink": 0.3333,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            313.04,
+            646.24
+          ],
+          "ring_ink": 0.0558,
+          "angular_support": 0.0833,
+          "center_ink": 0.1786,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            313.04,
+            666.18
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2143,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            313.04,
+            686.12
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1852,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            313.04,
+            712.06
+          ],
+          "ring_ink": 0.065,
+          "angular_support": 0.1667,
+          "center_ink": 0.2222,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q24.png",
+      "answer_bbox": [
+        175.647,
+        365.183,
+        203.219,
+        432.979
+      ],
+      "source_crop_bbox_pixels": [
+        439,
+        913,
+        508,
+        1083
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:32:19.550Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p9-24",
+        "question_number": 24,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q24.png",
+        "source_crop_sha256": "aa6ff3175e2dc78985d52911eaac0ac29f9451622c1fdc9da6630e7a8530bf4d",
+        "evidence_hash": "a5e4b6fba15f7cf4f7d4ec4baad991b1ac2cc66ab4cef429f478df48b2c30d6e",
+        "official_answer": 1,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:32:19.550Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p9-25",
+      "question_number": 25,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 5,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            373.12,
+            626.3
+          ],
+          "ring_ink": 0.0319,
+          "angular_support": 0.1667,
+          "center_ink": 0.1724,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            373.12,
+            646.24
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1724,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            373.12,
+            666.18
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1786,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            373.12,
+            686.12
+          ],
+          "ring_ink": 0.0935,
+          "angular_support": 0.25,
+          "center_ink": 0.1481,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            378.12,
+            712.06
+          ],
+          "ring_ink": 0.1532,
+          "angular_support": 0.3333,
+          "center_ink": 0.5185,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            373.12,
+            626.3
+          ],
+          "ring_ink": 0.0319,
+          "angular_support": 0.1667,
+          "center_ink": 0.1724,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            373.12,
+            646.24
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1724,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            373.12,
+            666.18
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1786,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            373.12,
+            686.12
+          ],
+          "ring_ink": 0.0935,
+          "angular_support": 0.25,
+          "center_ink": 0.1481,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            378.12,
+            712.06
+          ],
+          "ring_ink": 0.1492,
+          "angular_support": 0.3333,
+          "center_ink": 0.5185,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q25.png",
+      "answer_bbox": [
+        211.659,
+        365.183,
+        239.231,
+        432.979
+      ],
+      "source_crop_bbox_pixels": [
+        529,
+        913,
+        598,
+        1083
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:32:23.150Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p9-25",
+        "question_number": 25,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q25.png",
+        "source_crop_sha256": "ca6fe35c3eb5d0fd5e0072b9cde6099fe6d74bec743c14d83245fb28ef51932f",
+        "evidence_hash": "169cf2ad4872ccbffd0aaefd70f00fc50c1c23ce0af1dd7580b2bfc6b5db6bfb",
+        "official_answer": 5,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:32:23.150Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p9-26",
+      "question_number": 26,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 5,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            433.2,
+            626.3
+          ],
+          "ring_ink": 0.0319,
+          "angular_support": 0.1667,
+          "center_ink": 0.1379,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            433.2,
+            646.24
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2143,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            433.2,
+            666.18
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1786,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            433.2,
+            686.12
+          ],
+          "ring_ink": 0.087,
+          "angular_support": 0.25,
+          "center_ink": 0.1786,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            439.2,
+            712.06
+          ],
+          "ring_ink": 0.1514,
+          "angular_support": 0.3333,
+          "center_ink": 0.5,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            433.2,
+            626.3
+          ],
+          "ring_ink": 0.0319,
+          "angular_support": 0.1667,
+          "center_ink": 0.1379,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            433.2,
+            646.24
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1786,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            433.2,
+            666.18
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1786,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            433.2,
+            686.12
+          ],
+          "ring_ink": 0.087,
+          "angular_support": 0.25,
+          "center_ink": 0.1786,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            439.2,
+            712.06
+          ],
+          "ring_ink": 0.1474,
+          "angular_support": 0.3333,
+          "center_ink": 0.5,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q26.png",
+      "answer_bbox": [
+        247.67,
+        365.183,
+        275.243,
+        432.979
+      ],
+      "source_crop_bbox_pixels": [
+        619,
+        913,
+        688,
+        1083
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:32:51.844Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p9-26",
+        "question_number": 26,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q26.png",
+        "source_crop_sha256": "4ff0116e9c6c0d6cb9cb58d9ddb64d1bf4a6cba9326eec0c127b5441a9c36c46",
+        "evidence_hash": "a73339460bf63096738501650c8ba3db0c348c96bb93a1eb31589f6664054de5",
+        "official_answer": 5,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:32:51.844Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p10-27",
+      "question_number": 27,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 1,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            498.28,
+            632.3
+          ],
+          "ring_ink": 0.1044,
+          "angular_support": 0.25,
+          "center_ink": 0.4138,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            493.28,
+            646.24
+          ],
+          "ring_ink": 0.056,
+          "angular_support": 0.1667,
+          "center_ink": 0.1379,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            493.28,
+            666.18
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1724,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            493.28,
+            686.12
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1724,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            493.28,
+            712.06
+          ],
+          "ring_ink": 0.0677,
+          "angular_support": 0.1667,
+          "center_ink": 0.2143,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            498.28,
+            632.3
+          ],
+          "ring_ink": 0.1004,
+          "angular_support": 0.25,
+          "center_ink": 0.4138,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            493.28,
+            646.24
+          ],
+          "ring_ink": 0.056,
+          "angular_support": 0.1667,
+          "center_ink": 0.1379,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            493.28,
+            666.18
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1724,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            493.28,
+            686.12
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.1724,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            493.28,
+            712.06
+          ],
+          "ring_ink": 0.0677,
+          "angular_support": 0.1667,
+          "center_ink": 0.2143,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q27.png",
+      "answer_bbox": [
+        283.682,
+        365.183,
+        311.254,
+        432.979
+      ],
+      "source_crop_bbox_pixels": [
+        709,
+        913,
+        778,
+        1083
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:38:17.324Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p10-27",
+        "question_number": 27,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q27.png",
+        "source_crop_sha256": "dc7a26bbda9b72de63c8e6ee11e2bf0c27d6d2732f15fd8c09f866119daaeea8",
+        "evidence_hash": "7ef0683e0b98a45c9a7343b4be35d6846d744f3e287713b2c3b61b69a39d6d3c",
+        "official_answer": 1,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:38:17.324Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    },
+    {
+      "question_id": "2024-fa-p10-28",
+      "question_number": 28,
+      "exam": "2024_sommer",
+      "module": "Funktionsanalyse",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 3,
+      "official_answer_status": "confirmed",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            553.36,
+            626.3
+          ],
+          "ring_ink": 0.0317,
+          "angular_support": 0.1667,
+          "center_ink": 0.1379,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            553.36,
+            646.24
+          ],
+          "ring_ink": 0.0916,
+          "angular_support": 0.25,
+          "center_ink": 0.1034,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            558.36,
+            672.18
+          ],
+          "ring_ink": 0.1,
+          "angular_support": 0.25,
+          "center_ink": 0.4138,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            553.36,
+            686.12
+          ],
+          "ring_ink": 0.0635,
+          "angular_support": 0.1667,
+          "center_ink": 0.1071,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            553.36,
+            712.06
+          ],
+          "ring_ink": 0.0992,
+          "angular_support": 0.1667,
+          "center_ink": 0.1852,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            553.36,
+            626.3
+          ],
+          "ring_ink": 0.0317,
+          "angular_support": 0.1667,
+          "center_ink": 0.1379,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            553.36,
+            646.24
+          ],
+          "ring_ink": 0.0916,
+          "angular_support": 0.25,
+          "center_ink": 0.1034,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            558.36,
+            672.18
+          ],
+          "ring_ink": 0.1,
+          "angular_support": 0.25,
+          "center_ink": 0.4138,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            553.36,
+            686.12
+          ],
+          "ring_ink": 0.0635,
+          "angular_support": 0.1667,
+          "center_ink": 0.1071,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            553.36,
+            712.06
+          ],
+          "ring_ink": 0.0992,
+          "angular_support": 0.1667,
+          "center_ink": 0.1852,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/4ed9980453679199c18b3c4b.pdf",
+      "source_pdf_available": false,
+      "source_page": 2,
+      "solution_source_page": 2,
+      "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q28.png",
+      "answer_bbox": [
+        319.694,
+        365.183,
+        347.266,
+        432.979
+      ],
+      "source_crop_bbox_pixels": [
+        799,
+        913,
+        868,
+        1083
+      ],
+      "source_image_sha256": "90c227b9fc0a417081f2af7c85bc194ecff785e2e1043d4e801c08869ca91d37",
+      "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "manual-source-review-c13b0166b3891904",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Cached source module title and each printed column Q label verified visually. Five dot rows measured top-to-bottom as 1..5; deterministic ring geometry only.",
+      "locked": true,
+      "user_corrected": true,
+      "confirmation_method": "manual_source_review",
+      "confirmed_at": "2026-09-30T06:38:22.588Z",
+      "manual_source_evidence": {
+        "question_id": "2024-fa-p10-28",
+        "question_number": 28,
+        "exam": "2024_sommer",
+        "module": "Funktionsanalyse",
+        "parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+        "source_pdf_sha256": "4ed9980453679199c18b3c4b2e810c47cd404cf271a51377b64cb287ec1a3913",
+        "source_crop": "assets/official/2024-fa-2f.1.0-a806ce9cda33/Q28.png",
+        "source_crop_sha256": "cece68fee32354c000b83612a4978f76e7290e1983d15368ecedc5df163158e1",
+        "evidence_hash": "c9ee1a18ca999419f69df8011ece3f48c5644f0d2e68dd7707fcc4e0b22d5032",
+        "official_answer": 3,
+        "official_answer_status": "confirmed",
+        "user_corrected": true,
+        "locked": true,
+        "confirmation_method": "manual_source_review",
+        "updated_at": "2026-09-30T06:38:22.588Z",
+        "machine_answer_at_confirmation": null
+      },
+      "machine_official_answer": null,
+      "machine_official_answer_status": "needs_review",
+      "machine_suggestion_changed": false,
+      "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33"
+    }
+  ],
+  "completeness": {
+    "expected": 28,
+    "records": 28,
+    "unique_complete": true,
+    "problems": []
+  },
+  "confidence_note": "Rule-based geometric grade, not probability; no OCR or semantic answer inference.",
+  "original_parser_revision": "2024-fa-2f.1.0-a806ce9cda33",
+  "manual_confirmation_revision": "manual-source-review-c13b0166b3891904"
+}

@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "winter2024-25-fa-unresolved-pages25-26",
+      "exam": "2024_25_winter",
+      "examLabel": "Winter 2024/25",
+      "module": "Funktionsanalyse",
+      "question": "U2 / Q2–Q6",
+      "type": "attachment_mapping",
+      "reason": "你已确认第23、24页属于U2；第25、26页归属尚未确认。不能把这一条 confirmed 当作全部归属已通过。原始裁剪框还需保留历史的边界修订。请只核对25/26与Q2–Q6的引用关系。 FA现有36题预览已保留；正式MC答案尚未提取，U答案为8题预览，解除附件门槛后还需完成正式校验。",
+      "source_crop": "assets/review/overnight/winter2024-fa-attachment.png",
+      "source_crop_sha256": "866b9c4822a7a764deaa1e6ae55563379c370e2c89e9e3f0e8859a9961bc617e",
+      "proposal": {
+        "source_id": "src-f99f89ce0d2f0dc39a437440",
+        "source_sha256": "8e3f52fd06133c24b1b542512043b7d392777f17fc56e7a616837fbd4438bf33",
+        "profile_revision": "portrait-explicit-regions@overnight.1.0-ffae6f3130aa",
+        "type": "attachment_mapping",
+        "bounds": [
+          {
+            "page": 23,
+            "old_bbox": [
+              0.0,
+              0.0,
+              841.92,
+              1190.52
+            ],
+            "proposed_bbox": [
+              0,
+              0,
+              841.9199829101562,
+              1190.52
+            ],
+            "question_numbers": [
+              "U2"
+            ]
+          },
+          {
+            "page": 24,
+            "old_bbox": [
+              0.0,
+              0.0,
+              841.92,
+              1190.52
+            ],
+            "proposed_bbox": [
+              0,
+              0,
+              841.9199829101562,
+              1190.52
+            ],
+            "question_numbers": [
+              "U2"
+            ]
+          },
+          {
+            "page": 25,
+            "old_bbox": [
+              0.0,
+              0.0,
+              841.92,
+              1190.52
+            ],
+            "proposed_bbox": [
+              0,
+              0,
+              841.9199829101562,
+              1190.52
+            ],
+            "question_numbers": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "6"
+            ]
+          },
+          {
+            "page": 26,
+            "old_bbox": [
+              0.0,
+              0.0,
+              841.92,
+              1190.52
+            ],
+            "proposed_bbox": [
+              0,
+              0,
+              841.9199829101562,
+              1190.52
+            ],
+            "question_numbers": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "6"
+            ]
+          }
+        ],
+        "reason": "Full-page attachment bounds rounded outside actual page; immutable initial profile retained. No question ownership change proposed.",
+        "user_confirmed_owners": {
+          "23": [
+            "U2"
+          ],
+          "24": [
+            "U2"
+          ]
+        },
+        "unresolved_pages": [
+          25,
+          26
+        ]
+      },
+      "evidence_hash": "f0e4832bb4911676e3d4524a643f3bb547e0e127d6af28ad430a78b4f9613a1b",
+      "evidence_images": [
+        {
+          "src": "assets/review/overnight/winter2024-fa-attachment-25.png",
+          "sha256": "fdc84857c7f1a374ff3c766be17e62c8967818a8c5c8ac78053b1789eb54f2a4",
+          "label": "Originale Anlage, Seite 25"
+        },
+        {
+          "src": "assets/review/overnight/winter2024-fa-attachment-26.png",
+          "sha256": "dafa4b22d71608a95cd9c287fe5550d6633e3c4274b794c265bb53dc17d5a43c",
+          "label": "Originale Anlage, Seite 26"
+        }
+      ]
+    },
+    {
+      "id": "2018_sommer-arbeitsplanung-missing-source",
+      "exam": "2018_sommer",
+      "examLabel": "Sommer 2018",
+      "module": "Arbeitsplanung",
+      "question": "Quelle",
+      "type": "other_source_association",
+      "reason": "已重新核对归档目录和原页缓存：AP U6（物理页25）明确列出 Blatt 1 von 2: Getriebe / Blatt 2 von 2: Stückliste；末页29只有Getriebe总装图。这里有装配图，不是整张图缺失；尚未找到它引用的第二张零件清单。归档只有AP、FA、WiSo、Lösung四个PDF，没有独立附件文件。若你看到清单，请在修改说明中写出文件名和页码。",
+      "requires_source": true,
+      "proposal": {
+        "required_action": "Originaldatei bereitstellen; Bestätigung ersetzt keine fehlende Quelle.",
+        "archive_members": [
+          "18 Arbeitsplanung.pdf",
+          "18 Funktionsanalyse.pdf",
+          "18 WiSo.pdf",
+          "18 Lösung.pdf"
+        ],
+        "source_sha256": "b5d74254038ebdd349fa6a8a29ed15bec4dcb1443aab649f6d1a60b043a84d37"
+      },
+      "evidence_hash": "7b745ae78b9d9ce0370676e4068ed4666be90eb98ea62d8297846402609bbac6",
+      "evidence_images": [
+        {
+          "src": "assets/review/remaining/2018-ap-25.png",
+          "sha256": "23fabe8961f5ddc73c471d4938c98aa8a4969b39d1df4f65f094d7705fc819ed",
+          "label": "Arbeitsplanung 原PDF物理页 25"
+        },
+        {
+          "src": "assets/review/remaining/2018-ap-26.png",
+          "sha256": "cf5af842abeae74098fae09f9db898aecc6a5c1d06bca025b412bf651688c687",
+          "label": "Arbeitsplanung 原PDF物理页 26"
+        },
+        {
+          "src": "assets/review/remaining/2018-ap-29.png",
+          "sha256": "592e9f631ce881b0ecbe978f9156d4911bf9da8b6e141e86590916f7b9677ca3",
+          "label": "Arbeitsplanung 原PDF物理页 29"
+        }
+      ]
+    },
+    {
+      "id": "2018_sommer-funktionsanalyse-missing-source",
+      "exam": "2018_sommer",
+      "examLabel": "Sommer 2018",
+      "module": "Funktionsanalyse",
+      "question": "Quelle",
+      "type": "other_source_association",
+      "reason": "已重新核对归档目录和原页缓存：FA U2（物理页17）明确列出 Blatt 1 von 2: Schweißzange / Blatt 2 von 2: Stückliste；末页25只有Schweißzange总装图。这里有装配图，不是整张图缺失；尚未找到它引用的第二张零件清单。归档只有AP、FA、WiSo、Lösung四个PDF，没有独立附件文件。若你看到清单，请在修改说明中写出文件名和页码。",
+      "requires_source": true,
+      "proposal": {
+        "required_action": "Originaldatei bereitstellen; Bestätigung ersetzt keine fehlende Quelle.",
+        "archive_members": [
+          "18 Arbeitsplanung.pdf",
+          "18 Funktionsanalyse.pdf",
+          "18 WiSo.pdf",
+          "18 Lösung.pdf"
+        ],
+        "source_sha256": "ac636fb150c05709efb9fb3f683c34795094c7f35b50fd33d1c67ae22c8ccd16"
+      },
+      "evidence_hash": "f9e791230227a3f7baf9baa1d58bc1c11217b015096310bc83130a0842c2fb3c",
+      "evidence_images": [
+        {
+          "src": "assets/review/remaining/2018-fa-15.png",
+          "sha256": "380a813b99678fbd5ea1e63606bacb9c3792d39f5d1b5214f6fe3665530a5bde",
+          "label": "Funktionsanalyse 原PDF物理页 15"
+        },
+        {
+          "src": "assets/review/remaining/2018-fa-17.png",
+          "sha256": "63a14a6cb83bceceeae297b8ebc2a741368440fa2b8f1133c67c2631a2733724",
+          "label": "Funktionsanalyse 原PDF物理页 17"
+        },
+        {
+          "src": "assets/review/remaining/2018-fa-18.png",
+          "sha256": "ca61a5c0e46d074fce63310e89a3d57e0d796397576b6281cf6b50226a003b63",
+          "label": "Funktionsanalyse 原PDF物理页 18"
+        },
+        {
+          "src": "assets/review/remaining/2018-fa-25.png",
+          "sha256": "be81d72f649ce4628d0dc90e1e5a19eab283a7ba8bc11024010e034417107c8c",
+          "label": "Funktionsanalyse 原PDF物理页 25"
+        }
+      ]
+    },
+    {
+      "id": "2023_sommer-funktionsanalyse-missing-source",
+      "exam": "2023_sommer",
+      "examLabel": "Sommer 2023",
+      "module": "Funktionsanalyse",
+      "question": "Quelle",
+      "type": "other_source_association",
+      "reason": "现有FA原题U7/U8已经带有蓝色手写作答，无法作为未作答原卷发布；需要这两道题的干净原页。",
+      "requires_source": true,
+      "proposal": {
+        "required_action": "Originaldatei bereitstellen; Bestätigung ersetzt keine fehlende Quelle."
+      },
+      "evidence_hash": "ff58c2dabbe4d648329b6a3637d5f347fc857b6b711756ab5906d2abb5deb33d"
+    },
+    {
+      "id": "2023_sommer-wiso-missing-source",
+      "exam": "2023_sommer",
+      "examLabel": "Sommer 2023",
+      "module": "WiSo",
+      "question": "Quelle",
+      "type": "other_source_association",
+      "reason": "提供的Sommer 2023归档里未找到WiSo题目PDF，不能只凭答案重建题目；需要WiSo原题文件。",
+      "requires_source": true,
+      "proposal": {
+        "required_action": "Originaldatei bereitstellen; Bestätigung ersetzt keine fehlende Quelle."
+      },
+      "evidence_hash": "d6363ddfe8b8226f47837df1520b7042369325f2eae54e82da43d7a8ef7479ad"
+    },
+    {
+      "id": "2025_sommer-arbeitsplanung-missing-source",
+      "exam": "2025_sommer",
+      "examLabel": "Sommer 2025",
+      "module": "Arbeitsplanung",
+      "question": "Quelle",
+      "type": "other_source_association",
+      "reason": "当前工作区没有Sommer 2025归档。该模块没有可验证原题或答案来源；提供该季归档后才能处理。三个模块可通过补充同一个完整归档解决。",
+      "requires_source": true,
+      "proposal": {
+        "required_action": "Originaldatei bereitstellen; Bestätigung ersetzt keine fehlende Quelle."
+      },
+      "evidence_hash": "6623941c544e1330112ce7b4fd8899a07b1887bd57fddafe41c5ed403324634b"
+    },
+    {
+      "id": "2025_sommer-funktionsanalyse-missing-source",
+      "exam": "2025_sommer",
+      "examLabel": "Sommer 2025",
+      "module": "Funktionsanalyse",
+      "question": "Quelle",
+      "type": "other_source_association",
+      "reason": "当前工作区没有Sommer 2025归档。该模块没有可验证原题或答案来源；提供该季归档后才能处理。三个模块可通过补充同一个完整归档解决。",
+      "requires_source": true,
+      "proposal": {
+        "required_action": "Originaldatei bereitstellen; Bestätigung ersetzt keine fehlende Quelle."
+      },
+      "evidence_hash": "7144c18bb7a27b270caf628132e5f835aa9e0db8d0e4ae918bd29fa2bf688aba"
+    },
+    {
+      "id": "2025_sommer-wiso-missing-source",
+      "exam": "2025_sommer",
+      "examLabel": "Sommer 2025",
+      "module": "WiSo",
+      "question": "Quelle",
+      "type": "other_source_association",
+      "reason": "当前工作区没有Sommer 2025归档。该模块没有可验证原题或答案来源；提供该季归档后才能处理。三个模块可通过补充同一个完整归档解决。",
+      "requires_source": true,
+      "proposal": {
+        "required_action": "Originaldatei bereitstellen; Bestätigung ersetzt keine fehlende Quelle."
+      },
+      "evidence_hash": "0507264e2d44605e3e1e563b6ac76dda6f7969fe04c885f88982164638e433e7"
+    },
+    {
+      "id": "sommer2024-fa-attachment-ownership",
+      "exam": "2024_sommer",
+      "examLabel": "Sommer 2024",
+      "module": "Funktionsanalyse",
+      "question": "Q25 / U3",
+      "type": "attachment_mapping",
+      "reason": "全部28道MC答案已确认，U解答8/8完整。唯一剩余门槛：旧配置把附件关联到Q25和U3；新提案只关联U3、取消Q25。请根据下方原题和两张附件确认提案，或写明不同归属。",
+      "source_crop": "assets/questions/abe45f06d1758e3bff58dd33/overnight.1.0-6e41b6a28821/2024-fa-p9-25.png",
+      "source_crop_sha256": "964190548b1f115840c3ac732b6fd2ca4f50162bf1ec5bc6523236b5df637275",
+      "proposal": {
+        "previous_owners": [
+          "25",
+          "U3"
+        ],
+        "proposed_owners": [
+          "U3"
+        ],
+        "attachment_sha256": "670bb6fea2c87079b6c5901c86625d2b00800695485953a018796e5f655de571",
+        "source_id": "src-cd28f08815a20a9a5c147d7e"
+      },
+      "evidence_hash": "a05875a4c030593529eb1e6630f4dfa0750c873d63b9eccb1170ebe31df057a1",
+      "evidence_images": [
+        {
+          "src": "assets/questions/abe45f06d1758e3bff58dd33/overnight.1.0-6e41b6a28821/2024-fa-p9-25.png",
+          "sha256": "964190548b1f115840c3ac732b6fd2ca4f50162bf1ec5bc6523236b5df637275",
+          "label": "Originale Aufgabe 25"
+        },
+        {
+          "src": "assets/questions/abe45f06d1758e3bff58dd33/overnight.1.0-6e41b6a28821/2024-fa-p17-U3.png",
+          "sha256": "785d22c180d980f0c79889582b88b9f35733518876081fddca36de2be208f00d",
+          "label": "Originale Aufgabe U3"
+        },
+        {
+          "src": "assets/review/overnight/sommer2024-fa-attachment-1.png",
+          "sha256": "113d939634514a72aad4fdde0b969b5765f8325759c5d3533d2070f36d5dfe09",
+          "label": "Originale Anlage, Blatt 1"
+        },
+        {
+          "src": "assets/review/overnight/sommer2024-fa-attachment-2.png",
+          "sha256": "5da8e8bc97ea5a32f3a09cb8560658f41bb8991f3d36fd379ef8ec34be4ff23a",
+          "label": "Originale Anlage, Blatt 2"
+        }
+      ]
+    }
+  ]
+}
