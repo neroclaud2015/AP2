@@ -12,7 +12,8 @@ test('wrong state reconciles formal history, hide watermark, streak and backup w
  await r.saveAttempt(attempt('2',null));expect((await r.getWrongQuestions('u'))[0].active).toBe(false);
  await r.saveAttempt(attempt('3','falsch'));expect((await r.getWrongQuestions('u'))[0].active).toBe(true);
  await r.saveAttempt(attempt('4','richtig'));await r.saveAttempt(attempt('5','richtig'));
- expect((await r.getWrongQuestions('u'))[0]).toMatchObject({active:false,wrong_count:2,consecutive_correct:2});
+ expect((await r.getWrongQuestions('u'))[0]).toMatchObject({active:true,stage:3,wrong_count:2,consecutive_correct:2});
+ await r.saveAttempt(attempt('6','richtig'));expect((await r.getWrongQuestions('u'))[0]).toMatchObject({active:false,stage:'mastered'});
  const before=await r.getAttempts('u'),snapshot=await r.exportSnapshot('u');
  expect(snapshot.wrongQuestions).toHaveLength(1);expect(await r.getAttempts('u')).toEqual(before);
  const copy=new IndexedDBProgressRepository('copy-'+crypto.randomUUID());await copy.importSnapshot(snapshot,'u',false);

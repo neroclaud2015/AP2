@@ -1,0 +1,18 @@
+{
+  "checks": [
+    "Landing: four dynamic filters, 1332 incl unknown, no question cards/list, compact statistics",
+    "Training reveal creates no attempt and no ModuleProgress completion",
+    "Stable filter resumes same run; drafts/current question survive refresh/back/forward; ModuleProgress untouched",
+    "Restart creates new run only; previous run, attempts, notes retained",
+    "Inline classification below note, default collapsed, editable dynamic taxonomy, locked save persists",
+    "Wrong1 → correct2 → correct3 → mastered; mastered stays; wrong resets1; dismiss preserves history; new wrong reactivates1; stage membership frozen",
+    "Empty U solution no assessment; partial formal U enters stage1",
+    "Existing compact Modultest multi-year selector preserved",
+    "Desktop/mobile no horizontal overflow"
+  ],
+  "isolated_browser": true,
+  "real_user_data_touched": false,
+  "errors": [],
+  "run_id": "3f1ac646-4920-4d9e-9553-ec1a6f19a2cd",
+  "run_count": 6
+}

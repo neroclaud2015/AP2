@@ -71,6 +71,7 @@ jobs:
       - run: python scripts/publish_evidence.py winter2024-25
       - run: python scripts/publish_evidence.py overnight-release
       - run: python scripts/publish_evidence.py phase3a
+      - run: python scripts/publish_evidence.py phase3b
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

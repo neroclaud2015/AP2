@@ -1,6 +1,8 @@
 import {isEligibleForAnalysis,type TestSession} from '../exams/model';
 import type {Attempt,Correctness} from './model';
-export interface WrongQuestionState {userId:string;question_id:string;active:boolean;entered_at:string|null;last_wrong_at:string|null;wrong_count:number;consecutive_correct:number;dismissed_at:string|null;dismissed_result_ids:string[];updated_at:string;revision:number}
+export type WrongStage=1|2|3|'mastered'|null;
+export interface WrongStageMigration {legacy_snapshot:WrongQuestionState;cutover_result_ids:string[];migrated_at:string}
+export interface WrongQuestionState {stage_version?:2;stage?:WrongStage;migration?:WrongStageMigration;userId:string;question_id:string;active:boolean;entered_at:string|null;last_wrong_at:string|null;wrong_count:number;consecutive_correct:number;dismissed_at:string|null;dismissed_result_ids:string[];updated_at:string;revision:number}
 export interface WrongResult {id:string;question_id:string;timestamp:string;correctness:Correctness}
 export function wrongResults(userId:string,attempts:Attempt[],tests:TestSession[]):WrongResult[]{
  const results=new Map<string,WrongResult>();
@@ -9,20 +11,35 @@ export function wrongResults(userId:string,attempts:Attempt[],tests:TestSession[
  return [...results.values()].sort((a,b)=>Date.parse(a.timestamp)-Date.parse(b.timestamp)||a.id.localeCompare(b.id));
 }
 export const resultKey=(r:WrongResult)=>r.id+':'+r.timestamp+':'+r.correctness;
+/** Replay eligible history; the legacy cutover prevents old recovery from granting mastery. */
 export function reconcileWrongQuestions(userId:string,results:WrongResult[],previous:WrongQuestionState[],now:string):WrongQuestionState[]{
  const ids=new Set([...results.map(r=>r.question_id),...previous.map(s=>s.question_id)]);
  return [...ids].sort().flatMap(question_id=>{
- const old=previous.find(s=>s.question_id===question_id),rows=results.filter(r=>r.question_id===question_id),dismissed=new Set(old?.dismissed_result_ids??[]);
- let active=false,entered_at:string|null=null,last_wrong_at:string|null=null,wrong_count=0,consecutive_correct=0;
- for(const r of rows){if(r.correctness==='richtig'){consecutive_correct++;if(consecutive_correct>=2)active=false;}else{wrong_count++;last_wrong_at=r.timestamp;consecutive_correct=0;if(!dismissed.has(resultKey(r))){if(!active)entered_at=r.timestamp;active=true;}}}
+ const old=previous.find(s=>s.question_id===question_id),rows=[...new Map(results.filter(r=>r.question_id===question_id).map(r=>[r.id,r])).values()].sort((a,b)=>Date.parse(a.timestamp)-Date.parse(b.timestamp)||a.id.localeCompare(b.id));
+ const migration=old?.migration??(old&&old.stage_version!==2?{legacy_snapshot:structuredClone(old),cutover_result_ids:rows.map(resultKey),migrated_at:now}:undefined);
+ const cutover=new Set(migration?.cutover_result_ids??[]),dismissed=new Set(old?.dismissed_result_ids??[]);
+ let stage:WrongStage=null,entered_at:string|null=null,last_wrong_at:string|null=null,wrong_count=0,consecutive_correct=0;
+ const ordered=migration?[...rows.filter(r=>cutover.has(resultKey(r))),...rows.filter(r=>!cutover.has(resultKey(r)))]:rows;
+ for(const r of ordered){
+  if(r.correctness==='richtig'){
+   consecutive_correct++;
+   if(stage===1)stage=2;else if(stage===2)stage=3;else if(stage===3&&!cutover.has(resultKey(r)))stage='mastered';
+  }else{
+   wrong_count++;last_wrong_at=r.timestamp;consecutive_correct=0;
+   if(!dismissed.has(resultKey(r))&&!dismissed.has(r.id+':'+r.correctness)){if(stage===null||stage==='mastered')entered_at=r.timestamp;stage=1;}
+  }
+ }
  if(!wrong_count&&!old)return [];
- const value={userId,question_id,active,entered_at,last_wrong_at,wrong_count,consecutive_correct,dismissed_at:old?.dismissed_at??null,dismissed_result_ids:old?.dismissed_result_ids??[]};
+ const value={userId,question_id,active:stage!==null&&stage!=='mastered',stage_version:2 as const,stage,entered_at,last_wrong_at,wrong_count,consecutive_correct,dismissed_at:old?.dismissed_at??null,dismissed_result_ids:old?.dismissed_result_ids??[],...(migration?{migration}:{})};
  if(old&&Object.entries(value).every(([k,v])=>JSON.stringify(v)===JSON.stringify(old[k as keyof WrongQuestionState])))return [old];
  return [{...value,updated_at:now,revision:(old?.revision??0)+1}];
  });
 }
 export function validWrongQuestionState(value:unknown):value is WrongQuestionState {
  if(!value||typeof value!=='object')return false;const v=value as WrongQuestionState;
+ if(v.stage_version!==undefined&&(v.stage_version!==2||![null,1,2,3,'mastered'].includes(v.stage!)))return false;
+ if(v.stage_version===undefined&&(v.stage!==undefined||v.migration!==undefined))return false;
+ if(v.migration){const m=v.migration;if(!m.legacy_snapshot||m.legacy_snapshot.stage_version!==undefined||m.legacy_snapshot.migration!==undefined||!validWrongQuestionState(m.legacy_snapshot)||m.legacy_snapshot.question_id!==v.question_id||!Array.isArray(m.cutover_result_ids)||!m.cutover_result_ids.every(x=>typeof x==='string'&&!!x)||!Number.isFinite(Date.parse(m.migrated_at)))return false;}
  const stamp=(x:unknown)=>typeof x==='string'&&Number.isFinite(Date.parse(x));
  return typeof v.userId==='string'&&!!v.userId.trim()&&typeof v.question_id==='string'&&!!v.question_id&&typeof v.active==='boolean'&&[v.entered_at,v.last_wrong_at,v.dismissed_at].every(x=>x===null||stamp(x))&&stamp(v.updated_at)&&Number.isSafeInteger(v.revision)&&v.revision>0&&[v.wrong_count,v.consecutive_correct].every(x=>Number.isSafeInteger(x)&&x>=0)&&Array.isArray(v.dismissed_result_ids)&&v.dismissed_result_ids.every(x=>typeof x==='string'&&!!x);
 }

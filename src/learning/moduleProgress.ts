@@ -6,7 +6,7 @@ export interface ModuleProgress extends ModuleDescriptor {id:string;userId:strin
 export interface ModuleRun extends ModuleDescriptor {run_id:string;userId:string;progress_id:string;generation:number;started_at:string;legacy_attempt_ids:string[]}
 export const progressId=(d:Pick<ModuleDescriptor,'exam'|'module'>)=>d.exam+'/'+d.module;
 export const emptyStates=(ids:string[]):Record<string,CurrentQuestionState>=>Object.fromEntries(ids.map(id=>[id,{state:'unanswered'}]));
-export function isFreeAttempt(a:Attempt){const v=a as unknown as Record<string,unknown>;return !['test_id','test_session_id','exam_session_id'].some(k=>v[k]!==undefined&&v[k]!==null);}
+export function isFreeAttempt(a:Attempt){const v=a as unknown as Record<string,unknown>;return !['test_id','test_session_id','exam_session_id','training_run_id'].some(k=>v[k]!==undefined&&v[k]!==null);}
 export function eligibleAttempt(a:Attempt){return validAttempt(a)&&a.correctness!==null&&isFreeAttempt(a)&&(!a.self_assessed||a.subparts.length>0&&a.subparts.every(p=>['richtig','teilweise','falsch'].includes(p.correctness)));}
 export function stateFor(a?:Attempt):CurrentQuestionState{return a&&eligibleAttempt(a)?{state:a.correctness==='richtig'?'correct':a.correctness==='falsch'?'incorrect':'partial',attempt_id:a.attempt_id}:{state:'unanswered'};}
 export function inRun(a:Attempt,run:ModuleRun){return a.userId===run.userId&&run.question_ids.includes(a.question_id)&&(!a.exam||a.exam===run.exam)&&(!a.module||a.module===run.module)&&eligibleAttempt(a)&&(a.progress_run_id===run.run_id||!a.progress_run_id&&run.generation===1&&run.legacy_attempt_ids.includes(a.attempt_id));}

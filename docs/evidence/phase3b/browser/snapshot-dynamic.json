@@ -1,0 +1,9 @@
+{
+  "checks": [
+    "Mock removal/source revision change leaves running snapshot byte-identical; same filter resumes old36; explicit restart uses current35; priorrun retained",
+    "Stage launch re-reads effective results after another tab changes stage; stale membership never launches"
+  ],
+  "isolated_browser": true,
+  "original_run": "13ecccbe-4eb5-4141-bcf7-25098a27d827",
+  "new_run": "f89d01c4-2e20-48b1-90dd-6ebaa8e22921"
+}

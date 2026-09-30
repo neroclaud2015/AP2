@@ -1,20 +1,22 @@
 import OfficialCorrection from './OfficialCorrection';
 import QuestionNoteEditor from './QuestionNoteEditor';
+import ClassificationEditor from '../bank/ClassificationEditor';
 import {useAppServices} from '../services/context';
 import {useEffect,useRef,useState} from 'react';
 import {asset} from '../segmented/types';
 import type {OfficialAnswer} from '../segmented/answers';
 import {checkNumeric,combineAssessments,type Attempt,type AttemptProvenance,type Correctness,type LearningSession,type USolution} from './model';
 
-export default function Practice({provenance,questionId,number,answer,u,session,history,onSession,onAttempt,onDelete,onBusy}:{
+export default function Practice({provenance,classificationSourceRevision,questionId,number,answer,u,session,history,onSession,onAttempt,onDelete,onBusy}:{
+ classificationSourceRevision?:string;
  provenance?:AttemptProvenance;questionId:string;number:string;answer?:OfficialAnswer;u?:USolution;session?:LearningSession;history:Attempt[];
  onSession:(session:LearningSession)=>Promise<void>;onAttempt:(attempt:Attempt,session:LearningSession)=>Promise<void>;
  onAnnotate:(id:string,values:Pick<Attempt,'note'|'error_reason'|'unsure'|'confidence'>)=>Promise<void>;onDelete:(id:string)=>Promise<void>;onBusy:(busy:boolean)=>void;
 }) {
  const {user,repository}=useAppServices();
  const [deleteTarget,setDeleteTarget]=useState<Attempt>();
- const [practiceBusy,setPracticeBusy]=useState(false);const [noteBusy,setNoteBusy]=useState(false);
- useEffect(()=>{onBusy(practiceBusy||noteBusy||!!deleteTarget);},[practiceBusy,noteBusy,deleteTarget,onBusy]);
+ const [practiceBusy,setPracticeBusy]=useState(false);const [noteBusy,setNoteBusy]=useState(false);const [classificationBusy,setClassificationBusy]=useState(false);
+ useEffect(()=>{onBusy(practiceBusy||noteBusy||classificationBusy||!!deleteTarget);},[practiceBusy,noteBusy,classificationBusy,deleteTarget,onBusy]);
  const [draft,setDraft]=useState<Record<string,string>>(session?.draft??{});
  const [revealed,setRevealed]=useState(session?.revealed??false);
  const [attemptId,setAttemptId]=useState(session?.attempt_id);
@@ -86,6 +88,7 @@ export default function Practice({provenance,questionId,number,answer,u,session,
    <details><summary>Erklärung</summary><p>{u?'Die Original-Lösung zeigt den offiziellen Lösungsweg.':'Der offizielle Schlüssel kennzeichnet die richtige Option. Eine fachlich geprüfte Erklärung ist noch nicht hinterlegt.'}</p><p>Ergänze deine eigene Erklärung in der Notiz.</p></details>
   </div>}
   <QuestionNoteEditor key={user.id+':'+questionId} questionId={questionId} onBusy={setNoteBusy}/>
+  <ClassificationEditor key={user.id+':classification:'+questionId} questionId={questionId} expectedSourceRevision={classificationSourceRevision} onBusy={setClassificationBusy}/>
   {attempt&&<div className="learning-tools"><button className="outline" disabled={saving} onClick={reset}>Aufgabe erneut versuchen</button></div>}
   {!attempt&&revealed&&<button className="outline" disabled={saving} onClick={reset}>Aufgabe erneut versuchen</button>}
   {error&&<p role="alert">{error}</p>}<p className="save-status" role="status">{message}</p>

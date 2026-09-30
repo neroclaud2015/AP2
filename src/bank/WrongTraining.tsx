@@ -1,0 +1,13 @@
+import {useEffect,useState} from 'react';
+import {useAppServices} from '../services/context';
+import type {WrongQuestionState} from '../learning/wrongQuestions';
+import {useBankData} from '../bank/useBankData';
+import type {TrainingLaunch} from '../bank/BankView';
+import '../bank/bank.css';
+export default function WrongTraining({onStart,disabled=false}:{onStart:(input:TrainingLaunch)=>Promise<void>;disabled?:boolean}){
+ const {repository,user}=useAppServices(),{data,error}=useBankData();const [rows,setRows]=useState<WrongQuestionState[]>(),[failure,setFailure]=useState(''),[launching,setLaunching]=useState(false);
+ useEffect(()=>{let alive=true;const load=()=>void repository.getWrongQuestions(user.id).then(r=>{if(alive)setRows(r)}).catch(e=>{if(alive)setFailure(String(e))});load();window.addEventListener('ap2:personal-data-changed',load);return()=>{alive=false;window.removeEventListener('ap2:personal-data-changed',load)}},[repository,user.id]);
+ const stages=[{id:1 as const,title:'Stufe 1',text:'Noch einmal verstehen und richtig lösen.'},{id:2 as const,title:'Stufe 2',text:'Mit einer weiteren richtigen Abgabe festigen.'},{id:3 as const,title:'Stufe 3',text:'Ein letztes Mal richtig lösen und meistern.'},{id:'mastered' as const,title:'Gemeistert',text:'Früher falsch, danach drei Stufen erfolgreich geübt.'}];
+ const start=async(stage:1|2|3|'mastered')=>{if(!data||!rows)return;setLaunching(true);try{const current=await repository.getWrongQuestions(user.id);setRows(current);const ids=new Set(current.filter(r=>r.stage===stage).map(r=>r.question_id));await onStart({definition:{knowledgeTopicIds:[],questionTypeIds:[],moduleIds:[],examIds:[]},questions:data.inventory.filter(q=>ids.has(q.question_id)),stage});}catch(e){setFailure(String(e))}finally{setLaunching(false)}};
+ return <section className="bank wrong-training"><span className="eyebrow">SCHRITT FÜR SCHRITT</span><h1>Fehlertraining</h1><p>Richtig abgegeben? Eine Stufe weiter. Falsch oder teilweise richtig? Zurück zu Stufe 1. Nur eine Lösung anzusehen verändert keine Stufe.</p>{(failure||error)&&<p role="alert">{failure||error}</p>}{!rows||!data?<p role="status">Fehlertraining wird geladen…</p>:<div className="wrong-stages">{stages.map(s=>{const ids=new Set(data.inventory.map(q=>q.question_id)),count=rows.filter(r=>r.stage===s.id&&ids.has(r.question_id)).length;return <article className="wrong-stage" key={s.id} data-stage={s.id}><h2>{s.title}</h2><strong className="stage-count">{count}</strong><span>Aufgaben</span><p>{s.text}</p><button className="primary" disabled={disabled||launching||!count} onClick={()=>void start(s.id)}>Jetzt üben</button></article>})}</div>}</section>;
+}

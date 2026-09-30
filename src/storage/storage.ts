@@ -1,4 +1,6 @@
 import {wrongResults,reconcileWrongQuestions,resultKey,type WrongQuestionState} from '../learning/wrongQuestions';
+import {TrainingStore} from '../training/store';
+import {TRAINING_STORES,validTrainingRun,validTrainingProgress,type TrainingDefinition,type TrainingQuestionSnapshot,type TrainingStartOptions,type TrainingRun,type TrainingProgress} from '../training/model';
 import {ModuleProgressStore} from './moduleProgressStore';
 import {inRun,stateFor,type ModuleDescriptor} from '../learning/moduleProgress';
 import {legacyQuestionNotes,validQuestionNote,type QuestionNote} from '../learning/questionNotes';
@@ -23,6 +25,7 @@ export class IndexedDBProgressRepository implements ProgressRepository {
   private db: Dexie;
   private syncStore:SyncPersistence;
   private moduleStore:ModuleProgressStore;
+  private trainingStore:TrainingStore;
   private records: Table<ProgressRecord, [string, string]>;
   constructor(name = 'ap2-private-learning') {
     this.db = new Dexie(name);
@@ -36,8 +39,10 @@ export class IndexedDBProgressRepository implements ProgressRepository {
     this.db.version(8).stores({questionNotes:'[userId+question_id],userId'});
     this.db.version(9).stores({moduleProgress:'[userId+id],userId',moduleRuns:'[userId+run_id],userId,[userId+progress_id]'});
     this.db.version(10).stores({wrongQuestions:'[userId+question_id],userId'});
+    this.db.version(11).stores({trainingRuns:'[userId+run_id],userId',trainingProgress:'[userId+definition_key],userId'});
     this.syncStore=new SyncPersistence(this.db);
     this.moduleStore=new ModuleProgressStore(this.db,this.syncStore);
+    this.trainingStore=new TrainingStore(this.db,this.syncStore);
     this.records = this.db.table('records');
   }
   async getWrongQuestions(userId:string):Promise<WrongQuestionState[]>{
@@ -53,10 +58,18 @@ export class IndexedDBProgressRepository implements ProgressRepository {
     await this.db.transaction('rw',this.syncStore.tables(),async()=>{
       const state=(await this.getWrongQuestions(userId)).find(s=>s.question_id===questionId);if(!state)return;
       const stamp=new Date().toISOString(),ids=wrongResults(userId,await this.getAttempts(userId),await this.getTestSessions(userId)).filter(r=>r.question_id===questionId).map(resultKey);
-      await this.syncStore.put('wrongQuestions',{...state,active:false,entered_at:null,dismissed_at:stamp,dismissed_result_ids:[...new Set([...state.dismissed_result_ids,...ids])],updated_at:stamp,revision:state.revision+1});
+      await this.syncStore.put('wrongQuestions',{...state,active:false,stage:null,entered_at:null,dismissed_at:stamp,dismissed_result_ids:[...new Set([...state.dismissed_result_ids,...ids])],updated_at:stamp,revision:state.revision+1});
     });
   }
   getModuleProgress(userId:string){return this.moduleStore.list(userId);}
+  startTraining(userId:string,definition:TrainingDefinition,snapshots:TrainingQuestionSnapshot[],options?:TrainingStartOptions){return this.trainingStore.start(userId,definition,snapshots,options);}
+  getTrainingRun(userId:string,runId:string){return this.trainingStore.get(userId,runId);}
+  getTrainingRuns(userId:string){return this.trainingStore.runs(userId);}
+  getTrainingProgress(userId:string){return this.trainingStore.progress(userId);}
+  saveTrainingDraft(userId:string,runId:string,revision:number,session:LearningSession){return this.trainingStore.saveDraft(userId,runId,revision,session);}
+  moveTraining(userId:string,runId:string,revision:number,questionId:string){return this.trainingStore.move(userId,runId,revision,questionId);}
+  saveTrainingAttempt(userId:string,runId:string,revision:number,attempt:Attempt,session:LearningSession){return this.trainingStore.saveAttempt(userId,runId,revision,attempt,session);}
+  deleteTrainingAttempt(userId:string,runId:string,revision:number,attemptId:string){return this.trainingStore.deleteAttempt(userId,runId,revision,attemptId);}
   getModuleRuns(userId:string){return this.moduleStore.runs(userId);}
   ensureModuleProgress(userId:string,d:ModuleDescriptor){return this.moduleStore.ensure(userId,d);}
   savePracticeSession(session:LearningSession,id:string,runId:string){return this.moduleStore.saveSession(session,id,runId);}
@@ -186,8 +199,8 @@ export class IndexedDBProgressRepository implements ProgressRepository {
   async exportSnapshot(userId:string){
     await this.migrateQuestionNotes(userId);
     await this.getWrongQuestions(userId);
-    const names=[...PERSONAL_STORES];
-    return this.db.transaction('r',names,async()=>({schema_version:1 as const,userId,records:await this.getRecords(userId),reviews:await this.getReviews(userId),answerReviews:await this.getAnswerReviews(userId),attempts:await this.getAttempts(userId),learningSessions:await this.getLearningSessions(userId),testSessions:await this.getTestSessions(userId),wrongQuestions:await this.db.table<WrongQuestionState>('wrongQuestions').where('userId').equals(userId).toArray(),settings:await this.getSettings(userId),moduleProgress:await this.getModuleProgress(userId),moduleRuns:await this.getModuleRuns(userId),questionNotes:await this.db.table<QuestionNote>('questionNotes').where('userId').equals(userId).toArray()}));
+    const names=[...PERSONAL_STORES,...TRAINING_STORES];
+    return this.db.transaction('r',names,async()=>({schema_version:1 as const,userId,trainingRuns:await this.getTrainingRuns(userId),trainingProgress:await this.db.table<TrainingProgress>('trainingProgress').where('userId').equals(userId).toArray(),records:await this.getRecords(userId),reviews:await this.getReviews(userId),answerReviews:await this.getAnswerReviews(userId),attempts:await this.getAttempts(userId),learningSessions:await this.getLearningSessions(userId),testSessions:await this.getTestSessions(userId),wrongQuestions:await this.db.table<WrongQuestionState>('wrongQuestions').where('userId').equals(userId).toArray(),settings:await this.getSettings(userId),moduleProgress:await this.getModuleProgress(userId),moduleRuns:await this.getModuleRuns(userId),questionNotes:await this.db.table<QuestionNote>('questionNotes').where('userId').equals(userId).toArray()}));
   }
   getOutbox(userId:string){return this.syncStore.outbox(userId);}
   getSyncConflicts(userId:string){return this.syncStore.conflicts(userId);}
@@ -202,12 +215,26 @@ export class IndexedDBProgressRepository implements ProgressRepository {
   async importSnapshot(snapshot:import('../types').PersonalDataSnapshot,userId:string,sync:boolean){
     if(snapshot.schema_version!==1||!snapshot.userId||!userId)throw Error('Ungültige Sicherung.');
     for(const entity of PERSONAL_STORES){const list=['settings','questionNotes','moduleProgress','moduleRuns','wrongQuestions'].includes(entity)?(snapshot[entity]??[]):snapshot[entity];if(!Array.isArray(list))throw Error('Ungültige Sicherung.');for(const row of list){if(!row||typeof row!=='object'||typeof (row as unknown as Record<string,unknown>)[ID_FIELDS[entity]]!=='string'||row.userId!==snapshot.userId)throw Error('Ungültige Datensatzidentität.');}}
-    await this.db.transaction('rw',this.syncStore.tables(),async()=>{
+    await this.db.transaction('rw',[...this.syncStore.tables(),...TRAINING_STORES],async()=>{
       for(const entity of PERSONAL_STORES)for(const row of snapshot[entity]??[]){const value={...row,userId} as unknown as Record<string,unknown>,id=String(value[ID_FIELDS[entity]]),existing=await this.db.table(entity).get([userId,id]);
         if(existing&&canonical(existing)!==canonical(value))throw Error('Gleiche ID mit anderem Inhalt. Import wurde ohne Änderungen abgebrochen.');
         validateEntity(entity,id,userId,value);if(!existing){if(sync)await this.syncStore.put(entity,value);else await this.db.table(entity).put(value);}else if(sync&&!(await this.db.table('syncMeta').get([userId,entity,id])))await this.syncStore.mark(entity,userId,id,value);
       }
+      for(const entity of TRAINING_STORES){
+        const rows=snapshot[entity]??[];if(!Array.isArray(rows))throw Error('Ungültige Trainingssicherung.');
+        for(const row of rows){
+          if(row.userId!==snapshot.userId||(entity==='trainingRuns'?!validTrainingRun(row):!validTrainingProgress(row)))throw Error('Ungültige Trainingssicherung.');
+          const value={...row,userId};
+          if(entity==='trainingRuns')(value as TrainingRun).drafts=Object.fromEntries(Object.entries((row as TrainingRun).drafts).map(([id,draft])=>[id,{...draft,userId}]));
+          const id=entity==='trainingRuns'?(row as TrainingRun).run_id:(row as TrainingProgress).definition_key,existing=await this.db.table(entity).get([userId,id]);
+          if(existing&&canonical(existing)!==canonical(value))throw Error('Training mit gleicher ID hat anderen Inhalt.');
+          if(!existing)await this.db.table(entity).put(value);
+        }
+      }
+      const trainingRuns=await this.getTrainingRuns(userId),trainingProgress=await this.db.table<TrainingProgress>('trainingProgress').where('userId').equals(userId).toArray();
+      for(const p of trainingProgress)if(!trainingRuns.some(r=>r.run_id===p.run_id&&r.definition_key===p.definition_key&&r.kind==='bank'))throw Error('Trainingsfortschritt ohne passende Runde.');
       const runs=await this.getModuleRuns(userId),attempts=await this.getAttempts(userId);
+      for(const r of trainingRuns)for(const [qid,ids] of Object.entries(r.attempt_ids))for(const id of ids)if(!attempts.some(a=>a.attempt_id===id&&a.question_id===qid&&a.training_run_id===r.run_id))throw Error('Trainingsrunde enthält einen ungültigen Versuch.');
       for(const p of await this.getModuleProgress(userId)){
         const run=runs.find(r=>r.run_id===p.run_id);
         if(!run||run.progress_id!==p.id||run.generation!==p.generation||canonical(run.question_ids)!==canonical(p.question_ids))throw Error('Sicherung enthält eine unvollständige Lernrunde.');

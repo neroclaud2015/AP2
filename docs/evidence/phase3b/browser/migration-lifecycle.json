@@ -1,0 +1,58 @@
+{
+  "checks": [
+    "Real Originalprüfung wrong result enters stage1; discard revokes, restore once reactivates, permanent delete revokes",
+    "Legacy recovered state migrated to stage3 not mastered; immutable legacy audit and attempt note/error snapshots retained; reload idempotent"
+  ],
+  "isolated_test_fixture": true,
+  "legacy": {
+    "userId": "local",
+    "question_id": "35c77ffdb630f70057e4cfb8-p3-h1-r2-c0",
+    "active": false,
+    "entered_at": null,
+    "last_wrong_at": "2026-01-01T10:00:00.000Z",
+    "wrong_count": 1,
+    "consecutive_correct": 3,
+    "dismissed_at": null,
+    "dismissed_result_ids": [],
+    "updated_at": "2026-01-04T10:00:00.000Z",
+    "revision": 8
+  },
+  "state": {
+    "userId": "local",
+    "question_id": "35c77ffdb630f70057e4cfb8-p3-h1-r2-c0",
+    "active": true,
+    "stage_version": 2,
+    "stage": 3,
+    "entered_at": "2026-01-01T10:00:00.000Z",
+    "last_wrong_at": "2026-01-01T10:00:00.000Z",
+    "wrong_count": 1,
+    "consecutive_correct": 3,
+    "dismissed_at": null,
+    "dismissed_result_ids": [],
+    "migration": {
+      "legacy_snapshot": {
+        "userId": "local",
+        "question_id": "35c77ffdb630f70057e4cfb8-p3-h1-r2-c0",
+        "active": false,
+        "entered_at": null,
+        "last_wrong_at": "2026-01-01T10:00:00.000Z",
+        "wrong_count": 1,
+        "consecutive_correct": 3,
+        "dismissed_at": null,
+        "dismissed_result_ids": [],
+        "updated_at": "2026-01-04T10:00:00.000Z",
+        "revision": 8
+      },
+      "cutover_result_ids": [
+        "practice:legacy-1:2026-01-01T10:00:00.000Z:falsch",
+        "practice:legacy-2:2026-01-02T10:00:00.000Z:richtig",
+        "practice:legacy-3:2026-01-03T10:00:00.000Z:richtig",
+        "practice:legacy-4:2026-01-04T10:00:00.000Z:richtig"
+      ],
+      "migrated_at": "2026-09-30T13:50:03.956Z"
+    },
+    "updated_at": "2026-09-30T13:50:03.956Z",
+    "revision": 9
+  },
+  "attempts_unchanged": true
+}

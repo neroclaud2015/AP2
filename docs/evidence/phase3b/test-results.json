@@ -1,0 +1,20 @@
+{
+  "frontend": {
+    "passed": 164,
+    "local_emulator_skipped": 3
+  },
+  "python_pipeline_regression": {
+    "passed": 136
+  },
+  "build": "passed",
+  "independent_review": "three UI integration issues and one backup validation gap fixed; no remaining blockers",
+  "browser_scripts": [
+    "browser_phase3b.cjs",
+    "browser_phase3b_migration.cjs",
+    "browser_phase3b_snapshot.cjs",
+    "browser_phase3b_all_pool.cjs"
+  ],
+  "all_production_questions_validated": 1332,
+  "modules": 42,
+  "production_pdf_rescans": 0
+}
