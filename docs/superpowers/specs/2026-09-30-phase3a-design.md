@@ -1,0 +1,27 @@
+# Phase 3A — Dynamic question bank design
+Date: 2026-09-30
+Status: approved direction; user explicitly authorizes implementation after constraint self-review, without another gate.
+
+## Scope and invariants
+Add Aufgabenbank, Fehlerfragen and compact Modultest year selection. No PDFs, source changes, cloud activation, adaptive weighting, or changes to the nine historical blockers. Existing notes, attempts, ModuleProgress, ModuleRuns and TestSession meaning stays intact.
+
+## Inventory and classification
+Production module registry is the sole inventory authority. Build reconciliation reads only existing segmented JSON. Exam choices derive from registry, never a literal React list. Taxonomy and question types are versioned independent JSON data; knowledge depth <=2. TaxonomyNode includes id, kind, label, parent_id, active, aliases, version. Matching cues belong in data, not component lists.
+QuestionClassification includes question_id, question_source_revision, knowledge_topic_ids, primary_question_type_id (nullable when unknown), secondary_question_type_ids, source, confidence, taxonomy_version, locked, updated_at, active, review reasons. New questions receive candidates. Removed records remain orphaned for audit but leave inventory and counts. Changed unlocked sources reclassify. human_confirmed + locked records retain all confirmed values and original confirmed revision, flag source_changed_since_confirmation and enter review. Unknown or low-confidence classifications NEVER remove a question from Aufgabenbank; explicit unclassified filter and all-question results remain available.
+Use metadata, trustworthy available text, and structural cues only. No image inference without evidence; no semantic guessing from module alone beyond the broad WiSo domain. New taxonomy proposals require review; automatic reconciliation cannot expand taxonomy. Disable/merge taxonomy through data and preserve audit.
+
+## Bank and review UX
+Main navigation adds Aufgabenbank and Fehlerfragen. Bank supports knowledge/type views, dynamic counts, AND filters (knowledge, type, module, MC/U, exam, active wrong-only). Provenance always includes exam/module/question. Classification review is an additional section linked from unified queue, preserving its nine existing items. Show original crop, candidate labels, confidence and reasons; Confirm/Change/Add topic/Remove topic saves locked source-bound review. Local confirmations are durable and exportable/importable for publication; build consumes validated confirmed overrides. No unauthenticated writes to static GitHub data.
+
+## Wrong questions
+WrongQuestionState is a separate personal entity keyed userId + question_id with active, entered_at, last_wrong_at, wrong_count, consecutive_correct, dismissed_at, updated_at, revision. It does not depend on ModuleProgress/run generation. Rebuild derived counts from eligible immutable formal results; stable result identities prevent duplicate counting and a test contributes once per question, not again via any mirrored attempt. Completed eligible tests only; discard/delete withdraw contributions and restore reinstates them. Pending U results are excluded until self-assessed. Practice history across all runs remains eligible; deleting an attempt withdraws it. Existing historical data is read, never rewritten.
+Incorrect/partial activates and resets correct streak. Two effective consecutive correct submissions hide; solution viewing generates no result. Manual hide persists at a result watermark and reactivates only on a new wrong result. Reconciliation of backing results supports invalidation, deletion and import without cumulative double counting. Save independent state in IndexedDB/ProgressRepository, include backup and sync contracts. No real Firebase configuration. Module reset cannot clear it. Preserve notes and attempts when hiding.
+
+## Compact years and adaptive reservation
+Accessible expandable control with current summary, select-all, clear, checkbox list, max-height scrolling, mobile width constraints and Escape/outside dismissal. All/single/multiple existing years URL remains; explicit empty selection disables launch. Years dynamically come from exam registry. Existing sessions remain frozen. Reserve selectionMode random|adaptive, knowledgeTopicIds and questionTypeIds in configuration only; no adaptive mode exposed or weights implemented.
+
+## Validation and release
+Automated tests: add mock season/question then modify/remove; no UI edits; locked revision handling, orphan counts, unknown visibility; wrong/partial, two correct, wrong again, hide, reset independence, invalid test exclusion, duplicates, backup/sync validation. Browser: bank views/filter/provenance, review edits, wrong lifecycle, all/single/multi/year URL, desktop/mobile 20+ years. Compare protected data hashes before/after. Build/test, independent review, commit/push main, CI and Pages verification, online acceptance screenshots. Report actual coverage including unclassified and remaining classification review counts.
+
+## Constraint self-review
+All ten supplemental constraints mapped above: data taxonomy; source revision; locked invalidation; unknown visibility; progress independence; discarded/deleted exclusion; formal-only streak; registry years; mock dynamic growth; adaptive interface only. No destructive migration or change to historical personal-data meaning required. Additive stores and derived state only.
