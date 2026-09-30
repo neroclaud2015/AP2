@@ -1,3 +1,4 @@
+import {questionPdfUrl} from './fullPdf';
 export type Box = [number, number, number, number];
 export interface SourceRegion {page:number;bbox:Box;role:string;owner:string;evidence:string;source_page_image?:string;source_size?:[number,number]}
 export interface QuestionSource {source_page:number;source_page_image:string;source_size:[number,number];bounding_box:Box;regions:Box[]}
@@ -50,4 +51,4 @@ export function questionSources(q:SegmentedQuestion):QuestionSource[]{
   bounding_box:[Math.min(...regions.map(r=>r.bbox[0])),Math.min(...regions.map(r=>r.bbox[1])),Math.max(...regions.map(r=>r.bbox[2])),Math.max(...regions.map(r=>r.bbox[3]))] as Box,regions:regions.map(r=>r.bbox)}))];
 }
 
-export function questionSourceUrl(q:SegmentedQuestion,source:QuestionSource){return q.source_pdf_available===false?asset(source.source_page_image||q.cropped_question_image):asset(q.source_pdf)+`#page=${source.source_page}`;}
+export function questionSourceUrl(q:SegmentedQuestion,source:QuestionSource,sha256?:string){return questionPdfUrl(q,source.source_page,sha256)??(q.source_pdf_available===false?asset(source.source_page_image||q.cropped_question_image):asset(q.source_pdf)+`#page=${source.source_page}`);}

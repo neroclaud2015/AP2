@@ -1,3 +1,4 @@
+import {fullPdfUrl} from './fullPdf';
 import {useAppServices} from '../services/context';
 import { useState } from 'react';
 import { asset } from './types';
@@ -35,6 +36,6 @@ export default function AnswerPanel({answer,review,overlay,disabled,onSave,onBus
     {error&&<p role="alert">{error}</p>}
     {source&&<div className="answer-source"><p>Originalquelle Q{answer.question_number} · Lösung PDF-Seite {answer.solution_source_page}. Von oben nach unten: 1, 2, 3, 4, 5.</p>
       <img src={asset(answer.source_crop)} alt={`Offizielle Antwortquelle Q${answer.question_number}: Nummer und fünf Positionen`} />
-      <div className="question-actions"><a href={answer.source_pdf_available===false?asset(answer.source_crop):asset(answer.source_pdf)+`#page=${answer.solution_source_page}`} target="_blank" rel="noreferrer">{answer.source_pdf_available===false?'Original-Antwortausschnitt':'Original-Antwortseite'} ↗</a><a href={asset(overlay)} target="_blank" rel="noreferrer">Gesamte Tabelle mit Erkennung ↗</a></div></div>}
+      <div className="question-actions"><a href={fullPdfUrl({source:answer.source_pdf,page:answer.solution_source_page})??(answer.source_pdf_available===false?asset(answer.source_crop):asset(answer.source_pdf)+`#page=${answer.solution_source_page}`)} target="_blank" rel="noreferrer">{!fullPdfUrl({source:answer.source_pdf})&&answer.source_pdf_available===false?'Original-Antwortausschnitt':'Original-Antwortseite'} ↗</a><a href={asset(overlay)} target="_blank" rel="noreferrer">Gesamte Tabelle mit Erkennung ↗</a></div></div>}
   </section>;
 }

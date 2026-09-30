@@ -1,3 +1,4 @@
+import {fullPdfUrl} from '../segmented/fullPdf';
 import {examSessions} from './examRegistry';
 import {MODULE_ORDER} from './moduleOrder';
 import promotedModules from '../../public/data/promoted_modules.json';
@@ -63,7 +64,7 @@ export function moduleProgress(questions:{question_id:string;question_number:str
  const ids=questions.map(q=>q.question_id),s=summarizeProgress(current,ids);return {...s,practiced:s.completed,lastActivity:current&&(current.revision>1||s.completed>0)?current.updated_at:'',resumeNumber:questions.find(q=>q.question_id===nextQuestion(current,ids))?.question_number??questions[0]?.question_number??'1',done:new Set(ids.filter(id=>current?.questionStates[id]?.state&&current.questionStates[id].state!=='unanswered'))};
 }
 
-export function originalPageLink(config:ModuleConfig,pdf:string,page:number){const image=config.sourcePageImages?.[page];return image?import.meta.env.BASE_URL+image:import.meta.env.BASE_URL+pdf+`#page=${page}`;}
+export function originalPageLink(config:ModuleConfig,pdf:string,page:number,sha256?:string){const original=fullPdfUrl({source:pdf,page,sha256});if(original)return original;const image=config.sourcePageImages?.[page];return image?import.meta.env.BASE_URL+image:import.meta.env.BASE_URL+pdf+`#page=${page}`;}
 
 export function switchExamRoute(route:LearningRoute,examId:string,modules:ModuleConfig[]=MODULES):LearningRoute {
  const target=modules.find(m=>m.examId===examId&&m.slug===route.module)??modules.find(m=>m.examId===examId);

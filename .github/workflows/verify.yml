@@ -25,6 +25,7 @@ jobs:
       - run: python scripts/validate_answers.py
       - run: python scripts/validate_u_solutions.py
       - run: python scripts/validate_source_registry.py
+      - run: python scripts/full_pdf_sources.py
       - run: npm test
       - uses: actions/setup-java@v4
         with:

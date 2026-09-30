@@ -28,6 +28,7 @@ jobs:
       - run: python scripts/validate_answers.py
       - run: python scripts/validate_u_solutions.py
       - run: python scripts/validate_source_registry.py
+      - run: python scripts/full_pdf_sources.py
       - run: npm test
       - uses: actions/setup-java@v4
         with:
@@ -72,6 +73,7 @@ jobs:
       - run: python scripts/publish_evidence.py overnight-release
       - run: python scripts/publish_evidence.py phase3a
       - run: python scripts/publish_evidence.py phase3b
+      - run: python scripts/publish_evidence.py full-pdf
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
