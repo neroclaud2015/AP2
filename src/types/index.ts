@@ -1,3 +1,4 @@
+import type {QuestionUncertaintyState} from '../learning/questionUncertainty';
 import type {TrainingDefinition,TrainingRun,TrainingProgress,TrainingQuestionSnapshot,TrainingStartOptions} from '../training/model';
 import type {WrongQuestionState} from '../learning/wrongQuestions';
 import type {ModuleDescriptor,ModuleProgress,ModuleRun} from '../learning/moduleProgress';
@@ -32,8 +33,11 @@ export type SyncResult = {status:'noop';reason:string}|{status:'completed';pulle
 export interface SyncProvider {pull(user:UserContext):Promise<SyncResult>;push(user:UserContext):Promise<SyncResult>;sync(user:UserContext):Promise<SyncResult>;resolveConflict(user:UserContext,conflict:SyncConflict,resolution:'local'|'remote'):Promise<SyncResult>}
 export interface LocalField { value: string; locked: boolean; origin: 'user' | 'machine' }
 export interface ProgressRecord { schema_version: 1; userId: string; questionId: string; fields: Record<string, LocalField>; updatedAt: string }
-export interface PersonalDataSnapshot {schema_version:1;userId:string;records:ProgressRecord[];reviews:QuestionReview[];answerReviews:AnswerReview[];attempts:Attempt[];learningSessions:LearningSession[];testSessions:TestSession[];trainingRuns?:TrainingRun[];trainingProgress?:TrainingProgress[];wrongQuestions?:WrongQuestionState[];questionNotes?:QuestionNote[];moduleProgress?:ModuleProgress[];moduleRuns?:ModuleRun[];settings?:Array<{userId:string;id:string;value:unknown}>}
+export interface PersonalDataSnapshot {schema_version:1;userId:string;records:ProgressRecord[];reviews:QuestionReview[];answerReviews:AnswerReview[];attempts:Attempt[];learningSessions:LearningSession[];testSessions:TestSession[];questionUncertainty?:QuestionUncertaintyState[];trainingRuns?:TrainingRun[];trainingProgress?:TrainingProgress[];wrongQuestions?:WrongQuestionState[];questionNotes?:QuestionNote[];moduleProgress?:ModuleProgress[];moduleRuns?:ModuleRun[];settings?:Array<{userId:string;id:string;value:unknown}>}
 export interface ProgressRepository {
+ getQuestionUncertainty(userId:string,questionId:string):Promise<QuestionUncertaintyState|undefined>;
+ getQuestionUncertainties(userId:string):Promise<QuestionUncertaintyState[]>;
+ saveQuestionUncertainty(userId:string,questionId:string,active:boolean,expectedRevision:number):Promise<QuestionUncertaintyState>;
  startTraining(userId:string,definition:TrainingDefinition,snapshots:TrainingQuestionSnapshot[],options?:TrainingStartOptions):Promise<TrainingRun>;
  getTrainingRun(userId:string,runId:string):Promise<TrainingRun|undefined>;
  getTrainingRuns(userId:string):Promise<TrainingRun[]>;

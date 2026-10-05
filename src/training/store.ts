@@ -17,13 +17,13 @@ export class TrainingStore {
  }
  private async save(run:TrainingRun){const next={...run,revision:run.revision+1,updated_at:new Date().toISOString()};await this.db.table('trainingRuns').put(next);return next;}
  async start(userId:string,definition:TrainingDefinition,snapshots:TrainingQuestionSnapshot[],options:TrainingStartOptions={}):Promise<TrainingRun>{
-  const normalized=canonicalTrainingDefinition(definition),key=trainingDefinitionKey(normalized);if(!userId.trim()||options.stage!==undefined&&![1,2,3,'mastered'].includes(options.stage))throw Error('Ungültiges Training.');
+  const normalized=canonicalTrainingDefinition(definition),key=trainingDefinitionKey(normalized);if(!userId.trim()||options.uncertainty&&options.stage!==undefined||options.stage!==undefined&&![1,2,3,'mastered'].includes(options.stage))throw Error('Ungültiges Training.');
   return this.db.transaction('rw',this.tables(),async()=>{
    const p=await this.db.table<TrainingProgress>('trainingProgress').get([userId,key]);
-   if(options.stage===undefined&&!options.restart&&p){const existing=await this.get(userId,p.run_id);if(!existing)throw Error('Gespeichertes Training fehlt.');return existing;}
+   if(options.stage===undefined&&!options.uncertainty&&!options.restart&&p){const existing=await this.get(userId,p.run_id);if(!existing)throw Error('Gespeichertes Training fehlt.');return existing;}
    if(!snapshots.length||snapshots.some(s=>!validTrainingSnapshot(s))||new Set(snapshots.map(s=>s.question.question_id)).size!==snapshots.length)throw Error('Keine gültige eindeutige Trainingsauswahl.');
    const now=new Date().toISOString(),ids=snapshots.map(s=>s.question.question_id);
-   const run:TrainingRun={userId,run_id:crypto.randomUUID(),definition_key:key,definition:normalized,kind:options.stage===undefined?'bank':'stage',...(options.stage===undefined?{}:{stage:options.stage}),question_ids:ids,snapshots:structuredClone(Object.fromEntries(snapshots.map(s=>[s.question.question_id,s]))),current_question:ids[0],drafts:{},attempt_ids:{},created_at:now,updated_at:now,revision:1};
+   const run:TrainingRun={userId,run_id:crypto.randomUUID(),definition_key:key,definition:normalized,kind:options.uncertainty?'uncertainty':options.stage===undefined?'bank':'stage',...(options.stage===undefined?{}:{stage:options.stage}),question_ids:ids,snapshots:structuredClone(Object.fromEntries(snapshots.map(s=>[s.question.question_id,s]))),current_question:ids[0],drafts:{},attempt_ids:{},created_at:now,updated_at:now,revision:1};
    await this.db.table('trainingRuns').add(run);
    if(run.kind==='bank')await this.db.table('trainingProgress').put({userId,definition_key:key,run_id:run.run_id,revision:(p?.revision??0)+1,updated_at:now} satisfies TrainingProgress);
    return run;

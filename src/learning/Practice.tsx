@@ -1,3 +1,4 @@
+import QuestionUncertaintyToggle from './QuestionUncertaintyToggle';
 import {fullPdfUrl} from '../segmented/fullPdf';
 import OfficialCorrection from './OfficialCorrection';
 import QuestionNoteEditor from './QuestionNoteEditor';
@@ -16,8 +17,9 @@ export default function Practice({provenance,classificationSourceRevision,questi
 }) {
  const {user,repository}=useAppServices();
  const [deleteTarget,setDeleteTarget]=useState<Attempt>();
+ const [uncertaintyBusy,setUncertaintyBusy]=useState(false);
  const [practiceBusy,setPracticeBusy]=useState(false);const [noteBusy,setNoteBusy]=useState(false);const [classificationBusy,setClassificationBusy]=useState(false);
- useEffect(()=>{onBusy(practiceBusy||noteBusy||classificationBusy||!!deleteTarget);},[practiceBusy,noteBusy,classificationBusy,deleteTarget,onBusy]);
+ useEffect(()=>{onBusy(practiceBusy||noteBusy||classificationBusy||uncertaintyBusy||!!deleteTarget);},[practiceBusy,noteBusy,classificationBusy,uncertaintyBusy,deleteTarget,onBusy]);
  const [draft,setDraft]=useState<Record<string,string>>(session?.draft??{});
  const [revealed,setRevealed]=useState(session?.revealed??false);
  const [attemptId,setAttemptId]=useState(session?.attempt_id);
@@ -44,16 +46,17 @@ export default function Practice({provenance,classificationSourceRevision,questi
  const canAssess=hasUAnswer&&revealed;
  const canSubmit=u?canAssess&&u.subparts.every(p=>!!draft['assessment:'+p.id]):!!draft.choice;
  const submit=()=>void act(async()=>{
-  if(attempt||!canSubmit)return;
+  if(attempt||!canSubmit||uncertaintyBusy)return;
   const value=Number(draft.choice);if(!u&&(!Number.isInteger(value)||value<1||value>5))return;
   const subparts=u?.subparts.map(p=>({id:p.id,user_answer:draft[p.id]??'',unit:p.numeric?.unit,
    correctness:draft['assessment:'+p.id] as Correctness,numeric_suggestion:p.numeric?checkNumeric(draft[p.id]??'',p.numeric.unit,p.numeric):undefined,self_assessed:true as const,auto_scored:false as const}))??[];
   const key=answer?.official_answer_status==='auto_ready'||(answer?.official_answer_status as string)==='confirmed'?answer?.official_answer??null:null;
   const correctness=u?combineAssessments(subparts.map(p=>p.correctness??null)):key===null?null:value===key?'richtig':'falsch';
   if(u&&correctness===null)return;
+  const unsure=(await repository.getQuestionUncertainty(user.id,questionId))?.active??false;
   const result:Attempt={...provenance,attempt_id:crypto.randomUUID(),userId:user.id,question_id:questionId,timestamp:new Date().toISOString(),
    user_answer:u?Object.fromEntries(u.subparts.map(p=>[p.id,draft[p.id]??''])):{choice:value},correctness,partial_status:correctness==='teilweise',
-   unsure:draft.unsure==='true',confidence:draft.unsure==='true'?'unsure':'sure',hints_used:draft.hint==='true'?['general_strategy']:[],
+   unsure,confidence:unsure?'unsure':'sure',hints_used:draft.hint==='true'?['general_strategy']:[],
    error_reason:'',note:(await repository.getQuestionNote(user.id,questionId))?.text??'',self_assessed:!!u,auto_scored:!u&&key!==null,subparts,
    official_answer_snapshot:u?undefined:key,source_revision:u?.extractor_revision??answer?.parser_revision};
   await onAttempt(result,{userId:user.id,question_id:questionId,draft,revealed:true,attempt_id:result.attempt_id});
@@ -71,11 +74,11 @@ export default function Practice({provenance,classificationSourceRevision,questi
      {p.type==='drawing'&&<button className="outline" onClick={()=>update(p.id,(draft[p.id]??'')+' Auf Papier gezeichnet.')}>Auf Papier gezeichnet</button>}</>}
    </fieldset>)}</div>}
   {!revealed&&<div className="learning-tools"><button className="outline" disabled={saving} onClick={()=>update('hint','true')}>Hinweis</button>{draft.hint==='true'&&<p>Lies die gesuchte Größe und alle Bedingungen noch einmal. Prüfe Einheiten und vergleiche mit der Originalzeichnung.</p>}</div>}
-  <label className="practice-unsure"><input type="checkbox" disabled={saving||!!attempt} checked={draft.unsure==='true'} onChange={e=>update('unsure',String(e.target.checked))}/> Ich bin unsicher</label>
   <div className="practice-actions">
-   <button className="primary" disabled={saving||!!attempt||!canSubmit} onClick={submit}>Antwort abgeben</button>
+   <button className="primary" disabled={saving||uncertaintyBusy||!!attempt||!canSubmit} onClick={submit}>Antwort abgeben</button>
    <button className="outline reveal-button" disabled={saving} onClick={reveal}>Lösung anzeigen</button>
   </div>
+  <QuestionUncertaintyToggle key={user.id+':uncertainty:'+questionId} questionId={questionId} disabled={saving} onBusy={setUncertaintyBusy}/>
   {u&&!attempt&&!revealed&&hasUAnswer&&<p className="hint">Öffne die Lösung und bewerte deine Antwort vor der Abgabe selbst.</p>}
   {revealed&&<div className="learning-result">
    {attempt&&<div className={`result-banner ${attempt.correctness??'pending'}`} role="status"><strong>{attempt.correctness==='richtig'?'Richtig':attempt.correctness==='falsch'?'Falsch':attempt.correctness==='teilweise'?'Teilweise richtig':'Bewertung offen'}</strong><span>{u?'Deine abschließende Selbstbewertung':'Deine Antwort: '+attempt.user_answer.choice+' · Offizielle Antwort: '+(attempt.official_answer_snapshot??'noch nicht eindeutig')}</span></div>}
@@ -84,7 +87,7 @@ export default function Practice({provenance,classificationSourceRevision,questi
     {canAssess&&u.subparts.map(p=><div className="part-assessment" key={p.id}><strong>{p.label}</strong>
      {p.numeric&&<p data-testid="numeric-result">Numerische Prüfung: {checkNumeric(draft[p.id]??'',p.numeric.unit,p.numeric)==='richtig'?'Richtig':checkNumeric(draft[p.id]??'',p.numeric.unit,p.numeric)==='falsch'?'Falsch':'Keine gültige Zahl'} · Offiziell {p.numeric.value} {p.numeric.unit}. {p.numeric.tolerance_policy}</p>}
      <label>Deine Bewertung <select aria-label={`${number} Bewertung ${p.id}`} disabled={saving||!!attempt} value={draft['assessment:'+p.id]??''} onChange={e=>update('assessment:'+p.id,e.target.value)}><option value="">Bitte selbst bewerten</option><option value="richtig">richtig</option><option value="teilweise">teilweise richtig</option><option value="falsch">falsch</option></select></label></div>)}
-    {canAssess&&!attempt&&<button className="primary" disabled={saving||!canSubmit} onClick={submit}>Bewertung speichern</button>}</>:
+    {canAssess&&!attempt&&<button className="primary" disabled={saving||uncertaintyBusy||!canSubmit} onClick={submit}>Bewertung speichern</button>}</>:
     answer&&<><h3>Offizielle Lösung</h3><p>Offizielle Antwort: {answer.official_answer_status==='auto_ready'||(answer.official_answer_status as string)==='confirmed'?answer.official_answer??'noch nicht eindeutig':'noch nicht eindeutig'}</p><details open><summary>Offizielle Antwortquelle</summary><img className="mc-source" src={asset(answer.source_crop)} alt={`Offizielle Antwortquelle Q${number}`}/><a href={fullPdfUrl({sha256:provenance?.solution_source_sha256,source:answer.source_pdf,page:answer.solution_source_page})??(answer.source_pdf_available===false?asset(answer.source_crop):asset(answer.source_pdf)+`#page=${answer.solution_source_page}`)} target="_blank" rel="noreferrer">{!fullPdfUrl({sha256:provenance?.solution_source_sha256,source:answer.source_pdf})&&answer.source_pdf_available===false?'Original-Antwortausschnitt':'Original-Antwortseite'} ↗</a></details></>}
    <details><summary>Erklärung</summary><p>{u?'Die Original-Lösung zeigt den offiziellen Lösungsweg.':'Der offizielle Schlüssel kennzeichnet die richtige Option. Eine fachlich geprüfte Erklärung ist noch nicht hinterlegt.'}</p><p>Ergänze deine eigene Erklärung in der Notiz.</p></details>
   </div>}

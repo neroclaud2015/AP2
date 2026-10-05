@@ -1,7 +1,7 @@
 import 'fake-indexeddb/auto';
 import {expect,test} from 'vitest';
 import {IndexedDBProgressRepository} from '../storage/storage';
-import {trainingDefinitionKey,validTrainingSnapshot,type TrainingDefinition,type TrainingQuestionSnapshot} from './model';
+import {trainingDefinitionKey,validTrainingRun,validTrainingSnapshot,type TrainingDefinition,type TrainingQuestionSnapshot} from './model';
 import type {Attempt} from '../learning/model';
 import {MODULES} from '../learning/modules';
 const definition:TrainingDefinition={knowledgeTopicIds:[],questionTypeIds:[],moduleIds:['ap'],examIds:[]};
@@ -53,4 +53,31 @@ test('invalid crop, foreign module, duplicate membership and stale deletes canno
  for(const broken of [{...good,question:{...good.question,bounding_box:[0,0,0,0]}},{...good,config:{...good.config,slug:'wiso'}}])await expect(r.startTraining('u',definition,[broken as TrainingQuestionSnapshot],{restart:true})).rejects.toThrow();
  await expect(r.startTraining('u',definition,[good,good],{restart:true})).rejects.toThrow();
  const saved=await r.saveTrainingAttempt('u',run.run_id,run.revision,attempt('a'),session());await expect(r.deleteTrainingAttempt('u',run.run_id,run.revision,'a')).rejects.toThrow();expect((await r.getTrainingRun('u',run.run_id))?.revision).toBe(saved.run.revision);expect(await r.getAttempts('u')).toHaveLength(1);expect(await r.getTrainingRuns('u')).toHaveLength(1);r.close();
+});
+
+
+test('uncertainty entry and restart refresh snapshots without resuming or replacing bank progress',async()=>{
+ const r=repo(),bank=await r.startTraining('u',definition,[snapshot('bank')]),progress=await r.getTrainingProgress('u');
+ const source=snapshot('unsure');const first=await r.startTraining('u',definition,[source],{uncertainty:true});
+ expect(first.kind).toBe('uncertainty');expect(first.stage).toBeUndefined();expect(validTrainingRun(first)).toBe(true);
+ expect(validTrainingRun({...first,stage:1})).toBe(false);expect(validTrainingRun({...first,kind:'other'})).toBe(false);
+ source.question.cropped_question_image='new-source.png';
+ const restored=await r.getTrainingRun('u',first.run_id);expect(restored?.question_ids).toEqual(['unsure']);expect(restored?.snapshots.unsure.question.cropped_question_image).toBe('original.png');
+ const second=await r.startTraining('u',definition,[snapshot('later')],{uncertainty:true});
+ expect(second.run_id).not.toBe(first.run_id);expect(second.question_ids).toEqual(['later']);
+ const restarted=await r.startTraining('u',definition,[snapshot('fresh')],{uncertainty:true,restart:true});
+ expect(restarted.question_ids).toEqual(['fresh']);expect((await r.getTrainingRun('u',first.run_id))?.question_ids).toEqual(['unsure']);
+ expect(await r.getTrainingProgress('u')).toEqual(progress);expect((await r.startTraining('u',definition,[])).run_id).toBe(bank.run_id);
+ await expect(r.startTraining('u',definition,[],{uncertainty:true})).rejects.toThrow();
+ await expect(r.startTraining('u',definition,[snapshot()],{uncertainty:true,stage:1})).rejects.toThrow();r.close();
+});
+
+
+test('uncertainty runs round-trip backups without creating bank progress',async()=>{
+ const source=repo(),copy=repo();const run=await source.startTraining('u',definition,[snapshot()],{uncertainty:true});
+ await source.saveTrainingDraft('u',run.run_id,run.revision,session());
+ await copy.importSnapshot(await source.exportSnapshot('u'),'copy',true);
+ const restored=await copy.getTrainingRun('copy',run.run_id);
+ expect(restored?.kind).toBe('uncertainty');expect(restored?.question_ids).toEqual(['q']);expect(restored?.drafts.q.draft).toEqual({choice:'1'});
+ expect(await copy.getTrainingProgress('copy')).toEqual([]);expect(await source.getTrainingProgress('u')).toEqual([]);source.close();copy.close();
 });

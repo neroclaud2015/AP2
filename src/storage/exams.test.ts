@@ -17,7 +17,7 @@ it('migrates real v4 without changing any old table and keeps tests independent'
  const fixtures={records:{userId:'local',questionId:'old-id',fields:{note:{value:'keep',locked:true}}},reviews:{userId:'local',question_id:'old-id',tags:['keep']},answerReviews:{userId:'local',question_id:'old-id',official_answer:4,locked:true},attempts:{userId:'local',attempt_id:'old-attempt',question_id:'old-id',note:'keep'},learningSessions:{userId:'local',question_id:'old-id',draft:{choice:'4'}}};
  for(const [table,value] of Object.entries(fixtures))await old.table(table).put(value);old.close();
  const repo=new IndexedDBProgressRepository(name);const s=await repo.createTestSession(make());await repo.updateTestSession('local',s.test_id,s.revision,{type:'answer',questionId:s.question_ids[0],answer:{choice:'3'}});repo.close();
- const check=new Dexie(name);await check.open();expect(check.verno).toBe(11);for(const [table,value] of Object.entries(fixtures))expect(await check.table(table).toArray()).toEqual([value]);check.close();await Dexie.delete(name);
+ const check=new Dexie(name);await check.open();expect(check.verno).toBe(12);for(const [table,value] of Object.entries(fixtures))expect(await check.table(table).toArray()).toEqual([value]);check.close();await Dexie.delete(name);
 });
 it('prevents silent replacement and stale-tab overwrites transactionally',async()=>{
  const name='session-conflict-'+crypto.randomUUID(),repo=new IndexedDBProgressRepository(name);const s=await repo.createTestSession(make());

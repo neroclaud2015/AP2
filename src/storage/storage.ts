@@ -1,3 +1,4 @@
+import {legacyQuestionUncertainty,validQuestionUncertainty,type QuestionUncertaintyState} from '../learning/questionUncertainty';
 import {wrongResults,reconcileWrongQuestions,resultKey,type WrongQuestionState} from '../learning/wrongQuestions';
 import {TrainingStore} from '../training/store';
 import {TRAINING_STORES,validTrainingRun,validTrainingProgress,type TrainingDefinition,type TrainingQuestionSnapshot,type TrainingStartOptions,type TrainingRun,type TrainingProgress} from '../training/model';
@@ -40,10 +41,30 @@ export class IndexedDBProgressRepository implements ProgressRepository {
     this.db.version(9).stores({moduleProgress:'[userId+id],userId',moduleRuns:'[userId+run_id],userId,[userId+progress_id]'});
     this.db.version(10).stores({wrongQuestions:'[userId+question_id],userId'});
     this.db.version(11).stores({trainingRuns:'[userId+run_id],userId',trainingProgress:'[userId+definition_key],userId'});
+    this.db.version(12).stores({questionUncertainty:'[userId+question_id],userId'});
     this.syncStore=new SyncPersistence(this.db);
     this.moduleStore=new ModuleProgressStore(this.db,this.syncStore);
     this.trainingStore=new TrainingStore(this.db,this.syncStore);
     this.records = this.db.table('records');
+  }
+  private async migrateQuestionUncertainty(userId:string){
+    await this.db.transaction('rw',['questionUncertainty','attempts','testSessions'],async()=>{
+      const table=this.db.table<QuestionUncertaintyState>('questionUncertainty');
+      const states=legacyQuestionUncertainty(userId,await table.where('userId').equals(userId).toArray(),await this.getAttempts(userId),await this.getTestSessions(userId),new Date().toISOString());
+      if(states.length)await table.bulkPut(states);
+    });
+  }
+  async getQuestionUncertainties(userId:string):Promise<QuestionUncertaintyState[]>{await this.migrateQuestionUncertainty(userId);return this.db.table<QuestionUncertaintyState>('questionUncertainty').where('userId').equals(userId).toArray();}
+  async getQuestionUncertainty(userId:string,questionId:string):Promise<QuestionUncertaintyState|undefined>{await this.migrateQuestionUncertainty(userId);return this.db.table<QuestionUncertaintyState>('questionUncertainty').get([userId,questionId]);}
+  async saveQuestionUncertainty(userId:string,questionId:string,active:boolean,expectedRevision:number):Promise<QuestionUncertaintyState>{
+    await this.migrateQuestionUncertainty(userId);
+    return this.db.transaction('rw','questionUncertainty',async()=>{
+      const table=this.db.table<QuestionUncertaintyState>('questionUncertainty'),old=await table.get([userId,questionId]);
+      if((old?.revision??0)!==expectedRevision)throw Error('Die Markierung wurde inzwischen geändert. Bitte neu laden.');
+      const now=new Date().toISOString(),state:QuestionUncertaintyState={...old,userId,question_id:questionId,active,entered_at:active?(old?.active?old.entered_at:now):null,updated_at:now,revision:(old?.revision??0)+1};
+      if(!validQuestionUncertainty(state))throw Error('Ungültige Unsicher-Markierung.');
+      await table.put(state);return state;
+    });
   }
   async getWrongQuestions(userId:string):Promise<WrongQuestionState[]>{
     return this.db.transaction('rw',this.syncStore.tables(),async()=>{
@@ -69,13 +90,13 @@ export class IndexedDBProgressRepository implements ProgressRepository {
   saveTrainingDraft(userId:string,runId:string,revision:number,session:LearningSession){return this.trainingStore.saveDraft(userId,runId,revision,session);}
   moveTraining(userId:string,runId:string,revision:number,questionId:string){return this.trainingStore.move(userId,runId,revision,questionId);}
   saveTrainingAttempt(userId:string,runId:string,revision:number,attempt:Attempt,session:LearningSession){return this.trainingStore.saveAttempt(userId,runId,revision,attempt,session);}
-  deleteTrainingAttempt(userId:string,runId:string,revision:number,attemptId:string){return this.trainingStore.deleteAttempt(userId,runId,revision,attemptId);}
+  async deleteTrainingAttempt(userId:string,runId:string,revision:number,attemptId:string){await this.migrateQuestionUncertainty(userId);return this.trainingStore.deleteAttempt(userId,runId,revision,attemptId);}
   getModuleRuns(userId:string){return this.moduleStore.runs(userId);}
   ensureModuleProgress(userId:string,d:ModuleDescriptor){return this.moduleStore.ensure(userId,d);}
   savePracticeSession(session:LearningSession,id:string,runId:string){return this.moduleStore.saveSession(session,id,runId);}
   savePracticeAttempt(attempt:Attempt,session:LearningSession,id:string,runId:string){return this.moduleStore.saveAttempt(attempt,session,id,runId);}
-  async resetModuleProgress(userId:string,id:string,revision:number,runId:string){await this.migrateQuestionNotes(userId);return this.moduleStore.reset(userId,id,revision,runId);}
-  async deletePracticeAttempt(userId:string,id:string,attemptId:string,runId:string){await this.migrateQuestionNotes(userId);return this.moduleStore.deleteAttempt(userId,id,attemptId,runId);}
+  async resetModuleProgress(userId:string,id:string,revision:number,runId:string){await this.migrateQuestionUncertainty(userId);await this.migrateQuestionNotes(userId);return this.moduleStore.reset(userId,id,revision,runId);}
+  async deletePracticeAttempt(userId:string,id:string,attemptId:string,runId:string){await this.migrateQuestionUncertainty(userId);await this.migrateQuestionNotes(userId);return this.moduleStore.deleteAttempt(userId,id,attemptId,runId);}
   async get(userId: string, questionId: string) { return this.records.get([userId, questionId]); }
   private async write(userId: string, questionId: string, field: string, value: LocalField) {
     await this.db.transaction('rw', this.syncStore.tables(), async () => {
@@ -152,7 +173,7 @@ export class IndexedDBProgressRepository implements ProgressRepository {
   async annotateAttempt(userId:string,id:string,values:Pick<Attempt,'note'|'error_reason'|'unsure'|'confidence'>) {
     const table=this.db.table<Attempt>('attempts');
     await this.db.transaction('rw',this.syncStore.tables(),async()=>{const a=await table.get([userId,id]);if(!a)throw Error('Missing attempt');
-      await this.syncStore.put('attempts',{...a,note:values.note,error_reason:values.error_reason,unsure:values.unsure,confidence:values.confidence});});
+      await this.syncStore.put('attempts',{...a,note:values.note,error_reason:values.error_reason});});
   }
   async getTestSessions(userId:string):Promise<TestSession[]> {return this.db.table<TestSession>('testSessions').where('userId').equals(userId).toArray();}
   async getAnalysisTestSessions(userId:string):Promise<TestSession[]> {return (await this.getTestSessions(userId)).filter(isEligibleForAnalysis);}
@@ -170,6 +191,7 @@ export class IndexedDBProgressRepository implements ProgressRepository {
     });
   }
   async updateTestSession(userId:string,id:string,revision:number,action:SessionAction):Promise<TestSession> {
+    if(action.type==='discard')await this.migrateQuestionUncertainty(userId);
     const table=this.db.table<TestSession>('testSessions');
     return this.db.transaction('rw',this.syncStore.tables(),async()=>{
       const current=await table.get([userId,id]);if(!current)throw Error('Versuch nicht gefunden.');
@@ -186,6 +208,7 @@ export class IndexedDBProgressRepository implements ProgressRepository {
     return this.updateTestSession(userId,id,revision,{type:'discard'});
   }
   async deleteTestSession(userId:string,id:string,revision:number):Promise<void> {
+    await this.migrateQuestionUncertainty(userId);
     const table=this.db.table<TestSession>('testSessions');
     await this.db.transaction('rw',this.syncStore.tables(),async()=>{
       const current=await table.get([userId,id]);if(!current)throw Error('Versuch nicht gefunden.');
@@ -197,10 +220,11 @@ export class IndexedDBProgressRepository implements ProgressRepository {
   }
   async getRecords(userId:string):Promise<ProgressRecord[]>{return this.records.where('userId').equals(userId).toArray();}
   async exportSnapshot(userId:string){
+    await this.migrateQuestionUncertainty(userId);
     await this.migrateQuestionNotes(userId);
     await this.getWrongQuestions(userId);
-    const names=[...PERSONAL_STORES,...TRAINING_STORES];
-    return this.db.transaction('r',names,async()=>({schema_version:1 as const,userId,trainingRuns:await this.getTrainingRuns(userId),trainingProgress:await this.db.table<TrainingProgress>('trainingProgress').where('userId').equals(userId).toArray(),records:await this.getRecords(userId),reviews:await this.getReviews(userId),answerReviews:await this.getAnswerReviews(userId),attempts:await this.getAttempts(userId),learningSessions:await this.getLearningSessions(userId),testSessions:await this.getTestSessions(userId),wrongQuestions:await this.db.table<WrongQuestionState>('wrongQuestions').where('userId').equals(userId).toArray(),settings:await this.getSettings(userId),moduleProgress:await this.getModuleProgress(userId),moduleRuns:await this.getModuleRuns(userId),questionNotes:await this.db.table<QuestionNote>('questionNotes').where('userId').equals(userId).toArray()}));
+    const names=[...PERSONAL_STORES,...TRAINING_STORES,'questionUncertainty'];
+    return this.db.transaction('r',names,async()=>({schema_version:1 as const,userId,questionUncertainty:await this.db.table<QuestionUncertaintyState>('questionUncertainty').where('userId').equals(userId).toArray(),trainingRuns:await this.getTrainingRuns(userId),trainingProgress:await this.db.table<TrainingProgress>('trainingProgress').where('userId').equals(userId).toArray(),records:await this.getRecords(userId),reviews:await this.getReviews(userId),answerReviews:await this.getAnswerReviews(userId),attempts:await this.getAttempts(userId),learningSessions:await this.getLearningSessions(userId),testSessions:await this.getTestSessions(userId),wrongQuestions:await this.db.table<WrongQuestionState>('wrongQuestions').where('userId').equals(userId).toArray(),settings:await this.getSettings(userId),moduleProgress:await this.getModuleProgress(userId),moduleRuns:await this.getModuleRuns(userId),questionNotes:await this.db.table<QuestionNote>('questionNotes').where('userId').equals(userId).toArray()}));
   }
   getOutbox(userId:string){return this.syncStore.outbox(userId);}
   getSyncConflicts(userId:string){return this.syncStore.conflicts(userId);}
@@ -215,10 +239,18 @@ export class IndexedDBProgressRepository implements ProgressRepository {
   async importSnapshot(snapshot:import('../types').PersonalDataSnapshot,userId:string,sync:boolean){
     if(snapshot.schema_version!==1||!snapshot.userId||!userId)throw Error('Ungültige Sicherung.');
     for(const entity of PERSONAL_STORES){const list=['settings','questionNotes','moduleProgress','moduleRuns','wrongQuestions'].includes(entity)?(snapshot[entity]??[]):snapshot[entity];if(!Array.isArray(list))throw Error('Ungültige Sicherung.');for(const row of list){if(!row||typeof row!=='object'||typeof (row as unknown as Record<string,unknown>)[ID_FIELDS[entity]]!=='string'||row.userId!==snapshot.userId)throw Error('Ungültige Datensatzidentität.');}}
-    await this.db.transaction('rw',[...this.syncStore.tables(),...TRAINING_STORES],async()=>{
+    await this.db.transaction('rw',[...this.syncStore.tables(),...TRAINING_STORES,'questionUncertainty'],async()=>{
       for(const entity of PERSONAL_STORES)for(const row of snapshot[entity]??[]){const value={...row,userId} as unknown as Record<string,unknown>,id=String(value[ID_FIELDS[entity]]),existing=await this.db.table(entity).get([userId,id]);
         if(existing&&canonical(existing)!==canonical(value))throw Error('Gleiche ID mit anderem Inhalt. Import wurde ohne Änderungen abgebrochen.');
         validateEntity(entity,id,userId,value);if(!existing){if(sync)await this.syncStore.put(entity,value);else await this.db.table(entity).put(value);}else if(sync&&!(await this.db.table('syncMeta').get([userId,entity,id])))await this.syncStore.mark(entity,userId,id,value);
+      }
+      const uncertainty=snapshot.questionUncertainty??[];
+      if(!Array.isArray(uncertainty))throw Error('Ungültige Unsicher-Sicherung.');
+      for(const row of uncertainty){
+        if(!validQuestionUncertainty(row)||row.userId!==snapshot.userId)throw Error('Ungültige Unsicher-Sicherung.');
+        const value={...row,userId},existing=await this.db.table('questionUncertainty').get([userId,row.question_id]);
+        if(existing&&canonical(existing)!==canonical(value))throw Error('Markierung mit gleicher ID hat anderen Inhalt.');
+        if(!existing)await this.db.table('questionUncertainty').put(value);
       }
       for(const entity of TRAINING_STORES){
         const rows=snapshot[entity]??[];if(!Array.isArray(rows))throw Error('Ungültige Trainingssicherung.');
@@ -241,6 +273,7 @@ export class IndexedDBProgressRepository implements ProgressRepository {
         for(const [qid,state] of Object.entries(p.questionStates))if(state.attempt_id){const a=attempts.find(a=>a.attempt_id===state.attempt_id);if(!a||a.question_id!==qid||!inRun(a,run)||stateFor(a).state!==state.state)throw Error('Sicherung enthält eine ungültige Fortschrittsquelle.');}
       }
       await this.migrateQuestionNotes(userId,sync,true);
+      await this.migrateQuestionUncertainty(userId);
     });
   }
   close() { this.db.close(); }

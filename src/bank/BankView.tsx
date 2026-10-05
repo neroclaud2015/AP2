@@ -6,7 +6,7 @@ import {useBankData} from './useBankData';
 import {trainingDefinitionKey,type TrainingDefinition,type TrainingProgress} from '../training/model';
 import {useAppServices} from '../services/context';
 import './bank.css';
-export interface TrainingLaunch {definition:TrainingDefinition;questions:InventoryQuestion[];stage?:1|2|3|'mastered';restart?:boolean}
+export interface TrainingLaunch {definition:TrainingDefinition;questions:InventoryQuestion[];stage?:1|2|3|'mastered';restart?:boolean;uncertainty?:boolean}
 export default function BankView({onStart,disabled=false}:{onStart:(input:TrainingLaunch)=>Promise<void>;disabled?:boolean}){
  const {data,error}=useBankData(),{repository,user}=useAppServices();
  const [progress,setProgress]=useState<TrainingProgress[]>([]);

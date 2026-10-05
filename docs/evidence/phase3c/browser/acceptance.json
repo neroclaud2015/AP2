@@ -1,0 +1,16 @@
+{
+  "base": "http://127.0.0.1:5174/",
+  "checks": [
+    "Blank marking and solution viewing persist without Attempt/completion",
+    "Post-submit toggle works; Attempt snapshot immutable; retry/question switch preserve state",
+    "Wrong stage1/2/3 excluded; three formal corrects reach mastered and marked question re-enters Unsicher",
+    "Collection cancellation immediate; frozen run survives change/reload; restart keeps persistent marking",
+    "Module reset preserves uncertainty and QuestionNote",
+    "Active Originalprüfung hides historical uncertainty; submitted review can edit current state",
+    "Active Modultest hides historical state; submitted review can independently mark unanswered question",
+    "Actual browser close/reopen preserves state and notes; mobile no overflow"
+  ],
+  "isolated_persistent_browser": true,
+  "real_user_data_touched": false,
+  "errors": []
+}

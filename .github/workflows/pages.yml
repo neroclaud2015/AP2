@@ -75,6 +75,7 @@ jobs:
       - run: python scripts/publish_evidence.py phase3b
       - run: python scripts/publish_evidence.py full-pdf
       - run: python scripts/publish_evidence.py bank-summary
+      - run: python scripts/publish_evidence.py phase3c
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

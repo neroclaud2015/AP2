@@ -6,9 +6,9 @@ import type {SegmentedQuestion} from '../segmented/types';
 export interface TrainingDefinition {knowledgeTopicIds:string[];questionTypeIds:string[];moduleIds:string[];examIds:string[]}
 export type TrainingStage=1|2|3|'mastered';
 export interface TrainingQuestionSnapshot {question:SegmentedQuestion;config:ModuleConfig;answer:OfficialAnswer|null;solution:USolution|null;provenance?:AttemptProvenance;cropEdited?:boolean}
-export interface TrainingRun {userId:string;run_id:string;definition_key:string;definition:TrainingDefinition;kind:'bank'|'stage';stage?:TrainingStage;question_ids:string[];snapshots:Record<string,TrainingQuestionSnapshot>;current_question:string;drafts:Record<string,LearningSession>;attempt_ids:Record<string,string[]>;created_at:string;updated_at:string;revision:number}
+export interface TrainingRun {userId:string;run_id:string;definition_key:string;definition:TrainingDefinition;kind:'bank'|'stage'|'uncertainty';stage?:TrainingStage;question_ids:string[];snapshots:Record<string,TrainingQuestionSnapshot>;current_question:string;drafts:Record<string,LearningSession>;attempt_ids:Record<string,string[]>;created_at:string;updated_at:string;revision:number}
 export interface TrainingProgress {userId:string;definition_key:string;run_id:string;revision:number;updated_at:string}
-export interface TrainingStartOptions {restart?:boolean;stage?:TrainingStage}
+export interface TrainingStartOptions {restart?:boolean;stage?:TrainingStage;uncertainty?:boolean}
 export const TRAINING_STORES=['trainingRuns','trainingProgress'] as const;
 const fields=['knowledgeTopicIds','questionTypeIds','moduleIds','examIds'] as const;
 const object=(v:unknown):v is Record<string,unknown>=>!!v&&typeof v==='object'&&!Array.isArray(v);
@@ -42,7 +42,7 @@ export function validTrainingSnapshot(value:unknown):value is TrainingQuestionSn
 export function validTrainingRun(v:unknown):v is TrainingRun {
  if(!object(v))return false;
  try{if(v.definition_key!==trainingDefinitionKey(v.definition as TrainingDefinition))return false;}catch{return false;}
- if(!text(v.userId)||!text(v.run_id)||!['bank','stage'].includes(String(v.kind))||(v.kind==='stage'?![1,2,3,'mastered'].includes(v.stage as TrainingStage):v.stage!==undefined)||!stamp(v.created_at)||!stamp(v.updated_at)||!Number.isSafeInteger(v.revision)||Number(v.revision)<1||!Array.isArray(v.question_ids)||!v.question_ids.length||!v.question_ids.every(text)||new Set(v.question_ids).size!==v.question_ids.length||!v.question_ids.includes(String(v.current_question))||!object(v.snapshots)||!object(v.drafts)||!object(v.attempt_ids))return false;
+ if(!text(v.userId)||!text(v.run_id)||!['bank','stage','uncertainty'].includes(String(v.kind))||(v.kind==='stage'?![1,2,3,'mastered'].includes(v.stage as TrainingStage):v.stage!==undefined)||!stamp(v.created_at)||!stamp(v.updated_at)||!Number.isSafeInteger(v.revision)||Number(v.revision)<1||!Array.isArray(v.question_ids)||!v.question_ids.length||!v.question_ids.every(text)||new Set(v.question_ids).size!==v.question_ids.length||!v.question_ids.includes(String(v.current_question))||!object(v.snapshots)||!object(v.drafts)||!object(v.attempt_ids))return false;
  const ids=v.question_ids as string[],snapshots=v.snapshots,drafts=v.drafts,attempts=v.attempt_ids;
  if(Object.keys(snapshots).length!==ids.length||Object.keys(drafts).some(id=>!ids.includes(id))||Object.keys(attempts).some(id=>!ids.includes(id)))return false;
  return ids.every(id=>{const s=snapshots[id],d=drafts[id],a=attempts[id];return validTrainingSnapshot(s)&&s.question.question_id===id&&(d===undefined||object(d)&&d.userId===v.userId&&d.question_id===id&&object(d.draft)&&Object.values(d.draft).every(x=>typeof x==='string')&&typeof d.revealed==='boolean'&&(d.attempt_id===undefined||Array.isArray(a)&&a.includes(d.attempt_id)))&&(a===undefined||Array.isArray(a)&&a.every(text)&&new Set(a).size===a.length);});
