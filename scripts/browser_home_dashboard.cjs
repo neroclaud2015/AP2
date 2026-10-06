@@ -3,7 +3,7 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=r
  const base=process.env.APP_URL||'http://127.0.0.1:5174/',dir=process.env.EVIDENCE_DIR||'docs/evidence/home-dashboard/browser';fs.mkdirSync(dir,{recursive:true});
  const server=process.env.APP_URL?null:require('node:child_process').spawn(process.execPath,['node_modules/vite/bin/vite.js','preview','--host','127.0.0.1','--port','5174','--strictPort'],{stdio:'ignore',windowsHide:true});if(server)await new Promise(r=>setTimeout(r,1500));
  const b=await chromium.launch({channel:'chrome',headless:true}),c=await b.newContext({viewport:{width:1440,height:1000}}),p=await c.newPage(),checks=[];
- const errors=[];p.on('pageerror',e=>errors.push(e.message));
+ p.setDefaultTimeout(90000);const errors=[];p.on('pageerror',e=>errors.push(e.message));
  try{
  await p.goto(base+'?view=start');await p.getByTestId('coverage-count').waitFor();assert.equal(await p.getByTestId('coverage-count').innerText(),'0');assert.equal(await p.getByText('– · Noch keine bewerteten Aufgaben').count(),4);
  const order=await p.locator('[data-testid^="home-"]').evaluateAll(els=>els.map(e=>e.dataset.testid));assert.deepEqual(order.slice(0,3),['home-resume','home-quick','home-progress']);
@@ -24,7 +24,8 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=r
  await p.screenshot({path:dir+'/desktop-progress.png',fullPage:true});await p.setViewportSize({width:390,height:844});assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await p.screenshot({path:dir+'/mobile-progress.png',fullPage:true});
  checks.push('Synthetic isolated data: 13 unique covered, 12 latest correct, 3 unsure, 2 active wrong, 1 mastered; +32 pp trend; no real personal data touched');
  await p.getByTestId('home-modules').getByRole('button').first().click();await p.getByRole('combobox',{name:'Modul',exact:true}).waitFor();assert.equal(await p.getByRole('combobox',{name:'Modul',exact:true}).inputValue(),'arbeitsplanung');assert.ok(p.url().includes('bankModule=arbeitsplanung'));await p.reload();assert.equal(await p.getByRole('combobox',{name:'Modul',exact:true}).inputValue(),'arbeitsplanung');checks.push('Module CTA opens persistent module filter');
- await p.goto(base+'?view=start');await p.getByTestId('home-next').getByRole('button',{name:'Fehlertraining starten'}).click();await p.waitForURL(/view=training/);checks.push('Next-action starts real stage-1 training');
+ let releaseSources;const sourcesReady=new Promise(resolve=>{releaseSources=resolve});await p.route('**/*_segmented.json',async route=>{await sourcesReady;await route.continue()});
+ await p.goto(base+'?view=start');await p.getByTestId('home-next').getByRole('button',{name:'Fehlertraining starten'}).waitFor();assert.equal(await p.getByTestId('home-next').getByRole('button').isDisabled(),true);releaseSources();await p.getByTestId('home-next').getByRole('button',{name:'Fehlertraining starten'}).click();await p.waitForURL(/view=training/);await p.unroute('**/*_segmented.json');checks.push('Slow source loading disables next-action until ready; then starts real stage-1 training');
  await p.goto(base+'?view=start');await p.getByTestId('home-resume').getByRole('button',{name:'Fortsetzen',exact:true}).waitFor();checks.push('Active TrainingRun is resumable from first section');
  assert.deepEqual(errors,[]);fs.writeFileSync(dir+'/checks.json',JSON.stringify({checks,errors,fixture:'Synthetic isolated browser profile',real_user_data_touched:false},null,2));console.log(checks);
  }catch(e){await p.screenshot({path:dir+'/failure.png',fullPage:true});throw e;}finally{await b.close();server?.kill()}
