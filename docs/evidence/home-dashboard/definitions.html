@@ -1,0 +1,20 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Homepage KPI definitions</title><style>body{font:17px/1.7 system-ui;max-width:1050px;margin:auto;padding:24px;color:#173e33}td,th{border:1px solid #d9e3da;padding:12px;text-align:left}table{border-collapse:collapse;width:100%}code{background:#eef3ed}a{color:#1c644d}</style>
+<h1>首页指标定义与设计约束</h1><p>2026-10-06 · 已按用户确认的设计实施。首页严格按 Weiterlernen → Schnell starten → Dein Fortschritt → Dein nächster Schritt → Module → Deine Entwicklung → Nächstes Ziel / Lernserie 排列。</p>
+<h2>只读边界</h2><p>新增 getDashboardSnapshot 只开启 IndexedDB readonly transaction，不执行迁移、保存、清理或同步入队。统计函数在内存中运行，不写回 Attempts、Notes、Uncertainty、WrongQuestionState、ModuleProgress、ModuleRuns、TrainingRuns 或 TestSessions。现有应用的数据维护语义不变。</p>
+<h2>统一有效结果</h2><p>复用 wrongResults 与 isEligibleForAnalysis。自由练习与训练必须有正式自动判定或完整自评；draft/solution-only 不计。考试仅 status=completed 且无 discarded/deleted 标记，有已评结果才计。关联考试的镜像 Attempt 不重复计。显式无效标记、非法时间、未来结果、其他用户或已不在 production registry 的题排除。错题阶段在内存重放有效结果，撤销考试后不留下过期阶段。题号相同但 question_id 不同，分别统计。</p>
+<table><tr><th>指标</th><th>定义</th></tr>
+<tr><td>Gesamt</td><td>production question inventory 中唯一 question_id 数。当前 1,560。总量、模块名称和分模块总量全部来自数据。</td></tr>
+<tr><td>Bearbeitet / geschafft</td><td>至少一个有效正式结果的唯一题数；多次答题只算一次。</td></tr>
+<tr><td>Abdeckung</td><td>Bearbeitet / Gesamt。不是掌握度。</td></tr>
+<tr><td>Aktuell richtig / Beherrscht</td><td>每题取最新有效结果；richtig 为正确，teilweise/falsch 为未正确。Beherrscht 显示正确题数。Accuracy=正确/已评题数，空值显示 –。同时间按稳定结果 ID 排序。</td></tr>
+<tr><td>Unsicher</td><td>persistent QuestionUncertaintyState.active=true，扣除当前 active Stufe 1/2/3。不用 Attempt.unsure 快照；Gemeistert + Unsicher 可同时计入两个维度。</td></tr>
+<tr><td>Im Fehlertraining</td><td>有效历史重放后 active Stufe 1 + 2 + 3 的唯一题。</td></tr>
+<tr><td>Gemeistert</td><td>有效历史重放后 stage=mastered 的题，保留历史复习成就。</td></tr>
+<tr><td>+N 最近七天</td><td>第一次有效作答发生在最近七天的题数。重复练习不增加此数字。</td></tr>
+</table>
+<h2>两段七天窗口</h2><p>当前窗口 [now−7×24h, now]，前一窗口 [now−14×24h, now−7×24h)。各窗口内每道题只取该窗口最后一个有效结果；同一题可分别出现在两个窗口。两侧均至少 5 个唯一已评题才显示百分点变化。百分比先精确计算，显示时四舍五入；负趋势保持中性色，不警告、不惩罚。</p>
+<p>演示证据：前期 5 题、3 题正确=60%；近期 13 题、12 题正确=92.3077%；变化+32.3077个百分点，显示+32。减少任意一侧到4题时不显示趋势。测试还覆盖重复作答、窗口边界、部分正确和先前结果被新结果替代。</p>
+<h2>唯一下一步</h2><ol><li>Stufe 1&gt;0：直接启动 Stufe 1 训练。</li><li>否则 Unsicher&gt;0：直接启动 Unsicher 训练。</li><li>否则总体 coverage≥80%：进入 Modultest。</li><li>否则进入覆盖率最低的模块题池；同值按现有模块顺序。</li></ol><p>阈值来自 <a href="config.json">配置副本</a>（代码源 src/dashboard/config.json），不在组件写死。只展示一个推荐 CTA，不实现 adaptive weighting。</p>
+<h2>目标与学习连续天数</h2><p>配置 milestone=[100,250,500,750,1000]；追加当前总题数作为最终目标。显示大于当前覆盖题数的最小目标。达到全题库后显示已完成。学习日以浏览器本地日期为准，至少一个有效正式结果；周从星期一开始。今天尚未答题时允许显示截至昨天的连续天数，不做断签警告。</p>
+<h2>继续入口</h2><p>未完成考试、TrainingRun 和学习 draft 中选择可继续且时间最近的一项。考试没有 last-updated 字段，采用既有 started_at；不为排序改写考试记录。考试继续复用 Fortsetzen/Verwerfen/Löschen 及原二次确认。训练/自由练习不新增删除或废弃语义。模块卡进入 Aufgabenbank 的 bankModule 筛选，刷新保留。</p>
+<p><a href="index.html">返回截图与证据</a></p></html>

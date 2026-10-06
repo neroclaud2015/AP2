@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "taxonomy_version": "1.1.0",
-  "modules": 43,
+  "modules": 49,
   "exams": [
     "2017-sommer",
     "2017-18-winter",
@@ -18,12 +18,14 @@
     "2023-sommer",
     "2023-24-winter",
     "2024-sommer",
-    "2024-25-winter"
+    "2024-25-winter",
+    "2025-26-winter",
+    "2026-sommer"
   ],
-  "total": 1368,
-  "knowledgeClassified": 378,
-  "typeClassified": 1071,
-  "unclassified": 1078,
+  "total": 1560,
+  "knowledgeClassified": 426,
+  "typeClassified": 1219,
+  "unclassified": 1234,
   "review": 0,
   "confirmed": 0,
   "orphans": 0,
@@ -492,6 +494,72 @@
     },
     {
       "examId": "2024-25-winter",
+      "module": "wiso",
+      "total": 24,
+      "knowledgeClassified": 24,
+      "typeClassified": 18,
+      "unclassified": 6,
+      "review": 0,
+      "confirmed": 0,
+      "orphans": 0
+    },
+    {
+      "examId": "2025-26-winter",
+      "module": "arbeitsplanung",
+      "total": 36,
+      "knowledgeClassified": 0,
+      "typeClassified": 28,
+      "unclassified": 36,
+      "review": 0,
+      "confirmed": 0,
+      "orphans": 0
+    },
+    {
+      "examId": "2025-26-winter",
+      "module": "funktionsanalyse",
+      "total": 36,
+      "knowledgeClassified": 0,
+      "typeClassified": 28,
+      "unclassified": 36,
+      "review": 0,
+      "confirmed": 0,
+      "orphans": 0
+    },
+    {
+      "examId": "2025-26-winter",
+      "module": "wiso",
+      "total": 24,
+      "knowledgeClassified": 24,
+      "typeClassified": 18,
+      "unclassified": 6,
+      "review": 0,
+      "confirmed": 0,
+      "orphans": 0
+    },
+    {
+      "examId": "2026-sommer",
+      "module": "arbeitsplanung",
+      "total": 36,
+      "knowledgeClassified": 0,
+      "typeClassified": 28,
+      "unclassified": 36,
+      "review": 0,
+      "confirmed": 0,
+      "orphans": 0
+    },
+    {
+      "examId": "2026-sommer",
+      "module": "funktionsanalyse",
+      "total": 36,
+      "knowledgeClassified": 0,
+      "typeClassified": 28,
+      "unclassified": 36,
+      "review": 0,
+      "confirmed": 0,
+      "orphans": 0
+    },
+    {
+      "examId": "2026-sommer",
       "module": "wiso",
       "total": 24,
       "knowledgeClassified": 24,

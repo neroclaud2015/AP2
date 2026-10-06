@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "Fresh user: 0 covered, absent accuracy, action sections precede analytics",
+    "Synthetic isolated data: 13 unique covered, 12 latest correct, 3 unsure, 2 active wrong, 1 mastered; +32 pp trend; no real personal data touched",
+    "Module CTA opens persistent module filter",
+    "Next-action starts real stage-1 training",
+    "Active TrainingRun is resumable from first section"
+  ],
+  "errors": [],
+  "fixture": "Synthetic isolated browser profile",
+  "real_user_data_touched": false
+}

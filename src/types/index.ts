@@ -35,6 +35,7 @@ export interface LocalField { value: string; locked: boolean; origin: 'user' | '
 export interface ProgressRecord { schema_version: 1; userId: string; questionId: string; fields: Record<string, LocalField>; updatedAt: string }
 export interface PersonalDataSnapshot {schema_version:1;userId:string;records:ProgressRecord[];reviews:QuestionReview[];answerReviews:AnswerReview[];attempts:Attempt[];learningSessions:LearningSession[];testSessions:TestSession[];questionUncertainty?:QuestionUncertaintyState[];trainingRuns?:TrainingRun[];trainingProgress?:TrainingProgress[];wrongQuestions?:WrongQuestionState[];questionNotes?:QuestionNote[];moduleProgress?:ModuleProgress[];moduleRuns?:ModuleRun[];settings?:Array<{userId:string;id:string;value:unknown}>}
 export interface ProgressRepository {
+ getDashboardSnapshot(userId:string):Promise<import('../dashboard/analytics').DashboardSnapshot>;
  getQuestionUncertainty(userId:string,questionId:string):Promise<QuestionUncertaintyState|undefined>;
  getQuestionUncertainties(userId:string):Promise<QuestionUncertaintyState[]>;
  saveQuestionUncertainty(userId:string,questionId:string,active:boolean,expectedRevision:number):Promise<QuestionUncertaintyState>;

@@ -7,11 +7,11 @@ import {trainingDefinitionKey,type TrainingDefinition,type TrainingProgress} fro
 import {useAppServices} from '../services/context';
 import './bank.css';
 export interface TrainingLaunch {definition:TrainingDefinition;questions:InventoryQuestion[];stage?:1|2|3|'mastered';restart?:boolean;uncertainty?:boolean}
-export default function BankView({onStart,disabled=false}:{onStart:(input:TrainingLaunch)=>Promise<void>;disabled?:boolean}){
+export default function BankView({onStart,disabled=false,initialModule}:{onStart:(input:TrainingLaunch)=>Promise<void>;disabled?:boolean;initialModule?:string}){
  const {data,error}=useBankData(),{repository,user}=useAppServices();
  const [progress,setProgress]=useState<TrainingProgress[]>([]);
  useEffect(()=>{let active=true;void repository.getTrainingProgress(user.id).then(p=>{if(active)setProgress(p)}).catch(e=>{if(active)setLaunchError(String(e))});return()=>{active=false}},[repository,user.id]);
- const [topic,setTopic]=useState(''),[type,setType]=useState(''),[module,setModule]=useState(''),[year,setYear]=useState(''),[launchError,setLaunchError]=useState(''),[launching,setLaunching]=useState(false);
+ const [topic,setTopic]=useState(''),[type,setType]=useState(''),[module,setModule]=useState(initialModule??''),[year,setYear]=useState(''),[launchError,setLaunchError]=useState(''),[launching,setLaunching]=useState(false);
  if(error)return <p role="alert">{error}</p>;if(!data)return <p role="status">Aufgabenbank wird geladen…</p>;
  const taxonomy=data.taxonomy.nodes.filter(n=>n.active),knowledge=taxonomy.filter(n=>n.kind==='knowledge'),types=taxonomy.filter(n=>n.kind==='question_type');
  const modules=[...new Map(data.inventory.map(q=>[q.module,q.moduleTitle])).entries()].sort((a,b)=>(MODULE_ORDER[a[0]]??100)-(MODULE_ORDER[b[0]]??100)||a[1].localeCompare(b[1]));

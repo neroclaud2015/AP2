@@ -54,6 +54,10 @@ export class IndexedDBProgressRepository implements ProgressRepository {
       if(states.length)await table.bulkPut(states);
     });
   }
+  async getDashboardSnapshot(userId:string):Promise<import('../dashboard/analytics').DashboardSnapshot>{
+    const stores=['attempts','testSessions','learningSessions','trainingRuns','wrongQuestions','questionUncertainty'];
+    return this.db.transaction('r',stores,async()=>Object.fromEntries(await Promise.all(stores.map(async name=>[name,await this.db.table(name).where('userId').equals(userId).toArray()]))) as unknown as import('../dashboard/analytics').DashboardSnapshot);
+  }
   async getQuestionUncertainties(userId:string):Promise<QuestionUncertaintyState[]>{await this.migrateQuestionUncertainty(userId);return this.db.table<QuestionUncertaintyState>('questionUncertainty').where('userId').equals(userId).toArray();}
   async getQuestionUncertainty(userId:string,questionId:string):Promise<QuestionUncertaintyState|undefined>{await this.migrateQuestionUncertainty(userId);return this.db.table<QuestionUncertaintyState>('questionUncertainty').get([userId,questionId]);}
   async saveQuestionUncertainty(userId:string,questionId:string,active:boolean,expectedRevision:number):Promise<QuestionUncertaintyState>{
