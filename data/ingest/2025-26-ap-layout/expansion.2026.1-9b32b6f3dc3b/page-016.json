@@ -1,0 +1,61 @@
+{
+  "key": "015c83c1666039f9b7521357d874d89b452cc6b12ec0f68dcf93a70d9623d35a",
+  "record_hash": "4f692882cd42c2c8961c4f0c8e1710d69d90e9dd9e33212a127a8c9bd2a56822",
+  "record": {
+    "page": 16,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Printed U1 adhesive safety, surfaces and joining advantages/disadvantages; all response grid.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-ap-p16-U1",
+        "number": "U1",
+        "bbox": [
+          32.736,
+          14.88,
+          74.73599999999999,
+          40.88
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U1 visually read on cached physical page 16; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "8db18dd7e7766fe3cca7a4c3111a721a91c8716a26957ac7a3d9dfacbeb8f6e7"
+      }
+    ],
+    "regions": [
+      {
+        "page": 16,
+        "bbox": [
+          32.736,
+          14.88,
+          566.432,
+          813.44
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p16-U1",
+        "evidence": "Printed U1 adhesive safety, surfaces and joining advantages/disadvantages; all response grid. Ruled boundaries include complete diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U1",
+        "bbox": [
+          32.736,
+          14.88,
+          74.73599999999999,
+          40.88
+        ],
+        "pixel_sha256": "8db18dd7e7766fe3cca7a4c3111a721a91c8716a26957ac7a3d9dfacbeb8f6e7",
+        "audited_pixel_sha256": "8db18dd7e7766fe3cca7a4c3111a721a91c8716a26957ac7a3d9dfacbeb8f6e7"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

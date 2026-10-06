@@ -1,0 +1,61 @@
+{
+  "key": "894d16102b89322c2ee23fcb7e80366c17a6ecbdea33bcece26154e3f13a4114",
+  "record_hash": "4f441f2766c3bb318c2d0be8131dd5cef6c6df990ccf119df30f772444910074",
+  "record": {
+    "page": 17,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page individually visually inspected; printed task headings, diagrams, choices and ruled boundaries verified.",
+    "anchors": [
+      {
+        "anchor_id": "2026-fa-p17-U2",
+        "number": "U2",
+        "bbox": [
+          37.2,
+          22.319,
+          80.352,
+          49.847
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U2 visually read on cached physical page 17.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "c4cfbb165e25e83e969bca982929eb1f052c9be10d87e4a19a42941f85c07f0d"
+      }
+    ],
+    "regions": [
+      {
+        "page": 17,
+        "bbox": [
+          37.2,
+          22.319,
+          514.848,
+          810.193
+        ],
+        "role": "primary",
+        "owner": "2026-fa-p17-U2",
+        "evidence": "Individually inspected printed heading and ruled panel: full question, options, diagrams, calculations and response fields retained without adjacent task contamination."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U2",
+        "bbox": [
+          37.2,
+          22.319,
+          80.352,
+          49.847
+        ],
+        "pixel_sha256": "c4cfbb165e25e83e969bca982929eb1f052c9be10d87e4a19a42941f85c07f0d",
+        "audited_pixel_sha256": "c4cfbb165e25e83e969bca982929eb1f052c9be10d87e4a19a42941f85c07f0d"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

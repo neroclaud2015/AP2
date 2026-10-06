@@ -1,0 +1,61 @@
+{
+  "key": "1f52e107d2ff358682e07f3e1cddbb5865e353f4e9dd2955743a306eebc3ef7b",
+  "record_hash": "0283c939262a3c5c15cee8538f7414ed4ce9f61b6e4aa9b32ce889bcc1b1e3c1",
+  "record": {
+    "page": 25,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Printed U8 forklift capacity plots, crane/sling questions and complete answer grid.",
+    "anchors": [
+      {
+        "anchor_id": "2026-ap-p25-U8",
+        "number": "U8",
+        "bbox": [
+          33.728,
+          17.856,
+          75.72800000000001,
+          43.856
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U8 visually read on cached physical page 25; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "c6f421a38aade0e3e3e9196bdabc32c9c6cc8e470b129319617368298edbf209"
+      }
+    ],
+    "regions": [
+      {
+        "page": 25,
+        "bbox": [
+          33.728,
+          17.856,
+          567.424,
+          816.416
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p25-U8",
+        "evidence": "Printed U8 forklift capacity plots, crane/sling questions and complete answer grid. Independently inspected ruled boundaries preserve all response and diagram areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U8",
+        "bbox": [
+          33.728,
+          17.856,
+          75.72800000000001,
+          43.856
+        ],
+        "pixel_sha256": "c6f421a38aade0e3e3e9196bdabc32c9c6cc8e470b129319617368298edbf209",
+        "audited_pixel_sha256": "c6f421a38aade0e3e3e9196bdabc32c9c6cc8e470b129319617368298edbf209"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "key": "578f2adada67c6390a5854e3e7714c6e620ff2c2656af53f1a6d0cadcf8a75a1",
+  "record_hash": "b94b634b6b7c01886b5af0656afd20673d1e24e99c49e0a972230391b9002b85",
+  "record": {
+    "page": 9,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "continuation_and_questions",
+    "classification_evidence": "U3 subpart 3 and explicit Ergebnis U3 above Q8 and Q9.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-wiso-p9-8",
+        "number": "8",
+        "bbox": [
+          47.095,
+          297.509,
+          85.172,
+          324.555
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 8 visually read on cached physical page 9.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "26fde7cd47ad246c53ed88581c77431e4286dabb4a077c0e0ec4da56dc5acc0a"
+      },
+      {
+        "anchor_id": "2025-26-wiso-p9-9",
+        "number": "9",
+        "bbox": [
+          296.598,
+          297.509,
+          334.675,
+          324.555
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 9 visually read on cached physical page 9.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "281c55def203a4cefbfb606edf21a8b29c0dd585f3432e1ba5dd78a2521d2ccd"
+      }
+    ],
+    "regions": [
+      {
+        "page": 9,
+        "bbox": [
+          47.095,
+          297.509,
+          290.586,
+          537.921
+        ],
+        "role": "primary",
+        "owner": "2025-26-wiso-p9-8",
+        "evidence": "U3 subpart 3 and explicit Ergebnis U3 above Q8 and Q9. Region follows visible panel separators and includes all response choices/areas."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          296.598,
+          297.509,
+          536.081,
+          537.921
+        ],
+        "role": "primary",
+        "owner": "2025-26-wiso-p9-9",
+        "evidence": "U3 subpart 3 and explicit Ergebnis U3 above Q8 and Q9. Region follows visible panel separators and includes all response choices/areas."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          48.097,
+          54.093,
+          536.081,
+          295.506
+        ],
+        "role": "continuation",
+        "owner": "2025-26-wiso-p8-U3",
+        "evidence": "U3 subpart 3 and explicit Ergebnis U3 above Q8 and Q9. Ownership established by printed Ergebnis U3."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "8",
+        "bbox": [
+          47.095,
+          297.509,
+          85.172,
+          324.555
+        ],
+        "pixel_sha256": "26fde7cd47ad246c53ed88581c77431e4286dabb4a077c0e0ec4da56dc5acc0a",
+        "audited_pixel_sha256": "26fde7cd47ad246c53ed88581c77431e4286dabb4a077c0e0ec4da56dc5acc0a"
+      },
+      {
+        "kind": "heading",
+        "number": "9",
+        "bbox": [
+          296.598,
+          297.509,
+          334.675,
+          324.555
+        ],
+        "pixel_sha256": "281c55def203a4cefbfb606edf21a8b29c0dd585f3432e1ba5dd78a2521d2ccd",
+        "audited_pixel_sha256": "281c55def203a4cefbfb606edf21a8b29c0dd585f3432e1ba5dd78a2521d2ccd"
+      },
+      {
+        "kind": "ownership",
+        "number": "U3",
+        "bbox": [
+          48.097,
+          54.093,
+          536.081,
+          295.506
+        ],
+        "pixel_sha256": "fe0141b42a2a512aa08cfd244717958089cce1da3663f3cff5453bac20fc6f44",
+        "audited_pixel_sha256": "fe0141b42a2a512aa08cfd244717958089cce1da3663f3cff5453bac20fc6f44"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

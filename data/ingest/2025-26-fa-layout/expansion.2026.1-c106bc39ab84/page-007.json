@@ -1,0 +1,137 @@
+{
+  "key": "975bda84e480251933a21b2b331dcdc881ef81a633b8c4e198c97b6dab65633e",
+  "record_hash": "30c4af5147e59de9478992df0343e67eaf2effc098dba58c9eaafdf0c49f1714",
+  "record": {
+    "page": 7,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Individually visually inspected cached PNG: printed task anchors and panel boundaries confirmed.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-fa-p7-15",
+        "number": "15",
+        "bbox": [
+          48.36,
+          59.518,
+          91.512,
+          87.046
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 15 visually read on cached physical page 7.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "26427f8de435466db259c8a40b9cde34880536d6d5fa6851056e3a3e4e718857"
+      },
+      {
+        "anchor_id": "2025-26-fa-p7-16",
+        "number": "16",
+        "bbox": [
+          48.36,
+          302.799,
+          91.512,
+          330.327
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 16 visually read on cached physical page 7.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "9e66506fcb20ef9b77e724ed75c3753366cbbe6a1f5d31e0e31c7d8eb72f3d57"
+      },
+      {
+        "anchor_id": "2025-26-fa-p7-17",
+        "number": "17",
+        "bbox": [
+          48.36,
+          543.848,
+          91.512,
+          571.376
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 17 visually read on cached physical page 7.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "77e893a2558bb8ebaa8fdc35e5be4e0dbe715da9a92e0a0b2bae56e85e85aa87"
+      }
+    ],
+    "regions": [
+      {
+        "page": 7,
+        "bbox": [
+          48.36,
+          59.518,
+          541.632,
+          298.335
+        ],
+        "role": "primary",
+        "owner": "2025-26-fa-p7-15",
+        "evidence": "Visual inspection of printed heading, question text, all options/diagrams and ruled boundaries. Separate calculation panel assigned by its printed task number."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          48.36,
+          302.799,
+          541.632,
+          538.641
+        ],
+        "role": "primary",
+        "owner": "2025-26-fa-p7-16",
+        "evidence": "Visual inspection of printed heading, question text, all options/diagrams and ruled boundaries. Separate calculation panel assigned by its printed task number."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          48.36,
+          543.848,
+          541.632,
+          784.154
+        ],
+        "role": "primary",
+        "owner": "2025-26-fa-p7-17",
+        "evidence": "Visual inspection of printed heading, question text, all options/diagrams and ruled boundaries. Separate calculation panel assigned by its printed task number."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "15",
+        "bbox": [
+          48.36,
+          59.518,
+          91.512,
+          87.046
+        ],
+        "pixel_sha256": "26427f8de435466db259c8a40b9cde34880536d6d5fa6851056e3a3e4e718857",
+        "audited_pixel_sha256": "26427f8de435466db259c8a40b9cde34880536d6d5fa6851056e3a3e4e718857"
+      },
+      {
+        "kind": "heading",
+        "number": "16",
+        "bbox": [
+          48.36,
+          302.799,
+          91.512,
+          330.327
+        ],
+        "pixel_sha256": "9e66506fcb20ef9b77e724ed75c3753366cbbe6a1f5d31e0e31c7d8eb72f3d57",
+        "audited_pixel_sha256": "9e66506fcb20ef9b77e724ed75c3753366cbbe6a1f5d31e0e31c7d8eb72f3d57"
+      },
+      {
+        "kind": "heading",
+        "number": "17",
+        "bbox": [
+          48.36,
+          543.848,
+          91.512,
+          571.376
+        ],
+        "pixel_sha256": "77e893a2558bb8ebaa8fdc35e5be4e0dbe715da9a92e0a0b2bae56e85e85aa87",
+        "audited_pixel_sha256": "77e893a2558bb8ebaa8fdc35e5be4e0dbe715da9a92e0a0b2bae56e85e85aa87"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

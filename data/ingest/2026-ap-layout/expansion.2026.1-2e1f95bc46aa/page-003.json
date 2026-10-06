@@ -1,0 +1,99 @@
+{
+  "key": "a7e90bfa208609fd11cb83c9fe965aa07b32b46477e2a01bebce21e53fdd6e1d",
+  "record_hash": "0f2c491a4a468bc74d20ca0ae04dc239fd4a3528176969f6a77bef32c5ccd0d6",
+  "record": {
+    "page": 3,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Markierungsbogen example above Q1; Q1 shaft/hub section; Q2 five seal diagrams.",
+    "anchors": [
+      {
+        "anchor_id": "2026-ap-p3-1",
+        "number": "1",
+        "bbox": [
+          42.656,
+          296.608,
+          84.656,
+          322.608
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 1 visually read on cached physical page 3; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "7cf6fbb6b638c9399c5e710016a85fe4539b233d5329da059ecc2282bd3e0546"
+      },
+      {
+        "anchor_id": "2026-ap-p3-2",
+        "number": "2",
+        "bbox": [
+          42.656,
+          536.672,
+          84.656,
+          562.672
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 2 visually read on cached physical page 3; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "9201bb8f8e944d8683876db6fe16b1376726c92492dbc1c7045f6f9d588ecf12"
+      }
+    ],
+    "regions": [
+      {
+        "page": 3,
+        "bbox": [
+          42.656,
+          296.608,
+          535.68,
+          533.696
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p3-1",
+        "evidence": "Markierungsbogen example above Q1; Q1 shaft/hub section; Q2 five seal diagrams. Independently inspected ruled boundaries preserve all response and diagram areas."
+      },
+      {
+        "page": 3,
+        "bbox": [
+          42.656,
+          536.672,
+          535.68,
+          781.696
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p3-2",
+        "evidence": "Markierungsbogen example above Q1; Q1 shaft/hub section; Q2 five seal diagrams. Independently inspected ruled boundaries preserve all response and diagram areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "1",
+        "bbox": [
+          42.656,
+          296.608,
+          84.656,
+          322.608
+        ],
+        "pixel_sha256": "7cf6fbb6b638c9399c5e710016a85fe4539b233d5329da059ecc2282bd3e0546",
+        "audited_pixel_sha256": "7cf6fbb6b638c9399c5e710016a85fe4539b233d5329da059ecc2282bd3e0546"
+      },
+      {
+        "kind": "heading",
+        "number": "2",
+        "bbox": [
+          42.656,
+          536.672,
+          84.656,
+          562.672
+        ],
+        "pixel_sha256": "9201bb8f8e944d8683876db6fe16b1376726c92492dbc1c7045f6f9d588ecf12",
+        "audited_pixel_sha256": "9201bb8f8e944d8683876db6fe16b1376726c92492dbc1c7045f6f9d588ecf12"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

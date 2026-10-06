@@ -1,0 +1,61 @@
+{
+  "key": "bd2155da0c179eedbcf0966bea027d5361a08b9bcc2b3b97aaa1871b5733ea83",
+  "record_hash": "e512c1ff9cfc88e39230cedb904cc5fe615a4930f3000a250a3d1835e3b3cacd",
+  "record": {
+    "page": 17,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Printed U2 explicitly refers to Blatt 1(2) Schneckengetriebe; tables and response grid.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-ap-p17-U2",
+        "number": "U2",
+        "bbox": [
+          32.736,
+          14.88,
+          74.73599999999999,
+          40.88
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U2 visually read on cached physical page 17; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "ef9f180df88457969f3d6a5d7e5ece383146b7eafe39212a7eeab5092442edf6"
+      }
+    ],
+    "regions": [
+      {
+        "page": 17,
+        "bbox": [
+          32.736,
+          14.88,
+          566.432,
+          813.44
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p17-U2",
+        "evidence": "Printed U2 explicitly refers to Blatt 1(2) Schneckengetriebe; tables and response grid. Ruled boundaries include complete diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U2",
+        "bbox": [
+          32.736,
+          14.88,
+          74.73599999999999,
+          40.88
+        ],
+        "pixel_sha256": "ef9f180df88457969f3d6a5d7e5ece383146b7eafe39212a7eeab5092442edf6",
+        "audited_pixel_sha256": "ef9f180df88457969f3d6a5d7e5ece383146b7eafe39212a7eeab5092442edf6"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

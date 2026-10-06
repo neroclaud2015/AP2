@@ -1,0 +1,61 @@
+{
+  "key": "641e06ee0756dc54545add325ef4ec3aecf826b4f629b2015c88b5c051d24657",
+  "record_hash": "f58114c3c2f881e5b389a1d923f87bc7bc92c6e3cd8b77732544d6b9a4e97f20",
+  "record": {
+    "page": 10,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "U4 digital-competencies chart and subparts 1 and 2; continues p11.",
+    "anchors": [
+      {
+        "anchor_id": "2026-wiso-p10-U4",
+        "number": "U4",
+        "bbox": [
+          55.111,
+          55.094,
+          93.188,
+          82.141
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U4 visually read on cached physical page 10.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "4659d01ec51a7fb93d86c3182919435315042fa1a3eb54c6742a5636163628fd"
+      }
+    ],
+    "regions": [
+      {
+        "page": 10,
+        "bbox": [
+          55.111,
+          55.094,
+          542.093,
+          783.341
+        ],
+        "role": "primary",
+        "owner": "2026-wiso-p10-U4",
+        "evidence": "U4 digital-competencies chart and subparts 1 and 2; continues p11. Region follows visible panel separators and includes all response choices/areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U4",
+        "bbox": [
+          55.111,
+          55.094,
+          93.188,
+          82.141
+        ],
+        "pixel_sha256": "4659d01ec51a7fb93d86c3182919435315042fa1a3eb54c6742a5636163628fd",
+        "audited_pixel_sha256": "4659d01ec51a7fb93d86c3182919435315042fa1a3eb54c6742a5636163628fd"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

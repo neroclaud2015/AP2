@@ -1,0 +1,175 @@
+{
+  "key": "157a27961cf7b688c61b01ac98aad34df4127e300084f0a286d3374f5cafb177",
+  "record_hash": "a4c882731f0f29a809070b9580cb2763f266fad6aa70c9990b77d7f6f6aee40b",
+  "record": {
+    "page": 4,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Q5 five bearing photographs; Q6/Q7 middle; Q8 gear diagram and calculation grid.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-ap-p4-5",
+        "number": "5",
+        "bbox": [
+          50.592,
+          57.536,
+          92.592,
+          83.536
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 5 visually read on cached physical page 4; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "bb363b1f9ddda21a86bb9b6d23749f03994f8d723084d9e78cca1252b8d1b599"
+      },
+      {
+        "anchor_id": "2025-26-ap-p4-6",
+        "number": "6",
+        "bbox": [
+          50.592,
+          297.6,
+          92.592,
+          323.6
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 6 visually read on cached physical page 4; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "65a0350f8cd4290858a57cb12e6f80f977bf7c5a8574d3e074b2e7e576054c3b"
+      },
+      {
+        "anchor_id": "2025-26-ap-p4-7",
+        "number": "7",
+        "bbox": [
+          298.592,
+          297.6,
+          340.592,
+          323.6
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 7 visually read on cached physical page 4; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "71c1e56f17e3dffe307f569738fb6dcac68cddb0dcda684f0e2e89b145aadd3b"
+      },
+      {
+        "anchor_id": "2025-26-ap-p4-8",
+        "number": "8",
+        "bbox": [
+          50.592,
+          537.664,
+          92.592,
+          563.664
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 8 visually read on cached physical page 4; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "51388b9a2541c765d424cfe94352f5f9126d1d1740cd419b47bee5e8230032c6"
+      }
+    ],
+    "regions": [
+      {
+        "page": 4,
+        "bbox": [
+          50.592,
+          57.536,
+          540.64,
+          294.624
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p4-5",
+        "evidence": "Q5 five bearing photographs; Q6/Q7 middle; Q8 gear diagram and calculation grid. Ruled boundaries include complete diagrams and response areas."
+      },
+      {
+        "page": 4,
+        "bbox": [
+          50.592,
+          297.6,
+          294.624,
+          535.68
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p4-6",
+        "evidence": "Q5 five bearing photographs; Q6/Q7 middle; Q8 gear diagram and calculation grid. Ruled boundaries include complete diagrams and response areas."
+      },
+      {
+        "page": 4,
+        "bbox": [
+          298.592,
+          297.6,
+          540.64,
+          535.68
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p4-7",
+        "evidence": "Q5 five bearing photographs; Q6/Q7 middle; Q8 gear diagram and calculation grid. Ruled boundaries include complete diagrams and response areas."
+      },
+      {
+        "page": 4,
+        "bbox": [
+          50.592,
+          537.664,
+          540.64,
+          782.688
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p4-8",
+        "evidence": "Q5 five bearing photographs; Q6/Q7 middle; Q8 gear diagram and calculation grid. Ruled boundaries include complete diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "5",
+        "bbox": [
+          50.592,
+          57.536,
+          92.592,
+          83.536
+        ],
+        "pixel_sha256": "bb363b1f9ddda21a86bb9b6d23749f03994f8d723084d9e78cca1252b8d1b599",
+        "audited_pixel_sha256": "bb363b1f9ddda21a86bb9b6d23749f03994f8d723084d9e78cca1252b8d1b599"
+      },
+      {
+        "kind": "heading",
+        "number": "6",
+        "bbox": [
+          50.592,
+          297.6,
+          92.592,
+          323.6
+        ],
+        "pixel_sha256": "65a0350f8cd4290858a57cb12e6f80f977bf7c5a8574d3e074b2e7e576054c3b",
+        "audited_pixel_sha256": "65a0350f8cd4290858a57cb12e6f80f977bf7c5a8574d3e074b2e7e576054c3b"
+      },
+      {
+        "kind": "heading",
+        "number": "7",
+        "bbox": [
+          298.592,
+          297.6,
+          340.592,
+          323.6
+        ],
+        "pixel_sha256": "71c1e56f17e3dffe307f569738fb6dcac68cddb0dcda684f0e2e89b145aadd3b",
+        "audited_pixel_sha256": "71c1e56f17e3dffe307f569738fb6dcac68cddb0dcda684f0e2e89b145aadd3b"
+      },
+      {
+        "kind": "heading",
+        "number": "8",
+        "bbox": [
+          50.592,
+          537.664,
+          92.592,
+          563.664
+        ],
+        "pixel_sha256": "51388b9a2541c765d424cfe94352f5f9126d1d1740cd419b47bee5e8230032c6",
+        "audited_pixel_sha256": "51388b9a2541c765d424cfe94352f5f9126d1d1740cd419b47bee5e8230032c6"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

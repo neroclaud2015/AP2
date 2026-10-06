@@ -1,0 +1,61 @@
+{
+  "key": "319a3a9bd30d15d33e0ce187850a94f45822d2679c679ee4ebe04ed22a0114c8",
+  "record_hash": "c4bdd63877525c9f98c74b84ba13b9c329fef89ec56a0762b3c9bf1fc6b2309c",
+  "record": {
+    "page": 24,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Printed U7 testing instrument diagram, measurement table, loop impedance screenshot and all response grids.",
+    "anchors": [
+      {
+        "anchor_id": "2026-ap-p24-U7",
+        "number": "U7",
+        "bbox": [
+          23.808,
+          16.864,
+          65.80799999999999,
+          42.864000000000004
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U7 visually read on cached physical page 24; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "612770b172a91da44f6caf7a3cc32a3c0f28d71dc158420b6d1469e5f282ffbf"
+      }
+    ],
+    "regions": [
+      {
+        "page": 24,
+        "bbox": [
+          23.808,
+          16.864,
+          557.504,
+          816.416
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p24-U7",
+        "evidence": "Printed U7 testing instrument diagram, measurement table, loop impedance screenshot and all response grids. Independently inspected ruled boundaries preserve all response and diagram areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U7",
+        "bbox": [
+          23.808,
+          16.864,
+          65.80799999999999,
+          42.864000000000004
+        ],
+        "pixel_sha256": "612770b172a91da44f6caf7a3cc32a3c0f28d71dc158420b6d1469e5f282ffbf",
+        "audited_pixel_sha256": "612770b172a91da44f6caf7a3cc32a3c0f28d71dc158420b6d1469e5f282ffbf"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "key": "37df43075b6de2e6497a4193758d873d6d40c246f69e922aa62b0468ec9a6bdd",
+  "record_hash": "8d118e93c97259d5e16b370c6ba83c595c79a80c97e56f978f5fff3d4dec6278",
+  "record": {
+    "page": 15,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Printed Q16 Q17 Q18 in separate ruled panels.",
+    "anchors": [
+      {
+        "anchor_id": "2026-wiso-p15-16",
+        "number": "16",
+        "bbox": [
+          47.095,
+          55.094,
+          85.172,
+          82.141
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 16 visually read on cached physical page 15.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "1186b57fd1906f420b9e4125027963f8acd00dfe3404a7720bf9365403d3c0ac"
+      },
+      {
+        "anchor_id": "2026-wiso-p15-17",
+        "number": "17",
+        "bbox": [
+          296.598,
+          55.094,
+          334.675,
+          82.141
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 17 visually read on cached physical page 15.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "42a25e18ab5720d7eb981cd75c5f3fa5c6774187e48ddb527befa3e3548d6509"
+      },
+      {
+        "anchor_id": "2026-wiso-p15-18",
+        "number": "18",
+        "bbox": [
+          47.095,
+          298.511,
+          85.172,
+          325.557
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 18 visually read on cached physical page 15.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "e3fe7d16b05d97352fd5391cfec06d00aac1b95c1d406e029fb96c63aa89e99c"
+      }
+    ],
+    "regions": [
+      {
+        "page": 15,
+        "bbox": [
+          47.095,
+          55.094,
+          289.584,
+          296.507
+        ],
+        "role": "primary",
+        "owner": "2026-wiso-p15-16",
+        "evidence": "Printed Q16 Q17 Q18 in separate ruled panels. Region follows visible panel separators and includes all response choices/areas."
+      },
+      {
+        "page": 15,
+        "bbox": [
+          296.598,
+          55.094,
+          536.081,
+          296.507
+        ],
+        "role": "primary",
+        "owner": "2026-wiso-p15-17",
+        "evidence": "Printed Q16 Q17 Q18 in separate ruled panels. Region follows visible panel separators and includes all response choices/areas."
+      },
+      {
+        "page": 15,
+        "bbox": [
+          47.095,
+          298.511,
+          292.59,
+          540.926
+        ],
+        "role": "primary",
+        "owner": "2026-wiso-p15-18",
+        "evidence": "Printed Q16 Q17 Q18 in separate ruled panels. Region follows visible panel separators and includes all response choices/areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "16",
+        "bbox": [
+          47.095,
+          55.094,
+          85.172,
+          82.141
+        ],
+        "pixel_sha256": "1186b57fd1906f420b9e4125027963f8acd00dfe3404a7720bf9365403d3c0ac",
+        "audited_pixel_sha256": "1186b57fd1906f420b9e4125027963f8acd00dfe3404a7720bf9365403d3c0ac"
+      },
+      {
+        "kind": "heading",
+        "number": "17",
+        "bbox": [
+          296.598,
+          55.094,
+          334.675,
+          82.141
+        ],
+        "pixel_sha256": "42a25e18ab5720d7eb981cd75c5f3fa5c6774187e48ddb527befa3e3548d6509",
+        "audited_pixel_sha256": "42a25e18ab5720d7eb981cd75c5f3fa5c6774187e48ddb527befa3e3548d6509"
+      },
+      {
+        "kind": "heading",
+        "number": "18",
+        "bbox": [
+          47.095,
+          298.511,
+          85.172,
+          325.557
+        ],
+        "pixel_sha256": "e3fe7d16b05d97352fd5391cfec06d00aac1b95c1d406e029fb96c63aa89e99c",
+        "audited_pixel_sha256": "e3fe7d16b05d97352fd5391cfec06d00aac1b95c1d406e029fb96c63aa89e99c"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

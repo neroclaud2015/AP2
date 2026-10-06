@@ -1,0 +1,99 @@
+{
+  "key": "82c77ca95e27ed90b080cb8ae2c376b46d2ed369a025c44adf937145e93b2051",
+  "record_hash": "b4760f03c643f7dd93cb088343318bb64dc1494311679a015cfa1033dedf2bfa",
+  "record": {
+    "page": 12,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Q27 RC circuit and five phase plots; Q28 thermistor circuit, curve and calculation grid.",
+    "anchors": [
+      {
+        "anchor_id": "2026-ap-p12-27",
+        "number": "27",
+        "bbox": [
+          54.56,
+          57.536,
+          96.56,
+          83.536
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 27 visually read on cached physical page 12; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "d1b1c6bf6fd0dffd1db33a99802b3f7e0384ccd8d699392a9a014c6561261a9b"
+      },
+      {
+        "anchor_id": "2026-ap-p12-28",
+        "number": "28",
+        "bbox": [
+          54.56,
+          301.568,
+          96.56,
+          327.568
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 28 visually read on cached physical page 12; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "0bde25dc5f8e216b0b7980ebe9f90c4778c2fab2a83b80476777e4091d29d797"
+      }
+    ],
+    "regions": [
+      {
+        "page": 12,
+        "bbox": [
+          54.56,
+          57.536,
+          547.584,
+          297.6
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p12-27",
+        "evidence": "Q27 RC circuit and five phase plots; Q28 thermistor circuit, curve and calculation grid. Independently inspected ruled boundaries preserve all response and diagram areas."
+      },
+      {
+        "page": 12,
+        "bbox": [
+          54.56,
+          301.568,
+          547.584,
+          785.664
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p12-28",
+        "evidence": "Q27 RC circuit and five phase plots; Q28 thermistor circuit, curve and calculation grid. Independently inspected ruled boundaries preserve all response and diagram areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "27",
+        "bbox": [
+          54.56,
+          57.536,
+          96.56,
+          83.536
+        ],
+        "pixel_sha256": "d1b1c6bf6fd0dffd1db33a99802b3f7e0384ccd8d699392a9a014c6561261a9b",
+        "audited_pixel_sha256": "d1b1c6bf6fd0dffd1db33a99802b3f7e0384ccd8d699392a9a014c6561261a9b"
+      },
+      {
+        "kind": "heading",
+        "number": "28",
+        "bbox": [
+          54.56,
+          301.568,
+          96.56,
+          327.568
+        ],
+        "pixel_sha256": "0bde25dc5f8e216b0b7980ebe9f90c4778c2fab2a83b80476777e4091d29d797",
+        "audited_pixel_sha256": "0bde25dc5f8e216b0b7980ebe9f90c4778c2fab2a83b80476777e4091d29d797"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

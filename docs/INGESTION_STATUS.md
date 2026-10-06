@@ -1,3 +1,9 @@
+# Current: Winter 2025/26 + Sommer 2026 — 2026-10-06
+
+Both seasons fully segmented: AP36/FA36/WiSo24 each, U8/8/6 each. Winter MC reliable9/28,11/28,7/18 (47 Review); Sommer10/28,12/28,7/18 (45 Review). All6 modules await manual official source confirmation before production.166 new cached pages;0 old rescans;30 repeat steps skipped with PDF open prohibited. Previous43 modules/1,368 questions unchanged. Review and previews: docs/evidence/expansion2026/index.html. No other seasons or learning features changed.
+
+---
+
 # Current: Sommer 2023 partial production
 
 AP36 MC28 U8 Review0 production. FA blocked: source U7/U8 already answered; WiSo question PDF missing.58 new cache pages,0 old rescans. [Report](SOMMER_2023_REPORT.md). Stop before Winter2023/24. Earlier entries below are historical.

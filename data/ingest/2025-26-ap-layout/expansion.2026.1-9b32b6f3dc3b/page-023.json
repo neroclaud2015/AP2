@@ -1,0 +1,61 @@
+{
+  "key": "66d85a716415b25492433f503feb129ca86f8294e18c970122fcabf363f91ecd",
+  "record_hash": "0789f08aeb00fe74b5778f9543b748e6b55dd0815166a7520357fc1b380b7de4",
+  "record": {
+    "page": 23,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Printed U8 quality planning chart, influences table and final sampling response grid.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-ap-p23-U8",
+        "number": "U8",
+        "bbox": [
+          32.736,
+          14.88,
+          74.73599999999999,
+          40.88
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U8 visually read on cached physical page 23; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "34b42f1a68530b0f92a515292d70f77d5d37ddeb8816e70000584d1bc0a0272c"
+      }
+    ],
+    "regions": [
+      {
+        "page": 23,
+        "bbox": [
+          32.736,
+          14.88,
+          566.432,
+          813.44
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p23-U8",
+        "evidence": "Printed U8 quality planning chart, influences table and final sampling response grid. Ruled boundaries include complete diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U8",
+        "bbox": [
+          32.736,
+          14.88,
+          74.73599999999999,
+          40.88
+        ],
+        "pixel_sha256": "34b42f1a68530b0f92a515292d70f77d5d37ddeb8816e70000584d1bc0a0272c",
+        "audited_pixel_sha256": "34b42f1a68530b0f92a515292d70f77d5d37ddeb8816e70000584d1bc0a0272c"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

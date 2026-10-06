@@ -1,0 +1,61 @@
+{
+  "key": "371bb159b561c80318543ce907765db1ce0cdf7cafef8645c2459358505171cd",
+  "record_hash": "3387efafebc1cb7dd78d213469a6ac5ef1f0ffa84cea2419ad5b4c9800279a95",
+  "record": {
+    "page": 12,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "U5 locations profitability diagram and subparts 1 and 2; continues p13.",
+    "anchors": [
+      {
+        "anchor_id": "2026-wiso-p12-U5",
+        "number": "U5",
+        "bbox": [
+          56.113,
+          25.043,
+          94.19,
+          52.089
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U5 visually read on cached physical page 12.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "dc97e9266f1d1dc7ca3017919197c950b54d15807cc4ca27e3e7e19617040f9c"
+      }
+    ],
+    "regions": [
+      {
+        "page": 12,
+        "bbox": [
+          56.113,
+          25.043,
+          543.095,
+          786.346
+        ],
+        "role": "primary",
+        "owner": "2026-wiso-p12-U5",
+        "evidence": "U5 locations profitability diagram and subparts 1 and 2; continues p13. Region follows visible panel separators and includes all response choices/areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U5",
+        "bbox": [
+          56.113,
+          25.043,
+          94.19,
+          52.089
+        ],
+        "pixel_sha256": "dc97e9266f1d1dc7ca3017919197c950b54d15807cc4ca27e3e7e19617040f9c",
+        "audited_pixel_sha256": "dc97e9266f1d1dc7ca3017919197c950b54d15807cc4ca27e3e7e19617040f9c"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

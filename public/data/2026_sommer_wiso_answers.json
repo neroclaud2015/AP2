@@ -1,0 +1,2831 @@
+{
+  "schema_version": 1,
+  "exam": "2026_sommer",
+  "module": "WiSo",
+  "parser_revision": "2026-wiso-2f.1.0-97bba541ba5b",
+  "source_pdf_sha256": "96655f6e21d22758432cb45c9cd677d1f5fd04cb011effb66baad550d8e2835e",
+  "overlay": "assets/official/2026-wiso-2f.1.0-97bba541ba5b/grid-overlay.png",
+  "answers": [
+    {
+      "question_id": "2026-wiso-p5-1",
+      "question_number": 1,
+      "exam": "2026_sommer",
+      "module": "WiSo",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 3,
+      "official_answer_status": "auto_ready",
+      "confidence": 0.98,
+      "review_reasons": [],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            134.8,
+            388.6
+          ],
+          "ring_ink": 0.1245,
+          "angular_support": 0.3333,
+          "center_ink": 0.3448,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            134.8,
+            408.54
+          ],
+          "ring_ink": 0.0556,
+          "angular_support": 0.1667,
+          "center_ink": 0.3571,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            133.8,
+            429.48
+          ],
+          "ring_ink": 0.4365,
+          "angular_support": 1.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            133.8,
+            449.42
+          ],
+          "ring_ink": 0.0916,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            133.8,
+            469.36
+          ],
+          "ring_ink": 0.1,
+          "angular_support": 0.1667,
+          "center_ink": 0.2759,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            134.8,
+            388.6
+          ],
+          "ring_ink": 0.1245,
+          "angular_support": 0.3333,
+          "center_ink": 0.2759,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            134.8,
+            408.54
+          ],
+          "ring_ink": 0.0556,
+          "angular_support": 0.1667,
+          "center_ink": 0.3214,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            133.8,
+            429.48
+          ],
+          "ring_ink": 0.4325,
+          "angular_support": 1.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            133.8,
+            449.42
+          ],
+          "ring_ink": 0.0876,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            133.8,
+            469.36
+          ],
+          "ring_ink": 0.1,
+          "angular_support": 0.1667,
+          "center_ink": 0.2759,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/96655f6e21d22758432cb45c.pdf",
+      "source_pdf_available": false,
+      "source_page": 3,
+      "solution_source_page": 3,
+      "source_crop": "assets/official/2026-wiso-2f.1.0-97bba541ba5b/Q01.png",
+      "answer_bbox": [
+        67.62,
+        221.866,
+        95.196,
+        289.84
+      ],
+      "source_crop_bbox_pixels": [
+        169,
+        555,
+        238,
+        725
+      ],
+      "source_image_sha256": "8d9f12e4bfebd5878756d77ef76a3c24377bee3a3396687f85ac565d6b40eb4b",
+      "source_pdf_sha256": "96655f6e21d22758432cb45c9cd677d1f5fd04cb011effb66baad550d8e2835e",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "2026-wiso-2f.1.0-97bba541ba5b",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Original Sommer 2026 module title and every printed question column visually verified. Five positions map top to bottom to 1..5; deterministic ring geometry only.",
+      "locked": false,
+      "user_corrected": false
+    },
+    {
+      "question_id": "2026-wiso-p5-2",
+      "question_number": 2,
+      "exam": "2026_sommer",
+      "module": "WiSo",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 3,
+      "official_answer_status": "auto_ready",
+      "confidence": 0.98,
+      "review_reasons": [],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            194.88,
+            388.6
+          ],
+          "ring_ink": 0.126,
+          "angular_support": 0.3333,
+          "center_ink": 0.3571,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            194.88,
+            408.54
+          ],
+          "ring_ink": 0.0549,
+          "angular_support": 0.1667,
+          "center_ink": 0.3571,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            193.88,
+            429.48
+          ],
+          "ring_ink": 0.4314,
+          "angular_support": 1.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            193.88,
+            449.42
+          ],
+          "ring_ink": 0.0863,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            193.88,
+            469.36
+          ],
+          "ring_ink": 0.1032,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            194.88,
+            388.6
+          ],
+          "ring_ink": 0.126,
+          "angular_support": 0.3333,
+          "center_ink": 0.3571,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            194.88,
+            408.54
+          ],
+          "ring_ink": 0.0549,
+          "angular_support": 0.1667,
+          "center_ink": 0.3571,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            193.88,
+            429.48
+          ],
+          "ring_ink": 0.4235,
+          "angular_support": 1.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            193.88,
+            449.42
+          ],
+          "ring_ink": 0.0863,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            193.88,
+            469.36
+          ],
+          "ring_ink": 0.1032,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/96655f6e21d22758432cb45c.pdf",
+      "source_pdf_available": false,
+      "source_page": 3,
+      "solution_source_page": 3,
+      "source_crop": "assets/official/2026-wiso-2f.1.0-97bba541ba5b/Q02.png",
+      "answer_bbox": [
+        103.637,
+        221.866,
+        131.212,
+        289.84
+      ],
+      "source_crop_bbox_pixels": [
+        259,
+        555,
+        328,
+        725
+      ],
+      "source_image_sha256": "8d9f12e4bfebd5878756d77ef76a3c24377bee3a3396687f85ac565d6b40eb4b",
+      "source_pdf_sha256": "96655f6e21d22758432cb45c9cd677d1f5fd04cb011effb66baad550d8e2835e",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "2026-wiso-2f.1.0-97bba541ba5b",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Original Sommer 2026 module title and every printed question column visually verified. Five positions map top to bottom to 1..5; deterministic ring geometry only.",
+      "locked": false,
+      "user_corrected": false
+    },
+    {
+      "question_id": "2026-wiso-p5-3",
+      "question_number": 3,
+      "exam": "2026_sommer",
+      "module": "WiSo",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 2,
+      "official_answer_status": "auto_ready",
+      "confidence": 0.98,
+      "review_reasons": [],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            254.96,
+            388.6
+          ],
+          "ring_ink": 0.1804,
+          "angular_support": 0.5,
+          "center_ink": 0.3704,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            254.96,
+            408.54
+          ],
+          "ring_ink": 0.4297,
+          "angular_support": 1.0,
+          "center_ink": 0.3333,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            253.96,
+            429.48
+          ],
+          "ring_ink": 0.0859,
+          "angular_support": 0.1667,
+          "center_ink": 0.2963,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            253.96,
+            449.42
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2963,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            253.96,
+            469.36
+          ],
+          "ring_ink": 0.1028,
+          "angular_support": 0.1667,
+          "center_ink": 0.2963,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            254.96,
+            388.6
+          ],
+          "ring_ink": 0.1804,
+          "angular_support": 0.5,
+          "center_ink": 0.3704,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            254.96,
+            408.54
+          ],
+          "ring_ink": 0.4102,
+          "angular_support": 1.0,
+          "center_ink": 0.2963,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            253.96,
+            429.48
+          ],
+          "ring_ink": 0.082,
+          "angular_support": 0.1667,
+          "center_ink": 0.2963,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            253.96,
+            449.42
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2963,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            253.96,
+            469.36
+          ],
+          "ring_ink": 0.1028,
+          "angular_support": 0.1667,
+          "center_ink": 0.2963,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/96655f6e21d22758432cb45c.pdf",
+      "source_pdf_available": false,
+      "source_page": 3,
+      "solution_source_page": 3,
+      "source_crop": "assets/official/2026-wiso-2f.1.0-97bba541ba5b/Q03.png",
+      "answer_bbox": [
+        139.653,
+        221.866,
+        167.229,
+        289.84
+      ],
+      "source_crop_bbox_pixels": [
+        349,
+        555,
+        418,
+        725
+      ],
+      "source_image_sha256": "8d9f12e4bfebd5878756d77ef76a3c24377bee3a3396687f85ac565d6b40eb4b",
+      "source_pdf_sha256": "96655f6e21d22758432cb45c9cd677d1f5fd04cb011effb66baad550d8e2835e",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "2026-wiso-2f.1.0-97bba541ba5b",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Original Sommer 2026 module title and every printed question column visually verified. Five positions map top to bottom to 1..5; deterministic ring geometry only.",
+      "locked": false,
+      "user_corrected": false
+    },
+    {
+      "question_id": "2026-wiso-p7-4",
+      "question_number": 4,
+      "exam": "2026_sommer",
+      "module": "WiSo",
+      "official_answer_type": "multiple_choice",
+      "official_answer": null,
+      "official_answer_status": "needs_review",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            315.04,
+            388.6
+          ],
+          "ring_ink": 0.1804,
+          "angular_support": 0.5,
+          "center_ink": 0.3704,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            314.04,
+            408.54
+          ],
+          "ring_ink": 0.332,
+          "angular_support": 0.75,
+          "center_ink": 0.2963,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            314.04,
+            429.48
+          ],
+          "ring_ink": 0.082,
+          "angular_support": 0.1667,
+          "center_ink": 0.2963,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            314.04,
+            449.42
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2963,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            314.04,
+            469.36
+          ],
+          "ring_ink": 0.1028,
+          "angular_support": 0.1667,
+          "center_ink": 0.2963,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            315.04,
+            388.6
+          ],
+          "ring_ink": 0.1765,
+          "angular_support": 0.5,
+          "center_ink": 0.3704,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            314.04,
+            408.54
+          ],
+          "ring_ink": 0.3281,
+          "angular_support": 0.75,
+          "center_ink": 0.2963,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            314.04,
+            429.48
+          ],
+          "ring_ink": 0.082,
+          "angular_support": 0.1667,
+          "center_ink": 0.2963,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            314.04,
+            449.42
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2963,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            314.04,
+            469.36
+          ],
+          "ring_ink": 0.1028,
+          "angular_support": 0.1667,
+          "center_ink": 0.2963,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/96655f6e21d22758432cb45c.pdf",
+      "source_pdf_available": false,
+      "source_page": 3,
+      "solution_source_page": 3,
+      "source_crop": "assets/official/2026-wiso-2f.1.0-97bba541ba5b/Q04.png",
+      "answer_bbox": [
+        175.669,
+        221.866,
+        203.245,
+        289.84
+      ],
+      "source_crop_bbox_pixels": [
+        439,
+        555,
+        508,
+        725
+      ],
+      "source_image_sha256": "8d9f12e4bfebd5878756d77ef76a3c24377bee3a3396687f85ac565d6b40eb4b",
+      "source_pdf_sha256": "96655f6e21d22758432cb45c9cd677d1f5fd04cb011effb66baad550d8e2835e",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "2026-wiso-2f.1.0-97bba541ba5b",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Original Sommer 2026 module title and every printed question column visually verified. Five positions map top to bottom to 1..5; deterministic ring geometry only.",
+      "locked": false,
+      "user_corrected": false
+    },
+    {
+      "question_id": "2026-wiso-p7-5",
+      "question_number": 5,
+      "exam": "2026_sommer",
+      "module": "WiSo",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 1,
+      "official_answer_status": "auto_ready",
+      "confidence": 0.98,
+      "review_reasons": [],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            375.12,
+            388.6
+          ],
+          "ring_ink": 0.4291,
+          "angular_support": 1.0,
+          "center_ink": 0.3571,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            374.12,
+            408.54
+          ],
+          "ring_ink": 0.0784,
+          "angular_support": 0.25,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            374.12,
+            429.48
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            374.12,
+            449.42
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            374.12,
+            469.36
+          ],
+          "ring_ink": 0.1032,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            375.12,
+            388.6
+          ],
+          "ring_ink": 0.4252,
+          "angular_support": 1.0,
+          "center_ink": 0.3214,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            374.12,
+            408.54
+          ],
+          "ring_ink": 0.0784,
+          "angular_support": 0.25,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            374.12,
+            429.48
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            374.12,
+            449.42
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            374.12,
+            469.36
+          ],
+          "ring_ink": 0.1032,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/96655f6e21d22758432cb45c.pdf",
+      "source_pdf_available": false,
+      "source_page": 3,
+      "solution_source_page": 3,
+      "source_crop": "assets/official/2026-wiso-2f.1.0-97bba541ba5b/Q05.png",
+      "answer_bbox": [
+        211.686,
+        221.866,
+        239.261,
+        289.84
+      ],
+      "source_crop_bbox_pixels": [
+        530,
+        555,
+        598,
+        725
+      ],
+      "source_image_sha256": "8d9f12e4bfebd5878756d77ef76a3c24377bee3a3396687f85ac565d6b40eb4b",
+      "source_pdf_sha256": "96655f6e21d22758432cb45c9cd677d1f5fd04cb011effb66baad550d8e2835e",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "2026-wiso-2f.1.0-97bba541ba5b",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Original Sommer 2026 module title and every printed question column visually verified. Five positions map top to bottom to 1..5; deterministic ring geometry only.",
+      "locked": false,
+      "user_corrected": false
+    },
+    {
+      "question_id": "2026-wiso-p7-6",
+      "question_number": 6,
+      "exam": "2026_sommer",
+      "module": "WiSo",
+      "official_answer_type": "multiple_choice",
+      "official_answer": null,
+      "official_answer_status": "needs_review",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            435.2,
+            388.6
+          ],
+          "ring_ink": 0.1807,
+          "angular_support": 0.5,
+          "center_ink": 0.3448,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            434.2,
+            408.54
+          ],
+          "ring_ink": 0.3532,
+          "angular_support": 0.9167,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            434.2,
+            429.48
+          ],
+          "ring_ink": 0.0873,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            434.2,
+            449.42
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            434.2,
+            469.36
+          ],
+          "ring_ink": 0.1,
+          "angular_support": 0.1667,
+          "center_ink": 0.2759,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            435.2,
+            388.6
+          ],
+          "ring_ink": 0.1767,
+          "angular_support": 0.5,
+          "center_ink": 0.3448,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            434.2,
+            408.54
+          ],
+          "ring_ink": 0.3413,
+          "angular_support": 0.9167,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            434.2,
+            429.48
+          ],
+          "ring_ink": 0.0873,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            434.2,
+            449.42
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            434.2,
+            469.36
+          ],
+          "ring_ink": 0.1,
+          "angular_support": 0.1667,
+          "center_ink": 0.2759,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/96655f6e21d22758432cb45c.pdf",
+      "source_pdf_available": false,
+      "source_page": 3,
+      "solution_source_page": 3,
+      "source_crop": "assets/official/2026-wiso-2f.1.0-97bba541ba5b/Q06.png",
+      "answer_bbox": [
+        247.702,
+        221.866,
+        275.278,
+        289.84
+      ],
+      "source_crop_bbox_pixels": [
+        620,
+        555,
+        689,
+        725
+      ],
+      "source_image_sha256": "8d9f12e4bfebd5878756d77ef76a3c24377bee3a3396687f85ac565d6b40eb4b",
+      "source_pdf_sha256": "96655f6e21d22758432cb45c9cd677d1f5fd04cb011effb66baad550d8e2835e",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "2026-wiso-2f.1.0-97bba541ba5b",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Original Sommer 2026 module title and every printed question column visually verified. Five positions map top to bottom to 1..5; deterministic ring geometry only.",
+      "locked": false,
+      "user_corrected": false
+    },
+    {
+      "question_id": "2026-wiso-p7-7",
+      "question_number": 7,
+      "exam": "2026_sommer",
+      "module": "WiSo",
+      "official_answer_type": "multiple_choice",
+      "official_answer": null,
+      "official_answer_status": "needs_review",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            495.28,
+            388.6
+          ],
+          "ring_ink": 0.123,
+          "angular_support": 0.3333,
+          "center_ink": 0.3448,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            494.28,
+            408.54
+          ],
+          "ring_ink": 0.0512,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            494.28,
+            429.48
+          ],
+          "ring_ink": 0.4055,
+          "angular_support": 1.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            494.28,
+            449.42
+          ],
+          "ring_ink": 0.088,
+          "angular_support": 0.1667,
+          "center_ink": 0.2759,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            494.28,
+            469.36
+          ],
+          "ring_ink": 0.0992,
+          "angular_support": 0.1667,
+          "center_ink": 0.2759,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            495.28,
+            388.6
+          ],
+          "ring_ink": 0.123,
+          "angular_support": 0.3333,
+          "center_ink": 0.3448,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            494.28,
+            408.54
+          ],
+          "ring_ink": 0.0512,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            494.28,
+            429.48
+          ],
+          "ring_ink": 0.3937,
+          "angular_support": 1.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            494.28,
+            449.42
+          ],
+          "ring_ink": 0.088,
+          "angular_support": 0.1667,
+          "center_ink": 0.2759,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            494.28,
+            469.36
+          ],
+          "ring_ink": 0.0992,
+          "angular_support": 0.1667,
+          "center_ink": 0.2759,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/96655f6e21d22758432cb45c.pdf",
+      "source_pdf_available": false,
+      "source_page": 3,
+      "solution_source_page": 3,
+      "source_crop": "assets/official/2026-wiso-2f.1.0-97bba541ba5b/Q07.png",
+      "answer_bbox": [
+        283.718,
+        221.866,
+        311.294,
+        289.84
+      ],
+      "source_crop_bbox_pixels": [
+        710,
+        555,
+        779,
+        725
+      ],
+      "source_image_sha256": "8d9f12e4bfebd5878756d77ef76a3c24377bee3a3396687f85ac565d6b40eb4b",
+      "source_pdf_sha256": "96655f6e21d22758432cb45c9cd677d1f5fd04cb011effb66baad550d8e2835e",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "2026-wiso-2f.1.0-97bba541ba5b",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Original Sommer 2026 module title and every printed question column visually verified. Five positions map top to bottom to 1..5; deterministic ring geometry only.",
+      "locked": false,
+      "user_corrected": false
+    },
+    {
+      "question_id": "2026-wiso-p9-8",
+      "question_number": 8,
+      "exam": "2026_sommer",
+      "module": "WiSo",
+      "official_answer_type": "multiple_choice",
+      "official_answer": null,
+      "official_answer_status": "needs_review",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            555.36,
+            388.6
+          ],
+          "ring_ink": 0.1793,
+          "angular_support": 0.5,
+          "center_ink": 0.3333,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            554.36,
+            408.54
+          ],
+          "ring_ink": 0.3586,
+          "angular_support": 0.9167,
+          "center_ink": 0.2759,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            554.36,
+            429.48
+          ],
+          "ring_ink": 0.0873,
+          "angular_support": 0.1667,
+          "center_ink": 0.2759,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            554.36,
+            449.42
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2667,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            554.36,
+            469.36
+          ],
+          "ring_ink": 0.1004,
+          "angular_support": 0.1667,
+          "center_ink": 0.2667,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            555.36,
+            388.6
+          ],
+          "ring_ink": 0.1793,
+          "angular_support": 0.5,
+          "center_ink": 0.3333,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            554.36,
+            408.54
+          ],
+          "ring_ink": 0.3546,
+          "angular_support": 0.9167,
+          "center_ink": 0.2759,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            554.36,
+            429.48
+          ],
+          "ring_ink": 0.0873,
+          "angular_support": 0.1667,
+          "center_ink": 0.2759,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            554.36,
+            449.42
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2667,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            554.36,
+            469.36
+          ],
+          "ring_ink": 0.1004,
+          "angular_support": 0.1667,
+          "center_ink": 0.2667,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/96655f6e21d22758432cb45c.pdf",
+      "source_pdf_available": false,
+      "source_page": 3,
+      "solution_source_page": 3,
+      "source_crop": "assets/official/2026-wiso-2f.1.0-97bba541ba5b/Q08.png",
+      "answer_bbox": [
+        319.735,
+        221.866,
+        347.31,
+        289.84
+      ],
+      "source_crop_bbox_pixels": [
+        800,
+        555,
+        869,
+        725
+      ],
+      "source_image_sha256": "8d9f12e4bfebd5878756d77ef76a3c24377bee3a3396687f85ac565d6b40eb4b",
+      "source_pdf_sha256": "96655f6e21d22758432cb45c9cd677d1f5fd04cb011effb66baad550d8e2835e",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "2026-wiso-2f.1.0-97bba541ba5b",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Original Sommer 2026 module title and every printed question column visually verified. Five positions map top to bottom to 1..5; deterministic ring geometry only.",
+      "locked": false,
+      "user_corrected": false
+    },
+    {
+      "question_id": "2026-wiso-p9-9",
+      "question_number": 9,
+      "exam": "2026_sommer",
+      "module": "WiSo",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 5,
+      "official_answer_status": "auto_ready",
+      "confidence": 0.98,
+      "review_reasons": [],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            615.44,
+            388.6
+          ],
+          "ring_ink": 0.1195,
+          "angular_support": 0.3333,
+          "center_ink": 0.3333,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            614.44,
+            408.54
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.25,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            614.44,
+            429.48
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.25,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            614.44,
+            449.42
+          ],
+          "ring_ink": 0.0685,
+          "angular_support": 0.1667,
+          "center_ink": 0.2667,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            614.44,
+            469.36
+          ],
+          "ring_ink": 0.4343,
+          "angular_support": 1.0,
+          "center_ink": 0.2759,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            615.44,
+            388.6
+          ],
+          "ring_ink": 0.1195,
+          "angular_support": 0.3333,
+          "center_ink": 0.3333,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            614.44,
+            408.54
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.25,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            614.44,
+            429.48
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.25,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            614.44,
+            449.42
+          ],
+          "ring_ink": 0.0685,
+          "angular_support": 0.1667,
+          "center_ink": 0.2667,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            614.44,
+            469.36
+          ],
+          "ring_ink": 0.4223,
+          "angular_support": 1.0,
+          "center_ink": 0.2759,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/96655f6e21d22758432cb45c.pdf",
+      "source_pdf_available": false,
+      "source_page": 3,
+      "solution_source_page": 3,
+      "source_crop": "assets/official/2026-wiso-2f.1.0-97bba541ba5b/Q09.png",
+      "answer_bbox": [
+        355.751,
+        221.866,
+        383.327,
+        289.84
+      ],
+      "source_crop_bbox_pixels": [
+        890,
+        555,
+        959,
+        725
+      ],
+      "source_image_sha256": "8d9f12e4bfebd5878756d77ef76a3c24377bee3a3396687f85ac565d6b40eb4b",
+      "source_pdf_sha256": "96655f6e21d22758432cb45c9cd677d1f5fd04cb011effb66baad550d8e2835e",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "2026-wiso-2f.1.0-97bba541ba5b",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Original Sommer 2026 module title and every printed question column visually verified. Five positions map top to bottom to 1..5; deterministic ring geometry only.",
+      "locked": false,
+      "user_corrected": false
+    },
+    {
+      "question_id": "2026-wiso-p9-10",
+      "question_number": 10,
+      "exam": "2026_sommer",
+      "module": "WiSo",
+      "official_answer_type": "multiple_choice",
+      "official_answer": null,
+      "official_answer_status": "needs_review",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            674.52,
+            388.6
+          ],
+          "ring_ink": 0.122,
+          "angular_support": 0.3333,
+          "center_ink": 0.3226,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            673.52,
+            408.54
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.25,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            673.52,
+            429.48
+          ],
+          "ring_ink": 0.07,
+          "angular_support": 0.1667,
+          "center_ink": 0.25,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            673.52,
+            449.42
+          ],
+          "ring_ink": 0.3265,
+          "angular_support": 0.8333,
+          "center_ink": 0.25,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            673.52,
+            469.36
+          ],
+          "ring_ink": 0.1865,
+          "angular_support": 0.3333,
+          "center_ink": 0.2759,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            674.52,
+            388.6
+          ],
+          "ring_ink": 0.122,
+          "angular_support": 0.3333,
+          "center_ink": 0.3226,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            673.52,
+            408.54
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.25,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            673.52,
+            429.48
+          ],
+          "ring_ink": 0.07,
+          "angular_support": 0.1667,
+          "center_ink": 0.25,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            673.52,
+            449.42
+          ],
+          "ring_ink": 0.3184,
+          "angular_support": 0.8333,
+          "center_ink": 0.25,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            673.52,
+            469.36
+          ],
+          "ring_ink": 0.1865,
+          "angular_support": 0.3333,
+          "center_ink": 0.2759,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/96655f6e21d22758432cb45c.pdf",
+      "source_pdf_available": false,
+      "source_page": 3,
+      "solution_source_page": 3,
+      "source_crop": "assets/official/2026-wiso-2f.1.0-97bba541ba5b/Q10.png",
+      "answer_bbox": [
+        391.767,
+        221.866,
+        419.343,
+        289.84
+      ],
+      "source_crop_bbox_pixels": [
+        980,
+        555,
+        1049,
+        725
+      ],
+      "source_image_sha256": "8d9f12e4bfebd5878756d77ef76a3c24377bee3a3396687f85ac565d6b40eb4b",
+      "source_pdf_sha256": "96655f6e21d22758432cb45c9cd677d1f5fd04cb011effb66baad550d8e2835e",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "2026-wiso-2f.1.0-97bba541ba5b",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Original Sommer 2026 module title and every printed question column visually verified. Five positions map top to bottom to 1..5; deterministic ring geometry only.",
+      "locked": false,
+      "user_corrected": false
+    },
+    {
+      "question_id": "2026-wiso-p11-11",
+      "question_number": 11,
+      "exam": "2026_sommer",
+      "module": "WiSo",
+      "official_answer_type": "multiple_choice",
+      "official_answer": null,
+      "official_answer_status": "needs_review",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            134.8,
+            508.0
+          ],
+          "ring_ink": 0.1169,
+          "angular_support": 0.3333,
+          "center_ink": 0.3571,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            134.8,
+            527.94
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.3929,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            133.8,
+            547.88
+          ],
+          "ring_ink": 0.0514,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            133.8,
+            567.82
+          ],
+          "ring_ink": 0.336,
+          "angular_support": 0.8333,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            133.8,
+            588.76
+          ],
+          "ring_ink": 0.1667,
+          "angular_support": 0.3333,
+          "center_ink": 0.25,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            134.8,
+            508.0
+          ],
+          "ring_ink": 0.1169,
+          "angular_support": 0.3333,
+          "center_ink": 0.3571,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            134.8,
+            527.94
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.3571,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            133.8,
+            547.88
+          ],
+          "ring_ink": 0.0514,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            133.8,
+            567.82
+          ],
+          "ring_ink": 0.332,
+          "angular_support": 0.8333,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            133.8,
+            588.76
+          ],
+          "ring_ink": 0.1667,
+          "angular_support": 0.3333,
+          "center_ink": 0.25,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/96655f6e21d22758432cb45c.pdf",
+      "source_pdf_available": false,
+      "source_page": 3,
+      "solution_source_page": 3,
+      "source_crop": "assets/official/2026-wiso-2f.1.0-97bba541ba5b/Q11.png",
+      "answer_bbox": [
+        67.62,
+        293.822,
+        95.196,
+        361.437
+      ],
+      "source_crop_bbox_pixels": [
+        169,
+        735,
+        238,
+        904
+      ],
+      "source_image_sha256": "8d9f12e4bfebd5878756d77ef76a3c24377bee3a3396687f85ac565d6b40eb4b",
+      "source_pdf_sha256": "96655f6e21d22758432cb45c9cd677d1f5fd04cb011effb66baad550d8e2835e",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "2026-wiso-2f.1.0-97bba541ba5b",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Original Sommer 2026 module title and every printed question column visually verified. Five positions map top to bottom to 1..5; deterministic ring geometry only.",
+      "locked": false,
+      "user_corrected": false
+    },
+    {
+      "question_id": "2026-wiso-p11-12",
+      "question_number": 12,
+      "exam": "2026_sommer",
+      "module": "WiSo",
+      "official_answer_type": "multiple_choice",
+      "official_answer": null,
+      "official_answer_status": "needs_review",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            194.88,
+            508.0
+          ],
+          "ring_ink": 0.1734,
+          "angular_support": 0.4167,
+          "center_ink": 0.3462,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            194.88,
+            527.94
+          ],
+          "ring_ink": 0.3952,
+          "angular_support": 1.0,
+          "center_ink": 0.3333,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            193.88,
+            547.88
+          ],
+          "ring_ink": 0.0854,
+          "angular_support": 0.25,
+          "center_ink": 0.3333,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            193.88,
+            567.82
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            193.88,
+            588.76
+          ],
+          "ring_ink": 0.087,
+          "angular_support": 0.1667,
+          "center_ink": 0.2759,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            194.88,
+            508.0
+          ],
+          "ring_ink": 0.1734,
+          "angular_support": 0.4167,
+          "center_ink": 0.3462,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            194.88,
+            527.94
+          ],
+          "ring_ink": 0.3911,
+          "angular_support": 1.0,
+          "center_ink": 0.2963,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            193.88,
+            547.88
+          ],
+          "ring_ink": 0.0854,
+          "angular_support": 0.25,
+          "center_ink": 0.3333,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            193.88,
+            567.82
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            193.88,
+            588.76
+          ],
+          "ring_ink": 0.087,
+          "angular_support": 0.1667,
+          "center_ink": 0.2414,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/96655f6e21d22758432cb45c.pdf",
+      "source_pdf_available": false,
+      "source_page": 3,
+      "solution_source_page": 3,
+      "source_crop": "assets/official/2026-wiso-2f.1.0-97bba541ba5b/Q12.png",
+      "answer_bbox": [
+        103.637,
+        293.822,
+        131.212,
+        361.437
+      ],
+      "source_crop_bbox_pixels": [
+        259,
+        735,
+        328,
+        904
+      ],
+      "source_image_sha256": "8d9f12e4bfebd5878756d77ef76a3c24377bee3a3396687f85ac565d6b40eb4b",
+      "source_pdf_sha256": "96655f6e21d22758432cb45c9cd677d1f5fd04cb011effb66baad550d8e2835e",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "2026-wiso-2f.1.0-97bba541ba5b",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Original Sommer 2026 module title and every printed question column visually verified. Five positions map top to bottom to 1..5; deterministic ring geometry only.",
+      "locked": false,
+      "user_corrected": false
+    },
+    {
+      "question_id": "2026-wiso-p13-13",
+      "question_number": 13,
+      "exam": "2026_sommer",
+      "module": "WiSo",
+      "official_answer_type": "multiple_choice",
+      "official_answer": null,
+      "official_answer_status": "needs_review",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            254.96,
+            508.0
+          ],
+          "ring_ink": 0.1148,
+          "angular_support": 0.1667,
+          "center_ink": 0.3846,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            254.96,
+            527.94
+          ],
+          "ring_ink": 0.0569,
+          "angular_support": 0.1667,
+          "center_ink": 0.4074,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            253.96,
+            547.88
+          ],
+          "ring_ink": 0.3534,
+          "angular_support": 0.8333,
+          "center_ink": 0.3333,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            253.96,
+            567.82
+          ],
+          "ring_ink": 0.0837,
+          "angular_support": 0.25,
+          "center_ink": 0.3214,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            253.96,
+            588.76
+          ],
+          "ring_ink": 0.0876,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            254.96,
+            508.0
+          ],
+          "ring_ink": 0.1148,
+          "angular_support": 0.1667,
+          "center_ink": 0.3462,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            254.96,
+            527.94
+          ],
+          "ring_ink": 0.0569,
+          "angular_support": 0.1667,
+          "center_ink": 0.3333,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            253.96,
+            547.88
+          ],
+          "ring_ink": 0.3454,
+          "angular_support": 0.8333,
+          "center_ink": 0.2963,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            253.96,
+            567.82
+          ],
+          "ring_ink": 0.0837,
+          "angular_support": 0.25,
+          "center_ink": 0.3214,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            253.96,
+            588.76
+          ],
+          "ring_ink": 0.0876,
+          "angular_support": 0.1667,
+          "center_ink": 0.25,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/96655f6e21d22758432cb45c.pdf",
+      "source_pdf_available": false,
+      "source_page": 3,
+      "solution_source_page": 3,
+      "source_crop": "assets/official/2026-wiso-2f.1.0-97bba541ba5b/Q13.png",
+      "answer_bbox": [
+        139.653,
+        293.822,
+        167.229,
+        361.437
+      ],
+      "source_crop_bbox_pixels": [
+        349,
+        735,
+        418,
+        904
+      ],
+      "source_image_sha256": "8d9f12e4bfebd5878756d77ef76a3c24377bee3a3396687f85ac565d6b40eb4b",
+      "source_pdf_sha256": "96655f6e21d22758432cb45c9cd677d1f5fd04cb011effb66baad550d8e2835e",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "2026-wiso-2f.1.0-97bba541ba5b",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Original Sommer 2026 module title and every printed question column visually verified. Five positions map top to bottom to 1..5; deterministic ring geometry only.",
+      "locked": false,
+      "user_corrected": false
+    },
+    {
+      "question_id": "2026-wiso-p13-14",
+      "question_number": 14,
+      "exam": "2026_sommer",
+      "module": "WiSo",
+      "official_answer_type": "multiple_choice",
+      "official_answer": null,
+      "official_answer_status": "needs_review",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            315.04,
+            508.0
+          ],
+          "ring_ink": 0.1148,
+          "angular_support": 0.1667,
+          "center_ink": 0.3846,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            315.04,
+            527.94
+          ],
+          "ring_ink": 0.0569,
+          "angular_support": 0.1667,
+          "center_ink": 0.3704,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            314.04,
+            547.88
+          ],
+          "ring_ink": 0.3454,
+          "angular_support": 0.75,
+          "center_ink": 0.2963,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            314.04,
+            567.82
+          ],
+          "ring_ink": 0.0797,
+          "angular_support": 0.25,
+          "center_ink": 0.3214,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            314.04,
+            588.76
+          ],
+          "ring_ink": 0.0876,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            315.04,
+            508.0
+          ],
+          "ring_ink": 0.1148,
+          "angular_support": 0.1667,
+          "center_ink": 0.3462,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            315.04,
+            527.94
+          ],
+          "ring_ink": 0.0528,
+          "angular_support": 0.1667,
+          "center_ink": 0.3704,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            314.04,
+            547.88
+          ],
+          "ring_ink": 0.3414,
+          "angular_support": 0.75,
+          "center_ink": 0.2963,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            314.04,
+            567.82
+          ],
+          "ring_ink": 0.0797,
+          "angular_support": 0.25,
+          "center_ink": 0.3214,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            314.04,
+            588.76
+          ],
+          "ring_ink": 0.0876,
+          "angular_support": 0.1667,
+          "center_ink": 0.25,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/96655f6e21d22758432cb45c.pdf",
+      "source_pdf_available": false,
+      "source_page": 3,
+      "solution_source_page": 3,
+      "source_crop": "assets/official/2026-wiso-2f.1.0-97bba541ba5b/Q14.png",
+      "answer_bbox": [
+        175.669,
+        293.822,
+        203.245,
+        361.437
+      ],
+      "source_crop_bbox_pixels": [
+        439,
+        735,
+        508,
+        904
+      ],
+      "source_image_sha256": "8d9f12e4bfebd5878756d77ef76a3c24377bee3a3396687f85ac565d6b40eb4b",
+      "source_pdf_sha256": "96655f6e21d22758432cb45c9cd677d1f5fd04cb011effb66baad550d8e2835e",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "2026-wiso-2f.1.0-97bba541ba5b",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Original Sommer 2026 module title and every printed question column visually verified. Five positions map top to bottom to 1..5; deterministic ring geometry only.",
+      "locked": false,
+      "user_corrected": false
+    },
+    {
+      "question_id": "2026-wiso-p13-15",
+      "question_number": 15,
+      "exam": "2026_sommer",
+      "module": "WiSo",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 1,
+      "official_answer_status": "auto_ready",
+      "confidence": 0.98,
+      "review_reasons": [],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            375.12,
+            508.0
+          ],
+          "ring_ink": 0.4315,
+          "angular_support": 1.0,
+          "center_ink": 0.3462,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            375.12,
+            527.94
+          ],
+          "ring_ink": 0.0806,
+          "angular_support": 0.1667,
+          "center_ink": 0.3704,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            374.12,
+            547.88
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.3333,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            374.12,
+            567.82
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.3214,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            374.12,
+            588.76
+          ],
+          "ring_ink": 0.087,
+          "angular_support": 0.1667,
+          "center_ink": 0.2759,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            375.12,
+            508.0
+          ],
+          "ring_ink": 0.4234,
+          "angular_support": 1.0,
+          "center_ink": 0.3462,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            375.12,
+            527.94
+          ],
+          "ring_ink": 0.0806,
+          "angular_support": 0.1667,
+          "center_ink": 0.3704,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            374.12,
+            547.88
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.3333,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            374.12,
+            567.82
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.3214,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            374.12,
+            588.76
+          ],
+          "ring_ink": 0.087,
+          "angular_support": 0.1667,
+          "center_ink": 0.2414,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/96655f6e21d22758432cb45c.pdf",
+      "source_pdf_available": false,
+      "source_page": 3,
+      "solution_source_page": 3,
+      "source_crop": "assets/official/2026-wiso-2f.1.0-97bba541ba5b/Q15.png",
+      "answer_bbox": [
+        211.686,
+        293.822,
+        239.261,
+        361.437
+      ],
+      "source_crop_bbox_pixels": [
+        530,
+        735,
+        598,
+        904
+      ],
+      "source_image_sha256": "8d9f12e4bfebd5878756d77ef76a3c24377bee3a3396687f85ac565d6b40eb4b",
+      "source_pdf_sha256": "96655f6e21d22758432cb45c9cd677d1f5fd04cb011effb66baad550d8e2835e",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "2026-wiso-2f.1.0-97bba541ba5b",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Original Sommer 2026 module title and every printed question column visually verified. Five positions map top to bottom to 1..5; deterministic ring geometry only.",
+      "locked": false,
+      "user_corrected": false
+    },
+    {
+      "question_id": "2026-wiso-p15-16",
+      "question_number": 16,
+      "exam": "2026_sommer",
+      "module": "WiSo",
+      "official_answer_type": "multiple_choice",
+      "official_answer": null,
+      "official_answer_status": "needs_review",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            435.2,
+            508.0
+          ],
+          "ring_ink": 0.1169,
+          "angular_support": 0.3333,
+          "center_ink": 0.3571,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            435.2,
+            527.94
+          ],
+          "ring_ink": 0.0558,
+          "angular_support": 0.1667,
+          "center_ink": 0.3571,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            434.2,
+            547.88
+          ],
+          "ring_ink": 0.3715,
+          "angular_support": 0.8333,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            434.2,
+            567.82
+          ],
+          "ring_ink": 0.0791,
+          "angular_support": 0.25,
+          "center_ink": 0.3214,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            434.2,
+            588.76
+          ],
+          "ring_ink": 0.0873,
+          "angular_support": 0.1667,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            435.2,
+            508.0
+          ],
+          "ring_ink": 0.1169,
+          "angular_support": 0.3333,
+          "center_ink": 0.3571,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            435.2,
+            527.94
+          ],
+          "ring_ink": 0.0518,
+          "angular_support": 0.1667,
+          "center_ink": 0.3571,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            434.2,
+            547.88
+          ],
+          "ring_ink": 0.3557,
+          "angular_support": 0.8333,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            434.2,
+            567.82
+          ],
+          "ring_ink": 0.0751,
+          "angular_support": 0.25,
+          "center_ink": 0.3214,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            434.2,
+            588.76
+          ],
+          "ring_ink": 0.0873,
+          "angular_support": 0.1667,
+          "center_ink": 0.25,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/96655f6e21d22758432cb45c.pdf",
+      "source_pdf_available": false,
+      "source_page": 3,
+      "solution_source_page": 3,
+      "source_crop": "assets/official/2026-wiso-2f.1.0-97bba541ba5b/Q16.png",
+      "answer_bbox": [
+        247.702,
+        293.822,
+        275.278,
+        361.437
+      ],
+      "source_crop_bbox_pixels": [
+        620,
+        735,
+        689,
+        904
+      ],
+      "source_image_sha256": "8d9f12e4bfebd5878756d77ef76a3c24377bee3a3396687f85ac565d6b40eb4b",
+      "source_pdf_sha256": "96655f6e21d22758432cb45c9cd677d1f5fd04cb011effb66baad550d8e2835e",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "2026-wiso-2f.1.0-97bba541ba5b",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Original Sommer 2026 module title and every printed question column visually verified. Five positions map top to bottom to 1..5; deterministic ring geometry only.",
+      "locked": false,
+      "user_corrected": false
+    },
+    {
+      "question_id": "2026-wiso-p15-17",
+      "question_number": 17,
+      "exam": "2026_sommer",
+      "module": "WiSo",
+      "official_answer_type": "multiple_choice",
+      "official_answer": null,
+      "official_answer_status": "needs_review",
+      "confidence": 0,
+      "review_reasons": [
+        "no_unique_circle",
+        "threshold_disagreement"
+      ],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            495.28,
+            508.0
+          ],
+          "ring_ink": 0.1746,
+          "angular_support": 0.4167,
+          "center_ink": 0.3846,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            494.28,
+            527.94
+          ],
+          "ring_ink": 0.3825,
+          "angular_support": 0.8333,
+          "center_ink": 0.2857,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            494.28,
+            547.88
+          ],
+          "ring_ink": 0.0794,
+          "angular_support": 0.25,
+          "center_ink": 0.3103,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            494.28,
+            567.82
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.3103,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            494.28,
+            588.76
+          ],
+          "ring_ink": 0.08,
+          "angular_support": 0.1667,
+          "center_ink": 0.2759,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            495.28,
+            508.0
+          ],
+          "ring_ink": 0.1706,
+          "angular_support": 0.4167,
+          "center_ink": 0.3846,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            494.28,
+            527.94
+          ],
+          "ring_ink": 0.3625,
+          "angular_support": 0.8333,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            494.28,
+            547.88
+          ],
+          "ring_ink": 0.0754,
+          "angular_support": 0.25,
+          "center_ink": 0.2759,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            494.28,
+            567.82
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.3103,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            494.28,
+            588.76
+          ],
+          "ring_ink": 0.08,
+          "angular_support": 0.1667,
+          "center_ink": 0.2759,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/96655f6e21d22758432cb45c.pdf",
+      "source_pdf_available": false,
+      "source_page": 3,
+      "solution_source_page": 3,
+      "source_crop": "assets/official/2026-wiso-2f.1.0-97bba541ba5b/Q17.png",
+      "answer_bbox": [
+        283.718,
+        293.822,
+        311.294,
+        361.437
+      ],
+      "source_crop_bbox_pixels": [
+        710,
+        735,
+        779,
+        904
+      ],
+      "source_image_sha256": "8d9f12e4bfebd5878756d77ef76a3c24377bee3a3396687f85ac565d6b40eb4b",
+      "source_pdf_sha256": "96655f6e21d22758432cb45c9cd677d1f5fd04cb011effb66baad550d8e2835e",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "2026-wiso-2f.1.0-97bba541ba5b",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Original Sommer 2026 module title and every printed question column visually verified. Five positions map top to bottom to 1..5; deterministic ring geometry only.",
+      "locked": false,
+      "user_corrected": false
+    },
+    {
+      "question_id": "2026-wiso-p15-18",
+      "question_number": 18,
+      "exam": "2026_sommer",
+      "module": "WiSo",
+      "official_answer_type": "multiple_choice",
+      "official_answer": 5,
+      "official_answer_status": "auto_ready",
+      "confidence": 0.98,
+      "review_reasons": [],
+      "measurements": [
+        {
+          "row": 1,
+          "center": [
+            555.36,
+            508.0
+          ],
+          "ring_ink": 0.1151,
+          "angular_support": 0.1667,
+          "center_ink": 0.3846,
+          "threshold_offset": 3
+        },
+        {
+          "row": 2,
+          "center": [
+            554.36,
+            527.94
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.3333,
+          "threshold_offset": 3
+        },
+        {
+          "row": 3,
+          "center": [
+            554.36,
+            547.88
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.3214,
+          "threshold_offset": 3
+        },
+        {
+          "row": 4,
+          "center": [
+            554.36,
+            567.82
+          ],
+          "ring_ink": 0.048,
+          "angular_support": 0.1667,
+          "center_ink": 0.3103,
+          "threshold_offset": 3
+        },
+        {
+          "row": 5,
+          "center": [
+            554.36,
+            588.76
+          ],
+          "ring_ink": 0.4382,
+          "angular_support": 1.0,
+          "center_ink": 0.2069,
+          "threshold_offset": 3
+        },
+        {
+          "row": 1,
+          "center": [
+            555.36,
+            508.0
+          ],
+          "ring_ink": 0.1151,
+          "angular_support": 0.1667,
+          "center_ink": 0.3846,
+          "threshold_offset": 5
+        },
+        {
+          "row": 2,
+          "center": [
+            554.36,
+            527.94
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2963,
+          "threshold_offset": 5
+        },
+        {
+          "row": 3,
+          "center": [
+            554.36,
+            547.88
+          ],
+          "ring_ink": 0.0,
+          "angular_support": 0.0,
+          "center_ink": 0.2857,
+          "threshold_offset": 5
+        },
+        {
+          "row": 4,
+          "center": [
+            554.36,
+            567.82
+          ],
+          "ring_ink": 0.048,
+          "angular_support": 0.1667,
+          "center_ink": 0.2759,
+          "threshold_offset": 5
+        },
+        {
+          "row": 5,
+          "center": [
+            554.36,
+            588.76
+          ],
+          "ring_ink": 0.4223,
+          "angular_support": 1.0,
+          "center_ink": 0.2069,
+          "threshold_offset": 5
+        }
+      ],
+      "source_pdf": "assets/pdfs/96655f6e21d22758432cb45c.pdf",
+      "source_pdf_available": false,
+      "source_page": 3,
+      "solution_source_page": 3,
+      "source_crop": "assets/official/2026-wiso-2f.1.0-97bba541ba5b/Q18.png",
+      "answer_bbox": [
+        319.735,
+        293.822,
+        347.31,
+        361.437
+      ],
+      "source_crop_bbox_pixels": [
+        800,
+        735,
+        869,
+        904
+      ],
+      "source_image_sha256": "8d9f12e4bfebd5878756d77ef76a3c24377bee3a3396687f85ac565d6b40eb4b",
+      "source_pdf_sha256": "96655f6e21d22758432cb45c9cd677d1f5fd04cb011effb66baad550d8e2835e",
+      "bbox_units": "PDF points, top-left; source cache geometry transformation",
+      "analysis_size": [
+        993,
+        1404
+      ],
+      "parser_revision": "2026-wiso-2f.1.0-97bba541ba5b",
+      "parser_version": "2e.1.0",
+      "question_number_evidence": "Original Sommer 2026 module title and every printed question column visually verified. Five positions map top to bottom to 1..5; deterministic ring geometry only.",
+      "locked": false,
+      "user_corrected": false
+    }
+  ],
+  "completeness": {
+    "expected": 18,
+    "records": 18,
+    "unique_complete": false,
+    "problems": [
+      {
+        "question_number": 4,
+        "reason": "no_unique_official_answer"
+      },
+      {
+        "question_number": 6,
+        "reason": "no_unique_official_answer"
+      },
+      {
+        "question_number": 7,
+        "reason": "no_unique_official_answer"
+      },
+      {
+        "question_number": 8,
+        "reason": "no_unique_official_answer"
+      },
+      {
+        "question_number": 10,
+        "reason": "no_unique_official_answer"
+      },
+      {
+        "question_number": 11,
+        "reason": "no_unique_official_answer"
+      },
+      {
+        "question_number": 12,
+        "reason": "no_unique_official_answer"
+      },
+      {
+        "question_number": 13,
+        "reason": "no_unique_official_answer"
+      },
+      {
+        "question_number": 14,
+        "reason": "no_unique_official_answer"
+      },
+      {
+        "question_number": 16,
+        "reason": "no_unique_official_answer"
+      },
+      {
+        "question_number": 17,
+        "reason": "no_unique_official_answer"
+      }
+    ]
+  },
+  "confidence_note": "Rule-based geometric grade, not probability; no OCR or semantic answer inference."
+}

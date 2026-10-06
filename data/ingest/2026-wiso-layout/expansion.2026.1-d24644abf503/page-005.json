@@ -1,0 +1,137 @@
+{
+  "key": "3952d193e0e44a4d1572d90bdae87f01bedc43ec21fbfd2455e95e7fb2f2f485",
+  "record_hash": "122a40400f634c588694e466969ce3487fb81fd9a4b0acdcd0ce05055d5c2c92",
+  "record": {
+    "page": 5,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Printed Q1 Q2 Q3 in separate ruled panels; Q3 includes Karl Moeller company sign.",
+    "anchors": [
+      {
+        "anchor_id": "2026-wiso-p5-1",
+        "number": "1",
+        "bbox": [
+          45.091,
+          55.094,
+          83.168,
+          82.141
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 1 visually read on cached physical page 5.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "637f8e01f2c44b24658ec98f38e5a5aca1887278ef0f5ba0013b7dbe87432ce8"
+      },
+      {
+        "anchor_id": "2026-wiso-p5-2",
+        "number": "2",
+        "bbox": [
+          294.594,
+          55.094,
+          332.671,
+          82.141
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 2 visually read on cached physical page 5.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "f610fd5bd02a8aace500883d634255cf03eb21a58e65e1dbe87edd9fae7989dd"
+      },
+      {
+        "anchor_id": "2026-wiso-p5-3",
+        "number": "3",
+        "bbox": [
+          45.091,
+          298.511,
+          83.168,
+          325.557
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 3 visually read on cached physical page 5.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "8516d500f52ae878e2b06e19268ad538bf1559ee3ee6c9d47fd5e47f02d28c49"
+      }
+    ],
+    "regions": [
+      {
+        "page": 5,
+        "bbox": [
+          45.091,
+          55.094,
+          288.582,
+          296.507
+        ],
+        "role": "primary",
+        "owner": "2026-wiso-p5-1",
+        "evidence": "Printed Q1 Q2 Q3 in separate ruled panels; Q3 includes Karl Moeller company sign. Region follows visible panel separators and includes all response choices/areas."
+      },
+      {
+        "page": 5,
+        "bbox": [
+          294.594,
+          55.094,
+          535.079,
+          296.507
+        ],
+        "role": "primary",
+        "owner": "2026-wiso-p5-2",
+        "evidence": "Printed Q1 Q2 Q3 in separate ruled panels; Q3 includes Karl Moeller company sign. Region follows visible panel separators and includes all response choices/areas."
+      },
+      {
+        "page": 5,
+        "bbox": [
+          45.091,
+          298.511,
+          291.588,
+          539.924
+        ],
+        "role": "primary",
+        "owner": "2026-wiso-p5-3",
+        "evidence": "Printed Q1 Q2 Q3 in separate ruled panels; Q3 includes Karl Moeller company sign. Region follows visible panel separators and includes all response choices/areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "1",
+        "bbox": [
+          45.091,
+          55.094,
+          83.168,
+          82.141
+        ],
+        "pixel_sha256": "637f8e01f2c44b24658ec98f38e5a5aca1887278ef0f5ba0013b7dbe87432ce8",
+        "audited_pixel_sha256": "637f8e01f2c44b24658ec98f38e5a5aca1887278ef0f5ba0013b7dbe87432ce8"
+      },
+      {
+        "kind": "heading",
+        "number": "2",
+        "bbox": [
+          294.594,
+          55.094,
+          332.671,
+          82.141
+        ],
+        "pixel_sha256": "f610fd5bd02a8aace500883d634255cf03eb21a58e65e1dbe87edd9fae7989dd",
+        "audited_pixel_sha256": "f610fd5bd02a8aace500883d634255cf03eb21a58e65e1dbe87edd9fae7989dd"
+      },
+      {
+        "kind": "heading",
+        "number": "3",
+        "bbox": [
+          45.091,
+          298.511,
+          83.168,
+          325.557
+        ],
+        "pixel_sha256": "8516d500f52ae878e2b06e19268ad538bf1559ee3ee6c9d47fd5e47f02d28c49",
+        "audited_pixel_sha256": "8516d500f52ae878e2b06e19268ad538bf1559ee3ee6c9d47fd5e47f02d28c49"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

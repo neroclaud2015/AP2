@@ -1,0 +1,123 @@
+{
+  "key": "53710972c090065541f2a1a14bec57f6126897d25117543010085cf7a0f3b02b",
+  "record_hash": "320bc04e7daedf5967f310f20b6236a6735aa32c1cead42ee3d5a46d35db9096",
+  "record": {
+    "page": 11,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "continuation_and_questions",
+    "classification_evidence": "U4 response-grid continuation and subparts 2 to 4 with explicit Ergebnis U4, above Q10 and Q11.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-wiso-p11-10",
+        "number": "10",
+        "bbox": [
+          47.095,
+          538.922,
+          85.172,
+          565.969
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 10 visually read on cached physical page 11.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "83472b59fa5853848d7e9041c62809ea474c0cd5646b16e37f8cf3a734ac4820"
+      },
+      {
+        "anchor_id": "2025-26-wiso-p11-11",
+        "number": "11",
+        "bbox": [
+          296.598,
+          538.922,
+          334.675,
+          565.969
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 11 visually read on cached physical page 11.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "36deb75cad4350ad6f974d6c6f03d02660d146817609e01e39bbba0f3865419d"
+      }
+    ],
+    "regions": [
+      {
+        "page": 11,
+        "bbox": [
+          47.095,
+          538.922,
+          290.586,
+          781.337
+        ],
+        "role": "primary",
+        "owner": "2025-26-wiso-p11-10",
+        "evidence": "U4 response-grid continuation and subparts 2 to 4 with explicit Ergebnis U4, above Q10 and Q11. Region follows visible panel separators and includes all response choices/areas."
+      },
+      {
+        "page": 11,
+        "bbox": [
+          296.598,
+          538.922,
+          536.081,
+          781.337
+        ],
+        "role": "primary",
+        "owner": "2025-26-wiso-p11-11",
+        "evidence": "U4 response-grid continuation and subparts 2 to 4 with explicit Ergebnis U4, above Q10 and Q11. Region follows visible panel separators and includes all response choices/areas."
+      },
+      {
+        "page": 11,
+        "bbox": [
+          48.097,
+          24.041,
+          536.081,
+          538.922
+        ],
+        "role": "continuation",
+        "owner": "2025-26-wiso-p10-U4",
+        "evidence": "U4 response-grid continuation and subparts 2 to 4 with explicit Ergebnis U4, above Q10 and Q11. Ownership established by printed Ergebnis U4."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "10",
+        "bbox": [
+          47.095,
+          538.922,
+          85.172,
+          565.969
+        ],
+        "pixel_sha256": "83472b59fa5853848d7e9041c62809ea474c0cd5646b16e37f8cf3a734ac4820",
+        "audited_pixel_sha256": "83472b59fa5853848d7e9041c62809ea474c0cd5646b16e37f8cf3a734ac4820"
+      },
+      {
+        "kind": "heading",
+        "number": "11",
+        "bbox": [
+          296.598,
+          538.922,
+          334.675,
+          565.969
+        ],
+        "pixel_sha256": "36deb75cad4350ad6f974d6c6f03d02660d146817609e01e39bbba0f3865419d",
+        "audited_pixel_sha256": "36deb75cad4350ad6f974d6c6f03d02660d146817609e01e39bbba0f3865419d"
+      },
+      {
+        "kind": "ownership",
+        "number": "U4",
+        "bbox": [
+          48.097,
+          24.041,
+          536.081,
+          538.922
+        ],
+        "pixel_sha256": "5889f44d9f90c8be17b97ff8fa99954a8e723e076fc77e0697a38cbfe5c0eefa",
+        "audited_pixel_sha256": "5889f44d9f90c8be17b97ff8fa99954a8e723e076fc77e0697a38cbfe5c0eefa"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

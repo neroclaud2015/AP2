@@ -1,0 +1,99 @@
+{
+  "key": "bbf706b7a62dff5e848334592914266ee675b308e95338f332664613caabeff2",
+  "record_hash": "6df2523c4d32ea27d68a73f9e5b1cc8f9bfd24e691be1e6c2c35550419913a34",
+  "record": {
+    "page": 12,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Q12 top-left; U5 begins below across both columns and includes sustainability table.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-wiso-p12-12",
+        "number": "12",
+        "bbox": [
+          57.115,
+          26.045,
+          95.192,
+          53.091
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 12 visually read on cached physical page 12.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "7660c2589deb9e570e49619f1e6e03890c974b5eb46c31da7115078c146406b0"
+      },
+      {
+        "anchor_id": "2025-26-wiso-p12-U5",
+        "number": "U5",
+        "bbox": [
+          58.117,
+          298.511,
+          96.194,
+          325.557
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U5 visually read on cached physical page 12.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "5bf0e0af6344760a99d9d1a3eec4b324c0dd79d4e5e67525f351e6da767ae872"
+      }
+    ],
+    "regions": [
+      {
+        "page": 12,
+        "bbox": [
+          57.115,
+          26.045,
+          300.606,
+          297.509
+        ],
+        "role": "primary",
+        "owner": "2025-26-wiso-p12-12",
+        "evidence": "Q12 top-left; U5 begins below across both columns and includes sustainability table. Region follows visible panel separators and includes all response choices/areas."
+      },
+      {
+        "page": 12,
+        "bbox": [
+          58.117,
+          298.511,
+          545.099,
+          784.342
+        ],
+        "role": "primary",
+        "owner": "2025-26-wiso-p12-U5",
+        "evidence": "Q12 top-left; U5 begins below across both columns and includes sustainability table. Region follows visible panel separators and includes all response choices/areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "12",
+        "bbox": [
+          57.115,
+          26.045,
+          95.192,
+          53.091
+        ],
+        "pixel_sha256": "7660c2589deb9e570e49619f1e6e03890c974b5eb46c31da7115078c146406b0",
+        "audited_pixel_sha256": "7660c2589deb9e570e49619f1e6e03890c974b5eb46c31da7115078c146406b0"
+      },
+      {
+        "kind": "heading",
+        "number": "U5",
+        "bbox": [
+          58.117,
+          298.511,
+          96.194,
+          325.557
+        ],
+        "pixel_sha256": "5bf0e0af6344760a99d9d1a3eec4b324c0dd79d4e5e67525f351e6da767ae872",
+        "audited_pixel_sha256": "5bf0e0af6344760a99d9d1a3eec4b324c0dd79d4e5e67525f351e6da767ae872"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

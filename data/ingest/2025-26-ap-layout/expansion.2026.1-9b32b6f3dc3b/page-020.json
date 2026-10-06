@@ -1,0 +1,61 @@
+{
+  "key": "2e11db6b17e30ca6816536769eb4fda1b4d7d06fe6c1799a9c164d3ef71417f5",
+  "record_hash": "16193de4cab679d58616f7810e5a2b96c760f6dcd379493867d88c70bc991ac4",
+  "record": {
+    "page": 20,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Printed U5 motor rating plate, connection table, efficiency table and all answer grids.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-ap-p20-U5",
+        "number": "U5",
+        "bbox": [
+          32.736,
+          14.88,
+          74.73599999999999,
+          40.88
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U5 visually read on cached physical page 20; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "66f5f5bc92c0c6e508e652968d0d4285fc1c5a3c121d870ca9013aef97731fc0"
+      }
+    ],
+    "regions": [
+      {
+        "page": 20,
+        "bbox": [
+          32.736,
+          14.88,
+          566.432,
+          813.44
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p20-U5",
+        "evidence": "Printed U5 motor rating plate, connection table, efficiency table and all answer grids. Ruled boundaries include complete diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U5",
+        "bbox": [
+          32.736,
+          14.88,
+          74.73599999999999,
+          40.88
+        ],
+        "pixel_sha256": "66f5f5bc92c0c6e508e652968d0d4285fc1c5a3c121d870ca9013aef97731fc0",
+        "audited_pixel_sha256": "66f5f5bc92c0c6e508e652968d0d4285fc1c5a3c121d870ca9013aef97731fc0"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

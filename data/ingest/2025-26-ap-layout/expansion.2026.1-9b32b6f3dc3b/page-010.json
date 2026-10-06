@@ -1,0 +1,99 @@
+{
+  "key": "ffeb4c49ee1b247b460924e88696c4fb12a6464e84fb160f2221d208bf61ed68",
+  "record_hash": "3dd54db513bfa358e1ed28d852346913a2b03160762afd29a9c5ee5ad1ad9f20",
+  "record": {
+    "page": 10,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Q25 response diagrams 1 and 2; Q26 five TN network diagrams below.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-ap-p10-25",
+        "number": "25",
+        "bbox": [
+          50.592,
+          57.536,
+          92.592,
+          83.536
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 25 visually read on cached physical page 10; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "e5ab73f7aceb255db6f47af65c75c1be1a25977b618b538c3699acfd3dc297d1"
+      },
+      {
+        "anchor_id": "2025-26-ap-p10-26",
+        "number": "26",
+        "bbox": [
+          50.592,
+          297.6,
+          92.592,
+          323.6
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 26 visually read on cached physical page 10; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "abf39a2ca775aa73289fdb427099c1e4feea8039e6ca16a251e45336b7322339"
+      }
+    ],
+    "regions": [
+      {
+        "page": 10,
+        "bbox": [
+          50.592,
+          57.536,
+          541.632,
+          294.624
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p10-25",
+        "evidence": "Q25 response diagrams 1 and 2; Q26 five TN network diagrams below. Ruled boundaries include complete diagrams and response areas."
+      },
+      {
+        "page": 10,
+        "bbox": [
+          50.592,
+          297.6,
+          541.632,
+          783.68
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p10-26",
+        "evidence": "Q25 response diagrams 1 and 2; Q26 five TN network diagrams below. Ruled boundaries include complete diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "25",
+        "bbox": [
+          50.592,
+          57.536,
+          92.592,
+          83.536
+        ],
+        "pixel_sha256": "e5ab73f7aceb255db6f47af65c75c1be1a25977b618b538c3699acfd3dc297d1",
+        "audited_pixel_sha256": "e5ab73f7aceb255db6f47af65c75c1be1a25977b618b538c3699acfd3dc297d1"
+      },
+      {
+        "kind": "heading",
+        "number": "26",
+        "bbox": [
+          50.592,
+          297.6,
+          92.592,
+          323.6
+        ],
+        "pixel_sha256": "abf39a2ca775aa73289fdb427099c1e4feea8039e6ca16a251e45336b7322339",
+        "audited_pixel_sha256": "abf39a2ca775aa73289fdb427099c1e4feea8039e6ca16a251e45336b7322339"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

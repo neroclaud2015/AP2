@@ -1,0 +1,61 @@
+{
+  "key": "2927380528ca893ff8492dc2dca276fc54e6c84ddc84035e902779da353a6e6b",
+  "record_hash": "4acd50b8daae807ffd2c114b4da3769ddac0e2af07e0f2e54d4c3c053218cb7f",
+  "record": {
+    "page": 6,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "U2 complete subparts 1 to 3, coin-stack diagram and response grid.",
+    "anchors": [
+      {
+        "anchor_id": "2026-wiso-p6-U2",
+        "number": "U2",
+        "bbox": [
+          59.119,
+          55.094,
+          97.196,
+          82.141
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U2 visually read on cached physical page 6.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "06fa11a42a2acb76d5cef412cc0dc3852b1d87944532a88de739c632dba924f1"
+      }
+    ],
+    "regions": [
+      {
+        "page": 6,
+        "bbox": [
+          59.119,
+          55.094,
+          545.099,
+          783.341
+        ],
+        "role": "primary",
+        "owner": "2026-wiso-p6-U2",
+        "evidence": "U2 complete subparts 1 to 3, coin-stack diagram and response grid. Region follows visible panel separators and includes all response choices/areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U2",
+        "bbox": [
+          59.119,
+          55.094,
+          97.196,
+          82.141
+        ],
+        "pixel_sha256": "06fa11a42a2acb76d5cef412cc0dc3852b1d87944532a88de739c632dba924f1",
+        "audited_pixel_sha256": "06fa11a42a2acb76d5cef412cc0dc3852b1d87944532a88de739c632dba924f1"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

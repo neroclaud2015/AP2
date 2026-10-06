@@ -1,0 +1,61 @@
+{
+  "key": "b7e99ace0c0c30e30c9f16f51433c38ce4241c39db073433abe5bfc8c4b82f81",
+  "record_hash": "e46165bd6f24c8045eb5ba85877b1a9280e236a30cf48813b583a93fd6a31fe6",
+  "record": {
+    "page": 20,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Printed U3 Blatt 1(3) Getriebe, Lagerdeckel Pos.6; measurement table and response grid.",
+    "anchors": [
+      {
+        "anchor_id": "2026-ap-p20-U3",
+        "number": "U3",
+        "bbox": [
+          27.776,
+          14.88,
+          69.776,
+          40.88
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U3 visually read on cached physical page 20; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "8a16d775cd244becd9c0cf2a6289edc25dea1215617603e002e91df7204d6be8"
+      }
+    ],
+    "regions": [
+      {
+        "page": 20,
+        "bbox": [
+          27.776,
+          14.88,
+          560.48,
+          815.424
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p20-U3",
+        "evidence": "Printed U3 Blatt 1(3) Getriebe, Lagerdeckel Pos.6; measurement table and response grid. Independently inspected ruled boundaries preserve all response and diagram areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U3",
+        "bbox": [
+          27.776,
+          14.88,
+          69.776,
+          40.88
+        ],
+        "pixel_sha256": "8a16d775cd244becd9c0cf2a6289edc25dea1215617603e002e91df7204d6be8",
+        "audited_pixel_sha256": "8a16d775cd244becd9c0cf2a6289edc25dea1215617603e002e91df7204d6be8"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

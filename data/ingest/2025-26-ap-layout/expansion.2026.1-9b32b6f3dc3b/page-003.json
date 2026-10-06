@@ -1,0 +1,175 @@
+{
+  "key": "4beddd4f690e07b2af9fbd54ff599c6d3337d83ae4cacbcb5aae6d381593a9d8",
+  "record_hash": "552afd8d078929f1d5c1904c9a7d67003be4cb08dedb8ddb756815ff01b0e01c",
+  "record": {
+    "page": 3,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Markierungsbogen example above Q1/Q2; Q3/Q4 below.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-ap-p3-1",
+        "number": "1",
+        "bbox": [
+          49.6,
+          297.6,
+          91.6,
+          323.6
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 1 visually read on cached physical page 3; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "6cad6d193c950ad33ca8435bbd0926df607248cda4d395ecc598e20f84aa6ced"
+      },
+      {
+        "anchor_id": "2025-26-ap-p3-2",
+        "number": "2",
+        "bbox": [
+          297.6,
+          297.6,
+          339.6,
+          323.6
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 2 visually read on cached physical page 3; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "05cd189e2354b76db25afa5ee94788d3e611d9d4162b2de27ba40efa2a1d6c8c"
+      },
+      {
+        "anchor_id": "2025-26-ap-p3-3",
+        "number": "3",
+        "bbox": [
+          49.6,
+          537.664,
+          91.6,
+          563.664
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 3 visually read on cached physical page 3; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "22bd837a1a640017c4a9dfe6d6e7ee3091a1af4c88efec98ad12abbc3bb76f23"
+      },
+      {
+        "anchor_id": "2025-26-ap-p3-4",
+        "number": "4",
+        "bbox": [
+          297.6,
+          537.664,
+          339.6,
+          563.664
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 4 visually read on cached physical page 3; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "9977eec8b953ebd79e3e4fb22cd8cfe3c4394eb7f670de533fa8c0733f8a8bef"
+      }
+    ],
+    "regions": [
+      {
+        "page": 3,
+        "bbox": [
+          49.6,
+          297.6,
+          293.632,
+          534.688
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p3-1",
+        "evidence": "Markierungsbogen example above Q1/Q2; Q3/Q4 below. Ruled boundaries include complete diagrams and response areas."
+      },
+      {
+        "page": 3,
+        "bbox": [
+          297.6,
+          297.6,
+          540.64,
+          534.688
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p3-2",
+        "evidence": "Markierungsbogen example above Q1/Q2; Q3/Q4 below. Ruled boundaries include complete diagrams and response areas."
+      },
+      {
+        "page": 3,
+        "bbox": [
+          49.6,
+          537.664,
+          293.632,
+          777.728
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p3-3",
+        "evidence": "Markierungsbogen example above Q1/Q2; Q3/Q4 below. Ruled boundaries include complete diagrams and response areas."
+      },
+      {
+        "page": 3,
+        "bbox": [
+          297.6,
+          537.664,
+          540.64,
+          777.728
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p3-4",
+        "evidence": "Markierungsbogen example above Q1/Q2; Q3/Q4 below. Ruled boundaries include complete diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "1",
+        "bbox": [
+          49.6,
+          297.6,
+          91.6,
+          323.6
+        ],
+        "pixel_sha256": "6cad6d193c950ad33ca8435bbd0926df607248cda4d395ecc598e20f84aa6ced",
+        "audited_pixel_sha256": "6cad6d193c950ad33ca8435bbd0926df607248cda4d395ecc598e20f84aa6ced"
+      },
+      {
+        "kind": "heading",
+        "number": "2",
+        "bbox": [
+          297.6,
+          297.6,
+          339.6,
+          323.6
+        ],
+        "pixel_sha256": "05cd189e2354b76db25afa5ee94788d3e611d9d4162b2de27ba40efa2a1d6c8c",
+        "audited_pixel_sha256": "05cd189e2354b76db25afa5ee94788d3e611d9d4162b2de27ba40efa2a1d6c8c"
+      },
+      {
+        "kind": "heading",
+        "number": "3",
+        "bbox": [
+          49.6,
+          537.664,
+          91.6,
+          563.664
+        ],
+        "pixel_sha256": "22bd837a1a640017c4a9dfe6d6e7ee3091a1af4c88efec98ad12abbc3bb76f23",
+        "audited_pixel_sha256": "22bd837a1a640017c4a9dfe6d6e7ee3091a1af4c88efec98ad12abbc3bb76f23"
+      },
+      {
+        "kind": "heading",
+        "number": "4",
+        "bbox": [
+          297.6,
+          537.664,
+          339.6,
+          563.664
+        ],
+        "pixel_sha256": "9977eec8b953ebd79e3e4fb22cd8cfe3c4394eb7f670de533fa8c0733f8a8bef",
+        "audited_pixel_sha256": "9977eec8b953ebd79e3e4fb22cd8cfe3c4394eb7f670de533fa8c0733f8a8bef"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

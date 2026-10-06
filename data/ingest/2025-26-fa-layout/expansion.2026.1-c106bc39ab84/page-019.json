@@ -1,0 +1,46 @@
+{
+  "key": "74b738281ddccc67ca9a57447ee2721e5a63b5c59bcad843636086e02be1d658",
+  "record_hash": "32b4496a4cf48d221d31f9b52f4acd9e311ab30f1212aeb29b3e183356c8b0a7",
+  "record": {
+    "page": 19,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "continuation",
+    "classification_evidence": "Continuation of U6 numbered subparts 2 and 3; printed Ergebnis U6 confirms ownership.",
+    "anchors": [],
+    "regions": [
+      {
+        "page": 19,
+        "bbox": [
+          40.92,
+          21.575,
+          519.312,
+          808.705
+        ],
+        "role": "continuation",
+        "owner": "2025-26-fa-p18-U6",
+        "evidence": "Printed Ergebnis U6 on physical p19 proves ownership; subparts 2 and 3 continue subpart 1 on p18; includes airflow graph and both response grids."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "ownership",
+        "number": "U6",
+        "bbox": [
+          522.288,
+          741.747,
+          563.208,
+          766.298
+        ],
+        "pixel_sha256": "05229531ca31abddc64462ab8328279b556fa691cb45967be82ad4b836ab74be",
+        "audited_pixel_sha256": "05229531ca31abddc64462ab8328279b556fa691cb45967be82ad4b836ab74be"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

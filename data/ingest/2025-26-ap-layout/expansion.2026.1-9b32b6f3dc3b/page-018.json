@@ -1,0 +1,61 @@
+{
+  "key": "cf1e3c6beb1d2d9f7a24d53363813a603be6e8e40b784d8b85eea7a3326517d1",
+  "record_hash": "d56e3a27baecac21de4c237063dcaee987886e97779e3cf53effcfdcabc3e4f0",
+  "record": {
+    "page": 18,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Printed U3 explicitly refers to Blatt 1(2); conveyor drive diagram and response grid.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-ap-p18-U3",
+        "number": "U3",
+        "bbox": [
+          32.736,
+          14.88,
+          74.73599999999999,
+          40.88
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U3 visually read on cached physical page 18; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "6ec30a20d66071d52a01de7ccef5c527bd1f0f318e2134621d6e1c0392ad35ac"
+      }
+    ],
+    "regions": [
+      {
+        "page": 18,
+        "bbox": [
+          32.736,
+          14.88,
+          566.432,
+          813.44
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p18-U3",
+        "evidence": "Printed U3 explicitly refers to Blatt 1(2); conveyor drive diagram and response grid. Ruled boundaries include complete diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U3",
+        "bbox": [
+          32.736,
+          14.88,
+          74.73599999999999,
+          40.88
+        ],
+        "pixel_sha256": "6ec30a20d66071d52a01de7ccef5c527bd1f0f318e2134621d6e1c0392ad35ac",
+        "audited_pixel_sha256": "6ec30a20d66071d52a01de7ccef5c527bd1f0f318e2134621d6e1c0392ad35ac"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

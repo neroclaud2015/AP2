@@ -1,0 +1,99 @@
+{
+  "key": "006847b78f03274491a2fde99e1b1626b5ae35006e79dfcccae8d451614120c9",
+  "record_hash": "57d0353afef27ccc6de4c847b810437dca0f98e9c9e9eef6104ba40700a960a1",
+  "record": {
+    "page": 9,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Q19 motor circuit and calculation grid; Q20 below left; next-page notice right is administrative.",
+    "anchors": [
+      {
+        "anchor_id": "2026-ap-p9-19",
+        "number": "19",
+        "bbox": [
+          45.632,
+          57.536,
+          87.632,
+          83.536
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 19 visually read on cached physical page 9; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "23e0a08fafc6dad1170d3cf99bb87fedf8737965526e56ebaf0fac59f1c7b489"
+      },
+      {
+        "anchor_id": "2026-ap-p9-20",
+        "number": "20",
+        "bbox": [
+          45.632,
+          541.632,
+          87.632,
+          567.632
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 20 visually read on cached physical page 9; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "4b15132c9c53d27935c0095e307e37a703786e1650ac7d8920ace7d3f239229d"
+      }
+    ],
+    "regions": [
+      {
+        "page": 9,
+        "bbox": [
+          45.632,
+          57.536,
+          537.664,
+          538.656
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p9-19",
+        "evidence": "Q19 motor circuit and calculation grid; Q20 below left; next-page notice right is administrative. Independently inspected ruled boundaries preserve all response and diagram areas."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          45.632,
+          541.632,
+          289.664,
+          781.696
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p9-20",
+        "evidence": "Q19 motor circuit and calculation grid; Q20 below left; next-page notice right is administrative. Independently inspected ruled boundaries preserve all response and diagram areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "19",
+        "bbox": [
+          45.632,
+          57.536,
+          87.632,
+          83.536
+        ],
+        "pixel_sha256": "23e0a08fafc6dad1170d3cf99bb87fedf8737965526e56ebaf0fac59f1c7b489",
+        "audited_pixel_sha256": "23e0a08fafc6dad1170d3cf99bb87fedf8737965526e56ebaf0fac59f1c7b489"
+      },
+      {
+        "kind": "heading",
+        "number": "20",
+        "bbox": [
+          45.632,
+          541.632,
+          87.632,
+          567.632
+        ],
+        "pixel_sha256": "4b15132c9c53d27935c0095e307e37a703786e1650ac7d8920ace7d3f239229d",
+        "audited_pixel_sha256": "4b15132c9c53d27935c0095e307e37a703786e1650ac7d8920ace7d3f239229d"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

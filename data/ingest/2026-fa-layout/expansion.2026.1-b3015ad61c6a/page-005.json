@@ -1,0 +1,99 @@
+{
+  "key": "499332cab71fcbd40e1a96f059839e5a822feb7b963af03dcef9a040356b7a80",
+  "record_hash": "02a9bbc58c7f47e1ed77e1d2c62a521f469ed14a9d239915c91e3e6c5727859f",
+  "record": {
+    "page": 5,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page individually visually inspected; printed task headings, diagrams, choices and ruled boundaries verified.",
+    "anchors": [
+      {
+        "anchor_id": "2026-fa-p5-7",
+        "number": "7",
+        "bbox": [
+          43.152,
+          58.03,
+          86.304,
+          85.558
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 7 visually read on cached physical page 5.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "a51adabf1553d0ba77feab825c70f869ece44337670c36ad0c8621e7ef094ede"
+      },
+      {
+        "anchor_id": "2026-fa-p5-8",
+        "number": "8",
+        "bbox": [
+          43.152,
+          542.361,
+          86.304,
+          569.888
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 8 visually read on cached physical page 5.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "9db54f01033b56fb570065c381c271efb59ebe41a7c838bbfe9fa47265108ebc"
+      }
+    ],
+    "regions": [
+      {
+        "page": 5,
+        "bbox": [
+          43.152,
+          58.03,
+          537.168,
+          536.409
+        ],
+        "role": "primary",
+        "owner": "2026-fa-p5-7",
+        "evidence": "Individually inspected printed heading and ruled panel: full question, options, diagrams, calculations and response fields retained without adjacent task contamination."
+      },
+      {
+        "page": 5,
+        "bbox": [
+          43.152,
+          542.361,
+          541.632,
+          784.898
+        ],
+        "role": "primary",
+        "owner": "2026-fa-p5-8",
+        "evidence": "Individually inspected printed heading and ruled panel: full question, options, diagrams, calculations and response fields retained without adjacent task contamination."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "7",
+        "bbox": [
+          43.152,
+          58.03,
+          86.304,
+          85.558
+        ],
+        "pixel_sha256": "a51adabf1553d0ba77feab825c70f869ece44337670c36ad0c8621e7ef094ede",
+        "audited_pixel_sha256": "a51adabf1553d0ba77feab825c70f869ece44337670c36ad0c8621e7ef094ede"
+      },
+      {
+        "kind": "heading",
+        "number": "8",
+        "bbox": [
+          43.152,
+          542.361,
+          86.304,
+          569.888
+        ],
+        "pixel_sha256": "9db54f01033b56fb570065c381c271efb59ebe41a7c838bbfe9fa47265108ebc",
+        "audited_pixel_sha256": "9db54f01033b56fb570065c381c271efb59ebe41a7c838bbfe9fa47265108ebc"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

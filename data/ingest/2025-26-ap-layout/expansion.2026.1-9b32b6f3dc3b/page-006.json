@@ -1,0 +1,137 @@
+{
+  "key": "aa4ba4811a4715bd3fa2afe46a5dfce4ed5857b3baf97f6a4ee1a3b155da1fa4",
+  "record_hash": "3e868501851b3336f51ef350bf9519eb5ca4aa1d8d8bcbb08f0f8ca6f310eb88",
+  "record": {
+    "page": 6,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Q12 measurement table; Q13 compensation vector diagram; Q14 motor torque graph.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-ap-p6-12",
+        "number": "12",
+        "bbox": [
+          50.592,
+          58.528,
+          92.592,
+          84.52799999999999
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 12 visually read on cached physical page 6; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "f83650a8ad7bb1894bb2d459e3de68782ea254b1687e89e83f12e6b6d8190974"
+      },
+      {
+        "anchor_id": "2025-26-ap-p6-13",
+        "number": "13",
+        "bbox": [
+          50.592,
+          300.576,
+          92.592,
+          326.576
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 13 visually read on cached physical page 6; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "70b8c2f0122b0c74515107b274d68fcf8cf573cff6574be1156ef73a4c945516"
+      },
+      {
+        "anchor_id": "2025-26-ap-p6-14",
+        "number": "14",
+        "bbox": [
+          50.592,
+          541.632,
+          92.592,
+          567.632
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 14 visually read on cached physical page 6; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "1b8c4e843c315cfc354ce6747115720128a97bd34f1c96e85265b7d2b262267b"
+      }
+    ],
+    "regions": [
+      {
+        "page": 6,
+        "bbox": [
+          50.592,
+          58.528,
+          540.64,
+          297.6
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p6-12",
+        "evidence": "Q12 measurement table; Q13 compensation vector diagram; Q14 motor torque graph. Ruled boundaries include complete diagrams and response areas."
+      },
+      {
+        "page": 6,
+        "bbox": [
+          50.592,
+          300.576,
+          540.64,
+          538.656
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p6-13",
+        "evidence": "Q12 measurement table; Q13 compensation vector diagram; Q14 motor torque graph. Ruled boundaries include complete diagrams and response areas."
+      },
+      {
+        "page": 6,
+        "bbox": [
+          50.592,
+          541.632,
+          540.64,
+          783.68
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p6-14",
+        "evidence": "Q12 measurement table; Q13 compensation vector diagram; Q14 motor torque graph. Ruled boundaries include complete diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "12",
+        "bbox": [
+          50.592,
+          58.528,
+          92.592,
+          84.52799999999999
+        ],
+        "pixel_sha256": "f83650a8ad7bb1894bb2d459e3de68782ea254b1687e89e83f12e6b6d8190974",
+        "audited_pixel_sha256": "f83650a8ad7bb1894bb2d459e3de68782ea254b1687e89e83f12e6b6d8190974"
+      },
+      {
+        "kind": "heading",
+        "number": "13",
+        "bbox": [
+          50.592,
+          300.576,
+          92.592,
+          326.576
+        ],
+        "pixel_sha256": "70b8c2f0122b0c74515107b274d68fcf8cf573cff6574be1156ef73a4c945516",
+        "audited_pixel_sha256": "70b8c2f0122b0c74515107b274d68fcf8cf573cff6574be1156ef73a4c945516"
+      },
+      {
+        "kind": "heading",
+        "number": "14",
+        "bbox": [
+          50.592,
+          541.632,
+          92.592,
+          567.632
+        ],
+        "pixel_sha256": "1b8c4e843c315cfc354ce6747115720128a97bd34f1c96e85265b7d2b262267b",
+        "audited_pixel_sha256": "1b8c4e843c315cfc354ce6747115720128a97bd34f1c96e85265b7d2b262267b"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

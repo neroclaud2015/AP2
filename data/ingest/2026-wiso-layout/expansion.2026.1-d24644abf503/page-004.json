@@ -1,0 +1,61 @@
+{
+  "key": "6e4ef8ff16ec7a514c3b4744491036f116f3b792ea2cc4078ba8015291b29f21",
+  "record_hash": "c2c06c63f47df51200a1adc206bd95cf66e0eb61d379ca084842f78aabddc9ae",
+  "record": {
+    "page": 4,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "U1 complete company-form comparison flowchart and result field.",
+    "anchors": [
+      {
+        "anchor_id": "2026-wiso-p4-U1",
+        "number": "U1",
+        "bbox": [
+          61.123,
+          54.093,
+          99.2,
+          81.139
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U1 visually read on cached physical page 4.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "c850a05f4f01e6dbe11159f1b1c5a26833ab6bd8ff850172297bcd0b91277a37"
+      }
+    ],
+    "regions": [
+      {
+        "page": 4,
+        "bbox": [
+          61.123,
+          54.093,
+          546.101,
+          783.341
+        ],
+        "role": "primary",
+        "owner": "2026-wiso-p4-U1",
+        "evidence": "U1 complete company-form comparison flowchart and result field. Region follows visible panel separators and includes all response choices/areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U1",
+        "bbox": [
+          61.123,
+          54.093,
+          99.2,
+          81.139
+        ],
+        "pixel_sha256": "c850a05f4f01e6dbe11159f1b1c5a26833ab6bd8ff850172297bcd0b91277a37",
+        "audited_pixel_sha256": "c850a05f4f01e6dbe11159f1b1c5a26833ab6bd8ff850172297bcd0b91277a37"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

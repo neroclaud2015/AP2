@@ -1,0 +1,61 @@
+{
+  "key": "a72e3e6186b22607f4d34d2795198f12eedf48bfbbede2458bcbb93420dd62cd",
+  "record_hash": "0762a26804097f78f251706664a9b9195ade6ac0ae3424c110827abc8ba4ec26",
+  "record": {
+    "page": 22,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Printed U7 RCD types, English operating instructions and both answer grids.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-ap-p22-U7",
+        "number": "U7",
+        "bbox": [
+          32.736,
+          14.88,
+          74.73599999999999,
+          40.88
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U7 visually read on cached physical page 22; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "dae2de8b700bf0a32fca4f2e47227b278ff75361329e2dd08f32a99b337e0cb5"
+      }
+    ],
+    "regions": [
+      {
+        "page": 22,
+        "bbox": [
+          32.736,
+          14.88,
+          566.432,
+          813.44
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p22-U7",
+        "evidence": "Printed U7 RCD types, English operating instructions and both answer grids. Ruled boundaries include complete diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U7",
+        "bbox": [
+          32.736,
+          14.88,
+          74.73599999999999,
+          40.88
+        ],
+        "pixel_sha256": "dae2de8b700bf0a32fca4f2e47227b278ff75361329e2dd08f32a99b337e0cb5",
+        "audited_pixel_sha256": "dae2de8b700bf0a32fca4f2e47227b278ff75361329e2dd08f32a99b337e0cb5"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

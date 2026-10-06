@@ -1,0 +1,882 @@
+[
+  {
+    "code": "ap",
+    "stage": "preview",
+    "status": "preview_ready",
+    "observed": 36,
+    "expected": 36,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 29,
+    "revision": "expansion.2026.1-2e1f95bc46aa",
+    "source_id": "src-d330441bf274a76fed19b78e",
+    "source_hash": "9e938517702fc380d79e588b16d70352d8097052fadedf511eea228747933ddd",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "9e938517702fc380d79e588b16d70352d8097052fadedf511eea228747933ddd"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 36,
+    "attachments": [
+      {
+        "page": 17,
+        "bbox": [
+          29.76,
+          14.88,
+          564.448,
+          814.432
+        ],
+        "role": "Pruefungsaufgaben-Beschreibung",
+        "question_numbers": [
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6",
+          "U7",
+          "U8"
+        ],
+        "evidence": "Pruefungsaufgaben-Beschreibung: packaging plant technology schema, pallet paths, turntable and lift.",
+        "visual_patch_sha256": "cfc1674076dddf8e459bfdd4d2c7a4c83ce8b535731b267ce4ba3c4f322a459a",
+        "image": "assets/questions/9e938517702fc380d79e588b/expansion.2026.1-2e1f95bc46aa/attachment-17-0.png",
+        "source_sha256": "9e938517702fc380d79e588b16d70352d8097052fadedf511eea228747933ddd"
+      },
+      {
+        "page": 27,
+        "bbox": [
+          0.0,
+          0.0,
+          1190.4,
+          839.232
+        ],
+        "role": "Getriebe Blatt 1(3)",
+        "question_numbers": [
+          "U2",
+          "U3"
+        ],
+        "evidence": "Getriebe assembly drawing, Blatt 1(3), full sections and dimensions.",
+        "visual_patch_sha256": "ca6e2b163e02fc78c79aa89b84a2e43841073d7d9fe1235295248773c419c6d7",
+        "image": "assets/questions/9e938517702fc380d79e588b/expansion.2026.1-2e1f95bc46aa/attachment-27-1.png",
+        "source_sha256": "9e938517702fc380d79e588b16d70352d8097052fadedf511eea228747933ddd"
+      },
+      {
+        "page": 28,
+        "bbox": [
+          0.0,
+          0.0,
+          599.168,
+          839.232
+        ],
+        "role": "Getriebe Stueckliste Blatt 2(3)",
+        "question_numbers": [
+          "U2",
+          "U3"
+        ],
+        "evidence": "Getriebe Stueckliste, Blatt 2(3), complete parts list including Lagerdeckel Pos.6.",
+        "visual_patch_sha256": "31f9e43dc4e0022d704cc0416debfbd764c2fa8d0c2b80eee07b8e5618c392e9",
+        "image": "assets/questions/9e938517702fc380d79e588b/expansion.2026.1-2e1f95bc46aa/attachment-28-2.png",
+        "source_sha256": "9e938517702fc380d79e588b16d70352d8097052fadedf511eea228747933ddd"
+      },
+      {
+        "page": 29,
+        "bbox": [
+          0.0,
+          0.0,
+          601.152,
+          839.232
+        ],
+        "role": "Hydraulischer Schaltplan Blatt 3(3)",
+        "question_numbers": [],
+        "evidence": "Hydraulischer Schaltplan, Blatt 3(3). Supplied shared sheet, no explicit U-task sheet reference observed; retain unattached instead of inferring an owner.",
+        "visual_patch_sha256": "6e803239e6ba8b8ee104569bc84342557b1e5a5fa8333cfc395cfeca5ac3fbca",
+        "image": "assets/questions/9e938517702fc380d79e588b/expansion.2026.1-2e1f95bc46aa/attachment-29-3.png",
+        "source_sha256": "9e938517702fc380d79e588b16d70352d8097052fadedf511eea228747933ddd"
+      }
+    ]
+  },
+  {
+    "code": "ap",
+    "stage": "formal",
+    "status": "formal_segmented",
+    "observed": 36,
+    "expected": 36,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 29,
+    "revision": "expansion.2026.1-2e1f95bc46aa",
+    "source_id": "src-d330441bf274a76fed19b78e",
+    "source_hash": "9e938517702fc380d79e588b16d70352d8097052fadedf511eea228747933ddd",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "9e938517702fc380d79e588b16d70352d8097052fadedf511eea228747933ddd"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 36,
+    "attachments": [
+      {
+        "page": 17,
+        "bbox": [
+          29.76,
+          14.88,
+          564.448,
+          814.432
+        ],
+        "role": "Pruefungsaufgaben-Beschreibung",
+        "question_numbers": [
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6",
+          "U7",
+          "U8"
+        ],
+        "evidence": "Pruefungsaufgaben-Beschreibung: packaging plant technology schema, pallet paths, turntable and lift.",
+        "visual_patch_sha256": "cfc1674076dddf8e459bfdd4d2c7a4c83ce8b535731b267ce4ba3c4f322a459a",
+        "image": "assets/questions/9e938517702fc380d79e588b/expansion.2026.1-2e1f95bc46aa/attachment-17-0.png",
+        "source_sha256": "9e938517702fc380d79e588b16d70352d8097052fadedf511eea228747933ddd"
+      },
+      {
+        "page": 27,
+        "bbox": [
+          0.0,
+          0.0,
+          1190.4,
+          839.232
+        ],
+        "role": "Getriebe Blatt 1(3)",
+        "question_numbers": [
+          "U2",
+          "U3"
+        ],
+        "evidence": "Getriebe assembly drawing, Blatt 1(3), full sections and dimensions.",
+        "visual_patch_sha256": "ca6e2b163e02fc78c79aa89b84a2e43841073d7d9fe1235295248773c419c6d7",
+        "image": "assets/questions/9e938517702fc380d79e588b/expansion.2026.1-2e1f95bc46aa/attachment-27-1.png",
+        "source_sha256": "9e938517702fc380d79e588b16d70352d8097052fadedf511eea228747933ddd"
+      },
+      {
+        "page": 28,
+        "bbox": [
+          0.0,
+          0.0,
+          599.168,
+          839.232
+        ],
+        "role": "Getriebe Stueckliste Blatt 2(3)",
+        "question_numbers": [
+          "U2",
+          "U3"
+        ],
+        "evidence": "Getriebe Stueckliste, Blatt 2(3), complete parts list including Lagerdeckel Pos.6.",
+        "visual_patch_sha256": "31f9e43dc4e0022d704cc0416debfbd764c2fa8d0c2b80eee07b8e5618c392e9",
+        "image": "assets/questions/9e938517702fc380d79e588b/expansion.2026.1-2e1f95bc46aa/attachment-28-2.png",
+        "source_sha256": "9e938517702fc380d79e588b16d70352d8097052fadedf511eea228747933ddd"
+      },
+      {
+        "page": 29,
+        "bbox": [
+          0.0,
+          0.0,
+          601.152,
+          839.232
+        ],
+        "role": "Hydraulischer Schaltplan Blatt 3(3)",
+        "question_numbers": [],
+        "evidence": "Hydraulischer Schaltplan, Blatt 3(3). Supplied shared sheet, no explicit U-task sheet reference observed; retain unattached instead of inferring an owner.",
+        "visual_patch_sha256": "6e803239e6ba8b8ee104569bc84342557b1e5a5fa8333cfc395cfeca5ac3fbca",
+        "image": "assets/questions/9e938517702fc380d79e588b/expansion.2026.1-2e1f95bc46aa/attachment-29-3.png",
+        "source_sha256": "9e938517702fc380d79e588b16d70352d8097052fadedf511eea228747933ddd"
+      }
+    ]
+  },
+  {
+    "code": "ap",
+    "stage": "answers",
+    "choice_expected": 28,
+    "choice_records": 28,
+    "u_expected": 8,
+    "u_records": 8,
+    "review_list": [
+      {
+        "question_number": 2,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 3,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 4,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 5,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 6,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 7,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 10,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 11,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 12,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 13,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 14,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 15,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 17,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 18,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 19,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 20,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 22,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 27,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      }
+    ],
+    "status": "blocked",
+    "revision": "2026-ap-2f.1.0-e012c9b3aa9d",
+    "pdf_pages_opened": 0
+  },
+  {
+    "code": "fa",
+    "stage": "preview",
+    "status": "preview_ready",
+    "observed": 36,
+    "expected": 36,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 27,
+    "revision": "expansion.2026.1-b3015ad61c6a",
+    "source_id": "src-c994ce096c7276515e4c792a",
+    "source_hash": "c7ce40ac20ce334e934c5ea71e664bfb85dea01cd4bc7264fa311f07e2b18109",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "c7ce40ac20ce334e934c5ea71e664bfb85dea01cd4bc7264fa311f07e2b18109"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 36,
+    "attachments": [
+      {
+        "page": 15,
+        "bbox": [
+          31.248,
+          17.112,
+          562.464,
+          815.401
+        ],
+        "role": "Pruefungsaufgaben-Beschreibung Verpackungsanlage",
+        "question_numbers": [
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6",
+          "U7",
+          "U8"
+        ],
+        "evidence": "Printed attachment title and sheet number visually verified against task references; original source orientation retained.",
+        "visual_patch_sha256": "5b7aaaf4ef3e244bc2c3b4fe3a1451ca83f3019bdfc4eeb913e1f15857bc6921",
+        "image": "assets/questions/c7ce40ac20ce334e934c5ea7/expansion.2026.1-b3015ad61c6a/attachment-15-0.png",
+        "source_sha256": "c7ce40ac20ce334e934c5ea71e664bfb85dea01cd4bc7264fa311f07e2b18109"
+      },
+      {
+        "page": 25,
+        "bbox": [
+          37.2,
+          8.92,
+          1184.448,
+          835.493
+        ],
+        "role": "Getriebe Blatt 1(3)",
+        "question_numbers": [
+          "U1",
+          "U2"
+        ],
+        "evidence": "Printed attachment title and sheet number visually verified against task references; original source orientation retained.",
+        "visual_patch_sha256": "8e4660a3a8db9ffb65b8e76d6aca9eadac38e5d5d58caa4d9e5e67a6e7a7a110",
+        "image": "assets/questions/c7ce40ac20ce334e934c5ea7/expansion.2026.1-b3015ad61c6a/attachment-25-1.png",
+        "source_sha256": "c7ce40ac20ce334e934c5ea71e664bfb85dea01cd4bc7264fa311f07e2b18109"
+      },
+      {
+        "page": 26,
+        "bbox": [
+          46.128,
+          13.38,
+          584.784,
+          819.14
+        ],
+        "role": "Getriebe (Stueckliste) Blatt 2(3)",
+        "question_numbers": [
+          "U1",
+          "U2"
+        ],
+        "evidence": "Printed attachment title and sheet number visually verified against task references; original source orientation retained.",
+        "visual_patch_sha256": "15ac3ac247893bf62b2493c213b7a82f461f69b17484c7350fb9f1c60ebbe65a",
+        "image": "assets/questions/c7ce40ac20ce334e934c5ea7/expansion.2026.1-b3015ad61c6a/attachment-26-2.png",
+        "source_sha256": "c7ce40ac20ce334e934c5ea71e664bfb85dea01cd4bc7264fa311f07e2b18109"
+      },
+      {
+        "page": 27,
+        "bbox": [
+          7.44,
+          25.273,
+          593.712,
+          835.493
+        ],
+        "role": "Hydraulischer Schaltplan Blatt 3(3)",
+        "question_numbers": [
+          "U6"
+        ],
+        "evidence": "Printed attachment title and sheet number visually verified against task references; original source orientation retained.",
+        "visual_patch_sha256": "abe6c48977be2cf38647ea0caffbfc6664416b82f51d9c26e490bd5cdc097444",
+        "image": "assets/questions/c7ce40ac20ce334e934c5ea7/expansion.2026.1-b3015ad61c6a/attachment-27-3.png",
+        "source_sha256": "c7ce40ac20ce334e934c5ea71e664bfb85dea01cd4bc7264fa311f07e2b18109"
+      }
+    ]
+  },
+  {
+    "code": "fa",
+    "stage": "formal",
+    "status": "formal_segmented",
+    "observed": 36,
+    "expected": 36,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 27,
+    "revision": "expansion.2026.1-b3015ad61c6a",
+    "source_id": "src-c994ce096c7276515e4c792a",
+    "source_hash": "c7ce40ac20ce334e934c5ea71e664bfb85dea01cd4bc7264fa311f07e2b18109",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "c7ce40ac20ce334e934c5ea71e664bfb85dea01cd4bc7264fa311f07e2b18109"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 36,
+    "attachments": [
+      {
+        "page": 15,
+        "bbox": [
+          31.248,
+          17.112,
+          562.464,
+          815.401
+        ],
+        "role": "Pruefungsaufgaben-Beschreibung Verpackungsanlage",
+        "question_numbers": [
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6",
+          "U7",
+          "U8"
+        ],
+        "evidence": "Printed attachment title and sheet number visually verified against task references; original source orientation retained.",
+        "visual_patch_sha256": "5b7aaaf4ef3e244bc2c3b4fe3a1451ca83f3019bdfc4eeb913e1f15857bc6921",
+        "image": "assets/questions/c7ce40ac20ce334e934c5ea7/expansion.2026.1-b3015ad61c6a/attachment-15-0.png",
+        "source_sha256": "c7ce40ac20ce334e934c5ea71e664bfb85dea01cd4bc7264fa311f07e2b18109"
+      },
+      {
+        "page": 25,
+        "bbox": [
+          37.2,
+          8.92,
+          1184.448,
+          835.493
+        ],
+        "role": "Getriebe Blatt 1(3)",
+        "question_numbers": [
+          "U1",
+          "U2"
+        ],
+        "evidence": "Printed attachment title and sheet number visually verified against task references; original source orientation retained.",
+        "visual_patch_sha256": "8e4660a3a8db9ffb65b8e76d6aca9eadac38e5d5d58caa4d9e5e67a6e7a7a110",
+        "image": "assets/questions/c7ce40ac20ce334e934c5ea7/expansion.2026.1-b3015ad61c6a/attachment-25-1.png",
+        "source_sha256": "c7ce40ac20ce334e934c5ea71e664bfb85dea01cd4bc7264fa311f07e2b18109"
+      },
+      {
+        "page": 26,
+        "bbox": [
+          46.128,
+          13.38,
+          584.784,
+          819.14
+        ],
+        "role": "Getriebe (Stueckliste) Blatt 2(3)",
+        "question_numbers": [
+          "U1",
+          "U2"
+        ],
+        "evidence": "Printed attachment title and sheet number visually verified against task references; original source orientation retained.",
+        "visual_patch_sha256": "15ac3ac247893bf62b2493c213b7a82f461f69b17484c7350fb9f1c60ebbe65a",
+        "image": "assets/questions/c7ce40ac20ce334e934c5ea7/expansion.2026.1-b3015ad61c6a/attachment-26-2.png",
+        "source_sha256": "c7ce40ac20ce334e934c5ea71e664bfb85dea01cd4bc7264fa311f07e2b18109"
+      },
+      {
+        "page": 27,
+        "bbox": [
+          7.44,
+          25.273,
+          593.712,
+          835.493
+        ],
+        "role": "Hydraulischer Schaltplan Blatt 3(3)",
+        "question_numbers": [
+          "U6"
+        ],
+        "evidence": "Printed attachment title and sheet number visually verified against task references; original source orientation retained.",
+        "visual_patch_sha256": "abe6c48977be2cf38647ea0caffbfc6664416b82f51d9c26e490bd5cdc097444",
+        "image": "assets/questions/c7ce40ac20ce334e934c5ea7/expansion.2026.1-b3015ad61c6a/attachment-27-3.png",
+        "source_sha256": "c7ce40ac20ce334e934c5ea71e664bfb85dea01cd4bc7264fa311f07e2b18109"
+      }
+    ]
+  },
+  {
+    "code": "fa",
+    "stage": "answers",
+    "choice_expected": 28,
+    "choice_records": 28,
+    "u_expected": 8,
+    "u_records": 8,
+    "review_list": [
+      {
+        "question_number": 2,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 4,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 6,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 7,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 10,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 11,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 13,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 14,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 15,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 16,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 17,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 18,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 20,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 23,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 24,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 25,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      }
+    ],
+    "status": "blocked",
+    "revision": "2026-fa-2f.1.0-e6553e5fd78a",
+    "pdf_pages_opened": 0
+  },
+  {
+    "code": "wiso",
+    "stage": "preview",
+    "status": "preview_ready",
+    "observed": 24,
+    "expected": 24,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 16,
+    "revision": "expansion.2026.1-d24644abf503",
+    "source_id": "src-c1e51accc957fc6e9324b377",
+    "source_hash": "0e47f220c07a50957927922b4376c3f69b20a5b9160a93b3a49df873656140b6",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "0e47f220c07a50957927922b4376c3f69b20a5b9160a93b3a49df873656140b6"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 24,
+    "attachments": [
+      {
+        "page": 3,
+        "bbox": [
+          44.089,
+          352.603,
+          532.073,
+          487.835
+        ],
+        "role": "Pruefungsaufgaben-Beschreibung",
+        "question_numbers": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6"
+        ],
+        "evidence": "Marking-sheet example above shared Pruefungsaufgaben-Beschreibung about Isabel Zobel and Metall AG.",
+        "image": "assets/questions/0e47f220c07a50957927922b/expansion.2026.1-d24644abf503/attachment-3-0.png",
+        "source_sha256": "0e47f220c07a50957927922b4376c3f69b20a5b9160a93b3a49df873656140b6"
+      }
+    ]
+  },
+  {
+    "code": "wiso",
+    "stage": "formal",
+    "status": "formal_segmented",
+    "observed": 24,
+    "expected": 24,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 16,
+    "revision": "expansion.2026.1-d24644abf503",
+    "source_id": "src-c1e51accc957fc6e9324b377",
+    "source_hash": "0e47f220c07a50957927922b4376c3f69b20a5b9160a93b3a49df873656140b6",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "0e47f220c07a50957927922b4376c3f69b20a5b9160a93b3a49df873656140b6"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 24,
+    "attachments": [
+      {
+        "page": 3,
+        "bbox": [
+          44.089,
+          352.603,
+          532.073,
+          487.835
+        ],
+        "role": "Pruefungsaufgaben-Beschreibung",
+        "question_numbers": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6"
+        ],
+        "evidence": "Marking-sheet example above shared Pruefungsaufgaben-Beschreibung about Isabel Zobel and Metall AG.",
+        "image": "assets/questions/0e47f220c07a50957927922b/expansion.2026.1-d24644abf503/attachment-3-0.png",
+        "source_sha256": "0e47f220c07a50957927922b4376c3f69b20a5b9160a93b3a49df873656140b6"
+      }
+    ]
+  },
+  {
+    "code": "wiso",
+    "stage": "answers",
+    "choice_expected": 18,
+    "choice_records": 18,
+    "u_expected": 6,
+    "u_records": 6,
+    "review_list": [
+      {
+        "question_number": 4,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 6,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 7,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 8,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 10,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 11,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 12,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 13,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 14,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 16,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 17,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      }
+    ],
+    "status": "blocked",
+    "revision": "2026-wiso-2f.1.0-97bba541ba5b",
+    "pdf_pages_opened": 0
+  }
+]

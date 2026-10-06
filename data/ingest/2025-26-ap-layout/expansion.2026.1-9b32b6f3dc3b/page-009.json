@@ -1,0 +1,213 @@
+{
+  "key": "f49b9778ed87a8bf8f2af6e2b7dc9ef8d9f6d8bb6dab2a3300f7ba8d4192336b",
+  "record_hash": "dc84f0cd5ed035d9e2a0f14115caaaacc334623be0611c5b4ce6a58f272773af",
+  "record": {
+    "page": 9,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Q20/Q21 top, Q22/Q23 middle, Q24 automation diagram below.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-ap-p9-20",
+        "number": "20",
+        "bbox": [
+          49.6,
+          57.536,
+          91.6,
+          83.536
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 20 visually read on cached physical page 9; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "2292cb2d7d33e688c5360ad58f2fd01f20696c01076c4508c32f665712dc9c78"
+      },
+      {
+        "anchor_id": "2025-26-ap-p9-21",
+        "number": "21",
+        "bbox": [
+          296.608,
+          57.536,
+          338.608,
+          83.536
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 21 visually read on cached physical page 9; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "1ed891b3f1c897586176496c5cd32aeec8454cf44ba9a8dde55ad99dacb9cfc5"
+      },
+      {
+        "anchor_id": "2025-26-ap-p9-22",
+        "number": "22",
+        "bbox": [
+          49.6,
+          295.616,
+          91.6,
+          321.616
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 22 visually read on cached physical page 9; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "d13ff5e14c0ef8aa007fc12832bebce3a547d893858334324ad3a50237fcf56d"
+      },
+      {
+        "anchor_id": "2025-26-ap-p9-23",
+        "number": "23",
+        "bbox": [
+          296.608,
+          295.616,
+          338.608,
+          321.616
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 23 visually read on cached physical page 9; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "47c19035dc3513a9fefdc59ceb8b90822e7647110524d8b1b93e41c9567f1712"
+      },
+      {
+        "anchor_id": "2025-26-ap-p9-24",
+        "number": "24",
+        "bbox": [
+          49.6,
+          537.664,
+          91.6,
+          563.664
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 24 visually read on cached physical page 9; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "a596feab0d3ab2ec5cfec00a7046da2d408ac5a6f22aadce5d09025841b15dab"
+      }
+    ],
+    "regions": [
+      {
+        "page": 9,
+        "bbox": [
+          49.6,
+          57.536,
+          292.64,
+          292.64
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p9-20",
+        "evidence": "Q20/Q21 top, Q22/Q23 middle, Q24 automation diagram below. Ruled boundaries include complete diagrams and response areas."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          296.608,
+          57.536,
+          538.656,
+          292.64
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p9-21",
+        "evidence": "Q20/Q21 top, Q22/Q23 middle, Q24 automation diagram below. Ruled boundaries include complete diagrams and response areas."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          49.6,
+          295.616,
+          292.64,
+          533.696
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p9-22",
+        "evidence": "Q20/Q21 top, Q22/Q23 middle, Q24 automation diagram below. Ruled boundaries include complete diagrams and response areas."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          296.608,
+          295.616,
+          538.656,
+          533.696
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p9-23",
+        "evidence": "Q20/Q21 top, Q22/Q23 middle, Q24 automation diagram below. Ruled boundaries include complete diagrams and response areas."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          49.6,
+          537.664,
+          538.656,
+          783.68
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p9-24",
+        "evidence": "Q20/Q21 top, Q22/Q23 middle, Q24 automation diagram below. Ruled boundaries include complete diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "20",
+        "bbox": [
+          49.6,
+          57.536,
+          91.6,
+          83.536
+        ],
+        "pixel_sha256": "2292cb2d7d33e688c5360ad58f2fd01f20696c01076c4508c32f665712dc9c78",
+        "audited_pixel_sha256": "2292cb2d7d33e688c5360ad58f2fd01f20696c01076c4508c32f665712dc9c78"
+      },
+      {
+        "kind": "heading",
+        "number": "21",
+        "bbox": [
+          296.608,
+          57.536,
+          338.608,
+          83.536
+        ],
+        "pixel_sha256": "1ed891b3f1c897586176496c5cd32aeec8454cf44ba9a8dde55ad99dacb9cfc5",
+        "audited_pixel_sha256": "1ed891b3f1c897586176496c5cd32aeec8454cf44ba9a8dde55ad99dacb9cfc5"
+      },
+      {
+        "kind": "heading",
+        "number": "22",
+        "bbox": [
+          49.6,
+          295.616,
+          91.6,
+          321.616
+        ],
+        "pixel_sha256": "d13ff5e14c0ef8aa007fc12832bebce3a547d893858334324ad3a50237fcf56d",
+        "audited_pixel_sha256": "d13ff5e14c0ef8aa007fc12832bebce3a547d893858334324ad3a50237fcf56d"
+      },
+      {
+        "kind": "heading",
+        "number": "23",
+        "bbox": [
+          296.608,
+          295.616,
+          338.608,
+          321.616
+        ],
+        "pixel_sha256": "47c19035dc3513a9fefdc59ceb8b90822e7647110524d8b1b93e41c9567f1712",
+        "audited_pixel_sha256": "47c19035dc3513a9fefdc59ceb8b90822e7647110524d8b1b93e41c9567f1712"
+      },
+      {
+        "kind": "heading",
+        "number": "24",
+        "bbox": [
+          49.6,
+          537.664,
+          91.6,
+          563.664
+        ],
+        "pixel_sha256": "a596feab0d3ab2ec5cfec00a7046da2d408ac5a6f22aadce5d09025841b15dab",
+        "audited_pixel_sha256": "a596feab0d3ab2ec5cfec00a7046da2d408ac5a6f22aadce5d09025841b15dab"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

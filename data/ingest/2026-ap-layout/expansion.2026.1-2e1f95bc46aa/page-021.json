@@ -1,0 +1,61 @@
+{
+  "key": "75ae4127859ae035a7edf9d90139d1a06e815482049e38fee4495bf461996f5b",
+  "record_hash": "f25d972157dc98827149434025f822b233bc1433616108c7196f978d224e926b",
+  "record": {
+    "page": 21,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Printed U4 motor retrofit, EMC, terminal connection diagrams, encoder signals and photograph, all response grids.",
+    "anchors": [
+      {
+        "anchor_id": "2026-ap-p21-U4",
+        "number": "U4",
+        "bbox": [
+          33.728,
+          14.88,
+          75.72800000000001,
+          40.88
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U4 visually read on cached physical page 21; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "75a8c65893970b9e8a5f134ed225b6f3d2acfb39be62ecd6f3f5b75ec7e0f9f0"
+      }
+    ],
+    "regions": [
+      {
+        "page": 21,
+        "bbox": [
+          33.728,
+          14.88,
+          567.424,
+          814.432
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p21-U4",
+        "evidence": "Printed U4 motor retrofit, EMC, terminal connection diagrams, encoder signals and photograph, all response grids. Independently inspected ruled boundaries preserve all response and diagram areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U4",
+        "bbox": [
+          33.728,
+          14.88,
+          75.72800000000001,
+          40.88
+        ],
+        "pixel_sha256": "75a8c65893970b9e8a5f134ed225b6f3d2acfb39be62ecd6f3f5b75ec7e0f9f0",
+        "audited_pixel_sha256": "75a8c65893970b9e8a5f134ed225b6f3d2acfb39be62ecd6f3f5b75ec7e0f9f0"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

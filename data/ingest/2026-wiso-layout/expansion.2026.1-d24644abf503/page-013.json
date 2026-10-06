@@ -1,0 +1,161 @@
+{
+  "key": "b9fe6045aeb5d745674001faa9fa38e653779bd55a1bbd284945d4a855fd4a60",
+  "record_hash": "5bc0ff36e0ff774d4145256e55b52269ce5fa9392349aee65c83b101f703c6b7",
+  "record": {
+    "page": 13,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "continuation_and_questions",
+    "classification_evidence": "U5 subpart 3 and explicit Ergebnis U5 above Q13 Q14 and Q15.",
+    "anchors": [
+      {
+        "anchor_id": "2026-wiso-p13-13",
+        "number": "13",
+        "bbox": [
+          47.095,
+          300.514,
+          85.172,
+          327.561
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 13 visually read on cached physical page 13.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "6a84ac87a10e143bb29964acfa610956651ed46cbe2b53e5dfa7c7c3e12bc874"
+      },
+      {
+        "anchor_id": "2026-wiso-p13-14",
+        "number": "14",
+        "bbox": [
+          299.604,
+          300.514,
+          337.681,
+          327.561
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 14 visually read on cached physical page 13.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "e4966316967d7312be102d4659a8c6885588ec46eb16dc6edce1a4e25c9bc1be"
+      },
+      {
+        "anchor_id": "2026-wiso-p13-15",
+        "number": "15",
+        "bbox": [
+          47.095,
+          541.927,
+          85.172,
+          568.974
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 15 visually read on cached physical page 13.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "777a6e6287f6b7bdea60d12f3219c5b3673ad0a6e7cf5f8d742467f371ff38d5"
+      }
+    ],
+    "regions": [
+      {
+        "page": 13,
+        "bbox": [
+          47.095,
+          300.514,
+          292.59,
+          539.924
+        ],
+        "role": "primary",
+        "owner": "2026-wiso-p13-13",
+        "evidence": "U5 subpart 3 and explicit Ergebnis U5 above Q13 Q14 and Q15. Region follows visible panel separators and includes all response choices/areas."
+      },
+      {
+        "page": 13,
+        "bbox": [
+          299.604,
+          300.514,
+          537.083,
+          539.924
+        ],
+        "role": "primary",
+        "owner": "2026-wiso-p13-14",
+        "evidence": "U5 subpart 3 and explicit Ergebnis U5 above Q13 Q14 and Q15. Region follows visible panel separators and includes all response choices/areas."
+      },
+      {
+        "page": 13,
+        "bbox": [
+          47.095,
+          541.927,
+          295.596,
+          782.339
+        ],
+        "role": "primary",
+        "owner": "2026-wiso-p13-15",
+        "evidence": "U5 subpart 3 and explicit Ergebnis U5 above Q13 Q14 and Q15. Region follows visible panel separators and includes all response choices/areas."
+      },
+      {
+        "page": 13,
+        "bbox": [
+          48.097,
+          57.098,
+          536.081,
+          299.513
+        ],
+        "role": "continuation",
+        "owner": "2026-wiso-p12-U5",
+        "evidence": "U5 subpart 3 and explicit Ergebnis U5 above Q13 Q14 and Q15. Ownership established by printed Ergebnis U5."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "13",
+        "bbox": [
+          47.095,
+          300.514,
+          85.172,
+          327.561
+        ],
+        "pixel_sha256": "6a84ac87a10e143bb29964acfa610956651ed46cbe2b53e5dfa7c7c3e12bc874",
+        "audited_pixel_sha256": "6a84ac87a10e143bb29964acfa610956651ed46cbe2b53e5dfa7c7c3e12bc874"
+      },
+      {
+        "kind": "heading",
+        "number": "14",
+        "bbox": [
+          299.604,
+          300.514,
+          337.681,
+          327.561
+        ],
+        "pixel_sha256": "e4966316967d7312be102d4659a8c6885588ec46eb16dc6edce1a4e25c9bc1be",
+        "audited_pixel_sha256": "e4966316967d7312be102d4659a8c6885588ec46eb16dc6edce1a4e25c9bc1be"
+      },
+      {
+        "kind": "heading",
+        "number": "15",
+        "bbox": [
+          47.095,
+          541.927,
+          85.172,
+          568.974
+        ],
+        "pixel_sha256": "777a6e6287f6b7bdea60d12f3219c5b3673ad0a6e7cf5f8d742467f371ff38d5",
+        "audited_pixel_sha256": "777a6e6287f6b7bdea60d12f3219c5b3673ad0a6e7cf5f8d742467f371ff38d5"
+      },
+      {
+        "kind": "ownership",
+        "number": "U5",
+        "bbox": [
+          48.097,
+          57.098,
+          536.081,
+          299.513
+        ],
+        "pixel_sha256": "c2c51a0cf1acfc68b9d2398f356f8102ac2b5a2ca3074bdc57a65bd6ecff6b88",
+        "audited_pixel_sha256": "c2c51a0cf1acfc68b9d2398f356f8102ac2b5a2ca3074bdc57a65bd6ecff6b88"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

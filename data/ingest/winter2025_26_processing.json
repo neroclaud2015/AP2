@@ -1,0 +1,794 @@
+[
+  {
+    "code": "ap",
+    "stage": "preview",
+    "status": "preview_ready",
+    "observed": 36,
+    "expected": 36,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 26,
+    "revision": "expansion.2026.1-9b32b6f3dc3b",
+    "source_id": "src-53e607c1fec2dfe7a5d05cdf",
+    "source_hash": "86d2d2d1dc67fd0794748508f297b262513cc50eb80466dd8b7304547839841f",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "86d2d2d1dc67fd0794748508f297b262513cc50eb80466dd8b7304547839841f"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 36,
+    "attachments": [
+      {
+        "page": 15,
+        "bbox": [
+          32.736,
+          13.888,
+          567.424,
+          813.44
+        ],
+        "role": "Pruefungsaufgaben-Beschreibung",
+        "question_numbers": [
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6",
+          "U7",
+          "U8"
+        ],
+        "evidence": "Pruefungsaufgaben-Beschreibung: Montagestrasse, stations 1 to 4 and technology diagram; shared context.",
+        "visual_patch_sha256": "a99f6fe885946aedba9682fed1946c41b333575bcd05a957db693e40bfa39e1e",
+        "image": "assets/questions/86d2d2d1dc67fd0794748508/expansion.2026.1-9b32b6f3dc3b/attachment-15-0.png",
+        "source_sha256": "86d2d2d1dc67fd0794748508f297b262513cc50eb80466dd8b7304547839841f"
+      },
+      {
+        "page": 25,
+        "bbox": [
+          15.872,
+          15.872,
+          1178.496,
+          831.296
+        ],
+        "role": "Schneckengetriebe Blatt 1(2)",
+        "question_numbers": [
+          "U2",
+          "U3"
+        ],
+        "evidence": "Shared attachment Blatt 1(2): Schneckengetriebe assembly section and complete parts list; printed orientation preserved.",
+        "visual_patch_sha256": "d206a644fdeb702f41e87f25cb9f78ac007a628125cf9ce9e9c9571d5f0a8c9e",
+        "image": "assets/questions/86d2d2d1dc67fd0794748508/expansion.2026.1-9b32b6f3dc3b/attachment-25-1.png",
+        "source_sha256": "86d2d2d1dc67fd0794748508f297b262513cc50eb80466dd8b7304547839841f"
+      },
+      {
+        "page": 26,
+        "bbox": [
+          39.68,
+          15.872,
+          585.28,
+          817.408
+        ],
+        "role": "Hydraulischer Schaltplan Blatt 2(2)",
+        "question_numbers": [
+          "U6"
+        ],
+        "evidence": "Shared attachment Blatt 2(2): Hydraulischer Schaltplan; drawing occupies left half of landscape physical page.",
+        "visual_patch_sha256": "a0b47ddc9fc0139c21d7507fe8635c8dde9df089a1ddd44f9ff3c61fcf9dc06c",
+        "image": "assets/questions/86d2d2d1dc67fd0794748508/expansion.2026.1-9b32b6f3dc3b/attachment-26-2.png",
+        "source_sha256": "86d2d2d1dc67fd0794748508f297b262513cc50eb80466dd8b7304547839841f"
+      }
+    ]
+  },
+  {
+    "code": "ap",
+    "stage": "formal",
+    "status": "formal_segmented",
+    "observed": 36,
+    "expected": 36,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 26,
+    "revision": "expansion.2026.1-9b32b6f3dc3b",
+    "source_id": "src-53e607c1fec2dfe7a5d05cdf",
+    "source_hash": "86d2d2d1dc67fd0794748508f297b262513cc50eb80466dd8b7304547839841f",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "86d2d2d1dc67fd0794748508f297b262513cc50eb80466dd8b7304547839841f"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 36,
+    "attachments": [
+      {
+        "page": 15,
+        "bbox": [
+          32.736,
+          13.888,
+          567.424,
+          813.44
+        ],
+        "role": "Pruefungsaufgaben-Beschreibung",
+        "question_numbers": [
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6",
+          "U7",
+          "U8"
+        ],
+        "evidence": "Pruefungsaufgaben-Beschreibung: Montagestrasse, stations 1 to 4 and technology diagram; shared context.",
+        "visual_patch_sha256": "a99f6fe885946aedba9682fed1946c41b333575bcd05a957db693e40bfa39e1e",
+        "image": "assets/questions/86d2d2d1dc67fd0794748508/expansion.2026.1-9b32b6f3dc3b/attachment-15-0.png",
+        "source_sha256": "86d2d2d1dc67fd0794748508f297b262513cc50eb80466dd8b7304547839841f"
+      },
+      {
+        "page": 25,
+        "bbox": [
+          15.872,
+          15.872,
+          1178.496,
+          831.296
+        ],
+        "role": "Schneckengetriebe Blatt 1(2)",
+        "question_numbers": [
+          "U2",
+          "U3"
+        ],
+        "evidence": "Shared attachment Blatt 1(2): Schneckengetriebe assembly section and complete parts list; printed orientation preserved.",
+        "visual_patch_sha256": "d206a644fdeb702f41e87f25cb9f78ac007a628125cf9ce9e9c9571d5f0a8c9e",
+        "image": "assets/questions/86d2d2d1dc67fd0794748508/expansion.2026.1-9b32b6f3dc3b/attachment-25-1.png",
+        "source_sha256": "86d2d2d1dc67fd0794748508f297b262513cc50eb80466dd8b7304547839841f"
+      },
+      {
+        "page": 26,
+        "bbox": [
+          39.68,
+          15.872,
+          585.28,
+          817.408
+        ],
+        "role": "Hydraulischer Schaltplan Blatt 2(2)",
+        "question_numbers": [
+          "U6"
+        ],
+        "evidence": "Shared attachment Blatt 2(2): Hydraulischer Schaltplan; drawing occupies left half of landscape physical page.",
+        "visual_patch_sha256": "a0b47ddc9fc0139c21d7507fe8635c8dde9df089a1ddd44f9ff3c61fcf9dc06c",
+        "image": "assets/questions/86d2d2d1dc67fd0794748508/expansion.2026.1-9b32b6f3dc3b/attachment-26-2.png",
+        "source_sha256": "86d2d2d1dc67fd0794748508f297b262513cc50eb80466dd8b7304547839841f"
+      }
+    ]
+  },
+  {
+    "code": "ap",
+    "stage": "answers",
+    "choice_expected": 28,
+    "choice_records": 28,
+    "u_expected": 8,
+    "u_records": 8,
+    "review_list": [
+      {
+        "question_number": 1,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 2,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 3,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 4,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 5,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 7,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 10,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 11,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 12,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 14,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 15,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 16,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 17,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 18,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 19,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 20,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 21,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 23,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 24,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      }
+    ],
+    "status": "blocked",
+    "revision": "2025-26-ap-2f.1.0-d6d52a576233",
+    "pdf_pages_opened": 0
+  },
+  {
+    "code": "fa",
+    "stage": "preview",
+    "status": "preview_ready",
+    "observed": 36,
+    "expected": 36,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 23,
+    "revision": "expansion.2026.1-c106bc39ab84",
+    "source_id": "src-b105486ccce1d07e7e23be5d",
+    "source_hash": "202e42eb2aa127344a4b7d7b8836451bb475ba86f663e47dafcc3e7565ff9e3a",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "202e42eb2aa127344a4b7d7b8836451bb475ba86f663e47dafcc3e7565ff9e3a"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 36,
+    "attachments": [
+      {
+        "page": 13,
+        "bbox": [
+          32.736,
+          14.88,
+          565.44,
+          813.169
+        ],
+        "role": "Pruefungsaufgaben-Beschreibung Montagestrasse",
+        "question_numbers": [
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6",
+          "U7",
+          "U8"
+        ],
+        "evidence": "Printed shared description or exact Blatt 1(1) title visually checked. U4/U5 explicitly name Hydraulischer Schaltplan.",
+        "visual_patch_sha256": "f4e07c3ed31cb40ac19b8d6a566cf3da8b66ad8df54da34508fc5ea3c833484d",
+        "image": "assets/questions/202e42eb2aa127344a4b7d7b/expansion.2026.1-c106bc39ab84/attachment-13-0.png",
+        "source_sha256": "202e42eb2aa127344a4b7d7b8836451bb475ba86f663e47dafcc3e7565ff9e3a"
+      },
+      {
+        "page": 23,
+        "bbox": [
+          53.568,
+          24.551,
+          569.904,
+          813.913
+        ],
+        "role": "Hydraulischer Schaltplan Blatt 1(1)",
+        "question_numbers": [
+          "U4",
+          "U5"
+        ],
+        "evidence": "Printed shared description or exact Blatt 1(1) title visually checked. U4/U5 explicitly name Hydraulischer Schaltplan.",
+        "visual_patch_sha256": "f4f85e14249826f14dad7eb34512acc1b1c514cb8e43b346ff8c429445fbdd45",
+        "image": "assets/questions/202e42eb2aa127344a4b7d7b/expansion.2026.1-c106bc39ab84/attachment-23-1.png",
+        "source_sha256": "202e42eb2aa127344a4b7d7b8836451bb475ba86f663e47dafcc3e7565ff9e3a"
+      }
+    ]
+  },
+  {
+    "code": "fa",
+    "stage": "formal",
+    "status": "formal_segmented",
+    "observed": 36,
+    "expected": 36,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 23,
+    "revision": "expansion.2026.1-c106bc39ab84",
+    "source_id": "src-b105486ccce1d07e7e23be5d",
+    "source_hash": "202e42eb2aa127344a4b7d7b8836451bb475ba86f663e47dafcc3e7565ff9e3a",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "202e42eb2aa127344a4b7d7b8836451bb475ba86f663e47dafcc3e7565ff9e3a"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 36,
+    "attachments": [
+      {
+        "page": 13,
+        "bbox": [
+          32.736,
+          14.88,
+          565.44,
+          813.169
+        ],
+        "role": "Pruefungsaufgaben-Beschreibung Montagestrasse",
+        "question_numbers": [
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6",
+          "U7",
+          "U8"
+        ],
+        "evidence": "Printed shared description or exact Blatt 1(1) title visually checked. U4/U5 explicitly name Hydraulischer Schaltplan.",
+        "visual_patch_sha256": "f4e07c3ed31cb40ac19b8d6a566cf3da8b66ad8df54da34508fc5ea3c833484d",
+        "image": "assets/questions/202e42eb2aa127344a4b7d7b/expansion.2026.1-c106bc39ab84/attachment-13-0.png",
+        "source_sha256": "202e42eb2aa127344a4b7d7b8836451bb475ba86f663e47dafcc3e7565ff9e3a"
+      },
+      {
+        "page": 23,
+        "bbox": [
+          53.568,
+          24.551,
+          569.904,
+          813.913
+        ],
+        "role": "Hydraulischer Schaltplan Blatt 1(1)",
+        "question_numbers": [
+          "U4",
+          "U5"
+        ],
+        "evidence": "Printed shared description or exact Blatt 1(1) title visually checked. U4/U5 explicitly name Hydraulischer Schaltplan.",
+        "visual_patch_sha256": "f4f85e14249826f14dad7eb34512acc1b1c514cb8e43b346ff8c429445fbdd45",
+        "image": "assets/questions/202e42eb2aa127344a4b7d7b/expansion.2026.1-c106bc39ab84/attachment-23-1.png",
+        "source_sha256": "202e42eb2aa127344a4b7d7b8836451bb475ba86f663e47dafcc3e7565ff9e3a"
+      }
+    ]
+  },
+  {
+    "code": "fa",
+    "stage": "answers",
+    "choice_expected": 28,
+    "choice_records": 28,
+    "u_expected": 8,
+    "u_records": 8,
+    "review_list": [
+      {
+        "question_number": 1,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 2,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 3,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 4,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 6,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 7,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 10,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 11,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 12,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 15,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 17,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 18,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 19,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 20,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 21,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 22,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 23,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      }
+    ],
+    "status": "blocked",
+    "revision": "2025-26-fa-2f.1.0-d45a9c8f8377",
+    "pdf_pages_opened": 0
+  },
+  {
+    "code": "wiso",
+    "stage": "preview",
+    "status": "preview_ready",
+    "observed": 24,
+    "expected": 24,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 16,
+    "revision": "expansion.2026.1-7658ab6260ef",
+    "source_id": "src-c35af2f12337653ae2611270",
+    "source_hash": "d04d20e44ba1031ca2c7deea740a64ef59f9d3d4e0bcb89fe4eda00b8f379b6f",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "d04d20e44ba1031ca2c7deea740a64ef59f9d3d4e0bcb89fe4eda00b8f379b6f"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 24,
+    "attachments": [
+      {
+        "page": 3,
+        "bbox": [
+          47.095,
+          292.501,
+          535.079,
+          536.919
+        ],
+        "role": "Pruefungsaufgaben-Beschreibung",
+        "question_numbers": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6"
+        ],
+        "evidence": "Marking-sheet example above the shared Pruefungsaufgaben-Beschreibung for Waermepumpenbau GmbH.",
+        "image": "assets/questions/d04d20e44ba1031ca2c7deea/expansion.2026.1-7658ab6260ef/attachment-3-0.png",
+        "source_sha256": "d04d20e44ba1031ca2c7deea740a64ef59f9d3d4e0bcb89fe4eda00b8f379b6f"
+      }
+    ]
+  },
+  {
+    "code": "wiso",
+    "stage": "formal",
+    "status": "formal_segmented",
+    "observed": 24,
+    "expected": 24,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 16,
+    "revision": "expansion.2026.1-7658ab6260ef",
+    "source_id": "src-c35af2f12337653ae2611270",
+    "source_hash": "d04d20e44ba1031ca2c7deea740a64ef59f9d3d4e0bcb89fe4eda00b8f379b6f",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "d04d20e44ba1031ca2c7deea740a64ef59f9d3d4e0bcb89fe4eda00b8f379b6f"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 24,
+    "attachments": [
+      {
+        "page": 3,
+        "bbox": [
+          47.095,
+          292.501,
+          535.079,
+          536.919
+        ],
+        "role": "Pruefungsaufgaben-Beschreibung",
+        "question_numbers": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6"
+        ],
+        "evidence": "Marking-sheet example above the shared Pruefungsaufgaben-Beschreibung for Waermepumpenbau GmbH.",
+        "image": "assets/questions/d04d20e44ba1031ca2c7deea/expansion.2026.1-7658ab6260ef/attachment-3-0.png",
+        "source_sha256": "d04d20e44ba1031ca2c7deea740a64ef59f9d3d4e0bcb89fe4eda00b8f379b6f"
+      }
+    ]
+  },
+  {
+    "code": "wiso",
+    "stage": "answers",
+    "choice_expected": 18,
+    "choice_records": 18,
+    "u_expected": 6,
+    "u_records": 6,
+    "review_list": [
+      {
+        "question_number": 4,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 5,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 8,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 10,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 11,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 13,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 14,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 15,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 16,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 17,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 18,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      }
+    ],
+    "status": "blocked",
+    "revision": "2025-26-wiso-2f.1.0-908de91db09b",
+    "pdf_pages_opened": 0
+  }
+]

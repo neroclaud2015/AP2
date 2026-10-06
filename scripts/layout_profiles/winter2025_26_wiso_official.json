@@ -1,0 +1,204 @@
+{
+  "scope": "2025-26-wiso",
+  "name": "2025_26_winter_wiso",
+  "exam": "2025_26_winter",
+  "module": "WiSo",
+  "version": "expansion.2026.1",
+  "profile_id": "official-ring-grid",
+  "source_hash": "3dc703177a6e98b7586f66e9ce010a3441a7bd8b27ba641f49e47401824b4caf",
+  "source_id": "src-e381661d7be2e8bff44cf6df",
+  "question_source_id": "src-c35af2f12337653ae2611270",
+  "solution_source_id": "src-e381661d7be2e8bff44cf6df",
+  "validated_sources": [
+    "3dc703177a6e98b7586f66e9ce010a3441a7bd8b27ba641f49e47401824b4caf"
+  ],
+  "choice_page": 3,
+  "choice_count": 18,
+  "analysis_size": [
+    993,
+    1404
+  ],
+  "groups": [
+    [
+      1,
+      10,
+      135.8,
+      60.08,
+      390.6,
+      19.94,
+      0,
+      370
+    ],
+    [
+      11,
+      8,
+      135.8,
+      60.08,
+      510.0,
+      19.94,
+      0,
+      490
+    ]
+  ],
+  "grid_crop": [
+    106,
+    356,
+    725,
+    603
+  ],
+  "ring_policy": {
+    "min_ring": 0.4,
+    "support": 0.83,
+    "possible_ring": 0.32,
+    "possible_support": 0.58,
+    "margin": 0.15,
+    "center": 0.1
+  },
+  "header_evidence": "Original Winter 2025/26 module title and every printed question column visually verified. Five positions map top to bottom to 1..5; deterministic ring geometry only.",
+  "u_evidence": "All printed U labels and ruled separators visually inspected on cached official Winter 2025/26 solution. Formula/diagram/table retained as original image. Whole-question self-assessment; no rubric inferred.",
+  "u_regions": {
+    "U1": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            18,
+            233.099,
+            580,
+            403.178
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 13,
+      "heading_box": [
+        18,
+        233.0991483415876,
+        95,
+        260.4332504272461
+      ],
+      "heading_pixel_sha256": "a1a455d882b444b67d07f9ca419213b7e7984d5750e62d4f07a7b3fe6fd3b9a2"
+    },
+    "U2": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            18,
+            404.697,
+            580,
+            558.831
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 13,
+      "heading_box": [
+        18,
+        404.6965669904436,
+        95,
+        432.0306690761021
+      ],
+      "heading_pixel_sha256": "b90df15e21a2b3ef90425b2be7ec154dc5dd7c2364ac7d03278b91b4628dcc63"
+    },
+    "U3": {
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            18,
+            560.349,
+            580,
+            809.393
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 13,
+      "heading_box": [
+        18,
+        560.3490927559989,
+        95,
+        587.6831948416574
+      ],
+      "heading_pixel_sha256": "a47f212362c8dc4e6512584d218279c27d78282a139f7e5d76ef8c2465ed5afa"
+    },
+    "U4": {
+      "regions": [
+        {
+          "page": 14,
+          "bbox": [
+            18,
+            24.297,
+            580,
+            230.821
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 14,
+      "heading_box": [
+        18,
+        24.296979631696427,
+        95,
+        51.63108171735491
+      ],
+      "heading_pixel_sha256": "c869e342a6452d1e0f80b903aa810756a9c003e260cc815936649ad6aef778c1"
+    },
+    "U5": {
+      "regions": [
+        {
+          "page": 14,
+          "bbox": [
+            18,
+            232.34,
+            580,
+            536.052
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 14,
+      "heading_box": [
+        18,
+        232.3398677280971,
+        95,
+        259.67396981375555
+      ],
+      "heading_pixel_sha256": "794d7dd9a35d5b750967deed6b4e47147a9e9023b28c76d2e7c3dd820ebd92ef"
+    },
+    "U6": {
+      "regions": [
+        {
+          "page": 14,
+          "bbox": [
+            18,
+            537.571,
+            580,
+            804.837
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 14,
+      "heading_box": [
+        18,
+        537.5706743512834,
+        95,
+        564.9047764369419
+      ],
+      "heading_pixel_sha256": "7de595f715acbaa5780244a6999cfdf0a195bda906c243d27ebb1fd5e9543184"
+    }
+  },
+  "page_image_hashes": {
+    "3": "7a65003574a77e05f591892daff989a2c79278cdfe457e83c7bf364c79221855",
+    "13": "70ec3f1f420383455cce7990b65ac7a6d517d7a0ffd580b64b6cf6531cc86997",
+    "14": "0ac4b30b69e1df7171ba54288148841607281581b27e7a0b8d4a8ce3088faab9"
+  }
+}

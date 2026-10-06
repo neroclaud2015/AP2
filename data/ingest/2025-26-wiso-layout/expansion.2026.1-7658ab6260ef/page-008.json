@@ -1,0 +1,61 @@
+{
+  "key": "4138da1eff19c5667d34a1328a69553da11e3aabaeddd45f1a620e85ea6fb1bf",
+  "record_hash": "0b74cdf1dc9c40ace99e968d978803dce3a2e65c15106de4519a365c2dbc763d",
+  "record": {
+    "page": 8,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "U3 subparts 1 and 2 with response grids and Homeoffice chart; continues p9.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-wiso-p8-U3",
+        "number": "U3",
+        "bbox": [
+          58.117,
+          22.038,
+          96.194,
+          49.084
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U3 visually read on cached physical page 8.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "7660c2589deb9e570e49619f1e6e03890c974b5eb46c31da7115078c146406b0"
+      }
+    ],
+    "regions": [
+      {
+        "page": 8,
+        "bbox": [
+          58.117,
+          22.038,
+          544.097,
+          781.337
+        ],
+        "role": "primary",
+        "owner": "2025-26-wiso-p8-U3",
+        "evidence": "U3 subparts 1 and 2 with response grids and Homeoffice chart; continues p9. Region follows visible panel separators and includes all response choices/areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U3",
+        "bbox": [
+          58.117,
+          22.038,
+          96.194,
+          49.084
+        ],
+        "pixel_sha256": "7660c2589deb9e570e49619f1e6e03890c974b5eb46c31da7115078c146406b0",
+        "audited_pixel_sha256": "7660c2589deb9e570e49619f1e6e03890c974b5eb46c31da7115078c146406b0"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

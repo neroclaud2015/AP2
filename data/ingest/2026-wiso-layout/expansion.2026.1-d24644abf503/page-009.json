@@ -1,0 +1,137 @@
+{
+  "key": "27d291d0411b9c84b88f28df81b99c69843980feb36f2edaa0ca640ce387a4b1",
+  "record_hash": "b609b48138ae4e51ed5b3bbefe39517954eef7cb3a861463eaf1c017c4b590a8",
+  "record": {
+    "page": 9,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Printed Q8 Q9 Q10 in separate ruled panels.",
+    "anchors": [
+      {
+        "anchor_id": "2026-wiso-p9-8",
+        "number": "8",
+        "bbox": [
+          48.097,
+          55.094,
+          86.174,
+          82.141
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 8 visually read on cached physical page 9.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "2aebfd23aa6ea544bd160a62680f8b76f6a1a84e67a865e133c8e843ba383764"
+      },
+      {
+        "anchor_id": "2026-wiso-p9-9",
+        "number": "9",
+        "bbox": [
+          299.604,
+          55.094,
+          337.681,
+          82.141
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 9 visually read on cached physical page 9.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "cd9184fb586157361bc61f0536add3c551d3d25bbbe28f7eee8ef94af9dbf39e"
+      },
+      {
+        "anchor_id": "2026-wiso-p9-10",
+        "number": "10",
+        "bbox": [
+          48.097,
+          298.511,
+          86.174,
+          325.557
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 10 visually read on cached physical page 9.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "2eaa7cc17f5007a71e99e6c80f1941f1d2585255edaf01cc52585a5c76a29425"
+      }
+    ],
+    "regions": [
+      {
+        "page": 9,
+        "bbox": [
+          48.097,
+          55.094,
+          292.59,
+          296.507
+        ],
+        "role": "primary",
+        "owner": "2026-wiso-p9-8",
+        "evidence": "Printed Q8 Q9 Q10 in separate ruled panels. Region follows visible panel separators and includes all response choices/areas."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          299.604,
+          55.094,
+          537.083,
+          296.507
+        ],
+        "role": "primary",
+        "owner": "2026-wiso-p9-9",
+        "evidence": "Printed Q8 Q9 Q10 in separate ruled panels. Region follows visible panel separators and includes all response choices/areas."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          48.097,
+          298.511,
+          295.596,
+          540.926
+        ],
+        "role": "primary",
+        "owner": "2026-wiso-p9-10",
+        "evidence": "Printed Q8 Q9 Q10 in separate ruled panels. Region follows visible panel separators and includes all response choices/areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "8",
+        "bbox": [
+          48.097,
+          55.094,
+          86.174,
+          82.141
+        ],
+        "pixel_sha256": "2aebfd23aa6ea544bd160a62680f8b76f6a1a84e67a865e133c8e843ba383764",
+        "audited_pixel_sha256": "2aebfd23aa6ea544bd160a62680f8b76f6a1a84e67a865e133c8e843ba383764"
+      },
+      {
+        "kind": "heading",
+        "number": "9",
+        "bbox": [
+          299.604,
+          55.094,
+          337.681,
+          82.141
+        ],
+        "pixel_sha256": "cd9184fb586157361bc61f0536add3c551d3d25bbbe28f7eee8ef94af9dbf39e",
+        "audited_pixel_sha256": "cd9184fb586157361bc61f0536add3c551d3d25bbbe28f7eee8ef94af9dbf39e"
+      },
+      {
+        "kind": "heading",
+        "number": "10",
+        "bbox": [
+          48.097,
+          298.511,
+          86.174,
+          325.557
+        ],
+        "pixel_sha256": "2eaa7cc17f5007a71e99e6c80f1941f1d2585255edaf01cc52585a5c76a29425",
+        "audited_pixel_sha256": "2eaa7cc17f5007a71e99e6c80f1941f1d2585255edaf01cc52585a5c76a29425"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

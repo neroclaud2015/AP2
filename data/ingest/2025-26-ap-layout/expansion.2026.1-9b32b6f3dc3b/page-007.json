@@ -1,0 +1,99 @@
+{
+  "key": "d31ae5c9b91b0efc83d1ea444298fd3dd4e18841da9a2395ae78dbcbed5b21fb",
+  "record_hash": "8e25cccec9006afe7fe1060a59bca29a4781673cb7025caf2cda593f5e45a453",
+  "record": {
+    "page": 7,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Q15 full circuit diagram; Q16 and its calculation grid below.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-ap-p7-15",
+        "number": "15",
+        "bbox": [
+          50.592,
+          59.52,
+          92.592,
+          85.52000000000001
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 15 visually read on cached physical page 7; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "61d0f97cd08906da696fa3e9a7dc4627a819653ba6db7a4b884da059632a189e"
+      },
+      {
+        "anchor_id": "2025-26-ap-p7-16",
+        "number": "16",
+        "bbox": [
+          50.592,
+          539.648,
+          92.592,
+          565.648
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 16 visually read on cached physical page 7; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "501ee820b51bb50b965330202712f49360b6dfb68872ea4dac262e0397d73d61"
+      }
+    ],
+    "regions": [
+      {
+        "page": 7,
+        "bbox": [
+          50.592,
+          59.52,
+          540.64,
+          536.672
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p7-15",
+        "evidence": "Q15 full circuit diagram; Q16 and its calculation grid below. Ruled boundaries include complete diagrams and response areas."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          50.592,
+          539.648,
+          540.64,
+          783.68
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p7-16",
+        "evidence": "Q15 full circuit diagram; Q16 and its calculation grid below. Ruled boundaries include complete diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "15",
+        "bbox": [
+          50.592,
+          59.52,
+          92.592,
+          85.52000000000001
+        ],
+        "pixel_sha256": "61d0f97cd08906da696fa3e9a7dc4627a819653ba6db7a4b884da059632a189e",
+        "audited_pixel_sha256": "61d0f97cd08906da696fa3e9a7dc4627a819653ba6db7a4b884da059632a189e"
+      },
+      {
+        "kind": "heading",
+        "number": "16",
+        "bbox": [
+          50.592,
+          539.648,
+          92.592,
+          565.648
+        ],
+        "pixel_sha256": "501ee820b51bb50b965330202712f49360b6dfb68872ea4dac262e0397d73d61",
+        "audited_pixel_sha256": "501ee820b51bb50b965330202712f49360b6dfb68872ea4dac262e0397d73d61"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

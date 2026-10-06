@@ -1,0 +1,175 @@
+{
+  "key": "2f013b21e79dbff1abe283a4d1f6e18c7d3672c70acaf2d202ac49eff36fd5c2",
+  "record_hash": "23cc5c17476bd638748572d28c673a70a1ddf4e3f8f453f5c21e86e14cb595c9",
+  "record": {
+    "page": 4,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Q3/Q4 top; Q5 gear spacing with calculation grid; Q6 screw feed with calculation grid.",
+    "anchors": [
+      {
+        "anchor_id": "2026-ap-p4-3",
+        "number": "3",
+        "bbox": [
+          56.544,
+          54.56,
+          98.544,
+          80.56
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 3 visually read on cached physical page 4; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "3b7f62b4d7e169bc3901298c13e7bfbf01ab37df7ac65e6f3a8bd7ff26c13a6f"
+      },
+      {
+        "anchor_id": "2026-ap-p4-4",
+        "number": "4",
+        "bbox": [
+          304.544,
+          54.56,
+          346.544,
+          80.56
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 4 visually read on cached physical page 4; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "7e69e35e66fb8c81cbb668f2526957fad78b9838eb53269f9fa6d4277ab42b90"
+      },
+      {
+        "anchor_id": "2026-ap-p4-5",
+        "number": "5",
+        "bbox": [
+          56.544,
+          296.608,
+          98.544,
+          322.608
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 5 visually read on cached physical page 4; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "8f3d543bed34e185b8708ad4d8b456d9579c9524f55da223cd882465504e57a2"
+      },
+      {
+        "anchor_id": "2026-ap-p4-6",
+        "number": "6",
+        "bbox": [
+          56.544,
+          537.664,
+          98.544,
+          563.664
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 6 visually read on cached physical page 4; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "b502226d41951c2cb901137c67237a0e4a0fee881ec13f0d581750bbe4a357f2"
+      }
+    ],
+    "regions": [
+      {
+        "page": 4,
+        "bbox": [
+          56.544,
+          54.56,
+          300.576,
+          293.632
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p4-3",
+        "evidence": "Q3/Q4 top; Q5 gear spacing with calculation grid; Q6 screw feed with calculation grid. Independently inspected ruled boundaries preserve all response and diagram areas."
+      },
+      {
+        "page": 4,
+        "bbox": [
+          304.544,
+          54.56,
+          547.584,
+          293.632
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p4-4",
+        "evidence": "Q3/Q4 top; Q5 gear spacing with calculation grid; Q6 screw feed with calculation grid. Independently inspected ruled boundaries preserve all response and diagram areas."
+      },
+      {
+        "page": 4,
+        "bbox": [
+          56.544,
+          296.608,
+          547.584,
+          534.688
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p4-5",
+        "evidence": "Q3/Q4 top; Q5 gear spacing with calculation grid; Q6 screw feed with calculation grid. Independently inspected ruled boundaries preserve all response and diagram areas."
+      },
+      {
+        "page": 4,
+        "bbox": [
+          56.544,
+          537.664,
+          547.584,
+          783.68
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p4-6",
+        "evidence": "Q3/Q4 top; Q5 gear spacing with calculation grid; Q6 screw feed with calculation grid. Independently inspected ruled boundaries preserve all response and diagram areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "3",
+        "bbox": [
+          56.544,
+          54.56,
+          98.544,
+          80.56
+        ],
+        "pixel_sha256": "3b7f62b4d7e169bc3901298c13e7bfbf01ab37df7ac65e6f3a8bd7ff26c13a6f",
+        "audited_pixel_sha256": "3b7f62b4d7e169bc3901298c13e7bfbf01ab37df7ac65e6f3a8bd7ff26c13a6f"
+      },
+      {
+        "kind": "heading",
+        "number": "4",
+        "bbox": [
+          304.544,
+          54.56,
+          346.544,
+          80.56
+        ],
+        "pixel_sha256": "7e69e35e66fb8c81cbb668f2526957fad78b9838eb53269f9fa6d4277ab42b90",
+        "audited_pixel_sha256": "7e69e35e66fb8c81cbb668f2526957fad78b9838eb53269f9fa6d4277ab42b90"
+      },
+      {
+        "kind": "heading",
+        "number": "5",
+        "bbox": [
+          56.544,
+          296.608,
+          98.544,
+          322.608
+        ],
+        "pixel_sha256": "8f3d543bed34e185b8708ad4d8b456d9579c9524f55da223cd882465504e57a2",
+        "audited_pixel_sha256": "8f3d543bed34e185b8708ad4d8b456d9579c9524f55da223cd882465504e57a2"
+      },
+      {
+        "kind": "heading",
+        "number": "6",
+        "bbox": [
+          56.544,
+          537.664,
+          98.544,
+          563.664
+        ],
+        "pixel_sha256": "b502226d41951c2cb901137c67237a0e4a0fee881ec13f0d581750bbe4a357f2",
+        "audited_pixel_sha256": "b502226d41951c2cb901137c67237a0e4a0fee881ec13f0d581750bbe4a357f2"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

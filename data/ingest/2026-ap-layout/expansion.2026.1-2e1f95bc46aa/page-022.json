@@ -1,0 +1,61 @@
+{
+  "key": "469819c1f602e5e27280acc86fc2c1d7d8f9c79af1504a9e9d798c136db5c87e",
+  "record_hash": "cacaf13e6a5eaded3645d558eea39cf640a2e677cc26fbefc304dbc202922d63",
+  "record": {
+    "page": 22,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Printed U5 AS-i signal tower specification, cable table, addressing diagram, final response table.",
+    "anchors": [
+      {
+        "anchor_id": "2026-ap-p22-U5",
+        "number": "U5",
+        "bbox": [
+          23.808,
+          16.864,
+          65.80799999999999,
+          42.864000000000004
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U5 visually read on cached physical page 22; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "ca6d95debb9fcb2272029aa69ef5bfa6c445d9b02a531327233456a81e0c5426"
+      }
+    ],
+    "regions": [
+      {
+        "page": 22,
+        "bbox": [
+          23.808,
+          16.864,
+          557.504,
+          816.416
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p22-U5",
+        "evidence": "Printed U5 AS-i signal tower specification, cable table, addressing diagram, final response table. Independently inspected ruled boundaries preserve all response and diagram areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U5",
+        "bbox": [
+          23.808,
+          16.864,
+          65.80799999999999,
+          42.864000000000004
+        ],
+        "pixel_sha256": "ca6d95debb9fcb2272029aa69ef5bfa6c445d9b02a531327233456a81e0c5426",
+        "audited_pixel_sha256": "ca6d95debb9fcb2272029aa69ef5bfa6c445d9b02a531327233456a81e0c5426"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "key": "c2527b2d5ca9c64a866a74cabfd7453e48b5ab90c384dfc5bcf65882ca14131c",
+  "record_hash": "30000be959a9d82738046c8770bc576483eed31a07979075d85046b596f228b6",
+  "record": {
+    "page": 18,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Individually visually inspected cached PNG: printed task anchors and panel boundaries confirmed.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-fa-p18-U5",
+        "number": "U5",
+        "bbox": [
+          30.504,
+          24.551,
+          73.656,
+          52.079
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U5 visually read on cached physical page 18.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "4f08b2a21363540d066ab7f3f8ac026e5b6be18b4211bc79227e20ecbfd4cb4d"
+      },
+      {
+        "anchor_id": "2025-26-fa-p18-U6",
+        "number": "U6",
+        "bbox": [
+          30.504,
+          498.466,
+          73.656,
+          525.993
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U6 visually read on cached physical page 18.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "87554ddd86f2c1914e36f9d2bad3f22b27ce9e220b1fdd56fd6dc528de35cd30"
+      }
+    ],
+    "regions": [
+      {
+        "page": 18,
+        "bbox": [
+          30.504,
+          24.551,
+          508.896,
+          493.258
+        ],
+        "role": "primary",
+        "owner": "2025-26-fa-p18-U5",
+        "evidence": "Visual inspection of printed heading, question text, all options/diagrams and ruled boundaries. Separate calculation panel assigned by its printed task number."
+      },
+      {
+        "page": 18,
+        "bbox": [
+          30.504,
+          498.466,
+          508.896,
+          813.913
+        ],
+        "role": "primary",
+        "owner": "2025-26-fa-p18-U6",
+        "evidence": "Visual inspection of printed heading, question text, all options/diagrams and ruled boundaries. Separate calculation panel assigned by its printed task number."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U5",
+        "bbox": [
+          30.504,
+          24.551,
+          73.656,
+          52.079
+        ],
+        "pixel_sha256": "4f08b2a21363540d066ab7f3f8ac026e5b6be18b4211bc79227e20ecbfd4cb4d",
+        "audited_pixel_sha256": "4f08b2a21363540d066ab7f3f8ac026e5b6be18b4211bc79227e20ecbfd4cb4d"
+      },
+      {
+        "kind": "heading",
+        "number": "U6",
+        "bbox": [
+          30.504,
+          498.466,
+          73.656,
+          525.993
+        ],
+        "pixel_sha256": "87554ddd86f2c1914e36f9d2bad3f22b27ce9e220b1fdd56fd6dc528de35cd30",
+        "audited_pixel_sha256": "87554ddd86f2c1914e36f9d2bad3f22b27ce9e220b1fdd56fd6dc528de35cd30"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

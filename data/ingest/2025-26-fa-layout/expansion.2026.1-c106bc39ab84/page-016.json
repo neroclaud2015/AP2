@@ -1,0 +1,61 @@
+{
+  "key": "ad08ba4d65f50cd3e1fd0ea610d7bc88b6dcdfae20bade3f6774bd3303dbaa5f",
+  "record_hash": "75329d05eed09e8611a06bfcebdd4c2a2c6735e579d15d007e4880e6ebb8aa57",
+  "record": {
+    "page": 16,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Individually visually inspected cached PNG: printed task anchors and panel boundaries confirmed.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-fa-p16-U3",
+        "number": "U3",
+        "bbox": [
+          31.992,
+          23.063,
+          75.144,
+          50.591
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U3 visually read on cached physical page 16.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "e501b2b6ff6df7b3d3240096d549f17070c3e8bdcc2675b834ac1b40fa65d9ca"
+      }
+    ],
+    "regions": [
+      {
+        "page": 16,
+        "bbox": [
+          31.992,
+          23.063,
+          510.384,
+          811.681
+        ],
+        "role": "primary",
+        "owner": "2025-26-fa-p16-U3",
+        "evidence": "Visual inspection of printed heading, question text, all options/diagrams and ruled boundaries. Separate calculation panel assigned by its printed task number."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U3",
+        "bbox": [
+          31.992,
+          23.063,
+          75.144,
+          50.591
+        ],
+        "pixel_sha256": "e501b2b6ff6df7b3d3240096d549f17070c3e8bdcc2675b834ac1b40fa65d9ca",
+        "audited_pixel_sha256": "e501b2b6ff6df7b3d3240096d549f17070c3e8bdcc2675b834ac1b40fa65d9ca"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

@@ -1,0 +1,923 @@
+{
+  "profile_id": "portrait-explicit-regions",
+  "scope": "2026-wiso",
+  "version": "expansion.2026.1",
+  "exam": "2026_sommer",
+  "module": "WiSo",
+  "source_hash": "0e47f220c07a50957927922b4376c3f69b20a5b9160a93b3a49df873656140b6",
+  "source_id": "src-c1e51accc957fc6e9324b377",
+  "solution_source_id": "src-b34797741fe0cd48e342a4d2",
+  "validated_sources": [
+    "0e47f220c07a50957927922b4376c3f69b20a5b9160a93b3a49df873656140b6"
+  ],
+  "name": "2026_sommer_wiso",
+  "expected": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6"
+  ],
+  "pages": {
+    "1": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Cover: Sommer 2026, 05.05.2026, Wirtschaft und Sozialkunde; printed 60 min.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "2": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Instructions: 60 min, 18 bound and 6 unbound questions; no attachments.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "3": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Marking-sheet example above shared Pruefungsaufgaben-Beschreibung about Isabel Zobel and Metall AG.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "4": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "U1 complete company-form comparison flowchart and result field.",
+      "slots": [
+        {
+          "observed_number": "U1",
+          "heading_box": [
+            61.123,
+            54.093,
+            99.2,
+            81.139
+          ],
+          "visual_patch_sha256": "c850a05f4f01e6dbe11159f1b1c5a26833ab6bd8ff850172297bcd0b91277a37",
+          "visual_evidence": "Printed U1 visually read on cached physical page 4.",
+          "regions": [
+            [
+              61.123,
+              54.093,
+              546.101,
+              783.341
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U1 complete company-form comparison flowchart and result field. Region follows visible panel separators and includes all response choices/areas."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "5": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "Printed Q1 Q2 Q3 in separate ruled panels; Q3 includes Karl Moeller company sign.",
+      "slots": [
+        {
+          "observed_number": "1",
+          "heading_box": [
+            45.091,
+            55.094,
+            83.168,
+            82.141
+          ],
+          "visual_patch_sha256": "637f8e01f2c44b24658ec98f38e5a5aca1887278ef0f5ba0013b7dbe87432ce8",
+          "visual_evidence": "Printed 1 visually read on cached physical page 5.",
+          "regions": [
+            [
+              45.091,
+              55.094,
+              288.582,
+              296.507
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed Q1 Q2 Q3 in separate ruled panels; Q3 includes Karl Moeller company sign. Region follows visible panel separators and includes all response choices/areas."
+        },
+        {
+          "observed_number": "2",
+          "heading_box": [
+            294.594,
+            55.094,
+            332.671,
+            82.141
+          ],
+          "visual_patch_sha256": "f610fd5bd02a8aace500883d634255cf03eb21a58e65e1dbe87edd9fae7989dd",
+          "visual_evidence": "Printed 2 visually read on cached physical page 5.",
+          "regions": [
+            [
+              294.594,
+              55.094,
+              535.079,
+              296.507
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed Q1 Q2 Q3 in separate ruled panels; Q3 includes Karl Moeller company sign. Region follows visible panel separators and includes all response choices/areas."
+        },
+        {
+          "observed_number": "3",
+          "heading_box": [
+            45.091,
+            298.511,
+            83.168,
+            325.557
+          ],
+          "visual_patch_sha256": "8516d500f52ae878e2b06e19268ad538bf1559ee3ee6c9d47fd5e47f02d28c49",
+          "visual_evidence": "Printed 3 visually read on cached physical page 5.",
+          "regions": [
+            [
+              45.091,
+              298.511,
+              291.588,
+              539.924
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed Q1 Q2 Q3 in separate ruled panels; Q3 includes Karl Moeller company sign. Region follows visible panel separators and includes all response choices/areas."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "6": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "U2 complete subparts 1 to 3, coin-stack diagram and response grid.",
+      "slots": [
+        {
+          "observed_number": "U2",
+          "heading_box": [
+            59.119,
+            55.094,
+            97.196,
+            82.141
+          ],
+          "visual_patch_sha256": "06fa11a42a2acb76d5cef412cc0dc3852b1d87944532a88de739c632dba924f1",
+          "visual_evidence": "Printed U2 visually read on cached physical page 6.",
+          "regions": [
+            [
+              59.119,
+              55.094,
+              545.099,
+              783.341
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U2 complete subparts 1 to 3, coin-stack diagram and response grid. Region follows visible panel separators and includes all response choices/areas."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "7": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "Printed Q4 Q5 Q6 Q7 in four ruled panels.",
+      "slots": [
+        {
+          "observed_number": "4",
+          "heading_box": [
+            46.093,
+            24.041,
+            84.17,
+            51.087
+          ],
+          "visual_patch_sha256": "7660c2589deb9e570e49619f1e6e03890c974b5eb46c31da7115078c146406b0",
+          "visual_evidence": "Printed 4 visually read on cached physical page 7.",
+          "regions": [
+            [
+              46.093,
+              24.041,
+              289.584,
+              296.507
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed Q4 Q5 Q6 Q7 in four ruled panels. Region follows visible panel separators and includes all response choices/areas."
+        },
+        {
+          "observed_number": "5",
+          "heading_box": [
+            295.596,
+            24.041,
+            333.673,
+            51.087
+          ],
+          "visual_patch_sha256": "c56c3335c4522b76d761cde17430e7dc96bddc79eaf8cc194a765429d9c8f8eb",
+          "visual_evidence": "Printed 5 visually read on cached physical page 7.",
+          "regions": [
+            [
+              295.596,
+              24.041,
+              535.079,
+              296.507
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed Q4 Q5 Q6 Q7 in four ruled panels. Region follows visible panel separators and includes all response choices/areas."
+        },
+        {
+          "observed_number": "6",
+          "heading_box": [
+            46.093,
+            298.511,
+            84.17,
+            325.557
+          ],
+          "visual_patch_sha256": "c9ea2aa38926813717074fa15c6d0b836beb46eeeac032ad825efb0fdefa1834",
+          "visual_evidence": "Printed 6 visually read on cached physical page 7.",
+          "regions": [
+            [
+              46.093,
+              298.511,
+              289.584,
+              540.926
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed Q4 Q5 Q6 Q7 in four ruled panels. Region follows visible panel separators and includes all response choices/areas."
+        },
+        {
+          "observed_number": "7",
+          "heading_box": [
+            295.596,
+            298.511,
+            333.673,
+            325.557
+          ],
+          "visual_patch_sha256": "0f0f3407fb2be11638ebf2b71cc816eb140d993b7b12372715901acdb225d634",
+          "visual_evidence": "Printed 7 visually read on cached physical page 7.",
+          "regions": [
+            [
+              295.596,
+              298.511,
+              535.079,
+              540.926
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed Q4 Q5 Q6 Q7 in four ruled panels. Region follows visible panel separators and includes all response choices/areas."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "8": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "U3 complete two codetermination tables and result field.",
+      "slots": [
+        {
+          "observed_number": "U3",
+          "heading_box": [
+            58.117,
+            24.041,
+            96.194,
+            51.087
+          ],
+          "visual_patch_sha256": "7660c2589deb9e570e49619f1e6e03890c974b5eb46c31da7115078c146406b0",
+          "visual_evidence": "Printed U3 visually read on cached physical page 8.",
+          "regions": [
+            [
+              58.117,
+              24.041,
+              545.099,
+              784.342
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U3 complete two codetermination tables and result field. Region follows visible panel separators and includes all response choices/areas."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "9": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "Printed Q8 Q9 Q10 in separate ruled panels.",
+      "slots": [
+        {
+          "observed_number": "8",
+          "heading_box": [
+            48.097,
+            55.094,
+            86.174,
+            82.141
+          ],
+          "visual_patch_sha256": "2aebfd23aa6ea544bd160a62680f8b76f6a1a84e67a865e133c8e843ba383764",
+          "visual_evidence": "Printed 8 visually read on cached physical page 9.",
+          "regions": [
+            [
+              48.097,
+              55.094,
+              292.59,
+              296.507
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed Q8 Q9 Q10 in separate ruled panels. Region follows visible panel separators and includes all response choices/areas."
+        },
+        {
+          "observed_number": "9",
+          "heading_box": [
+            299.604,
+            55.094,
+            337.681,
+            82.141
+          ],
+          "visual_patch_sha256": "cd9184fb586157361bc61f0536add3c551d3d25bbbe28f7eee8ef94af9dbf39e",
+          "visual_evidence": "Printed 9 visually read on cached physical page 9.",
+          "regions": [
+            [
+              299.604,
+              55.094,
+              537.083,
+              296.507
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed Q8 Q9 Q10 in separate ruled panels. Region follows visible panel separators and includes all response choices/areas."
+        },
+        {
+          "observed_number": "10",
+          "heading_box": [
+            48.097,
+            298.511,
+            86.174,
+            325.557
+          ],
+          "visual_patch_sha256": "2eaa7cc17f5007a71e99e6c80f1941f1d2585255edaf01cc52585a5c76a29425",
+          "visual_evidence": "Printed 10 visually read on cached physical page 9.",
+          "regions": [
+            [
+              48.097,
+              298.511,
+              295.596,
+              540.926
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed Q8 Q9 Q10 in separate ruled panels. Region follows visible panel separators and includes all response choices/areas."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "10": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "U4 digital-competencies chart and subparts 1 and 2; continues p11.",
+      "slots": [
+        {
+          "observed_number": "U4",
+          "heading_box": [
+            55.111,
+            55.094,
+            93.188,
+            82.141
+          ],
+          "visual_patch_sha256": "4659d01ec51a7fb93d86c3182919435315042fa1a3eb54c6742a5636163628fd",
+          "visual_evidence": "Printed U4 visually read on cached physical page 10.",
+          "regions": [
+            [
+              55.111,
+              55.094,
+              542.093,
+              783.341
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U4 digital-competencies chart and subparts 1 and 2; continues p11. Region follows visible panel separators and includes all response choices/areas."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "11": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "continuation_and_questions",
+      "evidence": "U4 subparts 3 to 5 and explicit Ergebnis U4 above Q11 and Q12.",
+      "slots": [
+        {
+          "observed_number": "11",
+          "heading_box": [
+            47.095,
+            541.927,
+            85.172,
+            568.974
+          ],
+          "visual_patch_sha256": "59aba01a67b14f8de87da04ce3a64bb8a1f90d22752cf0299949bffd013d6d27",
+          "visual_evidence": "Printed 11 visually read on cached physical page 11.",
+          "regions": [
+            [
+              47.095,
+              541.927,
+              291.588,
+              784.342
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U4 subparts 3 to 5 and explicit Ergebnis U4 above Q11 and Q12. Region follows visible panel separators and includes all response choices/areas."
+        },
+        {
+          "observed_number": "12",
+          "heading_box": [
+            297.6,
+            541.927,
+            335.677,
+            568.974
+          ],
+          "visual_patch_sha256": "c54c4c7e4aa31457a8bb3261116e9f61ab9651c308e0b5e833d9eb6fede28ffc",
+          "visual_evidence": "Printed 12 visually read on cached physical page 11.",
+          "regions": [
+            [
+              297.6,
+              541.927,
+              537.083,
+              784.342
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U4 subparts 3 to 5 and explicit Ergebnis U4 above Q11 and Q12. Region follows visible panel separators and includes all response choices/areas."
+        }
+      ],
+      "explicit_regions": [
+        {
+          "bbox": [
+            48.097,
+            25.043,
+            537.083,
+            540.926
+          ],
+          "role": "continuation",
+          "owner": "2026-wiso-p10-U4",
+          "observed_owner_label": "U4",
+          "evidence_box": [
+            48.097,
+            25.043,
+            537.083,
+            540.926
+          ],
+          "visual_patch_sha256": "af8405e435cf944e8437af6e4e306865ae776917bffd15455eb456628015db74",
+          "evidence": "U4 subparts 3 to 5 and explicit Ergebnis U4 above Q11 and Q12. Ownership established by printed Ergebnis U4."
+        }
+      ]
+    },
+    "12": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "U5 locations profitability diagram and subparts 1 and 2; continues p13.",
+      "slots": [
+        {
+          "observed_number": "U5",
+          "heading_box": [
+            56.113,
+            25.043,
+            94.19,
+            52.089
+          ],
+          "visual_patch_sha256": "dc97e9266f1d1dc7ca3017919197c950b54d15807cc4ca27e3e7e19617040f9c",
+          "visual_evidence": "Printed U5 visually read on cached physical page 12.",
+          "regions": [
+            [
+              56.113,
+              25.043,
+              543.095,
+              786.346
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U5 locations profitability diagram and subparts 1 and 2; continues p13. Region follows visible panel separators and includes all response choices/areas."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "13": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "continuation_and_questions",
+      "evidence": "U5 subpart 3 and explicit Ergebnis U5 above Q13 Q14 and Q15.",
+      "slots": [
+        {
+          "observed_number": "13",
+          "heading_box": [
+            47.095,
+            300.514,
+            85.172,
+            327.561
+          ],
+          "visual_patch_sha256": "6a84ac87a10e143bb29964acfa610956651ed46cbe2b53e5dfa7c7c3e12bc874",
+          "visual_evidence": "Printed 13 visually read on cached physical page 13.",
+          "regions": [
+            [
+              47.095,
+              300.514,
+              292.59,
+              539.924
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U5 subpart 3 and explicit Ergebnis U5 above Q13 Q14 and Q15. Region follows visible panel separators and includes all response choices/areas."
+        },
+        {
+          "observed_number": "14",
+          "heading_box": [
+            299.604,
+            300.514,
+            337.681,
+            327.561
+          ],
+          "visual_patch_sha256": "e4966316967d7312be102d4659a8c6885588ec46eb16dc6edce1a4e25c9bc1be",
+          "visual_evidence": "Printed 14 visually read on cached physical page 13.",
+          "regions": [
+            [
+              299.604,
+              300.514,
+              537.083,
+              539.924
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U5 subpart 3 and explicit Ergebnis U5 above Q13 Q14 and Q15. Region follows visible panel separators and includes all response choices/areas."
+        },
+        {
+          "observed_number": "15",
+          "heading_box": [
+            47.095,
+            541.927,
+            85.172,
+            568.974
+          ],
+          "visual_patch_sha256": "777a6e6287f6b7bdea60d12f3219c5b3673ad0a6e7cf5f8d742467f371ff38d5",
+          "visual_evidence": "Printed 15 visually read on cached physical page 13.",
+          "regions": [
+            [
+              47.095,
+              541.927,
+              295.596,
+              782.339
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U5 subpart 3 and explicit Ergebnis U5 above Q13 Q14 and Q15. Region follows visible panel separators and includes all response choices/areas."
+        }
+      ],
+      "explicit_regions": [
+        {
+          "bbox": [
+            48.097,
+            57.098,
+            536.081,
+            299.513
+          ],
+          "role": "continuation",
+          "owner": "2026-wiso-p12-U5",
+          "observed_owner_label": "U5",
+          "evidence_box": [
+            48.097,
+            57.098,
+            536.081,
+            299.513
+          ],
+          "visual_patch_sha256": "c2c51a0cf1acfc68b9d2398f356f8102ac2b5a2ca3074bdc57a65bd6ecff6b88",
+          "evidence": "U5 subpart 3 and explicit Ergebnis U5 above Q13 Q14 and Q15. Ownership established by printed Ergebnis U5."
+        }
+      ]
+    },
+    "14": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "U6 complete sustainability cloze passage and result field.",
+      "slots": [
+        {
+          "observed_number": "U6",
+          "heading_box": [
+            56.113,
+            56.096,
+            94.19,
+            83.142
+          ],
+          "visual_patch_sha256": "f12007081eab160c02c06cea5f2cbe9783d21a5111f248c502068e6145157335",
+          "visual_evidence": "Printed U6 visually read on cached physical page 14.",
+          "regions": [
+            [
+              56.113,
+              56.096,
+              543.095,
+              784.342
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U6 complete sustainability cloze passage and result field. Region follows visible panel separators and includes all response choices/areas."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "15": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "Printed Q16 Q17 Q18 in separate ruled panels.",
+      "slots": [
+        {
+          "observed_number": "16",
+          "heading_box": [
+            47.095,
+            55.094,
+            85.172,
+            82.141
+          ],
+          "visual_patch_sha256": "1186b57fd1906f420b9e4125027963f8acd00dfe3404a7720bf9365403d3c0ac",
+          "visual_evidence": "Printed 16 visually read on cached physical page 15.",
+          "regions": [
+            [
+              47.095,
+              55.094,
+              289.584,
+              296.507
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed Q16 Q17 Q18 in separate ruled panels. Region follows visible panel separators and includes all response choices/areas."
+        },
+        {
+          "observed_number": "17",
+          "heading_box": [
+            296.598,
+            55.094,
+            334.675,
+            82.141
+          ],
+          "visual_patch_sha256": "42a25e18ab5720d7eb981cd75c5f3fa5c6774187e48ddb527befa3e3548d6509",
+          "visual_evidence": "Printed 17 visually read on cached physical page 15.",
+          "regions": [
+            [
+              296.598,
+              55.094,
+              536.081,
+              296.507
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed Q16 Q17 Q18 in separate ruled panels. Region follows visible panel separators and includes all response choices/areas."
+        },
+        {
+          "observed_number": "18",
+          "heading_box": [
+            47.095,
+            298.511,
+            85.172,
+            325.557
+          ],
+          "visual_patch_sha256": "e3fe7d16b05d97352fd5391cfec06d00aac1b95c1d406e029fb96c63aa89e99c",
+          "visual_evidence": "Printed 18 visually read on cached physical page 15.",
+          "regions": [
+            [
+              47.095,
+              298.511,
+              292.59,
+              540.926
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Printed Q16 Q17 Q18 in separate ruled panels. Region follows visible panel separators and includes all response choices/areas."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "16": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Final marking-sheet checklist and examiner scoring panel; no question anchor.",
+      "slots": [],
+      "explicit_regions": []
+    }
+  },
+  "attachment_crops": [
+    {
+      "page": 3,
+      "bbox": [
+        44.089,
+        352.603,
+        532.073,
+        487.835
+      ],
+      "role": "Pruefungsaufgaben-Beschreibung",
+      "question_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6"
+      ],
+      "evidence": "Marking-sheet example above shared Pruefungsaufgaben-Beschreibung about Isabel Zobel and Metall AG."
+    }
+  ],
+  "attachment_refs": {
+    "1": [
+      3
+    ],
+    "2": [
+      3
+    ],
+    "3": [
+      3
+    ],
+    "4": [
+      3
+    ],
+    "5": [
+      3
+    ],
+    "6": [
+      3
+    ],
+    "7": [
+      3
+    ],
+    "8": [
+      3
+    ],
+    "9": [
+      3
+    ],
+    "10": [
+      3
+    ],
+    "11": [
+      3
+    ],
+    "12": [
+      3
+    ],
+    "13": [
+      3
+    ],
+    "14": [
+      3
+    ],
+    "15": [
+      3
+    ],
+    "16": [
+      3
+    ],
+    "17": [
+      3
+    ],
+    "18": [
+      3
+    ],
+    "U1": [
+      3
+    ],
+    "U2": [
+      3
+    ],
+    "U3": [
+      3
+    ],
+    "U4": [
+      3
+    ],
+    "U5": [
+      3
+    ],
+    "U6": [
+      3
+    ]
+  },
+  "timing_minutes": 60,
+  "timing_source_page": 2,
+  "description_page": 3,
+  "configuration_complete": true
+}

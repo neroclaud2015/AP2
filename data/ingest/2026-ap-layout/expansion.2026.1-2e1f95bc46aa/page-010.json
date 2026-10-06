@@ -1,0 +1,137 @@
+{
+  "key": "769241468c93e15b2e841a93107a4ca2a77e504715d2cdb1c866c0aaac059491",
+  "record_hash": "b3b4128544905413288818de3c92f927d8c40347d2333b2827e6a77e17ed988f",
+  "record": {
+    "page": 10,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Q21 five selective protection circuits; Q22 soft starter settings and graph; Q23 feedback block diagram.",
+    "anchors": [
+      {
+        "anchor_id": "2026-ap-p10-21",
+        "number": "21",
+        "bbox": [
+          53.568,
+          59.52,
+          95.568,
+          85.52000000000001
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 21 visually read on cached physical page 10; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "e98e00a17b8023c6c1a617e2b57731cfcff24f6db0fe0cf827cb1e1181e3f0ac"
+      },
+      {
+        "anchor_id": "2026-ap-p10-22",
+        "number": "22",
+        "bbox": [
+          53.568,
+          299.584,
+          95.568,
+          325.584
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 22 visually read on cached physical page 10; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "d86225c39eee0c9cdc2b6a480c5c75302ed38672c590ca6b826519928c2858a5"
+      },
+      {
+        "anchor_id": "2026-ap-p10-23",
+        "number": "23",
+        "bbox": [
+          53.568,
+          541.632,
+          95.568,
+          567.632
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 23 visually read on cached physical page 10; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "7a8d7f097c3edbbe303b53cea1e6e82b609984bc018b85930238004524b7f6ac"
+      }
+    ],
+    "regions": [
+      {
+        "page": 10,
+        "bbox": [
+          53.568,
+          59.52,
+          545.6,
+          295.616
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p10-21",
+        "evidence": "Q21 five selective protection circuits; Q22 soft starter settings and graph; Q23 feedback block diagram. Independently inspected ruled boundaries preserve all response and diagram areas."
+      },
+      {
+        "page": 10,
+        "bbox": [
+          53.568,
+          299.584,
+          545.6,
+          537.664
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p10-22",
+        "evidence": "Q21 five selective protection circuits; Q22 soft starter settings and graph; Q23 feedback block diagram. Independently inspected ruled boundaries preserve all response and diagram areas."
+      },
+      {
+        "page": 10,
+        "bbox": [
+          53.568,
+          541.632,
+          545.6,
+          784.672
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p10-23",
+        "evidence": "Q21 five selective protection circuits; Q22 soft starter settings and graph; Q23 feedback block diagram. Independently inspected ruled boundaries preserve all response and diagram areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "21",
+        "bbox": [
+          53.568,
+          59.52,
+          95.568,
+          85.52000000000001
+        ],
+        "pixel_sha256": "e98e00a17b8023c6c1a617e2b57731cfcff24f6db0fe0cf827cb1e1181e3f0ac",
+        "audited_pixel_sha256": "e98e00a17b8023c6c1a617e2b57731cfcff24f6db0fe0cf827cb1e1181e3f0ac"
+      },
+      {
+        "kind": "heading",
+        "number": "22",
+        "bbox": [
+          53.568,
+          299.584,
+          95.568,
+          325.584
+        ],
+        "pixel_sha256": "d86225c39eee0c9cdc2b6a480c5c75302ed38672c590ca6b826519928c2858a5",
+        "audited_pixel_sha256": "d86225c39eee0c9cdc2b6a480c5c75302ed38672c590ca6b826519928c2858a5"
+      },
+      {
+        "kind": "heading",
+        "number": "23",
+        "bbox": [
+          53.568,
+          541.632,
+          95.568,
+          567.632
+        ],
+        "pixel_sha256": "7a8d7f097c3edbbe303b53cea1e6e82b609984bc018b85930238004524b7f6ac",
+        "audited_pixel_sha256": "7a8d7f097c3edbbe303b53cea1e6e82b609984bc018b85930238004524b7f6ac"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

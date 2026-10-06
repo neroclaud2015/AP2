@@ -1,0 +1,61 @@
+{
+  "key": "0b222d11a13312fe6219ce9f3dd8b02aa3807d6d24fdc44a5a0da296c04055d8",
+  "record_hash": "2bfc032dc41e7b2f2af9a5730ca723278185b3e3bd00f26dbea63d8a17fe809f",
+  "record": {
+    "page": 23,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Printed U6 compensation display and complete calculation grid.",
+    "anchors": [
+      {
+        "anchor_id": "2026-ap-p23-U6",
+        "number": "U6",
+        "bbox": [
+          33.728,
+          15.872,
+          75.72800000000001,
+          41.872
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U6 visually read on cached physical page 23; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "82016f74aad0991e31703bcba503355e9e5e5863da71dc58382a5052baf4829e"
+      }
+    ],
+    "regions": [
+      {
+        "page": 23,
+        "bbox": [
+          33.728,
+          15.872,
+          567.424,
+          814.432
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p23-U6",
+        "evidence": "Printed U6 compensation display and complete calculation grid. Independently inspected ruled boundaries preserve all response and diagram areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U6",
+        "bbox": [
+          33.728,
+          15.872,
+          75.72800000000001,
+          41.872
+        ],
+        "pixel_sha256": "82016f74aad0991e31703bcba503355e9e5e5863da71dc58382a5052baf4829e",
+        "audited_pixel_sha256": "82016f74aad0991e31703bcba503355e9e5e5863da71dc58382a5052baf4829e"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

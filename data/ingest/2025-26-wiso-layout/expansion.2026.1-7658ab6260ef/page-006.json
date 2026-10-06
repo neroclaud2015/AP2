@@ -1,0 +1,61 @@
+{
+  "key": "f8bffe3cc9ad3ecc52743fb485252a49cc7b70b99619d7e4d704288a188a838a",
+  "record_hash": "d508a7168a51dac5dc606d2e481e9236a8da263251879c4a440788e8dd41839d",
+  "record": {
+    "page": 6,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "U2 complete including functional classification table and result field.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-wiso-p6-U2",
+        "number": "U2",
+        "bbox": [
+          58.117,
+          55.094,
+          96.194,
+          82.141
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U2 visually read on cached physical page 6.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "03dc5e708527b75642758066096deb248aa464e4cbab00075906a938daa9943b"
+      }
+    ],
+    "regions": [
+      {
+        "page": 6,
+        "bbox": [
+          58.117,
+          55.094,
+          544.097,
+          783.341
+        ],
+        "role": "primary",
+        "owner": "2025-26-wiso-p6-U2",
+        "evidence": "U2 complete including functional classification table and result field. Region follows visible panel separators and includes all response choices/areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U2",
+        "bbox": [
+          58.117,
+          55.094,
+          96.194,
+          82.141
+        ],
+        "pixel_sha256": "03dc5e708527b75642758066096deb248aa464e4cbab00075906a938daa9943b",
+        "audited_pixel_sha256": "03dc5e708527b75642758066096deb248aa464e4cbab00075906a938daa9943b"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "key": "b80dc3be4b8bddf576d70a70629480b575870b937d1caedd29eeb715e227e639",
+  "record_hash": "9215fa1178ef229c2fc763a62b56c50cfe964c2b00fd4df2fea4c40d3deedf5d",
+  "record": {
+    "page": 12,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Cached physical page individually visually inspected; printed task headings, diagrams, choices and ruled boundaries verified.",
+    "anchors": [
+      {
+        "anchor_id": "2026-fa-p12-27",
+        "number": "27",
+        "bbox": [
+          53.568,
+          59.518,
+          96.72,
+          87.046
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 27 visually read on cached physical page 12.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "0a263c88ac62d94e411efc39e711960900e5d82d3658120eabb3032cc8b69af4"
+      },
+      {
+        "anchor_id": "2026-fa-p12-28",
+        "number": "28",
+        "bbox": [
+          53.568,
+          303.543,
+          96.72,
+          331.071
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 28 visually read on cached physical page 12.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "d779e753ccd83c875e72d5a5b7f95971d9234b800a259ffff61b4b5f515563f9"
+      }
+    ],
+    "regions": [
+      {
+        "page": 12,
+        "bbox": [
+          53.568,
+          59.518,
+          547.584,
+          298.335
+        ],
+        "role": "primary",
+        "owner": "2026-fa-p12-27",
+        "evidence": "Individually inspected printed heading and ruled panel: full question, options, diagrams, calculations and response fields retained without adjacent task contamination."
+      },
+      {
+        "page": 12,
+        "bbox": [
+          53.568,
+          303.543,
+          299.088,
+          539.385
+        ],
+        "role": "primary",
+        "owner": "2026-fa-p12-28",
+        "evidence": "Individually inspected printed heading and ruled panel: full question, options, diagrams, calculations and response fields retained without adjacent task contamination."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "27",
+        "bbox": [
+          53.568,
+          59.518,
+          96.72,
+          87.046
+        ],
+        "pixel_sha256": "0a263c88ac62d94e411efc39e711960900e5d82d3658120eabb3032cc8b69af4",
+        "audited_pixel_sha256": "0a263c88ac62d94e411efc39e711960900e5d82d3658120eabb3032cc8b69af4"
+      },
+      {
+        "kind": "heading",
+        "number": "28",
+        "bbox": [
+          53.568,
+          303.543,
+          96.72,
+          331.071
+        ],
+        "pixel_sha256": "d779e753ccd83c875e72d5a5b7f95971d9234b800a259ffff61b4b5f515563f9",
+        "audited_pixel_sha256": "d779e753ccd83c875e72d5a5b7f95971d9234b800a259ffff61b4b5f515563f9"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "key": "ec2e73babf00297aa197f6c2d53d50168468bc58ea16e74f2485c596978aa989",
+  "record_hash": "5789ed8cc63b25e0e567af6e19b4347ea9219b0cbe1c593b2d2a76b9781402dc",
+  "record": {
+    "page": 7,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Printed Q4 Q5 Q6 Q7 in four ruled panels.",
+    "anchors": [
+      {
+        "anchor_id": "2026-wiso-p7-4",
+        "number": "4",
+        "bbox": [
+          46.093,
+          24.041,
+          84.17,
+          51.087
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 4 visually read on cached physical page 7.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "7660c2589deb9e570e49619f1e6e03890c974b5eb46c31da7115078c146406b0"
+      },
+      {
+        "anchor_id": "2026-wiso-p7-5",
+        "number": "5",
+        "bbox": [
+          295.596,
+          24.041,
+          333.673,
+          51.087
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 5 visually read on cached physical page 7.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "c56c3335c4522b76d761cde17430e7dc96bddc79eaf8cc194a765429d9c8f8eb"
+      },
+      {
+        "anchor_id": "2026-wiso-p7-6",
+        "number": "6",
+        "bbox": [
+          46.093,
+          298.511,
+          84.17,
+          325.557
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 6 visually read on cached physical page 7.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "c9ea2aa38926813717074fa15c6d0b836beb46eeeac032ad825efb0fdefa1834"
+      },
+      {
+        "anchor_id": "2026-wiso-p7-7",
+        "number": "7",
+        "bbox": [
+          295.596,
+          298.511,
+          333.673,
+          325.557
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 7 visually read on cached physical page 7.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "0f0f3407fb2be11638ebf2b71cc816eb140d993b7b12372715901acdb225d634"
+      }
+    ],
+    "regions": [
+      {
+        "page": 7,
+        "bbox": [
+          46.093,
+          24.041,
+          289.584,
+          296.507
+        ],
+        "role": "primary",
+        "owner": "2026-wiso-p7-4",
+        "evidence": "Printed Q4 Q5 Q6 Q7 in four ruled panels. Region follows visible panel separators and includes all response choices/areas."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          295.596,
+          24.041,
+          535.079,
+          296.507
+        ],
+        "role": "primary",
+        "owner": "2026-wiso-p7-5",
+        "evidence": "Printed Q4 Q5 Q6 Q7 in four ruled panels. Region follows visible panel separators and includes all response choices/areas."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          46.093,
+          298.511,
+          289.584,
+          540.926
+        ],
+        "role": "primary",
+        "owner": "2026-wiso-p7-6",
+        "evidence": "Printed Q4 Q5 Q6 Q7 in four ruled panels. Region follows visible panel separators and includes all response choices/areas."
+      },
+      {
+        "page": 7,
+        "bbox": [
+          295.596,
+          298.511,
+          535.079,
+          540.926
+        ],
+        "role": "primary",
+        "owner": "2026-wiso-p7-7",
+        "evidence": "Printed Q4 Q5 Q6 Q7 in four ruled panels. Region follows visible panel separators and includes all response choices/areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "4",
+        "bbox": [
+          46.093,
+          24.041,
+          84.17,
+          51.087
+        ],
+        "pixel_sha256": "7660c2589deb9e570e49619f1e6e03890c974b5eb46c31da7115078c146406b0",
+        "audited_pixel_sha256": "7660c2589deb9e570e49619f1e6e03890c974b5eb46c31da7115078c146406b0"
+      },
+      {
+        "kind": "heading",
+        "number": "5",
+        "bbox": [
+          295.596,
+          24.041,
+          333.673,
+          51.087
+        ],
+        "pixel_sha256": "c56c3335c4522b76d761cde17430e7dc96bddc79eaf8cc194a765429d9c8f8eb",
+        "audited_pixel_sha256": "c56c3335c4522b76d761cde17430e7dc96bddc79eaf8cc194a765429d9c8f8eb"
+      },
+      {
+        "kind": "heading",
+        "number": "6",
+        "bbox": [
+          46.093,
+          298.511,
+          84.17,
+          325.557
+        ],
+        "pixel_sha256": "c9ea2aa38926813717074fa15c6d0b836beb46eeeac032ad825efb0fdefa1834",
+        "audited_pixel_sha256": "c9ea2aa38926813717074fa15c6d0b836beb46eeeac032ad825efb0fdefa1834"
+      },
+      {
+        "kind": "heading",
+        "number": "7",
+        "bbox": [
+          295.596,
+          298.511,
+          333.673,
+          325.557
+        ],
+        "pixel_sha256": "0f0f3407fb2be11638ebf2b71cc816eb140d993b7b12372715901acdb225d634",
+        "audited_pixel_sha256": "0f0f3407fb2be11638ebf2b71cc816eb140d993b7b12372715901acdb225d634"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "key": "34d83e808d8affc1e2e429899cf68fabfc714d03d16ff4e0a12e50e5a675ea90",
+  "record_hash": "ebedc55aa3265d0d1092e7124d8e171ec2773f227e134f55b4e9d3210ee0586a",
+  "record": {
+    "page": 18,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Printed U1 environmental materials and consumables, metal recycling chart and response table.",
+    "anchors": [
+      {
+        "anchor_id": "2026-ap-p18-U1",
+        "number": "U1",
+        "bbox": [
+          27.776,
+          14.88,
+          69.776,
+          40.88
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U1 visually read on cached physical page 18; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "af8ad3a1522006d411bf571e2b41b8488e80e2a1e2cf3f9a05e5b3403c5b04ab"
+      }
+    ],
+    "regions": [
+      {
+        "page": 18,
+        "bbox": [
+          27.776,
+          14.88,
+          560.48,
+          815.424
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p18-U1",
+        "evidence": "Printed U1 environmental materials and consumables, metal recycling chart and response table. Independently inspected ruled boundaries preserve all response and diagram areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U1",
+        "bbox": [
+          27.776,
+          14.88,
+          69.776,
+          40.88
+        ],
+        "pixel_sha256": "af8ad3a1522006d411bf571e2b41b8488e80e2a1e2cf3f9a05e5b3403c5b04ab",
+        "audited_pixel_sha256": "af8ad3a1522006d411bf571e2b41b8488e80e2a1e2cf3f9a05e5b3403c5b04ab"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

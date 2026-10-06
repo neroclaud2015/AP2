@@ -1,0 +1,149 @@
+{
+  "key": "1d3ce481bbfd2bb964669a24855fa730099c1cacd6864db27873112cc311b080",
+  "record_hash": "17ab7335d979c73aa04db35a1776051c51dca1565b0d61886c3b26e76c80d4d6",
+  "record": {
+    "page": 5,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Q9 dimensioned part drawing and separately labeled calculation grid; Q10 middle right; Q11 bolt diagram and calculation grid.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-ap-p5-9",
+        "number": "9",
+        "bbox": [
+          49.6,
+          57.536,
+          91.6,
+          83.536
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 9 visually read on cached physical page 5; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "39119ea7054fb86f8f66f4a8f59b7c9673e090c5cbcc4510e999b22f4b9efac1"
+      },
+      {
+        "anchor_id": "2025-26-ap-p5-10",
+        "number": "10",
+        "bbox": [
+          297.6,
+          298.592,
+          339.6,
+          324.592
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 10 visually read on cached physical page 5; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "bbb195f97d373e607a664cdd0fb6b6304abb63c383b0d1dc859124f070f12813"
+      },
+      {
+        "anchor_id": "2025-26-ap-p5-11",
+        "number": "11",
+        "bbox": [
+          49.6,
+          539.648,
+          91.6,
+          565.648
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 11 visually read on cached physical page 5; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "92df3491b8b17d3d6cdf235bc9f2af916f2e59e4f5169a8fcfaca2ded4644c86"
+      }
+    ],
+    "regions": [
+      {
+        "page": 5,
+        "bbox": [
+          49.6,
+          57.536,
+          540.64,
+          295.616
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p5-9",
+        "evidence": "Q9 dimensioned part drawing and separately labeled calculation grid; Q10 middle right; Q11 bolt diagram and calculation grid. Ruled boundaries include complete diagrams and response areas."
+      },
+      {
+        "page": 5,
+        "bbox": [
+          49.6,
+          298.592,
+          293.632,
+          536.672
+        ],
+        "role": "diagram",
+        "owner": "2025-26-ap-p5-9",
+        "evidence": "Q9 dimensioned part drawing and separately labeled calculation grid; Q10 middle right; Q11 bolt diagram and calculation grid. Ruled boundaries include complete diagrams and response areas."
+      },
+      {
+        "page": 5,
+        "bbox": [
+          297.6,
+          298.592,
+          540.64,
+          536.672
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p5-10",
+        "evidence": "Q9 dimensioned part drawing and separately labeled calculation grid; Q10 middle right; Q11 bolt diagram and calculation grid. Ruled boundaries include complete diagrams and response areas."
+      },
+      {
+        "page": 5,
+        "bbox": [
+          49.6,
+          539.648,
+          540.64,
+          782.688
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p5-11",
+        "evidence": "Q9 dimensioned part drawing and separately labeled calculation grid; Q10 middle right; Q11 bolt diagram and calculation grid. Ruled boundaries include complete diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "9",
+        "bbox": [
+          49.6,
+          57.536,
+          91.6,
+          83.536
+        ],
+        "pixel_sha256": "39119ea7054fb86f8f66f4a8f59b7c9673e090c5cbcc4510e999b22f4b9efac1",
+        "audited_pixel_sha256": "39119ea7054fb86f8f66f4a8f59b7c9673e090c5cbcc4510e999b22f4b9efac1"
+      },
+      {
+        "kind": "heading",
+        "number": "10",
+        "bbox": [
+          297.6,
+          298.592,
+          339.6,
+          324.592
+        ],
+        "pixel_sha256": "bbb195f97d373e607a664cdd0fb6b6304abb63c383b0d1dc859124f070f12813",
+        "audited_pixel_sha256": "bbb195f97d373e607a664cdd0fb6b6304abb63c383b0d1dc859124f070f12813"
+      },
+      {
+        "kind": "heading",
+        "number": "11",
+        "bbox": [
+          49.6,
+          539.648,
+          91.6,
+          565.648
+        ],
+        "pixel_sha256": "92df3491b8b17d3d6cdf235bc9f2af916f2e59e4f5169a8fcfaca2ded4644c86",
+        "audited_pixel_sha256": "92df3491b8b17d3d6cdf235bc9f2af916f2e59e4f5169a8fcfaca2ded4644c86"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

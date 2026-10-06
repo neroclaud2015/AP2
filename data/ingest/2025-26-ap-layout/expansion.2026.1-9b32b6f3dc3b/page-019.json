@@ -1,0 +1,61 @@
+{
+  "key": "1b21705349f96ef0db66ff0268988929cae8a60dee2aa65998b920fbe01a56b2",
+  "record_hash": "06d465ff743e1d520d5a5d12eb578bc64af7f64c321a1d2a522280280c7b9d4c",
+  "record": {
+    "page": 19,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Printed U4 cable dimensioning; duct photograph, three subparts and response grid.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-ap-p19-U4",
+        "number": "U4",
+        "bbox": [
+          32.736,
+          14.88,
+          74.73599999999999,
+          40.88
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U4 visually read on cached physical page 19; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "b8d1c634d800262c8780c13a30d959d1cfadaecfa56103991c8221675bc719b0"
+      }
+    ],
+    "regions": [
+      {
+        "page": 19,
+        "bbox": [
+          32.736,
+          14.88,
+          566.432,
+          813.44
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p19-U4",
+        "evidence": "Printed U4 cable dimensioning; duct photograph, three subparts and response grid. Ruled boundaries include complete diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U4",
+        "bbox": [
+          32.736,
+          14.88,
+          74.73599999999999,
+          40.88
+        ],
+        "pixel_sha256": "b8d1c634d800262c8780c13a30d959d1cfadaecfa56103991c8221675bc719b0",
+        "audited_pixel_sha256": "b8d1c634d800262c8780c13a30d959d1cfadaecfa56103991c8221675bc719b0"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

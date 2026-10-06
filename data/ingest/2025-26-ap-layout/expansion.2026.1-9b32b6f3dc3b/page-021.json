@@ -1,0 +1,61 @@
+{
+  "key": "7e7bed7219647d0dbd349140868ad9df5d17ca1b3448e0c5b33ad125eecf0861",
+  "record_hash": "be3038c2053852167df52a542ff063fa8d36912668983408116f0c8eae32533b",
+  "record": {
+    "page": 21,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Printed U6 explicitly refers to Blatt 2(2) Hydraulischer Schaltplan; full GRAFCET including bottom return.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-ap-p21-U6",
+        "number": "U6",
+        "bbox": [
+          32.736,
+          14.88,
+          74.73599999999999,
+          40.88
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U6 visually read on cached physical page 21; source image, not sequence inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "0d9e6ac283fec804b5250f7644bb6637c66a890520d7385bcfed0211e9d42e31"
+      }
+    ],
+    "regions": [
+      {
+        "page": 21,
+        "bbox": [
+          32.736,
+          14.88,
+          566.432,
+          813.44
+        ],
+        "role": "primary",
+        "owner": "2025-26-ap-p21-U6",
+        "evidence": "Printed U6 explicitly refers to Blatt 2(2) Hydraulischer Schaltplan; full GRAFCET including bottom return. Ruled boundaries include complete diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U6",
+        "bbox": [
+          32.736,
+          14.88,
+          74.73599999999999,
+          40.88
+        ],
+        "pixel_sha256": "0d9e6ac283fec804b5250f7644bb6637c66a890520d7385bcfed0211e9d42e31",
+        "audited_pixel_sha256": "0d9e6ac283fec804b5250f7644bb6637c66a890520d7385bcfed0211e9d42e31"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "key": "7579f86cc396df9eb778edb2694ce5cafdd658a197cee6ccc47375487fca1939",
+  "record_hash": "ab64beb99ca8eb04ffc4048f08a652f64b62d229fc812ce28fdf524a5e6e5277",
+  "record": {
+    "page": 21,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Individually visually inspected cached PNG: printed task anchors and panel boundaries confirmed.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-fa-p21-U8",
+        "number": "U8",
+        "bbox": [
+          41.664,
+          24.551,
+          84.816,
+          52.079
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U8 visually read on cached physical page 21.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "1516436e08ba8ca3d02850e2529f3a880cd22b0f53bb541cd3248d75e2ba68af"
+      }
+    ],
+    "regions": [
+      {
+        "page": 21,
+        "bbox": [
+          41.664,
+          24.551,
+          520.8,
+          811.681
+        ],
+        "role": "primary",
+        "owner": "2025-26-fa-p21-U8",
+        "evidence": "Visual inspection of printed heading, question text, all options/diagrams and ruled boundaries. Separate calculation panel assigned by its printed task number."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U8",
+        "bbox": [
+          41.664,
+          24.551,
+          84.816,
+          52.079
+        ],
+        "pixel_sha256": "1516436e08ba8ca3d02850e2529f3a880cd22b0f53bb541cd3248d75e2ba68af",
+        "audited_pixel_sha256": "1516436e08ba8ca3d02850e2529f3a880cd22b0f53bb541cd3248d75e2ba68af"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

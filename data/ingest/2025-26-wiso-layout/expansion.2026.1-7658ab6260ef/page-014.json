@@ -1,0 +1,61 @@
+{
+  "key": "da8d9f94ecdb726d5bf54bd6335cc6011e920e3fd0a01f5e7f01a2f24e2a63a3",
+  "record_hash": "88242026b7e3c038f6048286224b6ae6bdc4e5b5bdb8abd7567f8fd08dbc5bcf",
+  "record": {
+    "page": 14,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "U6 complete cloze passage and result field.",
+    "anchors": [
+      {
+        "anchor_id": "2025-26-wiso-p14-U6",
+        "number": "U6",
+        "bbox": [
+          58.117,
+          54.093,
+          96.194,
+          81.139
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U6 visually read on cached physical page 14.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "f9ee0d30126206cfb583e47d1b8fb0fcee294460653102abb2dc40c19255b8cf"
+      }
+    ],
+    "regions": [
+      {
+        "page": 14,
+        "bbox": [
+          58.117,
+          54.093,
+          544.097,
+          782.339
+        ],
+        "role": "primary",
+        "owner": "2025-26-wiso-p14-U6",
+        "evidence": "U6 complete cloze passage and result field. Region follows visible panel separators and includes all response choices/areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U6",
+        "bbox": [
+          58.117,
+          54.093,
+          96.194,
+          81.139
+        ],
+        "pixel_sha256": "f9ee0d30126206cfb583e47d1b8fb0fcee294460653102abb2dc40c19255b8cf",
+        "audited_pixel_sha256": "f9ee0d30126206cfb583e47d1b8fb0fcee294460653102abb2dc40c19255b8cf"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

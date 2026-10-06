@@ -1,0 +1,99 @@
+{
+  "key": "0ab3c364caff402438c34d0a38bab8be15e4ce07ac4363e82b63ca6cd5898da7",
+  "record_hash": "1b6f0752cfaeda108a4fbdde4629e5195ddd5898e2bcac2b710a84782730a75b",
+  "record": {
+    "page": 6,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Q9 full hydraulic maintenance interval table; Q10 split ball-screw nut section.",
+    "anchors": [
+      {
+        "anchor_id": "2026-ap-p6-9",
+        "number": "9",
+        "bbox": [
+          56.544,
+          56.544,
+          98.544,
+          82.544
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 9 visually read on cached physical page 6; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "0103ccfe778723acb05ee82b190c2d01f46fe084066552f7e121a8fbbe5e16be"
+      },
+      {
+        "anchor_id": "2026-ap-p6-10",
+        "number": "10",
+        "bbox": [
+          56.544,
+          538.656,
+          98.544,
+          564.656
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 10 visually read on cached physical page 6; no order-based inference.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "6f48087280c60d1854b200db047d21dfea0d303c030f38745d59cdbbf05e1258"
+      }
+    ],
+    "regions": [
+      {
+        "page": 6,
+        "bbox": [
+          56.544,
+          56.544,
+          547.584,
+          535.68
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p6-9",
+        "evidence": "Q9 full hydraulic maintenance interval table; Q10 split ball-screw nut section. Independently inspected ruled boundaries preserve all response and diagram areas."
+      },
+      {
+        "page": 6,
+        "bbox": [
+          56.544,
+          538.656,
+          547.584,
+          782.688
+        ],
+        "role": "primary",
+        "owner": "2026-ap-p6-10",
+        "evidence": "Q9 full hydraulic maintenance interval table; Q10 split ball-screw nut section. Independently inspected ruled boundaries preserve all response and diagram areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "9",
+        "bbox": [
+          56.544,
+          56.544,
+          98.544,
+          82.544
+        ],
+        "pixel_sha256": "0103ccfe778723acb05ee82b190c2d01f46fe084066552f7e121a8fbbe5e16be",
+        "audited_pixel_sha256": "0103ccfe778723acb05ee82b190c2d01f46fe084066552f7e121a8fbbe5e16be"
+      },
+      {
+        "kind": "heading",
+        "number": "10",
+        "bbox": [
+          56.544,
+          538.656,
+          98.544,
+          564.656
+        ],
+        "pixel_sha256": "6f48087280c60d1854b200db047d21dfea0d303c030f38745d59cdbbf05e1258",
+        "audited_pixel_sha256": "6f48087280c60d1854b200db047d21dfea0d303c030f38745d59cdbbf05e1258"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}
