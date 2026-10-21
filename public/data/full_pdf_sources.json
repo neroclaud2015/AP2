@@ -497,6 +497,27 @@
       "pages": 16,
       "bytes": 928286,
       "filename": "AP2_Mech_S_26_WiSo.pdf"
+    },
+    "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b": {
+      "path": "assets/pdfs/6b251e40510bcc273fad437b.pdf",
+      "sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "pages": 26,
+      "bytes": 1751216,
+      "filename": "2023 Sommer/Mech_S_23_FA_A&B&Zeichnungen.pdf"
+    },
+    "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da": {
+      "path": "assets/pdfs/b645f32a1bb671af98f45733.pdf",
+      "sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "pages": 16,
+      "bytes": 1761739,
+      "filename": "2023 Sommer/Mech_S_23_Lösungen.pdf"
+    },
+    "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56": {
+      "path": "assets/pdfs/1b4a24e509b2108e32be081e.pdf",
+      "sha256": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "pages": 18,
+      "bytes": 1221279,
+      "filename": "2023 Sommer/Mech_S_23_WiSo.pdf"
     }
   },
   "aliases": {
@@ -637,7 +658,13 @@
     "assets/pdfs/c7ce40ac20ce334e934c5ea7.pdf": "c7ce40ac20ce334e934c5ea71e664bfb85dea01cd4bc7264fa311f07e2b18109",
     "AP2_Mech_S_26_FA_A&B&Zeichnungen.pdf": "c7ce40ac20ce334e934c5ea71e664bfb85dea01cd4bc7264fa311f07e2b18109",
     "assets/pdfs/0e47f220c07a50957927922b.pdf": "0e47f220c07a50957927922b4376c3f69b20a5b9160a93b3a49df873656140b6",
-    "AP2_Mech_S_26_WiSo.pdf": "0e47f220c07a50957927922b4376c3f69b20a5b9160a93b3a49df873656140b6"
+    "AP2_Mech_S_26_WiSo.pdf": "0e47f220c07a50957927922b4376c3f69b20a5b9160a93b3a49df873656140b6",
+    "assets/pdfs/6b251e40510bcc273fad437b.pdf": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+    "2023 Sommer/Mech_S_23_FA_A&B&Zeichnungen.pdf": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+    "assets/pdfs/b645f32a1bb671af98f45733.pdf": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+    "2023 Sommer/Mech_S_23_Lösungen.pdf": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+    "assets/pdfs/1b4a24e509b2108e32be081e.pdf": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+    "2023 Sommer/Mech_S_23_WiSo.pdf": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56"
   },
   "questions": {
     "2018-19-ap-p10-22": {
@@ -8439,6 +8466,306 @@
       "question": "0e47f220c07a50957927922b4376c3f69b20a5b9160a93b3a49df873656140b6",
       "solution": "96655f6e21d22758432cb45c9cd677d1f5fd04cb011effb66baad550d8e2835e",
       "solution_page": 15
+    },
+    "2023-fa-complete-p3-1": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p3-2": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p4-3": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p4-4": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p4-5": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p4-6": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p4-7": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p5-8": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p5-9": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p5-10": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p6-11": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p6-12": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p6-13": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p6-14": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p6-15": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p7-16": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p7-17": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p7-18": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p8-19": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p8-20": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p8-21": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p8-22": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p9-23": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p9-24": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p10-25": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p10-26": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p10-27": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p10-28": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 2
+    },
+    "2023-fa-complete-p16-U1": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 10
+    },
+    "2023-fa-complete-p17-U2": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 10
+    },
+    "2023-fa-complete-p18-U3": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 11
+    },
+    "2023-fa-complete-p20-U4": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 11
+    },
+    "2023-fa-complete-p21-U5": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 12
+    },
+    "2023-fa-complete-p22-U6": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 12
+    },
+    "2023-fa-complete-p23-U7": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 13
+    },
+    "2023-fa-complete-p24-U8": {
+      "question": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 13
+    },
+    "2023-wiso-complete-p7-1": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 3
+    },
+    "2023-wiso-complete-p7-2": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 3
+    },
+    "2023-wiso-complete-p7-3": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 3
+    },
+    "2023-wiso-complete-p7-4": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 3
+    },
+    "2023-wiso-complete-p9-5": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 3
+    },
+    "2023-wiso-complete-p9-6": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 3
+    },
+    "2023-wiso-complete-p11-7": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 3
+    },
+    "2023-wiso-complete-p11-8": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 3
+    },
+    "2023-wiso-complete-p13-9": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 3
+    },
+    "2023-wiso-complete-p13-10": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 3
+    },
+    "2023-wiso-complete-p13-11": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 3
+    },
+    "2023-wiso-complete-p13-12": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 3
+    },
+    "2023-wiso-complete-p15-13": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 3
+    },
+    "2023-wiso-complete-p15-14": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 3
+    },
+    "2023-wiso-complete-p15-15": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 3
+    },
+    "2023-wiso-complete-p17-16": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 3
+    },
+    "2023-wiso-complete-p17-17": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 3
+    },
+    "2023-wiso-complete-p17-18": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 3
+    },
+    "2023-wiso-complete-p6-U1": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 14
+    },
+    "2023-wiso-complete-p8-U2": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 14
+    },
+    "2023-wiso-complete-p10-U3": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 15
+    },
+    "2023-wiso-complete-p12-U4": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 15
+    },
+    "2023-wiso-complete-p14-U5": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 16
+    },
+    "2023-wiso-complete-p16-U6": {
+      "question": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "solution": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "solution_page": 16
     }
   }
 }

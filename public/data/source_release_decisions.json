@@ -63,7 +63,13 @@
         "updated_at": "2026-09-30T14:17:50.758Z"
       },
       "confirmation_source": "data/reviews/overnight-user-export-2026-09-30-2.json",
-      "does_not_assert_complete_sources": true
+      "does_not_assert_complete_sources": true,
+      "source_completion": {
+        "status": "production",
+        "report": "evidence/source-completion-2023-2024/",
+        "date": "2026-10-21",
+        "basis": "New complete source supplied; original manual decision retained as history."
+      }
     },
     {
       "review_id": "2023_sommer-wiso-missing-source",
@@ -81,7 +87,13 @@
         "updated_at": "2026-09-30T14:18:16.364Z"
       },
       "confirmation_source": "data/reviews/overnight-user-export-2026-09-30-2.json",
-      "does_not_assert_complete_sources": true
+      "does_not_assert_complete_sources": true,
+      "source_completion": {
+        "status": "production",
+        "report": "evidence/source-completion-2023-2024/",
+        "date": "2026-10-21",
+        "basis": "New complete source supplied; original manual decision retained as history."
+      }
     }
   ]
 }

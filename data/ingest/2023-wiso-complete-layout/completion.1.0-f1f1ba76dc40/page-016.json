@@ -1,0 +1,61 @@
+{
+  "key": "a35fd5d880967547c5d34b0923bbd51a9d3b757c17f07ddd7f584628e353a853",
+  "record_hash": "2df691e1682a38c89a5523f5a60ab7c880c513146e45b8ce1d143d2816318fb0",
+  "record": {
+    "page": 16,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "U6 EU employment and Europass subparts 1-4, complete.",
+    "anchors": [
+      {
+        "anchor_id": "2023-wiso-complete-p16-U6",
+        "number": "U6",
+        "bbox": [
+          68.55999755859375,
+          59.71247482299805,
+          96.2030029296875,
+          89.13147735595703
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U6 visually read on cached physical page 16.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "6f8cefa72c8fed8daf566b6cfd6c78afe59a0b5ffd31c0ece966a17d453f8460"
+      }
+    ],
+    "regions": [
+      {
+        "page": 16,
+        "bbox": [
+          61,
+          56,
+          546,
+          790
+        ],
+        "role": "primary",
+        "owner": "2023-wiso-complete-p16-U6",
+        "evidence": "U6 EU employment and Europass subparts 1-4, complete. Explicit panel includes all text, options, diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U6",
+        "bbox": [
+          68.55999755859375,
+          59.71247482299805,
+          96.2030029296875,
+          89.13147735595703
+        ],
+        "pixel_sha256": "6f8cefa72c8fed8daf566b6cfd6c78afe59a0b5ffd31c0ece966a17d453f8460",
+        "audited_pixel_sha256": "6f8cefa72c8fed8daf566b6cfd6c78afe59a0b5ffd31c0ece966a17d453f8460"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

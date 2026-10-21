@@ -1,0 +1,46 @@
+{
+  "key": "9e3dfd28f7cb282fcff206b19c27fc701de9543e8577b584cc64677e89dac1eb",
+  "record_hash": "ee31588bc906c4b1e16319abfaf5441d03f89c2b691b0316eda1c8820e02cd6c",
+  "record": {
+    "page": 19,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "continuation",
+    "classification_evidence": "Printed Ergebnis U3 proves ownership of subparts 2 and 3.",
+    "anchors": [],
+    "regions": [
+      {
+        "page": 19,
+        "bbox": [
+          33.48,
+          17.8555,
+          513.36,
+          807.217
+        ],
+        "role": "continuation",
+        "owner": "2023-fa-complete-p18-U3",
+        "evidence": "Printed Ergebnis U3 on physical page 19; subparts 2/3 continue U3 hydraulic question from page18."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "ownership",
+        "number": "U3",
+        "bbox": [
+          514.104,
+          742.4908,
+          555.024,
+          765.5542
+        ],
+        "pixel_sha256": "82c03973f1dfc3a066328a6ddcbb9255b16cfa9a6191466f79925ef9a792a908",
+        "audited_pixel_sha256": "82c03973f1dfc3a066328a6ddcbb9255b16cfa9a6191466f79925ef9a792a908"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

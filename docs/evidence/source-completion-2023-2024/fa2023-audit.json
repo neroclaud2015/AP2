@@ -1,0 +1,1958 @@
+{
+  "source_sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+  "source_id": "src-8278d0ec73126136a3acac88",
+  "profile": "scripts/layout_profiles/sommer2023_fa_complete.json",
+  "physical_pages_inspected": 26,
+  "page_image_hashes": {
+    "1": "59d132395d53b678c17ed536db91233136e5f397f0af7876c37def256c8bf5b8",
+    "2": "7eab0279362215ae33bc14cd65ef281784a9a4c00bac6a558701602390f531b2",
+    "3": "0651d0f0067ca7c31bd907f9f017e1d401f126724a4004671c84db215f0776c1",
+    "4": "05fe4a709a89ef4f22a5f8328ceeb78562ad878d1c5adfaff17eef4459dcd541",
+    "5": "5ce9aad6fad12c245453df2b19797d1582ad527b6903786f474993d4e23f3950",
+    "6": "388150d54c7214dbca8eeb7db7b0ba96641b9a2e97d41c85bc3717cc7363b452",
+    "7": "5ac94b405e8cd525367049b13b1d507f9018aea5c82a48fa280b4d1f736ce71a",
+    "8": "5770c378ab6928feff931cd7b34913cf3d7da43d3472845842fc7a566cac9970",
+    "9": "52516843297c511713d99383ce4a4c01235b062a0f5136be52798b0181ae75a0",
+    "10": "cedf9701108c794a04c5e7e3845eea2fba65e0624228586c2df7703ca45f24de",
+    "11": "b5cdf60346cb7fcd191541fc1fadb88595fab495f69b96e3b4dade523545f649",
+    "12": "fd8caece75fba334d4e3cd1908826167a9270b7a5e1072270c7b20e3040dcc21",
+    "13": "fb1b77469a693690a0ded870b215ab84bd57da3948e196c93d2d6b69245ee3d1",
+    "14": "8a15e053bf95035130d21e087270278669668e967d6a1d4434e9bc0426c99f2c",
+    "15": "1afdcdf2a33ffcc0084306efc0ea52d35aadea66c15d089698b29c3cc4033f9e",
+    "16": "b2ad8b4d94778fda5a64e21ae92b0c6217a4eba73a0ff8aa5e65da84b7542a00",
+    "17": "8428714af879da3004546d3fe1de34e1aa8c017c8d752075bd9174ff59e17146",
+    "18": "ea61871a0b43b2b5b5bb8e06f166cb1f922a06e0d6eb21144ad86fc6342eff01",
+    "19": "d0193ab3c3f536e4f927d2cf7cb4b60deb5fd0a7d57137602b25347901671d9f",
+    "20": "faf075ba31e197ac836244ac50137b317b9a83e4d549e761df641df1ee28d1de",
+    "21": "227a65b78e635b2e8c383a787765ea553b5cc427ae3f5b167964ca873d7ae802",
+    "22": "30e87704c370504d8d9eb9b24e688293d89403d932de2e748c9e8a894d8fc573",
+    "23": "1dd8898fd3ff75c374b0fcbfa2ae8c6ceef43ceb4e30700713b6de7cf6932426",
+    "24": "e536e14ab84d239e5dd40bf92184adb1f61e1b1bcc06b0d471a0d6beeef95e24",
+    "25": "85835d8e2e8912b1ec53bd49d769b00ef0320127b7d83827c0a5d24445140ddf",
+    "26": "3ae11616e5c8cf308fb40601a9b27b6521fefd8a80250297b1d8912c25bae460"
+  },
+  "validation": {
+    "status": "compatible",
+    "observed": 36,
+    "expected": 36,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 26
+  },
+  "counts": {
+    "questions": 36,
+    "closed": 28,
+    "open": 8,
+    "continuations": 1,
+    "attachments": 2,
+    "blank_pages": 2
+  },
+  "clean_U7_U8": {
+    "U7": {
+      "page": 23,
+      "result": "No handwritten annotations; blank response grids; printed diagram/table complete."
+    },
+    "U8": {
+      "page": 24,
+      "result": "No handwritten annotations; blank response table/grid; only printed example clothing row filled."
+    }
+  },
+  "missing": [],
+  "ambiguous": [],
+  "printed_timing": {
+    "minutes": 105,
+    "pages": [
+      2,
+      14
+    ]
+  },
+  "records": [
+    {
+      "page": 1,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "context_or_cover",
+      "classification_evidence": "Sommer2023 Funktionsanalyse Teil A cover.",
+      "anchors": [],
+      "regions": [],
+      "proofs": [],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 2,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "context_or_cover",
+      "classification_evidence": "Instructions: 105 minutes total, 28 closed and8 open tasks, one A4 attachment.",
+      "anchors": [],
+      "regions": [],
+      "proofs": [],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 3,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "Individually inspected cached physical page.",
+      "anchors": [
+        {
+          "anchor_id": "2023-fa-complete-p3-1",
+          "number": "1",
+          "bbox": [
+            42.408,
+            296.1036,
+            78.12,
+            324.3747
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 1 visually read on physical page 3.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "b7f05db0974403f9b9ef417a61eaa167e9c636e5ebb3538ce34c08b4dc52634b"
+        },
+        {
+          "anchor_id": "2023-fa-complete-p3-2",
+          "number": "2",
+          "bbox": [
+            290.16,
+            296.1036,
+            325.872,
+            324.3747
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 2 visually read on physical page 3.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "0e51ce9566c35e80b3d8c83ae1de93619452d6d3c639e7598b5f87bab38def9b"
+        }
+      ],
+      "regions": [
+        {
+          "page": 3,
+          "bbox": [
+            42.408,
+            296.1036,
+            283.464,
+            530.4569
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p3-1",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 3,
+          "bbox": [
+            290.16,
+            296.1036,
+            528.24,
+            530.4569
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p3-2",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 3,
+          "bbox": [
+            41.664,
+            531.9448,
+            526.752,
+            776.7138
+          ],
+          "role": "diagram",
+          "owner": "2023-fa-complete-p3-2",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "1",
+          "bbox": [
+            42.408,
+            296.1036,
+            78.12,
+            324.3747
+          ],
+          "pixel_sha256": "b7f05db0974403f9b9ef417a61eaa167e9c636e5ebb3538ce34c08b4dc52634b",
+          "audited_pixel_sha256": "b7f05db0974403f9b9ef417a61eaa167e9c636e5ebb3538ce34c08b4dc52634b"
+        },
+        {
+          "kind": "heading",
+          "number": "2",
+          "bbox": [
+            290.16,
+            296.1036,
+            325.872,
+            324.3747
+          ],
+          "pixel_sha256": "0e51ce9566c35e80b3d8c83ae1de93619452d6d3c639e7598b5f87bab38def9b",
+          "audited_pixel_sha256": "0e51ce9566c35e80b3d8c83ae1de93619452d6d3c639e7598b5f87bab38def9b"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 4,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "Individually inspected cached physical page.",
+      "anchors": [
+        {
+          "anchor_id": "2023-fa-complete-p4-3",
+          "number": "3",
+          "bbox": [
+            60.264,
+            60.2623,
+            95.976,
+            88.5335
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 3 visually read on physical page 4.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "bb7ff3d111981d2136e510ab3fee28bfb6f465d125d39305a6b24fffc1430725"
+        },
+        {
+          "anchor_id": "2023-fa-complete-p4-4",
+          "number": "4",
+          "bbox": [
+            61.008,
+            301.3114,
+            96.72,
+            329.5826
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 4 visually read on physical page 4.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "2fd0e981206bc1b5044322c37b2fda5313c578bea2c734b41c4ba620a69e9750"
+        },
+        {
+          "anchor_id": "2023-fa-complete-p4-5",
+          "number": "5",
+          "bbox": [
+            308.016,
+            301.3114,
+            343.728,
+            329.5826
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 5 visually read on physical page 4.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "b1b6bdb5c20084aa649f185f6e425c1fcd04ac0127abc7750e3aa3d9491e296e"
+        },
+        {
+          "anchor_id": "2023-fa-complete-p4-6",
+          "number": "6",
+          "bbox": [
+            61.752,
+            544.5925,
+            97.464,
+            572.8637
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 6 visually read on physical page 4.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "dec0586cd61c6088807a13f4cb691205fa1f78eac42d1d2ae42e5a831b035e9b"
+        },
+        {
+          "anchor_id": "2023-fa-complete-p4-7",
+          "number": "7",
+          "bbox": [
+            309.504,
+            544.5925,
+            345.216,
+            572.8637
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 7 visually read on physical page 4.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "889c2fb26d5f1c08d3da16951035df2997f540acb92832d9a634230c82c72329"
+        }
+      ],
+      "regions": [
+        {
+          "page": 4,
+          "bbox": [
+            60.264,
+            60.2623,
+            545.352,
+            295.3596
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p4-3",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 4,
+          "bbox": [
+            61.008,
+            301.3114,
+            302.064,
+            537.8967
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p4-4",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 4,
+          "bbox": [
+            308.016,
+            301.3114,
+            546.096,
+            537.8967
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p4-5",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 4,
+          "bbox": [
+            61.752,
+            544.5925,
+            302.808,
+            785.6416
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p4-6",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 4,
+          "bbox": [
+            309.504,
+            544.5925,
+            546.84,
+            785.6416
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p4-7",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "3",
+          "bbox": [
+            60.264,
+            60.2623,
+            95.976,
+            88.5335
+          ],
+          "pixel_sha256": "bb7ff3d111981d2136e510ab3fee28bfb6f465d125d39305a6b24fffc1430725",
+          "audited_pixel_sha256": "bb7ff3d111981d2136e510ab3fee28bfb6f465d125d39305a6b24fffc1430725"
+        },
+        {
+          "kind": "heading",
+          "number": "4",
+          "bbox": [
+            61.008,
+            301.3114,
+            96.72,
+            329.5826
+          ],
+          "pixel_sha256": "2fd0e981206bc1b5044322c37b2fda5313c578bea2c734b41c4ba620a69e9750",
+          "audited_pixel_sha256": "2fd0e981206bc1b5044322c37b2fda5313c578bea2c734b41c4ba620a69e9750"
+        },
+        {
+          "kind": "heading",
+          "number": "5",
+          "bbox": [
+            308.016,
+            301.3114,
+            343.728,
+            329.5826
+          ],
+          "pixel_sha256": "b1b6bdb5c20084aa649f185f6e425c1fcd04ac0127abc7750e3aa3d9491e296e",
+          "audited_pixel_sha256": "b1b6bdb5c20084aa649f185f6e425c1fcd04ac0127abc7750e3aa3d9491e296e"
+        },
+        {
+          "kind": "heading",
+          "number": "6",
+          "bbox": [
+            61.752,
+            544.5925,
+            97.464,
+            572.8637
+          ],
+          "pixel_sha256": "dec0586cd61c6088807a13f4cb691205fa1f78eac42d1d2ae42e5a831b035e9b",
+          "audited_pixel_sha256": "dec0586cd61c6088807a13f4cb691205fa1f78eac42d1d2ae42e5a831b035e9b"
+        },
+        {
+          "kind": "heading",
+          "number": "7",
+          "bbox": [
+            309.504,
+            544.5925,
+            345.216,
+            572.8637
+          ],
+          "pixel_sha256": "889c2fb26d5f1c08d3da16951035df2997f540acb92832d9a634230c82c72329",
+          "audited_pixel_sha256": "889c2fb26d5f1c08d3da16951035df2997f540acb92832d9a634230c82c72329"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 5,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "Individually inspected cached physical page.",
+      "anchors": [
+        {
+          "anchor_id": "2023-fa-complete-p5-8",
+          "number": "8",
+          "bbox": [
+            43.152,
+            52.0785,
+            78.864,
+            80.3497
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 8 visually read on physical page 5.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "4ab17092958e824a070bd755426beba3dcfacff8673cbe6d5d470fe9261ec9ab"
+        },
+        {
+          "anchor_id": "2023-fa-complete-p5-9",
+          "number": "9",
+          "bbox": [
+            42.408,
+            296.1036,
+            78.12,
+            324.3747
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 9 visually read on physical page 5.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "d799174fa8aeba8a5ddfd32eab7f255cee2dd8d39d923d186949b77b4055d4b1"
+        },
+        {
+          "anchor_id": "2023-fa-complete-p5-10",
+          "number": "10",
+          "bbox": [
+            291.648,
+            296.1036,
+            327.36,
+            324.3747
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 10 visually read on physical page 5.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "965703f14c24e6859974cb8075b5b94da098828de4e88863878187996343cff1"
+        }
+      ],
+      "regions": [
+        {
+          "page": 5,
+          "bbox": [
+            43.152,
+            52.0785,
+            529.728,
+            290.1517
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p5-8",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 5,
+          "bbox": [
+            42.408,
+            296.1036,
+            284.208,
+            532.6888
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p5-9",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 5,
+          "bbox": [
+            291.648,
+            296.1036,
+            529.728,
+            532.6888
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p5-10",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 5,
+          "bbox": [
+            178.56,
+            537.1527,
+            528.984,
+            779.6898
+          ],
+          "role": "diagram",
+          "owner": "2023-fa-complete-p5-10",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "8",
+          "bbox": [
+            43.152,
+            52.0785,
+            78.864,
+            80.3497
+          ],
+          "pixel_sha256": "4ab17092958e824a070bd755426beba3dcfacff8673cbe6d5d470fe9261ec9ab",
+          "audited_pixel_sha256": "4ab17092958e824a070bd755426beba3dcfacff8673cbe6d5d470fe9261ec9ab"
+        },
+        {
+          "kind": "heading",
+          "number": "9",
+          "bbox": [
+            42.408,
+            296.1036,
+            78.12,
+            324.3747
+          ],
+          "pixel_sha256": "d799174fa8aeba8a5ddfd32eab7f255cee2dd8d39d923d186949b77b4055d4b1",
+          "audited_pixel_sha256": "d799174fa8aeba8a5ddfd32eab7f255cee2dd8d39d923d186949b77b4055d4b1"
+        },
+        {
+          "kind": "heading",
+          "number": "10",
+          "bbox": [
+            291.648,
+            296.1036,
+            327.36,
+            324.3747
+          ],
+          "pixel_sha256": "965703f14c24e6859974cb8075b5b94da098828de4e88863878187996343cff1",
+          "audited_pixel_sha256": "965703f14c24e6859974cb8075b5b94da098828de4e88863878187996343cff1"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 6,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "Individually inspected cached physical page.",
+      "anchors": [
+        {
+          "anchor_id": "2023-fa-complete-p6-11",
+          "number": "11",
+          "bbox": [
+            59.52,
+            59.5183,
+            95.232,
+            87.7895
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 11 visually read on physical page 6.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "2b64675c109f895a46321f201d092df3dccd06d2870c44af9adfac5c995b89eb"
+        },
+        {
+          "anchor_id": "2023-fa-complete-p6-12",
+          "number": "12",
+          "bbox": [
+            308.016,
+            59.5183,
+            343.728,
+            87.7895
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 12 visually read on physical page 6.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "aba4abfa8923103ba27dc147204b9af5b02bfc582779894af181d83129b88b6b"
+        },
+        {
+          "anchor_id": "2023-fa-complete-p6-13",
+          "number": "13",
+          "bbox": [
+            60.264,
+            301.3114,
+            95.976,
+            329.5826
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 13 visually read on physical page 6.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "ea8f1a3d87c8edda609b26c8398859b425d221ec83a1ff9fe64738cce0386a56"
+        },
+        {
+          "anchor_id": "2023-fa-complete-p6-14",
+          "number": "14",
+          "bbox": [
+            61.008,
+            544.5925,
+            96.72,
+            572.8637
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 14 visually read on physical page 6.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "8d36975cb7f295ad93c9e51944d743d7aa308c0ba7a07fc33b81eec207db4257"
+        },
+        {
+          "anchor_id": "2023-fa-complete-p6-15",
+          "number": "15",
+          "bbox": [
+            308.76,
+            544.5925,
+            344.472,
+            572.8637
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 15 visually read on physical page 6.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "84295acbb295d5d7189077acf7f2345329a0c0d9c4ad341cab7429e453f00bdd"
+        }
+      ],
+      "regions": [
+        {
+          "page": 6,
+          "bbox": [
+            59.52,
+            59.5183,
+            300.576,
+            296.8475
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p6-11",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 6,
+          "bbox": [
+            308.016,
+            59.5183,
+            546.84,
+            296.8475
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p6-12",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 6,
+          "bbox": [
+            60.264,
+            301.3114,
+            546.84,
+            540.1286
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p6-13",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 6,
+          "bbox": [
+            61.008,
+            544.5925,
+            301.32,
+            784.1536
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p6-14",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 6,
+          "bbox": [
+            308.76,
+            544.5925,
+            547.584,
+            784.1536
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p6-15",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "11",
+          "bbox": [
+            59.52,
+            59.5183,
+            95.232,
+            87.7895
+          ],
+          "pixel_sha256": "2b64675c109f895a46321f201d092df3dccd06d2870c44af9adfac5c995b89eb",
+          "audited_pixel_sha256": "2b64675c109f895a46321f201d092df3dccd06d2870c44af9adfac5c995b89eb"
+        },
+        {
+          "kind": "heading",
+          "number": "12",
+          "bbox": [
+            308.016,
+            59.5183,
+            343.728,
+            87.7895
+          ],
+          "pixel_sha256": "aba4abfa8923103ba27dc147204b9af5b02bfc582779894af181d83129b88b6b",
+          "audited_pixel_sha256": "aba4abfa8923103ba27dc147204b9af5b02bfc582779894af181d83129b88b6b"
+        },
+        {
+          "kind": "heading",
+          "number": "13",
+          "bbox": [
+            60.264,
+            301.3114,
+            95.976,
+            329.5826
+          ],
+          "pixel_sha256": "ea8f1a3d87c8edda609b26c8398859b425d221ec83a1ff9fe64738cce0386a56",
+          "audited_pixel_sha256": "ea8f1a3d87c8edda609b26c8398859b425d221ec83a1ff9fe64738cce0386a56"
+        },
+        {
+          "kind": "heading",
+          "number": "14",
+          "bbox": [
+            61.008,
+            544.5925,
+            96.72,
+            572.8637
+          ],
+          "pixel_sha256": "8d36975cb7f295ad93c9e51944d743d7aa308c0ba7a07fc33b81eec207db4257",
+          "audited_pixel_sha256": "8d36975cb7f295ad93c9e51944d743d7aa308c0ba7a07fc33b81eec207db4257"
+        },
+        {
+          "kind": "heading",
+          "number": "15",
+          "bbox": [
+            308.76,
+            544.5925,
+            344.472,
+            572.8637
+          ],
+          "pixel_sha256": "84295acbb295d5d7189077acf7f2345329a0c0d9c4ad341cab7429e453f00bdd",
+          "audited_pixel_sha256": "84295acbb295d5d7189077acf7f2345329a0c0d9c4ad341cab7429e453f00bdd"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 7,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "Individually inspected cached physical page.",
+      "anchors": [
+        {
+          "anchor_id": "2023-fa-complete-p7-16",
+          "number": "16",
+          "bbox": [
+            43.896,
+            51.3345,
+            79.608,
+            79.6057
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 16 visually read on physical page 7.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "fce446d277f4cb6974fe8137798ec08efcd1af290707ca2eb87584fbd9f2484d"
+        },
+        {
+          "anchor_id": "2023-fa-complete-p7-17",
+          "number": "17",
+          "bbox": [
+            43.152,
+            536.4087,
+            78.864,
+            564.6799
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 17 visually read on physical page 7.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "9ed546de8b04e8d38b7a9c69f3d7b8998af3f18433eaabd1637ed94d20b1e79f"
+        },
+        {
+          "anchor_id": "2023-fa-complete-p7-18",
+          "number": "18",
+          "bbox": [
+            291.648,
+            536.4087,
+            327.36,
+            564.6799
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 18 visually read on physical page 7.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "64dc54e869f630807ab2b0f2ae25172ae7d1d62b5e545f1f0ef1cbba3a74dc4d"
+        }
+      ],
+      "regions": [
+        {
+          "page": 7,
+          "bbox": [
+            43.896,
+            51.3345,
+            530.472,
+            532.6888
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p7-16",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 7,
+          "bbox": [
+            43.152,
+            536.4087,
+            284.952,
+            776.7138
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p7-17",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 7,
+          "bbox": [
+            291.648,
+            536.4087,
+            530.472,
+            776.7138
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p7-18",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "16",
+          "bbox": [
+            43.896,
+            51.3345,
+            79.608,
+            79.6057
+          ],
+          "pixel_sha256": "fce446d277f4cb6974fe8137798ec08efcd1af290707ca2eb87584fbd9f2484d",
+          "audited_pixel_sha256": "fce446d277f4cb6974fe8137798ec08efcd1af290707ca2eb87584fbd9f2484d"
+        },
+        {
+          "kind": "heading",
+          "number": "17",
+          "bbox": [
+            43.152,
+            536.4087,
+            78.864,
+            564.6799
+          ],
+          "pixel_sha256": "9ed546de8b04e8d38b7a9c69f3d7b8998af3f18433eaabd1637ed94d20b1e79f",
+          "audited_pixel_sha256": "9ed546de8b04e8d38b7a9c69f3d7b8998af3f18433eaabd1637ed94d20b1e79f"
+        },
+        {
+          "kind": "heading",
+          "number": "18",
+          "bbox": [
+            291.648,
+            536.4087,
+            327.36,
+            564.6799
+          ],
+          "pixel_sha256": "64dc54e869f630807ab2b0f2ae25172ae7d1d62b5e545f1f0ef1cbba3a74dc4d",
+          "audited_pixel_sha256": "64dc54e869f630807ab2b0f2ae25172ae7d1d62b5e545f1f0ef1cbba3a74dc4d"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 8,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "Individually inspected cached physical page.",
+      "anchors": [
+        {
+          "anchor_id": "2023-fa-complete-p8-19",
+          "number": "19",
+          "bbox": [
+            58.776,
+            51.3345,
+            94.488,
+            79.6057
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 19 visually read on physical page 8.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "ce4eaa9ecc1c35db9da2d48be2a6f08e89afc73b6e496b60dc11f50c9096135e"
+        },
+        {
+          "anchor_id": "2023-fa-complete-p8-20",
+          "number": "20",
+          "bbox": [
+            58.032,
+            300.5674,
+            93.744,
+            328.8386
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 20 visually read on physical page 8.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "edfd735e56758dc6aadf862b987ecf5ac687f1b503c2d168c84424300d9340ec"
+        },
+        {
+          "anchor_id": "2023-fa-complete-p8-21",
+          "number": "21",
+          "bbox": [
+            307.272,
+            300.5674,
+            342.984,
+            328.8386
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 21 visually read on physical page 8.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "9648ffd9a52e6c9e9f602041dde02d56932944086e318d6e3b4b253149a81ede"
+        },
+        {
+          "anchor_id": "2023-fa-complete-p8-22",
+          "number": "22",
+          "bbox": [
+            58.776,
+            544.5925,
+            94.488,
+            572.8637
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 22 visually read on physical page 8.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "fa032e43f468b87d96787415a4f96285b66fb09c6338bd2117c918c1f1a6093e"
+        }
+      ],
+      "regions": [
+        {
+          "page": 8,
+          "bbox": [
+            58.776,
+            51.3345,
+            545.352,
+            295.3596
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p8-19",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 8,
+          "bbox": [
+            58.032,
+            300.5674,
+            300.576,
+            537.8967
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p8-20",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 8,
+          "bbox": [
+            307.272,
+            300.5674,
+            545.352,
+            537.8967
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p8-21",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 8,
+          "bbox": [
+            58.776,
+            544.5925,
+            301.32,
+            783.4097
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p8-22",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "19",
+          "bbox": [
+            58.776,
+            51.3345,
+            94.488,
+            79.6057
+          ],
+          "pixel_sha256": "ce4eaa9ecc1c35db9da2d48be2a6f08e89afc73b6e496b60dc11f50c9096135e",
+          "audited_pixel_sha256": "ce4eaa9ecc1c35db9da2d48be2a6f08e89afc73b6e496b60dc11f50c9096135e"
+        },
+        {
+          "kind": "heading",
+          "number": "20",
+          "bbox": [
+            58.032,
+            300.5674,
+            93.744,
+            328.8386
+          ],
+          "pixel_sha256": "edfd735e56758dc6aadf862b987ecf5ac687f1b503c2d168c84424300d9340ec",
+          "audited_pixel_sha256": "edfd735e56758dc6aadf862b987ecf5ac687f1b503c2d168c84424300d9340ec"
+        },
+        {
+          "kind": "heading",
+          "number": "21",
+          "bbox": [
+            307.272,
+            300.5674,
+            342.984,
+            328.8386
+          ],
+          "pixel_sha256": "9648ffd9a52e6c9e9f602041dde02d56932944086e318d6e3b4b253149a81ede",
+          "audited_pixel_sha256": "9648ffd9a52e6c9e9f602041dde02d56932944086e318d6e3b4b253149a81ede"
+        },
+        {
+          "kind": "heading",
+          "number": "22",
+          "bbox": [
+            58.776,
+            544.5925,
+            94.488,
+            572.8637
+          ],
+          "pixel_sha256": "fa032e43f468b87d96787415a4f96285b66fb09c6338bd2117c918c1f1a6093e",
+          "audited_pixel_sha256": "fa032e43f468b87d96787415a4f96285b66fb09c6338bd2117c918c1f1a6093e"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 9,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "Individually inspected cached physical page.",
+      "anchors": [
+        {
+          "anchor_id": "2023-fa-complete-p9-23",
+          "number": "23",
+          "bbox": [
+            43.152,
+            53.5665,
+            78.864,
+            81.8377
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 23 visually read on physical page 9.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "798a3749801e74180fbae73cf73a445110f3575b47ed1674f7330b72ded88852"
+        },
+        {
+          "anchor_id": "2023-fa-complete-p9-24",
+          "number": "24",
+          "bbox": [
+            42.408,
+            538.6406,
+            78.12,
+            566.9118
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 24 visually read on physical page 9.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "d1efd28b69dd060f0c9dee7a1b6dfa7f7069111f8ff7069e78d714a6bc509aa7"
+        }
+      ],
+      "regions": [
+        {
+          "page": 9,
+          "bbox": [
+            43.152,
+            53.5665,
+            530.472,
+            534.1768
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p9-23",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 9,
+          "bbox": [
+            42.408,
+            538.6406,
+            531.216,
+            781.9217
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p9-24",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "23",
+          "bbox": [
+            43.152,
+            53.5665,
+            78.864,
+            81.8377
+          ],
+          "pixel_sha256": "798a3749801e74180fbae73cf73a445110f3575b47ed1674f7330b72ded88852",
+          "audited_pixel_sha256": "798a3749801e74180fbae73cf73a445110f3575b47ed1674f7330b72ded88852"
+        },
+        {
+          "kind": "heading",
+          "number": "24",
+          "bbox": [
+            42.408,
+            538.6406,
+            78.12,
+            566.9118
+          ],
+          "pixel_sha256": "d1efd28b69dd060f0c9dee7a1b6dfa7f7069111f8ff7069e78d714a6bc509aa7",
+          "audited_pixel_sha256": "d1efd28b69dd060f0c9dee7a1b6dfa7f7069111f8ff7069e78d714a6bc509aa7"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 10,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "Individually inspected cached physical page.",
+      "anchors": [
+        {
+          "anchor_id": "2023-fa-complete-p10-25",
+          "number": "25",
+          "bbox": [
+            58.032,
+            60.2623,
+            93.744,
+            88.5335
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 25 visually read on physical page 10.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "fb62eec659a291f3e3c7bd2c1eb892ad43eec2443834d82fdb3c34ef562f0596"
+        },
+        {
+          "anchor_id": "2023-fa-complete-p10-26",
+          "number": "26",
+          "bbox": [
+            58.776,
+            301.3114,
+            94.488,
+            329.5826
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 26 visually read on physical page 10.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "20db3866521979807a719bca34133aea697951c5290e484a609077ad9852595d"
+        },
+        {
+          "anchor_id": "2023-fa-complete-p10-27",
+          "number": "27",
+          "bbox": [
+            307.272,
+            301.3114,
+            342.984,
+            329.5826
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 27 visually read on physical page 10.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "45783b1242dca80eccb083356a1be1a361b4156653e665b0bdf432fd7cbb08d7"
+        },
+        {
+          "anchor_id": "2023-fa-complete-p10-28",
+          "number": "28",
+          "bbox": [
+            58.776,
+            544.5925,
+            94.488,
+            572.8637
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 28 visually read on physical page 10.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "cd2ecbf0a64f2affe4397c37d6bfc618c99349c6f7e8a99c8fd94aefcce87c06"
+        }
+      ],
+      "regions": [
+        {
+          "page": 10,
+          "bbox": [
+            58.032,
+            60.2623,
+            545.352,
+            296.8475
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p10-25",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 10,
+          "bbox": [
+            58.776,
+            301.3114,
+            300.576,
+            539.3846
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p10-26",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 10,
+          "bbox": [
+            307.272,
+            301.3114,
+            545.352,
+            539.3846
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p10-27",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "page": 10,
+          "bbox": [
+            58.776,
+            544.5925,
+            302.064,
+            784.1536
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p10-28",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "25",
+          "bbox": [
+            58.032,
+            60.2623,
+            93.744,
+            88.5335
+          ],
+          "pixel_sha256": "fb62eec659a291f3e3c7bd2c1eb892ad43eec2443834d82fdb3c34ef562f0596",
+          "audited_pixel_sha256": "fb62eec659a291f3e3c7bd2c1eb892ad43eec2443834d82fdb3c34ef562f0596"
+        },
+        {
+          "kind": "heading",
+          "number": "26",
+          "bbox": [
+            58.776,
+            301.3114,
+            94.488,
+            329.5826
+          ],
+          "pixel_sha256": "20db3866521979807a719bca34133aea697951c5290e484a609077ad9852595d",
+          "audited_pixel_sha256": "20db3866521979807a719bca34133aea697951c5290e484a609077ad9852595d"
+        },
+        {
+          "kind": "heading",
+          "number": "27",
+          "bbox": [
+            307.272,
+            301.3114,
+            342.984,
+            329.5826
+          ],
+          "pixel_sha256": "45783b1242dca80eccb083356a1be1a361b4156653e665b0bdf432fd7cbb08d7",
+          "audited_pixel_sha256": "45783b1242dca80eccb083356a1be1a361b4156653e665b0bdf432fd7cbb08d7"
+        },
+        {
+          "kind": "heading",
+          "number": "28",
+          "bbox": [
+            58.776,
+            544.5925,
+            94.488,
+            572.8637
+          ],
+          "pixel_sha256": "cd2ecbf0a64f2affe4397c37d6bfc618c99349c6f7e8a99c8fd94aefcce87c06",
+          "audited_pixel_sha256": "cd2ecbf0a64f2affe4397c37d6bfc618c99349c6f7e8a99c8fd94aefcce87c06"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 11,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "context_or_cover",
+      "classification_evidence": "Markierungsbogen reminder, no question.",
+      "anchors": [],
+      "regions": [],
+      "proofs": [],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 12,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "blank",
+      "classification_evidence": "Blank physical page.",
+      "anchors": [],
+      "regions": [],
+      "proofs": [],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 13,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "context_or_cover",
+      "classification_evidence": "Sommer2023 Funktionsanalyse Teil B cover.",
+      "anchors": [],
+      "regions": [],
+      "proofs": [],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 14,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "context_or_cover",
+      "classification_evidence": "Instructions confirm105 minutes,8 open tasks,one A4 attachment.",
+      "anchors": [],
+      "regions": [],
+      "proofs": [],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 15,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "shared_attachment",
+      "classification_evidence": "Pruefungsaufgaben-Beschreibung technology schema drilling machine.",
+      "anchors": [],
+      "regions": [],
+      "proofs": [],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 16,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "Individually inspected cached physical page.",
+      "anchors": [
+        {
+          "anchor_id": "2023-fa-complete-p16-U1",
+          "number": "U1",
+          "bbox": [
+            37.944,
+            21.5754,
+            73.656,
+            49.8466
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed U1 visually read on physical page 16.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "32dac72b657d817f12094e61d0e2e50960b77e7234eae5b12f81aab5043b29d1"
+        }
+      ],
+      "regions": [
+        {
+          "page": 16,
+          "bbox": [
+            37.944,
+            21.5754,
+            514.848,
+            813.1688
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p16-U1",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "U1",
+          "bbox": [
+            37.944,
+            21.5754,
+            73.656,
+            49.8466
+          ],
+          "pixel_sha256": "32dac72b657d817f12094e61d0e2e50960b77e7234eae5b12f81aab5043b29d1",
+          "audited_pixel_sha256": "32dac72b657d817f12094e61d0e2e50960b77e7234eae5b12f81aab5043b29d1"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 17,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "Individually inspected cached physical page.",
+      "anchors": [
+        {
+          "anchor_id": "2023-fa-complete-p17-U2",
+          "number": "U2",
+          "bbox": [
+            31.992,
+            16.3675,
+            67.704,
+            44.6387
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed U2 visually read on physical page 17.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "34b2c5123d8a1c86d0ce65f6165af8ac683a29adae63a65ea091af01de9cc687"
+        }
+      ],
+      "regions": [
+        {
+          "page": 17,
+          "bbox": [
+            31.992,
+            16.3675,
+            511.128,
+            806.473
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p17-U2",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "U2",
+          "bbox": [
+            31.992,
+            16.3675,
+            67.704,
+            44.6387
+          ],
+          "pixel_sha256": "34b2c5123d8a1c86d0ce65f6165af8ac683a29adae63a65ea091af01de9cc687",
+          "audited_pixel_sha256": "34b2c5123d8a1c86d0ce65f6165af8ac683a29adae63a65ea091af01de9cc687"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 18,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "Individually inspected cached physical page.",
+      "anchors": [
+        {
+          "anchor_id": "2023-fa-complete-p18-U3",
+          "number": "U3",
+          "bbox": [
+            38.688,
+            21.5754,
+            74.4,
+            49.8466
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed U3 visually read on physical page 18.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "5906bfc182960b6ee8fdb8171b13f2a50e9cb3e5b585cc064722ffa23ba6c2f5"
+        }
+      ],
+      "regions": [
+        {
+          "page": 18,
+          "bbox": [
+            38.688,
+            21.5754,
+            514.848,
+            813.9128
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p18-U3",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "U3",
+          "bbox": [
+            38.688,
+            21.5754,
+            74.4,
+            49.8466
+          ],
+          "pixel_sha256": "5906bfc182960b6ee8fdb8171b13f2a50e9cb3e5b585cc064722ffa23ba6c2f5",
+          "audited_pixel_sha256": "5906bfc182960b6ee8fdb8171b13f2a50e9cb3e5b585cc064722ffa23ba6c2f5"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 19,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "continuation",
+      "classification_evidence": "Printed Ergebnis U3 proves ownership of subparts 2 and 3.",
+      "anchors": [],
+      "regions": [
+        {
+          "page": 19,
+          "bbox": [
+            33.48,
+            17.8555,
+            513.36,
+            807.217
+          ],
+          "role": "continuation",
+          "owner": "2023-fa-complete-p18-U3",
+          "evidence": "Printed Ergebnis U3 on physical page 19; subparts 2/3 continue U3 hydraulic question from page18."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "ownership",
+          "number": "U3",
+          "bbox": [
+            514.104,
+            742.4908,
+            555.024,
+            765.5542
+          ],
+          "pixel_sha256": "82c03973f1dfc3a066328a6ddcbb9255b16cfa9a6191466f79925ef9a792a908",
+          "audited_pixel_sha256": "82c03973f1dfc3a066328a6ddcbb9255b16cfa9a6191466f79925ef9a792a908"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 20,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "Individually inspected cached physical page.",
+      "anchors": [
+        {
+          "anchor_id": "2023-fa-complete-p20-U4",
+          "number": "U4",
+          "bbox": [
+            35.712,
+            22.3194,
+            71.424,
+            50.5906
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed U4 visually read on physical page 20.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "e152def98edaa6660850c6050622bb60d33faeec155f6e5f9a7d929a4328fed8"
+        }
+      ],
+      "regions": [
+        {
+          "page": 20,
+          "bbox": [
+            35.712,
+            22.3194,
+            511.128,
+            813.9128
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p20-U4",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "U4",
+          "bbox": [
+            35.712,
+            22.3194,
+            71.424,
+            50.5906
+          ],
+          "pixel_sha256": "e152def98edaa6660850c6050622bb60d33faeec155f6e5f9a7d929a4328fed8",
+          "audited_pixel_sha256": "e152def98edaa6660850c6050622bb60d33faeec155f6e5f9a7d929a4328fed8"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 21,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "Individually inspected cached physical page.",
+      "anchors": [
+        {
+          "anchor_id": "2023-fa-complete-p21-U5",
+          "number": "U5",
+          "bbox": [
+            34.968,
+            17.1115,
+            70.68,
+            45.3827
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed U5 visually read on physical page 21.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "1ea35faf57e643b40c4a8b790db8b73b11b08713f70c1c0a4f45e2dbfc40b7b9"
+        }
+      ],
+      "regions": [
+        {
+          "page": 21,
+          "bbox": [
+            34.968,
+            17.1115,
+            511.872,
+            805.729
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p21-U5",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "U5",
+          "bbox": [
+            34.968,
+            17.1115,
+            70.68,
+            45.3827
+          ],
+          "pixel_sha256": "1ea35faf57e643b40c4a8b790db8b73b11b08713f70c1c0a4f45e2dbfc40b7b9",
+          "audited_pixel_sha256": "1ea35faf57e643b40c4a8b790db8b73b11b08713f70c1c0a4f45e2dbfc40b7b9"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 22,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "Individually inspected cached physical page.",
+      "anchors": [
+        {
+          "anchor_id": "2023-fa-complete-p22-U6",
+          "number": "U6",
+          "bbox": [
+            35.712,
+            22.3194,
+            71.424,
+            50.5906
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed U6 visually read on physical page 22.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "6056fc4e5a5ead2a20ee89ef2549c5d644e9f32b261ef58b120713e31fd6b0f5"
+        }
+      ],
+      "regions": [
+        {
+          "page": 22,
+          "bbox": [
+            35.712,
+            22.3194,
+            511.872,
+            813.9128
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p22-U6",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "U6",
+          "bbox": [
+            35.712,
+            22.3194,
+            71.424,
+            50.5906
+          ],
+          "pixel_sha256": "6056fc4e5a5ead2a20ee89ef2549c5d644e9f32b261ef58b120713e31fd6b0f5",
+          "audited_pixel_sha256": "6056fc4e5a5ead2a20ee89ef2549c5d644e9f32b261ef58b120713e31fd6b0f5"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 23,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "Individually inspected cached physical page.",
+      "anchors": [
+        {
+          "anchor_id": "2023-fa-complete-p23-U7",
+          "number": "U7",
+          "bbox": [
+            35.712,
+            21.5754,
+            71.424,
+            49.8466
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed U7 visually read on physical page 23.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "65d469abf44af414f948ddb08e76114f07c59a4ae92f94620855232946e3813a"
+        }
+      ],
+      "regions": [
+        {
+          "page": 23,
+          "bbox": [
+            35.712,
+            21.5754,
+            511.872,
+            811.6809
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p23-U7",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "U7",
+          "bbox": [
+            35.712,
+            21.5754,
+            71.424,
+            49.8466
+          ],
+          "pixel_sha256": "65d469abf44af414f948ddb08e76114f07c59a4ae92f94620855232946e3813a",
+          "audited_pixel_sha256": "65d469abf44af414f948ddb08e76114f07c59a4ae92f94620855232946e3813a"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 24,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "Individually inspected cached physical page.",
+      "anchors": [
+        {
+          "anchor_id": "2023-fa-complete-p24-U8",
+          "number": "U8",
+          "bbox": [
+            34.968,
+            26.7832,
+            70.68,
+            55.0544
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed U8 visually read on physical page 24.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "1a4f9e48153f083e238ce94760d059753d55b2f83365adb595b758dbad5f94e0"
+        }
+      ],
+      "regions": [
+        {
+          "page": 24,
+          "bbox": [
+            34.968,
+            26.7832,
+            511.872,
+            635.3579
+          ],
+          "role": "primary",
+          "owner": "2023-fa-complete-p24-U8",
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "U8",
+          "bbox": [
+            34.968,
+            26.7832,
+            70.68,
+            55.0544
+          ],
+          "pixel_sha256": "1a4f9e48153f083e238ce94760d059753d55b2f83365adb595b758dbad5f94e0",
+          "audited_pixel_sha256": "1a4f9e48153f083e238ce94760d059753d55b2f83365adb595b758dbad5f94e0"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 25,
+      "geometry": [
+        841.4400024414062,
+        595.2000122070312
+      ],
+      "classification": "shared_attachment",
+      "classification_evidence": "Stirnraedergetriebe Blatt1von1 drawing and bill of materials.",
+      "anchors": [],
+      "regions": [],
+      "proofs": [],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 26,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "blank",
+      "classification_evidence": "Blank physical page.",
+      "anchors": [],
+      "regions": [],
+      "proofs": [],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    }
+  ],
+  "pdf_pages_opened": 0,
+  "pdf_pages_rendered": 0,
+  "formal_ingestion_performed": false
+}

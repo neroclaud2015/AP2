@@ -1,0 +1,123 @@
+{
+  "key": "371e7e7e8e7b07358e2d40f63a2a48d673c31f0fd6beba74ce288c27ef5db1a0",
+  "record_hash": "78920946ee04942089c5fe0f0bdadf077c7194253df071624b3270dccf811d6e",
+  "record": {
+    "page": 11,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "U3 subpart 3 with Ergebnis U3; separate Q7-8.",
+    "anchors": [
+      {
+        "anchor_id": "2023-wiso-complete-p11-7",
+        "number": "7",
+        "bbox": [
+          46.959999084472656,
+          291.1299743652344,
+          60.96800231933594,
+          319.8619689941406
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 7 visually read on cached physical page 11.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "10cba7b30f8be3cb5e9676ea13e6f2dabacc44d711ff888f94a9c774660c50b3"
+      },
+      {
+        "anchor_id": "2023-wiso-complete-p11-8",
+        "number": "8",
+        "bbox": [
+          295.6000061035156,
+          290.5350341796875,
+          310.16400146484375,
+          320.6410217285156
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 8 visually read on cached physical page 11.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "b98d5e34e81eccc303c02303b291b35247b8340cbb86d1e77935cefb48ed760e"
+      }
+    ],
+    "regions": [
+      {
+        "page": 11,
+        "bbox": [
+          46,
+          291,
+          286,
+          531
+        ],
+        "role": "primary",
+        "owner": "2023-wiso-complete-p11-7",
+        "evidence": "U3 subpart 3 with Ergebnis U3; separate Q7-8. Explicit panel includes all text, options, diagrams and response areas."
+      },
+      {
+        "page": 11,
+        "bbox": [
+          291,
+          290,
+          532,
+          531
+        ],
+        "role": "primary",
+        "owner": "2023-wiso-complete-p11-8",
+        "evidence": "U3 subpart 3 with Ergebnis U3; separate Q7-8. Explicit panel includes all text, options, diagrams and response areas."
+      },
+      {
+        "page": 11,
+        "bbox": [
+          48,
+          47,
+          532,
+          290
+        ],
+        "role": "continuation",
+        "owner": "2023-wiso-complete-p10-U3",
+        "evidence": "Printed Ergebnis U3 proves continuation ownership; separate numbered questions begin below the border."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "7",
+        "bbox": [
+          46.959999084472656,
+          291.1299743652344,
+          60.96800231933594,
+          319.8619689941406
+        ],
+        "pixel_sha256": "10cba7b30f8be3cb5e9676ea13e6f2dabacc44d711ff888f94a9c774660c50b3",
+        "audited_pixel_sha256": "10cba7b30f8be3cb5e9676ea13e6f2dabacc44d711ff888f94a9c774660c50b3"
+      },
+      {
+        "kind": "heading",
+        "number": "8",
+        "bbox": [
+          295.6000061035156,
+          290.5350341796875,
+          310.16400146484375,
+          320.6410217285156
+        ],
+        "pixel_sha256": "b98d5e34e81eccc303c02303b291b35247b8340cbb86d1e77935cefb48ed760e",
+        "audited_pixel_sha256": "b98d5e34e81eccc303c02303b291b35247b8340cbb86d1e77935cefb48ed760e"
+      },
+      {
+        "kind": "ownership",
+        "number": "U3",
+        "bbox": [
+          488,
+          98,
+          531,
+          123
+        ],
+        "pixel_sha256": "b3e03d2ca8ef6f6383a92a02ca523504ae59a5314caf688abcc648b02fa5f672",
+        "audited_pixel_sha256": "b3e03d2ca8ef6f6383a92a02ca523504ae59a5314caf688abcc648b02fa5f672"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

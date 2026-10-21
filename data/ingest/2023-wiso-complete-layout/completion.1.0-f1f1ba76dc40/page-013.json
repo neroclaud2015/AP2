@@ -1,0 +1,199 @@
+{
+  "key": "ceb764478b9a00180a40e05da96c7d0cc9bfc14be30faf21b44cdff1d3fb8535",
+  "record_hash": "3cfe5b90a594c5ab08689db0e725bead515505f97519b08331d31a7b801a8b7f",
+  "record": {
+    "page": 13,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "U4 subparts 3-4 with Ergebnis U4; separate Q9-12.",
+    "anchors": [
+      {
+        "anchor_id": "2023-wiso-complete-p13-9",
+        "number": "9",
+        "bbox": [
+          45,
+          292,
+          62,
+          318
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 9 visually read on cached physical page 13.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "988fbf6cac0b7fdf4f96aaab3cccc9f60f48875d884c7ccca1e8d4ce3961f0f1"
+      },
+      {
+        "anchor_id": "2023-wiso-complete-p13-10",
+        "number": "10",
+        "bbox": [
+          296.79998779296875,
+          290.83251953125,
+          321.37200927734375,
+          320.25152587890625
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 10 visually read on cached physical page 13.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "b24737546871effc0824c9c874a5b44480af922e0405b3b44afd94da8bfef2ca"
+      },
+      {
+        "anchor_id": "2023-wiso-complete-p13-11",
+        "number": "11",
+        "bbox": [
+          45.279998779296875,
+          534.47998046875,
+          67.0719985961914,
+          560.4639892578125
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 11 visually read on cached physical page 13.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "5a108257502d080fac7ad63f04ed98fd3b186a8fe5c6b1d82a90739e2727a962"
+      },
+      {
+        "anchor_id": "2023-wiso-complete-p13-12",
+        "number": "12",
+        "bbox": [
+          295.6000061035156,
+          532.5125122070312,
+          320.1720275878906,
+          561.9315185546875
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 12 visually read on cached physical page 13.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "e1f2b3b61f14d4c3e41f7aeae64ca5baab4aed36f8d321a08ca1ece2b7ef6f61"
+      }
+    ],
+    "regions": [
+      {
+        "page": 13,
+        "bbox": [
+          44,
+          291,
+          285,
+          531
+        ],
+        "role": "primary",
+        "owner": "2023-wiso-complete-p13-9",
+        "evidence": "U4 subparts 3-4 with Ergebnis U4; separate Q9-12. Explicit panel includes all text, options, diagrams and response areas."
+      },
+      {
+        "page": 13,
+        "bbox": [
+          291,
+          290,
+          532,
+          531
+        ],
+        "role": "primary",
+        "owner": "2023-wiso-complete-p13-10",
+        "evidence": "U4 subparts 3-4 with Ergebnis U4; separate Q9-12. Explicit panel includes all text, options, diagrams and response areas."
+      },
+      {
+        "page": 13,
+        "bbox": [
+          44,
+          532,
+          285,
+          776
+        ],
+        "role": "primary",
+        "owner": "2023-wiso-complete-p13-11",
+        "evidence": "U4 subparts 3-4 with Ergebnis U4; separate Q9-12. Explicit panel includes all text, options, diagrams and response areas."
+      },
+      {
+        "page": 13,
+        "bbox": [
+          291,
+          532,
+          532,
+          776
+        ],
+        "role": "primary",
+        "owner": "2023-wiso-complete-p13-12",
+        "evidence": "U4 subparts 3-4 with Ergebnis U4; separate Q9-12. Explicit panel includes all text, options, diagrams and response areas."
+      },
+      {
+        "page": 13,
+        "bbox": [
+          47,
+          46,
+          532,
+          290
+        ],
+        "role": "continuation",
+        "owner": "2023-wiso-complete-p12-U4",
+        "evidence": "Printed Ergebnis U4 proves continuation ownership; separate numbered questions begin below the border."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "9",
+        "bbox": [
+          45,
+          292,
+          62,
+          318
+        ],
+        "pixel_sha256": "988fbf6cac0b7fdf4f96aaab3cccc9f60f48875d884c7ccca1e8d4ce3961f0f1",
+        "audited_pixel_sha256": "988fbf6cac0b7fdf4f96aaab3cccc9f60f48875d884c7ccca1e8d4ce3961f0f1"
+      },
+      {
+        "kind": "heading",
+        "number": "10",
+        "bbox": [
+          296.79998779296875,
+          290.83251953125,
+          321.37200927734375,
+          320.25152587890625
+        ],
+        "pixel_sha256": "b24737546871effc0824c9c874a5b44480af922e0405b3b44afd94da8bfef2ca",
+        "audited_pixel_sha256": "b24737546871effc0824c9c874a5b44480af922e0405b3b44afd94da8bfef2ca"
+      },
+      {
+        "kind": "heading",
+        "number": "11",
+        "bbox": [
+          45.279998779296875,
+          534.47998046875,
+          67.0719985961914,
+          560.4639892578125
+        ],
+        "pixel_sha256": "5a108257502d080fac7ad63f04ed98fd3b186a8fe5c6b1d82a90739e2727a962",
+        "audited_pixel_sha256": "5a108257502d080fac7ad63f04ed98fd3b186a8fe5c6b1d82a90739e2727a962"
+      },
+      {
+        "kind": "heading",
+        "number": "12",
+        "bbox": [
+          295.6000061035156,
+          532.5125122070312,
+          320.1720275878906,
+          561.9315185546875
+        ],
+        "pixel_sha256": "e1f2b3b61f14d4c3e41f7aeae64ca5baab4aed36f8d321a08ca1ece2b7ef6f61",
+        "audited_pixel_sha256": "e1f2b3b61f14d4c3e41f7aeae64ca5baab4aed36f8d321a08ca1ece2b7ef6f61"
+      },
+      {
+        "kind": "ownership",
+        "number": "U4",
+        "bbox": [
+          487,
+          97,
+          530,
+          123
+        ],
+        "pixel_sha256": "3393a49e290697e0d57c20115192e24656f2c498339e1c561dd58bd92ca7bf6d",
+        "audited_pixel_sha256": "3393a49e290697e0d57c20115192e24656f2c498339e1c561dd58bd92ca7bf6d"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

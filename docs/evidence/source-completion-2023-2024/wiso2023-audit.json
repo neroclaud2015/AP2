@@ -1,0 +1,1371 @@
+{
+  "source_hash": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+  "source_id": "src-09c6b6edef9aaa2596531b68",
+  "profile": "scripts/layout_profiles/sommer2023_wiso_complete.json",
+  "validation": {
+    "status": "compatible",
+    "observed": 24,
+    "expected": 24,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 18
+  },
+  "physical_pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "heading_count": 24,
+  "continuations": [
+    {
+      "question": "U1",
+      "from_page": 6,
+      "to_page": 7
+    },
+    {
+      "question": "U3",
+      "from_page": 10,
+      "to_page": 11
+    },
+    {
+      "question": "U4",
+      "from_page": 12,
+      "to_page": 13
+    }
+  ],
+  "shared_context_page": 5,
+  "external_attachments": [],
+  "timing_minutes": 60,
+  "ambiguous": [],
+  "pdf_pages_opened": 0,
+  "pdf_pages_rendered": 0,
+  "formal_records_generated": false,
+  "evidence": "All 18 cached PNG pages visually inspected. OCR Q9 was I; visible printed heading is 9, authenticated by exact heading patch.",
+  "records": [
+    {
+      "page": 1,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "context_or_cover",
+      "classification_evidence": "Cover Sommer 2023, 09.05.2023, WiSo, 60 min.",
+      "anchors": [],
+      "regions": [],
+      "proofs": [],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 2,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "context_or_cover",
+      "classification_evidence": "Instructions: 60 min; 18 bound and 6 unbound; choose 15 bound and 5 unbound; no attachments.",
+      "anchors": [],
+      "regions": [],
+      "proofs": [],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 3,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "context_or_cover",
+      "classification_evidence": "Scan marking-sheet instructions and examples.",
+      "anchors": [],
+      "regions": [],
+      "proofs": [],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 4,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "context_or_cover",
+      "classification_evidence": "Carbon-copy marking-sheet instructions and examples.",
+      "anchors": [],
+      "regions": [],
+      "proofs": [],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 5,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "context_or_cover",
+      "classification_evidence": "Shared AllPrint GmbH description: Koeln, Dr. Peter Block, workforce, Betriebsrat and JAV.",
+      "anchors": [],
+      "regions": [],
+      "proofs": [],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 6,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "U1 economic data and productivity, subparts 1-3; continues page 7.",
+      "anchors": [
+        {
+          "anchor_id": "2023-wiso-complete-p6-U1",
+          "number": "U1",
+          "bbox": [
+            70.23999786376953,
+            60.42247009277344,
+            95.3270034790039,
+            87.09347534179688
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed U1 visually read on cached physical page 6.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "8605c2d3c9a92110b61563fa7447f10a68635636708398ac9158822e6cc86ebb"
+        }
+      ],
+      "regions": [
+        {
+          "page": 6,
+          "bbox": [
+            64,
+            56,
+            548,
+            787
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p6-U1",
+          "evidence": "U1 economic data and productivity, subparts 1-3; continues page 7. Explicit panel includes all text, options, diagrams and response areas."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "U1",
+          "bbox": [
+            70.23999786376953,
+            60.42247009277344,
+            95.3270034790039,
+            87.09347534179688
+          ],
+          "pixel_sha256": "8605c2d3c9a92110b61563fa7447f10a68635636708398ac9158822e6cc86ebb",
+          "audited_pixel_sha256": "8605c2d3c9a92110b61563fa7447f10a68635636708398ac9158822e6cc86ebb"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 7,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "U1 subpart 4 with Ergebnis U1; separate Q1-4.",
+      "anchors": [
+        {
+          "anchor_id": "2023-wiso-complete-p7-1",
+          "number": "1",
+          "bbox": [
+            44.08000183105469,
+            297.1000061035156,
+            54.75200271606445,
+            317.5880126953125
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 1 visually read on cached physical page 7.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "6773eedd845bd35bc6af06cc3eb92a189e9d289b86d75c7e1efd9182ad9f42d2"
+        },
+        {
+          "anchor_id": "2023-wiso-complete-p7-2",
+          "number": "2",
+          "bbox": [
+            292.239990234375,
+            291.552490234375,
+            306.5260009765625,
+            320.97149658203125
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 2 visually read on cached physical page 7.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "ae5a659c7c1ecd9a8a4771ba2ee07588b8f7d5cf5640119c3fd415aab029f083"
+        },
+        {
+          "anchor_id": "2023-wiso-complete-p7-3",
+          "number": "3",
+          "bbox": [
+            41.20000076293945,
+            532.5125122070312,
+            55.486000061035156,
+            561.9315185546875
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 3 visually read on cached physical page 7.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "804f9952709578210ff7e2d2fd113d2e1b057f2deb14dc415bd746de31197c7c"
+        },
+        {
+          "anchor_id": "2023-wiso-complete-p7-4",
+          "number": "4",
+          "bbox": [
+            290.55999755859375,
+            532.9349975585938,
+            305.1239929199219,
+            563.041015625
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 4 visually read on cached physical page 7.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "a63fa1a879657243b1e9fde4cdbd3169a22edfe534e45bec293d82e432d4b325"
+        }
+      ],
+      "regions": [
+        {
+          "page": 7,
+          "bbox": [
+            40,
+            291,
+            282,
+            531
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p7-1",
+          "evidence": "U1 subpart 4 with Ergebnis U1; separate Q1-4. Explicit panel includes all text, options, diagrams and response areas."
+        },
+        {
+          "page": 7,
+          "bbox": [
+            287,
+            291,
+            527,
+            531
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p7-2",
+          "evidence": "U1 subpart 4 with Ergebnis U1; separate Q1-4. Explicit panel includes all text, options, diagrams and response areas."
+        },
+        {
+          "page": 7,
+          "bbox": [
+            40,
+            532,
+            281,
+            776
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p7-3",
+          "evidence": "U1 subpart 4 with Ergebnis U1; separate Q1-4. Explicit panel includes all text, options, diagrams and response areas."
+        },
+        {
+          "page": 7,
+          "bbox": [
+            286,
+            532,
+            527,
+            776
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p7-4",
+          "evidence": "U1 subpart 4 with Ergebnis U1; separate Q1-4. Explicit panel includes all text, options, diagrams and response areas."
+        },
+        {
+          "page": 7,
+          "bbox": [
+            44,
+            47,
+            528,
+            290
+          ],
+          "role": "continuation",
+          "owner": "2023-wiso-complete-p6-U1",
+          "evidence": "Printed Ergebnis U1 proves continuation ownership; separate numbered questions begin below the border."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "1",
+          "bbox": [
+            44.08000183105469,
+            297.1000061035156,
+            54.75200271606445,
+            317.5880126953125
+          ],
+          "pixel_sha256": "6773eedd845bd35bc6af06cc3eb92a189e9d289b86d75c7e1efd9182ad9f42d2",
+          "audited_pixel_sha256": "6773eedd845bd35bc6af06cc3eb92a189e9d289b86d75c7e1efd9182ad9f42d2"
+        },
+        {
+          "kind": "heading",
+          "number": "2",
+          "bbox": [
+            292.239990234375,
+            291.552490234375,
+            306.5260009765625,
+            320.97149658203125
+          ],
+          "pixel_sha256": "ae5a659c7c1ecd9a8a4771ba2ee07588b8f7d5cf5640119c3fd415aab029f083",
+          "audited_pixel_sha256": "ae5a659c7c1ecd9a8a4771ba2ee07588b8f7d5cf5640119c3fd415aab029f083"
+        },
+        {
+          "kind": "heading",
+          "number": "3",
+          "bbox": [
+            41.20000076293945,
+            532.5125122070312,
+            55.486000061035156,
+            561.9315185546875
+          ],
+          "pixel_sha256": "804f9952709578210ff7e2d2fd113d2e1b057f2deb14dc415bd746de31197c7c",
+          "audited_pixel_sha256": "804f9952709578210ff7e2d2fd113d2e1b057f2deb14dc415bd746de31197c7c"
+        },
+        {
+          "kind": "heading",
+          "number": "4",
+          "bbox": [
+            290.55999755859375,
+            532.9349975585938,
+            305.1239929199219,
+            563.041015625
+          ],
+          "pixel_sha256": "a63fa1a879657243b1e9fde4cdbd3169a22edfe534e45bec293d82e432d4b325",
+          "audited_pixel_sha256": "a63fa1a879657243b1e9fde4cdbd3169a22edfe534e45bec293d82e432d4b325"
+        },
+        {
+          "kind": "ownership",
+          "number": "U1",
+          "bbox": [
+            483,
+            98,
+            524,
+            123
+          ],
+          "pixel_sha256": "2e670ece5765b34a90d619a99c2876dc927d12944e5092578f650e99373018fb",
+          "audited_pixel_sha256": "2e670ece5765b34a90d619a99c2876dc927d12944e5092578f650e99373018fb"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 8,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "U2 Betriebsuebergang fill-in, complete.",
+      "anchors": [
+        {
+          "anchor_id": "2023-wiso-complete-p8-U2",
+          "number": "U2",
+          "bbox": [
+            70.23999786376953,
+            55.33500671386719,
+            98.52200317382812,
+            85.44100952148438
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed U2 visually read on cached physical page 8.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "03292cf506524d49dc4208fe5b850bd02ed4363e0b2e9da4022af5ad23e6dca9"
+        }
+      ],
+      "regions": [
+        {
+          "page": 8,
+          "bbox": [
+            65,
+            53,
+            548,
+            785
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p8-U2",
+          "evidence": "U2 Betriebsuebergang fill-in, complete. Explicit panel includes all text, options, diagrams and response areas."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "U2",
+          "bbox": [
+            70.23999786376953,
+            55.33500671386719,
+            98.52200317382812,
+            85.44100952148438
+          ],
+          "pixel_sha256": "03292cf506524d49dc4208fe5b850bd02ed4363e0b2e9da4022af5ad23e6dca9",
+          "audited_pixel_sha256": "03292cf506524d49dc4208fe5b850bd02ed4363e0b2e9da4022af5ad23e6dca9"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 9,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "Q5-6.",
+      "anchors": [
+        {
+          "anchor_id": "2023-wiso-complete-p9-5",
+          "number": "5",
+          "bbox": [
+            44.79999923706055,
+            50.11249923706055,
+            59.08599853515625,
+            79.53150177001953
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 5 visually read on cached physical page 9.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "1786015fa910d828f80659edcbf0fbf34a20cde2c8277c96148454d0bfb599c8"
+        },
+        {
+          "anchor_id": "2023-wiso-complete-p9-6",
+          "number": "6",
+          "bbox": [
+            293.44000244140625,
+            50.8325309753418,
+            307.72601318359375,
+            80.25153350830078
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 6 visually read on cached physical page 9.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "917b210638958d6ca85508c8cefd99cab8b6ee06f3a1156174022002150cbea0"
+        }
+      ],
+      "regions": [
+        {
+          "page": 9,
+          "bbox": [
+            43,
+            50,
+            284,
+            289
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p9-5",
+          "evidence": "Q5-6. Explicit panel includes all text, options, diagrams and response areas."
+        },
+        {
+          "page": 9,
+          "bbox": [
+            290,
+            50,
+            530,
+            289
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p9-6",
+          "evidence": "Q5-6. Explicit panel includes all text, options, diagrams and response areas."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "5",
+          "bbox": [
+            44.79999923706055,
+            50.11249923706055,
+            59.08599853515625,
+            79.53150177001953
+          ],
+          "pixel_sha256": "1786015fa910d828f80659edcbf0fbf34a20cde2c8277c96148454d0bfb599c8",
+          "audited_pixel_sha256": "1786015fa910d828f80659edcbf0fbf34a20cde2c8277c96148454d0bfb599c8"
+        },
+        {
+          "kind": "heading",
+          "number": "6",
+          "bbox": [
+            293.44000244140625,
+            50.8325309753418,
+            307.72601318359375,
+            80.25153350830078
+          ],
+          "pixel_sha256": "917b210638958d6ca85508c8cefd99cab8b6ee06f3a1156174022002150cbea0",
+          "audited_pixel_sha256": "917b210638958d6ca85508c8cefd99cab8b6ee06f3a1156174022002150cbea0"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 10,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "U3 participation, embedded BetrVG section 111, subparts 1-2; continues page 11.",
+      "anchors": [
+        {
+          "anchor_id": "2023-wiso-complete-p10-U3",
+          "number": "U3",
+          "bbox": [
+            70.0,
+            56.29502868652344,
+            98.2820053100586,
+            86.40103149414062
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed U3 visually read on cached physical page 10.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "b47f531ef668d32b5643cfc2bb9800e3b71995c330493ab6d7da1e3e52564206"
+        }
+      ],
+      "regions": [
+        {
+          "page": 10,
+          "bbox": [
+            64,
+            54,
+            548,
+            785
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p10-U3",
+          "evidence": "U3 participation, embedded BetrVG section 111, subparts 1-2; continues page 11. Explicit panel includes all text, options, diagrams and response areas."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "U3",
+          "bbox": [
+            70.0,
+            56.29502868652344,
+            98.2820053100586,
+            86.40103149414062
+          ],
+          "pixel_sha256": "b47f531ef668d32b5643cfc2bb9800e3b71995c330493ab6d7da1e3e52564206",
+          "audited_pixel_sha256": "b47f531ef668d32b5643cfc2bb9800e3b71995c330493ab6d7da1e3e52564206"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 11,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "U3 subpart 3 with Ergebnis U3; separate Q7-8.",
+      "anchors": [
+        {
+          "anchor_id": "2023-wiso-complete-p11-7",
+          "number": "7",
+          "bbox": [
+            46.959999084472656,
+            291.1299743652344,
+            60.96800231933594,
+            319.8619689941406
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 7 visually read on cached physical page 11.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "10cba7b30f8be3cb5e9676ea13e6f2dabacc44d711ff888f94a9c774660c50b3"
+        },
+        {
+          "anchor_id": "2023-wiso-complete-p11-8",
+          "number": "8",
+          "bbox": [
+            295.6000061035156,
+            290.5350341796875,
+            310.16400146484375,
+            320.6410217285156
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 8 visually read on cached physical page 11.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "b98d5e34e81eccc303c02303b291b35247b8340cbb86d1e77935cefb48ed760e"
+        }
+      ],
+      "regions": [
+        {
+          "page": 11,
+          "bbox": [
+            46,
+            291,
+            286,
+            531
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p11-7",
+          "evidence": "U3 subpart 3 with Ergebnis U3; separate Q7-8. Explicit panel includes all text, options, diagrams and response areas."
+        },
+        {
+          "page": 11,
+          "bbox": [
+            291,
+            290,
+            532,
+            531
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p11-8",
+          "evidence": "U3 subpart 3 with Ergebnis U3; separate Q7-8. Explicit panel includes all text, options, diagrams and response areas."
+        },
+        {
+          "page": 11,
+          "bbox": [
+            48,
+            47,
+            532,
+            290
+          ],
+          "role": "continuation",
+          "owner": "2023-wiso-complete-p10-U3",
+          "evidence": "Printed Ergebnis U3 proves continuation ownership; separate numbered questions begin below the border."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "7",
+          "bbox": [
+            46.959999084472656,
+            291.1299743652344,
+            60.96800231933594,
+            319.8619689941406
+          ],
+          "pixel_sha256": "10cba7b30f8be3cb5e9676ea13e6f2dabacc44d711ff888f94a9c774660c50b3",
+          "audited_pixel_sha256": "10cba7b30f8be3cb5e9676ea13e6f2dabacc44d711ff888f94a9c774660c50b3"
+        },
+        {
+          "kind": "heading",
+          "number": "8",
+          "bbox": [
+            295.6000061035156,
+            290.5350341796875,
+            310.16400146484375,
+            320.6410217285156
+          ],
+          "pixel_sha256": "b98d5e34e81eccc303c02303b291b35247b8340cbb86d1e77935cefb48ed760e",
+          "audited_pixel_sha256": "b98d5e34e81eccc303c02303b291b35247b8340cbb86d1e77935cefb48ed760e"
+        },
+        {
+          "kind": "ownership",
+          "number": "U3",
+          "bbox": [
+            488,
+            98,
+            531,
+            123
+          ],
+          "pixel_sha256": "b3e03d2ca8ef6f6383a92a02ca523504ae59a5314caf688abcc648b02fa5f672",
+          "audited_pixel_sha256": "b3e03d2ca8ef6f6383a92a02ca523504ae59a5314caf688abcc648b02fa5f672"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 12,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "U4 embedded notice-period diagram and employee table, subparts 1-2; continues page 13.",
+      "anchors": [
+        {
+          "anchor_id": "2023-wiso-complete-p12-U4",
+          "number": "U4",
+          "bbox": [
+            66.63999938964844,
+            55.33500671386719,
+            94.92200469970703,
+            85.44100952148438
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed U4 visually read on cached physical page 12.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "647224f0787792a1603b6014ab386a011c516aeaa13f4cda7c9c9596538179a9"
+        }
+      ],
+      "regions": [
+        {
+          "page": 12,
+          "bbox": [
+            60,
+            53,
+            543,
+            785
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p12-U4",
+          "evidence": "U4 embedded notice-period diagram and employee table, subparts 1-2; continues page 13. Explicit panel includes all text, options, diagrams and response areas."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "U4",
+          "bbox": [
+            66.63999938964844,
+            55.33500671386719,
+            94.92200469970703,
+            85.44100952148438
+          ],
+          "pixel_sha256": "647224f0787792a1603b6014ab386a011c516aeaa13f4cda7c9c9596538179a9",
+          "audited_pixel_sha256": "647224f0787792a1603b6014ab386a011c516aeaa13f4cda7c9c9596538179a9"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 13,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "U4 subparts 3-4 with Ergebnis U4; separate Q9-12.",
+      "anchors": [
+        {
+          "anchor_id": "2023-wiso-complete-p13-9",
+          "number": "9",
+          "bbox": [
+            45,
+            292,
+            62,
+            318
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 9 visually read on cached physical page 13.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "988fbf6cac0b7fdf4f96aaab3cccc9f60f48875d884c7ccca1e8d4ce3961f0f1"
+        },
+        {
+          "anchor_id": "2023-wiso-complete-p13-10",
+          "number": "10",
+          "bbox": [
+            296.79998779296875,
+            290.83251953125,
+            321.37200927734375,
+            320.25152587890625
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 10 visually read on cached physical page 13.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "b24737546871effc0824c9c874a5b44480af922e0405b3b44afd94da8bfef2ca"
+        },
+        {
+          "anchor_id": "2023-wiso-complete-p13-11",
+          "number": "11",
+          "bbox": [
+            45.279998779296875,
+            534.47998046875,
+            67.0719985961914,
+            560.4639892578125
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 11 visually read on cached physical page 13.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "5a108257502d080fac7ad63f04ed98fd3b186a8fe5c6b1d82a90739e2727a962"
+        },
+        {
+          "anchor_id": "2023-wiso-complete-p13-12",
+          "number": "12",
+          "bbox": [
+            295.6000061035156,
+            532.5125122070312,
+            320.1720275878906,
+            561.9315185546875
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 12 visually read on cached physical page 13.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "e1f2b3b61f14d4c3e41f7aeae64ca5baab4aed36f8d321a08ca1ece2b7ef6f61"
+        }
+      ],
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            44,
+            291,
+            285,
+            531
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p13-9",
+          "evidence": "U4 subparts 3-4 with Ergebnis U4; separate Q9-12. Explicit panel includes all text, options, diagrams and response areas."
+        },
+        {
+          "page": 13,
+          "bbox": [
+            291,
+            290,
+            532,
+            531
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p13-10",
+          "evidence": "U4 subparts 3-4 with Ergebnis U4; separate Q9-12. Explicit panel includes all text, options, diagrams and response areas."
+        },
+        {
+          "page": 13,
+          "bbox": [
+            44,
+            532,
+            285,
+            776
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p13-11",
+          "evidence": "U4 subparts 3-4 with Ergebnis U4; separate Q9-12. Explicit panel includes all text, options, diagrams and response areas."
+        },
+        {
+          "page": 13,
+          "bbox": [
+            291,
+            532,
+            532,
+            776
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p13-12",
+          "evidence": "U4 subparts 3-4 with Ergebnis U4; separate Q9-12. Explicit panel includes all text, options, diagrams and response areas."
+        },
+        {
+          "page": 13,
+          "bbox": [
+            47,
+            46,
+            532,
+            290
+          ],
+          "role": "continuation",
+          "owner": "2023-wiso-complete-p12-U4",
+          "evidence": "Printed Ergebnis U4 proves continuation ownership; separate numbered questions begin below the border."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "9",
+          "bbox": [
+            45,
+            292,
+            62,
+            318
+          ],
+          "pixel_sha256": "988fbf6cac0b7fdf4f96aaab3cccc9f60f48875d884c7ccca1e8d4ce3961f0f1",
+          "audited_pixel_sha256": "988fbf6cac0b7fdf4f96aaab3cccc9f60f48875d884c7ccca1e8d4ce3961f0f1"
+        },
+        {
+          "kind": "heading",
+          "number": "10",
+          "bbox": [
+            296.79998779296875,
+            290.83251953125,
+            321.37200927734375,
+            320.25152587890625
+          ],
+          "pixel_sha256": "b24737546871effc0824c9c874a5b44480af922e0405b3b44afd94da8bfef2ca",
+          "audited_pixel_sha256": "b24737546871effc0824c9c874a5b44480af922e0405b3b44afd94da8bfef2ca"
+        },
+        {
+          "kind": "heading",
+          "number": "11",
+          "bbox": [
+            45.279998779296875,
+            534.47998046875,
+            67.0719985961914,
+            560.4639892578125
+          ],
+          "pixel_sha256": "5a108257502d080fac7ad63f04ed98fd3b186a8fe5c6b1d82a90739e2727a962",
+          "audited_pixel_sha256": "5a108257502d080fac7ad63f04ed98fd3b186a8fe5c6b1d82a90739e2727a962"
+        },
+        {
+          "kind": "heading",
+          "number": "12",
+          "bbox": [
+            295.6000061035156,
+            532.5125122070312,
+            320.1720275878906,
+            561.9315185546875
+          ],
+          "pixel_sha256": "e1f2b3b61f14d4c3e41f7aeae64ca5baab4aed36f8d321a08ca1ece2b7ef6f61",
+          "audited_pixel_sha256": "e1f2b3b61f14d4c3e41f7aeae64ca5baab4aed36f8d321a08ca1ece2b7ef6f61"
+        },
+        {
+          "kind": "ownership",
+          "number": "U4",
+          "bbox": [
+            487,
+            97,
+            530,
+            123
+          ],
+          "pixel_sha256": "3393a49e290697e0d57c20115192e24656f2c498339e1c561dd58bd92ca7bf6d",
+          "audited_pixel_sha256": "3393a49e290697e0d57c20115192e24656f2c498339e1c561dd58bd92ca7bf6d"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 14,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "U5 Arbeitszeugnis subparts 1-3, complete.",
+      "anchors": [
+        {
+          "anchor_id": "2023-wiso-complete-p14-U5",
+          "number": "U5",
+          "bbox": [
+            66.87999725341797,
+            54.85502624511719,
+            95.16200256347656,
+            84.96102905273438
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed U5 visually read on cached physical page 14.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "106e024277367b8d49ceeea1f55ef3c1b4708e51a9bb5305e1cd9c4154c3e8f7"
+        }
+      ],
+      "regions": [
+        {
+          "page": 14,
+          "bbox": [
+            60,
+            53,
+            543,
+            785
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p14-U5",
+          "evidence": "U5 Arbeitszeugnis subparts 1-3, complete. Explicit panel includes all text, options, diagrams and response areas."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "U5",
+          "bbox": [
+            66.87999725341797,
+            54.85502624511719,
+            95.16200256347656,
+            84.96102905273438
+          ],
+          "pixel_sha256": "106e024277367b8d49ceeea1f55ef3c1b4708e51a9bb5305e1cd9c4154c3e8f7",
+          "audited_pixel_sha256": "106e024277367b8d49ceeea1f55ef3c1b4708e51a9bb5305e1cd9c4154c3e8f7"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 15,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "Q13-15.",
+      "anchors": [
+        {
+          "anchor_id": "2023-wiso-complete-p15-13",
+          "number": "13",
+          "bbox": [
+            48.15999984741211,
+            51.7924919128418,
+            72.73200225830078,
+            81.21149444580078
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 13 visually read on cached physical page 15.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "cb6d0118b729c8bb8da6f74bf110a821697fdbf2ad1f68c157e88c7a56e6add9"
+        },
+        {
+          "anchor_id": "2023-wiso-complete-p15-14",
+          "number": "14",
+          "bbox": [
+            297.0400085449219,
+            52.99250411987305,
+            321.6120300292969,
+            82.41150665283203
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 14 visually read on cached physical page 15.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "fb77d5719c13a17562096672ad4420e2b2765d3542cd3b57922989f6d30d6749"
+        },
+        {
+          "anchor_id": "2023-wiso-complete-p15-15",
+          "number": "15",
+          "bbox": [
+            45.7599983215332,
+            293.23248291015625,
+            70.33200073242188,
+            322.6514892578125
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 15 visually read on cached physical page 15.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "bdcc41960d212af3ed3dc64ec8f550834c202347217010f120d861851d0fa74b"
+        }
+      ],
+      "regions": [
+        {
+          "page": 15,
+          "bbox": [
+            45,
+            51,
+            285,
+            291
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p15-13",
+          "evidence": "Q13-15. Explicit panel includes all text, options, diagrams and response areas."
+        },
+        {
+          "page": 15,
+          "bbox": [
+            291,
+            51,
+            533,
+            291
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p15-14",
+          "evidence": "Q13-15. Explicit panel includes all text, options, diagrams and response areas."
+        },
+        {
+          "page": 15,
+          "bbox": [
+            44,
+            292,
+            285,
+            534
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p15-15",
+          "evidence": "Q13-15. Explicit panel includes all text, options, diagrams and response areas."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "13",
+          "bbox": [
+            48.15999984741211,
+            51.7924919128418,
+            72.73200225830078,
+            81.21149444580078
+          ],
+          "pixel_sha256": "cb6d0118b729c8bb8da6f74bf110a821697fdbf2ad1f68c157e88c7a56e6add9",
+          "audited_pixel_sha256": "cb6d0118b729c8bb8da6f74bf110a821697fdbf2ad1f68c157e88c7a56e6add9"
+        },
+        {
+          "kind": "heading",
+          "number": "14",
+          "bbox": [
+            297.0400085449219,
+            52.99250411987305,
+            321.6120300292969,
+            82.41150665283203
+          ],
+          "pixel_sha256": "fb77d5719c13a17562096672ad4420e2b2765d3542cd3b57922989f6d30d6749",
+          "audited_pixel_sha256": "fb77d5719c13a17562096672ad4420e2b2765d3542cd3b57922989f6d30d6749"
+        },
+        {
+          "kind": "heading",
+          "number": "15",
+          "bbox": [
+            45.7599983215332,
+            293.23248291015625,
+            70.33200073242188,
+            322.6514892578125
+          ],
+          "pixel_sha256": "bdcc41960d212af3ed3dc64ec8f550834c202347217010f120d861851d0fa74b",
+          "audited_pixel_sha256": "bdcc41960d212af3ed3dc64ec8f550834c202347217010f120d861851d0fa74b"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 16,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "U6 EU employment and Europass subparts 1-4, complete.",
+      "anchors": [
+        {
+          "anchor_id": "2023-wiso-complete-p16-U6",
+          "number": "U6",
+          "bbox": [
+            68.55999755859375,
+            59.71247482299805,
+            96.2030029296875,
+            89.13147735595703
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed U6 visually read on cached physical page 16.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "6f8cefa72c8fed8daf566b6cfd6c78afe59a0b5ffd31c0ece966a17d453f8460"
+        }
+      ],
+      "regions": [
+        {
+          "page": 16,
+          "bbox": [
+            61,
+            56,
+            546,
+            790
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p16-U6",
+          "evidence": "U6 EU employment and Europass subparts 1-4, complete. Explicit panel includes all text, options, diagrams and response areas."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "U6",
+          "bbox": [
+            68.55999755859375,
+            59.71247482299805,
+            96.2030029296875,
+            89.13147735595703
+          ],
+          "pixel_sha256": "6f8cefa72c8fed8daf566b6cfd6c78afe59a0b5ffd31c0ece966a17d453f8460",
+          "audited_pixel_sha256": "6f8cefa72c8fed8daf566b6cfd6c78afe59a0b5ffd31c0ece966a17d453f8460"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 17,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "classification_evidence": "Q16-18.",
+      "anchors": [
+        {
+          "anchor_id": "2023-wiso-complete-p17-16",
+          "number": "16",
+          "bbox": [
+            48.63999938964844,
+            49.209999084472656,
+            72.656005859375,
+            77.94200134277344
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 16 visually read on cached physical page 17.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "75e843a1da9c887c25ed042a64052f737939ae85f75ed0efdf6694f15fa32fca"
+        },
+        {
+          "anchor_id": "2023-wiso-complete-p17-17",
+          "number": "17",
+          "bbox": [
+            297.0400085449219,
+            50.170021057128906,
+            321.0559997558594,
+            78.90202331542969
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 17 visually read on cached physical page 17.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "95ee45e3b6e37027641fb0c8e66aff3299f62a8bd9491999c031b0e2851ab9dc"
+        },
+        {
+          "anchor_id": "2023-wiso-complete-p17-18",
+          "number": "18",
+          "bbox": [
+            46.720001220703125,
+            290.6499938964844,
+            70.73600769042969,
+            319.3819885253906
+          ],
+          "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+          "visual_evidence": "Printed 18 visually read on cached physical page 17.",
+          "review_reasons": [],
+          "heading_pixel_sha256": "6e0c7705de13afb9e9bd4c8c4c26453cf92a50e3a2f95f2b25cb17e261cc894b"
+        }
+      ],
+      "regions": [
+        {
+          "page": 17,
+          "bbox": [
+            46,
+            49,
+            286,
+            289
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p17-16",
+          "evidence": "Q16-18. Explicit panel includes all text, options, diagrams and response areas."
+        },
+        {
+          "page": 17,
+          "bbox": [
+            292,
+            49,
+            533,
+            289
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p17-17",
+          "evidence": "Q16-18. Explicit panel includes all text, options, diagrams and response areas."
+        },
+        {
+          "page": 17,
+          "bbox": [
+            45,
+            290,
+            286,
+            531
+          ],
+          "role": "primary",
+          "owner": "2023-wiso-complete-p17-18",
+          "evidence": "Q16-18. Explicit panel includes all text, options, diagrams and response areas."
+        }
+      ],
+      "proofs": [
+        {
+          "kind": "heading",
+          "number": "16",
+          "bbox": [
+            48.63999938964844,
+            49.209999084472656,
+            72.656005859375,
+            77.94200134277344
+          ],
+          "pixel_sha256": "75e843a1da9c887c25ed042a64052f737939ae85f75ed0efdf6694f15fa32fca",
+          "audited_pixel_sha256": "75e843a1da9c887c25ed042a64052f737939ae85f75ed0efdf6694f15fa32fca"
+        },
+        {
+          "kind": "heading",
+          "number": "17",
+          "bbox": [
+            297.0400085449219,
+            50.170021057128906,
+            321.0559997558594,
+            78.90202331542969
+          ],
+          "pixel_sha256": "95ee45e3b6e37027641fb0c8e66aff3299f62a8bd9491999c031b0e2851ab9dc",
+          "audited_pixel_sha256": "95ee45e3b6e37027641fb0c8e66aff3299f62a8bd9491999c031b0e2851ab9dc"
+        },
+        {
+          "kind": "heading",
+          "number": "18",
+          "bbox": [
+            46.720001220703125,
+            290.6499938964844,
+            70.73600769042969,
+            319.3819885253906
+          ],
+          "pixel_sha256": "6e0c7705de13afb9e9bd4c8c4c26453cf92a50e3a2f95f2b25cb17e261cc894b",
+          "audited_pixel_sha256": "6e0c7705de13afb9e9bd4c8c4c26453cf92a50e3a2f95f2b25cb17e261cc894b"
+        }
+      ],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    },
+    {
+      "page": 18,
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "context_or_cover",
+      "classification_evidence": "Marking-sheet checklist and examiner totals; no questions.",
+      "anchors": [],
+      "regions": [],
+      "proofs": [],
+      "issues": [],
+      "context_regions": [],
+      "review_status": "visually_verified",
+      "user_acceptance": "pending"
+    }
+  ]
+}

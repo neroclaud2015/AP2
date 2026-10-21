@@ -46094,6 +46094,1870 @@
           }
         }
       ]
+    },
+    {
+      "source_id": "src-8278d0ec73126136a3acac88",
+      "exam": "2023-sommer",
+      "module": "funktionsanalyse",
+      "source_type": "question_pdf",
+      "filename": "2023 Sommer/Mech_S_23_FA_A&B&Zeichnungen.pdf",
+      "sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+      "version": 2,
+      "status": "production",
+      "layout_profile": "portrait-explicit-regions@completion.1.0-39f6a77cfc56",
+      "answer_profile": "ring-annulus-explicit@2f.1.0",
+      "supersedes_source_id": "src-a7c5cc96dba3fd3dba74fd4d",
+      "created_at": "2026-10-21T13:09:38.571671+00:00",
+      "identity_migration": {
+        "decision": "first_formal_dataset",
+        "evidence": {
+          "reviewed_by": "user-authorized-2026-10-21-first-formal-source-completion",
+          "basis": "Every predecessor has no formal_segmented/answers_extracted/validated/production gate; no existing formal question identity is replaced."
+        },
+        "dataset_bindings": {
+          "new": {
+            "source_id": "src-8278d0ec73126136a3acac88",
+            "dataset_path": "public/data/2023_sommer_funktionsanalyse_complete_segmented.json",
+            "dataset_sha256": "23c39b405c9772971fff11d3f6726a379f16d7a1bb64b19f16a54f542a658ad7",
+            "question_ids": [
+              "2023-fa-complete-p10-25",
+              "2023-fa-complete-p10-26",
+              "2023-fa-complete-p10-27",
+              "2023-fa-complete-p10-28",
+              "2023-fa-complete-p16-U1",
+              "2023-fa-complete-p17-U2",
+              "2023-fa-complete-p18-U3",
+              "2023-fa-complete-p20-U4",
+              "2023-fa-complete-p21-U5",
+              "2023-fa-complete-p22-U6",
+              "2023-fa-complete-p23-U7",
+              "2023-fa-complete-p24-U8",
+              "2023-fa-complete-p3-1",
+              "2023-fa-complete-p3-2",
+              "2023-fa-complete-p4-3",
+              "2023-fa-complete-p4-4",
+              "2023-fa-complete-p4-5",
+              "2023-fa-complete-p4-6",
+              "2023-fa-complete-p4-7",
+              "2023-fa-complete-p5-10",
+              "2023-fa-complete-p5-8",
+              "2023-fa-complete-p5-9",
+              "2023-fa-complete-p6-11",
+              "2023-fa-complete-p6-12",
+              "2023-fa-complete-p6-13",
+              "2023-fa-complete-p6-14",
+              "2023-fa-complete-p6-15",
+              "2023-fa-complete-p7-16",
+              "2023-fa-complete-p7-17",
+              "2023-fa-complete-p7-18",
+              "2023-fa-complete-p8-19",
+              "2023-fa-complete-p8-20",
+              "2023-fa-complete-p8-21",
+              "2023-fa-complete-p8-22",
+              "2023-fa-complete-p9-23",
+              "2023-fa-complete-p9-24"
+            ]
+          }
+        },
+        "predecessors": {
+          "src-a7c5cc96dba3fd3dba74fd4d": "3d7f68ab7cf2748082d4ec73d486570ea4b5df4a9f05408dbb6ef9964a3e9279"
+        },
+        "at": "2026-10-21T13:18:31.258124+00:00"
+      },
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b.json": "29a6f10c693e2b6c63cd3272df664adbcd09e552879d30f6e325b5acebfbc9db"
+          }
+        },
+        "profile_matched": {
+          "source_sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2023_fa_complete.json": "c7e81e970da4a32f91255b7108ccaaf69512208736f0cceb4ee90a5ebec61c7d"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "profile_id": "portrait-explicit-regions",
+          "validated_sources": [
+            "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b"
+          ]
+        },
+        "layout_validated": {
+          "source_sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+          "result": "passed",
+          "artifacts": {
+            "docs/evidence/phase2f/2023-fa-complete/layout-validation.json": "220c6bb6a4f90cd57d70aba8c24e0111fc2e7daef8d0b8f95d77b3c8e96ba69c"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "preview_ready": {
+          "source_sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+          "result": "passed",
+          "artifacts": {
+            "docs/evidence/phase2f/2023-fa-complete/preview-manifest.json": "56d1c4863cbef10018ff732e497be670c1d4de7babdacea1c0de97c27f0f0e18",
+            "docs/evidence/phase2f/2023-fa-complete/index.html": "13cce244db838aee2d67d9f9a1b1e854c1a256ea78a2812c6f156b071d7376b0",
+            "docs/evidence/phase2f/2023-fa-complete/layout-validation.json": "220c6bb6a4f90cd57d70aba8c24e0111fc2e7daef8d0b8f95d77b3c8e96ba69c"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "formal_segmented": {
+          "source_sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2023_sommer_funktionsanalyse_complete_segmented.json": "23c39b405c9772971fff11d3f6726a379f16d7a1bb64b19f16a54f542a658ad7",
+            "public/data/2023_sommer_funktionsanalyse_complete_segmented.json": "23c39b405c9772971fff11d3f6726a379f16d7a1bb64b19f16a54f542a658ad7"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "answers_extracted": {
+          "source_sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2023_sommer_funktionsanalyse_complete_answers.json": "e27eb5d206889a6c7a46f2938ed2509de13afc4111070ab96100e7a7bb22ebfe",
+            "public/data/2023_sommer_funktionsanalyse_complete_answers.json": "e27eb5d206889a6c7a46f2938ed2509de13afc4111070ab96100e7a7bb22ebfe",
+            "data/exams/2023_sommer_funktionsanalyse_complete_u_solutions.json": "a5b64f5a5f888c32946d5280750dfac9cc1eeb82ed02583d51a1860e45fd76b4",
+            "public/data/2023_sommer_funktionsanalyse_complete_u_solutions.json": "a5b64f5a5f888c32946d5280750dfac9cc1eeb82ed02583d51a1860e45fd76b4"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "validated": {
+          "source_sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+          "result": "passed",
+          "artifacts": {
+            "public/data/2023_sommer_funktionsanalyse_complete_segmented.json": "23c39b405c9772971fff11d3f6726a379f16d7a1bb64b19f16a54f542a658ad7",
+            "public/data/2023_sommer_funktionsanalyse_complete_answers.json": "e27eb5d206889a6c7a46f2938ed2509de13afc4111070ab96100e7a7bb22ebfe",
+            "public/data/2023_sommer_funktionsanalyse_complete_u_solutions.json": "a5b64f5a5f888c32946d5280750dfac9cc1eeb82ed02583d51a1860e45fd76b4",
+            "docs/evidence/phase2f/2023-fa-complete/answer-coverage.json": "2dfc97e76a404845e3031a306f3821db2c4e09114b875128077ba8a936ab9c7b"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "question_revision": "completion.1.0-39f6a77cfc56",
+          "official_answer_revision": "2023-fa-complete-2f.1.0-643631182c50",
+          "question_ids": [
+            "2023-fa-complete-p3-1",
+            "2023-fa-complete-p3-2",
+            "2023-fa-complete-p4-3",
+            "2023-fa-complete-p4-4",
+            "2023-fa-complete-p4-5",
+            "2023-fa-complete-p4-6",
+            "2023-fa-complete-p4-7",
+            "2023-fa-complete-p5-8",
+            "2023-fa-complete-p5-9",
+            "2023-fa-complete-p5-10",
+            "2023-fa-complete-p6-11",
+            "2023-fa-complete-p6-12",
+            "2023-fa-complete-p6-13",
+            "2023-fa-complete-p6-14",
+            "2023-fa-complete-p6-15",
+            "2023-fa-complete-p7-16",
+            "2023-fa-complete-p7-17",
+            "2023-fa-complete-p7-18",
+            "2023-fa-complete-p8-19",
+            "2023-fa-complete-p8-20",
+            "2023-fa-complete-p8-21",
+            "2023-fa-complete-p8-22",
+            "2023-fa-complete-p9-23",
+            "2023-fa-complete-p9-24",
+            "2023-fa-complete-p10-25",
+            "2023-fa-complete-p10-26",
+            "2023-fa-complete-p10-27",
+            "2023-fa-complete-p10-28",
+            "2023-fa-complete-p16-U1",
+            "2023-fa-complete-p17-U2",
+            "2023-fa-complete-p18-U3",
+            "2023-fa-complete-p20-U4",
+            "2023-fa-complete-p21-U5",
+            "2023-fa-complete-p22-U6",
+            "2023-fa-complete-p23-U7",
+            "2023-fa-complete-p24-U8"
+          ]
+        },
+        "production": {
+          "result": "passed",
+          "artifacts": {
+            "public/data/2023_sommer_funktionsanalyse_complete_segmented.json": "23c39b405c9772971fff11d3f6726a379f16d7a1bb64b19f16a54f542a658ad7",
+            "public/data/2023_sommer_funktionsanalyse_complete_answers.json": "e27eb5d206889a6c7a46f2938ed2509de13afc4111070ab96100e7a7bb22ebfe",
+            "public/data/2023_sommer_funktionsanalyse_complete_u_solutions.json": "a5b64f5a5f888c32946d5280750dfac9cc1eeb82ed02583d51a1860e45fd76b4",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q01.png": "dca372db6807d4ce6d083b80c341d772c535aee8c7113024fec0cadf689d68f0",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q02.png": "aa2941a8c527eca1c7819a64ca5c984819d0c691001291baaef7aaeff8d02cbb",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q03.png": "8132e1ca04e54bfec0bbce485f113818efbefc0f5499af1fb7fe4fc288c36c3d",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q04.png": "bbb7c0e97df98f3f571ba5f20008009e62e9846bf6382b5d1fbba99e0f9cdd0c",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q05.png": "4467a36c99e2c78a377fa5960e3b7dc273c7695c583209131e4fe7feee2beda4",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q06.png": "3821f1b19995a211a230789bed2e4d189304bd92c13e81d141700b5edd4b1ab4",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q07.png": "4972f117bcc0d38638a143640b88b02a151ea772b8d9840337123847a44376ad",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q08.png": "349fa37fa8652eced345c91d0257cbe84f0247f278aa414e71e3545f8a438dd1",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q09.png": "e577b10dc08e9ec176bd8b7ddebb5d9b50f2dc0d3b48780ac4be326a0be95c28",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q10.png": "3e173ce66a3fc8c717ed086a0c953d617a948716648e70e692865d4736f56927",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q11.png": "bdd79bfc5fd322310ae9b8a64afb0b4d8ffa0dcca739438a4e364da40d4063e9",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q12.png": "75dcb11e2c0bfff76f944f8eb520beb51ababcfd6ad76f6c97a284c2f30bf97b",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q13.png": "65fe586fe57d1ee404420ff4f6678cc4158a1ca8083a57ab14f3f97e81695423",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q14.png": "ce20aadfe78f0d5be71d70852f7bbb2b91836e7fc1ef9647faa499475e696ecb",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q15.png": "6e58e283d0b740d7dc692e83d666782ca77cb47525c79afec89bcd807225f738",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q16.png": "38f05a2d1ee11600f0d4cb649fb25104ae2423617dd2a136e7c88ec7fef9b090",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q17.png": "76791eecb1ceeb9671c3bce93e87e3403212fc4b5507c1f9d8498135c2c4547a",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q18.png": "f24239580cc0d768698d3d6f659f7b0a6c9a3a505f2e4f63bc13adb4d250cfcc",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q19.png": "ece60b8e454c961be2b126ff0b1249fa2572f076642b987fe46889f3ccb651d4",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q20.png": "3e1c68f39072d226ea2dbe16fc896222c5aea65b9acb4e6317c69e620b47d9c2",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q21.png": "43a704a84cbc90e262b3038957ab47dc693e7e1018842c0ed1d946e03f7e39ab",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q22.png": "06c2bf314ee19444dd9ce9284ea6b949683c64c775b6a1129a36c49f6bb18c97",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q23.png": "b4ba04676e2a810d6d8b5097ad4db4855b5a6b19857ebc56a74ac21d21408d16",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q24.png": "6b26feae9909304e54cf0876bdb05107fe5c88fc40701f0676a235a72adc2bfd",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q25.png": "a433a5a19fc275234aca980bdca598025e6aa1fcd6163824cc6b6ce142eb5747",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q26.png": "cbcf2ccb2efbace00bba52d55ff720e2354e046c1a9f62fa780cb636d7e345d7",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q27.png": "5ad57b2ca0ab9fd45bfde03852e3a41dc47cfb298866e358fd6a6a08c274a43a",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q28.png": "59bef4e3fae313c473d019dd281ee44aafc617f92733ca03977d01b9bad360ed",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U1.png": "cf34e609358f82ca3075361c775d0db5f54bee324b4377892e6fc6758197628b",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U2.png": "0d84fae762b15760a3549e402f9ecf48b10deab3edacfc07aa68fd5c16757d01",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U3.png": "e2460ee2eb07fc052e22b33adacd1ab9736f8d43c8245328f9c5f5bad57f230f",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U4.png": "f944ccd36a14e4e80934532bee7d73adae5ba9866eda9c21ab7d64a17e09f160",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U5.png": "fb5ed7b2dfaa9592bd2e7e907d0bd9f1d925224dd78adbbb62713b3ce1186473",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U6.png": "d8ff68502af69ecb5f01d691b1ffcb976b7d448e13a97b6a7b2cb042980eb2e9",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U7.png": "5d81de27eb02de7d8ba218ae3eec7d723836930fda665e4347ace958a447b275",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U8.png": "d837f20892121d8d024a9f7433caffe41cc32d2c1484ff20b0f708b5005dad9e",
+            "public/assets/sources/6b251e40510bcc273fad437b/timing-2.png": "7eab0279362215ae33bc14cd65ef281784a9a4c00bac6a558701602390f531b2"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "question_ids": [
+            "2023-fa-complete-p3-1",
+            "2023-fa-complete-p3-2",
+            "2023-fa-complete-p4-3",
+            "2023-fa-complete-p4-4",
+            "2023-fa-complete-p4-5",
+            "2023-fa-complete-p4-6",
+            "2023-fa-complete-p4-7",
+            "2023-fa-complete-p5-8",
+            "2023-fa-complete-p5-9",
+            "2023-fa-complete-p5-10",
+            "2023-fa-complete-p6-11",
+            "2023-fa-complete-p6-12",
+            "2023-fa-complete-p6-13",
+            "2023-fa-complete-p6-14",
+            "2023-fa-complete-p6-15",
+            "2023-fa-complete-p7-16",
+            "2023-fa-complete-p7-17",
+            "2023-fa-complete-p7-18",
+            "2023-fa-complete-p8-19",
+            "2023-fa-complete-p8-20",
+            "2023-fa-complete-p8-21",
+            "2023-fa-complete-p8-22",
+            "2023-fa-complete-p9-23",
+            "2023-fa-complete-p9-24",
+            "2023-fa-complete-p10-25",
+            "2023-fa-complete-p10-26",
+            "2023-fa-complete-p10-27",
+            "2023-fa-complete-p10-28",
+            "2023-fa-complete-p16-U1",
+            "2023-fa-complete-p17-U2",
+            "2023-fa-complete-p18-U3",
+            "2023-fa-complete-p20-U4",
+            "2023-fa-complete-p21-U5",
+            "2023-fa-complete-p22-U6",
+            "2023-fa-complete-p23-U7",
+            "2023-fa-complete-p24-U8"
+          ],
+          "question_revision": "completion.1.0-39f6a77cfc56",
+          "official_answer_revision": "2023-fa-complete-2f.1.0-643631182c50",
+          "official_solution_revision": "2023-fa-complete-2f.1.0-643631182c50",
+          "basis": "All cached pages/headings/ownership and final original question/solution crops inspected; unique deterministic official answers required.",
+          "source_sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b"
+        }
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-10-21T13:09:38.571671+00:00"
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-10-21T13:09:39.717426+00:00",
+          "evidence": {
+            "source_sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b.json": "29a6f10c693e2b6c63cd3272df664adbcd09e552879d30f6e325b5acebfbc9db"
+            }
+          }
+        },
+        {
+          "stage": "profile_matched",
+          "at": "2026-10-21T13:14:21.900546+00:00",
+          "evidence": {
+            "source_sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2023_fa_complete.json": "c7e81e970da4a32f91255b7108ccaaf69512208736f0cceb4ee90a5ebec61c7d"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "profile_id": "portrait-explicit-regions",
+            "validated_sources": [
+              "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b"
+            ]
+          }
+        },
+        {
+          "stage": "layout_validated",
+          "at": "2026-10-21T13:14:23.288713+00:00",
+          "evidence": {
+            "source_sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+            "result": "passed",
+            "artifacts": {
+              "docs/evidence/phase2f/2023-fa-complete/layout-validation.json": "220c6bb6a4f90cd57d70aba8c24e0111fc2e7daef8d0b8f95d77b3c8e96ba69c"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "preview_ready",
+          "at": "2026-10-21T13:14:30.092277+00:00",
+          "evidence": {
+            "source_sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+            "result": "passed",
+            "artifacts": {
+              "docs/evidence/phase2f/2023-fa-complete/preview-manifest.json": "56d1c4863cbef10018ff732e497be670c1d4de7babdacea1c0de97c27f0f0e18",
+              "docs/evidence/phase2f/2023-fa-complete/index.html": "13cce244db838aee2d67d9f9a1b1e854c1a256ea78a2812c6f156b071d7376b0",
+              "docs/evidence/phase2f/2023-fa-complete/layout-validation.json": "220c6bb6a4f90cd57d70aba8c24e0111fc2e7daef8d0b8f95d77b3c8e96ba69c"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "formal_segmented",
+          "at": "2026-10-21T13:14:39.148952+00:00",
+          "evidence": {
+            "source_sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2023_sommer_funktionsanalyse_complete_segmented.json": "23c39b405c9772971fff11d3f6726a379f16d7a1bb64b19f16a54f542a658ad7",
+              "public/data/2023_sommer_funktionsanalyse_complete_segmented.json": "23c39b405c9772971fff11d3f6726a379f16d7a1bb64b19f16a54f542a658ad7"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "answers_extracted",
+          "at": "2026-10-21T13:14:47.415844+00:00",
+          "evidence": {
+            "source_sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2023_sommer_funktionsanalyse_complete_answers.json": "e27eb5d206889a6c7a46f2938ed2509de13afc4111070ab96100e7a7bb22ebfe",
+              "public/data/2023_sommer_funktionsanalyse_complete_answers.json": "e27eb5d206889a6c7a46f2938ed2509de13afc4111070ab96100e7a7bb22ebfe",
+              "data/exams/2023_sommer_funktionsanalyse_complete_u_solutions.json": "a5b64f5a5f888c32946d5280750dfac9cc1eeb82ed02583d51a1860e45fd76b4",
+              "public/data/2023_sommer_funktionsanalyse_complete_u_solutions.json": "a5b64f5a5f888c32946d5280750dfac9cc1eeb82ed02583d51a1860e45fd76b4"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "validated",
+          "at": "2026-10-21T13:14:48.603526+00:00",
+          "evidence": {
+            "source_sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+            "result": "passed",
+            "artifacts": {
+              "public/data/2023_sommer_funktionsanalyse_complete_segmented.json": "23c39b405c9772971fff11d3f6726a379f16d7a1bb64b19f16a54f542a658ad7",
+              "public/data/2023_sommer_funktionsanalyse_complete_answers.json": "e27eb5d206889a6c7a46f2938ed2509de13afc4111070ab96100e7a7bb22ebfe",
+              "public/data/2023_sommer_funktionsanalyse_complete_u_solutions.json": "a5b64f5a5f888c32946d5280750dfac9cc1eeb82ed02583d51a1860e45fd76b4",
+              "docs/evidence/phase2f/2023-fa-complete/answer-coverage.json": "2dfc97e76a404845e3031a306f3821db2c4e09114b875128077ba8a936ab9c7b"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "question_revision": "completion.1.0-39f6a77cfc56",
+            "official_answer_revision": "2023-fa-complete-2f.1.0-643631182c50",
+            "question_ids": [
+              "2023-fa-complete-p3-1",
+              "2023-fa-complete-p3-2",
+              "2023-fa-complete-p4-3",
+              "2023-fa-complete-p4-4",
+              "2023-fa-complete-p4-5",
+              "2023-fa-complete-p4-6",
+              "2023-fa-complete-p4-7",
+              "2023-fa-complete-p5-8",
+              "2023-fa-complete-p5-9",
+              "2023-fa-complete-p5-10",
+              "2023-fa-complete-p6-11",
+              "2023-fa-complete-p6-12",
+              "2023-fa-complete-p6-13",
+              "2023-fa-complete-p6-14",
+              "2023-fa-complete-p6-15",
+              "2023-fa-complete-p7-16",
+              "2023-fa-complete-p7-17",
+              "2023-fa-complete-p7-18",
+              "2023-fa-complete-p8-19",
+              "2023-fa-complete-p8-20",
+              "2023-fa-complete-p8-21",
+              "2023-fa-complete-p8-22",
+              "2023-fa-complete-p9-23",
+              "2023-fa-complete-p9-24",
+              "2023-fa-complete-p10-25",
+              "2023-fa-complete-p10-26",
+              "2023-fa-complete-p10-27",
+              "2023-fa-complete-p10-28",
+              "2023-fa-complete-p16-U1",
+              "2023-fa-complete-p17-U2",
+              "2023-fa-complete-p18-U3",
+              "2023-fa-complete-p20-U4",
+              "2023-fa-complete-p21-U5",
+              "2023-fa-complete-p22-U6",
+              "2023-fa-complete-p23-U7",
+              "2023-fa-complete-p24-U8"
+            ]
+          }
+        },
+        {
+          "stage": "production",
+          "at": "2026-10-21T13:18:32.485112+00:00",
+          "evidence": {
+            "result": "passed",
+            "artifacts": {
+              "public/data/2023_sommer_funktionsanalyse_complete_segmented.json": "23c39b405c9772971fff11d3f6726a379f16d7a1bb64b19f16a54f542a658ad7",
+              "public/data/2023_sommer_funktionsanalyse_complete_answers.json": "e27eb5d206889a6c7a46f2938ed2509de13afc4111070ab96100e7a7bb22ebfe",
+              "public/data/2023_sommer_funktionsanalyse_complete_u_solutions.json": "a5b64f5a5f888c32946d5280750dfac9cc1eeb82ed02583d51a1860e45fd76b4",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q01.png": "dca372db6807d4ce6d083b80c341d772c535aee8c7113024fec0cadf689d68f0",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q02.png": "aa2941a8c527eca1c7819a64ca5c984819d0c691001291baaef7aaeff8d02cbb",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q03.png": "8132e1ca04e54bfec0bbce485f113818efbefc0f5499af1fb7fe4fc288c36c3d",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q04.png": "bbb7c0e97df98f3f571ba5f20008009e62e9846bf6382b5d1fbba99e0f9cdd0c",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q05.png": "4467a36c99e2c78a377fa5960e3b7dc273c7695c583209131e4fe7feee2beda4",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q06.png": "3821f1b19995a211a230789bed2e4d189304bd92c13e81d141700b5edd4b1ab4",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q07.png": "4972f117bcc0d38638a143640b88b02a151ea772b8d9840337123847a44376ad",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q08.png": "349fa37fa8652eced345c91d0257cbe84f0247f278aa414e71e3545f8a438dd1",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q09.png": "e577b10dc08e9ec176bd8b7ddebb5d9b50f2dc0d3b48780ac4be326a0be95c28",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q10.png": "3e173ce66a3fc8c717ed086a0c953d617a948716648e70e692865d4736f56927",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q11.png": "bdd79bfc5fd322310ae9b8a64afb0b4d8ffa0dcca739438a4e364da40d4063e9",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q12.png": "75dcb11e2c0bfff76f944f8eb520beb51ababcfd6ad76f6c97a284c2f30bf97b",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q13.png": "65fe586fe57d1ee404420ff4f6678cc4158a1ca8083a57ab14f3f97e81695423",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q14.png": "ce20aadfe78f0d5be71d70852f7bbb2b91836e7fc1ef9647faa499475e696ecb",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q15.png": "6e58e283d0b740d7dc692e83d666782ca77cb47525c79afec89bcd807225f738",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q16.png": "38f05a2d1ee11600f0d4cb649fb25104ae2423617dd2a136e7c88ec7fef9b090",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q17.png": "76791eecb1ceeb9671c3bce93e87e3403212fc4b5507c1f9d8498135c2c4547a",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q18.png": "f24239580cc0d768698d3d6f659f7b0a6c9a3a505f2e4f63bc13adb4d250cfcc",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q19.png": "ece60b8e454c961be2b126ff0b1249fa2572f076642b987fe46889f3ccb651d4",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q20.png": "3e1c68f39072d226ea2dbe16fc896222c5aea65b9acb4e6317c69e620b47d9c2",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q21.png": "43a704a84cbc90e262b3038957ab47dc693e7e1018842c0ed1d946e03f7e39ab",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q22.png": "06c2bf314ee19444dd9ce9284ea6b949683c64c775b6a1129a36c49f6bb18c97",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q23.png": "b4ba04676e2a810d6d8b5097ad4db4855b5a6b19857ebc56a74ac21d21408d16",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q24.png": "6b26feae9909304e54cf0876bdb05107fe5c88fc40701f0676a235a72adc2bfd",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q25.png": "a433a5a19fc275234aca980bdca598025e6aa1fcd6163824cc6b6ce142eb5747",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q26.png": "cbcf2ccb2efbace00bba52d55ff720e2354e046c1a9f62fa780cb636d7e345d7",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q27.png": "5ad57b2ca0ab9fd45bfde03852e3a41dc47cfb298866e358fd6a6a08c274a43a",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q28.png": "59bef4e3fae313c473d019dd281ee44aafc617f92733ca03977d01b9bad360ed",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U1.png": "cf34e609358f82ca3075361c775d0db5f54bee324b4377892e6fc6758197628b",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U2.png": "0d84fae762b15760a3549e402f9ecf48b10deab3edacfc07aa68fd5c16757d01",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U3.png": "e2460ee2eb07fc052e22b33adacd1ab9736f8d43c8245328f9c5f5bad57f230f",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U4.png": "f944ccd36a14e4e80934532bee7d73adae5ba9866eda9c21ab7d64a17e09f160",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U5.png": "fb5ed7b2dfaa9592bd2e7e907d0bd9f1d925224dd78adbbb62713b3ce1186473",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U6.png": "d8ff68502af69ecb5f01d691b1ffcb976b7d448e13a97b6a7b2cb042980eb2e9",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U7.png": "5d81de27eb02de7d8ba218ae3eec7d723836930fda665e4347ace958a447b275",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U8.png": "d837f20892121d8d024a9f7433caffe41cc32d2c1484ff20b0f708b5005dad9e",
+              "public/assets/sources/6b251e40510bcc273fad437b/timing-2.png": "7eab0279362215ae33bc14cd65ef281784a9a4c00bac6a558701602390f531b2"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "question_ids": [
+              "2023-fa-complete-p3-1",
+              "2023-fa-complete-p3-2",
+              "2023-fa-complete-p4-3",
+              "2023-fa-complete-p4-4",
+              "2023-fa-complete-p4-5",
+              "2023-fa-complete-p4-6",
+              "2023-fa-complete-p4-7",
+              "2023-fa-complete-p5-8",
+              "2023-fa-complete-p5-9",
+              "2023-fa-complete-p5-10",
+              "2023-fa-complete-p6-11",
+              "2023-fa-complete-p6-12",
+              "2023-fa-complete-p6-13",
+              "2023-fa-complete-p6-14",
+              "2023-fa-complete-p6-15",
+              "2023-fa-complete-p7-16",
+              "2023-fa-complete-p7-17",
+              "2023-fa-complete-p7-18",
+              "2023-fa-complete-p8-19",
+              "2023-fa-complete-p8-20",
+              "2023-fa-complete-p8-21",
+              "2023-fa-complete-p8-22",
+              "2023-fa-complete-p9-23",
+              "2023-fa-complete-p9-24",
+              "2023-fa-complete-p10-25",
+              "2023-fa-complete-p10-26",
+              "2023-fa-complete-p10-27",
+              "2023-fa-complete-p10-28",
+              "2023-fa-complete-p16-U1",
+              "2023-fa-complete-p17-U2",
+              "2023-fa-complete-p18-U3",
+              "2023-fa-complete-p20-U4",
+              "2023-fa-complete-p21-U5",
+              "2023-fa-complete-p22-U6",
+              "2023-fa-complete-p23-U7",
+              "2023-fa-complete-p24-U8"
+            ],
+            "question_revision": "completion.1.0-39f6a77cfc56",
+            "official_answer_revision": "2023-fa-complete-2f.1.0-643631182c50",
+            "official_solution_revision": "2023-fa-complete-2f.1.0-643631182c50",
+            "basis": "All cached pages/headings/ownership and final original question/solution crops inspected; unique deterministic official answers required.",
+            "source_sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "src-cb20ae777f75c7a6cf6494b6",
+      "exam": "2023-sommer",
+      "module": "funktionsanalyse",
+      "source_type": "solution_pdf",
+      "filename": "2023 Sommer/Mech_S_23_Lösungen.pdf",
+      "sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "version": 2,
+      "status": "production",
+      "layout_profile": "portrait-explicit-regions@completion.1.0-39f6a77cfc56",
+      "answer_profile": "official-ring-grid@2023-fa-complete-2f.1.0-643631182c50",
+      "supersedes_source_id": "src-9761cf6b956fed38a0bcda54",
+      "created_at": "2026-10-21T13:09:38.629073+00:00",
+      "identity_migration": {
+        "decision": "first_formal_dataset",
+        "evidence": {
+          "reviewed_by": "user-authorized-2026-10-21-first-formal-source-completion",
+          "basis": "Every predecessor has no formal_segmented/answers_extracted/validated/production gate; no existing formal question identity is replaced."
+        },
+        "dataset_bindings": {
+          "new": {
+            "source_id": "src-cb20ae777f75c7a6cf6494b6",
+            "dataset_path": "public/data/2023_sommer_funktionsanalyse_complete_segmented.json",
+            "dataset_sha256": "23c39b405c9772971fff11d3f6726a379f16d7a1bb64b19f16a54f542a658ad7",
+            "question_ids": [
+              "2023-fa-complete-p10-25",
+              "2023-fa-complete-p10-26",
+              "2023-fa-complete-p10-27",
+              "2023-fa-complete-p10-28",
+              "2023-fa-complete-p16-U1",
+              "2023-fa-complete-p17-U2",
+              "2023-fa-complete-p18-U3",
+              "2023-fa-complete-p20-U4",
+              "2023-fa-complete-p21-U5",
+              "2023-fa-complete-p22-U6",
+              "2023-fa-complete-p23-U7",
+              "2023-fa-complete-p24-U8",
+              "2023-fa-complete-p3-1",
+              "2023-fa-complete-p3-2",
+              "2023-fa-complete-p4-3",
+              "2023-fa-complete-p4-4",
+              "2023-fa-complete-p4-5",
+              "2023-fa-complete-p4-6",
+              "2023-fa-complete-p4-7",
+              "2023-fa-complete-p5-10",
+              "2023-fa-complete-p5-8",
+              "2023-fa-complete-p5-9",
+              "2023-fa-complete-p6-11",
+              "2023-fa-complete-p6-12",
+              "2023-fa-complete-p6-13",
+              "2023-fa-complete-p6-14",
+              "2023-fa-complete-p6-15",
+              "2023-fa-complete-p7-16",
+              "2023-fa-complete-p7-17",
+              "2023-fa-complete-p7-18",
+              "2023-fa-complete-p8-19",
+              "2023-fa-complete-p8-20",
+              "2023-fa-complete-p8-21",
+              "2023-fa-complete-p8-22",
+              "2023-fa-complete-p9-23",
+              "2023-fa-complete-p9-24"
+            ]
+          }
+        },
+        "predecessors": {
+          "src-9761cf6b956fed38a0bcda54": "af92887546eb8f3f75c461ce0fc242dd19b2b82f1311e6dd1a2f112700e455ed"
+        },
+        "at": "2026-10-21T13:18:31.311548+00:00"
+      },
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da.json": "1f68f5727af7099e59eec904859ebb5a9f998dd13c526229b955d2fe5462e5c6"
+          }
+        },
+        "profile_matched": {
+          "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2023_fa_complete_official.json": "1b3e4caefd5079b49937673291c9600e72590f58d5c49da537632a891fe49532"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "layout_validated": {
+          "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2023_fa_complete_official.json": "1b3e4caefd5079b49937673291c9600e72590f58d5c49da537632a891fe49532",
+            "public/data/2023_sommer_funktionsanalyse_complete_segmented.json": "23c39b405c9772971fff11d3f6726a379f16d7a1bb64b19f16a54f542a658ad7"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "preview_ready": {
+          "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2023_fa_complete_official.json": "1b3e4caefd5079b49937673291c9600e72590f58d5c49da537632a891fe49532",
+            "public/data/2023_sommer_funktionsanalyse_complete_segmented.json": "23c39b405c9772971fff11d3f6726a379f16d7a1bb64b19f16a54f542a658ad7"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "formal_segmented": {
+          "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2023_fa_complete_official.json": "1b3e4caefd5079b49937673291c9600e72590f58d5c49da537632a891fe49532",
+            "public/data/2023_sommer_funktionsanalyse_complete_segmented.json": "23c39b405c9772971fff11d3f6726a379f16d7a1bb64b19f16a54f542a658ad7"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "answers_extracted": {
+          "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2023_sommer_funktionsanalyse_complete_answers.json": "e27eb5d206889a6c7a46f2938ed2509de13afc4111070ab96100e7a7bb22ebfe",
+            "public/data/2023_sommer_funktionsanalyse_complete_answers.json": "e27eb5d206889a6c7a46f2938ed2509de13afc4111070ab96100e7a7bb22ebfe",
+            "data/exams/2023_sommer_funktionsanalyse_complete_u_solutions.json": "a5b64f5a5f888c32946d5280750dfac9cc1eeb82ed02583d51a1860e45fd76b4",
+            "public/data/2023_sommer_funktionsanalyse_complete_u_solutions.json": "a5b64f5a5f888c32946d5280750dfac9cc1eeb82ed02583d51a1860e45fd76b4"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "validated": {
+          "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+          "result": "passed",
+          "artifacts": {
+            "public/data/2023_sommer_funktionsanalyse_complete_segmented.json": "23c39b405c9772971fff11d3f6726a379f16d7a1bb64b19f16a54f542a658ad7",
+            "public/data/2023_sommer_funktionsanalyse_complete_answers.json": "e27eb5d206889a6c7a46f2938ed2509de13afc4111070ab96100e7a7bb22ebfe",
+            "public/data/2023_sommer_funktionsanalyse_complete_u_solutions.json": "a5b64f5a5f888c32946d5280750dfac9cc1eeb82ed02583d51a1860e45fd76b4",
+            "docs/evidence/phase2f/2023-fa-complete/answer-coverage.json": "2dfc97e76a404845e3031a306f3821db2c4e09114b875128077ba8a936ab9c7b"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "question_revision": "completion.1.0-39f6a77cfc56",
+          "official_answer_revision": "2023-fa-complete-2f.1.0-643631182c50",
+          "question_ids": [
+            "2023-fa-complete-p3-1",
+            "2023-fa-complete-p3-2",
+            "2023-fa-complete-p4-3",
+            "2023-fa-complete-p4-4",
+            "2023-fa-complete-p4-5",
+            "2023-fa-complete-p4-6",
+            "2023-fa-complete-p4-7",
+            "2023-fa-complete-p5-8",
+            "2023-fa-complete-p5-9",
+            "2023-fa-complete-p5-10",
+            "2023-fa-complete-p6-11",
+            "2023-fa-complete-p6-12",
+            "2023-fa-complete-p6-13",
+            "2023-fa-complete-p6-14",
+            "2023-fa-complete-p6-15",
+            "2023-fa-complete-p7-16",
+            "2023-fa-complete-p7-17",
+            "2023-fa-complete-p7-18",
+            "2023-fa-complete-p8-19",
+            "2023-fa-complete-p8-20",
+            "2023-fa-complete-p8-21",
+            "2023-fa-complete-p8-22",
+            "2023-fa-complete-p9-23",
+            "2023-fa-complete-p9-24",
+            "2023-fa-complete-p10-25",
+            "2023-fa-complete-p10-26",
+            "2023-fa-complete-p10-27",
+            "2023-fa-complete-p10-28",
+            "2023-fa-complete-p16-U1",
+            "2023-fa-complete-p17-U2",
+            "2023-fa-complete-p18-U3",
+            "2023-fa-complete-p20-U4",
+            "2023-fa-complete-p21-U5",
+            "2023-fa-complete-p22-U6",
+            "2023-fa-complete-p23-U7",
+            "2023-fa-complete-p24-U8"
+          ]
+        },
+        "production": {
+          "result": "passed",
+          "artifacts": {
+            "public/data/2023_sommer_funktionsanalyse_complete_segmented.json": "23c39b405c9772971fff11d3f6726a379f16d7a1bb64b19f16a54f542a658ad7",
+            "public/data/2023_sommer_funktionsanalyse_complete_answers.json": "e27eb5d206889a6c7a46f2938ed2509de13afc4111070ab96100e7a7bb22ebfe",
+            "public/data/2023_sommer_funktionsanalyse_complete_u_solutions.json": "a5b64f5a5f888c32946d5280750dfac9cc1eeb82ed02583d51a1860e45fd76b4",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q01.png": "dca372db6807d4ce6d083b80c341d772c535aee8c7113024fec0cadf689d68f0",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q02.png": "aa2941a8c527eca1c7819a64ca5c984819d0c691001291baaef7aaeff8d02cbb",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q03.png": "8132e1ca04e54bfec0bbce485f113818efbefc0f5499af1fb7fe4fc288c36c3d",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q04.png": "bbb7c0e97df98f3f571ba5f20008009e62e9846bf6382b5d1fbba99e0f9cdd0c",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q05.png": "4467a36c99e2c78a377fa5960e3b7dc273c7695c583209131e4fe7feee2beda4",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q06.png": "3821f1b19995a211a230789bed2e4d189304bd92c13e81d141700b5edd4b1ab4",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q07.png": "4972f117bcc0d38638a143640b88b02a151ea772b8d9840337123847a44376ad",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q08.png": "349fa37fa8652eced345c91d0257cbe84f0247f278aa414e71e3545f8a438dd1",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q09.png": "e577b10dc08e9ec176bd8b7ddebb5d9b50f2dc0d3b48780ac4be326a0be95c28",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q10.png": "3e173ce66a3fc8c717ed086a0c953d617a948716648e70e692865d4736f56927",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q11.png": "bdd79bfc5fd322310ae9b8a64afb0b4d8ffa0dcca739438a4e364da40d4063e9",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q12.png": "75dcb11e2c0bfff76f944f8eb520beb51ababcfd6ad76f6c97a284c2f30bf97b",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q13.png": "65fe586fe57d1ee404420ff4f6678cc4158a1ca8083a57ab14f3f97e81695423",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q14.png": "ce20aadfe78f0d5be71d70852f7bbb2b91836e7fc1ef9647faa499475e696ecb",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q15.png": "6e58e283d0b740d7dc692e83d666782ca77cb47525c79afec89bcd807225f738",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q16.png": "38f05a2d1ee11600f0d4cb649fb25104ae2423617dd2a136e7c88ec7fef9b090",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q17.png": "76791eecb1ceeb9671c3bce93e87e3403212fc4b5507c1f9d8498135c2c4547a",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q18.png": "f24239580cc0d768698d3d6f659f7b0a6c9a3a505f2e4f63bc13adb4d250cfcc",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q19.png": "ece60b8e454c961be2b126ff0b1249fa2572f076642b987fe46889f3ccb651d4",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q20.png": "3e1c68f39072d226ea2dbe16fc896222c5aea65b9acb4e6317c69e620b47d9c2",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q21.png": "43a704a84cbc90e262b3038957ab47dc693e7e1018842c0ed1d946e03f7e39ab",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q22.png": "06c2bf314ee19444dd9ce9284ea6b949683c64c775b6a1129a36c49f6bb18c97",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q23.png": "b4ba04676e2a810d6d8b5097ad4db4855b5a6b19857ebc56a74ac21d21408d16",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q24.png": "6b26feae9909304e54cf0876bdb05107fe5c88fc40701f0676a235a72adc2bfd",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q25.png": "a433a5a19fc275234aca980bdca598025e6aa1fcd6163824cc6b6ce142eb5747",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q26.png": "cbcf2ccb2efbace00bba52d55ff720e2354e046c1a9f62fa780cb636d7e345d7",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q27.png": "5ad57b2ca0ab9fd45bfde03852e3a41dc47cfb298866e358fd6a6a08c274a43a",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q28.png": "59bef4e3fae313c473d019dd281ee44aafc617f92733ca03977d01b9bad360ed",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U1.png": "cf34e609358f82ca3075361c775d0db5f54bee324b4377892e6fc6758197628b",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U2.png": "0d84fae762b15760a3549e402f9ecf48b10deab3edacfc07aa68fd5c16757d01",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U3.png": "e2460ee2eb07fc052e22b33adacd1ab9736f8d43c8245328f9c5f5bad57f230f",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U4.png": "f944ccd36a14e4e80934532bee7d73adae5ba9866eda9c21ab7d64a17e09f160",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U5.png": "fb5ed7b2dfaa9592bd2e7e907d0bd9f1d925224dd78adbbb62713b3ce1186473",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U6.png": "d8ff68502af69ecb5f01d691b1ffcb976b7d448e13a97b6a7b2cb042980eb2e9",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U7.png": "5d81de27eb02de7d8ba218ae3eec7d723836930fda665e4347ace958a447b275",
+            "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U8.png": "d837f20892121d8d024a9f7433caffe41cc32d2c1484ff20b0f708b5005dad9e",
+            "public/assets/sources/6b251e40510bcc273fad437b/timing-2.png": "7eab0279362215ae33bc14cd65ef281784a9a4c00bac6a558701602390f531b2"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "question_ids": [
+            "2023-fa-complete-p3-1",
+            "2023-fa-complete-p3-2",
+            "2023-fa-complete-p4-3",
+            "2023-fa-complete-p4-4",
+            "2023-fa-complete-p4-5",
+            "2023-fa-complete-p4-6",
+            "2023-fa-complete-p4-7",
+            "2023-fa-complete-p5-8",
+            "2023-fa-complete-p5-9",
+            "2023-fa-complete-p5-10",
+            "2023-fa-complete-p6-11",
+            "2023-fa-complete-p6-12",
+            "2023-fa-complete-p6-13",
+            "2023-fa-complete-p6-14",
+            "2023-fa-complete-p6-15",
+            "2023-fa-complete-p7-16",
+            "2023-fa-complete-p7-17",
+            "2023-fa-complete-p7-18",
+            "2023-fa-complete-p8-19",
+            "2023-fa-complete-p8-20",
+            "2023-fa-complete-p8-21",
+            "2023-fa-complete-p8-22",
+            "2023-fa-complete-p9-23",
+            "2023-fa-complete-p9-24",
+            "2023-fa-complete-p10-25",
+            "2023-fa-complete-p10-26",
+            "2023-fa-complete-p10-27",
+            "2023-fa-complete-p10-28",
+            "2023-fa-complete-p16-U1",
+            "2023-fa-complete-p17-U2",
+            "2023-fa-complete-p18-U3",
+            "2023-fa-complete-p20-U4",
+            "2023-fa-complete-p21-U5",
+            "2023-fa-complete-p22-U6",
+            "2023-fa-complete-p23-U7",
+            "2023-fa-complete-p24-U8"
+          ],
+          "question_revision": "completion.1.0-39f6a77cfc56",
+          "official_answer_revision": "2023-fa-complete-2f.1.0-643631182c50",
+          "official_solution_revision": "2023-fa-complete-2f.1.0-643631182c50",
+          "basis": "All cached pages/headings/ownership and final original question/solution crops inspected; unique deterministic official answers required.",
+          "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da"
+        }
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-10-21T13:09:38.629073+00:00"
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-10-21T13:09:57.509083+00:00",
+          "evidence": {
+            "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da.json": "1f68f5727af7099e59eec904859ebb5a9f998dd13c526229b955d2fe5462e5c6"
+            }
+          }
+        },
+        {
+          "stage": "profile_matched",
+          "at": "2026-10-21T13:14:41.784055+00:00",
+          "evidence": {
+            "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2023_fa_complete_official.json": "1b3e4caefd5079b49937673291c9600e72590f58d5c49da537632a891fe49532"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "layout_validated",
+          "at": "2026-10-21T13:14:42.389153+00:00",
+          "evidence": {
+            "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2023_fa_complete_official.json": "1b3e4caefd5079b49937673291c9600e72590f58d5c49da537632a891fe49532",
+              "public/data/2023_sommer_funktionsanalyse_complete_segmented.json": "23c39b405c9772971fff11d3f6726a379f16d7a1bb64b19f16a54f542a658ad7"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "preview_ready",
+          "at": "2026-10-21T13:14:42.922728+00:00",
+          "evidence": {
+            "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2023_fa_complete_official.json": "1b3e4caefd5079b49937673291c9600e72590f58d5c49da537632a891fe49532",
+              "public/data/2023_sommer_funktionsanalyse_complete_segmented.json": "23c39b405c9772971fff11d3f6726a379f16d7a1bb64b19f16a54f542a658ad7"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "formal_segmented",
+          "at": "2026-10-21T13:14:43.482236+00:00",
+          "evidence": {
+            "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2023_fa_complete_official.json": "1b3e4caefd5079b49937673291c9600e72590f58d5c49da537632a891fe49532",
+              "public/data/2023_sommer_funktionsanalyse_complete_segmented.json": "23c39b405c9772971fff11d3f6726a379f16d7a1bb64b19f16a54f542a658ad7"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "answers_extracted",
+          "at": "2026-10-21T13:14:47.924097+00:00",
+          "evidence": {
+            "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2023_sommer_funktionsanalyse_complete_answers.json": "e27eb5d206889a6c7a46f2938ed2509de13afc4111070ab96100e7a7bb22ebfe",
+              "public/data/2023_sommer_funktionsanalyse_complete_answers.json": "e27eb5d206889a6c7a46f2938ed2509de13afc4111070ab96100e7a7bb22ebfe",
+              "data/exams/2023_sommer_funktionsanalyse_complete_u_solutions.json": "a5b64f5a5f888c32946d5280750dfac9cc1eeb82ed02583d51a1860e45fd76b4",
+              "public/data/2023_sommer_funktionsanalyse_complete_u_solutions.json": "a5b64f5a5f888c32946d5280750dfac9cc1eeb82ed02583d51a1860e45fd76b4"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "validated",
+          "at": "2026-10-21T13:14:49.128239+00:00",
+          "evidence": {
+            "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+            "result": "passed",
+            "artifacts": {
+              "public/data/2023_sommer_funktionsanalyse_complete_segmented.json": "23c39b405c9772971fff11d3f6726a379f16d7a1bb64b19f16a54f542a658ad7",
+              "public/data/2023_sommer_funktionsanalyse_complete_answers.json": "e27eb5d206889a6c7a46f2938ed2509de13afc4111070ab96100e7a7bb22ebfe",
+              "public/data/2023_sommer_funktionsanalyse_complete_u_solutions.json": "a5b64f5a5f888c32946d5280750dfac9cc1eeb82ed02583d51a1860e45fd76b4",
+              "docs/evidence/phase2f/2023-fa-complete/answer-coverage.json": "2dfc97e76a404845e3031a306f3821db2c4e09114b875128077ba8a936ab9c7b"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "question_revision": "completion.1.0-39f6a77cfc56",
+            "official_answer_revision": "2023-fa-complete-2f.1.0-643631182c50",
+            "question_ids": [
+              "2023-fa-complete-p3-1",
+              "2023-fa-complete-p3-2",
+              "2023-fa-complete-p4-3",
+              "2023-fa-complete-p4-4",
+              "2023-fa-complete-p4-5",
+              "2023-fa-complete-p4-6",
+              "2023-fa-complete-p4-7",
+              "2023-fa-complete-p5-8",
+              "2023-fa-complete-p5-9",
+              "2023-fa-complete-p5-10",
+              "2023-fa-complete-p6-11",
+              "2023-fa-complete-p6-12",
+              "2023-fa-complete-p6-13",
+              "2023-fa-complete-p6-14",
+              "2023-fa-complete-p6-15",
+              "2023-fa-complete-p7-16",
+              "2023-fa-complete-p7-17",
+              "2023-fa-complete-p7-18",
+              "2023-fa-complete-p8-19",
+              "2023-fa-complete-p8-20",
+              "2023-fa-complete-p8-21",
+              "2023-fa-complete-p8-22",
+              "2023-fa-complete-p9-23",
+              "2023-fa-complete-p9-24",
+              "2023-fa-complete-p10-25",
+              "2023-fa-complete-p10-26",
+              "2023-fa-complete-p10-27",
+              "2023-fa-complete-p10-28",
+              "2023-fa-complete-p16-U1",
+              "2023-fa-complete-p17-U2",
+              "2023-fa-complete-p18-U3",
+              "2023-fa-complete-p20-U4",
+              "2023-fa-complete-p21-U5",
+              "2023-fa-complete-p22-U6",
+              "2023-fa-complete-p23-U7",
+              "2023-fa-complete-p24-U8"
+            ]
+          }
+        },
+        {
+          "stage": "production",
+          "at": "2026-10-21T13:18:32.553991+00:00",
+          "evidence": {
+            "result": "passed",
+            "artifacts": {
+              "public/data/2023_sommer_funktionsanalyse_complete_segmented.json": "23c39b405c9772971fff11d3f6726a379f16d7a1bb64b19f16a54f542a658ad7",
+              "public/data/2023_sommer_funktionsanalyse_complete_answers.json": "e27eb5d206889a6c7a46f2938ed2509de13afc4111070ab96100e7a7bb22ebfe",
+              "public/data/2023_sommer_funktionsanalyse_complete_u_solutions.json": "a5b64f5a5f888c32946d5280750dfac9cc1eeb82ed02583d51a1860e45fd76b4",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q01.png": "dca372db6807d4ce6d083b80c341d772c535aee8c7113024fec0cadf689d68f0",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q02.png": "aa2941a8c527eca1c7819a64ca5c984819d0c691001291baaef7aaeff8d02cbb",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q03.png": "8132e1ca04e54bfec0bbce485f113818efbefc0f5499af1fb7fe4fc288c36c3d",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q04.png": "bbb7c0e97df98f3f571ba5f20008009e62e9846bf6382b5d1fbba99e0f9cdd0c",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q05.png": "4467a36c99e2c78a377fa5960e3b7dc273c7695c583209131e4fe7feee2beda4",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q06.png": "3821f1b19995a211a230789bed2e4d189304bd92c13e81d141700b5edd4b1ab4",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q07.png": "4972f117bcc0d38638a143640b88b02a151ea772b8d9840337123847a44376ad",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q08.png": "349fa37fa8652eced345c91d0257cbe84f0247f278aa414e71e3545f8a438dd1",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q09.png": "e577b10dc08e9ec176bd8b7ddebb5d9b50f2dc0d3b48780ac4be326a0be95c28",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q10.png": "3e173ce66a3fc8c717ed086a0c953d617a948716648e70e692865d4736f56927",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q11.png": "bdd79bfc5fd322310ae9b8a64afb0b4d8ffa0dcca739438a4e364da40d4063e9",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q12.png": "75dcb11e2c0bfff76f944f8eb520beb51ababcfd6ad76f6c97a284c2f30bf97b",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q13.png": "65fe586fe57d1ee404420ff4f6678cc4158a1ca8083a57ab14f3f97e81695423",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q14.png": "ce20aadfe78f0d5be71d70852f7bbb2b91836e7fc1ef9647faa499475e696ecb",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q15.png": "6e58e283d0b740d7dc692e83d666782ca77cb47525c79afec89bcd807225f738",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q16.png": "38f05a2d1ee11600f0d4cb649fb25104ae2423617dd2a136e7c88ec7fef9b090",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q17.png": "76791eecb1ceeb9671c3bce93e87e3403212fc4b5507c1f9d8498135c2c4547a",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q18.png": "f24239580cc0d768698d3d6f659f7b0a6c9a3a505f2e4f63bc13adb4d250cfcc",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q19.png": "ece60b8e454c961be2b126ff0b1249fa2572f076642b987fe46889f3ccb651d4",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q20.png": "3e1c68f39072d226ea2dbe16fc896222c5aea65b9acb4e6317c69e620b47d9c2",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q21.png": "43a704a84cbc90e262b3038957ab47dc693e7e1018842c0ed1d946e03f7e39ab",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q22.png": "06c2bf314ee19444dd9ce9284ea6b949683c64c775b6a1129a36c49f6bb18c97",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q23.png": "b4ba04676e2a810d6d8b5097ad4db4855b5a6b19857ebc56a74ac21d21408d16",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q24.png": "6b26feae9909304e54cf0876bdb05107fe5c88fc40701f0676a235a72adc2bfd",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q25.png": "a433a5a19fc275234aca980bdca598025e6aa1fcd6163824cc6b6ce142eb5747",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q26.png": "cbcf2ccb2efbace00bba52d55ff720e2354e046c1a9f62fa780cb636d7e345d7",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q27.png": "5ad57b2ca0ab9fd45bfde03852e3a41dc47cfb298866e358fd6a6a08c274a43a",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/Q28.png": "59bef4e3fae313c473d019dd281ee44aafc617f92733ca03977d01b9bad360ed",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U1.png": "cf34e609358f82ca3075361c775d0db5f54bee324b4377892e6fc6758197628b",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U2.png": "0d84fae762b15760a3549e402f9ecf48b10deab3edacfc07aa68fd5c16757d01",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U3.png": "e2460ee2eb07fc052e22b33adacd1ab9736f8d43c8245328f9c5f5bad57f230f",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U4.png": "f944ccd36a14e4e80934532bee7d73adae5ba9866eda9c21ab7d64a17e09f160",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U5.png": "fb5ed7b2dfaa9592bd2e7e907d0bd9f1d925224dd78adbbb62713b3ce1186473",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U6.png": "d8ff68502af69ecb5f01d691b1ffcb976b7d448e13a97b6a7b2cb042980eb2e9",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U7.png": "5d81de27eb02de7d8ba218ae3eec7d723836930fda665e4347ace958a447b275",
+              "public/assets/official/2023-fa-complete-2f.1.0-643631182c50/U8.png": "d837f20892121d8d024a9f7433caffe41cc32d2c1484ff20b0f708b5005dad9e",
+              "public/assets/sources/6b251e40510bcc273fad437b/timing-2.png": "7eab0279362215ae33bc14cd65ef281784a9a4c00bac6a558701602390f531b2"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "question_ids": [
+              "2023-fa-complete-p3-1",
+              "2023-fa-complete-p3-2",
+              "2023-fa-complete-p4-3",
+              "2023-fa-complete-p4-4",
+              "2023-fa-complete-p4-5",
+              "2023-fa-complete-p4-6",
+              "2023-fa-complete-p4-7",
+              "2023-fa-complete-p5-8",
+              "2023-fa-complete-p5-9",
+              "2023-fa-complete-p5-10",
+              "2023-fa-complete-p6-11",
+              "2023-fa-complete-p6-12",
+              "2023-fa-complete-p6-13",
+              "2023-fa-complete-p6-14",
+              "2023-fa-complete-p6-15",
+              "2023-fa-complete-p7-16",
+              "2023-fa-complete-p7-17",
+              "2023-fa-complete-p7-18",
+              "2023-fa-complete-p8-19",
+              "2023-fa-complete-p8-20",
+              "2023-fa-complete-p8-21",
+              "2023-fa-complete-p8-22",
+              "2023-fa-complete-p9-23",
+              "2023-fa-complete-p9-24",
+              "2023-fa-complete-p10-25",
+              "2023-fa-complete-p10-26",
+              "2023-fa-complete-p10-27",
+              "2023-fa-complete-p10-28",
+              "2023-fa-complete-p16-U1",
+              "2023-fa-complete-p17-U2",
+              "2023-fa-complete-p18-U3",
+              "2023-fa-complete-p20-U4",
+              "2023-fa-complete-p21-U5",
+              "2023-fa-complete-p22-U6",
+              "2023-fa-complete-p23-U7",
+              "2023-fa-complete-p24-U8"
+            ],
+            "question_revision": "completion.1.0-39f6a77cfc56",
+            "official_answer_revision": "2023-fa-complete-2f.1.0-643631182c50",
+            "official_solution_revision": "2023-fa-complete-2f.1.0-643631182c50",
+            "basis": "All cached pages/headings/ownership and final original question/solution crops inspected; unique deterministic official answers required.",
+            "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "src-09c6b6edef9aaa2596531b68",
+      "exam": "2023-sommer",
+      "module": "wiso",
+      "source_type": "question_pdf",
+      "filename": "2023 Sommer/Mech_S_23_WiSo.pdf",
+      "sha256": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+      "version": 1,
+      "status": "production",
+      "layout_profile": "portrait-explicit-regions@completion.1.0-f1f1ba76dc40",
+      "answer_profile": "ring-annulus-explicit@2f.1.0",
+      "supersedes_source_id": null,
+      "created_at": "2026-10-21T13:09:38.686274+00:00",
+      "identity_migration": null,
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56.json": "5cd9af6b1d2cb7f89020508c4d406c61b60e870b8c0b13c454fc0fc090932823"
+          }
+        },
+        "profile_matched": {
+          "source_sha256": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2023_wiso_complete.json": "e9fb9c915fc0c65c9ae16de3a039fc4d9cdcabfcd18bfdfc3fd811bddedc00a4"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "profile_id": "portrait-explicit-regions",
+          "validated_sources": [
+            "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56"
+          ]
+        },
+        "layout_validated": {
+          "source_sha256": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+          "result": "passed",
+          "artifacts": {
+            "docs/evidence/phase2f/2023-wiso-complete/layout-validation.json": "b301c2f1052b91d24a081d963452546a504fee633ed9ff41f503707cca61030b"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "preview_ready": {
+          "source_sha256": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+          "result": "passed",
+          "artifacts": {
+            "docs/evidence/phase2f/2023-wiso-complete/preview-manifest.json": "3c72db479de06f51d9aabeda254a86c939efafd0f5275d7dfb7cdb85b7a8984f",
+            "docs/evidence/phase2f/2023-wiso-complete/index.html": "ee07bb480b1f9ca806e8577ce09519c885f605a24bc073e426322e1690a1a841",
+            "docs/evidence/phase2f/2023-wiso-complete/layout-validation.json": "b301c2f1052b91d24a081d963452546a504fee633ed9ff41f503707cca61030b"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "formal_segmented": {
+          "source_sha256": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2023_sommer_wiso_complete_segmented.json": "4e635638a801115d38fc28980e16a0e6e0f3766e83a57e4088fa00aa36d80892",
+            "public/data/2023_sommer_wiso_complete_segmented.json": "4e635638a801115d38fc28980e16a0e6e0f3766e83a57e4088fa00aa36d80892"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "answers_extracted": {
+          "source_sha256": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2023_sommer_wiso_complete_answers.json": "c8d1524d9d5efd91aac58f54165f06b4605d95a40cdf14364bd22300d0c5acb6",
+            "public/data/2023_sommer_wiso_complete_answers.json": "c8d1524d9d5efd91aac58f54165f06b4605d95a40cdf14364bd22300d0c5acb6",
+            "data/exams/2023_sommer_wiso_complete_u_solutions.json": "d612dff6bcbdb3a2fb56992afa4b9e443bcb25d1eff4f05ee966335201f89041",
+            "public/data/2023_sommer_wiso_complete_u_solutions.json": "d612dff6bcbdb3a2fb56992afa4b9e443bcb25d1eff4f05ee966335201f89041"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "validated": {
+          "source_sha256": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+          "result": "passed",
+          "artifacts": {
+            "public/data/2023_sommer_wiso_complete_segmented.json": "4e635638a801115d38fc28980e16a0e6e0f3766e83a57e4088fa00aa36d80892",
+            "public/data/2023_sommer_wiso_complete_answers.json": "c8d1524d9d5efd91aac58f54165f06b4605d95a40cdf14364bd22300d0c5acb6",
+            "public/data/2023_sommer_wiso_complete_u_solutions.json": "d612dff6bcbdb3a2fb56992afa4b9e443bcb25d1eff4f05ee966335201f89041",
+            "docs/evidence/phase2f/2023-wiso-complete/answer-coverage.json": "4efed5eb87723554698c537537a155688540885a1dd62e1624eeec7a6d476e15"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "question_revision": "completion.1.0-f1f1ba76dc40",
+          "official_answer_revision": "2023-wiso-complete-2f.1.0-6e26bc8c6406",
+          "question_ids": [
+            "2023-wiso-complete-p7-1",
+            "2023-wiso-complete-p7-2",
+            "2023-wiso-complete-p7-3",
+            "2023-wiso-complete-p7-4",
+            "2023-wiso-complete-p9-5",
+            "2023-wiso-complete-p9-6",
+            "2023-wiso-complete-p11-7",
+            "2023-wiso-complete-p11-8",
+            "2023-wiso-complete-p13-9",
+            "2023-wiso-complete-p13-10",
+            "2023-wiso-complete-p13-11",
+            "2023-wiso-complete-p13-12",
+            "2023-wiso-complete-p15-13",
+            "2023-wiso-complete-p15-14",
+            "2023-wiso-complete-p15-15",
+            "2023-wiso-complete-p17-16",
+            "2023-wiso-complete-p17-17",
+            "2023-wiso-complete-p17-18",
+            "2023-wiso-complete-p6-U1",
+            "2023-wiso-complete-p8-U2",
+            "2023-wiso-complete-p10-U3",
+            "2023-wiso-complete-p12-U4",
+            "2023-wiso-complete-p14-U5",
+            "2023-wiso-complete-p16-U6"
+          ]
+        },
+        "production": {
+          "result": "passed",
+          "artifacts": {
+            "public/data/2023_sommer_wiso_complete_segmented.json": "4e635638a801115d38fc28980e16a0e6e0f3766e83a57e4088fa00aa36d80892",
+            "public/data/2023_sommer_wiso_complete_answers.json": "c8d1524d9d5efd91aac58f54165f06b4605d95a40cdf14364bd22300d0c5acb6",
+            "public/data/2023_sommer_wiso_complete_u_solutions.json": "d612dff6bcbdb3a2fb56992afa4b9e443bcb25d1eff4f05ee966335201f89041",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q01.png": "7fd911063d2a13cf85057d1994da0c0ea64652870d1c739e0c54f01fa06d02aa",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q02.png": "9c4fb67ace8babc2d32d81fcd2f18c371523c73a2a533d807728b49b5fbdcb3a",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q03.png": "468cd79ce36f4b0692f80ac38e254302f5bee68b178f3ee338a00d669e2a99ea",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q04.png": "ae04f1fa6d326e7b88db7eded03bdea2f9c073e15d8e37b1e12859ba6b43ac1d",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q05.png": "fadab465679b9b321ab91bc9cfd6a6fe9a16a0f3282552ad6de43190dfd6dd1c",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q06.png": "e0ae750af9529a91519bc604910847cd25afaf071d7a156112a540435f3bc13d",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q07.png": "19c5f7cc26ca01a805e57a8b60f3faa3119be4b35daaa4853e838ac7e3ca1774",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q08.png": "30ada9f08ded637d501a7779d3294ec1c0957c7f7c874db70aeff56bc7e06b05",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q09.png": "622c7a3993941a5e05fba9d157b441ee6e3a915e64bebc859804fdcd5ec1dcda",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q10.png": "ec3636a6acb68a2682a76f9069b11021bb6f151b6cdef73a6cfb1cb98e2aba8a",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q11.png": "cf994334ef9e3ceac78461f0965d46395ae7992b3a62e720357ce4d35341a958",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q12.png": "f58beb54efc0fe44f8666087f2be2e939912f59bf1acabd96ef443016b67bf19",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q13.png": "24b2a7db5f36c0e45eecd9abc5251b07df9828ea1bf647dc77b72879b58ecc45",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q14.png": "68b7659fd9af902e36d69a87b3447c7733dbc0efac44e3a030feac21603d6698",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q15.png": "6f0bf66b338e112e1935ea2c5d38dea94d772a955e2e40d142cce1f3c5b9318f",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q16.png": "d16476e637482e51bc2282ce629c858484b6e7db537363727ac72f314e4264be",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q17.png": "679feeece92ee41ee900d1de212d3f559dfb63c752c275b947ada943a26d1b96",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q18.png": "79f66c1556c01efcb051f48d72234bb5caa8aaf7ba49d99d9449e1912b291918",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U1.png": "1773f5856de4958f5812f1dbc572094c50cd2dbdf0f542d791b3c2aa18c785a0",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U2.png": "094c0081c8bf90c44aee612bbcf37cab0b652f63c429edbd1a33f972c59db362",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U3.png": "9284ab2253a71dde49db892d0c3c2084174ca68500cf310b157839c55a529692",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U4.png": "df2ac943c02b46afc94d022ca520ecd4df337a29f7b7e3a1ff8b9bcedb4225e9",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U5.png": "1ff1d43b8da6b20f75a9a2487de2df1990028eefcac9e2c3cc1db7e335f3f2b9",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U6.png": "5eba85d4740d93fa5245cdec27fc1a7a23b52f778579ec47b3a2e5dc6e65aaf3",
+            "public/assets/sources/1b4a24e509b2108e32be081e/timing-2.png": "2de0a7dbac534deeed3e247f932137b649957f30849073c0597c9fbb1cf48557"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "question_ids": [
+            "2023-wiso-complete-p7-1",
+            "2023-wiso-complete-p7-2",
+            "2023-wiso-complete-p7-3",
+            "2023-wiso-complete-p7-4",
+            "2023-wiso-complete-p9-5",
+            "2023-wiso-complete-p9-6",
+            "2023-wiso-complete-p11-7",
+            "2023-wiso-complete-p11-8",
+            "2023-wiso-complete-p13-9",
+            "2023-wiso-complete-p13-10",
+            "2023-wiso-complete-p13-11",
+            "2023-wiso-complete-p13-12",
+            "2023-wiso-complete-p15-13",
+            "2023-wiso-complete-p15-14",
+            "2023-wiso-complete-p15-15",
+            "2023-wiso-complete-p17-16",
+            "2023-wiso-complete-p17-17",
+            "2023-wiso-complete-p17-18",
+            "2023-wiso-complete-p6-U1",
+            "2023-wiso-complete-p8-U2",
+            "2023-wiso-complete-p10-U3",
+            "2023-wiso-complete-p12-U4",
+            "2023-wiso-complete-p14-U5",
+            "2023-wiso-complete-p16-U6"
+          ],
+          "question_revision": "completion.1.0-f1f1ba76dc40",
+          "official_answer_revision": "2023-wiso-complete-2f.1.0-6e26bc8c6406",
+          "official_solution_revision": "2023-wiso-complete-2f.1.0-6e26bc8c6406",
+          "basis": "All cached pages/headings/ownership and final original question/solution crops inspected; unique deterministic official answers required.",
+          "source_sha256": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56"
+        }
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-10-21T13:09:38.686274+00:00"
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-10-21T13:10:03.724074+00:00",
+          "evidence": {
+            "source_sha256": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56.json": "5cd9af6b1d2cb7f89020508c4d406c61b60e870b8c0b13c454fc0fc090932823"
+            }
+          }
+        },
+        {
+          "stage": "profile_matched",
+          "at": "2026-10-21T13:14:50.361736+00:00",
+          "evidence": {
+            "source_sha256": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2023_wiso_complete.json": "e9fb9c915fc0c65c9ae16de3a039fc4d9cdcabfcd18bfdfc3fd811bddedc00a4"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "profile_id": "portrait-explicit-regions",
+            "validated_sources": [
+              "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56"
+            ]
+          }
+        },
+        {
+          "stage": "layout_validated",
+          "at": "2026-10-21T13:14:51.493019+00:00",
+          "evidence": {
+            "source_sha256": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+            "result": "passed",
+            "artifacts": {
+              "docs/evidence/phase2f/2023-wiso-complete/layout-validation.json": "b301c2f1052b91d24a081d963452546a504fee633ed9ff41f503707cca61030b"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "preview_ready",
+          "at": "2026-10-21T13:14:55.734253+00:00",
+          "evidence": {
+            "source_sha256": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+            "result": "passed",
+            "artifacts": {
+              "docs/evidence/phase2f/2023-wiso-complete/preview-manifest.json": "3c72db479de06f51d9aabeda254a86c939efafd0f5275d7dfb7cdb85b7a8984f",
+              "docs/evidence/phase2f/2023-wiso-complete/index.html": "ee07bb480b1f9ca806e8577ce09519c885f605a24bc073e426322e1690a1a841",
+              "docs/evidence/phase2f/2023-wiso-complete/layout-validation.json": "b301c2f1052b91d24a081d963452546a504fee633ed9ff41f503707cca61030b"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "formal_segmented",
+          "at": "2026-10-21T13:15:02.000322+00:00",
+          "evidence": {
+            "source_sha256": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2023_sommer_wiso_complete_segmented.json": "4e635638a801115d38fc28980e16a0e6e0f3766e83a57e4088fa00aa36d80892",
+              "public/data/2023_sommer_wiso_complete_segmented.json": "4e635638a801115d38fc28980e16a0e6e0f3766e83a57e4088fa00aa36d80892"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "answers_extracted",
+          "at": "2026-10-21T13:15:09.262736+00:00",
+          "evidence": {
+            "source_sha256": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2023_sommer_wiso_complete_answers.json": "c8d1524d9d5efd91aac58f54165f06b4605d95a40cdf14364bd22300d0c5acb6",
+              "public/data/2023_sommer_wiso_complete_answers.json": "c8d1524d9d5efd91aac58f54165f06b4605d95a40cdf14364bd22300d0c5acb6",
+              "data/exams/2023_sommer_wiso_complete_u_solutions.json": "d612dff6bcbdb3a2fb56992afa4b9e443bcb25d1eff4f05ee966335201f89041",
+              "public/data/2023_sommer_wiso_complete_u_solutions.json": "d612dff6bcbdb3a2fb56992afa4b9e443bcb25d1eff4f05ee966335201f89041"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "validated",
+          "at": "2026-10-21T13:15:10.540340+00:00",
+          "evidence": {
+            "source_sha256": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+            "result": "passed",
+            "artifacts": {
+              "public/data/2023_sommer_wiso_complete_segmented.json": "4e635638a801115d38fc28980e16a0e6e0f3766e83a57e4088fa00aa36d80892",
+              "public/data/2023_sommer_wiso_complete_answers.json": "c8d1524d9d5efd91aac58f54165f06b4605d95a40cdf14364bd22300d0c5acb6",
+              "public/data/2023_sommer_wiso_complete_u_solutions.json": "d612dff6bcbdb3a2fb56992afa4b9e443bcb25d1eff4f05ee966335201f89041",
+              "docs/evidence/phase2f/2023-wiso-complete/answer-coverage.json": "4efed5eb87723554698c537537a155688540885a1dd62e1624eeec7a6d476e15"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "question_revision": "completion.1.0-f1f1ba76dc40",
+            "official_answer_revision": "2023-wiso-complete-2f.1.0-6e26bc8c6406",
+            "question_ids": [
+              "2023-wiso-complete-p7-1",
+              "2023-wiso-complete-p7-2",
+              "2023-wiso-complete-p7-3",
+              "2023-wiso-complete-p7-4",
+              "2023-wiso-complete-p9-5",
+              "2023-wiso-complete-p9-6",
+              "2023-wiso-complete-p11-7",
+              "2023-wiso-complete-p11-8",
+              "2023-wiso-complete-p13-9",
+              "2023-wiso-complete-p13-10",
+              "2023-wiso-complete-p13-11",
+              "2023-wiso-complete-p13-12",
+              "2023-wiso-complete-p15-13",
+              "2023-wiso-complete-p15-14",
+              "2023-wiso-complete-p15-15",
+              "2023-wiso-complete-p17-16",
+              "2023-wiso-complete-p17-17",
+              "2023-wiso-complete-p17-18",
+              "2023-wiso-complete-p6-U1",
+              "2023-wiso-complete-p8-U2",
+              "2023-wiso-complete-p10-U3",
+              "2023-wiso-complete-p12-U4",
+              "2023-wiso-complete-p14-U5",
+              "2023-wiso-complete-p16-U6"
+            ]
+          }
+        },
+        {
+          "stage": "production",
+          "at": "2026-10-21T13:18:33.567114+00:00",
+          "evidence": {
+            "result": "passed",
+            "artifacts": {
+              "public/data/2023_sommer_wiso_complete_segmented.json": "4e635638a801115d38fc28980e16a0e6e0f3766e83a57e4088fa00aa36d80892",
+              "public/data/2023_sommer_wiso_complete_answers.json": "c8d1524d9d5efd91aac58f54165f06b4605d95a40cdf14364bd22300d0c5acb6",
+              "public/data/2023_sommer_wiso_complete_u_solutions.json": "d612dff6bcbdb3a2fb56992afa4b9e443bcb25d1eff4f05ee966335201f89041",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q01.png": "7fd911063d2a13cf85057d1994da0c0ea64652870d1c739e0c54f01fa06d02aa",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q02.png": "9c4fb67ace8babc2d32d81fcd2f18c371523c73a2a533d807728b49b5fbdcb3a",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q03.png": "468cd79ce36f4b0692f80ac38e254302f5bee68b178f3ee338a00d669e2a99ea",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q04.png": "ae04f1fa6d326e7b88db7eded03bdea2f9c073e15d8e37b1e12859ba6b43ac1d",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q05.png": "fadab465679b9b321ab91bc9cfd6a6fe9a16a0f3282552ad6de43190dfd6dd1c",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q06.png": "e0ae750af9529a91519bc604910847cd25afaf071d7a156112a540435f3bc13d",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q07.png": "19c5f7cc26ca01a805e57a8b60f3faa3119be4b35daaa4853e838ac7e3ca1774",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q08.png": "30ada9f08ded637d501a7779d3294ec1c0957c7f7c874db70aeff56bc7e06b05",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q09.png": "622c7a3993941a5e05fba9d157b441ee6e3a915e64bebc859804fdcd5ec1dcda",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q10.png": "ec3636a6acb68a2682a76f9069b11021bb6f151b6cdef73a6cfb1cb98e2aba8a",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q11.png": "cf994334ef9e3ceac78461f0965d46395ae7992b3a62e720357ce4d35341a958",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q12.png": "f58beb54efc0fe44f8666087f2be2e939912f59bf1acabd96ef443016b67bf19",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q13.png": "24b2a7db5f36c0e45eecd9abc5251b07df9828ea1bf647dc77b72879b58ecc45",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q14.png": "68b7659fd9af902e36d69a87b3447c7733dbc0efac44e3a030feac21603d6698",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q15.png": "6f0bf66b338e112e1935ea2c5d38dea94d772a955e2e40d142cce1f3c5b9318f",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q16.png": "d16476e637482e51bc2282ce629c858484b6e7db537363727ac72f314e4264be",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q17.png": "679feeece92ee41ee900d1de212d3f559dfb63c752c275b947ada943a26d1b96",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q18.png": "79f66c1556c01efcb051f48d72234bb5caa8aaf7ba49d99d9449e1912b291918",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U1.png": "1773f5856de4958f5812f1dbc572094c50cd2dbdf0f542d791b3c2aa18c785a0",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U2.png": "094c0081c8bf90c44aee612bbcf37cab0b652f63c429edbd1a33f972c59db362",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U3.png": "9284ab2253a71dde49db892d0c3c2084174ca68500cf310b157839c55a529692",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U4.png": "df2ac943c02b46afc94d022ca520ecd4df337a29f7b7e3a1ff8b9bcedb4225e9",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U5.png": "1ff1d43b8da6b20f75a9a2487de2df1990028eefcac9e2c3cc1db7e335f3f2b9",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U6.png": "5eba85d4740d93fa5245cdec27fc1a7a23b52f778579ec47b3a2e5dc6e65aaf3",
+              "public/assets/sources/1b4a24e509b2108e32be081e/timing-2.png": "2de0a7dbac534deeed3e247f932137b649957f30849073c0597c9fbb1cf48557"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "question_ids": [
+              "2023-wiso-complete-p7-1",
+              "2023-wiso-complete-p7-2",
+              "2023-wiso-complete-p7-3",
+              "2023-wiso-complete-p7-4",
+              "2023-wiso-complete-p9-5",
+              "2023-wiso-complete-p9-6",
+              "2023-wiso-complete-p11-7",
+              "2023-wiso-complete-p11-8",
+              "2023-wiso-complete-p13-9",
+              "2023-wiso-complete-p13-10",
+              "2023-wiso-complete-p13-11",
+              "2023-wiso-complete-p13-12",
+              "2023-wiso-complete-p15-13",
+              "2023-wiso-complete-p15-14",
+              "2023-wiso-complete-p15-15",
+              "2023-wiso-complete-p17-16",
+              "2023-wiso-complete-p17-17",
+              "2023-wiso-complete-p17-18",
+              "2023-wiso-complete-p6-U1",
+              "2023-wiso-complete-p8-U2",
+              "2023-wiso-complete-p10-U3",
+              "2023-wiso-complete-p12-U4",
+              "2023-wiso-complete-p14-U5",
+              "2023-wiso-complete-p16-U6"
+            ],
+            "question_revision": "completion.1.0-f1f1ba76dc40",
+            "official_answer_revision": "2023-wiso-complete-2f.1.0-6e26bc8c6406",
+            "official_solution_revision": "2023-wiso-complete-2f.1.0-6e26bc8c6406",
+            "basis": "All cached pages/headings/ownership and final original question/solution crops inspected; unique deterministic official answers required.",
+            "source_sha256": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "src-ee7464a79243d874bc33d1b3",
+      "exam": "2023-sommer",
+      "module": "wiso",
+      "source_type": "solution_pdf",
+      "filename": "2023 Sommer/Mech_S_23_Lösungen.pdf",
+      "sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+      "version": 1,
+      "status": "production",
+      "layout_profile": "portrait-explicit-regions@completion.1.0-f1f1ba76dc40",
+      "answer_profile": "official-ring-grid@2023-wiso-complete-2f.1.0-6e26bc8c6406",
+      "supersedes_source_id": null,
+      "created_at": "2026-10-21T13:09:38.732638+00:00",
+      "identity_migration": null,
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da.json": "1f68f5727af7099e59eec904859ebb5a9f998dd13c526229b955d2fe5462e5c6"
+          }
+        },
+        "profile_matched": {
+          "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2023_wiso_complete_official.json": "e1fa65b839bdc5bc643fd8b9aba2a8473e0c1f21edacd98197ceb27ff89f67e4"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "layout_validated": {
+          "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2023_wiso_complete_official.json": "e1fa65b839bdc5bc643fd8b9aba2a8473e0c1f21edacd98197ceb27ff89f67e4",
+            "public/data/2023_sommer_wiso_complete_segmented.json": "4e635638a801115d38fc28980e16a0e6e0f3766e83a57e4088fa00aa36d80892"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "preview_ready": {
+          "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2023_wiso_complete_official.json": "e1fa65b839bdc5bc643fd8b9aba2a8473e0c1f21edacd98197ceb27ff89f67e4",
+            "public/data/2023_sommer_wiso_complete_segmented.json": "4e635638a801115d38fc28980e16a0e6e0f3766e83a57e4088fa00aa36d80892"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "formal_segmented": {
+          "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2023_wiso_complete_official.json": "e1fa65b839bdc5bc643fd8b9aba2a8473e0c1f21edacd98197ceb27ff89f67e4",
+            "public/data/2023_sommer_wiso_complete_segmented.json": "4e635638a801115d38fc28980e16a0e6e0f3766e83a57e4088fa00aa36d80892"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "answers_extracted": {
+          "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2023_sommer_wiso_complete_answers.json": "c8d1524d9d5efd91aac58f54165f06b4605d95a40cdf14364bd22300d0c5acb6",
+            "public/data/2023_sommer_wiso_complete_answers.json": "c8d1524d9d5efd91aac58f54165f06b4605d95a40cdf14364bd22300d0c5acb6",
+            "data/exams/2023_sommer_wiso_complete_u_solutions.json": "d612dff6bcbdb3a2fb56992afa4b9e443bcb25d1eff4f05ee966335201f89041",
+            "public/data/2023_sommer_wiso_complete_u_solutions.json": "d612dff6bcbdb3a2fb56992afa4b9e443bcb25d1eff4f05ee966335201f89041"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "validated": {
+          "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+          "result": "passed",
+          "artifacts": {
+            "public/data/2023_sommer_wiso_complete_segmented.json": "4e635638a801115d38fc28980e16a0e6e0f3766e83a57e4088fa00aa36d80892",
+            "public/data/2023_sommer_wiso_complete_answers.json": "c8d1524d9d5efd91aac58f54165f06b4605d95a40cdf14364bd22300d0c5acb6",
+            "public/data/2023_sommer_wiso_complete_u_solutions.json": "d612dff6bcbdb3a2fb56992afa4b9e443bcb25d1eff4f05ee966335201f89041",
+            "docs/evidence/phase2f/2023-wiso-complete/answer-coverage.json": "4efed5eb87723554698c537537a155688540885a1dd62e1624eeec7a6d476e15"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "question_revision": "completion.1.0-f1f1ba76dc40",
+          "official_answer_revision": "2023-wiso-complete-2f.1.0-6e26bc8c6406",
+          "question_ids": [
+            "2023-wiso-complete-p7-1",
+            "2023-wiso-complete-p7-2",
+            "2023-wiso-complete-p7-3",
+            "2023-wiso-complete-p7-4",
+            "2023-wiso-complete-p9-5",
+            "2023-wiso-complete-p9-6",
+            "2023-wiso-complete-p11-7",
+            "2023-wiso-complete-p11-8",
+            "2023-wiso-complete-p13-9",
+            "2023-wiso-complete-p13-10",
+            "2023-wiso-complete-p13-11",
+            "2023-wiso-complete-p13-12",
+            "2023-wiso-complete-p15-13",
+            "2023-wiso-complete-p15-14",
+            "2023-wiso-complete-p15-15",
+            "2023-wiso-complete-p17-16",
+            "2023-wiso-complete-p17-17",
+            "2023-wiso-complete-p17-18",
+            "2023-wiso-complete-p6-U1",
+            "2023-wiso-complete-p8-U2",
+            "2023-wiso-complete-p10-U3",
+            "2023-wiso-complete-p12-U4",
+            "2023-wiso-complete-p14-U5",
+            "2023-wiso-complete-p16-U6"
+          ]
+        },
+        "production": {
+          "result": "passed",
+          "artifacts": {
+            "public/data/2023_sommer_wiso_complete_segmented.json": "4e635638a801115d38fc28980e16a0e6e0f3766e83a57e4088fa00aa36d80892",
+            "public/data/2023_sommer_wiso_complete_answers.json": "c8d1524d9d5efd91aac58f54165f06b4605d95a40cdf14364bd22300d0c5acb6",
+            "public/data/2023_sommer_wiso_complete_u_solutions.json": "d612dff6bcbdb3a2fb56992afa4b9e443bcb25d1eff4f05ee966335201f89041",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q01.png": "7fd911063d2a13cf85057d1994da0c0ea64652870d1c739e0c54f01fa06d02aa",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q02.png": "9c4fb67ace8babc2d32d81fcd2f18c371523c73a2a533d807728b49b5fbdcb3a",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q03.png": "468cd79ce36f4b0692f80ac38e254302f5bee68b178f3ee338a00d669e2a99ea",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q04.png": "ae04f1fa6d326e7b88db7eded03bdea2f9c073e15d8e37b1e12859ba6b43ac1d",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q05.png": "fadab465679b9b321ab91bc9cfd6a6fe9a16a0f3282552ad6de43190dfd6dd1c",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q06.png": "e0ae750af9529a91519bc604910847cd25afaf071d7a156112a540435f3bc13d",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q07.png": "19c5f7cc26ca01a805e57a8b60f3faa3119be4b35daaa4853e838ac7e3ca1774",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q08.png": "30ada9f08ded637d501a7779d3294ec1c0957c7f7c874db70aeff56bc7e06b05",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q09.png": "622c7a3993941a5e05fba9d157b441ee6e3a915e64bebc859804fdcd5ec1dcda",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q10.png": "ec3636a6acb68a2682a76f9069b11021bb6f151b6cdef73a6cfb1cb98e2aba8a",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q11.png": "cf994334ef9e3ceac78461f0965d46395ae7992b3a62e720357ce4d35341a958",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q12.png": "f58beb54efc0fe44f8666087f2be2e939912f59bf1acabd96ef443016b67bf19",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q13.png": "24b2a7db5f36c0e45eecd9abc5251b07df9828ea1bf647dc77b72879b58ecc45",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q14.png": "68b7659fd9af902e36d69a87b3447c7733dbc0efac44e3a030feac21603d6698",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q15.png": "6f0bf66b338e112e1935ea2c5d38dea94d772a955e2e40d142cce1f3c5b9318f",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q16.png": "d16476e637482e51bc2282ce629c858484b6e7db537363727ac72f314e4264be",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q17.png": "679feeece92ee41ee900d1de212d3f559dfb63c752c275b947ada943a26d1b96",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q18.png": "79f66c1556c01efcb051f48d72234bb5caa8aaf7ba49d99d9449e1912b291918",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U1.png": "1773f5856de4958f5812f1dbc572094c50cd2dbdf0f542d791b3c2aa18c785a0",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U2.png": "094c0081c8bf90c44aee612bbcf37cab0b652f63c429edbd1a33f972c59db362",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U3.png": "9284ab2253a71dde49db892d0c3c2084174ca68500cf310b157839c55a529692",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U4.png": "df2ac943c02b46afc94d022ca520ecd4df337a29f7b7e3a1ff8b9bcedb4225e9",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U5.png": "1ff1d43b8da6b20f75a9a2487de2df1990028eefcac9e2c3cc1db7e335f3f2b9",
+            "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U6.png": "5eba85d4740d93fa5245cdec27fc1a7a23b52f778579ec47b3a2e5dc6e65aaf3",
+            "public/assets/sources/1b4a24e509b2108e32be081e/timing-2.png": "2de0a7dbac534deeed3e247f932137b649957f30849073c0597c9fbb1cf48557"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "question_ids": [
+            "2023-wiso-complete-p7-1",
+            "2023-wiso-complete-p7-2",
+            "2023-wiso-complete-p7-3",
+            "2023-wiso-complete-p7-4",
+            "2023-wiso-complete-p9-5",
+            "2023-wiso-complete-p9-6",
+            "2023-wiso-complete-p11-7",
+            "2023-wiso-complete-p11-8",
+            "2023-wiso-complete-p13-9",
+            "2023-wiso-complete-p13-10",
+            "2023-wiso-complete-p13-11",
+            "2023-wiso-complete-p13-12",
+            "2023-wiso-complete-p15-13",
+            "2023-wiso-complete-p15-14",
+            "2023-wiso-complete-p15-15",
+            "2023-wiso-complete-p17-16",
+            "2023-wiso-complete-p17-17",
+            "2023-wiso-complete-p17-18",
+            "2023-wiso-complete-p6-U1",
+            "2023-wiso-complete-p8-U2",
+            "2023-wiso-complete-p10-U3",
+            "2023-wiso-complete-p12-U4",
+            "2023-wiso-complete-p14-U5",
+            "2023-wiso-complete-p16-U6"
+          ],
+          "question_revision": "completion.1.0-f1f1ba76dc40",
+          "official_answer_revision": "2023-wiso-complete-2f.1.0-6e26bc8c6406",
+          "official_solution_revision": "2023-wiso-complete-2f.1.0-6e26bc8c6406",
+          "basis": "All cached pages/headings/ownership and final original question/solution crops inspected; unique deterministic official answers required.",
+          "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da"
+        }
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-10-21T13:09:38.732638+00:00"
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-10-21T13:10:16.399809+00:00",
+          "evidence": {
+            "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da.json": "1f68f5727af7099e59eec904859ebb5a9f998dd13c526229b955d2fe5462e5c6"
+            }
+          }
+        },
+        {
+          "stage": "profile_matched",
+          "at": "2026-10-21T13:15:04.292788+00:00",
+          "evidence": {
+            "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2023_wiso_complete_official.json": "e1fa65b839bdc5bc643fd8b9aba2a8473e0c1f21edacd98197ceb27ff89f67e4"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "layout_validated",
+          "at": "2026-10-21T13:15:04.916929+00:00",
+          "evidence": {
+            "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2023_wiso_complete_official.json": "e1fa65b839bdc5bc643fd8b9aba2a8473e0c1f21edacd98197ceb27ff89f67e4",
+              "public/data/2023_sommer_wiso_complete_segmented.json": "4e635638a801115d38fc28980e16a0e6e0f3766e83a57e4088fa00aa36d80892"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "preview_ready",
+          "at": "2026-10-21T13:15:05.468513+00:00",
+          "evidence": {
+            "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2023_wiso_complete_official.json": "e1fa65b839bdc5bc643fd8b9aba2a8473e0c1f21edacd98197ceb27ff89f67e4",
+              "public/data/2023_sommer_wiso_complete_segmented.json": "4e635638a801115d38fc28980e16a0e6e0f3766e83a57e4088fa00aa36d80892"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "formal_segmented",
+          "at": "2026-10-21T13:15:06.055869+00:00",
+          "evidence": {
+            "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2023_wiso_complete_official.json": "e1fa65b839bdc5bc643fd8b9aba2a8473e0c1f21edacd98197ceb27ff89f67e4",
+              "public/data/2023_sommer_wiso_complete_segmented.json": "4e635638a801115d38fc28980e16a0e6e0f3766e83a57e4088fa00aa36d80892"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "answers_extracted",
+          "at": "2026-10-21T13:15:09.864654+00:00",
+          "evidence": {
+            "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2023_sommer_wiso_complete_answers.json": "c8d1524d9d5efd91aac58f54165f06b4605d95a40cdf14364bd22300d0c5acb6",
+              "public/data/2023_sommer_wiso_complete_answers.json": "c8d1524d9d5efd91aac58f54165f06b4605d95a40cdf14364bd22300d0c5acb6",
+              "data/exams/2023_sommer_wiso_complete_u_solutions.json": "d612dff6bcbdb3a2fb56992afa4b9e443bcb25d1eff4f05ee966335201f89041",
+              "public/data/2023_sommer_wiso_complete_u_solutions.json": "d612dff6bcbdb3a2fb56992afa4b9e443bcb25d1eff4f05ee966335201f89041"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "validated",
+          "at": "2026-10-21T13:15:11.104551+00:00",
+          "evidence": {
+            "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+            "result": "passed",
+            "artifacts": {
+              "public/data/2023_sommer_wiso_complete_segmented.json": "4e635638a801115d38fc28980e16a0e6e0f3766e83a57e4088fa00aa36d80892",
+              "public/data/2023_sommer_wiso_complete_answers.json": "c8d1524d9d5efd91aac58f54165f06b4605d95a40cdf14364bd22300d0c5acb6",
+              "public/data/2023_sommer_wiso_complete_u_solutions.json": "d612dff6bcbdb3a2fb56992afa4b9e443bcb25d1eff4f05ee966335201f89041",
+              "docs/evidence/phase2f/2023-wiso-complete/answer-coverage.json": "4efed5eb87723554698c537537a155688540885a1dd62e1624eeec7a6d476e15"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "question_revision": "completion.1.0-f1f1ba76dc40",
+            "official_answer_revision": "2023-wiso-complete-2f.1.0-6e26bc8c6406",
+            "question_ids": [
+              "2023-wiso-complete-p7-1",
+              "2023-wiso-complete-p7-2",
+              "2023-wiso-complete-p7-3",
+              "2023-wiso-complete-p7-4",
+              "2023-wiso-complete-p9-5",
+              "2023-wiso-complete-p9-6",
+              "2023-wiso-complete-p11-7",
+              "2023-wiso-complete-p11-8",
+              "2023-wiso-complete-p13-9",
+              "2023-wiso-complete-p13-10",
+              "2023-wiso-complete-p13-11",
+              "2023-wiso-complete-p13-12",
+              "2023-wiso-complete-p15-13",
+              "2023-wiso-complete-p15-14",
+              "2023-wiso-complete-p15-15",
+              "2023-wiso-complete-p17-16",
+              "2023-wiso-complete-p17-17",
+              "2023-wiso-complete-p17-18",
+              "2023-wiso-complete-p6-U1",
+              "2023-wiso-complete-p8-U2",
+              "2023-wiso-complete-p10-U3",
+              "2023-wiso-complete-p12-U4",
+              "2023-wiso-complete-p14-U5",
+              "2023-wiso-complete-p16-U6"
+            ]
+          }
+        },
+        {
+          "stage": "production",
+          "at": "2026-10-21T13:18:33.620679+00:00",
+          "evidence": {
+            "result": "passed",
+            "artifacts": {
+              "public/data/2023_sommer_wiso_complete_segmented.json": "4e635638a801115d38fc28980e16a0e6e0f3766e83a57e4088fa00aa36d80892",
+              "public/data/2023_sommer_wiso_complete_answers.json": "c8d1524d9d5efd91aac58f54165f06b4605d95a40cdf14364bd22300d0c5acb6",
+              "public/data/2023_sommer_wiso_complete_u_solutions.json": "d612dff6bcbdb3a2fb56992afa4b9e443bcb25d1eff4f05ee966335201f89041",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q01.png": "7fd911063d2a13cf85057d1994da0c0ea64652870d1c739e0c54f01fa06d02aa",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q02.png": "9c4fb67ace8babc2d32d81fcd2f18c371523c73a2a533d807728b49b5fbdcb3a",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q03.png": "468cd79ce36f4b0692f80ac38e254302f5bee68b178f3ee338a00d669e2a99ea",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q04.png": "ae04f1fa6d326e7b88db7eded03bdea2f9c073e15d8e37b1e12859ba6b43ac1d",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q05.png": "fadab465679b9b321ab91bc9cfd6a6fe9a16a0f3282552ad6de43190dfd6dd1c",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q06.png": "e0ae750af9529a91519bc604910847cd25afaf071d7a156112a540435f3bc13d",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q07.png": "19c5f7cc26ca01a805e57a8b60f3faa3119be4b35daaa4853e838ac7e3ca1774",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q08.png": "30ada9f08ded637d501a7779d3294ec1c0957c7f7c874db70aeff56bc7e06b05",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q09.png": "622c7a3993941a5e05fba9d157b441ee6e3a915e64bebc859804fdcd5ec1dcda",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q10.png": "ec3636a6acb68a2682a76f9069b11021bb6f151b6cdef73a6cfb1cb98e2aba8a",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q11.png": "cf994334ef9e3ceac78461f0965d46395ae7992b3a62e720357ce4d35341a958",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q12.png": "f58beb54efc0fe44f8666087f2be2e939912f59bf1acabd96ef443016b67bf19",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q13.png": "24b2a7db5f36c0e45eecd9abc5251b07df9828ea1bf647dc77b72879b58ecc45",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q14.png": "68b7659fd9af902e36d69a87b3447c7733dbc0efac44e3a030feac21603d6698",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q15.png": "6f0bf66b338e112e1935ea2c5d38dea94d772a955e2e40d142cce1f3c5b9318f",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q16.png": "d16476e637482e51bc2282ce629c858484b6e7db537363727ac72f314e4264be",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q17.png": "679feeece92ee41ee900d1de212d3f559dfb63c752c275b947ada943a26d1b96",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/Q18.png": "79f66c1556c01efcb051f48d72234bb5caa8aaf7ba49d99d9449e1912b291918",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U1.png": "1773f5856de4958f5812f1dbc572094c50cd2dbdf0f542d791b3c2aa18c785a0",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U2.png": "094c0081c8bf90c44aee612bbcf37cab0b652f63c429edbd1a33f972c59db362",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U3.png": "9284ab2253a71dde49db892d0c3c2084174ca68500cf310b157839c55a529692",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U4.png": "df2ac943c02b46afc94d022ca520ecd4df337a29f7b7e3a1ff8b9bcedb4225e9",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U5.png": "1ff1d43b8da6b20f75a9a2487de2df1990028eefcac9e2c3cc1db7e335f3f2b9",
+              "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U6.png": "5eba85d4740d93fa5245cdec27fc1a7a23b52f778579ec47b3a2e5dc6e65aaf3",
+              "public/assets/sources/1b4a24e509b2108e32be081e/timing-2.png": "2de0a7dbac534deeed3e247f932137b649957f30849073c0597c9fbb1cf48557"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "question_ids": [
+              "2023-wiso-complete-p7-1",
+              "2023-wiso-complete-p7-2",
+              "2023-wiso-complete-p7-3",
+              "2023-wiso-complete-p7-4",
+              "2023-wiso-complete-p9-5",
+              "2023-wiso-complete-p9-6",
+              "2023-wiso-complete-p11-7",
+              "2023-wiso-complete-p11-8",
+              "2023-wiso-complete-p13-9",
+              "2023-wiso-complete-p13-10",
+              "2023-wiso-complete-p13-11",
+              "2023-wiso-complete-p13-12",
+              "2023-wiso-complete-p15-13",
+              "2023-wiso-complete-p15-14",
+              "2023-wiso-complete-p15-15",
+              "2023-wiso-complete-p17-16",
+              "2023-wiso-complete-p17-17",
+              "2023-wiso-complete-p17-18",
+              "2023-wiso-complete-p6-U1",
+              "2023-wiso-complete-p8-U2",
+              "2023-wiso-complete-p10-U3",
+              "2023-wiso-complete-p12-U4",
+              "2023-wiso-complete-p14-U5",
+              "2023-wiso-complete-p16-U6"
+            ],
+            "question_revision": "completion.1.0-f1f1ba76dc40",
+            "official_answer_revision": "2023-wiso-complete-2f.1.0-6e26bc8c6406",
+            "official_solution_revision": "2023-wiso-complete-2f.1.0-6e26bc8c6406",
+            "basis": "All cached pages/headings/ownership and final original question/solution crops inspected; unique deterministic official answers required.",
+            "source_sha256": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "src-8e7f6ec0001ad5cc402c1de8",
+      "exam": "2024-25-winter",
+      "module": "funktionsanalyse",
+      "source_type": "question_pdf",
+      "filename": "2024_25 Winter/Mech_AP2_W24_FA_A&B&Zeichnungen.pdf",
+      "sha256": "48f1b3a66c8ffbb1e54d642526d29f8b55cad3bdc51dd9f167aba8c122fdff51",
+      "version": 3,
+      "status": "blocked",
+      "layout_profile": null,
+      "answer_profile": null,
+      "supersedes_source_id": "src-00039682caf29c6203d9cc0c",
+      "created_at": "2026-10-21T13:09:38.777675+00:00",
+      "identity_migration": null,
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "48f1b3a66c8ffbb1e54d642526d29f8b55cad3bdc51dd9f167aba8c122fdff51",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/48f1b3a66c8ffbb1e54d642526d29f8b55cad3bdc51dd9f167aba8c122fdff51.json": "13b5afeaaba77b0e13bd88088ca8fd661ceb8a60d49f10bdaaddb788513c1fd0"
+          }
+        }
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-10-21T13:09:38.777675+00:00"
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-10-21T13:10:17.569245+00:00",
+          "evidence": {
+            "source_sha256": "48f1b3a66c8ffbb1e54d642526d29f8b55cad3bdc51dd9f167aba8c122fdff51",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/48f1b3a66c8ffbb1e54d642526d29f8b55cad3bdc51dd9f167aba8c122fdff51.json": "13b5afeaaba77b0e13bd88088ca8fd661ceb8a60d49f10bdaaddb788513c1fd0"
+            }
+          }
+        },
+        {
+          "stage": "blocked",
+          "at": "2026-10-21T13:19:55.423898+00:00",
+          "evidence": {
+            "reason": "Alternate supplied file retained, not activated: identical FA question pages / identical FA MC answer page; keep existing reviewed mapping and 17 pending source confirmations. No automatic override.",
+            "artifacts": {
+              "docs/evidence/source-completion-2023-2024/winter-solution-comparison.json": "6ccd4e1350a97eb6ab501a9ffe6ca97c238d805304681bbc3f0001ed4dde83cf",
+              "docs/evidence/source-completion-2023-2024/fa2024-audit.json": "e97ae6090d1cbdbecf258b61d82aeb42c542b39ae465c2b92b531dad8f0b56f3"
+            }
+          }
+        }
+      ],
+      "blocked_after": "hash_verified"
+    },
+    {
+      "source_id": "src-d381b83c2ac68c1f37ed0f68",
+      "exam": "2024-25-winter",
+      "module": "funktionsanalyse",
+      "source_type": "solution_pdf",
+      "filename": "2024_25 Winter/Mech_AP2_W24_FA_Lösungen.pdf",
+      "sha256": "00604951f8ac70f6ed387b84c26cd07d65f941eeee920d311200ca7b216965d5",
+      "version": 2,
+      "status": "blocked",
+      "layout_profile": null,
+      "answer_profile": null,
+      "supersedes_source_id": "src-ee5c7944287ba65a3089cdab",
+      "created_at": "2026-10-21T13:09:38.823705+00:00",
+      "identity_migration": null,
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "00604951f8ac70f6ed387b84c26cd07d65f941eeee920d311200ca7b216965d5",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/00604951f8ac70f6ed387b84c26cd07d65f941eeee920d311200ca7b216965d5.json": "401e23eb7a94788caaeaec8cdae6804193cea0efdbbc1280edd350f4e74fe829"
+          }
+        }
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-10-21T13:09:38.823705+00:00"
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-10-21T13:10:48.880191+00:00",
+          "evidence": {
+            "source_sha256": "00604951f8ac70f6ed387b84c26cd07d65f941eeee920d311200ca7b216965d5",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/00604951f8ac70f6ed387b84c26cd07d65f941eeee920d311200ca7b216965d5.json": "401e23eb7a94788caaeaec8cdae6804193cea0efdbbc1280edd350f4e74fe829"
+            }
+          }
+        },
+        {
+          "stage": "blocked",
+          "at": "2026-10-21T13:19:55.477162+00:00",
+          "evidence": {
+            "reason": "Alternate supplied file retained, not activated: identical FA question pages / identical FA MC answer page; keep existing reviewed mapping and 17 pending source confirmations. No automatic override.",
+            "artifacts": {
+              "docs/evidence/source-completion-2023-2024/winter-solution-comparison.json": "6ccd4e1350a97eb6ab501a9ffe6ca97c238d805304681bbc3f0001ed4dde83cf",
+              "docs/evidence/source-completion-2023-2024/fa2024-audit.json": "e97ae6090d1cbdbecf258b61d82aeb42c542b39ae465c2b92b531dad8f0b56f3"
+            }
+          }
+        }
+      ],
+      "blocked_after": "hash_verified"
     }
   ]
 }

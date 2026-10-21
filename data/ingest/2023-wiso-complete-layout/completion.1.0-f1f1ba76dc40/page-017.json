@@ -1,0 +1,137 @@
+{
+  "key": "22f668751711ea3bfc04493feff7900fffc4325d4d5c5bb4dd4c2bd3f6cc5239",
+  "record_hash": "00d4b15d8ca4a4f6487619a3889f6e657599dcc7af9734229eb736b4ebe65a96",
+  "record": {
+    "page": 17,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Q16-18.",
+    "anchors": [
+      {
+        "anchor_id": "2023-wiso-complete-p17-16",
+        "number": "16",
+        "bbox": [
+          48.63999938964844,
+          49.209999084472656,
+          72.656005859375,
+          77.94200134277344
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 16 visually read on cached physical page 17.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "75e843a1da9c887c25ed042a64052f737939ae85f75ed0efdf6694f15fa32fca"
+      },
+      {
+        "anchor_id": "2023-wiso-complete-p17-17",
+        "number": "17",
+        "bbox": [
+          297.0400085449219,
+          50.170021057128906,
+          321.0559997558594,
+          78.90202331542969
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 17 visually read on cached physical page 17.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "95ee45e3b6e37027641fb0c8e66aff3299f62a8bd9491999c031b0e2851ab9dc"
+      },
+      {
+        "anchor_id": "2023-wiso-complete-p17-18",
+        "number": "18",
+        "bbox": [
+          46.720001220703125,
+          290.6499938964844,
+          70.73600769042969,
+          319.3819885253906
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 18 visually read on cached physical page 17.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "6e0c7705de13afb9e9bd4c8c4c26453cf92a50e3a2f95f2b25cb17e261cc894b"
+      }
+    ],
+    "regions": [
+      {
+        "page": 17,
+        "bbox": [
+          46,
+          49,
+          286,
+          289
+        ],
+        "role": "primary",
+        "owner": "2023-wiso-complete-p17-16",
+        "evidence": "Q16-18. Explicit panel includes all text, options, diagrams and response areas."
+      },
+      {
+        "page": 17,
+        "bbox": [
+          292,
+          49,
+          533,
+          289
+        ],
+        "role": "primary",
+        "owner": "2023-wiso-complete-p17-17",
+        "evidence": "Q16-18. Explicit panel includes all text, options, diagrams and response areas."
+      },
+      {
+        "page": 17,
+        "bbox": [
+          45,
+          290,
+          286,
+          531
+        ],
+        "role": "primary",
+        "owner": "2023-wiso-complete-p17-18",
+        "evidence": "Q16-18. Explicit panel includes all text, options, diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "16",
+        "bbox": [
+          48.63999938964844,
+          49.209999084472656,
+          72.656005859375,
+          77.94200134277344
+        ],
+        "pixel_sha256": "75e843a1da9c887c25ed042a64052f737939ae85f75ed0efdf6694f15fa32fca",
+        "audited_pixel_sha256": "75e843a1da9c887c25ed042a64052f737939ae85f75ed0efdf6694f15fa32fca"
+      },
+      {
+        "kind": "heading",
+        "number": "17",
+        "bbox": [
+          297.0400085449219,
+          50.170021057128906,
+          321.0559997558594,
+          78.90202331542969
+        ],
+        "pixel_sha256": "95ee45e3b6e37027641fb0c8e66aff3299f62a8bd9491999c031b0e2851ab9dc",
+        "audited_pixel_sha256": "95ee45e3b6e37027641fb0c8e66aff3299f62a8bd9491999c031b0e2851ab9dc"
+      },
+      {
+        "kind": "heading",
+        "number": "18",
+        "bbox": [
+          46.720001220703125,
+          290.6499938964844,
+          70.73600769042969,
+          319.3819885253906
+        ],
+        "pixel_sha256": "6e0c7705de13afb9e9bd4c8c4c26453cf92a50e3a2f95f2b25cb17e261cc894b",
+        "audited_pixel_sha256": "6e0c7705de13afb9e9bd4c8c4c26453cf92a50e3a2f95f2b25cb17e261cc894b"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "key": "bb9c027c9d2979343d22d24c91f7ac4bf079e361f03f67f71032b486fb782395",
+  "value": {
+    "question_id": "2023-wiso-complete-p8-U2",
+    "question_number": "U2",
+    "exam": "2023_sommer",
+    "module": "WiSo",
+    "solution_source_pdf": "assets/pdfs/b645f32a1bb671af98f45733.pdf",
+    "solution_source_pdf_available": false,
+    "solution_source_page": 14,
+    "solution_bbox": [
+      18,
+      558.071,
+      580,
+      807.875
+    ],
+    "regions": [
+      {
+        "source_page": 14,
+        "bbox": [
+          18,
+          558.071,
+          580,
+          807.875
+        ]
+      },
+      {
+        "source_page": 15,
+        "bbox": [
+          18,
+          24.297,
+          580,
+          283.212
+        ]
+      }
+    ],
+    "cropped_solution_image": "assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U2.png",
+    "review_status": "auto_ready",
+    "answer_type": "multi_part",
+    "subparts": [
+      {
+        "id": "whole",
+        "label": "Gesamte Aufgabe · Selbstbewertung",
+        "type": "short_text"
+      }
+    ],
+    "source_hash": "b645f32a1bb671af98f45733646abcba4aa032e6d1b3574638fa4fd78f66e3da",
+    "extractor_revision": "2023-wiso-complete-2f.1.0-6e26bc8c6406",
+    "association_evidence": "All printed U labels and ruled separators visually inspected on cached official Sommer 2023 solution. Formula/diagram/table retained as original image. Whole-question self-assessment; no rubric inferred.",
+    "grading_policy": "Printed subparts only; user self-assessment; no numeric rubric or answer inference.",
+    "source_cache_hashes": {
+      "14": "129a2a86ff0fb84fb9575b3efb8712f46cd2e318f64ff800aa01618decd77314",
+      "15": "97df31ba1649ab2f41bbe2c508a679f5f39a5c8e5c1b24d23d76909d363b6640"
+    },
+    "bbox_units": "PDF points, top-left"
+  },
+  "value_hash": "3c137db27cdb719fb6b911d7df86839aaa2446a4611c54e7ee16cc3f7970d40f",
+  "artifacts": {
+    "public/assets/official/2023-wiso-complete-2f.1.0-6e26bc8c6406/U2.png": "094c0081c8bf90c44aee612bbcf37cab0b652f63c429edbd1a33f972c59db362"
+  }
+}

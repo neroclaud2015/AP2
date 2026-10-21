@@ -1,3 +1,7 @@
+## 2026-10-21 · Supplied Sommer 2023 / Winter 2024–25 files
+
+Sommer 2023 FA36/MC28/U8 and WiSo24/MC18/U6 now Production; clean FA U7/U8 and missing WiSo source resolved. Added60 questions, total51 modules/1,620 questions. Winter FA new26 pages and MC page pixel-identical to existing sources; retain17 pending manual confirmations and prior attachment mapping. NewPAL bundle duplicates effective notices; superseded notice retained only as history.105 new cached pages,0 old rescans,6 repeat skips. First-formal replacement safety check explicitly user-approved; old blocked records unchanged. Evidence: docs/evidence/source-completion-2023-2024/.
+
 ## 2026-10-21 · Sommer 2025 import / official answer review
 
 AP 36 questions, MC 10/28 reliable, U 8/8; FA 36 questions, MC 12/28 reliable, U 8/8; WiSo 24 questions, MC 7/18 reliable, U 6/6. All source materials present. 45 official circle marks await manual source review; no thresholds weakened, no answer guessed. All three modules remain outside production until confirmed. Reused portrait-explicit-regions and official-ring-grid with source-bound revisions. 84 newly cached pages; 0 old PDF rescans; 15 duplicate processing steps skipped with PDF open prohibited. Existing 49 modules / 1,560 questions unchanged. Review and full previews: docs/evidence/sommer2025/.

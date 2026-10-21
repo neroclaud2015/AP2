@@ -1,0 +1,111 @@
+{
+  "key": "8de8184f358ed18ef543d9fda0db5545a10a3fa8a3f0327f4fc41e001186e568",
+  "record_hash": "507f7d1a68132f3252b8c589fc7a103fa73a667468af7bf8b17adbe370fa3df6",
+  "record": {
+    "page": 3,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Individually inspected cached physical page.",
+    "anchors": [
+      {
+        "anchor_id": "2023-fa-complete-p3-1",
+        "number": "1",
+        "bbox": [
+          42.408,
+          296.1036,
+          78.12,
+          324.3747
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 1 visually read on physical page 3.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "b7f05db0974403f9b9ef417a61eaa167e9c636e5ebb3538ce34c08b4dc52634b"
+      },
+      {
+        "anchor_id": "2023-fa-complete-p3-2",
+        "number": "2",
+        "bbox": [
+          290.16,
+          296.1036,
+          325.872,
+          324.3747
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 2 visually read on physical page 3.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "0e51ce9566c35e80b3d8c83ae1de93619452d6d3c639e7598b5f87bab38def9b"
+      }
+    ],
+    "regions": [
+      {
+        "page": 3,
+        "bbox": [
+          42.408,
+          296.1036,
+          283.464,
+          530.4569
+        ],
+        "role": "primary",
+        "owner": "2023-fa-complete-p3-1",
+        "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+      },
+      {
+        "page": 3,
+        "bbox": [
+          290.16,
+          296.1036,
+          528.24,
+          530.4569
+        ],
+        "role": "primary",
+        "owner": "2023-fa-complete-p3-2",
+        "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+      },
+      {
+        "page": 3,
+        "bbox": [
+          41.664,
+          531.9448,
+          526.752,
+          776.7138
+        ],
+        "role": "diagram",
+        "owner": "2023-fa-complete-p3-2",
+        "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "1",
+        "bbox": [
+          42.408,
+          296.1036,
+          78.12,
+          324.3747
+        ],
+        "pixel_sha256": "b7f05db0974403f9b9ef417a61eaa167e9c636e5ebb3538ce34c08b4dc52634b",
+        "audited_pixel_sha256": "b7f05db0974403f9b9ef417a61eaa167e9c636e5ebb3538ce34c08b4dc52634b"
+      },
+      {
+        "kind": "heading",
+        "number": "2",
+        "bbox": [
+          290.16,
+          296.1036,
+          325.872,
+          324.3747
+        ],
+        "pixel_sha256": "0e51ce9566c35e80b3d8c83ae1de93619452d6d3c639e7598b5f87bab38def9b",
+        "audited_pixel_sha256": "0e51ce9566c35e80b3d8c83ae1de93619452d6d3c639e7598b5f87bab38def9b"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

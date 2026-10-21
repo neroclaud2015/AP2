@@ -1,0 +1,99 @@
+{
+  "key": "fb221a70219613a289f667ee4d04a61c9fee9bddbb58ef567fefa8f0633b4385",
+  "record_hash": "268b3422a4d505f0f222f4aabb5d1f95d83c456aa1b7b7b815d5dd87e6f4d51e",
+  "record": {
+    "page": 9,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Q5-6.",
+    "anchors": [
+      {
+        "anchor_id": "2023-wiso-complete-p9-5",
+        "number": "5",
+        "bbox": [
+          44.79999923706055,
+          50.11249923706055,
+          59.08599853515625,
+          79.53150177001953
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 5 visually read on cached physical page 9.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "1786015fa910d828f80659edcbf0fbf34a20cde2c8277c96148454d0bfb599c8"
+      },
+      {
+        "anchor_id": "2023-wiso-complete-p9-6",
+        "number": "6",
+        "bbox": [
+          293.44000244140625,
+          50.8325309753418,
+          307.72601318359375,
+          80.25153350830078
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 6 visually read on cached physical page 9.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "917b210638958d6ca85508c8cefd99cab8b6ee06f3a1156174022002150cbea0"
+      }
+    ],
+    "regions": [
+      {
+        "page": 9,
+        "bbox": [
+          43,
+          50,
+          284,
+          289
+        ],
+        "role": "primary",
+        "owner": "2023-wiso-complete-p9-5",
+        "evidence": "Q5-6. Explicit panel includes all text, options, diagrams and response areas."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          290,
+          50,
+          530,
+          289
+        ],
+        "role": "primary",
+        "owner": "2023-wiso-complete-p9-6",
+        "evidence": "Q5-6. Explicit panel includes all text, options, diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "5",
+        "bbox": [
+          44.79999923706055,
+          50.11249923706055,
+          59.08599853515625,
+          79.53150177001953
+        ],
+        "pixel_sha256": "1786015fa910d828f80659edcbf0fbf34a20cde2c8277c96148454d0bfb599c8",
+        "audited_pixel_sha256": "1786015fa910d828f80659edcbf0fbf34a20cde2c8277c96148454d0bfb599c8"
+      },
+      {
+        "kind": "heading",
+        "number": "6",
+        "bbox": [
+          293.44000244140625,
+          50.8325309753418,
+          307.72601318359375,
+          80.25153350830078
+        ],
+        "pixel_sha256": "917b210638958d6ca85508c8cefd99cab8b6ee06f3a1156174022002150cbea0",
+        "audited_pixel_sha256": "917b210638958d6ca85508c8cefd99cab8b6ee06f3a1156174022002150cbea0"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

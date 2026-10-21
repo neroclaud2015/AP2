@@ -1,0 +1,284 @@
+[
+  {
+    "module": "fa",
+    "stage": "preview",
+    "status": "preview_ready",
+    "observed": 36,
+    "expected": 36,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 26,
+    "revision": "completion.1.0-39f6a77cfc56",
+    "source_id": "src-8278d0ec73126136a3acac88",
+    "source_hash": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 36,
+    "attachments": [
+      {
+        "page": 15,
+        "bbox": [
+          25.296,
+          9.6717,
+          555.024,
+          809.4489
+        ],
+        "role": "Prüfungsaufgaben-Beschreibung Bohrstation",
+        "question_numbers": [
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6",
+          "U7",
+          "U8"
+        ],
+        "evidence": "Common Teil B technology schema and named motor/sensor/gearbox context; shared description, not a task continuation.",
+        "visual_patch_sha256": "1aee9769bdd75900510800dd7b1a5ca74b6a42b791ad3831e9ff1fcf75366bbd",
+        "image": "assets/questions/6b251e40510bcc273fad437b/completion.1.0-39f6a77cfc56/attachment-15-0.png",
+        "source_sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b"
+      },
+      {
+        "page": 25,
+        "bbox": [
+          27.3468,
+          8.4127,
+          822.5076,
+          569.9618
+        ],
+        "role": "Stirnrädergetriebe mit Stückliste Blatt 1 von 1",
+        "question_numbers": [
+          "U1",
+          "U2"
+        ],
+        "evidence": "U1 and U2 explicitly print Blatt 1 von 1: Stirnraedergetriebe; title and drawing bill of materials verified.",
+        "visual_patch_sha256": "c254a6d5e42ebda21f919e54343d94b3686fbf716e2cee9365addd8fc0a95847",
+        "image": "assets/questions/6b251e40510bcc273fad437b/completion.1.0-39f6a77cfc56/attachment-25-1.png",
+        "source_sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b"
+      }
+    ]
+  },
+  {
+    "module": "fa",
+    "stage": "formal",
+    "status": "formal_segmented",
+    "observed": 36,
+    "expected": 36,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 26,
+    "revision": "completion.1.0-39f6a77cfc56",
+    "source_id": "src-8278d0ec73126136a3acac88",
+    "source_hash": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 36,
+    "attachments": [
+      {
+        "page": 15,
+        "bbox": [
+          25.296,
+          9.6717,
+          555.024,
+          809.4489
+        ],
+        "role": "Prüfungsaufgaben-Beschreibung Bohrstation",
+        "question_numbers": [
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6",
+          "U7",
+          "U8"
+        ],
+        "evidence": "Common Teil B technology schema and named motor/sensor/gearbox context; shared description, not a task continuation.",
+        "visual_patch_sha256": "1aee9769bdd75900510800dd7b1a5ca74b6a42b791ad3831e9ff1fcf75366bbd",
+        "image": "assets/questions/6b251e40510bcc273fad437b/completion.1.0-39f6a77cfc56/attachment-15-0.png",
+        "source_sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b"
+      },
+      {
+        "page": 25,
+        "bbox": [
+          27.3468,
+          8.4127,
+          822.5076,
+          569.9618
+        ],
+        "role": "Stirnrädergetriebe mit Stückliste Blatt 1 von 1",
+        "question_numbers": [
+          "U1",
+          "U2"
+        ],
+        "evidence": "U1 and U2 explicitly print Blatt 1 von 1: Stirnraedergetriebe; title and drawing bill of materials verified.",
+        "visual_patch_sha256": "c254a6d5e42ebda21f919e54343d94b3686fbf716e2cee9365addd8fc0a95847",
+        "image": "assets/questions/6b251e40510bcc273fad437b/completion.1.0-39f6a77cfc56/attachment-25-1.png",
+        "source_sha256": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b"
+      }
+    ]
+  },
+  {
+    "module": "fa",
+    "stage": "answers",
+    "choice_expected": 28,
+    "choice_records": 28,
+    "u_expected": 8,
+    "u_records": 8,
+    "review_list": [],
+    "status": "passed",
+    "revision": "2023-fa-complete-2f.1.0-643631182c50",
+    "pdf_pages_opened": 0
+  },
+  {
+    "module": "wiso",
+    "stage": "preview",
+    "status": "preview_ready",
+    "observed": 24,
+    "expected": 24,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 18,
+    "revision": "completion.1.0-f1f1ba76dc40",
+    "source_id": "src-09c6b6edef9aaa2596531b68",
+    "source_hash": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 24,
+    "attachments": [
+      {
+        "page": 5,
+        "bbox": [
+          44,
+          50,
+          530,
+          294
+        ],
+        "role": "Pruefungsaufgaben-Beschreibung",
+        "question_numbers": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6"
+        ],
+        "evidence": "Shared AllPrint GmbH description: Koeln, Dr. Peter Block, workforce, Betriebsrat and JAV.",
+        "image": "assets/questions/1b4a24e509b2108e32be081e/completion.1.0-f1f1ba76dc40/attachment-5-0.png",
+        "source_sha256": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56"
+      }
+    ]
+  },
+  {
+    "module": "wiso",
+    "stage": "formal",
+    "status": "formal_segmented",
+    "observed": 24,
+    "expected": 24,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 18,
+    "revision": "completion.1.0-f1f1ba76dc40",
+    "source_id": "src-09c6b6edef9aaa2596531b68",
+    "source_hash": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 24,
+    "attachments": [
+      {
+        "page": 5,
+        "bbox": [
+          44,
+          50,
+          530,
+          294
+        ],
+        "role": "Pruefungsaufgaben-Beschreibung",
+        "question_numbers": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6"
+        ],
+        "evidence": "Shared AllPrint GmbH description: Koeln, Dr. Peter Block, workforce, Betriebsrat and JAV.",
+        "image": "assets/questions/1b4a24e509b2108e32be081e/completion.1.0-f1f1ba76dc40/attachment-5-0.png",
+        "source_sha256": "1b4a24e509b2108e32be081ea7d44028bad8236114bf54222196ea843fe2ba56"
+      }
+    ]
+  },
+  {
+    "module": "wiso",
+    "stage": "answers",
+    "choice_expected": 18,
+    "choice_records": 18,
+    "u_expected": 6,
+    "u_records": 6,
+    "review_list": [],
+    "status": "passed",
+    "revision": "2023-wiso-complete-2f.1.0-6e26bc8c6406",
+    "pdf_pages_opened": 0
+  }
+]

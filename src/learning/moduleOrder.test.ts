@@ -14,11 +14,16 @@ describe('explicit module display order',()=>{
   }else expect(entries.every(e=>e.config)).toBe(true);
  });
  it('shows accepted and deferred source decisions without publishing incomplete modules',()=>{
-  const entries=moduleEntries(MODULES,'2023-sommer');
+  const entries=moduleEntries(MODULES.filter(m=>m.examId!=='2023-sommer'||m.slug==='arbeitsplanung'),'2023-sommer');
   expect(entries[1].config).toBeUndefined();
   expect(entries[1].reason).toBe('Quellenhinweis akzeptiert · Aufbereitung ausstehend');
   expect(entries[2].config).toBeUndefined();
   expect(entries[2].reason).toBe('Originalaufgaben fehlen · vorerst zurückgestellt');
+ });
+ it('publishes all completed Sommer 2023 modules in fixed order',()=>{
+  const entries=moduleEntries(MODULES,'2023-sommer');
+  expect(entries.map(e=>e.slug)).toEqual(order);
+  expect(entries.every(e=>e.config)).toBe(true);
  });
  it('keeps test cards ordered regardless of pool/registration order',()=>{
   expect(moduleEntries([...MODULES].reverse()).map(e=>e.slug)).toEqual(order);
@@ -26,3 +31,4 @@ describe('explicit module display order',()=>{
   expect(MODULE_ORDER.funktionsanalyse).toBeLessThan(MODULE_ORDER.wiso);
  });
 });
+

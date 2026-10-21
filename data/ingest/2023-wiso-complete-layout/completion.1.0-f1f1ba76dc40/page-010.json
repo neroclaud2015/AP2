@@ -1,0 +1,61 @@
+{
+  "key": "50af0ab1255885c8cc997179b88f3b82968d099a57bc6bfdbb5c0e18cf77aa7d",
+  "record_hash": "646bf87664e1f641569d2f1cc4700f06b9110358d5f21c4416238158aa17d399",
+  "record": {
+    "page": 10,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "U3 participation, embedded BetrVG section 111, subparts 1-2; continues page 11.",
+    "anchors": [
+      {
+        "anchor_id": "2023-wiso-complete-p10-U3",
+        "number": "U3",
+        "bbox": [
+          70.0,
+          56.29502868652344,
+          98.2820053100586,
+          86.40103149414062
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U3 visually read on cached physical page 10.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "b47f531ef668d32b5643cfc2bb9800e3b71995c330493ab6d7da1e3e52564206"
+      }
+    ],
+    "regions": [
+      {
+        "page": 10,
+        "bbox": [
+          64,
+          54,
+          548,
+          785
+        ],
+        "role": "primary",
+        "owner": "2023-wiso-complete-p10-U3",
+        "evidence": "U3 participation, embedded BetrVG section 111, subparts 1-2; continues page 11. Explicit panel includes all text, options, diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U3",
+        "bbox": [
+          70.0,
+          56.29502868652344,
+          98.2820053100586,
+          86.40103149414062
+        ],
+        "pixel_sha256": "b47f531ef668d32b5643cfc2bb9800e3b71995c330493ab6d7da1e3e52564206",
+        "audited_pixel_sha256": "b47f531ef668d32b5643cfc2bb9800e3b71995c330493ab6d7da1e3e52564206"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

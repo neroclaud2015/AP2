@@ -63,12 +63,34 @@ def _identity_bindings(registry,source,evidence):
 
 def _validate_identity_decision(registry,source):
  decision=source.get('identity_migration')
+ if decision and decision.get('decision')=='first_formal_dataset':
+  bindings,predecessors=_first_formal_bindings(registry,source)
+  if not decision.get('evidence',{}).get('reviewed_by') or decision.get('dataset_bindings')!=bindings or decision.get('predecessors')!=predecessors:raise ValueError('First formal identity evidence changed')
+  return bindings
  if not decision or decision.get('decision')!='preserve_ids':raise ValueError('Explicit identity decision required')
  evidence=decision['evidence'];bindings=_identity_bindings(registry,source,evidence)
  if decision.get('dataset_bindings')!=bindings:raise ValueError('Identity decision is not bound to validated datasets')
  old=evidence.get('old_question_ids',[]);new=evidence.get('new_question_ids',[])
  if len(old)!=len(set(old)) or len(new)!=len(set(new)) or set(old)!=set(bindings['old']['question_ids']) or set(new)!=set(bindings['new']['question_ids']) or set(old)!=set(new) or evidence.get('mapping')!={i:i for i in old} or not evidence.get('reviewed_by'):raise ValueError('Identity mapping must cover both complete validated datasets')
  return bindings
+
+def _first_formal_bindings(registry,source):
+ """No migration is needed only when no predecessor ever had formal identities."""
+ if not source.get('supersedes_source_id') or source['status'] not in ('validated','production'):raise ValueError('Validated replacement required')
+ prior=[s for s in registry['sources'] if (s['exam'],s['module'],s['source_type'])==(source['exam'],source['module'],source['source_type']) and s['version']<source['version']]
+ if not prior or source['supersedes_source_id']!=max(prior,key=lambda s:s['version'])['source_id']:raise ValueError('Latest predecessor required')
+ if any(any(stage in s['gates'] for stage in STAGES[5:]) for s in prior):raise ValueError('A previous formal dataset requires preserve_ids migration')
+ snapshots={s['source_id']:hashlib.sha256(json.dumps(s,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode()).hexdigest() for s in prior}
+ return {'new':_dataset_binding(source)},snapshots
+
+def record_first_formal_identity(registry,source_id,*,reviewed_by):
+ """Audit a first-ever formal dataset; never relax replacement rules for existing IDs."""
+ result=deepcopy(registry);s=_source(result,source_id)
+ if s['status']!='validated' or s.get('identity_migration') or not isinstance(reviewed_by,str) or not reviewed_by.strip():raise ValueError('One reviewed first-formal decision required')
+ bindings,predecessors=_first_formal_bindings(result,s)
+ s['identity_migration']={'decision':'first_formal_dataset','evidence':{'reviewed_by':reviewed_by,'basis':'Every predecessor has no formal_segmented/answers_extracted/validated/production gate; no existing formal question identity is replaced.'},'dataset_bindings':bindings,'predecessors':predecessors,'at':now()}
+ _validate_identity_decision(result,s)
+ return result
 
 def validate_identity_artifacts(root,registry,source):
  """Verify archived old and current new formal JSON; no PDF or personal-data access."""

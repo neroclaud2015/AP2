@@ -1,0 +1,99 @@
+{
+  "key": "f6680ef746f5020b866161b01ec86f0931aabb67cf829f636da84b5ea0b2a878",
+  "record_hash": "418f5f57a6d66102d11dcc1ad6f58e7e62302b47e91c0ce7e0ffbf3b3814f904",
+  "record": {
+    "page": 9,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Individually inspected cached physical page.",
+    "anchors": [
+      {
+        "anchor_id": "2023-fa-complete-p9-23",
+        "number": "23",
+        "bbox": [
+          43.152,
+          53.5665,
+          78.864,
+          81.8377
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 23 visually read on physical page 9.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "798a3749801e74180fbae73cf73a445110f3575b47ed1674f7330b72ded88852"
+      },
+      {
+        "anchor_id": "2023-fa-complete-p9-24",
+        "number": "24",
+        "bbox": [
+          42.408,
+          538.6406,
+          78.12,
+          566.9118
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 24 visually read on physical page 9.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "d1efd28b69dd060f0c9dee7a1b6dfa7f7069111f8ff7069e78d714a6bc509aa7"
+      }
+    ],
+    "regions": [
+      {
+        "page": 9,
+        "bbox": [
+          43.152,
+          53.5665,
+          530.472,
+          534.1768
+        ],
+        "role": "primary",
+        "owner": "2023-fa-complete-p9-23",
+        "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          42.408,
+          538.6406,
+          531.216,
+          781.9217
+        ],
+        "role": "primary",
+        "owner": "2023-fa-complete-p9-24",
+        "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "23",
+        "bbox": [
+          43.152,
+          53.5665,
+          78.864,
+          81.8377
+        ],
+        "pixel_sha256": "798a3749801e74180fbae73cf73a445110f3575b47ed1674f7330b72ded88852",
+        "audited_pixel_sha256": "798a3749801e74180fbae73cf73a445110f3575b47ed1674f7330b72ded88852"
+      },
+      {
+        "kind": "heading",
+        "number": "24",
+        "bbox": [
+          42.408,
+          538.6406,
+          78.12,
+          566.9118
+        ],
+        "pixel_sha256": "d1efd28b69dd060f0c9dee7a1b6dfa7f7069111f8ff7069e78d714a6bc509aa7",
+        "audited_pixel_sha256": "d1efd28b69dd060f0c9dee7a1b6dfa7f7069111f8ff7069e78d714a6bc509aa7"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

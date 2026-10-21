@@ -1,0 +1,61 @@
+{
+  "key": "a561cf768866f5748c374ace0a5c5ecbe42c7993a919b3de5e8d71842d3e5de7",
+  "record_hash": "a9d183f269e168e2e8ac6a185887d5798829a130971fb2189f2f55c79115e636",
+  "record": {
+    "page": 14,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "U5 Arbeitszeugnis subparts 1-3, complete.",
+    "anchors": [
+      {
+        "anchor_id": "2023-wiso-complete-p14-U5",
+        "number": "U5",
+        "bbox": [
+          66.87999725341797,
+          54.85502624511719,
+          95.16200256347656,
+          84.96102905273438
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U5 visually read on cached physical page 14.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "106e024277367b8d49ceeea1f55ef3c1b4708e51a9bb5305e1cd9c4154c3e8f7"
+      }
+    ],
+    "regions": [
+      {
+        "page": 14,
+        "bbox": [
+          60,
+          53,
+          543,
+          785
+        ],
+        "role": "primary",
+        "owner": "2023-wiso-complete-p14-U5",
+        "evidence": "U5 Arbeitszeugnis subparts 1-3, complete. Explicit panel includes all text, options, diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U5",
+        "bbox": [
+          66.87999725341797,
+          54.85502624511719,
+          95.16200256347656,
+          84.96102905273438
+        ],
+        "pixel_sha256": "106e024277367b8d49ceeea1f55ef3c1b4708e51a9bb5305e1cd9c4154c3e8f7",
+        "audited_pixel_sha256": "106e024277367b8d49ceeea1f55ef3c1b4708e51a9bb5305e1cd9c4154c3e8f7"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

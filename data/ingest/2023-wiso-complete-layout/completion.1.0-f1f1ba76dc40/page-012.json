@@ -1,0 +1,61 @@
+{
+  "key": "4525d917d5673845ecaf31de63c16a67fd61341e6209a0243a3be53cbc129da0",
+  "record_hash": "2e3042e61a66ab80c79686fcbd8f5bd3ae072f2111b57d13e522a194d76eddb7",
+  "record": {
+    "page": 12,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "U4 embedded notice-period diagram and employee table, subparts 1-2; continues page 13.",
+    "anchors": [
+      {
+        "anchor_id": "2023-wiso-complete-p12-U4",
+        "number": "U4",
+        "bbox": [
+          66.63999938964844,
+          55.33500671386719,
+          94.92200469970703,
+          85.44100952148438
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U4 visually read on cached physical page 12.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "647224f0787792a1603b6014ab386a011c516aeaa13f4cda7c9c9596538179a9"
+      }
+    ],
+    "regions": [
+      {
+        "page": 12,
+        "bbox": [
+          60,
+          53,
+          543,
+          785
+        ],
+        "role": "primary",
+        "owner": "2023-wiso-complete-p12-U4",
+        "evidence": "U4 embedded notice-period diagram and employee table, subparts 1-2; continues page 13. Explicit panel includes all text, options, diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U4",
+        "bbox": [
+          66.63999938964844,
+          55.33500671386719,
+          94.92200469970703,
+          85.44100952148438
+        ],
+        "pixel_sha256": "647224f0787792a1603b6014ab386a011c516aeaa13f4cda7c9c9596538179a9",
+        "audited_pixel_sha256": "647224f0787792a1603b6014ab386a011c516aeaa13f4cda7c9c9596538179a9"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

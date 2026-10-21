@@ -1,0 +1,61 @@
+{
+  "key": "0d3cc7a41a544e7e4cfbd42201043d494370c0c9739b32b13d6db338bc445c5b",
+  "record_hash": "1de072a9f3162305e030b3044a444037b221e1d396c6e0a4ef612672dd0d9968",
+  "record": {
+    "page": 8,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "U2 Betriebsuebergang fill-in, complete.",
+    "anchors": [
+      {
+        "anchor_id": "2023-wiso-complete-p8-U2",
+        "number": "U2",
+        "bbox": [
+          70.23999786376953,
+          55.33500671386719,
+          98.52200317382812,
+          85.44100952148438
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U2 visually read on cached physical page 8.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "03292cf506524d49dc4208fe5b850bd02ed4363e0b2e9da4022af5ad23e6dca9"
+      }
+    ],
+    "regions": [
+      {
+        "page": 8,
+        "bbox": [
+          65,
+          53,
+          548,
+          785
+        ],
+        "role": "primary",
+        "owner": "2023-wiso-complete-p8-U2",
+        "evidence": "U2 Betriebsuebergang fill-in, complete. Explicit panel includes all text, options, diagrams and response areas."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U2",
+        "bbox": [
+          70.23999786376953,
+          55.33500671386719,
+          98.52200317382812,
+          85.44100952148438
+        ],
+        "pixel_sha256": "03292cf506524d49dc4208fe5b850bd02ed4363e0b2e9da4022af5ad23e6dca9",
+        "audited_pixel_sha256": "03292cf506524d49dc4208fe5b850bd02ed4363e0b2e9da4022af5ad23e6dca9"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

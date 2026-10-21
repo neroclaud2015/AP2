@@ -51,6 +51,8 @@ class ManualPromotionTests(unittest.TestCase):
     for kind in ['answers','layout']:
      rel=f'data/ingest/2018-19-{code}_registered_{kind}.json';paths.add(rel);paths.update(read(ROOT/rel)['artifacts'])
    for source in before['sources']:
+    for binding in (source.get('identity_migration') or {}).get('dataset_bindings',{}).values():
+     paths.add(binding['dataset_path'])
     if source.get('profile_revision_of_source_id'):
      proof=source['profile_confirmation'];paths.update([proof['proposal_path'],proof['confirmation_path']]);paths.update(read(ROOT/proof['proposal_path'])['artifact_hashes']);paths.update(source['gates']['profile_matched']['artifacts'])
     if source['exam']=='2018-19-winter' and source['module'] in ['arbeitsplanung','funktionsanalyse']:
@@ -94,3 +96,7 @@ class Winter2019ManualTests(unittest.TestCase):
   ledger={r['question_id']:r for r in payload['confirmations']};broken=copy.deepcopy(payload);broken['confirmations'][0]['official_answer']=3
   with self.assertRaisesRegex(ValueError,'locked'):prepare(ROOT,broken,ledger)
 if __name__=='__main__':unittest.main()
+
+
+
+

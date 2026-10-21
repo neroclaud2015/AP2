@@ -1,0 +1,1264 @@
+{
+  "profile_id": "portrait-explicit-regions",
+  "scope": "2023-fa-complete",
+  "version": "completion.1.0",
+  "exam": "2023_sommer",
+  "module": "Funktionsanalyse",
+  "source_hash": "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b",
+  "source_id": "src-8278d0ec73126136a3acac88",
+  "solution_source_id": "src-cb20ae777f75c7a6cf6494b6",
+  "validated_sources": [
+    "6b251e40510bcc273fad437b9622d5ebea99453d239af261d61e11de6185ff6b"
+  ],
+  "name": "2023_sommer_funktionsanalyse_complete",
+  "expected": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6",
+    "U7",
+    "U8"
+  ],
+  "pages": {
+    "1": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Sommer2023 Funktionsanalyse Teil A cover.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "2": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Instructions: 105 minutes total, 28 closed and8 open tasks, one A4 attachment.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "3": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached physical page.",
+      "slots": [
+        {
+          "observed_number": "1",
+          "heading_box": [
+            42.408,
+            296.1036,
+            78.12,
+            324.3747
+          ],
+          "visual_patch_sha256": "b7f05db0974403f9b9ef417a61eaa167e9c636e5ebb3538ce34c08b4dc52634b",
+          "visual_evidence": "Printed 1 visually read on physical page 3.",
+          "regions": [
+            [
+              42.408,
+              296.1036,
+              283.464,
+              530.4569
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "observed_number": "2",
+          "heading_box": [
+            290.16,
+            296.1036,
+            325.872,
+            324.3747
+          ],
+          "visual_patch_sha256": "0e51ce9566c35e80b3d8c83ae1de93619452d6d3c639e7598b5f87bab38def9b",
+          "visual_evidence": "Printed 2 visually read on physical page 3.",
+          "regions": [
+            [
+              290.16,
+              296.1036,
+              528.24,
+              530.4569
+            ],
+            [
+              41.664,
+              531.9448,
+              526.752,
+              776.7138
+            ]
+          ],
+          "roles": [
+            "primary",
+            "diagram"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "4": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached physical page.",
+      "slots": [
+        {
+          "observed_number": "3",
+          "heading_box": [
+            60.264,
+            60.2623,
+            95.976,
+            88.5335
+          ],
+          "visual_patch_sha256": "bb7ff3d111981d2136e510ab3fee28bfb6f465d125d39305a6b24fffc1430725",
+          "visual_evidence": "Printed 3 visually read on physical page 4.",
+          "regions": [
+            [
+              60.264,
+              60.2623,
+              545.352,
+              295.3596
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "observed_number": "4",
+          "heading_box": [
+            61.008,
+            301.3114,
+            96.72,
+            329.5826
+          ],
+          "visual_patch_sha256": "2fd0e981206bc1b5044322c37b2fda5313c578bea2c734b41c4ba620a69e9750",
+          "visual_evidence": "Printed 4 visually read on physical page 4.",
+          "regions": [
+            [
+              61.008,
+              301.3114,
+              302.064,
+              537.8967
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "observed_number": "5",
+          "heading_box": [
+            308.016,
+            301.3114,
+            343.728,
+            329.5826
+          ],
+          "visual_patch_sha256": "b1b6bdb5c20084aa649f185f6e425c1fcd04ac0127abc7750e3aa3d9491e296e",
+          "visual_evidence": "Printed 5 visually read on physical page 4.",
+          "regions": [
+            [
+              308.016,
+              301.3114,
+              546.096,
+              537.8967
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "observed_number": "6",
+          "heading_box": [
+            61.752,
+            544.5925,
+            97.464,
+            572.8637
+          ],
+          "visual_patch_sha256": "dec0586cd61c6088807a13f4cb691205fa1f78eac42d1d2ae42e5a831b035e9b",
+          "visual_evidence": "Printed 6 visually read on physical page 4.",
+          "regions": [
+            [
+              61.752,
+              544.5925,
+              302.808,
+              785.6416
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "observed_number": "7",
+          "heading_box": [
+            309.504,
+            544.5925,
+            345.216,
+            572.8637
+          ],
+          "visual_patch_sha256": "889c2fb26d5f1c08d3da16951035df2997f540acb92832d9a634230c82c72329",
+          "visual_evidence": "Printed 7 visually read on physical page 4.",
+          "regions": [
+            [
+              309.504,
+              544.5925,
+              546.84,
+              785.6416
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "5": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached physical page.",
+      "slots": [
+        {
+          "observed_number": "8",
+          "heading_box": [
+            43.152,
+            52.0785,
+            78.864,
+            80.3497
+          ],
+          "visual_patch_sha256": "4ab17092958e824a070bd755426beba3dcfacff8673cbe6d5d470fe9261ec9ab",
+          "visual_evidence": "Printed 8 visually read on physical page 5.",
+          "regions": [
+            [
+              43.152,
+              52.0785,
+              529.728,
+              290.1517
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "observed_number": "9",
+          "heading_box": [
+            42.408,
+            296.1036,
+            78.12,
+            324.3747
+          ],
+          "visual_patch_sha256": "d799174fa8aeba8a5ddfd32eab7f255cee2dd8d39d923d186949b77b4055d4b1",
+          "visual_evidence": "Printed 9 visually read on physical page 5.",
+          "regions": [
+            [
+              42.408,
+              296.1036,
+              284.208,
+              532.6888
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "observed_number": "10",
+          "heading_box": [
+            291.648,
+            296.1036,
+            327.36,
+            324.3747
+          ],
+          "visual_patch_sha256": "965703f14c24e6859974cb8075b5b94da098828de4e88863878187996343cff1",
+          "visual_evidence": "Printed 10 visually read on physical page 5.",
+          "regions": [
+            [
+              291.648,
+              296.1036,
+              529.728,
+              532.6888
+            ],
+            [
+              178.56,
+              537.1527,
+              528.984,
+              779.6898
+            ]
+          ],
+          "roles": [
+            "primary",
+            "diagram"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "6": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached physical page.",
+      "slots": [
+        {
+          "observed_number": "11",
+          "heading_box": [
+            59.52,
+            59.5183,
+            95.232,
+            87.7895
+          ],
+          "visual_patch_sha256": "2b64675c109f895a46321f201d092df3dccd06d2870c44af9adfac5c995b89eb",
+          "visual_evidence": "Printed 11 visually read on physical page 6.",
+          "regions": [
+            [
+              59.52,
+              59.5183,
+              300.576,
+              296.8475
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "observed_number": "12",
+          "heading_box": [
+            308.016,
+            59.5183,
+            343.728,
+            87.7895
+          ],
+          "visual_patch_sha256": "aba4abfa8923103ba27dc147204b9af5b02bfc582779894af181d83129b88b6b",
+          "visual_evidence": "Printed 12 visually read on physical page 6.",
+          "regions": [
+            [
+              308.016,
+              59.5183,
+              546.84,
+              296.8475
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "observed_number": "13",
+          "heading_box": [
+            60.264,
+            301.3114,
+            95.976,
+            329.5826
+          ],
+          "visual_patch_sha256": "ea8f1a3d87c8edda609b26c8398859b425d221ec83a1ff9fe64738cce0386a56",
+          "visual_evidence": "Printed 13 visually read on physical page 6.",
+          "regions": [
+            [
+              60.264,
+              301.3114,
+              546.84,
+              540.1286
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "observed_number": "14",
+          "heading_box": [
+            61.008,
+            544.5925,
+            96.72,
+            572.8637
+          ],
+          "visual_patch_sha256": "8d36975cb7f295ad93c9e51944d743d7aa308c0ba7a07fc33b81eec207db4257",
+          "visual_evidence": "Printed 14 visually read on physical page 6.",
+          "regions": [
+            [
+              61.008,
+              544.5925,
+              301.32,
+              784.1536
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "observed_number": "15",
+          "heading_box": [
+            308.76,
+            544.5925,
+            344.472,
+            572.8637
+          ],
+          "visual_patch_sha256": "84295acbb295d5d7189077acf7f2345329a0c0d9c4ad341cab7429e453f00bdd",
+          "visual_evidence": "Printed 15 visually read on physical page 6.",
+          "regions": [
+            [
+              308.76,
+              544.5925,
+              547.584,
+              784.1536
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "7": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached physical page.",
+      "slots": [
+        {
+          "observed_number": "16",
+          "heading_box": [
+            43.896,
+            51.3345,
+            79.608,
+            79.6057
+          ],
+          "visual_patch_sha256": "fce446d277f4cb6974fe8137798ec08efcd1af290707ca2eb87584fbd9f2484d",
+          "visual_evidence": "Printed 16 visually read on physical page 7.",
+          "regions": [
+            [
+              43.896,
+              51.3345,
+              530.472,
+              532.6888
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "observed_number": "17",
+          "heading_box": [
+            43.152,
+            536.4087,
+            78.864,
+            564.6799
+          ],
+          "visual_patch_sha256": "9ed546de8b04e8d38b7a9c69f3d7b8998af3f18433eaabd1637ed94d20b1e79f",
+          "visual_evidence": "Printed 17 visually read on physical page 7.",
+          "regions": [
+            [
+              43.152,
+              536.4087,
+              284.952,
+              776.7138
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "observed_number": "18",
+          "heading_box": [
+            291.648,
+            536.4087,
+            327.36,
+            564.6799
+          ],
+          "visual_patch_sha256": "64dc54e869f630807ab2b0f2ae25172ae7d1d62b5e545f1f0ef1cbba3a74dc4d",
+          "visual_evidence": "Printed 18 visually read on physical page 7.",
+          "regions": [
+            [
+              291.648,
+              536.4087,
+              530.472,
+              776.7138
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "8": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached physical page.",
+      "slots": [
+        {
+          "observed_number": "19",
+          "heading_box": [
+            58.776,
+            51.3345,
+            94.488,
+            79.6057
+          ],
+          "visual_patch_sha256": "ce4eaa9ecc1c35db9da2d48be2a6f08e89afc73b6e496b60dc11f50c9096135e",
+          "visual_evidence": "Printed 19 visually read on physical page 8.",
+          "regions": [
+            [
+              58.776,
+              51.3345,
+              545.352,
+              295.3596
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "observed_number": "20",
+          "heading_box": [
+            58.032,
+            300.5674,
+            93.744,
+            328.8386
+          ],
+          "visual_patch_sha256": "edfd735e56758dc6aadf862b987ecf5ac687f1b503c2d168c84424300d9340ec",
+          "visual_evidence": "Printed 20 visually read on physical page 8.",
+          "regions": [
+            [
+              58.032,
+              300.5674,
+              300.576,
+              537.8967
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "observed_number": "21",
+          "heading_box": [
+            307.272,
+            300.5674,
+            342.984,
+            328.8386
+          ],
+          "visual_patch_sha256": "9648ffd9a52e6c9e9f602041dde02d56932944086e318d6e3b4b253149a81ede",
+          "visual_evidence": "Printed 21 visually read on physical page 8.",
+          "regions": [
+            [
+              307.272,
+              300.5674,
+              545.352,
+              537.8967
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "observed_number": "22",
+          "heading_box": [
+            58.776,
+            544.5925,
+            94.488,
+            572.8637
+          ],
+          "visual_patch_sha256": "fa032e43f468b87d96787415a4f96285b66fb09c6338bd2117c918c1f1a6093e",
+          "visual_evidence": "Printed 22 visually read on physical page 8.",
+          "regions": [
+            [
+              58.776,
+              544.5925,
+              301.32,
+              783.4097
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "9": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached physical page.",
+      "slots": [
+        {
+          "observed_number": "23",
+          "heading_box": [
+            43.152,
+            53.5665,
+            78.864,
+            81.8377
+          ],
+          "visual_patch_sha256": "798a3749801e74180fbae73cf73a445110f3575b47ed1674f7330b72ded88852",
+          "visual_evidence": "Printed 23 visually read on physical page 9.",
+          "regions": [
+            [
+              43.152,
+              53.5665,
+              530.472,
+              534.1768
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "observed_number": "24",
+          "heading_box": [
+            42.408,
+            538.6406,
+            78.12,
+            566.9118
+          ],
+          "visual_patch_sha256": "d1efd28b69dd060f0c9dee7a1b6dfa7f7069111f8ff7069e78d714a6bc509aa7",
+          "visual_evidence": "Printed 24 visually read on physical page 9.",
+          "regions": [
+            [
+              42.408,
+              538.6406,
+              531.216,
+              781.9217
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "10": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached physical page.",
+      "slots": [
+        {
+          "observed_number": "25",
+          "heading_box": [
+            58.032,
+            60.2623,
+            93.744,
+            88.5335
+          ],
+          "visual_patch_sha256": "fb62eec659a291f3e3c7bd2c1eb892ad43eec2443834d82fdb3c34ef562f0596",
+          "visual_evidence": "Printed 25 visually read on physical page 10.",
+          "regions": [
+            [
+              58.032,
+              60.2623,
+              545.352,
+              296.8475
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "observed_number": "26",
+          "heading_box": [
+            58.776,
+            301.3114,
+            94.488,
+            329.5826
+          ],
+          "visual_patch_sha256": "20db3866521979807a719bca34133aea697951c5290e484a609077ad9852595d",
+          "visual_evidence": "Printed 26 visually read on physical page 10.",
+          "regions": [
+            [
+              58.776,
+              301.3114,
+              300.576,
+              539.3846
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "observed_number": "27",
+          "heading_box": [
+            307.272,
+            301.3114,
+            342.984,
+            329.5826
+          ],
+          "visual_patch_sha256": "45783b1242dca80eccb083356a1be1a361b4156653e665b0bdf432fd7cbb08d7",
+          "visual_evidence": "Printed 27 visually read on physical page 10.",
+          "regions": [
+            [
+              307.272,
+              301.3114,
+              545.352,
+              539.3846
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        },
+        {
+          "observed_number": "28",
+          "heading_box": [
+            58.776,
+            544.5925,
+            94.488,
+            572.8637
+          ],
+          "visual_patch_sha256": "cd2ecbf0a64f2affe4397c37d6bfc618c99349c6f7e8a99c8fd94aefcce87c06",
+          "visual_evidence": "Printed 28 visually read on physical page 10.",
+          "regions": [
+            [
+              58.776,
+              544.5925,
+              302.064,
+              784.1536
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "11": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Markierungsbogen reminder, no question.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "12": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "blank",
+      "evidence": "Blank physical page.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "13": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Sommer2023 Funktionsanalyse Teil B cover.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "14": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Instructions confirm105 minutes,8 open tasks,one A4 attachment.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "15": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "shared_attachment",
+      "evidence": "Pruefungsaufgaben-Beschreibung technology schema drilling machine.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "16": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached physical page.",
+      "slots": [
+        {
+          "observed_number": "U1",
+          "heading_box": [
+            37.944,
+            21.5754,
+            73.656,
+            49.8466
+          ],
+          "visual_patch_sha256": "32dac72b657d817f12094e61d0e2e50960b77e7234eae5b12f81aab5043b29d1",
+          "visual_evidence": "Printed U1 visually read on physical page 16.",
+          "regions": [
+            [
+              37.944,
+              21.5754,
+              514.848,
+              813.1688
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "17": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached physical page.",
+      "slots": [
+        {
+          "observed_number": "U2",
+          "heading_box": [
+            31.992,
+            16.3675,
+            67.704,
+            44.6387
+          ],
+          "visual_patch_sha256": "34b2c5123d8a1c86d0ce65f6165af8ac683a29adae63a65ea091af01de9cc687",
+          "visual_evidence": "Printed U2 visually read on physical page 17.",
+          "regions": [
+            [
+              31.992,
+              16.3675,
+              511.128,
+              806.473
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "18": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached physical page.",
+      "slots": [
+        {
+          "observed_number": "U3",
+          "heading_box": [
+            38.688,
+            21.5754,
+            74.4,
+            49.8466
+          ],
+          "visual_patch_sha256": "5906bfc182960b6ee8fdb8171b13f2a50e9cb3e5b585cc064722ffa23ba6c2f5",
+          "visual_evidence": "Printed U3 visually read on physical page 18.",
+          "regions": [
+            [
+              38.688,
+              21.5754,
+              514.848,
+              813.9128
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "19": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "continuation",
+      "evidence": "Printed Ergebnis U3 proves ownership of subparts 2 and 3.",
+      "slots": [],
+      "explicit_regions": [
+        {
+          "bbox": [
+            33.48,
+            17.8555,
+            513.36,
+            807.217
+          ],
+          "role": "continuation",
+          "owner": "2023-fa-complete-p18-U3",
+          "observed_owner_label": "U3",
+          "evidence_box": [
+            514.104,
+            742.4908,
+            555.024,
+            765.5542
+          ],
+          "visual_patch_sha256": "82c03973f1dfc3a066328a6ddcbb9255b16cfa9a6191466f79925ef9a792a908",
+          "evidence": "Printed Ergebnis U3 on physical page 19; subparts 2/3 continue U3 hydraulic question from page18."
+        }
+      ]
+    },
+    "20": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached physical page.",
+      "slots": [
+        {
+          "observed_number": "U4",
+          "heading_box": [
+            35.712,
+            22.3194,
+            71.424,
+            50.5906
+          ],
+          "visual_patch_sha256": "e152def98edaa6660850c6050622bb60d33faeec155f6e5f9a7d929a4328fed8",
+          "visual_evidence": "Printed U4 visually read on physical page 20.",
+          "regions": [
+            [
+              35.712,
+              22.3194,
+              511.128,
+              813.9128
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "21": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached physical page.",
+      "slots": [
+        {
+          "observed_number": "U5",
+          "heading_box": [
+            34.968,
+            17.1115,
+            70.68,
+            45.3827
+          ],
+          "visual_patch_sha256": "1ea35faf57e643b40c4a8b790db8b73b11b08713f70c1c0a4f45e2dbfc40b7b9",
+          "visual_evidence": "Printed U5 visually read on physical page 21.",
+          "regions": [
+            [
+              34.968,
+              17.1115,
+              511.872,
+              805.729
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "22": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached physical page.",
+      "slots": [
+        {
+          "observed_number": "U6",
+          "heading_box": [
+            35.712,
+            22.3194,
+            71.424,
+            50.5906
+          ],
+          "visual_patch_sha256": "6056fc4e5a5ead2a20ee89ef2549c5d644e9f32b261ef58b120713e31fd6b0f5",
+          "visual_evidence": "Printed U6 visually read on physical page 22.",
+          "regions": [
+            [
+              35.712,
+              22.3194,
+              511.872,
+              813.9128
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "23": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached physical page.",
+      "slots": [
+        {
+          "observed_number": "U7",
+          "heading_box": [
+            35.712,
+            21.5754,
+            71.424,
+            49.8466
+          ],
+          "visual_patch_sha256": "65d469abf44af414f948ddb08e76114f07c59a4ae92f94620855232946e3813a",
+          "visual_evidence": "Printed U7 visually read on physical page 23.",
+          "regions": [
+            [
+              35.712,
+              21.5754,
+              511.872,
+              811.6809
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "24": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "questions",
+      "evidence": "Individually inspected cached physical page.",
+      "slots": [
+        {
+          "observed_number": "U8",
+          "heading_box": [
+            34.968,
+            26.7832,
+            70.68,
+            55.0544
+          ],
+          "visual_patch_sha256": "1a4f9e48153f083e238ce94760d059753d55b2f83365adb595b758dbad5f94e0",
+          "visual_evidence": "Printed U8 visually read on physical page 24.",
+          "regions": [
+            [
+              34.968,
+              26.7832,
+              511.872,
+              635.3579
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "25": {
+      "geometry": [
+        841.4400024414062,
+        595.2000122070312
+      ],
+      "classification": "shared_attachment",
+      "evidence": "Stirnraedergetriebe Blatt1von1 drawing and bill of materials.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "26": {
+      "geometry": [
+        595.2000122070312,
+        841.4400024414062
+      ],
+      "classification": "blank",
+      "evidence": "Blank physical page.",
+      "slots": [],
+      "explicit_regions": []
+    }
+  },
+  "attachment_crops": [
+    {
+      "page": 15,
+      "bbox": [
+        25.296,
+        9.6717,
+        555.024,
+        809.4489
+      ],
+      "role": "Prüfungsaufgaben-Beschreibung Bohrstation",
+      "question_numbers": [
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6",
+        "U7",
+        "U8"
+      ],
+      "evidence": "Common Teil B technology schema and named motor/sensor/gearbox context; shared description, not a task continuation.",
+      "visual_patch_sha256": "1aee9769bdd75900510800dd7b1a5ca74b6a42b791ad3831e9ff1fcf75366bbd"
+    },
+    {
+      "page": 25,
+      "bbox": [
+        27.3468,
+        8.4127,
+        822.5076,
+        569.9618
+      ],
+      "role": "Stirnrädergetriebe mit Stückliste Blatt 1 von 1",
+      "question_numbers": [
+        "U1",
+        "U2"
+      ],
+      "evidence": "U1 and U2 explicitly print Blatt 1 von 1: Stirnraedergetriebe; title and drawing bill of materials verified.",
+      "visual_patch_sha256": "c254a6d5e42ebda21f919e54343d94b3686fbf716e2cee9365addd8fc0a95847"
+    }
+  ],
+  "attachment_refs": {
+    "U1": [
+      15,
+      25
+    ],
+    "U2": [
+      15,
+      25
+    ],
+    "U3": [
+      15
+    ],
+    "U4": [
+      15
+    ],
+    "U5": [
+      15
+    ],
+    "U6": [
+      15
+    ],
+    "U7": [
+      15
+    ],
+    "U8": [
+      15
+    ]
+  },
+  "timing_minutes": 105,
+  "timing_source_page": 2,
+  "description_page": 15,
+  "configuration_complete": true
+}

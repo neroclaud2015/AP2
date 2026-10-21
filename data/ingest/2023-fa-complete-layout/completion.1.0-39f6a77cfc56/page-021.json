@@ -1,0 +1,61 @@
+{
+  "key": "3a6585a40c34fc5678da2f9686e8f48b3a90ce42aa4cb3f9bcd16bdfbecb08b5",
+  "record_hash": "64f143fe4a3aa191372ed4969ecf7fe508a012d703a6bbf2f195e4d48e0983a7",
+  "record": {
+    "page": 21,
+    "geometry": [
+      595.2000122070312,
+      841.4400024414062
+    ],
+    "classification": "questions",
+    "classification_evidence": "Individually inspected cached physical page.",
+    "anchors": [
+      {
+        "anchor_id": "2023-fa-complete-p21-U5",
+        "number": "U5",
+        "bbox": [
+          34.968,
+          17.1115,
+          70.68,
+          45.3827
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U5 visually read on physical page 21.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "1ea35faf57e643b40c4a8b790db8b73b11b08713f70c1c0a4f45e2dbfc40b7b9"
+      }
+    ],
+    "regions": [
+      {
+        "page": 21,
+        "bbox": [
+          34.968,
+          17.1115,
+          511.872,
+          805.729
+        ],
+        "role": "primary",
+        "owner": "2023-fa-complete-p21-U5",
+        "evidence": "Complete printed question and choices/diagrams/response fields visually bounded; adjacent tasks excluded."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U5",
+        "bbox": [
+          34.968,
+          17.1115,
+          70.68,
+          45.3827
+        ],
+        "pixel_sha256": "1ea35faf57e643b40c4a8b790db8b73b11b08713f70c1c0a4f45e2dbfc40b7b9",
+        "audited_pixel_sha256": "1ea35faf57e643b40c4a8b790db8b73b11b08713f70c1c0a4f45e2dbfc40b7b9"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}
