@@ -30,6 +30,7 @@ jobs:
       - run: python scripts/validate_source_registry.py
       - run: python scripts/full_pdf_sources.py
       - run: npm test
+      - run: node scripts/validate_wiso_recall.cjs
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -86,6 +87,7 @@ jobs:
       - run: python scripts/publish_evidence.py winter2024-25-fa-release
       - run: python scripts/publish_evidence.py source-completion-2023-2024
       - run: python scripts/publish_evidence.py phase3d
+      - run: python scripts/publish_evidence.py phase3d1
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

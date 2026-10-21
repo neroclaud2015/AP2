@@ -43,21 +43,62 @@ RULES={
 'datenschutz':r'datenschutz|personenbezogen|dsgvo|videouberwachung|uberwachungskamera', 'vertragsrecht':r'kaufvertrag|geschaftsfahig|rechtsfahig|sachmangel|mangelhaft|gewahrleistung|willenserklarung|besitz|eigentum|verjahrung|verzug|widerruf|leas|frei.{0,3}haus|lieferung|rechtsgeschaft|vertragsfreiheit|vertragsstorung|vertragzustande|agb|kaufe.{0,3}im.{0,3}internet',
 'umwelt':r'umwelt|recycling|abfall|nachhaltig|ressourcen|entsorgung|energieeinspar'
 }
+# Additional evidence is restricted to the same pre-question-mark stem.
+# Scores are operational rule strength, not calibrated correctness probabilities.
+STEM_RULES={
+ 'arbeitsvertrag':r'bundesur(?:i|l)aubsgesetz|personlichenarbeitsbedingungen|arbeitsbedingungenderarbeitnehmer|unterlagen.{0,90}arbeitgeber.{0,20}vorlegen|dokument.{0,40}arbeitgeber.{0,30}vorlegen',
+ 'elternschutz':r'werdendemuitter|elterngeld',
+ 'kompetenzen':r'beruflicheweiterbildung|beruflichenfort-undweiterbildungs|beruflicherabschluss.{0,110}digitalisierung',
+ 'unfallversicherung':r'aufdemwegzurarbeit.{0,70}(?:sturzt|verungluckt)|verungluckt.{0,40}aufdemwegzurarbeit',
+ 'kennzahlen':r'erwarteterumsatz.{0,100}gewinn|umsatz.{0,45}jahresuberschuss',
+ 'jav':r'jugend-undauszubildendenvertreters',
+ 'europa':r'eu-programm|burgereuropas|handelsvertragendereu',
+ 'unternehmen':r'vertriebsbereich|betriebsstandort.{0,45}absatzgebiet|produktionsfaktorkapital|betriebsstattenimausland|unternehmenszweig.{0,100}beschaffung|betrieblichenfunktionenbeschaffung|zielverfolgt.{0,15}privateunternehmung|qualitatsmanagement|lagerbestandanmaterial|einzelfertigung',
+ 'arbeitsschutz':r'unfalliverhutung|wechselschicht.{0,100}arbeitsbeanspruchung|belastenderschichtdienst',
+ 'ausbildungspruefung':r'abschlusspruifung',
+ 'vertragsrecht':r'car-sharing-vertrag|kauft.{0,30}im internet|kauft.{0,70}onlinehandler|mietvertrag|nettokaltmiete',
+ 'tarifrecht':r'tariflichefriedenspflicht',
+ 'umwelt':r'standby-modus|co2-emission',
+ 'sozialversicherung':r'lohnnebenkosten',
+}
+
+def classification_policy(proposal):
+ """Ordinary topic routing cannot resolve independent legal or source review."""
+ if proposal.get('locked'):return dict(proposal)
+ result=dict(proposal);score=result.get('confidence',0)
+ review=not result.get('topic_ids') or score<.8
+ result['classification_status']='classification_needs_review' if review else ('machine_accepted_high_confidence' if score>=.95 else 'machine_suggested')
+ result['source']='machine_accepted_high_confidence' if not review and score>=.95 else 'machine_suggested'
+ result['classification_review']=review
+ result['locked']=False
+ result['review_reasons']=[r for r in result.get('review_reasons',[]) if r!='classification_needs_review']+(['classification_needs_review'] if review else [])
+ # Absence of a legal decision is not legal approval.
+ result.setdefault('legal_review',None)
+ return result
+
 def classify(text):
  # MC options are distractors, not evidence of the tested topic.
  stem=(text.split('?',1)[0] if '?' in text else text)[:700]
- s=normalize(stem).replace('-\n','').replace('\n',' ');hits={k:re.findall(v.replace(' ',''),s.replace(' ','')) for k,v in RULES.items()};topics=[k for k,v in hits.items() if v]
+ s=normalize(stem).replace('-\n','').replace('\n',' ');hits={k:re.findall(v.replace(' ',''),s.replace(' ','')) for k,v in RULES.items()};
+ for k,v in STEM_RULES.items():hits.setdefault(k,[]).extend(re.findall(v.replace(' ',''),s.replace(' ','')))
+ topics=[k for k,v in hits.items() if v]
  if 'kuendigung' in topics and 'miet' in s and not any(x in s for x in ['arbeit','ausbild','betrieb']):topics.remove('kuendigung')
- return {'topic_ids':topics,'confidence':.8 if topics else 0,'source':'rule_based_proposal','locked':False,'review_reasons':[] if topics else ['classification_needs_review'],'evidence':[f'Stem: {stem[:500]}']+[f'{k}: '+', '.join(dict.fromkeys(v)) for k,v in hits.items() if v]}
+ return classification_policy({'topic_ids':topics,'confidence':.8 if topics else 0,'source':'rule_based_proposal','locked':False,'review_reasons':[] if topics else ['classification_needs_review'],'evidence':[f'Stem: {stem[:500]}']+[f'{k}: '+', '.join(dict.fromkeys(v)) for k,v in hits.items() if v]})
 def classify_record(record):
  result=classify(record['text'] if valid_text(record['text']) and record['confidence']>=.85 else '')
- result['confidence']=min(result['confidence'],record['confidence'])
+ # Extraction quality gates evidence; it is not classification confidence.
  return result
 def reconcile(old,new):
  if old and old.get('locked'):
   result=dict(old)
   if old.get('question_source_revision')!=new.get('question_source_revision'):result['review_reasons']=list(set(old.get('review_reasons',[])+['source_changed_since_confirmation']))
   return result
+ if old:
+  # Reclassification never clears an independently recorded legal concern.
+  for key in ('legal_review','legal_review_reasons'):
+   if key in old:new[key]=old[key]
+  legal_reasons=[r for r in old.get('review_reasons',[]) if r.startswith('legal_')]
+  new['review_reasons']=list(dict.fromkeys(new.get('review_reasons',[])+legal_reasons))
  return new
 
 def propose_topics(inventory,texts,classifications,cues,min_seasons=3):
@@ -147,7 +188,7 @@ def build(root=ROOT,no_ocr=False):
   if curated:patterns=curated[:3]
   summary={'topic_id':tid,'bullets':node.get('bullets',[]) or [b for child in taxonomy['nodes'] if child['parent_id']==tid for b in child.get('bullets',[])][:3],'patterns':patterns,'question_ids':ids,'provenance':'historical_exam_summary','legal_freshness':{'relevant':node.get('legal',True),'reviewed_at':None,'review_needed':node.get('legal',True)}}
   if tid in legal:summary.update(legal[tid])
-  if summary['legal_freshness']['relevant']:
+  if summary['legal_freshness']['relevant'] or tid in knowledge:
    summary['historical_bullets']=list(summary['bullets'])
    summary['knowledge']=resolve_knowledge(knowledge.get(tid,[]),datetime.now(timezone.utc).date().isoformat())
    summary['bullets']=summary['knowledge']['bullets']
@@ -155,8 +196,8 @@ def build(root=ROOT,no_ocr=False):
    selected=next((v for v in summary['knowledge']['versions'] if v['current']),None)
    if selected:summary['legal_freshness'].update(reviewed_at=selected['verified_at'],references=selected['references'])
   summaries.append(summary)
- input_hashes={name:hashlib.sha256((root/name).read_bytes()).hexdigest() for name in ['public/data/question_inventory.json','scripts/wiso_taxonomy.json','scripts/wiso_patterns.json','scripts/wiso_legal_verified.json','scripts/wiso_knowledge_versions.json'] if (root/name).exists()}
- result={'proposed_topics':proposals,'input_hashes':input_hashes,'schema_version':1,'version':VERSION,'taxonomy':taxonomy,'texts':texts,'classifications':classes,'summaries':summaries,'retired_texts':prior.get('retired_texts',[])+[t for t in prior.get('texts',[]) if t['question_id'] not in active],'retired_classifications':prior.get('retired_classifications',[])+[v for k,v in old.items() if k not in active],'config':{'recentSeasonCount':4,'minAccuracyQuestions':3,'weakAccuracy':60,'relevance':{'questionWeight':.4,'seasonWeight':.4,'recentWeight':.2,'veryHigh':.7,'high':.5,'medium':.25},'priority':{'relevanceWeight':1,'needWeight':2,'weaknessWeight':1,'unpracticedBonus':.25}}}
+ input_hashes={name:hashlib.sha256((root/name).read_bytes()).hexdigest() for name in ['public/data/question_inventory.json','scripts/wiso_taxonomy.json','scripts/wiso_patterns.json','scripts/wiso_legal_verified.json','scripts/wiso_knowledge_versions.json','scripts/wiso_recall_cards.json'] if (root/name).exists()}
+ result={'recall_cards':read(root/'scripts/wiso_recall_cards.json',[]),'proposed_topics':proposals,'input_hashes':input_hashes,'schema_version':1,'version':VERSION,'taxonomy':taxonomy,'texts':texts,'classifications':classes,'summaries':summaries,'retired_texts':prior.get('retired_texts',[])+[t for t in prior.get('texts',[]) if t['question_id'] not in active],'retired_classifications':prior.get('retired_classifications',[])+[v for k,v in old.items() if k not in active],'config':{'recentSeasonCount':4,'minAccuracyQuestions':3,'weakAccuracy':60,'relevance':{'questionWeight':.4,'seasonWeight':.4,'recentWeight':.2,'veryHigh':.7,'high':.5,'medium':.25},'priority':{'relevanceWeight':1,'needWeight':2,'weaknessWeight':1,'unpracticedBonus':.25}}}
  write(root/'public/data/wiso_focus.json',result)
  report={'proposed_topics':len(proposals),'inventory':len(inventory),'seasons':len({q['examId'] for q in inventory}),'usable_text':sum(valid_text(t['text']) for t in texts),'classified':sum(bool(c['topic_ids']) for c in classes),'unclassified':sum(not c['topic_ids'] for c in classes),'text_review':sum(bool(t['review_reasons']) for t in texts),'cache_hits':skipped,'methods':dict(Counter(t['extraction_method'] for t in texts)),'source_files_modified':0,'pdf_pages_rendered':0,'topics':{n['id']:sum(n['id'] in c['topic_ids'] for c in classes) for n in taxonomy['nodes']}}
  ranking=[]
@@ -167,6 +208,6 @@ def build(root=ROOT,no_ocr=False):
   ranking.append({'topic_id':node['id'],'questions':len(members),'distinct_seasons':len(seasons),'seasons':seasons,'question_ids':sorted(members)})
  report['ranking']=sorted(ranking,key=lambda r:(-r['distinct_seasons'],-r['questions'],r['topic_id']))
  report['classification_status']='Machine proposals; targeted visual audit only. Topic overlap is intentional; counts are distinct question IDs, never word counts.'
- write(root/'docs/evidence/phase3d/pipeline-report.json',report);print(json.dumps({k:v for k,v in report.items() if k!='ranking'},indent=2));return result
+ write(root/'docs/evidence/phase3d1/pipeline-report.json',report);print(json.dumps({k:v for k,v in report.items() if k!='ranking'},indent=2));return result
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--no-ocr',action='store_true');args=p.parse_args();build(no_ocr=args.no_ocr)

@@ -107,7 +107,7 @@
       "source_exam_season": null,
       "verified_at": "2026-10-21",
       "verified": true,
-      "current": true,
+      "current": false,
       "supersedes": [],
       "bullets": [
         "Bei vorzeitig bestandener Abschlussprüfung endet das Ausbildungsverhältnis mit Bekanntgabe des Ergebnisses durch den Prüfungsausschuss.",
@@ -116,6 +116,36 @@
       "references": [
         {
           "title": "BBiG § 21",
+          "url": "https://www.gesetze-im-internet.de/bbig_2005/BJNR093110005.html",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Gesetzlicher Geltungsbeginn hier nicht erfasst; geprüft am angegebenen Datum."
+    },
+    {
+      "id": "ausbildungspruefung@verified-2026-10-21-recall",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [
+        "ausbildungspruefung@verified-2026-10-21"
+      ],
+      "bullets": [
+        "Bei vorzeitig bestandener Abschlussprüfung endet das Ausbildungsverhältnis mit Bekanntgabe des Ergebnisses durch den Prüfungsausschuss.",
+        "Bei Nichtbestehen kann auf Verlangen bis zur nächsten Wiederholungsprüfung verlängert werden, höchstens um ein Jahr.",
+        "Ausbildende stellen erforderliche Ausbildungsmittel wie Werkzeuge, Werkstoffe und Fachliteratur für Ausbildung und Prüfungen kostenlos bereit."
+      ],
+      "references": [
+        {
+          "title": "BBiG § 21",
+          "url": "https://www.gesetze-im-internet.de/bbig_2005/BJNR093110005.html",
+          "reviewed_at": "2026-10-21"
+        },
+        {
+          "title": "BBiG § 14",
           "url": "https://www.gesetze-im-internet.de/bbig_2005/BJNR093110005.html",
           "reviewed_at": "2026-10-21"
         }
@@ -161,7 +191,7 @@
       "source_exam_season": null,
       "verified_at": "2026-10-21",
       "verified": true,
-      "current": true,
+      "current": false,
       "supersedes": [],
       "bullets": [
         "Für Jugendliche gilt grundsätzlich: höchstens acht Stunden täglich und 40 Stunden wöchentlich.",
@@ -171,6 +201,36 @@
         {
           "title": "JArbSchG § 8",
           "url": "https://www.gesetze-im-internet.de/jarbschg/__8.html",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Gesetzlicher Geltungsbeginn hier nicht erfasst; geprüft am angegebenen Datum."
+    },
+    {
+      "id": "arbeitsschutz@verified-2026-10-21-recall",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [
+        "arbeitsschutz@verified-2026-10-21"
+      ],
+      "bullets": [
+        "Für Jugendliche gilt grundsätzlich: höchstens acht Stunden täglich und 40 Stunden wöchentlich.",
+        "§ 8 JArbSchG enthält begrenzte Ausnahmen; die Erwachsenenregel zur Verlängerung auf zehn Stunden darf nicht pauschal übernommen werden.",
+        "Das Jugendarbeitsschutzgesetz gilt grundsätzlich für die Beschäftigung von Personen unter 18 Jahren; § 1 nennt den Geltungsbereich und Ausnahmen."
+      ],
+      "references": [
+        {
+          "title": "JArbSchG § 8",
+          "url": "https://www.gesetze-im-internet.de/jarbschg/__8.html",
+          "reviewed_at": "2026-10-21"
+        },
+        {
+          "title": "JArbSchG § 1",
+          "url": "https://www.gesetze-im-internet.de/jarbschg/__1.html",
           "reviewed_at": "2026-10-21"
         }
       ],
@@ -200,6 +260,542 @@
         }
       ],
       "effective_date_note": "Gesetzlicher Geltungsbeginn hier nicht erfasst; geprüft am angegebenen Datum."
+    }
+  ],
+  "kuendigung": [
+    {
+      "id": "kuendigung@verified-2026-10-21",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [],
+      "bullets": [
+        "Eine Kündigungsschutzklage ist grundsätzlich binnen drei Wochen nach Zugang der schriftlichen Kündigung beim Arbeitsgericht zu erheben.",
+        "Die Klage richtet sich gegen die Auflösung des Arbeitsverhältnisses durch die Kündigung.",
+        "Bei behördlich zustimmungsbedürftigen Kündigungen nennt § 4 KSchG einen besonderen Fristbeginn."
+      ],
+      "references": [
+        {
+          "title": "KSchG § 4",
+          "url": "https://www.gesetze-im-internet.de/kschg/__4.html",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Geltungsbeginn hier nicht erfasst; nur die aufgeführten Merksätze wurden am angegebenen Datum geprüft."
+    }
+  ],
+  "arbeitsvertrag": [
+    {
+      "id": "arbeitsvertrag@verified-2026-10-21",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [],
+      "bullets": [
+        "Ein einfaches Arbeitszeugnis nennt Art und Dauer der Tätigkeit.",
+        "Ein qualifiziertes Arbeitszeugnis enthält zusätzlich Aussagen über Leistung und Verhalten.",
+        "Das Zeugnis muss klar und verständlich sein; versteckte abweichende Botschaften sind unzulässig."
+      ],
+      "references": [
+        {
+          "title": "GewO § 109",
+          "url": "https://www.gesetze-im-internet.de/gewo/__109.html",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Geltungsbeginn hier nicht erfasst; nur die aufgeführten Merksätze wurden am angegebenen Datum geprüft."
+    }
+  ],
+  "krankenversicherung": [
+    {
+      "id": "krankenversicherung@verified-2026-10-21",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [],
+      "bullets": [
+        "Im regulären Beschäftigungsverhältnis zahlt der Arbeitgeber den Gesamtsozialversicherungsbeitrag.",
+        "Die Überweisung durch den Arbeitgeber bedeutet nicht, dass er sämtliche Beiträge wirtschaftlich allein trägt.",
+        "Der Arbeitnehmeranteil gilt bei der Zahlung als aus dem Vermögen des Beschäftigten erbracht."
+      ],
+      "references": [
+        {
+          "title": "SGB IV § 28e",
+          "url": "https://www.gesetze-im-internet.de/sgb_4/__28e.html",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Geltungsbeginn hier nicht erfasst; nur die aufgeführten Merksätze wurden am angegebenen Datum geprüft."
+    }
+  ],
+  "arbeitslosenversicherung": [
+    {
+      "id": "arbeitslosenversicherung@verified-2026-10-21",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [],
+      "bullets": [
+        "Gegen einen Sozialleistungsbescheid kann Widerspruch bei der erlassenden Stelle eingelegt werden.",
+        "Die regelmäßige Widerspruchsfrist bei Bekanntgabe im Inland beträgt einen Monat.",
+        "Bei Bekanntgabe im Ausland beträgt sie drei Monate; für Form und Sonderfälle gilt § 84 SGG."
+      ],
+      "references": [
+        {
+          "title": "SGG § 84",
+          "url": "https://www.gesetze-im-internet.de/sgg/__84.html",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Geltungsbeginn hier nicht erfasst; nur die aufgeführten Merksätze wurden am angegebenen Datum geprüft."
+    }
+  ],
+  "tarifrecht": [
+    {
+      "id": "tarifrecht@verified-2026-10-21",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [],
+      "bullets": [
+        "Tarifvertragsparteien sind Gewerkschaften sowie einzelne Arbeitgeber oder Arbeitgeberverbände.",
+        "Tarifverträge können Arbeitsbedingungen und betriebliche Fragen regeln; sie bedürfen der Schriftform.",
+        "Tarifnormen gelten grundsätzlich unmittelbar und zwingend zwischen beiderseits Tarifgebundenen im Geltungsbereich.",
+        "Abweichungen sind zulässig, wenn der Tarifvertrag sie erlaubt oder sie für Arbeitnehmer günstiger sind."
+      ],
+      "references": [
+        {
+          "title": "TVG §§ 1–4",
+          "url": "https://www.gesetze-im-internet.de/tvg/BJNR700550949.html",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Geltungsbeginn hier nicht erfasst; nur die aufgeführten Merksätze wurden am angegebenen Datum geprüft."
+    }
+  ],
+  "sozialrecht": [
+    {
+      "id": "sozialrecht@verified-2026-10-21",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [],
+      "bullets": [
+        "Die Sozialgerichtsbarkeit entscheidet insbesondere über öffentlich-rechtliche Streitigkeiten der Sozialversicherung.",
+        "Dazu zählen etwa gesetzliche Kranken-, Renten- und Unfallversicherung.",
+        "Auch Angelegenheiten der Arbeitsförderung gehören grundsätzlich zu ihrem Aufgabenbereich; § 51 SGG nennt Ausnahmen."
+      ],
+      "references": [
+        {
+          "title": "SGG § 51",
+          "url": "https://www.gesetze-im-internet.de/sgg/__51.html",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Geltungsbeginn hier nicht erfasst; nur die aufgeführten Merksätze wurden am angegebenen Datum geprüft."
+    }
+  ],
+  "geld": [
+    {
+      "id": "geld@verified-2026-10-21",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [],
+      "bullets": [
+        "Der Nominallohn bezeichnet den Verdienst in Geld ohne Bereinigung um Preisänderungen.",
+        "Der Reallohn berücksichtigt die Preisentwicklung und damit die Kaufkraft des Verdienstes.",
+        "Steigen die Verdienste stärker als die Verbraucherpreise, steigt der Reallohn; im umgekehrten Fall sinkt er."
+      ],
+      "references": [
+        {
+          "title": "Destatis: Reallöhne und Nominallöhne",
+          "url": "https://www.destatis.de/DE/Themen/Arbeit/Verdienste/Realloehne-Nominalloehne/_inhalt.html",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Geltungsbeginn hier nicht erfasst; nur die aufgeführten Merksätze wurden am angegebenen Datum geprüft."
+    }
+  ],
+  "umwelt": [
+    {
+      "id": "umwelt@verified-2026-10-21",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [],
+      "bullets": [
+        "Kohlendioxid, Methan, Lachgas und fluorierte Gase gehören zu den langlebigen Treibhausgasen.",
+        "Auch Wasserdampf spielt für den natürlichen Treibhauseffekt eine wichtige Rolle.",
+        "Mehr Treibhausgase in der Atmosphäre verstärken den vom Menschen verursachten Klimawandel."
+      ],
+      "references": [
+        {
+          "title": "Umweltbundesamt: Atmosphärische Treibhausgas-Konzentrationen",
+          "url": "https://www.umweltbundesamt.de/daten/umweltzustand-trends/klima/atmosphaerische-treibhausgas-konzentrationen",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Geltungsbeginn hier nicht erfasst; nur die aufgeführten Merksätze wurden am angegebenen Datum geprüft."
+    }
+  ],
+  "europa": [
+    {
+      "id": "europa@verified-2026-10-21",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [],
+      "bullets": [
+        "Zum EU-Binnenmarkt gehören der freie Waren-, Personen-, Dienstleistungs- und Kapitalverkehr.",
+        "Diese vier Grundfreiheiten erleichtern grenzüberschreitende wirtschaftliche Tätigkeiten.",
+        "Die Freiheiten sind rechtlich ausgestaltet; ihre Bezeichnung bedeutet keine völlige Regelfreiheit."
+      ],
+      "references": [
+        {
+          "title": "Europäisches Parlament: Binnenmarkt – Allgemeine Grundsätze",
+          "url": "https://www.europarl.europa.eu/erpl-app-public/factsheets/pdf/de/FTU_2.1.1.pdf",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Geltungsbeginn hier nicht erfasst; nur die aufgeführten Merksätze wurden am angegebenen Datum geprüft."
+    }
+  ],
+  "kennzahlen": [
+    {
+      "id": "kennzahlen@verified-2026-10-21",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [],
+      "bullets": [
+        "Arbeitsproduktivität setzt das Arbeitsergebnis ins Verhältnis zum Arbeitseinsatz.",
+        "Gesamtwirtschaftlich wird sie etwa als preisbereinigtes BIP je Erwerbstätigenstunde gemessen.",
+        "Bei gleichem Arbeitseinsatz erhöht ein größeres Arbeitsergebnis die Produktivität."
+      ],
+      "references": [
+        {
+          "title": "Destatis: Arbeitszeit und Arbeitsproduktivität",
+          "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2024/10/PD24_N054_13.html",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Geltungsbeginn hier nicht erfasst; nur die aufgeführten Merksätze wurden am angegebenen Datum geprüft."
+    }
+  ],
+  "kompetenzen": [
+    {
+      "id": "kompetenzen@verified-2026-10-21",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [],
+      "bullets": [
+        "Fachkompetenz umfasst fachliches Wissen und Können zur Bewältigung beruflicher Aufgaben.",
+        "Sozialkompetenz betrifft das verständige, kooperative Handeln mit anderen Menschen.",
+        "Berufliche Handlungskompetenz umfasst neben Fach- und Sozialkompetenz auch Selbstkompetenz."
+      ],
+      "references": [
+        {
+          "title": "BIBB: Definition Kompetenzbegriff",
+          "url": "https://www.bibb.de/de/8570.php",
+          "reviewed_at": "2026-10-21"
+        },
+        {
+          "title": "BIBB: Erläuterungen und Praxishilfen, berufliche Handlungskompetenz",
+          "url": "https://www.bibb.de/dienst/publikationen/download/1866",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Geltungsbeginn hier nicht erfasst; geprüft am angegebenen Datum."
+    }
+  ],
+  "finanzierung": [
+    {
+      "id": "finanzierung@verified-2026-10-21",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [],
+      "bullets": [
+        "Ein Dispositionskredit ist eine mit dem Kontoanbieter vereinbarte Überziehungsmöglichkeit.",
+        "Die Vereinbarung legt fest, bis zu welchem Betrag das Konto überzogen werden darf.",
+        "Auch Entgelte und Zinsen werden in der Vereinbarung festgelegt; konkrete Kosten sind vertragsabhängig."
+      ],
+      "references": [
+        {
+          "title": "BaFin: Eingeräumte Kontoüberziehung",
+          "url": "https://kontenvergleich.bafin.de/de/glossar/eingeraeumte-kontoueberziehung",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Geltungsbeginn hier nicht erfasst; geprüft am angegebenen Datum."
+    }
+  ],
+  "vertragsrecht": [
+    {
+      "id": "vertragsrecht@verified-2026-10-21",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [],
+      "bullets": [
+        "Ein Vertrag kommt grundsätzlich durch übereinstimmendes Angebot und Annahme zustande.",
+        "Wer ein Vertragsangebot abgibt, ist grundsätzlich daran gebunden, sofern die Bindung nicht ausgeschlossen wurde.",
+        "Ein Angebot unter Anwesenden kann grundsätzlich nur sofort angenommen werden."
+      ],
+      "references": [
+        {
+          "title": "BGB § 145",
+          "url": "https://www.gesetze-im-internet.de/bgb/__145.html",
+          "reviewed_at": "2026-10-21"
+        },
+        {
+          "title": "BGB § 147",
+          "url": "https://www.gesetze-im-internet.de/bgb/__147.html",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Geltungsbeginn hier nicht erfasst; geprüft am angegebenen Datum."
+    }
+  ],
+  "rentenversicherung": [
+    {
+      "id": "rentenversicherung@verified-2026-10-21",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [],
+      "bullets": [
+        "Im Umlageverfahren werden laufende Einnahmen für die laufenden Rentenzahlungen verwendet.",
+        "Zu diesen Einnahmen gehören Beiträge von Versicherten und Arbeitgebern sowie Bundeszuschüsse.",
+        "Beitragszahlende erwerben Ansprüche auf eine spätere Rente, die dann von der nachfolgenden Generation finanziert wird."
+      ],
+      "references": [
+        {
+          "title": "Deutsche Rentenversicherung: Umlageverfahren",
+          "url": "https://www.deutsche-rentenversicherung.de/SharedDocs/Glossareintraege/DE/U/umlageverfahren",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Geltungsbeginn hier nicht erfasst; nur die aufgeführten Merksätze wurden am angegebenen Datum geprüft."
+    }
+  ],
+  "unfallversicherung": [
+    {
+      "id": "unfallversicherung@verified-2026-10-21",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [],
+      "bullets": [
+        "Arbeitsunfälle sind Unfälle infolge einer versicherten Tätigkeit.",
+        "Auch der mit der versicherten Tätigkeit zusammenhängende unmittelbare Weg zum und vom Tätigkeitsort ist grundsätzlich versichert.",
+        "§ 8 SGB VII erfasst bestimmte abweichende Wege, etwa zur erforderlichen Kinderbetreuung oder bei Fahrgemeinschaften."
+      ],
+      "references": [
+        {
+          "title": "SGB VII § 8",
+          "url": "https://www.gesetze-im-internet.de/sgb_7/__8.html",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Geltungsbeginn hier nicht erfasst; nur die aufgeführten Merksätze wurden am angegebenen Datum geprüft."
+    }
+  ],
+  "pflegeversicherung": [
+    {
+      "id": "pflegeversicherung@verified-2026-10-21",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [],
+      "bullets": [
+        "Die Pflegeversicherung sichert das Risiko der Pflegebedürftigkeit als eigener Sozialversicherungszweig ab.",
+        "Träger der sozialen Pflegeversicherung sind die Pflegekassen; ihre Aufgaben nehmen die Krankenkassen wahr.",
+        "Die Finanzierung erfolgt durch Beiträge von Mitgliedern und Arbeitgebern; Beiträge richten sich nach beitragspflichtigen Einnahmen."
+      ],
+      "references": [
+        {
+          "title": "SGB XI § 1",
+          "url": "https://www.gesetze-im-internet.de/sgb_11/__1.html",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Geltungsbeginn hier nicht erfasst; nur die aufgeführten Merksätze wurden am angegebenen Datum geprüft."
+    }
+  ],
+  "markt": [
+    {
+      "id": "markt@verified-2026-10-21",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [],
+      "bullets": [
+        "Ein Bedürfnis ist der Wunsch, einen empfundenen Mangel zu beseitigen.",
+        "Mit vorhandenen finanziellen Mitteln können Bedürfnisse als Bedarf zur Nachfrage nach Gütern und Dienstleistungen werden.",
+        "Individualbedürfnisse kann der Einzelne für sich befriedigen, etwa Trinken; Kollektivbedürfnisse betreffen viele Menschen, etwa innere Sicherheit."
+      ],
+      "references": [
+        {
+          "title": "Bundeszentrale für politische Bildung: Bedürfnisse",
+          "url": "https://www.bpb.de/kurz-knapp/lexika/lexikon-der-wirtschaft/18801/beduerfnisse/",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Geltungsbeginn hier nicht erfasst; nur die aufgeführten Merksätze wurden am angegebenen Datum geprüft."
+    }
+  ],
+  "unternehmen": [
+    {
+      "id": "unternehmen@verified-2026-10-21",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [],
+      "bullets": [
+        "Eine GmbH besitzt als Gesellschaft eigene Rechte und Pflichten.",
+        "Für Verbindlichkeiten der GmbH haftet den Gläubigern grundsätzlich das Gesellschaftsvermögen.",
+        "Die GmbH kann selbst Eigentum erwerben, klagen und verklagt werden."
+      ],
+      "references": [
+        {
+          "title": "GmbHG § 13",
+          "url": "https://www.gesetze-im-internet.de/gmbhg/__13.html",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Geltungsbeginn hier nicht erfasst; nur die aufgeführten Merksätze wurden am angegebenen Datum geprüft."
+    }
+  ],
+  "steuern": [
+    {
+      "id": "steuern@verified-2026-10-21",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [],
+      "bullets": [
+        "Steuerprogression bedeutet: Mit höherem Einkommen steigt grundsätzlich der prozentuale Steueranteil.",
+        "Die progressive Einkommensteuer knüpft an die wirtschaftliche Leistungsfähigkeit an.",
+        "Grenzsteuersatz und durchschnittlicher Steuersatz sind unterschiedliche Größen; der Tarif verwendet steigende Grenzsteuersätze in den Progressionszonen."
+      ],
+      "references": [
+        {
+          "title": "Bundesfinanzministerium: Gerechte Besteuerung, S. 24",
+          "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/bmf-investieren-in-eine-starke-zukunft.pdf?__blob=publicationFile&v=5",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Geltungsbeginn hier nicht erfasst; nur die aufgeführten Merksätze wurden am angegebenen Datum geprüft."
+    }
+  ],
+  "datenschutz": [
+    {
+      "id": "datenschutz@verified-2026-10-21",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [],
+      "bullets": [
+        "Bei technischen Einrichtungen zur Überwachung von Verhalten oder Leistung hat der Betriebsrat nach § 87 Abs. 1 Nr. 6 BetrVG mitzubestimmen.",
+        "Diese Mitbestimmung gilt, soweit keine gesetzliche oder tarifliche Regelung besteht.",
+        "Kommt in einer Angelegenheit nach § 87 Abs. 1 keine Einigung zustande, entscheidet die Einigungsstelle."
+      ],
+      "references": [
+        {
+          "title": "BetrVG § 87 Abs. 1 Nr. 6 und Abs. 2",
+          "url": "https://www.gesetze-im-internet.de/betrvg/__87.html",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Geltungsbeginn hier nicht erfasst; nur die aufgeführten Merksätze wurden am angegebenen Datum geprüft."
+    }
+  ],
+  "elternschutz": [
+    {
+      "id": "elternschutz@verified-2026-10-21",
+      "effective_from": null,
+      "effective_until": null,
+      "source_exam_season": null,
+      "verified_at": "2026-10-21",
+      "verified": true,
+      "current": true,
+      "supersedes": [],
+      "bullets": [
+        "Bei unverantwortbaren Gefährdungen für Schwangere oder Stillende sind zuerst die Arbeitsbedingungen durch Schutzmaßnahmen umzugestalten.",
+        "Reicht das nicht aus oder ist die Umgestaltung unzumutbar, folgt ein geeigneter anderer Arbeitsplatz, sofern verfügbar und zumutbar.",
+        "Lässt sich die unverantwortbare Gefährdung auch so nicht ausschließen, darf die Frau nicht weiter beschäftigt werden."
+      ],
+      "references": [
+        {
+          "title": "MuSchG § 13",
+          "url": "https://www.gesetze-im-internet.de/muschg_2018/__13.html",
+          "reviewed_at": "2026-10-21"
+        }
+      ],
+      "effective_date_note": "Geltungsbeginn hier nicht erfasst; nur die aufgeführten Merksätze wurden am angegebenen Datum geprüft."
     }
   ]
 }

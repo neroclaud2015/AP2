@@ -3,6 +3,30 @@ from pathlib import Path
 sys.path.insert(0,str(Path(__file__).parent))
 from wiso_pipeline import valid_text,classify,reconcile,cache_key,extract,build,write,classify_record,propose_topics
 class PipelineTests(unittest.TestCase):
+ def test_threshold_source_contract(self):
+  from wiso_pipeline import classification_policy
+  self.assertEqual(classification_policy({'topic_ids':['x'],'confidence':.95})['source'],'machine_accepted_high_confidence')
+  self.assertEqual(classification_policy({'topic_ids':['x'],'confidence':.8})['source'],'machine_suggested')
+
+ def test_policy_boundaries_and_independent_legal_review(self):
+  from wiso_pipeline import classification_policy
+  for score,status,review in [(.799,'classification_needs_review',True),(.8,'machine_suggested',False),(.949,'machine_suggested',False),(.95,'machine_accepted_high_confidence',False),(1,'machine_accepted_high_confidence',False)]:
+   r=classification_policy({'confidence':score,'topic_ids':['jav'],'locked':False,'legal_review':True,'review_reasons':['legal_review','classification_needs_review']})
+   self.assertEqual((r['classification_status'],r['classification_review']),(status,review));self.assertTrue(r['legal_review']);self.assertIn('legal_review',r['review_reasons']);self.assertFalse(r['locked'])
+  self.assertTrue(classification_policy({'confidence':1,'topic_ids':[]})['classification_review'])
+  locked={'confidence':.1,'topic_ids':['jav'],'locked':True,'review_reasons':['human_note']}
+  self.assertEqual(classification_policy(locked),locked)
+ def test_reclassification_preserves_legal_concerns(self):
+  old={'locked':False,'legal_review':True,'legal_review_reasons':['superseded'],'review_reasons':['legal_conflict']}
+  result=reconcile(old,{'topic_ids':['jav'],'confidence':.99,'review_reasons':[]})
+  self.assertTrue(result['legal_review']);self.assertEqual(result['legal_review_reasons'],['superseded']);self.assertIn('legal_conflict',result['review_reasons'])
+ def test_incidental_shift_work_is_not_safety_evidence(self):
+  self.assertNotIn('arbeitsschutz',classify('Welcher Tarifvertrag gilt für die Wechselschicht?')['topic_ids'])
+ def test_explicit_new_stems_and_distractors(self):
+  for text,topic in [('Auf dem Weg zur Arbeit stürzt Linus und bricht sich den Daumen. Wer zahlt die Behandlungskosten?','unfallversicherung'),('Welche Aufgabe hat der Vertriebsbereich der AG?','unternehmen'),('Was bedeutet tarifliche Friedenspflicht?','tarifrecht'),('Welche Aussage entspricht dem Bundesuriaubsgesetz?','arbeitsvertrag'),('Welches Ziel verfolgt eine private Unternehmung?','unternehmen')]:
+   self.assertIn(topic,classify(text)['topic_ids']);self.assertEqual(classify(text)['confidence'],.8)
+  self.assertEqual(classify('Welcher Fall trifft zu? tarifliche Friedenspflicht Vertriebsbereich')['topic_ids'],[])
+
  @classmethod
  def setUpClass(cls):(Path(__file__).resolve().parents[1]/'private').mkdir(exist_ok=True)
  def test_unreliable_text_does_not_classify(self):

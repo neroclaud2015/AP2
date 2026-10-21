@@ -1,3 +1,4 @@
+import type {RecallCard} from './recall';
 import type {TopicKnowledge} from './KnowledgeHistory';
 import type {InventoryQuestion} from '../bank/model';
 import type {DashboardSnapshot} from '../dashboard/analytics';
@@ -5,11 +6,11 @@ import {wrongResults,reconcileWrongQuestions} from '../learning/wrongQuestions';
 import {uncertaintyQuestionIds} from '../learning/questionUncertainty';
 
 export interface WisoTaxonomyNode {id:string;label:string;parent_id:string|null;active:boolean}
-export interface WisoClassification {question_id:string;question_source_revision:string;topic_ids:string[];confidence:number;source:string;locked:boolean;review_reasons:string[];evidence:unknown;active?:boolean;updated_at?:string;taxonomy_version?:string}
+export interface WisoClassification {question_id:string;question_source_revision:string;topic_ids:string[];confidence:number;source:string;locked:boolean;review_reasons:string[];evidence:unknown;active?:boolean;updated_at?:string;taxonomy_version?:string;legal_review?:boolean|string|null;legal_review_reasons?:string[]}
 export interface WisoQuestionText {question_id:string;question_source_revision:string;text:string;extraction_method:string;confidence:number;language:string;reviewed:boolean;updated_at:string;evidence:unknown}
 export interface WisoSummary {knowledge?:TopicKnowledge;historical_bullets?:string[];topic_id:string;bullets:string[];patterns:{text:string;question_ids:string[]}[];question_ids:string[];provenance:'historical_exam_summary';legal_freshness:{relevant:boolean;reviewed_at:string|null;review_needed:boolean;valid_for_year?:number;official_references?:unknown[]}}
 export interface WisoConfig {recentSeasonCount:number;minAccuracyQuestions:number;weakAccuracy:number;relevance:{questionWeight:number;seasonWeight:number;recentWeight:number;veryHigh:number;high:number;medium:number};priority:{relevanceWeight:number;needWeight:number;weaknessWeight:number;unpracticedBonus:number;high:number;medium:number}}
-export interface WisoDataset {schema_version:number;version:string;taxonomy:{version:string;nodes:WisoTaxonomyNode[]};texts:WisoQuestionText[];classifications:WisoClassification[];summaries:WisoSummary[];config?:Partial<WisoConfig>}
+export interface WisoDataset {recall_cards?:RecallCard[];schema_version:number;version:string;taxonomy:{version:string;nodes:WisoTaxonomyNode[]};texts:WisoQuestionText[];classifications:WisoClassification[];summaries:WisoSummary[];config?:Partial<WisoConfig>}
 export const DEFAULT_WISO_CONFIG:WisoConfig={recentSeasonCount:4,minAccuracyQuestions:3,weakAccuracy:60,relevance:{questionWeight:.4,seasonWeight:.4,recentWeight:.2,veryHigh:.7,high:.5,medium:.25},priority:{relevanceWeight:1,needWeight:2,weaknessWeight:1,unpracticedBonus:.25,high:.9,medium:.5}};
 const unique=(ids:string[])=>[...new Set(ids)];
 const eligible=(value:unknown)=>{const r=value as Record<string,unknown>;return !r.invalidated&&!r.invalidated_at&&!r.deleted&&!r.deleted_at&&!r.discarded&&!r.discarded_at&&r.valid!==false;};

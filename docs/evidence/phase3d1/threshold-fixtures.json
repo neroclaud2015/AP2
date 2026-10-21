@@ -1,0 +1,64 @@
+[
+  {
+    "topic_ids": [
+      "fixture-topic"
+    ],
+    "confidence": 0.799,
+    "legal_review": null,
+    "classification_status": "classification_needs_review",
+    "source": "machine_suggested",
+    "classification_review": true,
+    "locked": false,
+    "review_reasons": [
+      "classification_needs_review"
+    ]
+  },
+  {
+    "topic_ids": [
+      "fixture-topic"
+    ],
+    "confidence": 0.8,
+    "legal_review": null,
+    "classification_status": "machine_suggested",
+    "source": "machine_suggested",
+    "classification_review": false,
+    "locked": false,
+    "review_reasons": []
+  },
+  {
+    "topic_ids": [
+      "fixture-topic"
+    ],
+    "confidence": 0.949,
+    "legal_review": null,
+    "classification_status": "machine_suggested",
+    "source": "machine_suggested",
+    "classification_review": false,
+    "locked": false,
+    "review_reasons": []
+  },
+  {
+    "topic_ids": [
+      "fixture-topic"
+    ],
+    "confidence": 0.95,
+    "legal_review": null,
+    "classification_status": "machine_accepted_high_confidence",
+    "source": "machine_accepted_high_confidence",
+    "classification_review": false,
+    "locked": false,
+    "review_reasons": []
+  },
+  {
+    "topic_ids": [
+      "fixture-topic"
+    ],
+    "confidence": 0.99,
+    "legal_review": "needs_review",
+    "classification_status": "machine_accepted_high_confidence",
+    "source": "machine_accepted_high_confidence",
+    "classification_review": false,
+    "locked": false,
+    "review_reasons": []
+  }
+]
