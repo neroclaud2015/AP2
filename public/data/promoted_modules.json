@@ -6556,5 +6556,141 @@
         ]
       }
     ]
+  },
+  {
+    "examId": "2024-25-winter",
+    "slug": "funktionsanalyse",
+    "title": "Funktionsanalyse",
+    "segmentedPath": "data/2024_25_winter_funktionsanalyse_mapping_v2_segmented.json",
+    "answersPath": "data/2024_25_winter_funktionsanalyse_mapping_v2_reviewed_answers.json",
+    "solutionsPath": "data/2024_25_winter_funktionsanalyse_mapping_v2_u_solutions.json",
+    "choiceSolutionPage": 2,
+    "descriptionPage": 13,
+    "questionContextPages": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": [],
+      "7": [],
+      "8": [],
+      "9": [],
+      "10": [],
+      "11": [],
+      "12": [],
+      "13": [],
+      "14": [],
+      "15": [],
+      "16": [],
+      "17": [],
+      "18": [],
+      "19": [],
+      "20": [],
+      "21": [],
+      "22": [],
+      "23": [],
+      "24": [],
+      "25": [],
+      "26": [],
+      "27": [],
+      "28": [],
+      "U1": [
+        13
+      ],
+      "U2": [
+        13,
+        23,
+        24
+      ],
+      "U3": [
+        13
+      ],
+      "U4": [
+        13
+      ],
+      "U5": [
+        13
+      ],
+      "U6": [
+        13
+      ],
+      "U7": [
+        13
+      ],
+      "U8": [
+        13
+      ]
+    },
+    "attachmentPages": [
+      23,
+      24
+    ],
+    "sourcePageImages": {
+      "13": "assets/questions/8e3f52fd06133c24b1b54251/mapping-review.2.0-3b6c0c824ad4/attachment-13-0.png",
+      "23": "assets/questions/8e3f52fd06133c24b1b54251/mapping-review.2.0-3b6c0c824ad4/attachment-23-1.png",
+      "24": "assets/questions/8e3f52fd06133c24b1b54251/mapping-review.2.0-3b6c0c824ad4/attachment-24-2.png",
+      "2": "assets/sources/8e3f52fd06133c24b1b54251/timing-2.png"
+    },
+    "durationMinutes": 105,
+    "durationSource": {
+      "pdf": "",
+      "page": 2,
+      "image": "assets/sources/8e3f52fd06133c24b1b54251/timing-2.png"
+    },
+    "parts": [
+      {
+        "id": "A",
+        "title": "Teil A",
+        "kind": "multiple_choice",
+        "label": "Auswahlaufgaben",
+        "questionNumbers": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27",
+          "28"
+        ]
+      },
+      {
+        "id": "B",
+        "title": "Teil B",
+        "kind": "multi_part",
+        "label": "Offene Aufgaben",
+        "questionNumbers": [
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6",
+          "U7",
+          "U8"
+        ]
+      }
+    ]
   }
 ]

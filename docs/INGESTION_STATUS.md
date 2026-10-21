@@ -1,3 +1,7 @@
+# Winter 2024/25 FA manual review release
+
+17 source confirmations locked; FA 36 production. MC 28/28, U 8/8, review 0. Old PDF rescans 0. Total production 1752.
+
 # Sommer 2025 manual review release
 
 45 source confirmations locked; AP 36 / FA 36 / WiSo 24 production. MC 74/74, U 22/22, review 0. Old PDF rescans 0. Total production 1716.
