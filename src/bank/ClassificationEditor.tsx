@@ -1,3 +1,4 @@
+import WisoClassificationField from '../wiso/WisoClassificationField';
 import {useEffect,useState} from 'react';
 import {useBankData} from './useBankData';
 import {confirmClassification} from './review';
@@ -10,10 +11,10 @@ const labelsKey=(topics:string[],primary:string,secondary:string[])=>JSON.string
 
 /** Mount on first expansion, then keep drafts alive even when the details are collapsed. */
 export default function ClassificationEditor(props:EditorProps){
- const [mounted,setMounted]=useState(false);
+ const [mounted,setMounted]=useState(false);const [bankBusy,setBankBusy]=useState(false),[wisoBusy,setWisoBusy]=useState(false);useEffect(()=>{props.onBusy?.(bankBusy||wisoBusy);return()=>props.onBusy?.(false)},[bankBusy,wisoBusy,props.onBusy]);
  return <details className="question-note classification-editor" onToggle={event=>{if(event.currentTarget.open)setMounted(true)}}>
   <summary>Klassifikation bearbeiten</summary>
-  {mounted&&<ClassificationForm key={props.questionId} {...props}/>}
+  {mounted&&<><ClassificationForm key={props.questionId} {...props} onBusy={setBankBusy}/><WisoClassificationField key={props.questionId+"wiso"} {...props} onBusy={setWisoBusy}/></>}
  </details>;
 }
 

@@ -3,7 +3,7 @@ import type {AttemptProvenance,LearningSession,USolution} from '../learning/mode
 import type {OfficialAnswer} from '../segmented/answers';
 import type {SegmentedQuestion} from '../segmented/types';
 
-export interface TrainingDefinition {knowledgeTopicIds:string[];questionTypeIds:string[];moduleIds:string[];examIds:string[]}
+export interface TrainingDefinition {knowledgeTopicIds:string[];questionTypeIds:string[];moduleIds:string[];examIds:string[];wisoTopicIds?:string[]}
 export type TrainingStage=1|2|3|'mastered';
 export interface TrainingQuestionSnapshot {question:SegmentedQuestion;config:ModuleConfig;answer:OfficialAnswer|null;solution:USolution|null;provenance?:AttemptProvenance;cropEdited?:boolean}
 export interface TrainingRun {userId:string;run_id:string;definition_key:string;definition:TrainingDefinition;kind:'bank'|'stage'|'uncertainty';stage?:TrainingStage;question_ids:string[];snapshots:Record<string,TrainingQuestionSnapshot>;current_question:string;drafts:Record<string,LearningSession>;attempt_ids:Record<string,string[]>;created_at:string;updated_at:string;revision:number}
@@ -27,7 +27,10 @@ function validSolution(value:unknown,question:SegmentedQuestion):boolean {
 }
 export function canonicalTrainingDefinition(value:TrainingDefinition):TrainingDefinition {
  if(!object(value)||fields.some(k=>!Array.isArray(value[k])||!value[k].every(text)))throw Error('Ungültige Trainingsfilter.');
- return Object.fromEntries(fields.map(k=>[k,[...new Set(value[k])].sort()])) as unknown as TrainingDefinition;
+ if(value.wisoTopicIds!==undefined&&(!Array.isArray(value.wisoTopicIds)||!value.wisoTopicIds.every(text)))throw Error('Ungültige WiSo-Trainingsfilter.');
+ const canonical=Object.fromEntries(fields.map(k=>[k,[...new Set(value[k])].sort()])) as unknown as TrainingDefinition;
+ if(value.wisoTopicIds?.length)canonical.wisoTopicIds=[...new Set(value.wisoTopicIds)].sort();
+ return canonical;
 }
 export const trainingDefinitionKey=(value:TrainingDefinition)=>JSON.stringify(canonicalTrainingDefinition(value));
 export function validTrainingSnapshot(value:unknown):value is TrainingQuestionSnapshot {

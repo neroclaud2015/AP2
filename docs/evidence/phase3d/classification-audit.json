@@ -1,0 +1,36 @@
+{
+  "reviewed_at": "2026-10-21",
+  "scope": "Targeted source-crop visual audit, not a full human review of 456 OCR records",
+  "items": [
+    {
+      "question_id": "wiso_2017-p5-slot5",
+      "topic_ids": [
+        "arbeitsschutz"
+      ],
+      "finding": "Source crop asks responsibility for work safety. Betriebsrat/JAV occur only as answer alternatives and must not classify this question into those topics."
+    },
+    {
+      "question_id": "2018-wiso-p6-5",
+      "topic_ids": [
+        "betriebsrat"
+      ],
+      "finding": "Source crop asks candidacy conditions for Betriebsrat; union membership occurs as distractor and is excluded from topic evidence."
+    },
+    {
+      "question_id": "2024-wiso-p15-15",
+      "topic_ids": [
+        "umwelt"
+      ],
+      "finding": "Source crop explicitly asks sustainable consumption. Leasing and Internet shopping appear only in alternatives."
+    }
+  ],
+  "corrections": [
+    "Classify first question stem, not MC answer options",
+    "Exclude generic company names as company-topic evidence",
+    "Exclude Probezeit alone as vocational-training evidence",
+    "Exclude Auftragsmangel as contractual-defect evidence",
+    "Exclude rental termination as employment termination"
+  ],
+  "final_dataset_verified": true,
+  "dataset_sha256": "60baeef9dbe9e73f03a9af2fe23b4a139d92058c5dd4641a39c9910eed5b3893"
+}

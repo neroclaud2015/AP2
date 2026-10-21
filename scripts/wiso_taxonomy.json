@@ -1,0 +1,553 @@
+{
+  "version": "1.0.0",
+  "nodes": [
+    {
+      "id": "arbeitsrecht",
+      "label": "Arbeitsrecht",
+      "parent_id": null,
+      "active": true,
+      "bullets": [],
+      "legal": true
+    },
+    {
+      "id": "soziales",
+      "label": "Sozialversicherung",
+      "parent_id": null,
+      "active": true,
+      "bullets": [],
+      "legal": true
+    },
+    {
+      "id": "ausbildung",
+      "label": "Berufsausbildung",
+      "parent_id": null,
+      "active": true,
+      "bullets": [],
+      "legal": true
+    },
+    {
+      "id": "mitbestimmung",
+      "label": "Mitbestimmung",
+      "parent_id": null,
+      "active": true,
+      "bullets": [],
+      "legal": true
+    },
+    {
+      "id": "wirtschaft",
+      "label": "Wirtschaft & Markt",
+      "parent_id": null,
+      "active": true,
+      "bullets": [],
+      "legal": false
+    },
+    {
+      "id": "betrieb",
+      "label": "Unternehmen & Verantwortung",
+      "parent_id": null,
+      "active": true,
+      "bullets": [],
+      "legal": true
+    },
+    {
+      "id": "recht",
+      "label": "Verträge & Recht",
+      "parent_id": null,
+      "active": true,
+      "bullets": [],
+      "legal": true
+    },
+    {
+      "id": "kuendigung",
+      "label": "Kündigung",
+      "parent_id": "arbeitsrecht",
+      "active": true,
+      "bullets": [
+        "Kündigungsart, betroffene Person und Zeitpunkt im Fall zuerst unterscheiden."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "winter-wiso-p4-2",
+          "2023-wiso-complete-p13-10",
+          "winter-wiso-p5-3",
+          "2023-wiso-complete-p13-11"
+        ]
+      }
+    },
+    {
+      "id": "arbeitsvertrag",
+      "label": "Arbeitsvertrag & Urlaub",
+      "parent_id": "arbeitsrecht",
+      "active": true,
+      "bullets": [
+        "Rechte und Pflichten der beiden Vertragsparteien unterscheiden; betriebliche Regelung und Gesetz getrennt prüfen."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "2018-wiso-p7-8",
+          "2023-24-wiso-p11-6",
+          "2023-wiso-complete-p15-14"
+        ]
+      }
+    },
+    {
+      "id": "arbeitszeit",
+      "label": "Arbeitszeit & Ruhezeiten",
+      "parent_id": "arbeitsrecht",
+      "active": true,
+      "bullets": [
+        "Arbeitszeit, Pause und Ruhezeit getrennt betrachten; Alter und Beschäftigungsart des Falls beachten."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "2023-24-wiso-p11-9",
+          "2024-wiso-p9-4"
+        ]
+      }
+    },
+    {
+      "id": "tarifrecht",
+      "label": "Tarifvertrag & Arbeitskampf",
+      "parent_id": "arbeitsrecht",
+      "active": true,
+      "bullets": [
+        "Tarifparteien, Tarifbindung und Gegenstand der Regelung unterscheiden."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "2018-wiso-p10-14",
+          "2018-wiso-p10-15",
+          "wiso_2017-p8-slot1"
+        ]
+      }
+    },
+    {
+      "id": "sozialversicherung",
+      "label": "Sozialversicherung: Grundlagen",
+      "parent_id": "soziales",
+      "active": true,
+      "bullets": [
+        "Versicherungszweig, Träger, Beitrag und versichertes Risiko einander zuordnen."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "winter-wiso-p9-12",
+          "2024-wiso-p7-1",
+          "2023-24-wiso-p13-10"
+        ]
+      }
+    },
+    {
+      "id": "krankenversicherung",
+      "label": "Krankenversicherung",
+      "parent_id": "soziales",
+      "active": true,
+      "bullets": [
+        "Krankenversicherung und Entgeltfortzahlung sind unterschiedliche Leistungen; Anspruch und zuständige Stelle trennen."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "2024-wiso-p7-1",
+          "2023-24-wiso-p13-10"
+        ]
+      }
+    },
+    {
+      "id": "rentenversicherung",
+      "label": "Rentenversicherung",
+      "parent_id": "soziales",
+      "active": true,
+      "bullets": [
+        "Altersabsicherung und Erwerbsminderung als unterschiedliche Risiken erkennen."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": []
+      }
+    },
+    {
+      "id": "arbeitslosenversicherung",
+      "label": "Arbeitslosenversicherung",
+      "parent_id": "soziales",
+      "active": true,
+      "bullets": [
+        "Versicherungsträger, versichertes Risiko und Leistungen bei Arbeitslosigkeit unterscheiden."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "2018-wiso-p4-1"
+        ]
+      }
+    },
+    {
+      "id": "unfallversicherung",
+      "label": "Unfallversicherung",
+      "parent_id": "soziales",
+      "active": true,
+      "bullets": [
+        "Arbeitsunfall, Wegeunfall und privates Unfallrisiko anhand des konkreten Sachverhalts abgrenzen."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": []
+      }
+    },
+    {
+      "id": "pflegeversicherung",
+      "label": "Pflegeversicherung",
+      "parent_id": "soziales",
+      "active": true,
+      "bullets": [
+        "Pflegebedarf von medizinischer Behandlung unterscheiden; passenden Versicherungszweig bestimmen."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": []
+      }
+    },
+    {
+      "id": "ausbildungsvertrag",
+      "label": "Ausbildungsvertrag",
+      "parent_id": "ausbildung",
+      "active": true,
+      "bullets": [
+        "Pflichten von Ausbildenden und Auszubildenden sowie Probezeit und Vertragsende getrennt prüfen."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "winter-wiso-p10-13",
+          "winter-wiso-p10-14"
+        ]
+      }
+    },
+    {
+      "id": "ausbildungspruefung",
+      "label": "Ausbildung & Prüfung",
+      "parent_id": "ausbildung",
+      "active": true,
+      "bullets": [
+        "Berufsschule, Ausbildungsbetrieb und zuständige Stelle haben unterschiedliche Aufgaben."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": []
+      }
+    },
+    {
+      "id": "betriebsrat",
+      "label": "Betriebsrat",
+      "parent_id": "mitbestimmung",
+      "active": true,
+      "bullets": [
+        "Wahlberechtigung, Wählbarkeit und Beteiligungsrechte sind unterschiedliche Prüfungsfragen."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "2018-wiso-p6-5",
+          "2018-wiso-p6-7",
+          "2023-wiso-complete-p11-7",
+          "winter-wiso-p4-1",
+          "2023-24-wiso-p7-3"
+        ]
+      }
+    },
+    {
+      "id": "jav",
+      "label": "Jugend- und Auszubildendenvertretung",
+      "parent_id": "mitbestimmung",
+      "active": true,
+      "bullets": [
+        "JAV und Betriebsrat unterscheiden; bei Wahlfragen Personengruppe und Alter des Falls beachten."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "2020-wiso-p9-8",
+          "2020-wiso-p9-9",
+          "2023-wiso-complete-p9-6"
+        ]
+      }
+    },
+    {
+      "id": "markt",
+      "label": "Markt & wirtschaftliches Handeln",
+      "parent_id": "wirtschaft",
+      "active": true,
+      "bullets": [
+        "Anbieter- und Nachfragerzahl bestimmen die Marktform; Mengen und Preisbewegungen getrennt betrachten."
+      ],
+      "legal": false,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": []
+      }
+    },
+    {
+      "id": "konjunktur",
+      "label": "Konjunktur & Wirtschaftspolitik",
+      "parent_id": "wirtschaft",
+      "active": true,
+      "bullets": [
+        "Konjunkturphasen anhand mehrerer Indikatoren erkennen; wirtschaftspolitische Ziele können in Konflikt stehen."
+      ],
+      "legal": false,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": []
+      }
+    },
+    {
+      "id": "geld",
+      "label": "Geld & Preisniveau",
+      "parent_id": "wirtschaft",
+      "active": true,
+      "bullets": [
+        "Preisniveau und Kaufkraft entwickeln sich gegenläufig; nominale und reale Werte unterscheiden."
+      ],
+      "legal": false,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "2018-wiso-p10-U5"
+        ]
+      }
+    },
+    {
+      "id": "unternehmen",
+      "label": "Unternehmen & Rechtsformen",
+      "parent_id": "betrieb",
+      "active": true,
+      "bullets": [
+        "Firma, Rechtsform, Haftung und Vertretungsbefugnis bezeichnen unterschiedliche Merkmale."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "winter-wiso-p6-6"
+        ]
+      }
+    },
+    {
+      "id": "steuern",
+      "label": "Steuern & Abgaben",
+      "parent_id": "betrieb",
+      "active": true,
+      "bullets": [
+        "Steuerarten, Sozialbeiträge und sonstige Abzüge getrennt zuordnen."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "winter-wiso-p13-18",
+          "2024-wiso-p7-2",
+          "2024-wiso-p7-3"
+        ]
+      }
+    },
+    {
+      "id": "arbeitsschutz",
+      "label": "Arbeitsschutz",
+      "parent_id": "betrieb",
+      "active": true,
+      "bullets": [
+        "Gefährdung, Schutzmaßnahme und verantwortliche Person aus dem Sachverhalt bestimmen."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "wiso_2017-p5-slot4",
+          "winter-wiso-p11-16",
+          "wiso_2017-p5-slot5",
+          "2020-wiso-p11-12"
+        ]
+      }
+    },
+    {
+      "id": "datenschutz",
+      "label": "Datenschutz",
+      "parent_id": "recht",
+      "active": true,
+      "bullets": [
+        "Personenbezug, Verarbeitungszweck und Zugriffsberechtigung getrennt prüfen."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": []
+      }
+    },
+    {
+      "id": "vertragsrecht",
+      "label": "Vertragsrecht & Eigentum",
+      "parent_id": "recht",
+      "active": true,
+      "bullets": [
+        "Vertragsschluss, Erfüllung und Störung getrennt prüfen; Besitz und Eigentum unterscheiden."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "winter-wiso-p8-9",
+          "2024-wiso-p13-10",
+          "wiso_2017-p4-slot4",
+          "2024-wiso-p13-11"
+        ]
+      }
+    },
+    {
+      "id": "umwelt",
+      "label": "Umwelt & Nachhaltigkeit",
+      "parent_id": "betrieb",
+      "active": true,
+      "bullets": [
+        "Vermeidung, Wiederverwendung und Verwertung unterscheiden; Maßnahmen auf ihre konkrete Umweltwirkung prüfen."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "2024-wiso-p15-15",
+          "2024-wiso-p15-14"
+        ]
+      }
+    },
+    {
+      "id": "elternschutz",
+      "label": "Mutterschutz & Elternzeit",
+      "parent_id": "arbeitsrecht",
+      "active": true,
+      "bullets": [
+        "Mutterschutz und Elternzeit unterscheiden; Zeitraum, betroffene Person und Art des Beschäftigungsschutzes beachten."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "2018-19-wiso-p8-U3",
+          "2019-wiso-p7-5"
+        ]
+      }
+    },
+    {
+      "id": "kompetenzen",
+      "label": "Kompetenzen & Weiterbildung",
+      "parent_id": "ausbildung",
+      "active": true,
+      "bullets": [
+        "Fachkompetenz und Sozialkompetenz anhand konkreter Verhaltensweisen unterscheiden; Ziele der Weiterbildung für Beschäftigte und Arbeitgeber getrennt betrachten."
+      ],
+      "legal": false,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "wiso_2017-p7-slot0",
+          "wiso_2017-p7-slot2"
+        ]
+      }
+    },
+    {
+      "id": "finanzierung",
+      "label": "Kredit & private Finanzen",
+      "parent_id": "wirtschaft",
+      "active": true,
+      "bullets": [
+        "Kreditkosten, Rückzahlung und Überschuldungsrisiko getrennt beurteilen; Kreditwürdigkeit und verfügbare Mittel unterscheiden."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "2018-19-wiso-p11-11"
+        ]
+      }
+    },
+    {
+      "id": "europa",
+      "label": "Europäische Union & Binnenmarkt",
+      "parent_id": "wirtschaft",
+      "active": true,
+      "bullets": [
+        "Freizügigkeit, Warenverkehr und berufliche Mobilität den jeweiligen Fallkonstellationen zuordnen."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "2023-wiso-complete-p17-18"
+        ]
+      }
+    },
+    {
+      "id": "kennzahlen",
+      "label": "Wirtschaftliche Kennzahlen",
+      "parent_id": "wirtschaft",
+      "active": true,
+      "bullets": [
+        "Produktivität, Wirtschaftlichkeit und Rentabilität unterscheiden: Jede Kennzahl setzt andere Größen ins Verhältnis."
+      ],
+      "legal": false,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "2019-wiso-p9-7",
+          "2023-wiso-complete-p7-1"
+        ]
+      }
+    },
+    {
+      "id": "sozialrecht",
+      "label": "Arbeits- & Sozialgerichtsbarkeit",
+      "parent_id": "recht",
+      "active": true,
+      "bullets": [
+        "Zuständige Stelle, Rechtsbehelf und Frist getrennt prüfen; arbeitsrechtliche und sozialrechtliche Streitigkeiten unterscheiden."
+      ],
+      "legal": true,
+      "provenance": {
+        "source": "initial_production_corpus_seed",
+        "supporting_question_ids": [
+          "wiso_2017-p5-slot1"
+        ]
+      }
+    }
+  ],
+  "proposal_cues": [
+    {
+      "id": "demokratische-institutionen",
+      "label": "Demokratische Institutionen",
+      "pattern": "bundestag|bundesrat|demokratie|gewaltenteilung"
+    },
+    {
+      "id": "digitale-verbraucherrechte",
+      "label": "Digitale Verbraucherrechte",
+      "pattern": "digitalservicesact|plattformregulierung|onlineplattform"
+    }
+  ]
+}

@@ -8,7 +8,7 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "test": "vitest run",
-    "prebuild": "node scripts/reconcile_classifications.mjs",
+    "prebuild": "node scripts/reconcile_classifications.mjs && node scripts/run_wiso_pipeline.mjs",
     "classify": "node scripts/reconcile_classifications.mjs"
   },
   "dependencies": {
