@@ -1,0 +1,44 @@
+{
+  "modules": [
+    {
+      "module": "arbeitsplanung",
+      "questions": 36,
+      "mc": 28,
+      "u": 8,
+      "needs_review": 0
+    },
+    {
+      "module": "funktionsanalyse",
+      "questions": 36,
+      "mc": 28,
+      "u": 8,
+      "needs_review": 0
+    },
+    {
+      "module": "wiso",
+      "questions": 24,
+      "mc": 18,
+      "u": 6,
+      "needs_review": 0
+    }
+  ],
+  "confirmations": 45,
+  "repeat_import": {
+    "ready": [
+      "arbeitsplanung",
+      "funktionsanalyse",
+      "wiso"
+    ],
+    "pending": {
+      "arbeitsplanung": [],
+      "funktionsanalyse": [],
+      "wiso": []
+    },
+    "pdf_pages_opened": 0
+  },
+  "old_modules_unchanged": true,
+  "old_other_sources_unchanged": true,
+  "old_pdf_rescans": 0,
+  "new_pages_rendered": 0,
+  "total_questions": 1716
+}

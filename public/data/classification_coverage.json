@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "taxonomy_version": "1.1.0",
-  "modules": 51,
+  "modules": 54,
   "exams": [
     "2017-sommer",
     "2017-18-winter",
@@ -19,13 +19,14 @@
     "2023-24-winter",
     "2024-sommer",
     "2024-25-winter",
+    "2025-sommer",
     "2025-26-winter",
     "2026-sommer"
   ],
-  "total": 1620,
-  "knowledgeClassified": 450,
-  "typeClassified": 1265,
-  "unclassified": 1276,
+  "total": 1716,
+  "knowledgeClassified": 474,
+  "typeClassified": 1339,
+  "unclassified": 1354,
   "review": 0,
   "confirmed": 0,
   "orphans": 0,
@@ -516,6 +517,39 @@
     },
     {
       "examId": "2024-25-winter",
+      "module": "wiso",
+      "total": 24,
+      "knowledgeClassified": 24,
+      "typeClassified": 18,
+      "unclassified": 6,
+      "review": 0,
+      "confirmed": 0,
+      "orphans": 0
+    },
+    {
+      "examId": "2025-sommer",
+      "module": "arbeitsplanung",
+      "total": 36,
+      "knowledgeClassified": 0,
+      "typeClassified": 28,
+      "unclassified": 36,
+      "review": 0,
+      "confirmed": 0,
+      "orphans": 0
+    },
+    {
+      "examId": "2025-sommer",
+      "module": "funktionsanalyse",
+      "total": 36,
+      "knowledgeClassified": 0,
+      "typeClassified": 28,
+      "unclassified": 36,
+      "review": 0,
+      "confirmed": 0,
+      "orphans": 0
+    },
+    {
+      "examId": "2025-sommer",
       "module": "wiso",
       "total": 24,
       "knowledgeClassified": 24,

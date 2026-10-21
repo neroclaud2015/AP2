@@ -1,3 +1,7 @@
+# Sommer 2025 manual review release
+
+45 source confirmations locked; AP 36 / FA 36 / WiSo 24 production. MC 74/74, U 22/22, review 0. Old PDF rescans 0. Total production 1716.
+
 ## 2026-10-21 · Supplied Sommer 2023 / Winter 2024–25 files
 
 Sommer 2023 FA36/MC28/U8 and WiSo24/MC18/U6 now Production; clean FA U7/U8 and missing WiSo source resolved. Added60 questions, total51 modules/1,620 questions. Winter FA new26 pages and MC page pixel-identical to existing sources; retain17 pending manual confirmations and prior attachment mapping. NewPAL bundle duplicates effective notices; superseded notice retained only as history.105 new cached pages,0 old rescans,6 repeat skips. First-formal replacement safety check explicitly user-approved; old blocked records unchanged. Evidence: docs/evidence/source-completion-2023-2024/.
