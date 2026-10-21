@@ -1,0 +1,61 @@
+{
+  "key": "dbebfc62377370b314313d4fd1781341a8551662ac807f8d987bc95641a7c50b",
+  "record_hash": "6f073845222099f3239026ec8a3ccd27942099009b76ab402e4af0e2763f8709",
+  "record": {
+    "page": 20,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Independently inspected printed headings and ruled panel boundaries.",
+    "anchors": [
+      {
+        "anchor_id": "2025-ap-p20-U7",
+        "number": "U7",
+        "bbox": [
+          29.0015,
+          20.06123,
+          71.0015,
+          47.061229999999995
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U7 visually read on cached physical page 20; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "e5e76fa1b90f93397bb487a97670321c8789d4bf0449cdcd998d6a04010f1ee3"
+      }
+    ],
+    "regions": [
+      {
+        "page": 20,
+        "bbox": [
+          29.0015,
+          20.06123,
+          566.64469,
+          815.37749
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p20-U7",
+        "evidence": "Safety-window terms, technology/circuit diagrams and English handling instructions Complete ruled question panel and response space retained."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U7",
+        "bbox": [
+          29.0015,
+          20.06123,
+          71.0015,
+          47.061229999999995
+        ],
+        "pixel_sha256": "e5e76fa1b90f93397bb487a97670321c8789d4bf0449cdcd998d6a04010f1ee3",
+        "audited_pixel_sha256": "e5e76fa1b90f93397bb487a97670321c8789d4bf0449cdcd998d6a04010f1ee3"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "key": "9bf4b4d3ed8d72d9f4faea5d3a2f53ca9c0c737093a55c3c11612aa32d4ae89a",
+  "record_hash": "e2340df10123d93ea4dbba852fcc78177816197b32229719c9997c4ef04b55a4",
+  "record": {
+    "page": 14,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Individually visually inspected cached physical page; printed anchors and ruled task boundaries verified.",
+    "anchors": [
+      {
+        "anchor_id": "2025-fa-p14-U1",
+        "number": "U1",
+        "bbox": [
+          33.48,
+          23.0495,
+          71.47999999999999,
+          48.049499999999995
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U1 visually read on cached physical page 14.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "7271979f102312c07059cace7576dcfb3613fbdae5973f6cf538621ec22cf856"
+      }
+    ],
+    "regions": [
+      {
+        "page": 14,
+        "bbox": [
+          33.48,
+          23.0495,
+          508.152,
+          811.9387
+        ],
+        "role": "primary",
+        "owner": "2025-fa-p14-U1",
+        "evidence": "Verified complete question, choices, diagrams and response fields; adjacent tasks excluded."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U1",
+        "bbox": [
+          33.48,
+          23.0495,
+          71.47999999999999,
+          48.049499999999995
+        ],
+        "pixel_sha256": "7271979f102312c07059cace7576dcfb3613fbdae5973f6cf538621ec22cf856",
+        "audited_pixel_sha256": "7271979f102312c07059cace7576dcfb3613fbdae5973f6cf538621ec22cf856"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

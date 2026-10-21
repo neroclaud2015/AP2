@@ -1,0 +1,61 @@
+{
+  "key": "e14a72bb96eb5467a902db833581f9540acc7162f8a8c5060b1e55c706ae1adb",
+  "record_hash": "a39a2a1547437419ea7f6c07bba121c41fdb5def196f771e70a1837234393acf",
+  "record": {
+    "page": 18,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Independently inspected printed headings and ruled panel boundaries.",
+    "anchors": [
+      {
+        "anchor_id": "2025-ap-p18-U5",
+        "number": "U5",
+        "bbox": [
+          29.0015,
+          20.06123,
+          71.0015,
+          47.061229999999995
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U5 visually read on cached physical page 18; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "bdba189482f5f139646266fcc1d4a7bf927ea63ce5921d725df1c523742b124b"
+      }
+    ],
+    "regions": [
+      {
+        "page": 18,
+        "bbox": [
+          29.0015,
+          20.06123,
+          566.64469,
+          815.37749
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p18-U5",
+        "evidence": "Reactive power compensation diagrams and calculation Complete ruled question panel and response space retained."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U5",
+        "bbox": [
+          29.0015,
+          20.06123,
+          71.0015,
+          47.061229999999995
+        ],
+        "pixel_sha256": "bdba189482f5f139646266fcc1d4a7bf927ea63ce5921d725df1c523742b124b",
+        "audited_pixel_sha256": "bdba189482f5f139646266fcc1d4a7bf927ea63ce5921d725df1c523742b124b"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

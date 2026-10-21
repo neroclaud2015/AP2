@@ -1,0 +1,46 @@
+{
+  "key": "fd3419a0070abaa68d6f8374f336ab60d88d57e49fdd6ea6351b01affdb1c10e",
+  "record_hash": "35458b01acc1be7928d7229aab6f9fb5f1a5af4bdf2a060b35da241ff63dc136",
+  "record": {
+    "page": 17,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "continuation",
+    "classification_evidence": "U3 continuation, subparts 3 and 4; printed Ergebnis U3 verifies ownership.",
+    "anchors": [],
+    "regions": [
+      {
+        "page": 17,
+        "bbox": [
+          43.896,
+          19.3319,
+          520.056,
+          803.0162
+        ],
+        "role": "continuation",
+        "owner": "2025-fa-p16-U3",
+        "evidence": "Printed Ergebnis U3 proves ownership; subparts 3 and 4 continue U3 from physical page 16 with circuit and response tables."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "ownership",
+        "number": "U3",
+        "bbox": [
+          523.776,
+          739.8159,
+          561.72,
+          762.1219
+        ],
+        "pixel_sha256": "69a065369ff5883d9c660b856338056d52c679ec3890347fa301ac0a716ec673",
+        "audited_pixel_sha256": "69a065369ff5883d9c660b856338056d52c679ec3890347fa301ac0a716ec673"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

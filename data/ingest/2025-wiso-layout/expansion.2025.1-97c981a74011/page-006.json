@@ -1,0 +1,61 @@
+{
+  "key": "7d9570b6d2b2ed364d699104cb72e0f861932d52209b4d63ba220a05d6f18db8",
+  "record_hash": "0d27be156e0148a76633eed3e30d6da6c606354498c202c2216177aa6ea06a43",
+  "record": {
+    "page": 6,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "U2 complete Betriebsvereinbarung task, printed BetrVG section 77, alternatives A to L and response boxes.",
+    "anchors": [
+      {
+        "anchor_id": "2025-wiso-p6-U2",
+        "number": "U2",
+        "bbox": [
+          66.133,
+          62.151,
+          98.539,
+          81.986
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U2 visually read on cached physical page 6.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "167752662a36716f67d265e1a65c26dd1b1c097412b6522d8a3ab25ba37f6ac1"
+      }
+    ],
+    "regions": [
+      {
+        "page": 6,
+        "bbox": [
+          59.52,
+          54.878,
+          544.939,
+          781.513
+        ],
+        "role": "primary",
+        "owner": "2025-wiso-p6-U2",
+        "evidence": "U2 complete Betriebsvereinbarung task, printed BetrVG section 77, alternatives A to L and response boxes. Region includes all question text, choices, diagrams and response areas within the visible panel."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U2",
+        "bbox": [
+          66.133,
+          62.151,
+          98.539,
+          81.986
+        ],
+        "pixel_sha256": "167752662a36716f67d265e1a65c26dd1b1c097412b6522d8a3ab25ba37f6ac1",
+        "audited_pixel_sha256": "167752662a36716f67d265e1a65c26dd1b1c097412b6522d8a3ab25ba37f6ac1"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

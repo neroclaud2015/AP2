@@ -1,0 +1,1286 @@
+{
+  "profile_id": "portrait-explicit-regions",
+  "scope": "2025-ap",
+  "version": "expansion.2025.1",
+  "exam": "2025_sommer",
+  "module": "Arbeitsplanung",
+  "source_hash": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b",
+  "source_id": "src-83cb5eb0c954fca5996a8152",
+  "solution_source_id": "src-e428b28e0f27c31e15f1aa4a",
+  "validated_sources": [
+    "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b"
+  ],
+  "name": "2025_sommer_arbeitsplanung",
+  "expected": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6",
+    "U7",
+    "U8"
+  ],
+  "pages": {
+    "1": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Sommer 2025 Arbeitsplanung Teil A cover.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "2": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Instructions: 105 minutes total, 28 bound and eight unbound questions, four A4 attachments.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "3": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Independently inspected printed headings and ruled panel boundaries.",
+      "slots": [
+        {
+          "observed_number": "1",
+          "heading_box": [
+            49.97182,
+            297.35199,
+            91.97182000000001,
+            324.35199
+          ],
+          "visual_patch_sha256": "2a8a3c7dfa93a382f07d40e1309a9444b235838f49c851494142fd77c40cabbf",
+          "visual_evidence": "Printed 1 visually read on cached physical page 3; numbering transcribed independently.",
+          "regions": [
+            [
+              49.97182,
+              297.35199,
+              291.79971,
+              533.62868
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Arbeitsplanung purpose; marking-sheet example above excluded. Complete ruled question panel and response space retained."
+        },
+        {
+          "observed_number": "2",
+          "heading_box": [
+            297.15383,
+            297.35199,
+            339.15383,
+            324.35199
+          ],
+          "visual_patch_sha256": "a0c82e4f8cceddd3a05ef426ef70843a6726abbf2ee5ac8aa96fd9f837221352",
+          "visual_evidence": "Printed 2 visually read on cached physical page 3; numbering transcribed independently.",
+          "regions": [
+            [
+              297.15383,
+              297.35199,
+              539.87407,
+              533.62868
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Shaft image and five choices. Complete ruled question panel and response space retained."
+        },
+        {
+          "observed_number": "3",
+          "heading_box": [
+            49.97182,
+            537.19512,
+            91.97182000000001,
+            564.19512
+          ],
+          "visual_patch_sha256": "d2527fe22dae28df525d2acc5ef51e982e57335768a12feda84d0f8041f22c2a",
+          "visual_evidence": "Printed 3 visually read on cached physical page 3; numbering transcribed independently.",
+          "regions": [
+            [
+              49.97182,
+              537.19512,
+              291.79971,
+              774.80923
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Bearing assembly/storage statements. Complete ruled question panel and response space retained."
+        },
+        {
+          "observed_number": "4",
+          "heading_box": [
+            297.15383,
+            537.19512,
+            339.15383,
+            564.19512
+          ],
+          "visual_patch_sha256": "c2ed9034339170936e36a6475ebaf0f33c03687fefb213d9f35c0870be53bdbd",
+          "visual_evidence": "Printed 4 visually read on cached physical page 3; numbering transcribed independently.",
+          "regions": [
+            [
+              297.15383,
+              537.19512,
+              539.87407,
+              774.80923
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Sinter bearing lubrication. Complete ruled question panel and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "4": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Independently inspected printed headings and ruled panel boundaries.",
+      "slots": [
+        {
+          "observed_number": "5",
+          "heading_box": [
+            58.003,
+            57.95466,
+            100.003,
+            84.95465999999999
+          ],
+          "visual_patch_sha256": "4715fe4daa48c3ce732bb3bcc7077fedb39cde0a673efca5dbccbbc5da902062",
+          "visual_evidence": "Printed 5 visually read on cached physical page 4; numbering transcribed independently.",
+          "regions": [
+            [
+              58.003,
+              57.95466,
+              544.33584,
+              294.67716
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Five bearing diagrams and load arrows. Complete ruled question panel and response space retained."
+        },
+        {
+          "observed_number": "6",
+          "heading_box": [
+            58.003,
+            299.13521,
+            100.003,
+            326.13521
+          ],
+          "visual_patch_sha256": "b86160d2532e6822bda39458edd6ef7afad7dee2b38c506d073c952508f4cd0b",
+          "visual_evidence": "Printed 6 visually read on cached physical page 4; numbering transcribed independently.",
+          "regions": [
+            [
+              58.003,
+              299.13521,
+              544.33584,
+              536.30351
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Seal illustration and choices. Complete ruled question panel and response space retained."
+        },
+        {
+          "observed_number": "7",
+          "heading_box": [
+            58.003,
+            540.76156,
+            100.003,
+            567.76156
+          ],
+          "visual_patch_sha256": "281a6f0416285235c4bfc3aeb076bb7fdf84efccabd9b23ff5b5a8067a721ec2",
+          "visual_evidence": "Printed 7 visually read on cached physical page 4; numbering transcribed independently.",
+          "regions": [
+            [
+              58.003,
+              540.76156,
+              544.33584,
+              724.87906
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Coupling illustration and choices. Complete ruled question panel and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "5": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Independently inspected printed headings and ruled panel boundaries.",
+      "slots": [
+        {
+          "observed_number": "8",
+          "heading_box": [
+            49.97182,
+            54.83402,
+            91.97182000000001,
+            81.83402000000001
+          ],
+          "visual_patch_sha256": "3d15d55060ce95f6b664671ad27e1e93116ed1fe74783904fc8879dfeea39a4f",
+          "visual_evidence": "Printed 8 visually read on cached physical page 5; numbering transcribed independently.",
+          "regions": [
+            [
+              49.97182,
+              54.83402,
+              539.87407,
+              291.55652
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Rack velocity with labelled calculation area. Complete ruled question panel and response space retained."
+        },
+        {
+          "observed_number": "9",
+          "heading_box": [
+            49.97182,
+            295.56877,
+            91.97182000000001,
+            322.56877
+          ],
+          "visual_patch_sha256": "572953dc03944470f671bbf6ebfeda97de3821a89ddb8e93548e5c0739ee5142",
+          "visual_evidence": "Printed 9 visually read on cached physical page 5; numbering transcribed independently.",
+          "regions": [
+            [
+              49.97182,
+              295.56877,
+              539.87407,
+              531.84546
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Bolt shear force with labelled calculation area. Complete ruled question panel and response space retained."
+        },
+        {
+          "observed_number": "10",
+          "heading_box": [
+            49.97182,
+            536.74932,
+            91.97182000000001,
+            563.74932
+          ],
+          "visual_patch_sha256": "1825b0dc2ca616532d560fa67bedbf6be5d76b6532900bff86aebb9c9bbf68aa",
+          "visual_evidence": "Printed 10 visually read on cached physical page 5; numbering transcribed independently.",
+          "regions": [
+            [
+              49.97182,
+              536.74932,
+              293.13824,
+              773.91762
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Electric shock first-aid ordering. Complete ruled question panel and response space retained."
+        },
+        {
+          "observed_number": "11",
+          "heading_box": [
+            301.16942,
+            536.74932,
+            343.16942,
+            563.74932
+          ],
+          "visual_patch_sha256": "ea050541184b312fdd4b974514d18ab9668bdb71d0c58ca07e9affb22039cc5d",
+          "visual_evidence": "Printed 11 visually read on cached physical page 5; numbering transcribed independently.",
+          "regions": [
+            [
+              301.16942,
+              536.74932,
+              539.87407,
+              773.91762
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Hydraulic/pneumatic comparison. Complete ruled question panel and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "6": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Independently inspected printed headings and ruled panel boundaries.",
+      "slots": [
+        {
+          "observed_number": "12",
+          "heading_box": [
+            58.003,
+            300.02682,
+            100.003,
+            327.02682
+          ],
+          "visual_patch_sha256": "fa07c18c5cb840bbd031fb6fce68e844aacefd5b2cd77646d37001317cc32a20",
+          "visual_evidence": "Printed 12 visually read on cached physical page 6; numbering transcribed independently.",
+          "regions": [
+            [
+              58.003,
+              300.02682,
+              297.60001,
+              536.30351
+            ],
+            [
+              80.31185,
+              46.36373,
+              524.70406,
+              294.23135
+            ]
+          ],
+          "roles": [
+            "primary",
+            "shared_context"
+          ],
+          "evidence": "Daily maintenance question explicitly depends on upper inspection table. Complete ruled question panel and response space retained."
+        },
+        {
+          "observed_number": "13",
+          "heading_box": [
+            306.07737,
+            300.02682,
+            348.07737,
+            327.02682
+          ],
+          "visual_patch_sha256": "b73ac0820c3e3be8c4c8150dd6cd1434003ab55e80e9540e00e290a78416f81c",
+          "visual_evidence": "Printed 13 visually read on cached physical page 6; numbering transcribed independently.",
+          "regions": [
+            [
+              306.07737,
+              300.02682,
+              544.33584,
+              536.30351
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Preventive maintenance terminology. Complete ruled question panel and response space retained."
+        },
+        {
+          "observed_number": "14",
+          "heading_box": [
+            58.003,
+            541.20737,
+            100.003,
+            568.20737
+          ],
+          "visual_patch_sha256": "3b71fda1d60fa0e492102d08ad25f40e38f4c4a27ba8d24016a3c2423604a4ff",
+          "visual_evidence": "Printed 14 visually read on cached physical page 6; numbering transcribed independently.",
+          "regions": [
+            [
+              58.003,
+              541.20737,
+              544.33584,
+              781.0505
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "CNC arc diagram and complete program table. Complete ruled question panel and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "7": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Independently inspected printed headings and ruled panel boundaries.",
+      "slots": [
+        {
+          "observed_number": "15",
+          "heading_box": [
+            50.41799,
+            58.40047,
+            92.41799,
+            85.40047
+          ],
+          "visual_patch_sha256": "5501554ab6594cbc3e9f155afd20f334134c1b98d1ab15c74bd6278a4b7fa7ba",
+          "visual_evidence": "Printed 15 visually read on cached physical page 7; numbering transcribed independently.",
+          "regions": [
+            [
+              50.41799,
+              58.40047,
+              292.24588,
+              294.23135
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Sensors Complete ruled question panel and response space retained."
+        },
+        {
+          "observed_number": "16",
+          "heading_box": [
+            300.27707,
+            58.40047,
+            342.27707,
+            85.40047
+          ],
+          "visual_patch_sha256": "91aa82a8734cd86e0f4d8ea72ab017dfe3e0d39f4ac00f7def3e5ef0865d3ebb",
+          "visual_evidence": "Printed 16 visually read on cached physical page 7; numbering transcribed independently.",
+          "regions": [
+            [
+              300.27707,
+              58.40047,
+              539.87407,
+              294.23135
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Pt1000 Complete ruled question panel and response space retained."
+        },
+        {
+          "observed_number": "17",
+          "heading_box": [
+            50.41799,
+            299.58101,
+            92.41799,
+            326.58101
+          ],
+          "visual_patch_sha256": "da2b99555a5abfa1727f9714508cf02e46256bb100c7a8220a144d51d7005df2",
+          "visual_evidence": "Printed 17 visually read on cached physical page 7; numbering transcribed independently.",
+          "regions": [
+            [
+              50.41799,
+              299.58101,
+              292.24588,
+              534.52029
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Level sensing Complete ruled question panel and response space retained."
+        },
+        {
+          "observed_number": "18",
+          "heading_box": [
+            300.27707,
+            299.58101,
+            342.27707,
+            326.58101
+          ],
+          "visual_patch_sha256": "faa41f7a2303c917671fcbe1d40986dfbc0ec8a9ef5155b7bace116174e7ac55",
+          "visual_evidence": "Printed 18 visually read on cached physical page 7; numbering transcribed independently.",
+          "regions": [
+            [
+              300.27707,
+              299.58101,
+              539.87407,
+              534.52029
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Incremental measurement Complete ruled question panel and response space retained."
+        },
+        {
+          "observed_number": "19",
+          "heading_box": [
+            50.41799,
+            539.86995,
+            92.41799,
+            566.86995
+          ],
+          "visual_patch_sha256": "9905d4eba9fec1aa38a4c4b18685f9b66ce2aeff7946bb7c5f3605d9c0380786",
+          "visual_evidence": "Printed 19 visually read on cached physical page 7; numbering transcribed independently.",
+          "regions": [
+            [
+              50.41799,
+              539.86995,
+              292.24588,
+              775.70084
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Motor efficiency Complete ruled question panel and response space retained."
+        },
+        {
+          "observed_number": "20",
+          "heading_box": [
+            300.27707,
+            539.86995,
+            342.27707,
+            566.86995
+          ],
+          "visual_patch_sha256": "dab743f8f2f963e208e1da4735c0093d9d40b22b1fa1c30b392931024321dda4",
+          "visual_evidence": "Printed 20 visually read on cached physical page 7; numbering transcribed independently.",
+          "regions": [
+            [
+              300.27707,
+              539.86995,
+              539.87407,
+              775.70084
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Loop impedance Complete ruled question panel and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "8": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Independently inspected printed headings and ruled panel boundaries.",
+      "slots": [
+        {
+          "observed_number": "21",
+          "heading_box": [
+            57.11065,
+            58.84627,
+            99.11064999999999,
+            85.84627
+          ],
+          "visual_patch_sha256": "fd029a354fc2210eb56ced7d7ac89f653e0333ae56e035c35063e8962321736e",
+          "visual_evidence": "Printed 21 visually read on cached physical page 8; numbering transcribed independently.",
+          "regions": [
+            [
+              57.11065,
+              58.84627,
+              544.33584,
+              295.12296
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Apparent power and motor nameplate. Complete ruled question panel and response space retained."
+        },
+        {
+          "observed_number": "22",
+          "heading_box": [
+            57.11065,
+            300.47262,
+            99.11064999999999,
+            327.47262
+          ],
+          "visual_patch_sha256": "65fdcf2090d39f1fe75e049f3482740462266e59331922a1274beef75526d62b",
+          "visual_evidence": "Printed 22 visually read on cached physical page 8; numbering transcribed independently.",
+          "regions": [
+            [
+              57.11065,
+              300.47262,
+              544.33584,
+              536.30351
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Voltage measurement fault and table. Complete ruled question panel and response space retained."
+        },
+        {
+          "observed_number": "23",
+          "heading_box": [
+            57.11065,
+            541.65317,
+            99.11064999999999,
+            568.65317
+          ],
+          "visual_patch_sha256": "5b2273fc5b403f461eccfbc75b4ce4fe442ad009d38a75d075e478d141fbcc1e",
+          "visual_evidence": "Printed 23 visually read on cached physical page 8; numbering transcribed independently.",
+          "regions": [
+            [
+              57.11065,
+              541.65317,
+              298.04618,
+              775.70084
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Binary information. Complete ruled question panel and response space retained."
+        },
+        {
+          "observed_number": "24",
+          "heading_box": [
+            306.07737,
+            541.65317,
+            348.07737,
+            568.65317
+          ],
+          "visual_patch_sha256": "b604eebf6f89c87b31b7c7720807da19556c7e0a5b7a0ee3727671b242bc4a90",
+          "visual_evidence": "Printed 24 visually read on cached physical page 8; numbering transcribed independently.",
+          "regions": [
+            [
+              306.07737,
+              541.65317,
+              544.33584,
+              775.70084
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Exclusive OR. Complete ruled question panel and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "9": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Independently inspected printed headings and ruled panel boundaries.",
+      "slots": [
+        {
+          "observed_number": "25",
+          "heading_box": [
+            49.97182,
+            55.72564,
+            91.97182000000001,
+            82.72564
+          ],
+          "visual_patch_sha256": "3e72a425d0ccd55faebc697570be783be92779938a16ac28a72a04bfa579aeb6",
+          "visual_evidence": "Printed 25 visually read on cached physical page 9; numbering transcribed independently.",
+          "regions": [
+            [
+              49.97182,
+              55.72564,
+              538.98172,
+              292.44813
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Three complete relay/SPS variants. Complete ruled question panel and response space retained."
+        },
+        {
+          "observed_number": "26",
+          "heading_box": [
+            49.97182,
+            297.35199,
+            91.97182000000001,
+            324.35199
+          ],
+          "visual_patch_sha256": "a132e8d5e63755d140b42bd14591195da7c1f4e727bef8b07a4172297b6bad53",
+          "visual_evidence": "Printed 26 visually read on cached physical page 9; numbering transcribed independently.",
+          "regions": [
+            [
+              49.97182,
+              297.35199,
+              538.98172,
+              534.52029
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "RC circuit and five waveform options; next-page instruction below is not a continuation. Complete ruled question panel and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "10": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Independently inspected printed headings and ruled panel boundaries.",
+      "slots": [
+        {
+          "observed_number": "27",
+          "heading_box": [
+            56.21829,
+            57.95466,
+            98.21829,
+            84.95465999999999
+          ],
+          "visual_patch_sha256": "96b38a865f1ae591920e87a102f666da3fd90e54aa0637206277e0428f172f8f",
+          "visual_evidence": "Printed 27 visually read on cached physical page 10; numbering transcribed independently.",
+          "regions": [
+            [
+              56.21829,
+              57.95466,
+              544.33584,
+              295.12296
+            ],
+            [
+              57.55682,
+              297.35199,
+              298.49236,
+              538.53254
+            ]
+          ],
+          "roles": [
+            "primary",
+            "continuation"
+          ],
+          "evidence": "PTC curve and circuit, with separately labelled calculation panel. Complete ruled question panel and response space retained."
+        },
+        {
+          "observed_number": "28",
+          "heading_box": [
+            305.63119,
+            300.91843,
+            347.63119,
+            327.91843
+          ],
+          "visual_patch_sha256": "888c768b70c8b8d848758d86a0eb0ac6c266ffdbdd9a87d011cc760412899ed0",
+          "visual_evidence": "Printed 28 visually read on cached physical page 10; numbering transcribed independently.",
+          "regions": [
+            [
+              305.63119,
+              300.91843,
+              544.33584,
+              538.53254
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Quality-management rule; marking sheet below excluded. Complete ruled question panel and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "11": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Sommer 2025 Arbeitsplanung Teil B cover.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "12": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Teil B instructions repeat 105 minutes and four A4 attachments.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "13": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "shared_attachment",
+      "evidence": "Pruefungsaufgaben-Beschreibung: saw station, portal robot, conveyors and hydraulic swing cylinder.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "14": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Independently inspected printed headings and ruled panel boundaries.",
+      "slots": [
+        {
+          "observed_number": "U1",
+          "heading_box": [
+            29.0015,
+            20.06123,
+            71.0015,
+            47.061229999999995
+          ],
+          "visual_patch_sha256": "146670f5247c0138e3b1a5a50a4283d175f4725f11276e23a2d3fe31a270c766",
+          "visual_evidence": "Printed U1 visually read on cached physical page 14; numbering transcribed independently.",
+          "regions": [
+            [
+              29.0015,
+              20.06123,
+              566.64469,
+              815.37749
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Inspection safety, hydraulic leaks and first aid Complete ruled question panel and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "15": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Independently inspected printed headings and ruled panel boundaries.",
+      "slots": [
+        {
+          "observed_number": "U2",
+          "heading_box": [
+            39.26357,
+            19.16962,
+            81.26357,
+            46.169619999999995
+          ],
+          "visual_patch_sha256": "3a40b9ccb2425bf4c37eb1f3f1a8d9d81050040e96be2d341c5575f0f37826e2",
+          "visual_evidence": "Printed U2 visually read on cached physical page 15; numbering transcribed independently.",
+          "regions": [
+            [
+              39.26357,
+              19.16962,
+              566.64469,
+              815.37749
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Energy flow and swing-arm force; explicitly lists sheets 1(4) through 4(4) Complete ruled question panel and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "16": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Independently inspected printed headings and ruled panel boundaries.",
+      "slots": [
+        {
+          "observed_number": "U3",
+          "heading_box": [
+            29.0015,
+            20.06123,
+            71.0015,
+            47.061229999999995
+          ],
+          "visual_patch_sha256": "de30e702f5a16c118e33aa67c62abdd32c2bfceeb06158ceb6f8b33166beb944",
+          "visual_evidence": "Printed U3 visually read on cached physical page 16; numbering transcribed independently.",
+          "regions": [
+            [
+              29.0015,
+              20.06123,
+              566.64469,
+              815.37749
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Keyway, shaft Pos.7 and radial shaft seal Complete ruled question panel and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "17": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Independently inspected printed headings and ruled panel boundaries.",
+      "slots": [
+        {
+          "observed_number": "U4",
+          "heading_box": [
+            39.26357,
+            19.16962,
+            81.26357,
+            46.169619999999995
+          ],
+          "visual_patch_sha256": "210ef66521ae2b4071b8e41577e33edb89c0b1259ab1f1e261eab8e1fb1f4e53",
+          "visual_evidence": "Printed U4 visually read on cached physical page 17; numbering transcribed independently.",
+          "regions": [
+            [
+              39.26357,
+              19.16962,
+              566.64469,
+              815.37749
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Three GRAFCET/control tasks with complete diagrams Complete ruled question panel and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "18": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Independently inspected printed headings and ruled panel boundaries.",
+      "slots": [
+        {
+          "observed_number": "U5",
+          "heading_box": [
+            29.0015,
+            20.06123,
+            71.0015,
+            47.061229999999995
+          ],
+          "visual_patch_sha256": "bdba189482f5f139646266fcc1d4a7bf927ea63ce5921d725df1c523742b124b",
+          "visual_evidence": "Printed U5 visually read on cached physical page 18; numbering transcribed independently.",
+          "regions": [
+            [
+              29.0015,
+              20.06123,
+              566.64469,
+              815.37749
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Reactive power compensation diagrams and calculation Complete ruled question panel and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "19": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Independently inspected printed headings and ruled panel boundaries.",
+      "slots": [
+        {
+          "observed_number": "U6",
+          "heading_box": [
+            39.26357,
+            19.16962,
+            81.26357,
+            46.169619999999995
+          ],
+          "visual_patch_sha256": "45a73617b6b23cf6b0aa748cf66836502236dfe6a1e0cc3f01ab5096d397bffb",
+          "visual_evidence": "Printed U6 visually read on cached physical page 19; numbering transcribed independently.",
+          "regions": [
+            [
+              39.26357,
+              19.16962,
+              566.64469,
+              815.37749
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Hydraulic components, circuit completion and oil-change ordering Complete ruled question panel and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "20": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Independently inspected printed headings and ruled panel boundaries.",
+      "slots": [
+        {
+          "observed_number": "U7",
+          "heading_box": [
+            29.0015,
+            20.06123,
+            71.0015,
+            47.061229999999995
+          ],
+          "visual_patch_sha256": "e5e76fa1b90f93397bb487a97670321c8789d4bf0449cdcd998d6a04010f1ee3",
+          "visual_evidence": "Printed U7 visually read on cached physical page 20; numbering transcribed independently.",
+          "regions": [
+            [
+              29.0015,
+              20.06123,
+              566.64469,
+              815.37749
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Safety-window terms, technology/circuit diagrams and English handling instructions Complete ruled question panel and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "21": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Independently inspected printed headings and ruled panel boundaries.",
+      "slots": [
+        {
+          "observed_number": "U8",
+          "heading_box": [
+            39.26357,
+            19.16962,
+            81.26357,
+            46.169619999999995
+          ],
+          "visual_patch_sha256": "3e7a3ab917c5e460db27cfdfe21512ccca3bab50c0cd8b8ce384aecd5935fbff",
+          "visual_evidence": "Printed U8 visually read on cached physical page 21; numbering transcribed independently.",
+          "regions": [
+            [
+              39.26357,
+              19.16962,
+              566.64469,
+              631.25999
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Recommissioning and operating instructions; committee scoring section excluded Complete ruled question panel and response space retained."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "22": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "shared_attachment",
+      "evidence": "Hydraulikplan Blatt 1(4).",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "23": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "shared_attachment",
+      "evidence": "Schwenkarm sketch and exploded view Blatt 2(4).",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "24": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "shared_attachment",
+      "evidence": "Schwenkzylinder section drawing Blatt 3(4), supplied rotated within portrait page.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "25": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "shared_attachment",
+      "evidence": "Stueckliste Schwenkzylinder Blatt 4(4), all 25 positions.",
+      "slots": [],
+      "explicit_regions": []
+    }
+  },
+  "attachment_crops": [
+    {
+      "page": 13,
+      "bbox": [
+        0,
+        0,
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "role": "Pruefungsaufgaben-Beschreibung: saw station, portal robot, conveyors and hydraulic swing cylinder.",
+      "question_numbers": [
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6",
+        "U7",
+        "U8"
+      ],
+      "evidence": "Pruefungsaufgaben-Beschreibung: saw station, portal robot, conveyors and hydraulic swing cylinder.",
+      "visual_patch_sha256": "7c2fa7fca9439b4175acaefa5e7a5a279bdad740727cce499137c2ff23cb0bab"
+    },
+    {
+      "page": 22,
+      "bbox": [
+        0,
+        0,
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "role": "Hydraulikplan Blatt 1(4).",
+      "question_numbers": [
+        "U2",
+        "U6"
+      ],
+      "evidence": "Hydraulikplan Blatt 1(4).",
+      "visual_patch_sha256": "abcb278cbdcff81bb74443adb0074b512a4f49e719785785240532c549835e21"
+    },
+    {
+      "page": 23,
+      "bbox": [
+        0,
+        0,
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "role": "Schwenkarm sketch and exploded view Blatt 2(4).",
+      "question_numbers": [
+        "U2"
+      ],
+      "evidence": "Schwenkarm sketch and exploded view Blatt 2(4).",
+      "visual_patch_sha256": "032f7528f02d1b4317c67f5217d0bd4faafc31692dada932475cf714060ca8e2"
+    },
+    {
+      "page": 24,
+      "bbox": [
+        0,
+        0,
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "role": "Schwenkzylinder section drawing Blatt 3(4), supplied rotated within portrait page.",
+      "question_numbers": [
+        "U2",
+        "U3"
+      ],
+      "evidence": "Schwenkzylinder section drawing Blatt 3(4), supplied rotated within portrait page. U3 names shaft Pos.7 and its seal, matched to sheets 3 and 4.",
+      "visual_patch_sha256": "2bcfa48db60ef4ea371bf6902e1f478ecb9e51eb00185262d44e5de9e7ab528f"
+    },
+    {
+      "page": 25,
+      "bbox": [
+        0,
+        0,
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "role": "Stueckliste Schwenkzylinder Blatt 4(4), all 25 positions.",
+      "question_numbers": [
+        "U2",
+        "U3"
+      ],
+      "evidence": "Stueckliste Schwenkzylinder Blatt 4(4), all 25 positions. U3 names shaft Pos.7 and its seal, matched to sheets 3 and 4.",
+      "visual_patch_sha256": "0c56a94e0f7e517e208523393c0bd6d33e9674fff015e32344b6bd8ffa21ea06"
+    }
+  ],
+  "attachment_refs": {
+    "U1": [
+      13
+    ],
+    "U2": [
+      13,
+      22,
+      23,
+      24,
+      25
+    ],
+    "U3": [
+      13,
+      24,
+      25
+    ],
+    "U4": [
+      13
+    ],
+    "U5": [
+      13
+    ],
+    "U6": [
+      13,
+      22
+    ],
+    "U7": [
+      13
+    ],
+    "U8": [
+      13
+    ]
+  },
+  "timing_minutes": 105,
+  "timing_source_page": 2,
+  "description_page": 13,
+  "configuration_complete": true
+}

@@ -1,0 +1,61 @@
+{
+  "key": "dfb363994a4d08dc6aff7cda304d52652645db6fc0fe10bee6878f521601a352",
+  "record_hash": "596b7f61f2425a454fec55e3182260b6c4d7aa5a272e5fe592b7a6f0d7d11355",
+  "record": {
+    "page": 8,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "U3 complete Kaufvertrag diagram, sideways print; source orientation preserved.",
+    "anchors": [
+      {
+        "anchor_id": "2025-wiso-p8-U3",
+        "number": "U3",
+        "bbox": [
+          66.795,
+          742.503,
+          86.635,
+          769.612
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U3 visually read on cached physical page 8.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "9bbfa245e7741800b5144dd790c0fa75cca040630a1eb98f4a3c2a5447493c60"
+      }
+    ],
+    "regions": [
+      {
+        "page": 8,
+        "bbox": [
+          58.859,
+          52.233,
+          543.616,
+          779.529
+        ],
+        "role": "primary",
+        "owner": "2025-wiso-p8-U3",
+        "evidence": "U3 complete Kaufvertrag diagram, sideways print; source orientation preserved. Region includes all question text, choices, diagrams and response areas within the visible panel."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U3",
+        "bbox": [
+          66.795,
+          742.503,
+          86.635,
+          769.612
+        ],
+        "pixel_sha256": "9bbfa245e7741800b5144dd790c0fa75cca040630a1eb98f4a3c2a5447493c60",
+        "audited_pixel_sha256": "9bbfa245e7741800b5144dd790c0fa75cca040630a1eb98f4a3c2a5447493c60"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

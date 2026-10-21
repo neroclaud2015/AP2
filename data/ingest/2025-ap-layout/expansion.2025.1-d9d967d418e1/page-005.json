@@ -1,0 +1,175 @@
+{
+  "key": "2d4b13f149f90b7de941f3e75b24600292abdb09d2e9b4cfab2da88549649cb6",
+  "record_hash": "39d7503d79ac518554313d8f9c54a3be35491c1b675f1b6846cfd1c6281def10",
+  "record": {
+    "page": 5,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Independently inspected printed headings and ruled panel boundaries.",
+    "anchors": [
+      {
+        "anchor_id": "2025-ap-p5-8",
+        "number": "8",
+        "bbox": [
+          49.97182,
+          54.83402,
+          91.97182000000001,
+          81.83402000000001
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 8 visually read on cached physical page 5; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "3d15d55060ce95f6b664671ad27e1e93116ed1fe74783904fc8879dfeea39a4f"
+      },
+      {
+        "anchor_id": "2025-ap-p5-9",
+        "number": "9",
+        "bbox": [
+          49.97182,
+          295.56877,
+          91.97182000000001,
+          322.56877
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 9 visually read on cached physical page 5; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "572953dc03944470f671bbf6ebfeda97de3821a89ddb8e93548e5c0739ee5142"
+      },
+      {
+        "anchor_id": "2025-ap-p5-10",
+        "number": "10",
+        "bbox": [
+          49.97182,
+          536.74932,
+          91.97182000000001,
+          563.74932
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 10 visually read on cached physical page 5; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "1825b0dc2ca616532d560fa67bedbf6be5d76b6532900bff86aebb9c9bbf68aa"
+      },
+      {
+        "anchor_id": "2025-ap-p5-11",
+        "number": "11",
+        "bbox": [
+          301.16942,
+          536.74932,
+          343.16942,
+          563.74932
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 11 visually read on cached physical page 5; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "ea050541184b312fdd4b974514d18ab9668bdb71d0c58ca07e9affb22039cc5d"
+      }
+    ],
+    "regions": [
+      {
+        "page": 5,
+        "bbox": [
+          49.97182,
+          54.83402,
+          539.87407,
+          291.55652
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p5-8",
+        "evidence": "Rack velocity with labelled calculation area. Complete ruled question panel and response space retained."
+      },
+      {
+        "page": 5,
+        "bbox": [
+          49.97182,
+          295.56877,
+          539.87407,
+          531.84546
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p5-9",
+        "evidence": "Bolt shear force with labelled calculation area. Complete ruled question panel and response space retained."
+      },
+      {
+        "page": 5,
+        "bbox": [
+          49.97182,
+          536.74932,
+          293.13824,
+          773.91762
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p5-10",
+        "evidence": "Electric shock first-aid ordering. Complete ruled question panel and response space retained."
+      },
+      {
+        "page": 5,
+        "bbox": [
+          301.16942,
+          536.74932,
+          539.87407,
+          773.91762
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p5-11",
+        "evidence": "Hydraulic/pneumatic comparison. Complete ruled question panel and response space retained."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "8",
+        "bbox": [
+          49.97182,
+          54.83402,
+          91.97182000000001,
+          81.83402000000001
+        ],
+        "pixel_sha256": "3d15d55060ce95f6b664671ad27e1e93116ed1fe74783904fc8879dfeea39a4f",
+        "audited_pixel_sha256": "3d15d55060ce95f6b664671ad27e1e93116ed1fe74783904fc8879dfeea39a4f"
+      },
+      {
+        "kind": "heading",
+        "number": "9",
+        "bbox": [
+          49.97182,
+          295.56877,
+          91.97182000000001,
+          322.56877
+        ],
+        "pixel_sha256": "572953dc03944470f671bbf6ebfeda97de3821a89ddb8e93548e5c0739ee5142",
+        "audited_pixel_sha256": "572953dc03944470f671bbf6ebfeda97de3821a89ddb8e93548e5c0739ee5142"
+      },
+      {
+        "kind": "heading",
+        "number": "10",
+        "bbox": [
+          49.97182,
+          536.74932,
+          91.97182000000001,
+          563.74932
+        ],
+        "pixel_sha256": "1825b0dc2ca616532d560fa67bedbf6be5d76b6532900bff86aebb9c9bbf68aa",
+        "audited_pixel_sha256": "1825b0dc2ca616532d560fa67bedbf6be5d76b6532900bff86aebb9c9bbf68aa"
+      },
+      {
+        "kind": "heading",
+        "number": "11",
+        "bbox": [
+          301.16942,
+          536.74932,
+          343.16942,
+          563.74932
+        ],
+        "pixel_sha256": "ea050541184b312fdd4b974514d18ab9668bdb71d0c58ca07e9affb22039cc5d",
+        "audited_pixel_sha256": "ea050541184b312fdd4b974514d18ab9668bdb71d0c58ca07e9affb22039cc5d"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

@@ -1,3 +1,7 @@
+## 2026-10-21 · Sommer 2025 import / official answer review
+
+AP 36 questions, MC 10/28 reliable, U 8/8; FA 36 questions, MC 12/28 reliable, U 8/8; WiSo 24 questions, MC 7/18 reliable, U 6/6. All source materials present. 45 official circle marks await manual source review; no thresholds weakened, no answer guessed. All three modules remain outside production until confirmed. Reused portrait-explicit-regions and official-ring-grid with source-bound revisions. 84 newly cached pages; 0 old PDF rescans; 15 duplicate processing steps skipped with PDF open prohibited. Existing 49 modules / 1,560 questions unchanged. Review and full previews: docs/evidence/sommer2025/.
+
 ## 2026-10-06 · Winter 2025/26 + Sommer 2026 released
 
 92 human source confirmations validated and locked. Both seasons AP 36/28 MC/8 U, FA 36/28 MC/8 U, WiSo 24/18 MC/6 U are Production, Needs Review 0. Added 192 questions: total 49 modules / 1,560 questions. Old 1,368 questions and classifications unchanged. No PDF open/render; repeat import is idempotent. See `docs/evidence/expansion2026-release/`.

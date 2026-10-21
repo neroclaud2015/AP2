@@ -1,0 +1,264 @@
+{
+  "scope": "2025-ap",
+  "name": "2025_sommer_arbeitsplanung",
+  "exam": "2025_sommer",
+  "module": "Arbeitsplanung",
+  "version": "expansion.2025.1",
+  "profile_id": "official-ring-grid",
+  "source_hash": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+  "source_id": "src-e428b28e0f27c31e15f1aa4a",
+  "question_source_id": "src-83cb5eb0c954fca5996a8152",
+  "solution_source_id": "src-e428b28e0f27c31e15f1aa4a",
+  "validated_sources": [
+    "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9"
+  ],
+  "choice_page": 1,
+  "choice_count": 28,
+  "analysis_size": [
+    993,
+    1404
+  ],
+  "groups": [
+    [
+      1,
+      10,
+      135.8,
+      60.08,
+      390.6,
+      19.94,
+      0,
+      370
+    ],
+    [
+      11,
+      10,
+      135.8,
+      60.08,
+      510.0,
+      19.94,
+      0,
+      490
+    ],
+    [
+      21,
+      8,
+      135.8,
+      60.08,
+      629.3,
+      19.94,
+      0,
+      609
+    ]
+  ],
+  "grid_crop": [
+    106,
+    356,
+    725,
+    721
+  ],
+  "ring_policy": {
+    "min_ring": 0.4,
+    "support": 0.83,
+    "possible_ring": 0.32,
+    "possible_support": 0.58,
+    "margin": 0.15,
+    "center": 0.1
+  },
+  "header_evidence": "Original Sommer 2025 module title and every printed question column visually verified. Five positions map top to bottom to 1..5; deterministic ring geometry only.",
+  "u_evidence": "All printed U labels and ruled separators visually inspected on cached official Sommer 2025 solution. Formula/diagram/table retained as original image. Whole-question self-assessment; no rubric inferred.",
+  "u_regions": {
+    "U1": {
+      "regions": [
+        {
+          "page": 6,
+          "bbox": [
+            18,
+            123.003,
+            580,
+            812.43
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 6,
+      "heading_box": [
+        18,
+        123.00345938546316,
+        95,
+        150.33756147112163
+      ],
+      "heading_pixel_sha256": "146e0d4cfc5279b307409466959def65093db9eb6c7580ce41f71a8dcbea0779"
+    },
+    "U2": {
+      "regions": [
+        {
+          "page": 7,
+          "bbox": [
+            18,
+            21.26,
+            580,
+            473.791
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 7,
+      "heading_box": [
+        18,
+        21.259857177734375,
+        95,
+        48.593959263392854
+      ],
+      "heading_pixel_sha256": "13f3b036723721d4a88c4a1ed5d5247b026a017326cd7ca4d3e71c6f6cd0da47"
+    },
+    "U3": {
+      "regions": [
+        {
+          "page": 7,
+          "bbox": [
+            18,
+            475.31,
+            580,
+            812.43
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 7,
+      "heading_box": [
+        18,
+        475.30966404506137,
+        95,
+        502.6437661307198
+      ],
+      "heading_pixel_sha256": "1b8e21cc8f1b4f02cead11ea35bc1c8d66826b2263388e4ee3e9b1697c7b9e18"
+    },
+    "U4": {
+      "regions": [
+        {
+          "page": 8,
+          "bbox": [
+            18,
+            123.003,
+            580,
+            812.43
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 8,
+      "heading_box": [
+        18,
+        123.00345938546316,
+        95,
+        150.33756147112163
+      ],
+      "heading_pixel_sha256": "2b93dabf53490c983cbe12edec9dba5e8a2e6f06c284d5353e67df39d1ecf042"
+    },
+    "U5": {
+      "regions": [
+        {
+          "page": 9,
+          "bbox": [
+            18,
+            21.26,
+            580,
+            812.43
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 9,
+      "heading_box": [
+        18,
+        21.259857177734375,
+        95,
+        48.593959263392854
+      ],
+      "heading_pixel_sha256": "ff5429ea6dacbd5fa6f4f828c0750f0a5ec80ad6259a0b9a4e2e6fcf082db29e"
+    },
+    "U6": {
+      "regions": [
+        {
+          "page": 10,
+          "bbox": [
+            18,
+            124.522,
+            580,
+            812.43
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 10,
+      "heading_box": [
+        18,
+        124.5220206124442,
+        95,
+        151.85612269810267
+      ],
+      "heading_pixel_sha256": "61fe55a3b8f0951cc7445d8ac16d447cadb736f2a9328a5128777abef708471c"
+    },
+    "U7": {
+      "regions": [
+        {
+          "page": 11,
+          "bbox": [
+            18,
+            21.26,
+            580,
+            555.034
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 11,
+      "heading_box": [
+        18,
+        21.259857177734375,
+        95,
+        48.593959263392854
+      ],
+      "heading_pixel_sha256": "db5e4bc4bdb9e96f99ff298b50d78a808b7eec0315523bba833f0d02301a82c7"
+    },
+    "U8": {
+      "regions": [
+        {
+          "page": 11,
+          "bbox": [
+            18,
+            556.553,
+            580,
+            812.43
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 11,
+      "heading_box": [
+        18,
+        556.5526896885463,
+        95,
+        583.8867917742048
+      ],
+      "heading_pixel_sha256": "e870351a06d1003dd8550d87d24243171a5ae8452086d5ae815977368ee5c55b"
+    }
+  },
+  "page_image_hashes": {
+    "1": "f68e479cf7a6b7486560e9d274a961995b45fa8399bd9fb6425b82f7f0b6ee7c",
+    "6": "b71914cac7b025304aa8c33af95ecc31537ffee901bee903fe145e833ac6a9d7",
+    "7": "16365c3349f9c26df87eba926ab7afd141741f0627b6aeba53ad760bc855c364",
+    "8": "e476cb5e5573e8f69a3ec2ff4850d604d698811f53929be8b1cf01e732e401d2",
+    "9": "ece6763e0fafa71c3637de2a316e8f89561df6f15ffd547495a6de0c012c614e",
+    "10": "7e42aed2b1ce1394c76d433ebd988e6eb35abbc9c823f19523f8c8bc29504a45",
+    "11": "1412a6b05658423349cd7ca53b3ad098227a30845ada42f3a85f476460c22be4"
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "key": "3efe855537f271e0387f0f04adbe88c25019a5f187d26be60922cade5d5fddc8",
+  "record_hash": "0766a884225ce1238ef80f0ea5e1bf65ca1549cec66bfdd44a4b36f646c5df4f",
+  "record": {
+    "page": 3,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Independently inspected printed headings and ruled panel boundaries.",
+    "anchors": [
+      {
+        "anchor_id": "2025-ap-p3-1",
+        "number": "1",
+        "bbox": [
+          49.97182,
+          297.35199,
+          91.97182000000001,
+          324.35199
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 1 visually read on cached physical page 3; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "2a8a3c7dfa93a382f07d40e1309a9444b235838f49c851494142fd77c40cabbf"
+      },
+      {
+        "anchor_id": "2025-ap-p3-2",
+        "number": "2",
+        "bbox": [
+          297.15383,
+          297.35199,
+          339.15383,
+          324.35199
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 2 visually read on cached physical page 3; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "a0c82e4f8cceddd3a05ef426ef70843a6726abbf2ee5ac8aa96fd9f837221352"
+      },
+      {
+        "anchor_id": "2025-ap-p3-3",
+        "number": "3",
+        "bbox": [
+          49.97182,
+          537.19512,
+          91.97182000000001,
+          564.19512
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 3 visually read on cached physical page 3; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "d2527fe22dae28df525d2acc5ef51e982e57335768a12feda84d0f8041f22c2a"
+      },
+      {
+        "anchor_id": "2025-ap-p3-4",
+        "number": "4",
+        "bbox": [
+          297.15383,
+          537.19512,
+          339.15383,
+          564.19512
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 4 visually read on cached physical page 3; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "c2ed9034339170936e36a6475ebaf0f33c03687fefb213d9f35c0870be53bdbd"
+      }
+    ],
+    "regions": [
+      {
+        "page": 3,
+        "bbox": [
+          49.97182,
+          297.35199,
+          291.79971,
+          533.62868
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p3-1",
+        "evidence": "Arbeitsplanung purpose; marking-sheet example above excluded. Complete ruled question panel and response space retained."
+      },
+      {
+        "page": 3,
+        "bbox": [
+          297.15383,
+          297.35199,
+          539.87407,
+          533.62868
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p3-2",
+        "evidence": "Shaft image and five choices. Complete ruled question panel and response space retained."
+      },
+      {
+        "page": 3,
+        "bbox": [
+          49.97182,
+          537.19512,
+          291.79971,
+          774.80923
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p3-3",
+        "evidence": "Bearing assembly/storage statements. Complete ruled question panel and response space retained."
+      },
+      {
+        "page": 3,
+        "bbox": [
+          297.15383,
+          537.19512,
+          539.87407,
+          774.80923
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p3-4",
+        "evidence": "Sinter bearing lubrication. Complete ruled question panel and response space retained."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "1",
+        "bbox": [
+          49.97182,
+          297.35199,
+          91.97182000000001,
+          324.35199
+        ],
+        "pixel_sha256": "2a8a3c7dfa93a382f07d40e1309a9444b235838f49c851494142fd77c40cabbf",
+        "audited_pixel_sha256": "2a8a3c7dfa93a382f07d40e1309a9444b235838f49c851494142fd77c40cabbf"
+      },
+      {
+        "kind": "heading",
+        "number": "2",
+        "bbox": [
+          297.15383,
+          297.35199,
+          339.15383,
+          324.35199
+        ],
+        "pixel_sha256": "a0c82e4f8cceddd3a05ef426ef70843a6726abbf2ee5ac8aa96fd9f837221352",
+        "audited_pixel_sha256": "a0c82e4f8cceddd3a05ef426ef70843a6726abbf2ee5ac8aa96fd9f837221352"
+      },
+      {
+        "kind": "heading",
+        "number": "3",
+        "bbox": [
+          49.97182,
+          537.19512,
+          91.97182000000001,
+          564.19512
+        ],
+        "pixel_sha256": "d2527fe22dae28df525d2acc5ef51e982e57335768a12feda84d0f8041f22c2a",
+        "audited_pixel_sha256": "d2527fe22dae28df525d2acc5ef51e982e57335768a12feda84d0f8041f22c2a"
+      },
+      {
+        "kind": "heading",
+        "number": "4",
+        "bbox": [
+          297.15383,
+          537.19512,
+          339.15383,
+          564.19512
+        ],
+        "pixel_sha256": "c2ed9034339170936e36a6475ebaf0f33c03687fefb213d9f35c0870be53bdbd",
+        "audited_pixel_sha256": "c2ed9034339170936e36a6475ebaf0f33c03687fefb213d9f35c0870be53bdbd"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

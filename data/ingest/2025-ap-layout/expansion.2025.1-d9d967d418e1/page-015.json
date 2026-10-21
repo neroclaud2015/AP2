@@ -1,0 +1,61 @@
+{
+  "key": "085d3c6455a10cc6d6af70c088ff105b412df99f7062064e6bca79a8d13c0047",
+  "record_hash": "4f5fa305c08e5b34eea9c33d0c38acde097528fef57e39637c0556a508a1f11b",
+  "record": {
+    "page": 15,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Independently inspected printed headings and ruled panel boundaries.",
+    "anchors": [
+      {
+        "anchor_id": "2025-ap-p15-U2",
+        "number": "U2",
+        "bbox": [
+          39.26357,
+          19.16962,
+          81.26357,
+          46.169619999999995
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U2 visually read on cached physical page 15; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "3a40b9ccb2425bf4c37eb1f3f1a8d9d81050040e96be2d341c5575f0f37826e2"
+      }
+    ],
+    "regions": [
+      {
+        "page": 15,
+        "bbox": [
+          39.26357,
+          19.16962,
+          566.64469,
+          815.37749
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p15-U2",
+        "evidence": "Energy flow and swing-arm force; explicitly lists sheets 1(4) through 4(4) Complete ruled question panel and response space retained."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U2",
+        "bbox": [
+          39.26357,
+          19.16962,
+          81.26357,
+          46.169619999999995
+        ],
+        "pixel_sha256": "3a40b9ccb2425bf4c37eb1f3f1a8d9d81050040e96be2d341c5575f0f37826e2",
+        "audited_pixel_sha256": "3a40b9ccb2425bf4c37eb1f3f1a8d9d81050040e96be2d341c5575f0f37826e2"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

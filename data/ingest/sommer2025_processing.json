@@ -1,0 +1,952 @@
+[
+  {
+    "code": "ap",
+    "stage": "preview",
+    "status": "preview_ready",
+    "observed": 36,
+    "expected": 36,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 25,
+    "revision": "expansion.2025.1-d9d967d418e1",
+    "source_id": "src-83cb5eb0c954fca5996a8152",
+    "source_hash": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 36,
+    "attachments": [
+      {
+        "page": 13,
+        "bbox": [
+          0,
+          0,
+          595.2000122070312,
+          841.6799926757812
+        ],
+        "role": "Pruefungsaufgaben-Beschreibung: saw station, portal robot, conveyors and hydraulic swing cylinder.",
+        "question_numbers": [
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6",
+          "U7",
+          "U8"
+        ],
+        "evidence": "Pruefungsaufgaben-Beschreibung: saw station, portal robot, conveyors and hydraulic swing cylinder.",
+        "visual_patch_sha256": "7c2fa7fca9439b4175acaefa5e7a5a279bdad740727cce499137c2ff23cb0bab",
+        "image": "assets/questions/af36c5ca152eaf0d3459e940/expansion.2025.1-d9d967d418e1/attachment-13-0.png",
+        "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b"
+      },
+      {
+        "page": 22,
+        "bbox": [
+          0,
+          0,
+          595.2000122070312,
+          841.6799926757812
+        ],
+        "role": "Hydraulikplan Blatt 1(4).",
+        "question_numbers": [
+          "U2",
+          "U6"
+        ],
+        "evidence": "Hydraulikplan Blatt 1(4).",
+        "visual_patch_sha256": "abcb278cbdcff81bb74443adb0074b512a4f49e719785785240532c549835e21",
+        "image": "assets/questions/af36c5ca152eaf0d3459e940/expansion.2025.1-d9d967d418e1/attachment-22-1.png",
+        "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b"
+      },
+      {
+        "page": 23,
+        "bbox": [
+          0,
+          0,
+          595.2000122070312,
+          841.6799926757812
+        ],
+        "role": "Schwenkarm sketch and exploded view Blatt 2(4).",
+        "question_numbers": [
+          "U2"
+        ],
+        "evidence": "Schwenkarm sketch and exploded view Blatt 2(4).",
+        "visual_patch_sha256": "032f7528f02d1b4317c67f5217d0bd4faafc31692dada932475cf714060ca8e2",
+        "image": "assets/questions/af36c5ca152eaf0d3459e940/expansion.2025.1-d9d967d418e1/attachment-23-2.png",
+        "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b"
+      },
+      {
+        "page": 24,
+        "bbox": [
+          0,
+          0,
+          595.2000122070312,
+          841.6799926757812
+        ],
+        "role": "Schwenkzylinder section drawing Blatt 3(4), supplied rotated within portrait page.",
+        "question_numbers": [
+          "U2",
+          "U3"
+        ],
+        "evidence": "Schwenkzylinder section drawing Blatt 3(4), supplied rotated within portrait page. U3 names shaft Pos.7 and its seal, matched to sheets 3 and 4.",
+        "visual_patch_sha256": "2bcfa48db60ef4ea371bf6902e1f478ecb9e51eb00185262d44e5de9e7ab528f",
+        "image": "assets/questions/af36c5ca152eaf0d3459e940/expansion.2025.1-d9d967d418e1/attachment-24-3.png",
+        "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b"
+      },
+      {
+        "page": 25,
+        "bbox": [
+          0,
+          0,
+          595.2000122070312,
+          841.6799926757812
+        ],
+        "role": "Stueckliste Schwenkzylinder Blatt 4(4), all 25 positions.",
+        "question_numbers": [
+          "U2",
+          "U3"
+        ],
+        "evidence": "Stueckliste Schwenkzylinder Blatt 4(4), all 25 positions. U3 names shaft Pos.7 and its seal, matched to sheets 3 and 4.",
+        "visual_patch_sha256": "0c56a94e0f7e517e208523393c0bd6d33e9674fff015e32344b6bd8ffa21ea06",
+        "image": "assets/questions/af36c5ca152eaf0d3459e940/expansion.2025.1-d9d967d418e1/attachment-25-4.png",
+        "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b"
+      }
+    ]
+  },
+  {
+    "code": "ap",
+    "stage": "formal",
+    "status": "formal_segmented",
+    "observed": 36,
+    "expected": 36,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 25,
+    "revision": "expansion.2025.1-d9d967d418e1",
+    "source_id": "src-83cb5eb0c954fca5996a8152",
+    "source_hash": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 36,
+    "attachments": [
+      {
+        "page": 13,
+        "bbox": [
+          0,
+          0,
+          595.2000122070312,
+          841.6799926757812
+        ],
+        "role": "Pruefungsaufgaben-Beschreibung: saw station, portal robot, conveyors and hydraulic swing cylinder.",
+        "question_numbers": [
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6",
+          "U7",
+          "U8"
+        ],
+        "evidence": "Pruefungsaufgaben-Beschreibung: saw station, portal robot, conveyors and hydraulic swing cylinder.",
+        "visual_patch_sha256": "7c2fa7fca9439b4175acaefa5e7a5a279bdad740727cce499137c2ff23cb0bab",
+        "image": "assets/questions/af36c5ca152eaf0d3459e940/expansion.2025.1-d9d967d418e1/attachment-13-0.png",
+        "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b"
+      },
+      {
+        "page": 22,
+        "bbox": [
+          0,
+          0,
+          595.2000122070312,
+          841.6799926757812
+        ],
+        "role": "Hydraulikplan Blatt 1(4).",
+        "question_numbers": [
+          "U2",
+          "U6"
+        ],
+        "evidence": "Hydraulikplan Blatt 1(4).",
+        "visual_patch_sha256": "abcb278cbdcff81bb74443adb0074b512a4f49e719785785240532c549835e21",
+        "image": "assets/questions/af36c5ca152eaf0d3459e940/expansion.2025.1-d9d967d418e1/attachment-22-1.png",
+        "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b"
+      },
+      {
+        "page": 23,
+        "bbox": [
+          0,
+          0,
+          595.2000122070312,
+          841.6799926757812
+        ],
+        "role": "Schwenkarm sketch and exploded view Blatt 2(4).",
+        "question_numbers": [
+          "U2"
+        ],
+        "evidence": "Schwenkarm sketch and exploded view Blatt 2(4).",
+        "visual_patch_sha256": "032f7528f02d1b4317c67f5217d0bd4faafc31692dada932475cf714060ca8e2",
+        "image": "assets/questions/af36c5ca152eaf0d3459e940/expansion.2025.1-d9d967d418e1/attachment-23-2.png",
+        "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b"
+      },
+      {
+        "page": 24,
+        "bbox": [
+          0,
+          0,
+          595.2000122070312,
+          841.6799926757812
+        ],
+        "role": "Schwenkzylinder section drawing Blatt 3(4), supplied rotated within portrait page.",
+        "question_numbers": [
+          "U2",
+          "U3"
+        ],
+        "evidence": "Schwenkzylinder section drawing Blatt 3(4), supplied rotated within portrait page. U3 names shaft Pos.7 and its seal, matched to sheets 3 and 4.",
+        "visual_patch_sha256": "2bcfa48db60ef4ea371bf6902e1f478ecb9e51eb00185262d44e5de9e7ab528f",
+        "image": "assets/questions/af36c5ca152eaf0d3459e940/expansion.2025.1-d9d967d418e1/attachment-24-3.png",
+        "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b"
+      },
+      {
+        "page": 25,
+        "bbox": [
+          0,
+          0,
+          595.2000122070312,
+          841.6799926757812
+        ],
+        "role": "Stueckliste Schwenkzylinder Blatt 4(4), all 25 positions.",
+        "question_numbers": [
+          "U2",
+          "U3"
+        ],
+        "evidence": "Stueckliste Schwenkzylinder Blatt 4(4), all 25 positions. U3 names shaft Pos.7 and its seal, matched to sheets 3 and 4.",
+        "visual_patch_sha256": "0c56a94e0f7e517e208523393c0bd6d33e9674fff015e32344b6bd8ffa21ea06",
+        "image": "assets/questions/af36c5ca152eaf0d3459e940/expansion.2025.1-d9d967d418e1/attachment-25-4.png",
+        "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b"
+      }
+    ]
+  },
+  {
+    "code": "ap",
+    "stage": "answers",
+    "choice_expected": 28,
+    "choice_records": 28,
+    "u_expected": 8,
+    "u_records": 8,
+    "review_list": [
+      {
+        "question_number": 1,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 3,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 4,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 5,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 7,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 9,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 10,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 11,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 12,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 15,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 16,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 17,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 18,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 19,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 20,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 21,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 22,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 24,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      }
+    ],
+    "status": "blocked",
+    "revision": "2025-ap-2f.1.0-a8f455b81706",
+    "pdf_pages_opened": 0
+  },
+  {
+    "code": "fa",
+    "stage": "preview",
+    "status": "preview_ready",
+    "observed": 36,
+    "expected": 36,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 26,
+    "revision": "expansion.2025.1-eb5dd8f8b803",
+    "source_id": "src-aadad6ebe77abc53c35c6139",
+    "source_hash": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 36,
+    "attachments": [
+      {
+        "page": 13,
+        "bbox": [
+          38.688,
+          13.3836,
+          566.184,
+          811.9387
+        ],
+        "role": "Pruefungsaufgaben-Beschreibung Saegeanlage",
+        "question_numbers": [
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6",
+          "U7",
+          "U8"
+        ],
+        "evidence": "Printed title and sheet number visually verified against task references; original orientation retained.",
+        "visual_patch_sha256": "c6118fae82578dd17c53d132e9cda9a922e58ab4323b821b470556ac52f5f250",
+        "image": "assets/questions/3c73ac9a5c66206d412e510e/expansion.2025.1-eb5dd8f8b803/attachment-13-0.png",
+        "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804"
+      },
+      {
+        "page": 23,
+        "bbox": [
+          54.312,
+          20.8189,
+          569.904,
+          813.4257
+        ],
+        "role": "SPS-Programm Blatt 1(4)",
+        "question_numbers": [
+          "U3"
+        ],
+        "evidence": "Printed title and sheet number visually verified against task references; original orientation retained.",
+        "visual_patch_sha256": "677318d372a13174aead93f69ea8a91d07220253bd173f5023b23dbb35158056",
+        "image": "assets/questions/3c73ac9a5c66206d412e510e/expansion.2025.1-eb5dd8f8b803/attachment-23-1.png",
+        "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804"
+      },
+      {
+        "page": 24,
+        "bbox": [
+          55.056,
+          20.0754,
+          568.416,
+          811.9387
+        ],
+        "role": "Stromlaufplan Blatt 2(4)",
+        "question_numbers": [
+          "U3"
+        ],
+        "evidence": "Printed title and sheet number visually verified against task references; original orientation retained.",
+        "visual_patch_sha256": "329b2964167e60a9b416a388bfaec08bdcb10a3c2b2d5a9e5b050f798273c3ca",
+        "image": "assets/questions/3c73ac9a5c66206d412e510e/expansion.2025.1-eb5dd8f8b803/attachment-24-2.png",
+        "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804"
+      },
+      {
+        "page": 25,
+        "bbox": [
+          49.848,
+          21.5625,
+          567.672,
+          820.1175
+        ],
+        "role": "Schwenkzylinder Blatt 3(4)",
+        "question_numbers": [
+          "U8"
+        ],
+        "evidence": "Printed title and sheet number visually verified against task references; original orientation retained.",
+        "visual_patch_sha256": "684c5e12d8d24508f841c264db84ee0c723cd30ff4bd43d2774e38366fb6b4e1",
+        "image": "assets/questions/3c73ac9a5c66206d412e510e/expansion.2025.1-eb5dd8f8b803/attachment-25-3.png",
+        "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804"
+      },
+      {
+        "page": 26,
+        "bbox": [
+          55.8,
+          22.306,
+          571.392,
+          812.6822
+        ],
+        "role": "Stueckliste Schwenkzylinder Blatt 4(4)",
+        "question_numbers": [
+          "U8"
+        ],
+        "evidence": "Printed title and sheet number visually verified against task references; original orientation retained.",
+        "visual_patch_sha256": "080e7d59c392e0497724b9f8a15daff932117c9eface5c01da04b375e7a1447e",
+        "image": "assets/questions/3c73ac9a5c66206d412e510e/expansion.2025.1-eb5dd8f8b803/attachment-26-4.png",
+        "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804"
+      }
+    ]
+  },
+  {
+    "code": "fa",
+    "stage": "formal",
+    "status": "formal_segmented",
+    "observed": 36,
+    "expected": 36,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 26,
+    "revision": "expansion.2025.1-eb5dd8f8b803",
+    "source_id": "src-aadad6ebe77abc53c35c6139",
+    "source_hash": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 36,
+    "attachments": [
+      {
+        "page": 13,
+        "bbox": [
+          38.688,
+          13.3836,
+          566.184,
+          811.9387
+        ],
+        "role": "Pruefungsaufgaben-Beschreibung Saegeanlage",
+        "question_numbers": [
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6",
+          "U7",
+          "U8"
+        ],
+        "evidence": "Printed title and sheet number visually verified against task references; original orientation retained.",
+        "visual_patch_sha256": "c6118fae82578dd17c53d132e9cda9a922e58ab4323b821b470556ac52f5f250",
+        "image": "assets/questions/3c73ac9a5c66206d412e510e/expansion.2025.1-eb5dd8f8b803/attachment-13-0.png",
+        "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804"
+      },
+      {
+        "page": 23,
+        "bbox": [
+          54.312,
+          20.8189,
+          569.904,
+          813.4257
+        ],
+        "role": "SPS-Programm Blatt 1(4)",
+        "question_numbers": [
+          "U3"
+        ],
+        "evidence": "Printed title and sheet number visually verified against task references; original orientation retained.",
+        "visual_patch_sha256": "677318d372a13174aead93f69ea8a91d07220253bd173f5023b23dbb35158056",
+        "image": "assets/questions/3c73ac9a5c66206d412e510e/expansion.2025.1-eb5dd8f8b803/attachment-23-1.png",
+        "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804"
+      },
+      {
+        "page": 24,
+        "bbox": [
+          55.056,
+          20.0754,
+          568.416,
+          811.9387
+        ],
+        "role": "Stromlaufplan Blatt 2(4)",
+        "question_numbers": [
+          "U3"
+        ],
+        "evidence": "Printed title and sheet number visually verified against task references; original orientation retained.",
+        "visual_patch_sha256": "329b2964167e60a9b416a388bfaec08bdcb10a3c2b2d5a9e5b050f798273c3ca",
+        "image": "assets/questions/3c73ac9a5c66206d412e510e/expansion.2025.1-eb5dd8f8b803/attachment-24-2.png",
+        "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804"
+      },
+      {
+        "page": 25,
+        "bbox": [
+          49.848,
+          21.5625,
+          567.672,
+          820.1175
+        ],
+        "role": "Schwenkzylinder Blatt 3(4)",
+        "question_numbers": [
+          "U8"
+        ],
+        "evidence": "Printed title and sheet number visually verified against task references; original orientation retained.",
+        "visual_patch_sha256": "684c5e12d8d24508f841c264db84ee0c723cd30ff4bd43d2774e38366fb6b4e1",
+        "image": "assets/questions/3c73ac9a5c66206d412e510e/expansion.2025.1-eb5dd8f8b803/attachment-25-3.png",
+        "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804"
+      },
+      {
+        "page": 26,
+        "bbox": [
+          55.8,
+          22.306,
+          571.392,
+          812.6822
+        ],
+        "role": "Stueckliste Schwenkzylinder Blatt 4(4)",
+        "question_numbers": [
+          "U8"
+        ],
+        "evidence": "Printed title and sheet number visually verified against task references; original orientation retained.",
+        "visual_patch_sha256": "080e7d59c392e0497724b9f8a15daff932117c9eface5c01da04b375e7a1447e",
+        "image": "assets/questions/3c73ac9a5c66206d412e510e/expansion.2025.1-eb5dd8f8b803/attachment-26-4.png",
+        "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804"
+      }
+    ]
+  },
+  {
+    "code": "fa",
+    "stage": "answers",
+    "choice_expected": 28,
+    "choice_records": 28,
+    "u_expected": 8,
+    "u_records": 8,
+    "review_list": [
+      {
+        "question_number": 3,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 4,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 5,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 6,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 7,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 10,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 11,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 13,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 14,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 15,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 16,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 17,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 18,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 19,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 20,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 22,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      }
+    ],
+    "status": "blocked",
+    "revision": "2025-fa-2f.1.0-ab397cb06101",
+    "pdf_pages_opened": 0
+  },
+  {
+    "code": "wiso",
+    "stage": "preview",
+    "status": "preview_ready",
+    "observed": 24,
+    "expected": 24,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 16,
+    "revision": "expansion.2025.1-97c981a74011",
+    "source_id": "src-0dac89f8c7cc741cdc9e32f8",
+    "source_hash": "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 24,
+    "attachments": [
+      {
+        "page": 3,
+        "bbox": [
+          50.261,
+          295.547,
+          534.357,
+          540.183
+        ],
+        "role": "Pruefungsaufgaben-Beschreibung",
+        "question_numbers": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6"
+        ],
+        "evidence": "Marking-sheet example above shared Pruefungsaufgaben-Beschreibung: Emma Schmidt, Moritz Meyer and Chemical GmbH.",
+        "image": "assets/questions/7698d7b69fcc99a35ae4bc4a/expansion.2025.1-97c981a74011/attachment-3-0.png",
+        "source_sha256": "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468"
+      }
+    ]
+  },
+  {
+    "code": "wiso",
+    "stage": "formal",
+    "status": "formal_segmented",
+    "observed": 24,
+    "expected": 24,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "issues": [],
+    "all_pages_classified": 16,
+    "revision": "expansion.2025.1-97c981a74011",
+    "source_id": "src-0dac89f8c7cc741cdc9e32f8",
+    "source_hash": "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468",
+    "profile_id": "portrait-explicit-regions",
+    "validated_sources": [
+      "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468"
+    ],
+    "pdf_pages_opened": 0,
+    "pdf_pages_rendered": 0,
+    "questions": 24,
+    "attachments": [
+      {
+        "page": 3,
+        "bbox": [
+          50.261,
+          295.547,
+          534.357,
+          540.183
+        ],
+        "role": "Pruefungsaufgaben-Beschreibung",
+        "question_numbers": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "U1",
+          "U2",
+          "U3",
+          "U4",
+          "U5",
+          "U6"
+        ],
+        "evidence": "Marking-sheet example above shared Pruefungsaufgaben-Beschreibung: Emma Schmidt, Moritz Meyer and Chemical GmbH.",
+        "image": "assets/questions/7698d7b69fcc99a35ae4bc4a/expansion.2025.1-97c981a74011/attachment-3-0.png",
+        "source_sha256": "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468"
+      }
+    ]
+  },
+  {
+    "code": "wiso",
+    "stage": "answers",
+    "choice_expected": 18,
+    "choice_records": 18,
+    "u_expected": 6,
+    "u_records": 6,
+    "review_list": [
+      {
+        "question_number": 5,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 6,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 7,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 8,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 9,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 11,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 12,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 13,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 15,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 16,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      },
+      {
+        "question_number": 18,
+        "reasons": [
+          "no_unique_circle",
+          "threshold_disagreement"
+        ]
+      }
+    ],
+    "status": "blocked",
+    "revision": "2025-wiso-2f.1.0-729e67bf642a",
+    "pdf_pages_opened": 0
+  }
+]

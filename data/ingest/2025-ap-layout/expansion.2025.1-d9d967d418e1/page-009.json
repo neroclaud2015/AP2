@@ -1,0 +1,99 @@
+{
+  "key": "bfb5601f12bf05d8b882496a9af0404e01b671e4f5e9a45028211b54429a270f",
+  "record_hash": "0230321a4daf60a3aa0b0d780d06e51f5ce8e054a5f79d96b27597879c170235",
+  "record": {
+    "page": 9,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Independently inspected printed headings and ruled panel boundaries.",
+    "anchors": [
+      {
+        "anchor_id": "2025-ap-p9-25",
+        "number": "25",
+        "bbox": [
+          49.97182,
+          55.72564,
+          91.97182000000001,
+          82.72564
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 25 visually read on cached physical page 9; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "3e72a425d0ccd55faebc697570be783be92779938a16ac28a72a04bfa579aeb6"
+      },
+      {
+        "anchor_id": "2025-ap-p9-26",
+        "number": "26",
+        "bbox": [
+          49.97182,
+          297.35199,
+          91.97182000000001,
+          324.35199
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 26 visually read on cached physical page 9; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "a132e8d5e63755d140b42bd14591195da7c1f4e727bef8b07a4172297b6bad53"
+      }
+    ],
+    "regions": [
+      {
+        "page": 9,
+        "bbox": [
+          49.97182,
+          55.72564,
+          538.98172,
+          292.44813
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p9-25",
+        "evidence": "Three complete relay/SPS variants. Complete ruled question panel and response space retained."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          49.97182,
+          297.35199,
+          538.98172,
+          534.52029
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p9-26",
+        "evidence": "RC circuit and five waveform options; next-page instruction below is not a continuation. Complete ruled question panel and response space retained."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "25",
+        "bbox": [
+          49.97182,
+          55.72564,
+          91.97182000000001,
+          82.72564
+        ],
+        "pixel_sha256": "3e72a425d0ccd55faebc697570be783be92779938a16ac28a72a04bfa579aeb6",
+        "audited_pixel_sha256": "3e72a425d0ccd55faebc697570be783be92779938a16ac28a72a04bfa579aeb6"
+      },
+      {
+        "kind": "heading",
+        "number": "26",
+        "bbox": [
+          49.97182,
+          297.35199,
+          91.97182000000001,
+          324.35199
+        ],
+        "pixel_sha256": "a132e8d5e63755d140b42bd14591195da7c1f4e727bef8b07a4172297b6bad53",
+        "audited_pixel_sha256": "a132e8d5e63755d140b42bd14591195da7c1f4e727bef8b07a4172297b6bad53"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

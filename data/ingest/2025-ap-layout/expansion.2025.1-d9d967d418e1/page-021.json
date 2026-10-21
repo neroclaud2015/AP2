@@ -1,0 +1,61 @@
+{
+  "key": "0675bd5f6f2a319243ad8a09f3d8a468d84305d755e483e685b1ce57656a4d1c",
+  "record_hash": "15dfda4d5e8aab35570cc507f27e396661cc6791fc00e110bde8711912c8b4e1",
+  "record": {
+    "page": 21,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Independently inspected printed headings and ruled panel boundaries.",
+    "anchors": [
+      {
+        "anchor_id": "2025-ap-p21-U8",
+        "number": "U8",
+        "bbox": [
+          39.26357,
+          19.16962,
+          81.26357,
+          46.169619999999995
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U8 visually read on cached physical page 21; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "3e7a3ab917c5e460db27cfdfe21512ccca3bab50c0cd8b8ce384aecd5935fbff"
+      }
+    ],
+    "regions": [
+      {
+        "page": 21,
+        "bbox": [
+          39.26357,
+          19.16962,
+          566.64469,
+          631.25999
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p21-U8",
+        "evidence": "Recommissioning and operating instructions; committee scoring section excluded Complete ruled question panel and response space retained."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U8",
+        "bbox": [
+          39.26357,
+          19.16962,
+          81.26357,
+          46.169619999999995
+        ],
+        "pixel_sha256": "3e7a3ab917c5e460db27cfdfe21512ccca3bab50c0cd8b8ce384aecd5935fbff",
+        "audited_pixel_sha256": "3e7a3ab917c5e460db27cfdfe21512ccca3bab50c0cd8b8ce384aecd5935fbff"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

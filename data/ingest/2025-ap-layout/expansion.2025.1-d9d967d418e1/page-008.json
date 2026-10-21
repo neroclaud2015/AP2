@@ -1,0 +1,175 @@
+{
+  "key": "d585195bb6c1c6106842d54ed9cb39c0c56dfb7ca31348ae0d6b519fb82f659e",
+  "record_hash": "b474aac75794ef52e8f51bb00b462568535fc45fcc670f2f93e84b1e5166878d",
+  "record": {
+    "page": 8,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Independently inspected printed headings and ruled panel boundaries.",
+    "anchors": [
+      {
+        "anchor_id": "2025-ap-p8-21",
+        "number": "21",
+        "bbox": [
+          57.11065,
+          58.84627,
+          99.11064999999999,
+          85.84627
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 21 visually read on cached physical page 8; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "fd029a354fc2210eb56ced7d7ac89f653e0333ae56e035c35063e8962321736e"
+      },
+      {
+        "anchor_id": "2025-ap-p8-22",
+        "number": "22",
+        "bbox": [
+          57.11065,
+          300.47262,
+          99.11064999999999,
+          327.47262
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 22 visually read on cached physical page 8; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "65fdcf2090d39f1fe75e049f3482740462266e59331922a1274beef75526d62b"
+      },
+      {
+        "anchor_id": "2025-ap-p8-23",
+        "number": "23",
+        "bbox": [
+          57.11065,
+          541.65317,
+          99.11064999999999,
+          568.65317
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 23 visually read on cached physical page 8; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "5b2273fc5b403f461eccfbc75b4ce4fe442ad009d38a75d075e478d141fbcc1e"
+      },
+      {
+        "anchor_id": "2025-ap-p8-24",
+        "number": "24",
+        "bbox": [
+          306.07737,
+          541.65317,
+          348.07737,
+          568.65317
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 24 visually read on cached physical page 8; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "b604eebf6f89c87b31b7c7720807da19556c7e0a5b7a0ee3727671b242bc4a90"
+      }
+    ],
+    "regions": [
+      {
+        "page": 8,
+        "bbox": [
+          57.11065,
+          58.84627,
+          544.33584,
+          295.12296
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p8-21",
+        "evidence": "Apparent power and motor nameplate. Complete ruled question panel and response space retained."
+      },
+      {
+        "page": 8,
+        "bbox": [
+          57.11065,
+          300.47262,
+          544.33584,
+          536.30351
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p8-22",
+        "evidence": "Voltage measurement fault and table. Complete ruled question panel and response space retained."
+      },
+      {
+        "page": 8,
+        "bbox": [
+          57.11065,
+          541.65317,
+          298.04618,
+          775.70084
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p8-23",
+        "evidence": "Binary information. Complete ruled question panel and response space retained."
+      },
+      {
+        "page": 8,
+        "bbox": [
+          306.07737,
+          541.65317,
+          544.33584,
+          775.70084
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p8-24",
+        "evidence": "Exclusive OR. Complete ruled question panel and response space retained."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "21",
+        "bbox": [
+          57.11065,
+          58.84627,
+          99.11064999999999,
+          85.84627
+        ],
+        "pixel_sha256": "fd029a354fc2210eb56ced7d7ac89f653e0333ae56e035c35063e8962321736e",
+        "audited_pixel_sha256": "fd029a354fc2210eb56ced7d7ac89f653e0333ae56e035c35063e8962321736e"
+      },
+      {
+        "kind": "heading",
+        "number": "22",
+        "bbox": [
+          57.11065,
+          300.47262,
+          99.11064999999999,
+          327.47262
+        ],
+        "pixel_sha256": "65fdcf2090d39f1fe75e049f3482740462266e59331922a1274beef75526d62b",
+        "audited_pixel_sha256": "65fdcf2090d39f1fe75e049f3482740462266e59331922a1274beef75526d62b"
+      },
+      {
+        "kind": "heading",
+        "number": "23",
+        "bbox": [
+          57.11065,
+          541.65317,
+          99.11064999999999,
+          568.65317
+        ],
+        "pixel_sha256": "5b2273fc5b403f461eccfbc75b4ce4fe442ad009d38a75d075e478d141fbcc1e",
+        "audited_pixel_sha256": "5b2273fc5b403f461eccfbc75b4ce4fe442ad009d38a75d075e478d141fbcc1e"
+      },
+      {
+        "kind": "heading",
+        "number": "24",
+        "bbox": [
+          306.07737,
+          541.65317,
+          348.07737,
+          568.65317
+        ],
+        "pixel_sha256": "b604eebf6f89c87b31b7c7720807da19556c7e0a5b7a0ee3727671b242bc4a90",
+        "audited_pixel_sha256": "b604eebf6f89c87b31b7c7720807da19556c7e0a5b7a0ee3727671b242bc4a90"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

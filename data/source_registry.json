@@ -45134,6 +45134,966 @@
           }
         }
       ]
+    },
+    {
+      "source_id": "src-83cb5eb0c954fca5996a8152",
+      "exam": "2025-sommer",
+      "module": "arbeitsplanung",
+      "source_type": "question_pdf",
+      "filename": "Mech_AP2_S25_AP_A&B&Zeichnungen.pdf",
+      "sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b",
+      "version": 1,
+      "status": "answers_extracted",
+      "layout_profile": "portrait-explicit-regions@expansion.2025.1-d9d967d418e1",
+      "answer_profile": "ring-annulus-explicit@2f.1.0",
+      "supersedes_source_id": null,
+      "created_at": "2026-10-21T12:39:02.655460+00:00",
+      "identity_migration": null,
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b.json": "a7a117adb8e3275972860110eaffa178b7bec146e61ca1442c3082dfbf608428"
+          }
+        },
+        "profile_matched": {
+          "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2025_ap.json": "83dd79bd5d55c0eaf2ac9fbef3e3303bd780925332032a9f1ac65975dfed2151"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "profile_id": "portrait-explicit-regions",
+          "validated_sources": [
+            "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b"
+          ]
+        },
+        "layout_validated": {
+          "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b",
+          "result": "passed",
+          "artifacts": {
+            "docs/evidence/phase2f/2025-ap/layout-validation.json": "312341df1a9f7b617b57e06b5ed658f7bb1047b4406b07c13f0f3ed65fa89a88"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "preview_ready": {
+          "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b",
+          "result": "passed",
+          "artifacts": {
+            "docs/evidence/phase2f/2025-ap/preview-manifest.json": "e41ba1f60d1acbad4161b27a7a2a896be299897985b6edfd87257083d33766f6",
+            "docs/evidence/phase2f/2025-ap/index.html": "af18f5017fa807d4bf8b619d185f4b9855e3636c732d82448645cd6768c460af",
+            "docs/evidence/phase2f/2025-ap/layout-validation.json": "312341df1a9f7b617b57e06b5ed658f7bb1047b4406b07c13f0f3ed65fa89a88"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "formal_segmented": {
+          "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2025_sommer_arbeitsplanung_segmented.json": "4de85aca46a9204b996d82192d4c097ca0edaaca045383374d43e7384cbeb763",
+            "public/data/2025_sommer_arbeitsplanung_segmented.json": "4de85aca46a9204b996d82192d4c097ca0edaaca045383374d43e7384cbeb763"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "answers_extracted": {
+          "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2025_sommer_arbeitsplanung_answers.json": "98121f5cab89b5218626314adfb0d14d4aa7913551633c210841a507f3364318",
+            "public/data/2025_sommer_arbeitsplanung_answers.json": "98121f5cab89b5218626314adfb0d14d4aa7913551633c210841a507f3364318",
+            "data/exams/2025_sommer_arbeitsplanung_u_solutions.json": "dfa5003a9335d24427fa96b2d661ccc0b5999c2bcabdf9be51dee979e991088d",
+            "public/data/2025_sommer_arbeitsplanung_u_solutions.json": "dfa5003a9335d24427fa96b2d661ccc0b5999c2bcabdf9be51dee979e991088d"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        }
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-10-21T12:39:02.655460+00:00"
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-10-21T12:39:04.066937+00:00",
+          "evidence": {
+            "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b.json": "a7a117adb8e3275972860110eaffa178b7bec146e61ca1442c3082dfbf608428"
+            }
+          }
+        },
+        {
+          "stage": "profile_matched",
+          "at": "2026-10-21T12:43:39.325559+00:00",
+          "evidence": {
+            "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2025_ap.json": "83dd79bd5d55c0eaf2ac9fbef3e3303bd780925332032a9f1ac65975dfed2151"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "profile_id": "portrait-explicit-regions",
+            "validated_sources": [
+              "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b"
+            ]
+          }
+        },
+        {
+          "stage": "layout_validated",
+          "at": "2026-10-21T12:43:40.943962+00:00",
+          "evidence": {
+            "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b",
+            "result": "passed",
+            "artifacts": {
+              "docs/evidence/phase2f/2025-ap/layout-validation.json": "312341df1a9f7b617b57e06b5ed658f7bb1047b4406b07c13f0f3ed65fa89a88"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "preview_ready",
+          "at": "2026-10-21T12:43:49.693054+00:00",
+          "evidence": {
+            "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b",
+            "result": "passed",
+            "artifacts": {
+              "docs/evidence/phase2f/2025-ap/preview-manifest.json": "e41ba1f60d1acbad4161b27a7a2a896be299897985b6edfd87257083d33766f6",
+              "docs/evidence/phase2f/2025-ap/index.html": "af18f5017fa807d4bf8b619d185f4b9855e3636c732d82448645cd6768c460af",
+              "docs/evidence/phase2f/2025-ap/layout-validation.json": "312341df1a9f7b617b57e06b5ed658f7bb1047b4406b07c13f0f3ed65fa89a88"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "formal_segmented",
+          "at": "2026-10-21T12:44:00.317294+00:00",
+          "evidence": {
+            "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2025_sommer_arbeitsplanung_segmented.json": "4de85aca46a9204b996d82192d4c097ca0edaaca045383374d43e7384cbeb763",
+              "public/data/2025_sommer_arbeitsplanung_segmented.json": "4de85aca46a9204b996d82192d4c097ca0edaaca045383374d43e7384cbeb763"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "answers_extracted",
+          "at": "2026-10-21T12:44:08.826009+00:00",
+          "evidence": {
+            "source_sha256": "af36c5ca152eaf0d3459e94093b0a3574a417f760c56217187325fca07cfab2b",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2025_sommer_arbeitsplanung_answers.json": "98121f5cab89b5218626314adfb0d14d4aa7913551633c210841a507f3364318",
+              "public/data/2025_sommer_arbeitsplanung_answers.json": "98121f5cab89b5218626314adfb0d14d4aa7913551633c210841a507f3364318",
+              "data/exams/2025_sommer_arbeitsplanung_u_solutions.json": "dfa5003a9335d24427fa96b2d661ccc0b5999c2bcabdf9be51dee979e991088d",
+              "public/data/2025_sommer_arbeitsplanung_u_solutions.json": "dfa5003a9335d24427fa96b2d661ccc0b5999c2bcabdf9be51dee979e991088d"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "src-e428b28e0f27c31e15f1aa4a",
+      "exam": "2025-sommer",
+      "module": "arbeitsplanung",
+      "source_type": "solution_pdf",
+      "filename": "Mech_AP2_S25_Lösungen.pdf",
+      "sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+      "version": 1,
+      "status": "answers_extracted",
+      "layout_profile": "portrait-explicit-regions@expansion.2025.1-d9d967d418e1",
+      "answer_profile": "official-ring-grid@2025-ap-2f.1.0-a8f455b81706",
+      "supersedes_source_id": null,
+      "created_at": "2026-10-21T12:39:02.707915+00:00",
+      "identity_migration": null,
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9.json": "116acce3735b812065742e100ee3cc7e83c39cdead253a0c80c0b90f00527b9f"
+          }
+        },
+        "profile_matched": {
+          "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2025_ap_official.json": "16c4bf409b366617a4604c87b34c22bd9e27928adb6aff2c883e3130d30d52df"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "layout_validated": {
+          "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2025_ap_official.json": "16c4bf409b366617a4604c87b34c22bd9e27928adb6aff2c883e3130d30d52df",
+            "public/data/2025_sommer_arbeitsplanung_segmented.json": "4de85aca46a9204b996d82192d4c097ca0edaaca045383374d43e7384cbeb763"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "preview_ready": {
+          "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2025_ap_official.json": "16c4bf409b366617a4604c87b34c22bd9e27928adb6aff2c883e3130d30d52df",
+            "public/data/2025_sommer_arbeitsplanung_segmented.json": "4de85aca46a9204b996d82192d4c097ca0edaaca045383374d43e7384cbeb763"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "formal_segmented": {
+          "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2025_ap_official.json": "16c4bf409b366617a4604c87b34c22bd9e27928adb6aff2c883e3130d30d52df",
+            "public/data/2025_sommer_arbeitsplanung_segmented.json": "4de85aca46a9204b996d82192d4c097ca0edaaca045383374d43e7384cbeb763"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "answers_extracted": {
+          "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2025_sommer_arbeitsplanung_answers.json": "98121f5cab89b5218626314adfb0d14d4aa7913551633c210841a507f3364318",
+            "public/data/2025_sommer_arbeitsplanung_answers.json": "98121f5cab89b5218626314adfb0d14d4aa7913551633c210841a507f3364318",
+            "data/exams/2025_sommer_arbeitsplanung_u_solutions.json": "dfa5003a9335d24427fa96b2d661ccc0b5999c2bcabdf9be51dee979e991088d",
+            "public/data/2025_sommer_arbeitsplanung_u_solutions.json": "dfa5003a9335d24427fa96b2d661ccc0b5999c2bcabdf9be51dee979e991088d"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        }
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-10-21T12:39:02.707915+00:00"
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-10-21T12:39:18.067513+00:00",
+          "evidence": {
+            "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9.json": "116acce3735b812065742e100ee3cc7e83c39cdead253a0c80c0b90f00527b9f"
+            }
+          }
+        },
+        {
+          "stage": "profile_matched",
+          "at": "2026-10-21T12:44:02.898996+00:00",
+          "evidence": {
+            "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2025_ap_official.json": "16c4bf409b366617a4604c87b34c22bd9e27928adb6aff2c883e3130d30d52df"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "layout_validated",
+          "at": "2026-10-21T12:44:03.483342+00:00",
+          "evidence": {
+            "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2025_ap_official.json": "16c4bf409b366617a4604c87b34c22bd9e27928adb6aff2c883e3130d30d52df",
+              "public/data/2025_sommer_arbeitsplanung_segmented.json": "4de85aca46a9204b996d82192d4c097ca0edaaca045383374d43e7384cbeb763"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "preview_ready",
+          "at": "2026-10-21T12:44:03.993334+00:00",
+          "evidence": {
+            "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2025_ap_official.json": "16c4bf409b366617a4604c87b34c22bd9e27928adb6aff2c883e3130d30d52df",
+              "public/data/2025_sommer_arbeitsplanung_segmented.json": "4de85aca46a9204b996d82192d4c097ca0edaaca045383374d43e7384cbeb763"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "formal_segmented",
+          "at": "2026-10-21T12:44:04.590607+00:00",
+          "evidence": {
+            "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2025_ap_official.json": "16c4bf409b366617a4604c87b34c22bd9e27928adb6aff2c883e3130d30d52df",
+              "public/data/2025_sommer_arbeitsplanung_segmented.json": "4de85aca46a9204b996d82192d4c097ca0edaaca045383374d43e7384cbeb763"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "answers_extracted",
+          "at": "2026-10-21T12:44:09.393502+00:00",
+          "evidence": {
+            "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2025_sommer_arbeitsplanung_answers.json": "98121f5cab89b5218626314adfb0d14d4aa7913551633c210841a507f3364318",
+              "public/data/2025_sommer_arbeitsplanung_answers.json": "98121f5cab89b5218626314adfb0d14d4aa7913551633c210841a507f3364318",
+              "data/exams/2025_sommer_arbeitsplanung_u_solutions.json": "dfa5003a9335d24427fa96b2d661ccc0b5999c2bcabdf9be51dee979e991088d",
+              "public/data/2025_sommer_arbeitsplanung_u_solutions.json": "dfa5003a9335d24427fa96b2d661ccc0b5999c2bcabdf9be51dee979e991088d"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "src-aadad6ebe77abc53c35c6139",
+      "exam": "2025-sommer",
+      "module": "funktionsanalyse",
+      "source_type": "question_pdf",
+      "filename": "Mech_AP2_S25_FA_A&B&Zeichnungen.pdf",
+      "sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804",
+      "version": 1,
+      "status": "answers_extracted",
+      "layout_profile": "portrait-explicit-regions@expansion.2025.1-eb5dd8f8b803",
+      "answer_profile": "ring-annulus-explicit@2f.1.0",
+      "supersedes_source_id": null,
+      "created_at": "2026-10-21T12:39:02.784913+00:00",
+      "identity_migration": null,
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804.json": "10d8a7cd957213c9161a48f8fe065e66f848a3804360c31773fe96cb924d8400"
+          }
+        },
+        "profile_matched": {
+          "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2025_fa.json": "0966a959a3253df802069542f34be7e4edaf402a23d7749c497b4ee4418f4090"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "profile_id": "portrait-explicit-regions",
+          "validated_sources": [
+            "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804"
+          ]
+        },
+        "layout_validated": {
+          "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804",
+          "result": "passed",
+          "artifacts": {
+            "docs/evidence/phase2f/2025-fa/layout-validation.json": "41362ec8178b6c25d8ab1dc4b97070f7c88cffc15427de5c0c48a3e70f093b37"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "preview_ready": {
+          "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804",
+          "result": "passed",
+          "artifacts": {
+            "docs/evidence/phase2f/2025-fa/preview-manifest.json": "281ffc2759ee7c0aad10b22c581cb91e8b1124f8dfe2edc5cd2f48b7f4505af2",
+            "docs/evidence/phase2f/2025-fa/index.html": "de4a5094972d7d75b9f726922196bd6be1d9dfb68e28f2d0384ea04baaa5fc3f",
+            "docs/evidence/phase2f/2025-fa/layout-validation.json": "41362ec8178b6c25d8ab1dc4b97070f7c88cffc15427de5c0c48a3e70f093b37"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "formal_segmented": {
+          "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2025_sommer_funktionsanalyse_segmented.json": "68dc184df1b45fd6d2233a1fb8a8bbf5e7aa7debc9bbfead98078f0c42cd3992",
+            "public/data/2025_sommer_funktionsanalyse_segmented.json": "68dc184df1b45fd6d2233a1fb8a8bbf5e7aa7debc9bbfead98078f0c42cd3992"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "answers_extracted": {
+          "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2025_sommer_funktionsanalyse_answers.json": "3a186c932a261a1abdfa3352be3ac03d013a32b1ca44bb9b8879b8c8f54a15e9",
+            "public/data/2025_sommer_funktionsanalyse_answers.json": "3a186c932a261a1abdfa3352be3ac03d013a32b1ca44bb9b8879b8c8f54a15e9",
+            "data/exams/2025_sommer_funktionsanalyse_u_solutions.json": "e3a9eba22ed9e60ad8b893497513c1f60b5a47e2944065b11d3f3e0e4746f23d",
+            "public/data/2025_sommer_funktionsanalyse_u_solutions.json": "e3a9eba22ed9e60ad8b893497513c1f60b5a47e2944065b11d3f3e0e4746f23d"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        }
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-10-21T12:39:02.784913+00:00"
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-10-21T12:39:25.846368+00:00",
+          "evidence": {
+            "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804.json": "10d8a7cd957213c9161a48f8fe065e66f848a3804360c31773fe96cb924d8400"
+            }
+          }
+        },
+        {
+          "stage": "profile_matched",
+          "at": "2026-10-21T12:44:10.698122+00:00",
+          "evidence": {
+            "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2025_fa.json": "0966a959a3253df802069542f34be7e4edaf402a23d7749c497b4ee4418f4090"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "profile_id": "portrait-explicit-regions",
+            "validated_sources": [
+              "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804"
+            ]
+          }
+        },
+        {
+          "stage": "layout_validated",
+          "at": "2026-10-21T12:44:12.267775+00:00",
+          "evidence": {
+            "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804",
+            "result": "passed",
+            "artifacts": {
+              "docs/evidence/phase2f/2025-fa/layout-validation.json": "41362ec8178b6c25d8ab1dc4b97070f7c88cffc15427de5c0c48a3e70f093b37"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "preview_ready",
+          "at": "2026-10-21T12:44:21.085459+00:00",
+          "evidence": {
+            "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804",
+            "result": "passed",
+            "artifacts": {
+              "docs/evidence/phase2f/2025-fa/preview-manifest.json": "281ffc2759ee7c0aad10b22c581cb91e8b1124f8dfe2edc5cd2f48b7f4505af2",
+              "docs/evidence/phase2f/2025-fa/index.html": "de4a5094972d7d75b9f726922196bd6be1d9dfb68e28f2d0384ea04baaa5fc3f",
+              "docs/evidence/phase2f/2025-fa/layout-validation.json": "41362ec8178b6c25d8ab1dc4b97070f7c88cffc15427de5c0c48a3e70f093b37"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "formal_segmented",
+          "at": "2026-10-21T12:44:32.823569+00:00",
+          "evidence": {
+            "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2025_sommer_funktionsanalyse_segmented.json": "68dc184df1b45fd6d2233a1fb8a8bbf5e7aa7debc9bbfead98078f0c42cd3992",
+              "public/data/2025_sommer_funktionsanalyse_segmented.json": "68dc184df1b45fd6d2233a1fb8a8bbf5e7aa7debc9bbfead98078f0c42cd3992"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "answers_extracted",
+          "at": "2026-10-21T12:44:41.041363+00:00",
+          "evidence": {
+            "source_sha256": "3c73ac9a5c66206d412e510e1ddbacd3152f3a01b05e8309ecab2e83b4ccf804",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2025_sommer_funktionsanalyse_answers.json": "3a186c932a261a1abdfa3352be3ac03d013a32b1ca44bb9b8879b8c8f54a15e9",
+              "public/data/2025_sommer_funktionsanalyse_answers.json": "3a186c932a261a1abdfa3352be3ac03d013a32b1ca44bb9b8879b8c8f54a15e9",
+              "data/exams/2025_sommer_funktionsanalyse_u_solutions.json": "e3a9eba22ed9e60ad8b893497513c1f60b5a47e2944065b11d3f3e0e4746f23d",
+              "public/data/2025_sommer_funktionsanalyse_u_solutions.json": "e3a9eba22ed9e60ad8b893497513c1f60b5a47e2944065b11d3f3e0e4746f23d"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "src-6ca3d50b6d9011b5fa260912",
+      "exam": "2025-sommer",
+      "module": "funktionsanalyse",
+      "source_type": "solution_pdf",
+      "filename": "Mech_AP2_S25_Lösungen.pdf",
+      "sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+      "version": 1,
+      "status": "answers_extracted",
+      "layout_profile": "portrait-explicit-regions@expansion.2025.1-eb5dd8f8b803",
+      "answer_profile": "official-ring-grid@2025-fa-2f.1.0-ab397cb06101",
+      "supersedes_source_id": null,
+      "created_at": "2026-10-21T12:39:02.828970+00:00",
+      "identity_migration": null,
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9.json": "116acce3735b812065742e100ee3cc7e83c39cdead253a0c80c0b90f00527b9f"
+          }
+        },
+        "profile_matched": {
+          "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2025_fa_official.json": "b5867162c0bcb20bafb4016a6e723c2eee20ec93d07d58b99f72631b0bded3fd"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "layout_validated": {
+          "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2025_fa_official.json": "b5867162c0bcb20bafb4016a6e723c2eee20ec93d07d58b99f72631b0bded3fd",
+            "public/data/2025_sommer_funktionsanalyse_segmented.json": "68dc184df1b45fd6d2233a1fb8a8bbf5e7aa7debc9bbfead98078f0c42cd3992"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "preview_ready": {
+          "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2025_fa_official.json": "b5867162c0bcb20bafb4016a6e723c2eee20ec93d07d58b99f72631b0bded3fd",
+            "public/data/2025_sommer_funktionsanalyse_segmented.json": "68dc184df1b45fd6d2233a1fb8a8bbf5e7aa7debc9bbfead98078f0c42cd3992"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "formal_segmented": {
+          "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2025_fa_official.json": "b5867162c0bcb20bafb4016a6e723c2eee20ec93d07d58b99f72631b0bded3fd",
+            "public/data/2025_sommer_funktionsanalyse_segmented.json": "68dc184df1b45fd6d2233a1fb8a8bbf5e7aa7debc9bbfead98078f0c42cd3992"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "answers_extracted": {
+          "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2025_sommer_funktionsanalyse_answers.json": "3a186c932a261a1abdfa3352be3ac03d013a32b1ca44bb9b8879b8c8f54a15e9",
+            "public/data/2025_sommer_funktionsanalyse_answers.json": "3a186c932a261a1abdfa3352be3ac03d013a32b1ca44bb9b8879b8c8f54a15e9",
+            "data/exams/2025_sommer_funktionsanalyse_u_solutions.json": "e3a9eba22ed9e60ad8b893497513c1f60b5a47e2944065b11d3f3e0e4746f23d",
+            "public/data/2025_sommer_funktionsanalyse_u_solutions.json": "e3a9eba22ed9e60ad8b893497513c1f60b5a47e2944065b11d3f3e0e4746f23d"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        }
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-10-21T12:39:02.828970+00:00"
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-10-21T12:39:43.415818+00:00",
+          "evidence": {
+            "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9.json": "116acce3735b812065742e100ee3cc7e83c39cdead253a0c80c0b90f00527b9f"
+            }
+          }
+        },
+        {
+          "stage": "profile_matched",
+          "at": "2026-10-21T12:44:35.489252+00:00",
+          "evidence": {
+            "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2025_fa_official.json": "b5867162c0bcb20bafb4016a6e723c2eee20ec93d07d58b99f72631b0bded3fd"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "layout_validated",
+          "at": "2026-10-21T12:44:36.071496+00:00",
+          "evidence": {
+            "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2025_fa_official.json": "b5867162c0bcb20bafb4016a6e723c2eee20ec93d07d58b99f72631b0bded3fd",
+              "public/data/2025_sommer_funktionsanalyse_segmented.json": "68dc184df1b45fd6d2233a1fb8a8bbf5e7aa7debc9bbfead98078f0c42cd3992"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "preview_ready",
+          "at": "2026-10-21T12:44:36.590793+00:00",
+          "evidence": {
+            "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2025_fa_official.json": "b5867162c0bcb20bafb4016a6e723c2eee20ec93d07d58b99f72631b0bded3fd",
+              "public/data/2025_sommer_funktionsanalyse_segmented.json": "68dc184df1b45fd6d2233a1fb8a8bbf5e7aa7debc9bbfead98078f0c42cd3992"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "formal_segmented",
+          "at": "2026-10-21T12:44:37.122346+00:00",
+          "evidence": {
+            "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2025_fa_official.json": "b5867162c0bcb20bafb4016a6e723c2eee20ec93d07d58b99f72631b0bded3fd",
+              "public/data/2025_sommer_funktionsanalyse_segmented.json": "68dc184df1b45fd6d2233a1fb8a8bbf5e7aa7debc9bbfead98078f0c42cd3992"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "answers_extracted",
+          "at": "2026-10-21T12:44:41.613717+00:00",
+          "evidence": {
+            "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2025_sommer_funktionsanalyse_answers.json": "3a186c932a261a1abdfa3352be3ac03d013a32b1ca44bb9b8879b8c8f54a15e9",
+              "public/data/2025_sommer_funktionsanalyse_answers.json": "3a186c932a261a1abdfa3352be3ac03d013a32b1ca44bb9b8879b8c8f54a15e9",
+              "data/exams/2025_sommer_funktionsanalyse_u_solutions.json": "e3a9eba22ed9e60ad8b893497513c1f60b5a47e2944065b11d3f3e0e4746f23d",
+              "public/data/2025_sommer_funktionsanalyse_u_solutions.json": "e3a9eba22ed9e60ad8b893497513c1f60b5a47e2944065b11d3f3e0e4746f23d"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "src-0dac89f8c7cc741cdc9e32f8",
+      "exam": "2025-sommer",
+      "module": "wiso",
+      "source_type": "question_pdf",
+      "filename": "Mech_AP2_S25_WiSo.pdf",
+      "sha256": "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468",
+      "version": 1,
+      "status": "answers_extracted",
+      "layout_profile": "portrait-explicit-regions@expansion.2025.1-97c981a74011",
+      "answer_profile": "ring-annulus-explicit@2f.1.0",
+      "supersedes_source_id": null,
+      "created_at": "2026-10-21T12:39:02.886461+00:00",
+      "identity_migration": null,
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468.json": "8f567542fc6c66d5dbac7cce3c855c56f22efbf1ea765abcb65c14a2557b8c5b"
+          }
+        },
+        "profile_matched": {
+          "source_sha256": "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2025_wiso.json": "17b276531e09d34f1512492637e418ce0741df78988b97d6ac3dc27f2db69108"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "profile_id": "portrait-explicit-regions",
+          "validated_sources": [
+            "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468"
+          ]
+        },
+        "layout_validated": {
+          "source_sha256": "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468",
+          "result": "passed",
+          "artifacts": {
+            "docs/evidence/phase2f/2025-wiso/layout-validation.json": "a107bf9912a6f8439b897ad7d163be3cc7d1eb8502dfc2c738a7d1362756ff15"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "preview_ready": {
+          "source_sha256": "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468",
+          "result": "passed",
+          "artifacts": {
+            "docs/evidence/phase2f/2025-wiso/preview-manifest.json": "63da25c1903a140fc1f151801e179378daae586b22a666166bf6cf949c2d30b1",
+            "docs/evidence/phase2f/2025-wiso/index.html": "566ab91e1f83e697f2da3ad58f9d248ddbfd2320a469ed78eb465ba1a8c2494e",
+            "docs/evidence/phase2f/2025-wiso/layout-validation.json": "a107bf9912a6f8439b897ad7d163be3cc7d1eb8502dfc2c738a7d1362756ff15"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "formal_segmented": {
+          "source_sha256": "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2025_sommer_wiso_segmented.json": "1909a3d103b7a58fe144ab954e983bc0c61a3f92d6d5ee0cfcf19f929a90aab0",
+            "public/data/2025_sommer_wiso_segmented.json": "1909a3d103b7a58fe144ab954e983bc0c61a3f92d6d5ee0cfcf19f929a90aab0"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "answers_extracted": {
+          "source_sha256": "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2025_sommer_wiso_answers.json": "f284e0c4d9d47f44de9b10e262712443c42f6213d73e41090ad2734faf0c0649",
+            "public/data/2025_sommer_wiso_answers.json": "f284e0c4d9d47f44de9b10e262712443c42f6213d73e41090ad2734faf0c0649",
+            "data/exams/2025_sommer_wiso_u_solutions.json": "1b9337da3437470c3e7675f80de5e5e97310378193433048a4a346c326b0a19a",
+            "public/data/2025_sommer_wiso_u_solutions.json": "1b9337da3437470c3e7675f80de5e5e97310378193433048a4a346c326b0a19a"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        }
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-10-21T12:39:02.886461+00:00"
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-10-21T12:39:44.313737+00:00",
+          "evidence": {
+            "source_sha256": "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468.json": "8f567542fc6c66d5dbac7cce3c855c56f22efbf1ea765abcb65c14a2557b8c5b"
+            }
+          }
+        },
+        {
+          "stage": "profile_matched",
+          "at": "2026-10-21T12:44:42.902255+00:00",
+          "evidence": {
+            "source_sha256": "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2025_wiso.json": "17b276531e09d34f1512492637e418ce0741df78988b97d6ac3dc27f2db69108"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "profile_id": "portrait-explicit-regions",
+            "validated_sources": [
+              "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468"
+            ]
+          }
+        },
+        {
+          "stage": "layout_validated",
+          "at": "2026-10-21T12:44:44.087064+00:00",
+          "evidence": {
+            "source_sha256": "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468",
+            "result": "passed",
+            "artifacts": {
+              "docs/evidence/phase2f/2025-wiso/layout-validation.json": "a107bf9912a6f8439b897ad7d163be3cc7d1eb8502dfc2c738a7d1362756ff15"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "preview_ready",
+          "at": "2026-10-21T12:44:49.149502+00:00",
+          "evidence": {
+            "source_sha256": "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468",
+            "result": "passed",
+            "artifacts": {
+              "docs/evidence/phase2f/2025-wiso/preview-manifest.json": "63da25c1903a140fc1f151801e179378daae586b22a666166bf6cf949c2d30b1",
+              "docs/evidence/phase2f/2025-wiso/index.html": "566ab91e1f83e697f2da3ad58f9d248ddbfd2320a469ed78eb465ba1a8c2494e",
+              "docs/evidence/phase2f/2025-wiso/layout-validation.json": "a107bf9912a6f8439b897ad7d163be3cc7d1eb8502dfc2c738a7d1362756ff15"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "formal_segmented",
+          "at": "2026-10-21T12:44:55.835338+00:00",
+          "evidence": {
+            "source_sha256": "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2025_sommer_wiso_segmented.json": "1909a3d103b7a58fe144ab954e983bc0c61a3f92d6d5ee0cfcf19f929a90aab0",
+              "public/data/2025_sommer_wiso_segmented.json": "1909a3d103b7a58fe144ab954e983bc0c61a3f92d6d5ee0cfcf19f929a90aab0"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "answers_extracted",
+          "at": "2026-10-21T12:45:02.569516+00:00",
+          "evidence": {
+            "source_sha256": "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2025_sommer_wiso_answers.json": "f284e0c4d9d47f44de9b10e262712443c42f6213d73e41090ad2734faf0c0649",
+              "public/data/2025_sommer_wiso_answers.json": "f284e0c4d9d47f44de9b10e262712443c42f6213d73e41090ad2734faf0c0649",
+              "data/exams/2025_sommer_wiso_u_solutions.json": "1b9337da3437470c3e7675f80de5e5e97310378193433048a4a346c326b0a19a",
+              "public/data/2025_sommer_wiso_u_solutions.json": "1b9337da3437470c3e7675f80de5e5e97310378193433048a4a346c326b0a19a"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "src-8e67ccd027179214e90c5868",
+      "exam": "2025-sommer",
+      "module": "wiso",
+      "source_type": "solution_pdf",
+      "filename": "Mech_AP2_S25_Lösungen.pdf",
+      "sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+      "version": 1,
+      "status": "answers_extracted",
+      "layout_profile": "portrait-explicit-regions@expansion.2025.1-97c981a74011",
+      "answer_profile": "official-ring-grid@2025-wiso-2f.1.0-729e67bf642a",
+      "supersedes_source_id": null,
+      "created_at": "2026-10-21T12:39:02.945342+00:00",
+      "identity_migration": null,
+      "gates": {
+        "hash_verified": {
+          "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+          "result": "passed",
+          "artifacts": {
+            "data/ingest/registered-receipts/8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9.json": "116acce3735b812065742e100ee3cc7e83c39cdead253a0c80c0b90f00527b9f"
+          }
+        },
+        "profile_matched": {
+          "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2025_wiso_official.json": "e19131ba84f42aabbc5386ecf6a72b51b1122ec0400fe5d484861669cabe6ea5"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        },
+        "layout_validated": {
+          "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2025_wiso_official.json": "e19131ba84f42aabbc5386ecf6a72b51b1122ec0400fe5d484861669cabe6ea5",
+            "public/data/2025_sommer_wiso_segmented.json": "1909a3d103b7a58fe144ab954e983bc0c61a3f92d6d5ee0cfcf19f929a90aab0"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "preview_ready": {
+          "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2025_wiso_official.json": "e19131ba84f42aabbc5386ecf6a72b51b1122ec0400fe5d484861669cabe6ea5",
+            "public/data/2025_sommer_wiso_segmented.json": "1909a3d103b7a58fe144ab954e983bc0c61a3f92d6d5ee0cfcf19f929a90aab0"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "formal_segmented": {
+          "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+          "result": "passed",
+          "artifacts": {
+            "scripts/layout_profiles/sommer2025_wiso_official.json": "e19131ba84f42aabbc5386ecf6a72b51b1122ec0400fe5d484861669cabe6ea5",
+            "public/data/2025_sommer_wiso_segmented.json": "1909a3d103b7a58fe144ab954e983bc0c61a3f92d6d5ee0cfcf19f929a90aab0"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+          "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+        },
+        "answers_extracted": {
+          "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+          "result": "passed",
+          "artifacts": {
+            "data/exams/2025_sommer_wiso_answers.json": "f284e0c4d9d47f44de9b10e262712443c42f6213d73e41090ad2734faf0c0649",
+            "public/data/2025_sommer_wiso_answers.json": "f284e0c4d9d47f44de9b10e262712443c42f6213d73e41090ad2734faf0c0649",
+            "data/exams/2025_sommer_wiso_u_solutions.json": "1b9337da3437470c3e7675f80de5e5e97310378193433048a4a346c326b0a19a",
+            "public/data/2025_sommer_wiso_u_solutions.json": "1b9337da3437470c3e7675f80de5e5e97310378193433048a4a346c326b0a19a"
+          },
+          "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+        }
+      },
+      "events": [
+        {
+          "stage": "registered",
+          "at": "2026-10-21T12:39:02.945342+00:00"
+        },
+        {
+          "stage": "hash_verified",
+          "at": "2026-10-21T12:39:54.314307+00:00",
+          "evidence": {
+            "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+            "result": "passed",
+            "artifacts": {
+              "data/ingest/registered-receipts/8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9.json": "116acce3735b812065742e100ee3cc7e83c39cdead253a0c80c0b90f00527b9f"
+            }
+          }
+        },
+        {
+          "stage": "profile_matched",
+          "at": "2026-10-21T12:44:58.040122+00:00",
+          "evidence": {
+            "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2025_wiso_official.json": "e19131ba84f42aabbc5386ecf6a72b51b1122ec0400fe5d484861669cabe6ea5"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        },
+        {
+          "stage": "layout_validated",
+          "at": "2026-10-21T12:44:58.624935+00:00",
+          "evidence": {
+            "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2025_wiso_official.json": "e19131ba84f42aabbc5386ecf6a72b51b1122ec0400fe5d484861669cabe6ea5",
+              "public/data/2025_sommer_wiso_segmented.json": "1909a3d103b7a58fe144ab954e983bc0c61a3f92d6d5ee0cfcf19f929a90aab0"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "preview_ready",
+          "at": "2026-10-21T12:44:59.183586+00:00",
+          "evidence": {
+            "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2025_wiso_official.json": "e19131ba84f42aabbc5386ecf6a72b51b1122ec0400fe5d484861669cabe6ea5",
+              "public/data/2025_sommer_wiso_segmented.json": "1909a3d103b7a58fe144ab954e983bc0c61a3f92d6d5ee0cfcf19f929a90aab0"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "formal_segmented",
+          "at": "2026-10-21T12:44:59.809301+00:00",
+          "evidence": {
+            "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+            "result": "passed",
+            "artifacts": {
+              "scripts/layout_profiles/sommer2025_wiso_official.json": "e19131ba84f42aabbc5386ecf6a72b51b1122ec0400fe5d484861669cabe6ea5",
+              "public/data/2025_sommer_wiso_segmented.json": "1909a3d103b7a58fe144ab954e983bc0c61a3f92d6d5ee0cfcf19f929a90aab0"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256",
+            "basis": "Exact source-image hashes and visually reviewed official column labels/U ownership; question preview accepted before answer extraction"
+          }
+        },
+        {
+          "stage": "answers_extracted",
+          "at": "2026-10-21T12:45:03.169190+00:00",
+          "evidence": {
+            "source_sha256": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+            "result": "passed",
+            "artifacts": {
+              "data/exams/2025_sommer_wiso_answers.json": "f284e0c4d9d47f44de9b10e262712443c42f6213d73e41090ad2734faf0c0649",
+              "public/data/2025_sommer_wiso_answers.json": "f284e0c4d9d47f44de9b10e262712443c42f6213d73e41090ad2734faf0c0649",
+              "data/exams/2025_sommer_wiso_u_solutions.json": "1b9337da3437470c3e7675f80de5e5e97310378193433048a4a346c326b0a19a",
+              "public/data/2025_sommer_wiso_u_solutions.json": "1b9337da3437470c3e7675f80de5e5e97310378193433048a4a346c326b0a19a"
+            },
+            "artifact_hash_algorithm": "canonical-json-utf8-or-binary-sha256"
+          }
+        }
+      ]
     }
   ]
 }

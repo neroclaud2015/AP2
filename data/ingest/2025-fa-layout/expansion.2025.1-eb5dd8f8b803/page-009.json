@@ -1,0 +1,99 @@
+{
+  "key": "6d4b5d0efdcb84c831eae0b812bcac121428bac13d56608aae3928c66e59af8e",
+  "record_hash": "6b3aa6f1a29c3175bf6159a66a5586cf8eb0a116829e81eb03973531ded76ecb",
+  "record": {
+    "page": 9,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Individually visually inspected cached physical page; printed anchors and ruled task boundaries verified.",
+    "anchors": [
+      {
+        "anchor_id": "2025-fa-p9-25",
+        "number": "25",
+        "bbox": [
+          51.336,
+          55.765,
+          89.336,
+          80.765
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 25 visually read on cached physical page 9.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "f924f57c0e2d2ad234055c56bbe7dded95cf4ae956c0b46eda22a3d5d48289fc"
+      },
+      {
+        "anchor_id": "2025-fa-p9-26",
+        "number": "26",
+        "bbox": [
+          52.08,
+          535.3442,
+          90.08,
+          560.3442
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 26 visually read on cached physical page 9.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "5cfffdf9d7d921488ecd738d787906d351abecc9528a5faeb10fe4b3649d5216"
+      }
+    ],
+    "regions": [
+      {
+        "page": 9,
+        "bbox": [
+          51.336,
+          55.765,
+          538.656,
+          530.883
+        ],
+        "role": "primary",
+        "owner": "2025-fa-p9-25",
+        "evidence": "Verified complete question, choices, diagrams and response fields; adjacent tasks excluded."
+      },
+      {
+        "page": 9,
+        "bbox": [
+          52.08,
+          535.3442,
+          538.656,
+          775.5055
+        ],
+        "role": "primary",
+        "owner": "2025-fa-p9-26",
+        "evidence": "Verified complete question, choices, diagrams and response fields; adjacent tasks excluded."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "25",
+        "bbox": [
+          51.336,
+          55.765,
+          89.336,
+          80.765
+        ],
+        "pixel_sha256": "f924f57c0e2d2ad234055c56bbe7dded95cf4ae956c0b46eda22a3d5d48289fc",
+        "audited_pixel_sha256": "f924f57c0e2d2ad234055c56bbe7dded95cf4ae956c0b46eda22a3d5d48289fc"
+      },
+      {
+        "kind": "heading",
+        "number": "26",
+        "bbox": [
+          52.08,
+          535.3442,
+          90.08,
+          560.3442
+        ],
+        "pixel_sha256": "5cfffdf9d7d921488ecd738d787906d351abecc9528a5faeb10fe4b3649d5216",
+        "audited_pixel_sha256": "5cfffdf9d7d921488ecd738d787906d351abecc9528a5faeb10fe4b3649d5216"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

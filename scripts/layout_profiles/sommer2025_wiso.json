@@ -1,0 +1,923 @@
+{
+  "profile_id": "portrait-explicit-regions",
+  "scope": "2025-wiso",
+  "version": "expansion.2025.1",
+  "exam": "2025_sommer",
+  "module": "WiSo",
+  "source_hash": "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468",
+  "source_id": "src-0dac89f8c7cc741cdc9e32f8",
+  "solution_source_id": "src-8e67ccd027179214e90c5868",
+  "validated_sources": [
+    "7698d7b69fcc99a35ae4bc4a228fe31dd87ca22c079149fd4e6fde77d8475468"
+  ],
+  "name": "2025_sommer_wiso",
+  "expected": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6"
+  ],
+  "pages": {
+    "1": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Cover: Sommer 2025, 13.05.2025, Wirtschafts- und Sozialkunde; printed 60 min.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "2": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Instructions: 60 min; 18 bound and 6 unbound questions; choose 15 bound and 5 unbound; attachments none.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "3": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Marking-sheet example above shared Pruefungsaufgaben-Beschreibung: Emma Schmidt, Moritz Meyer and Chemical GmbH.",
+      "slots": [],
+      "explicit_regions": []
+    },
+    "4": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "U1 wage-growth chart and subparts 1 to 3; continues on page 5.",
+      "slots": [
+        {
+          "observed_number": "U1",
+          "heading_box": [
+            66.795,
+            58.845,
+            99.2,
+            79.341
+          ],
+          "visual_patch_sha256": "b9904b609b0c17ddc5e7c5632f0afe0556e359e275456aa4d7912ea05c878f67",
+          "visual_evidence": "Printed U1 visually read on cached physical page 4.",
+          "regions": [
+            [
+              60.843,
+              52.894,
+              543.616,
+              779.529
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U1 wage-growth chart and subparts 1 to 3; continues on page 5. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "5": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "continuation_and_questions",
+      "evidence": "U1 subpart 4 and explicit Ergebnis U1 above separate Q1 Q2 Q3 panels.",
+      "slots": [
+        {
+          "observed_number": "1",
+          "heading_box": [
+            50.923,
+            292.902,
+            72.747,
+            313.399
+          ],
+          "visual_patch_sha256": "afeda2cac5c51945e13d82648315f30508660768c3aab0955928880aa76ac408",
+          "visual_evidence": "Printed 1 visually read on cached physical page 5.",
+          "regions": [
+            [
+              50.261,
+              290.918,
+              292.971,
+              530.265
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U1 subpart 4 and explicit Ergebnis U1 above separate Q1 Q2 Q3 panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        },
+        {
+          "observed_number": "2",
+          "heading_box": [
+            299.584,
+            294.224,
+            323.392,
+            314.06
+          ],
+          "visual_patch_sha256": "84d5fd8f7f6a6498ff3fcec8512df6a39454e1df974e45b4cafc0a1895dc9aad",
+          "visual_evidence": "Printed 2 visually read on cached physical page 5.",
+          "regions": [
+            [
+              296.277,
+              290.918,
+              535.019,
+              532.249
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U1 subpart 4 and explicit Ergebnis U1 above separate Q1 Q2 Q3 panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        },
+        {
+          "observed_number": "3",
+          "heading_box": [
+            50.261,
+            533.571,
+            74.069,
+            554.729
+          ],
+          "visual_patch_sha256": "a7f7b037cb7c6ed4f56aff7486280d28079bbfcb22166ccf2d109c3dec04a69f",
+          "visual_evidence": "Printed 3 visually read on cached physical page 5.",
+          "regions": [
+            [
+              50.261,
+              532.249,
+              292.971,
+              772.256
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U1 subpart 4 and explicit Ergebnis U1 above separate Q1 Q2 Q3 panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        }
+      ],
+      "explicit_regions": [
+        {
+          "bbox": [
+            51.584,
+            46.944,
+            535.68,
+            290.918
+          ],
+          "role": "continuation",
+          "owner": "2025-wiso-p4-U1",
+          "observed_owner_label": "U1",
+          "evidence_box": [
+            491.371,
+            99.177,
+            534.357,
+            122.979
+          ],
+          "visual_patch_sha256": "6b1b65476efdb2a4daa95d09fd61a4320f08cc9080ed03a65b709842ff9eba42",
+          "evidence": "U1 subpart 4 and explicit Ergebnis U1 above separate Q1 Q2 Q3 panels. Ownership proven by printed Ergebnis U1."
+        }
+      ]
+    },
+    "6": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "U2 complete Betriebsvereinbarung task, printed BetrVG section 77, alternatives A to L and response boxes.",
+      "slots": [
+        {
+          "observed_number": "U2",
+          "heading_box": [
+            66.133,
+            62.151,
+            98.539,
+            81.986
+          ],
+          "visual_patch_sha256": "167752662a36716f67d265e1a65c26dd1b1c097412b6522d8a3ab25ba37f6ac1",
+          "visual_evidence": "Printed U2 visually read on cached physical page 6.",
+          "regions": [
+            [
+              59.52,
+              54.878,
+              544.939,
+              781.513
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U2 complete Betriebsvereinbarung task, printed BetrVG section 77, alternatives A to L and response boxes. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "7": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Q4 Q5 Q6 in separate panels.",
+      "slots": [
+        {
+          "observed_number": "4",
+          "heading_box": [
+            51.584,
+            54.217,
+            74.069,
+            74.713
+          ],
+          "visual_patch_sha256": "78206e4520dcb2b4410000c80867d4a1519367aa90ba748083e8524a516acc1f",
+          "visual_evidence": "Printed 4 visually read on cached physical page 7.",
+          "regions": [
+            [
+              50.923,
+              50.25,
+              294.293,
+              290.918
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Q4 Q5 Q6 in separate panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        },
+        {
+          "observed_number": "5",
+          "heading_box": [
+            300.907,
+            54.217,
+            324.053,
+            74.713
+          ],
+          "visual_patch_sha256": "b22319f4ebd6f54de2d7c9c36e524c0819e27b4b2d517f4c341326fca5288892",
+          "visual_evidence": "Printed 5 visually read on cached physical page 7.",
+          "regions": [
+            [
+              297.6,
+              50.25,
+              536.341,
+              292.241
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Q4 Q5 Q6 in separate panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        },
+        {
+          "observed_number": "6",
+          "heading_box": [
+            51.584,
+            294.224,
+            74.069,
+            314.721
+          ],
+          "visual_patch_sha256": "d276bfbf34ecb492976d595fb4b3f9c85e5cef9782049b22d062de920d2b9967",
+          "visual_evidence": "Printed 6 visually read on cached physical page 7.",
+          "regions": [
+            [
+              50.923,
+              292.241,
+              294.955,
+              532.249
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Q4 Q5 Q6 in separate panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "8": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "U3 complete Kaufvertrag diagram, sideways print; source orientation preserved.",
+      "slots": [
+        {
+          "observed_number": "U3",
+          "heading_box": [
+            66.795,
+            742.503,
+            86.635,
+            769.612
+          ],
+          "visual_patch_sha256": "9bbfa245e7741800b5144dd790c0fa75cca040630a1eb98f4a3c2a5447493c60",
+          "visual_evidence": "Printed U3 visually read on cached physical page 8.",
+          "regions": [
+            [
+              58.859,
+              52.233,
+              543.616,
+              779.529
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U3 complete Kaufvertrag diagram, sideways print; source orientation preserved. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "9": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Q7 Q8 Q9 in separate panels.",
+      "slots": [
+        {
+          "observed_number": "7",
+          "heading_box": [
+            58.197,
+            56.2,
+            80.021,
+            76.697
+          ],
+          "visual_patch_sha256": "2d7f891a1f724009dfbd21692dc918f30ec11aad241edc91836d789b2b846a33",
+          "visual_evidence": "Printed 7 visually read on cached physical page 9.",
+          "regions": [
+            [
+              57.536,
+              50.911,
+              301.568,
+              293.563
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Q7 Q8 Q9 in separate panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        },
+        {
+          "observed_number": "8",
+          "heading_box": [
+            308.181,
+            56.861,
+            330.667,
+            78.019
+          ],
+          "visual_patch_sha256": "09a8cf063c9362b440d2bfeac4c253b2bcdd678da3a5aa7ef59ccb43149fdda1",
+          "visual_evidence": "Printed 8 visually read on cached physical page 9.",
+          "regions": [
+            [
+              304.875,
+              50.911,
+              542.293,
+              296.208
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Q7 Q8 Q9 in separate panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        },
+        {
+          "observed_number": "9",
+          "heading_box": [
+            57.536,
+            296.208,
+            80.021,
+            316.704
+          ],
+          "visual_patch_sha256": "c215e4c2a4081d91c05a6f4c8fcd9f37c98a55ef7cef72065db373a99ddaca82",
+          "visual_evidence": "Printed 9 visually read on cached physical page 9.",
+          "regions": [
+            [
+              56.213,
+              294.886,
+              300.907,
+              534.893
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Q7 Q8 Q9 in separate panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "10": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "U4 complete maternity-protection cloze passage and word bank.",
+      "slots": [
+        {
+          "observed_number": "U4",
+          "heading_box": [
+            58.197,
+            59.506,
+            91.925,
+            79.341
+          ],
+          "visual_patch_sha256": "bb46574eb10b2e4f72215cd29cd642065748dd81bb5a8ba33717866d2caceba2",
+          "visual_evidence": "Printed U4 visually read on cached physical page 10.",
+          "regions": [
+            [
+              50.923,
+              52.233,
+              539.648,
+              780.852
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U4 complete maternity-protection cloze passage and word bank. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "11": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Q10 Q11 in separate panels.",
+      "slots": [
+        {
+          "observed_number": "10",
+          "heading_box": [
+            58.197,
+            56.2,
+            88.619,
+            76.697
+          ],
+          "visual_patch_sha256": "62294a59ea323e2cb4815584205817fa30d0d38d6544317bbbb38b504b909f8e",
+          "visual_evidence": "Printed 10 visually read on cached physical page 11.",
+          "regions": [
+            [
+              56.875,
+              50.911,
+              300.907,
+              294.886
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Q10 Q11 in separate panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        },
+        {
+          "observed_number": "11",
+          "heading_box": [
+            307.52,
+            57.523,
+            337.28,
+            78.019
+          ],
+          "visual_patch_sha256": "a1a942c732dc27a175c9701241072ac443e6bb3cefb54d9d4b6a5803ec3fcdaf",
+          "visual_evidence": "Printed 11 visually read on cached physical page 11.",
+          "regions": [
+            [
+              304.213,
+              50.911,
+              541.632,
+              296.869
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Q10 Q11 in separate panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "12": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "U5 heating-emissions chart and subparts 1 and 2; continues on page 13.",
+      "slots": [
+        {
+          "observed_number": "U5",
+          "heading_box": [
+            58.859,
+            60.167,
+            92.587,
+            80.664
+          ],
+          "visual_patch_sha256": "f9dc7fd8e322292a91c3090f4a8de5b0d136b7026a54eb9b366c1ea130571295",
+          "visual_evidence": "Printed U5 visually read on cached physical page 12.",
+          "regions": [
+            [
+              51.584,
+              53.555,
+              538.987,
+              780.852
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U5 heating-emissions chart and subparts 1 and 2; continues on page 13. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "13": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "continuation_and_questions",
+      "evidence": "U5 subpart 3 and explicit Ergebnis U5 above separate Q12 Q13 Q14 Q15 panels.",
+      "slots": [
+        {
+          "observed_number": "12",
+          "heading_box": [
+            58.197,
+            293.563,
+            89.28,
+            314.06
+          ],
+          "visual_patch_sha256": "4b0c4d25b28d06a8e9e75d64d6c06f0924933d77db7a8e5887d4e89a25c150c5",
+          "visual_evidence": "Printed 12 visually read on cached physical page 13.",
+          "regions": [
+            [
+              56.213,
+              292.902,
+              299.584,
+              532.249
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U5 subpart 3 and explicit Ergebnis U5 above separate Q12 Q13 Q14 Q15 panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        },
+        {
+          "observed_number": "13",
+          "heading_box": [
+            306.859,
+            295.547,
+            337.941,
+            316.043
+          ],
+          "visual_patch_sha256": "a00c6f855765655c5e1f5a83d041f762216ca31c7506c20592318ab71726faa7",
+          "visual_evidence": "Printed 13 visually read on cached physical page 13.",
+          "regions": [
+            [
+              302.891,
+              293.563,
+              542.293,
+              534.893
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U5 subpart 3 and explicit Ergebnis U5 above separate Q12 Q13 Q14 Q15 panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        },
+        {
+          "observed_number": "14",
+          "heading_box": [
+            56.875,
+            534.893,
+            88.619,
+            556.051
+          ],
+          "visual_patch_sha256": "e05271591b3c2dc6ffbb535a15a6a1247ba7cc65fbc15c55ca68f57ea56dbdc6",
+          "visual_evidence": "Printed 14 visually read on cached physical page 13.",
+          "regions": [
+            [
+              55.552,
+              534.232,
+              298.261,
+              773.579
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U5 subpart 3 and explicit Ergebnis U5 above separate Q12 Q13 Q14 Q15 panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        },
+        {
+          "observed_number": "15",
+          "heading_box": [
+            305.536,
+            536.877,
+            338.603,
+            557.373
+          ],
+          "visual_patch_sha256": "814a5a17e7bca034d797016c6f46cfd465eaa21c8ce9f780162da65e6c2677ec",
+          "visual_evidence": "Printed 15 visually read on cached physical page 13.",
+          "regions": [
+            [
+              302.229,
+              535.554,
+              540.971,
+              773.579
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U5 subpart 3 and explicit Ergebnis U5 above separate Q12 Q13 Q14 Q15 panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        }
+      ],
+      "explicit_regions": [
+        {
+          "bbox": [
+            58.197,
+            48.266,
+            542.293,
+            292.241
+          ],
+          "role": "continuation",
+          "owner": "2025-wiso-p12-U5",
+          "observed_owner_label": "U5",
+          "evidence_box": [
+            498.645,
+            99.838,
+            540.309,
+            123.64
+          ],
+          "visual_patch_sha256": "e85821bd546869bf89cc2283139be955739d3733909a6f9997ebbae6ea6d8c62",
+          "evidence": "U5 subpart 3 and explicit Ergebnis U5 above separate Q12 Q13 Q14 Q15 panels. Ownership proven by printed Ergebnis U5."
+        }
+      ]
+    },
+    "14": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "U6 complete rent/tenant-rights task with subparts 1 to 4.",
+      "slots": [
+        {
+          "observed_number": "U6",
+          "heading_box": [
+            58.859,
+            60.167,
+            92.587,
+            81.325
+          ],
+          "visual_patch_sha256": "b779022bb792704b95fbd4bd5a8477f49e504b507bcdadd65aa8ef9baf9ffe67",
+          "visual_evidence": "Printed U6 visually read on cached physical page 14.",
+          "regions": [
+            [
+              51.584,
+              52.894,
+              540.309,
+              780.852
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "U6 complete rent/tenant-rights task with subparts 1 to 4. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "15": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "questions",
+      "evidence": "Q16 Q17 Q18 in separate panels.",
+      "slots": [
+        {
+          "observed_number": "16",
+          "heading_box": [
+            59.52,
+            54.878,
+            91.925,
+            76.036
+          ],
+          "visual_patch_sha256": "6fd368dfad3a226dc66f50c3b09827fe790cec14e4e175bc06092abeb6dc1abd",
+          "visual_evidence": "Printed 16 visually read on cached physical page 15.",
+          "regions": [
+            [
+              57.536,
+              50.25,
+              301.568,
+              292.902
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Q16 Q17 Q18 in separate panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        },
+        {
+          "observed_number": "17",
+          "heading_box": [
+            308.843,
+            56.861,
+            340.587,
+            78.019
+          ],
+          "visual_patch_sha256": "acc3ca8951b846d06bb0a298f95e5ba9b453e4ad1e01c2d197988fdc6557b7c0",
+          "visual_evidence": "Printed 17 visually read on cached physical page 15.",
+          "regions": [
+            [
+              305.536,
+              50.911,
+              542.293,
+              296.208
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Q16 Q17 Q18 in separate panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        },
+        {
+          "observed_number": "18",
+          "heading_box": [
+            58.197,
+            296.208,
+            91.264,
+            316.704
+          ],
+          "visual_patch_sha256": "ad996dbf3d245dc28138b46c43ba07d3a0c11c039c44bc93419fe2d706bc7496",
+          "visual_evidence": "Printed 18 visually read on cached physical page 15.",
+          "regions": [
+            [
+              56.875,
+              295.547,
+              300.245,
+              534.893
+            ]
+          ],
+          "roles": [
+            "primary"
+          ],
+          "evidence": "Q16 Q17 Q18 in separate panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+        }
+      ],
+      "explicit_regions": []
+    },
+    "16": {
+      "geometry": [
+        595.2000122070312,
+        841.6799926757812
+      ],
+      "classification": "context_or_cover",
+      "evidence": "Final marking-sheet checklist and examiner scoring panel; no question anchor.",
+      "slots": [],
+      "explicit_regions": []
+    }
+  },
+  "attachment_crops": [
+    {
+      "page": 3,
+      "bbox": [
+        50.261,
+        295.547,
+        534.357,
+        540.183
+      ],
+      "role": "Pruefungsaufgaben-Beschreibung",
+      "question_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6"
+      ],
+      "evidence": "Marking-sheet example above shared Pruefungsaufgaben-Beschreibung: Emma Schmidt, Moritz Meyer and Chemical GmbH."
+    }
+  ],
+  "attachment_refs": {
+    "1": [
+      3
+    ],
+    "2": [
+      3
+    ],
+    "3": [
+      3
+    ],
+    "4": [
+      3
+    ],
+    "5": [
+      3
+    ],
+    "6": [
+      3
+    ],
+    "7": [
+      3
+    ],
+    "8": [
+      3
+    ],
+    "9": [
+      3
+    ],
+    "10": [
+      3
+    ],
+    "11": [
+      3
+    ],
+    "12": [
+      3
+    ],
+    "13": [
+      3
+    ],
+    "14": [
+      3
+    ],
+    "15": [
+      3
+    ],
+    "16": [
+      3
+    ],
+    "17": [
+      3
+    ],
+    "18": [
+      3
+    ],
+    "U1": [
+      3
+    ],
+    "U2": [
+      3
+    ],
+    "U3": [
+      3
+    ],
+    "U4": [
+      3
+    ],
+    "U5": [
+      3
+    ],
+    "U6": [
+      3
+    ]
+  },
+  "timing_minutes": 60,
+  "timing_source_page": 2,
+  "description_page": 3,
+  "configuration_complete": true
+}

@@ -1,0 +1,204 @@
+{
+  "scope": "2025-wiso",
+  "name": "2025_sommer_wiso",
+  "exam": "2025_sommer",
+  "module": "WiSo",
+  "version": "expansion.2025.1",
+  "profile_id": "official-ring-grid",
+  "source_hash": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+  "source_id": "src-8e67ccd027179214e90c5868",
+  "question_source_id": "src-0dac89f8c7cc741cdc9e32f8",
+  "solution_source_id": "src-8e67ccd027179214e90c5868",
+  "validated_sources": [
+    "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9"
+  ],
+  "choice_page": 3,
+  "choice_count": 18,
+  "analysis_size": [
+    993,
+    1404
+  ],
+  "groups": [
+    [
+      1,
+      10,
+      135.8,
+      60.08,
+      390.6,
+      19.94,
+      0,
+      370
+    ],
+    [
+      11,
+      8,
+      135.8,
+      60.08,
+      510.0,
+      19.94,
+      0,
+      490
+    ]
+  ],
+  "grid_crop": [
+    106,
+    356,
+    725,
+    603
+  ],
+  "ring_policy": {
+    "min_ring": 0.4,
+    "support": 0.83,
+    "possible_ring": 0.32,
+    "possible_support": 0.58,
+    "margin": 0.15,
+    "center": 0.1
+  },
+  "header_evidence": "Original Sommer 2025 module title and every printed question column visually verified. Five positions map top to bottom to 1..5; deterministic ring geometry only.",
+  "u_evidence": "All printed U labels and ruled separators visually inspected on cached official Sommer 2025 solution. Formula/diagram/table retained as original image. Whole-question self-assessment; no rubric inferred.",
+  "u_regions": {
+    "U1": {
+      "regions": [
+        {
+          "page": 16,
+          "bbox": [
+            18,
+            233.099,
+            580,
+            482.143
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 16,
+      "heading_box": [
+        18,
+        233.0991483415876,
+        95,
+        260.4332504272461
+      ],
+      "heading_pixel_sha256": "4694a3a729e93953fe6ffd221ecfa3c85fe6b8bb13278f4bd864312756b92a56"
+    },
+    "U2": {
+      "regions": [
+        {
+          "page": 16,
+          "bbox": [
+            18,
+            483.662,
+            580,
+            548.96
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 16,
+      "heading_box": [
+        18,
+        483.661750793457,
+        95,
+        510.9958528791155
+      ],
+      "heading_pixel_sha256": "ae1125124f0aac133ff96ce6f6d473c74d9e09e064485736261e6a9904fd41e7"
+    },
+    "U3": {
+      "regions": [
+        {
+          "page": 16,
+          "bbox": [
+            18,
+            550.478,
+            580,
+            808.634
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 16,
+      "heading_box": [
+        18,
+        550.4784447806222,
+        95,
+        577.8125468662806
+      ],
+      "heading_pixel_sha256": "15d63a7388268960a991981ed7e6288412f67fabf965ab7be4a4ca1f362f0222"
+    },
+    "U4": {
+      "regions": [
+        {
+          "page": 17,
+          "bbox": [
+            18,
+            24.297,
+            580,
+            236.136
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 17,
+      "heading_box": [
+        18,
+        24.296979631696427,
+        95,
+        51.63108171735491
+      ],
+      "heading_pixel_sha256": "355166d7305ba228c2487d471a020f311e306f6b95e2c6f6f1506981d3e674a6"
+    },
+    "U5": {
+      "regions": [
+        {
+          "page": 17,
+          "bbox": [
+            18,
+            237.655,
+            580,
+            477.588
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 17,
+      "heading_box": [
+        18,
+        237.65483202253068,
+        95,
+        264.98893410818914
+      ],
+      "heading_pixel_sha256": "de35d2a05db49c7e4af95beae531c5b20bab109b48a39267aace6dcd8ff8faae"
+    },
+    "U6": {
+      "regions": [
+        {
+          "page": 17,
+          "bbox": [
+            18,
+            479.106,
+            580,
+            803.319
+          ]
+        }
+      ],
+      "count": 0,
+      "diagram_parts": [],
+      "heading_page": 17,
+      "heading_box": [
+        18,
+        479.1060671125139,
+        95,
+        506.4401691981724
+      ],
+      "heading_pixel_sha256": "b003c5ab68c46f5cf6a006a1c24c23c6af0246403c90eae22617d7f417a0c3ed"
+    }
+  },
+  "page_image_hashes": {
+    "3": "d8edaea3c0295aeab2b70194da6b3d23c8591e2a941fd9b3bf4d300ed95eecdc",
+    "16": "64837f1f8f3dacfe081674370b1b79de226f064842a6bf1d1c36baad51661c72",
+    "17": "e99e47d6686f5a320f5383dba9ca653f34de350aedb0a38087bb59eecde6d235"
+  }
+}

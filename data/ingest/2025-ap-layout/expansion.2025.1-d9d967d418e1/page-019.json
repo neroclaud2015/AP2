@@ -1,0 +1,61 @@
+{
+  "key": "b06e9b662f8b7dcddb44060af6c0773e1d2db26dee99455037d27eaeba57bee0",
+  "record_hash": "e042aca80f14fa9228ef631fe9f2a8851e2f4e79d31616a4b520a444a20432b8",
+  "record": {
+    "page": 19,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Independently inspected printed headings and ruled panel boundaries.",
+    "anchors": [
+      {
+        "anchor_id": "2025-ap-p19-U6",
+        "number": "U6",
+        "bbox": [
+          39.26357,
+          19.16962,
+          81.26357,
+          46.169619999999995
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U6 visually read on cached physical page 19; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "45a73617b6b23cf6b0aa748cf66836502236dfe6a1e0cc3f01ab5096d397bffb"
+      }
+    ],
+    "regions": [
+      {
+        "page": 19,
+        "bbox": [
+          39.26357,
+          19.16962,
+          566.64469,
+          815.37749
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p19-U6",
+        "evidence": "Hydraulic components, circuit completion and oil-change ordering Complete ruled question panel and response space retained."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U6",
+        "bbox": [
+          39.26357,
+          19.16962,
+          81.26357,
+          46.169619999999995
+        ],
+        "pixel_sha256": "45a73617b6b23cf6b0aa748cf66836502236dfe6a1e0cc3f01ab5096d397bffb",
+        "audited_pixel_sha256": "45a73617b6b23cf6b0aa748cf66836502236dfe6a1e0cc3f01ab5096d397bffb"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

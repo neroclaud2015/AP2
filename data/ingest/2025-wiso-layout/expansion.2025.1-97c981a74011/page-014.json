@@ -1,0 +1,61 @@
+{
+  "key": "007c217735e8f350b14599cf0c6bb6d993c41f045c10f12db1f13c4da5a2f572",
+  "record_hash": "72c2cf944055331f04027d3608f480f61055a9b8d9085d81cf00713bc85bded4",
+  "record": {
+    "page": 14,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "U6 complete rent/tenant-rights task with subparts 1 to 4.",
+    "anchors": [
+      {
+        "anchor_id": "2025-wiso-p14-U6",
+        "number": "U6",
+        "bbox": [
+          58.859,
+          60.167,
+          92.587,
+          81.325
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U6 visually read on cached physical page 14.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "b779022bb792704b95fbd4bd5a8477f49e504b507bcdadd65aa8ef9baf9ffe67"
+      }
+    ],
+    "regions": [
+      {
+        "page": 14,
+        "bbox": [
+          51.584,
+          52.894,
+          540.309,
+          780.852
+        ],
+        "role": "primary",
+        "owner": "2025-wiso-p14-U6",
+        "evidence": "U6 complete rent/tenant-rights task with subparts 1 to 4. Region includes all question text, choices, diagrams and response areas within the visible panel."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U6",
+        "bbox": [
+          58.859,
+          60.167,
+          92.587,
+          81.325
+        ],
+        "pixel_sha256": "b779022bb792704b95fbd4bd5a8477f49e504b507bcdadd65aa8ef9baf9ffe67",
+        "audited_pixel_sha256": "b779022bb792704b95fbd4bd5a8477f49e504b507bcdadd65aa8ef9baf9ffe67"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

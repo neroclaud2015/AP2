@@ -1,0 +1,149 @@
+{
+  "key": "34640e8602106fa923d7fc9d8d2348a3f7763d08c5cb768102f1ae813af191cb",
+  "record_hash": "668bbfe14b3b998c53ce6d54030bd8c328cbd4ed538616153f0e04757dc6d05a",
+  "record": {
+    "page": 6,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Independently inspected printed headings and ruled panel boundaries.",
+    "anchors": [
+      {
+        "anchor_id": "2025-ap-p6-12",
+        "number": "12",
+        "bbox": [
+          58.003,
+          300.02682,
+          100.003,
+          327.02682
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 12 visually read on cached physical page 6; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "fa07c18c5cb840bbd031fb6fce68e844aacefd5b2cd77646d37001317cc32a20"
+      },
+      {
+        "anchor_id": "2025-ap-p6-13",
+        "number": "13",
+        "bbox": [
+          306.07737,
+          300.02682,
+          348.07737,
+          327.02682
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 13 visually read on cached physical page 6; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "b73ac0820c3e3be8c4c8150dd6cd1434003ab55e80e9540e00e290a78416f81c"
+      },
+      {
+        "anchor_id": "2025-ap-p6-14",
+        "number": "14",
+        "bbox": [
+          58.003,
+          541.20737,
+          100.003,
+          568.20737
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 14 visually read on cached physical page 6; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "3b71fda1d60fa0e492102d08ad25f40e38f4c4a27ba8d24016a3c2423604a4ff"
+      }
+    ],
+    "regions": [
+      {
+        "page": 6,
+        "bbox": [
+          58.003,
+          300.02682,
+          297.60001,
+          536.30351
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p6-12",
+        "evidence": "Daily maintenance question explicitly depends on upper inspection table. Complete ruled question panel and response space retained."
+      },
+      {
+        "page": 6,
+        "bbox": [
+          80.31185,
+          46.36373,
+          524.70406,
+          294.23135
+        ],
+        "role": "shared_context",
+        "owner": "2025-ap-p6-12",
+        "evidence": "Daily maintenance question explicitly depends on upper inspection table. Complete ruled question panel and response space retained."
+      },
+      {
+        "page": 6,
+        "bbox": [
+          306.07737,
+          300.02682,
+          544.33584,
+          536.30351
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p6-13",
+        "evidence": "Preventive maintenance terminology. Complete ruled question panel and response space retained."
+      },
+      {
+        "page": 6,
+        "bbox": [
+          58.003,
+          541.20737,
+          544.33584,
+          781.0505
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p6-14",
+        "evidence": "CNC arc diagram and complete program table. Complete ruled question panel and response space retained."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "12",
+        "bbox": [
+          58.003,
+          300.02682,
+          100.003,
+          327.02682
+        ],
+        "pixel_sha256": "fa07c18c5cb840bbd031fb6fce68e844aacefd5b2cd77646d37001317cc32a20",
+        "audited_pixel_sha256": "fa07c18c5cb840bbd031fb6fce68e844aacefd5b2cd77646d37001317cc32a20"
+      },
+      {
+        "kind": "heading",
+        "number": "13",
+        "bbox": [
+          306.07737,
+          300.02682,
+          348.07737,
+          327.02682
+        ],
+        "pixel_sha256": "b73ac0820c3e3be8c4c8150dd6cd1434003ab55e80e9540e00e290a78416f81c",
+        "audited_pixel_sha256": "b73ac0820c3e3be8c4c8150dd6cd1434003ab55e80e9540e00e290a78416f81c"
+      },
+      {
+        "kind": "heading",
+        "number": "14",
+        "bbox": [
+          58.003,
+          541.20737,
+          100.003,
+          568.20737
+        ],
+        "pixel_sha256": "3b71fda1d60fa0e492102d08ad25f40e38f4c4a27ba8d24016a3c2423604a4ff",
+        "audited_pixel_sha256": "3b71fda1d60fa0e492102d08ad25f40e38f4c4a27ba8d24016a3c2423604a4ff"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

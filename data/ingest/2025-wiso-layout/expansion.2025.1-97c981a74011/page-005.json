@@ -1,0 +1,161 @@
+{
+  "key": "e2292a373bb873fbaa19e35b482bd7283174073a1abd8cf2acd567fc1a89dcd8",
+  "record_hash": "0bac13bd2bcc312f929c8ef68db4d13bcfbb73c8afea3243f0518625d232f401",
+  "record": {
+    "page": 5,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "continuation_and_questions",
+    "classification_evidence": "U1 subpart 4 and explicit Ergebnis U1 above separate Q1 Q2 Q3 panels.",
+    "anchors": [
+      {
+        "anchor_id": "2025-wiso-p5-1",
+        "number": "1",
+        "bbox": [
+          50.923,
+          292.902,
+          72.747,
+          313.399
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 1 visually read on cached physical page 5.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "afeda2cac5c51945e13d82648315f30508660768c3aab0955928880aa76ac408"
+      },
+      {
+        "anchor_id": "2025-wiso-p5-2",
+        "number": "2",
+        "bbox": [
+          299.584,
+          294.224,
+          323.392,
+          314.06
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 2 visually read on cached physical page 5.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "84d5fd8f7f6a6498ff3fcec8512df6a39454e1df974e45b4cafc0a1895dc9aad"
+      },
+      {
+        "anchor_id": "2025-wiso-p5-3",
+        "number": "3",
+        "bbox": [
+          50.261,
+          533.571,
+          74.069,
+          554.729
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 3 visually read on cached physical page 5.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "a7f7b037cb7c6ed4f56aff7486280d28079bbfcb22166ccf2d109c3dec04a69f"
+      }
+    ],
+    "regions": [
+      {
+        "page": 5,
+        "bbox": [
+          50.261,
+          290.918,
+          292.971,
+          530.265
+        ],
+        "role": "primary",
+        "owner": "2025-wiso-p5-1",
+        "evidence": "U1 subpart 4 and explicit Ergebnis U1 above separate Q1 Q2 Q3 panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+      },
+      {
+        "page": 5,
+        "bbox": [
+          296.277,
+          290.918,
+          535.019,
+          532.249
+        ],
+        "role": "primary",
+        "owner": "2025-wiso-p5-2",
+        "evidence": "U1 subpart 4 and explicit Ergebnis U1 above separate Q1 Q2 Q3 panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+      },
+      {
+        "page": 5,
+        "bbox": [
+          50.261,
+          532.249,
+          292.971,
+          772.256
+        ],
+        "role": "primary",
+        "owner": "2025-wiso-p5-3",
+        "evidence": "U1 subpart 4 and explicit Ergebnis U1 above separate Q1 Q2 Q3 panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+      },
+      {
+        "page": 5,
+        "bbox": [
+          51.584,
+          46.944,
+          535.68,
+          290.918
+        ],
+        "role": "continuation",
+        "owner": "2025-wiso-p4-U1",
+        "evidence": "U1 subpart 4 and explicit Ergebnis U1 above separate Q1 Q2 Q3 panels. Ownership proven by printed Ergebnis U1."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "1",
+        "bbox": [
+          50.923,
+          292.902,
+          72.747,
+          313.399
+        ],
+        "pixel_sha256": "afeda2cac5c51945e13d82648315f30508660768c3aab0955928880aa76ac408",
+        "audited_pixel_sha256": "afeda2cac5c51945e13d82648315f30508660768c3aab0955928880aa76ac408"
+      },
+      {
+        "kind": "heading",
+        "number": "2",
+        "bbox": [
+          299.584,
+          294.224,
+          323.392,
+          314.06
+        ],
+        "pixel_sha256": "84d5fd8f7f6a6498ff3fcec8512df6a39454e1df974e45b4cafc0a1895dc9aad",
+        "audited_pixel_sha256": "84d5fd8f7f6a6498ff3fcec8512df6a39454e1df974e45b4cafc0a1895dc9aad"
+      },
+      {
+        "kind": "heading",
+        "number": "3",
+        "bbox": [
+          50.261,
+          533.571,
+          74.069,
+          554.729
+        ],
+        "pixel_sha256": "a7f7b037cb7c6ed4f56aff7486280d28079bbfcb22166ccf2d109c3dec04a69f",
+        "audited_pixel_sha256": "a7f7b037cb7c6ed4f56aff7486280d28079bbfcb22166ccf2d109c3dec04a69f"
+      },
+      {
+        "kind": "ownership",
+        "number": "U1",
+        "bbox": [
+          491.371,
+          99.177,
+          534.357,
+          122.979
+        ],
+        "pixel_sha256": "6b1b65476efdb2a4daa95d09fd61a4320f08cc9080ed03a65b709842ff9eba42",
+        "audited_pixel_sha256": "6b1b65476efdb2a4daa95d09fd61a4320f08cc9080ed03a65b709842ff9eba42"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

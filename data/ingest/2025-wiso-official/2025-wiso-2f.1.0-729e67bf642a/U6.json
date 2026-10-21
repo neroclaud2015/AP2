@@ -1,0 +1,51 @@
+{
+  "key": "50ee3d64fb872f32b8013edafcceebfcc71d1c33775c1d9f5746b99ea5ae3953",
+  "value": {
+    "question_id": "2025-wiso-p14-U6",
+    "question_number": "U6",
+    "exam": "2025_sommer",
+    "module": "WiSo",
+    "solution_source_pdf": "assets/pdfs/8812c0ca77b887816fbd7fd2.pdf",
+    "solution_source_pdf_available": false,
+    "solution_source_page": 17,
+    "solution_bbox": [
+      18,
+      479.106,
+      580,
+      803.319
+    ],
+    "regions": [
+      {
+        "source_page": 17,
+        "bbox": [
+          18,
+          479.106,
+          580,
+          803.319
+        ]
+      }
+    ],
+    "cropped_solution_image": "assets/official/2025-wiso-2f.1.0-729e67bf642a/U6.png",
+    "review_status": "auto_ready",
+    "answer_type": "multi_part",
+    "subparts": [
+      {
+        "id": "whole",
+        "label": "Gesamte Aufgabe · Selbstbewertung",
+        "type": "short_text"
+      }
+    ],
+    "source_hash": "8812c0ca77b887816fbd7fd2b662cfc8ccc965f4bce0fe266ac53fcc673916f9",
+    "extractor_revision": "2025-wiso-2f.1.0-729e67bf642a",
+    "association_evidence": "All printed U labels and ruled separators visually inspected on cached official Sommer 2025 solution. Formula/diagram/table retained as original image. Whole-question self-assessment; no rubric inferred.",
+    "grading_policy": "Printed subparts only; user self-assessment; no numeric rubric or answer inference.",
+    "source_cache_hashes": {
+      "17": "e99e47d6686f5a320f5383dba9ca653f34de350aedb0a38087bb59eecde6d235"
+    },
+    "bbox_units": "PDF points, top-left"
+  },
+  "value_hash": "70e06a71d2f1b8d037e2515112ac615e0b53f7d0c97667d830344ec6ce4f967b",
+  "artifacts": {
+    "public/assets/official/2025-wiso-2f.1.0-729e67bf642a/U6.png": "164617a38a375dc778652ba62eb2b7112dbe3d295893d9b00737319c34f6500c"
+  }
+}

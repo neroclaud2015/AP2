@@ -1,0 +1,61 @@
+{
+  "key": "5211ae54311b4d89e8775e5c68ad791099b970c1ecda09dfec79fa561616efcf",
+  "record_hash": "9c80b33708cd68c0365c2bd3192affb33b4cf6dbb08d39fa8dc89ebec5cd9a5d",
+  "record": {
+    "page": 10,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "U4 complete maternity-protection cloze passage and word bank.",
+    "anchors": [
+      {
+        "anchor_id": "2025-wiso-p10-U4",
+        "number": "U4",
+        "bbox": [
+          58.197,
+          59.506,
+          91.925,
+          79.341
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U4 visually read on cached physical page 10.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "bb46574eb10b2e4f72215cd29cd642065748dd81bb5a8ba33717866d2caceba2"
+      }
+    ],
+    "regions": [
+      {
+        "page": 10,
+        "bbox": [
+          50.923,
+          52.233,
+          539.648,
+          780.852
+        ],
+        "role": "primary",
+        "owner": "2025-wiso-p10-U4",
+        "evidence": "U4 complete maternity-protection cloze passage and word bank. Region includes all question text, choices, diagrams and response areas within the visible panel."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U4",
+        "bbox": [
+          58.197,
+          59.506,
+          91.925,
+          79.341
+        ],
+        "pixel_sha256": "bb46574eb10b2e4f72215cd29cd642065748dd81bb5a8ba33717866d2caceba2",
+        "audited_pixel_sha256": "bb46574eb10b2e4f72215cd29cd642065748dd81bb5a8ba33717866d2caceba2"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

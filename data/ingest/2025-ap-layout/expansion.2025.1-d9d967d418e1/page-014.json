@@ -1,0 +1,61 @@
+{
+  "key": "eb9dc4c9415e32680e418d78678f9b103d4bf88201e36f06404eb963a35f8c3a",
+  "record_hash": "86220ef6a7cda1ddc48d25e09559ca1a4b99f1e249bc20ff0db69e652233090b",
+  "record": {
+    "page": 14,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Independently inspected printed headings and ruled panel boundaries.",
+    "anchors": [
+      {
+        "anchor_id": "2025-ap-p14-U1",
+        "number": "U1",
+        "bbox": [
+          29.0015,
+          20.06123,
+          71.0015,
+          47.061229999999995
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U1 visually read on cached physical page 14; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "146670f5247c0138e3b1a5a50a4283d175f4725f11276e23a2d3fe31a270c766"
+      }
+    ],
+    "regions": [
+      {
+        "page": 14,
+        "bbox": [
+          29.0015,
+          20.06123,
+          566.64469,
+          815.37749
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p14-U1",
+        "evidence": "Inspection safety, hydraulic leaks and first aid Complete ruled question panel and response space retained."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U1",
+        "bbox": [
+          29.0015,
+          20.06123,
+          71.0015,
+          47.061229999999995
+        ],
+        "pixel_sha256": "146670f5247c0138e3b1a5a50a4283d175f4725f11276e23a2d3fe31a270c766",
+        "audited_pixel_sha256": "146670f5247c0138e3b1a5a50a4283d175f4725f11276e23a2d3fe31a270c766"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

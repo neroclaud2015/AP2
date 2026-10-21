@@ -1,0 +1,61 @@
+{
+  "key": "daf04ef92b875234ae58883a0bacd160fb1e9bd1167fa9b9486d3b88312cf054",
+  "record_hash": "35af3dad727a92aaf72a73f14f4f1836a99f284215aa4de93a572be7ceba6552",
+  "record": {
+    "page": 17,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Independently inspected printed headings and ruled panel boundaries.",
+    "anchors": [
+      {
+        "anchor_id": "2025-ap-p17-U4",
+        "number": "U4",
+        "bbox": [
+          39.26357,
+          19.16962,
+          81.26357,
+          46.169619999999995
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U4 visually read on cached physical page 17; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "210ef66521ae2b4071b8e41577e33edb89c0b1259ab1f1e261eab8e1fb1f4e53"
+      }
+    ],
+    "regions": [
+      {
+        "page": 17,
+        "bbox": [
+          39.26357,
+          19.16962,
+          566.64469,
+          815.37749
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p17-U4",
+        "evidence": "Three GRAFCET/control tasks with complete diagrams Complete ruled question panel and response space retained."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U4",
+        "bbox": [
+          39.26357,
+          19.16962,
+          81.26357,
+          46.169619999999995
+        ],
+        "pixel_sha256": "210ef66521ae2b4071b8e41577e33edb89c0b1259ab1f1e261eab8e1fb1f4e53",
+        "audited_pixel_sha256": "210ef66521ae2b4071b8e41577e33edb89c0b1259ab1f1e261eab8e1fb1f4e53"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

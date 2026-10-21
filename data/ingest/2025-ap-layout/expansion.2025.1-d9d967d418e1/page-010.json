@@ -1,0 +1,111 @@
+{
+  "key": "9eb5d19a37f9cdd7a1c371ce74d1ac940de2295947bf274bde457f4378fb5aaa",
+  "record_hash": "77a7ae736c9c3b26ff564c01386204468a43d93b90e11b54138d9e38d6213ad7",
+  "record": {
+    "page": 10,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Independently inspected printed headings and ruled panel boundaries.",
+    "anchors": [
+      {
+        "anchor_id": "2025-ap-p10-27",
+        "number": "27",
+        "bbox": [
+          56.21829,
+          57.95466,
+          98.21829,
+          84.95465999999999
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 27 visually read on cached physical page 10; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "96b38a865f1ae591920e87a102f666da3fd90e54aa0637206277e0428f172f8f"
+      },
+      {
+        "anchor_id": "2025-ap-p10-28",
+        "number": "28",
+        "bbox": [
+          305.63119,
+          300.91843,
+          347.63119,
+          327.91843
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 28 visually read on cached physical page 10; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "888c768b70c8b8d848758d86a0eb0ac6c266ffdbdd9a87d011cc760412899ed0"
+      }
+    ],
+    "regions": [
+      {
+        "page": 10,
+        "bbox": [
+          56.21829,
+          57.95466,
+          544.33584,
+          295.12296
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p10-27",
+        "evidence": "PTC curve and circuit, with separately labelled calculation panel. Complete ruled question panel and response space retained."
+      },
+      {
+        "page": 10,
+        "bbox": [
+          57.55682,
+          297.35199,
+          298.49236,
+          538.53254
+        ],
+        "role": "continuation",
+        "owner": "2025-ap-p10-27",
+        "evidence": "PTC curve and circuit, with separately labelled calculation panel. Complete ruled question panel and response space retained."
+      },
+      {
+        "page": 10,
+        "bbox": [
+          305.63119,
+          300.91843,
+          544.33584,
+          538.53254
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p10-28",
+        "evidence": "Quality-management rule; marking sheet below excluded. Complete ruled question panel and response space retained."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "27",
+        "bbox": [
+          56.21829,
+          57.95466,
+          98.21829,
+          84.95465999999999
+        ],
+        "pixel_sha256": "96b38a865f1ae591920e87a102f666da3fd90e54aa0637206277e0428f172f8f",
+        "audited_pixel_sha256": "96b38a865f1ae591920e87a102f666da3fd90e54aa0637206277e0428f172f8f"
+      },
+      {
+        "kind": "heading",
+        "number": "28",
+        "bbox": [
+          305.63119,
+          300.91843,
+          347.63119,
+          327.91843
+        ],
+        "pixel_sha256": "888c768b70c8b8d848758d86a0eb0ac6c266ffdbdd9a87d011cc760412899ed0",
+        "audited_pixel_sha256": "888c768b70c8b8d848758d86a0eb0ac6c266ffdbdd9a87d011cc760412899ed0"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

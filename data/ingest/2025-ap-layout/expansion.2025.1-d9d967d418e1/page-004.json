@@ -1,0 +1,137 @@
+{
+  "key": "f12c193efa4ba88a991cc8bf1823d2b7fc9617cc8107d104150ea488c7c88279",
+  "record_hash": "d9bd520fb7a52baa1493ee52d0a946c635cdeb0b00b0c5b3d50465a2c46f9421",
+  "record": {
+    "page": 4,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Independently inspected printed headings and ruled panel boundaries.",
+    "anchors": [
+      {
+        "anchor_id": "2025-ap-p4-5",
+        "number": "5",
+        "bbox": [
+          58.003,
+          57.95466,
+          100.003,
+          84.95465999999999
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 5 visually read on cached physical page 4; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "4715fe4daa48c3ce732bb3bcc7077fedb39cde0a673efca5dbccbbc5da902062"
+      },
+      {
+        "anchor_id": "2025-ap-p4-6",
+        "number": "6",
+        "bbox": [
+          58.003,
+          299.13521,
+          100.003,
+          326.13521
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 6 visually read on cached physical page 4; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "b86160d2532e6822bda39458edd6ef7afad7dee2b38c506d073c952508f4cd0b"
+      },
+      {
+        "anchor_id": "2025-ap-p4-7",
+        "number": "7",
+        "bbox": [
+          58.003,
+          540.76156,
+          100.003,
+          567.76156
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 7 visually read on cached physical page 4; numbering transcribed independently.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "281a6f0416285235c4bfc3aeb076bb7fdf84efccabd9b23ff5b5a8067a721ec2"
+      }
+    ],
+    "regions": [
+      {
+        "page": 4,
+        "bbox": [
+          58.003,
+          57.95466,
+          544.33584,
+          294.67716
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p4-5",
+        "evidence": "Five bearing diagrams and load arrows. Complete ruled question panel and response space retained."
+      },
+      {
+        "page": 4,
+        "bbox": [
+          58.003,
+          299.13521,
+          544.33584,
+          536.30351
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p4-6",
+        "evidence": "Seal illustration and choices. Complete ruled question panel and response space retained."
+      },
+      {
+        "page": 4,
+        "bbox": [
+          58.003,
+          540.76156,
+          544.33584,
+          724.87906
+        ],
+        "role": "primary",
+        "owner": "2025-ap-p4-7",
+        "evidence": "Coupling illustration and choices. Complete ruled question panel and response space retained."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "5",
+        "bbox": [
+          58.003,
+          57.95466,
+          100.003,
+          84.95465999999999
+        ],
+        "pixel_sha256": "4715fe4daa48c3ce732bb3bcc7077fedb39cde0a673efca5dbccbbc5da902062",
+        "audited_pixel_sha256": "4715fe4daa48c3ce732bb3bcc7077fedb39cde0a673efca5dbccbbc5da902062"
+      },
+      {
+        "kind": "heading",
+        "number": "6",
+        "bbox": [
+          58.003,
+          299.13521,
+          100.003,
+          326.13521
+        ],
+        "pixel_sha256": "b86160d2532e6822bda39458edd6ef7afad7dee2b38c506d073c952508f4cd0b",
+        "audited_pixel_sha256": "b86160d2532e6822bda39458edd6ef7afad7dee2b38c506d073c952508f4cd0b"
+      },
+      {
+        "kind": "heading",
+        "number": "7",
+        "bbox": [
+          58.003,
+          540.76156,
+          100.003,
+          567.76156
+        ],
+        "pixel_sha256": "281a6f0416285235c4bfc3aeb076bb7fdf84efccabd9b23ff5b5a8067a721ec2",
+        "audited_pixel_sha256": "281a6f0416285235c4bfc3aeb076bb7fdf84efccabd9b23ff5b5a8067a721ec2"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

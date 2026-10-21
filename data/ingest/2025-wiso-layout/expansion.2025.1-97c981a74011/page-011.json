@@ -1,0 +1,99 @@
+{
+  "key": "b8776c6d8a7c4e4afb88db9fb927212ab2ec01e3ec8bb46ff259d65d56a66422",
+  "record_hash": "dc47083a05ff85dbc426d11558a13d5934c855c29276953c3368141f2c9bf0f4",
+  "record": {
+    "page": 11,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "Q10 Q11 in separate panels.",
+    "anchors": [
+      {
+        "anchor_id": "2025-wiso-p11-10",
+        "number": "10",
+        "bbox": [
+          58.197,
+          56.2,
+          88.619,
+          76.697
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 10 visually read on cached physical page 11.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "62294a59ea323e2cb4815584205817fa30d0d38d6544317bbbb38b504b909f8e"
+      },
+      {
+        "anchor_id": "2025-wiso-p11-11",
+        "number": "11",
+        "bbox": [
+          307.52,
+          57.523,
+          337.28,
+          78.019
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed 11 visually read on cached physical page 11.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "a1a942c732dc27a175c9701241072ac443e6bb3cefb54d9d4b6a5803ec3fcdaf"
+      }
+    ],
+    "regions": [
+      {
+        "page": 11,
+        "bbox": [
+          56.875,
+          50.911,
+          300.907,
+          294.886
+        ],
+        "role": "primary",
+        "owner": "2025-wiso-p11-10",
+        "evidence": "Q10 Q11 in separate panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+      },
+      {
+        "page": 11,
+        "bbox": [
+          304.213,
+          50.911,
+          541.632,
+          296.869
+        ],
+        "role": "primary",
+        "owner": "2025-wiso-p11-11",
+        "evidence": "Q10 Q11 in separate panels. Region includes all question text, choices, diagrams and response areas within the visible panel."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "10",
+        "bbox": [
+          58.197,
+          56.2,
+          88.619,
+          76.697
+        ],
+        "pixel_sha256": "62294a59ea323e2cb4815584205817fa30d0d38d6544317bbbb38b504b909f8e",
+        "audited_pixel_sha256": "62294a59ea323e2cb4815584205817fa30d0d38d6544317bbbb38b504b909f8e"
+      },
+      {
+        "kind": "heading",
+        "number": "11",
+        "bbox": [
+          307.52,
+          57.523,
+          337.28,
+          78.019
+        ],
+        "pixel_sha256": "a1a942c732dc27a175c9701241072ac443e6bb3cefb54d9d4b6a5803ec3fcdaf",
+        "audited_pixel_sha256": "a1a942c732dc27a175c9701241072ac443e6bb3cefb54d9d4b6a5803ec3fcdaf"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}

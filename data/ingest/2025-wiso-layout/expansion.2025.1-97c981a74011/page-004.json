@@ -1,0 +1,61 @@
+{
+  "key": "1a259a34efd285f2f38f6e7e0b96ce795e593c6ff925483e6f169570fdad719e",
+  "record_hash": "3a0319d24c837bc25e03c6dcfd4c9379c6c59aa93b9dbb4ef897e53579c43068",
+  "record": {
+    "page": 4,
+    "geometry": [
+      595.2000122070312,
+      841.6799926757812
+    ],
+    "classification": "questions",
+    "classification_evidence": "U1 wage-growth chart and subparts 1 to 3; continues on page 5.",
+    "anchors": [
+      {
+        "anchor_id": "2025-wiso-p4-U1",
+        "number": "U1",
+        "bbox": [
+          66.795,
+          58.845,
+          99.2,
+          79.341
+        ],
+        "evidence": "visually_observed_heading_with_exact_pixel_fingerprint",
+        "visual_evidence": "Printed U1 visually read on cached physical page 4.",
+        "review_reasons": [],
+        "heading_pixel_sha256": "b9904b609b0c17ddc5e7c5632f0afe0556e359e275456aa4d7912ea05c878f67"
+      }
+    ],
+    "regions": [
+      {
+        "page": 4,
+        "bbox": [
+          60.843,
+          52.894,
+          543.616,
+          779.529
+        ],
+        "role": "primary",
+        "owner": "2025-wiso-p4-U1",
+        "evidence": "U1 wage-growth chart and subparts 1 to 3; continues on page 5. Region includes all question text, choices, diagrams and response areas within the visible panel."
+      }
+    ],
+    "proofs": [
+      {
+        "kind": "heading",
+        "number": "U1",
+        "bbox": [
+          66.795,
+          58.845,
+          99.2,
+          79.341
+        ],
+        "pixel_sha256": "b9904b609b0c17ddc5e7c5632f0afe0556e359e275456aa4d7912ea05c878f67",
+        "audited_pixel_sha256": "b9904b609b0c17ddc5e7c5632f0afe0556e359e275456aa4d7912ea05c878f67"
+      }
+    ],
+    "issues": [],
+    "context_regions": [],
+    "review_status": "visually_verified",
+    "user_acceptance": "pending"
+  }
+}
