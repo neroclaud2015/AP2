@@ -4,7 +4,8 @@
     "public/data/question_inventory.json": "adfa9a00615aa5c77dbabaa75b72a8550dceb6e9376b5e018931fb6a8b8c29a7",
     "scripts/wiso_taxonomy.json": "089a3ba96cac88f65da1075088ffbf6968ab9cf25a8d4ee05e5c442e8a8317f5",
     "scripts/wiso_patterns.json": "c87367cb45cb7b455c846acc96a981ac6adf2a23df6feeed9f1bbf8c4c26857d",
-    "scripts/wiso_legal_verified.json": "bae9a453954956e2b4daa24c418db8603863ce8cf951f04dd06a914c6753fac3"
+    "scripts/wiso_legal_verified.json": "bae9a453954956e2b4daa24c418db8603863ce8cf951f04dd06a914c6753fac3",
+    "scripts/wiso_knowledge_versions.json": "d27d615ea507515cc8d9b77d5a4b761c7826ee40c9068b103bd1e9cff6c51ace"
   },
   "schema_version": 1,
   "version": "wiso-text-1.0.0",
@@ -15335,11 +15336,7 @@
   "summaries": [
     {
       "topic_id": "arbeitsrecht",
-      "bullets": [
-        "Kündigungsart, betroffene Person und Zeitpunkt im Fall zuerst unterscheiden.",
-        "Rechte und Pflichten der beiden Vertragsparteien unterscheiden; betriebliche Regelung und Gesetz getrennt prüfen.",
-        "Arbeitszeit, Pause und Ruhezeit getrennt betrachten; Alter und Beschäftigungsart des Falls beachten."
-      ],
+      "bullets": [],
       "patterns": [
         {
           "text": "Welche Vereinbarung im Arbeitsvertrag ist zulässig?",
@@ -15489,15 +15486,23 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Kündigungsart, betroffene Person und Zeitpunkt im Fall zuerst unterscheiden.",
+        "Rechte und Pflichten der beiden Vertragsparteien unterscheiden; betriebliche Regelung und Gesetz getrennt prüfen.",
+        "Arbeitszeit, Pause und Ruhezeit getrennt betrachten; Alter und Beschäftigungsart des Falls beachten."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
       "topic_id": "soziales",
-      "bullets": [
-        "Versicherungszweig, Träger, Beitrag und versichertes Risiko einander zuordnen.",
-        "Krankenversicherung und Entgeltfortzahlung sind unterschiedliche Leistungen; Anspruch und zuständige Stelle trennen.",
-        "Altersabsicherung und Erwerbsminderung als unterschiedliche Risiken erkennen."
-      ],
+      "bullets": [],
       "patterns": [
         {
           "text": "Wie kann man gegen einen fehlerhaften Arbeitslosengeldbescheid vorgehen?",
@@ -15554,15 +15559,23 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Versicherungszweig, Träger, Beitrag und versichertes Risiko einander zuordnen.",
+        "Krankenversicherung und Entgeltfortzahlung sind unterschiedliche Leistungen; Anspruch und zuständige Stelle trennen.",
+        "Altersabsicherung und Erwerbsminderung als unterschiedliche Risiken erkennen."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
       "topic_id": "ausbildung",
-      "bullets": [
-        "Pflichten von Ausbildenden und Auszubildenden sowie Probezeit und Vertragsende getrennt prüfen.",
-        "Berufsschule, Ausbildungsbetrieb und zuständige Stelle haben unterschiedliche Aufgaben.",
-        "Fachkompetenz und Sozialkompetenz anhand konkreter Verhaltensweisen unterscheiden; Ziele der Weiterbildung für Beschäftigte und Arbeitgeber getrennt betrachten."
-      ],
+      "bullets": [],
       "patterns": [
         {
           "text": "Welche Aussage zum Berufsausbildungsvertrag ist richtig?",
@@ -15631,14 +15644,23 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Pflichten von Ausbildenden und Auszubildenden sowie Probezeit und Vertragsende getrennt prüfen.",
+        "Berufsschule, Ausbildungsbetrieb und zuständige Stelle haben unterschiedliche Aufgaben.",
+        "Fachkompetenz und Sozialkompetenz anhand konkreter Verhaltensweisen unterscheiden; Ziele der Weiterbildung für Beschäftigte und Arbeitgeber getrennt betrachten."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
       "topic_id": "mitbestimmung",
-      "bullets": [
-        "Wahlberechtigung, Wählbarkeit und Beteiligungsrechte sind unterschiedliche Prüfungsfragen.",
-        "JAV und Betriebsrat unterscheiden; bei Wahlfragen Personengruppe und Alter des Falls beachten."
-      ],
+      "bullets": [],
       "patterns": [
         {
           "text": "Wer darf für den Betriebsrat kandidieren?",
@@ -15744,6 +15766,17 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Wahlberechtigung, Wählbarkeit und Beteiligungsrechte sind unterschiedliche Prüfungsfragen.",
+        "JAV und Betriebsrat unterscheiden; bei Wahlfragen Personengruppe und Alter des Falls beachten."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
@@ -15828,11 +15861,7 @@
     },
     {
       "topic_id": "betrieb",
-      "bullets": [
-        "Firma, Rechtsform, Haftung und Vertretungsbefugnis bezeichnen unterschiedliche Merkmale.",
-        "Steuerarten, Sozialbeiträge und sonstige Abzüge getrennt zuordnen.",
-        "Gefährdung, Schutzmaßnahme und verantwortliche Person aus dem Sachverhalt bestimmen."
-      ],
+      "bullets": [],
       "patterns": [
         {
           "text": "Für wen gilt das Jugendarbeitsschutzgesetz?",
@@ -15920,15 +15949,23 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Firma, Rechtsform, Haftung und Vertretungsbefugnis bezeichnen unterschiedliche Merkmale.",
+        "Steuerarten, Sozialbeiträge und sonstige Abzüge getrennt zuordnen.",
+        "Gefährdung, Schutzmaßnahme und verantwortliche Person aus dem Sachverhalt bestimmen."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
       "topic_id": "recht",
-      "bullets": [
-        "Personenbezug, Verarbeitungszweck und Zugriffsberechtigung getrennt prüfen.",
-        "Vertragsschluss, Erfüllung und Störung getrennt prüfen; Besitz und Eigentum unterscheiden.",
-        "Zuständige Stelle, Rechtsbehelf und Frist getrennt prüfen; arbeitsrechtliche und sozialrechtliche Streitigkeiten unterscheiden."
-      ],
+      "bullets": [],
       "patterns": [
         {
           "text": "Wozu dient die Sozialgerichtsbarkeit?",
@@ -16043,13 +16080,23 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Personenbezug, Verarbeitungszweck und Zugriffsberechtigung getrennt prüfen.",
+        "Vertragsschluss, Erfüllung und Störung getrennt prüfen; Besitz und Eigentum unterscheiden.",
+        "Zuständige Stelle, Rechtsbehelf und Frist getrennt prüfen; arbeitsrechtliche und sozialrechtliche Streitigkeiten unterscheiden."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
       "topic_id": "kuendigung",
-      "bullets": [
-        "Kündigungsart, betroffene Person und Zeitpunkt im Fall zuerst unterscheiden."
-      ],
+      "bullets": [],
       "patterns": [
         {
           "text": "Welche Voraussetzungen gelten für den allgemeinen Kündigungsschutz?",
@@ -16103,13 +16150,21 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Kündigungsart, betroffene Person und Zeitpunkt im Fall zuerst unterscheiden."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
       "topic_id": "arbeitsvertrag",
-      "bullets": [
-        "Rechte und Pflichten der beiden Vertragsparteien unterscheiden; betriebliche Regelung und Gesetz getrennt prüfen."
-      ],
+      "bullets": [],
       "patterns": [
         {
           "text": "Welche Vereinbarung im Arbeitsvertrag ist zulässig?",
@@ -16165,6 +16220,16 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Rechte und Pflichten der beiden Vertragsparteien unterscheiden; betriebliche Regelung und Gesetz getrennt prüfen."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
@@ -16231,13 +16296,56 @@
             "reviewed_at": "2026-10-21"
           }
         ]
+      },
+      "historical_bullets": [
+        "Grundregel für Arbeitnehmer: höchstens acht Stunden werktäglich.",
+        "Bis zehn Stunden sind möglich, wenn der Durchschnitt innerhalb von sechs Kalendermonaten oder 24 Wochen bei höchstens acht Stunden werktäglich liegt.",
+        "Für Jugendliche gelten eigene Grenzen nach dem Jugendarbeitsschutzgesetz."
+      ],
+      "knowledge": {
+        "status": "current",
+        "as_of": "2026-10-21",
+        "current_version_id": "arbeitszeit@verified-2026-10-21",
+        "bullets": [
+          "Grundregel für Arbeitnehmer: höchstens acht Stunden werktäglich.",
+          "Bis zehn Stunden sind möglich, wenn der Durchschnitt innerhalb von sechs Kalendermonaten oder 24 Wochen bei höchstens acht Stunden werktäglich liegt.",
+          "Für Jugendliche gelten eigene Grenzen nach dem Jugendarbeitsschutzgesetz."
+        ],
+        "versions": [
+          {
+            "id": "arbeitszeit@verified-2026-10-21",
+            "effective_from": null,
+            "effective_until": null,
+            "source_exam_season": null,
+            "verified_at": "2026-10-21",
+            "verified": true,
+            "current": true,
+            "supersedes": [],
+            "bullets": [
+              "Grundregel für Arbeitnehmer: höchstens acht Stunden werktäglich.",
+              "Bis zehn Stunden sind möglich, wenn der Durchschnitt innerhalb von sechs Kalendermonaten oder 24 Wochen bei höchstens acht Stunden werktäglich liegt.",
+              "Für Jugendliche gelten eigene Grenzen nach dem Jugendarbeitsschutzgesetz."
+            ],
+            "references": [
+              {
+                "title": "ArbZG § 3",
+                "url": "https://www.gesetze-im-internet.de/arbzg/__3.html",
+                "reviewed_at": "2026-10-21"
+              },
+              {
+                "title": "JArbSchG § 8",
+                "url": "https://www.gesetze-im-internet.de/jarbschg/__8.html",
+                "reviewed_at": "2026-10-21"
+              }
+            ],
+            "effective_date_note": "Gesetzlicher Geltungsbeginn hier nicht erfasst; geprüft am angegebenen Datum."
+          }
+        ]
       }
     },
     {
       "topic_id": "tarifrecht",
-      "bullets": [
-        "Tarifparteien, Tarifbindung und Gegenstand der Regelung unterscheiden."
-      ],
+      "bullets": [],
       "patterns": [
         {
           "text": "Wer sind die Tarifvertragsparteien und was bedeutet Tarifautonomie?",
@@ -16294,6 +16402,16 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Tarifparteien, Tarifbindung und Gegenstand der Regelung unterscheiden."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
@@ -16351,13 +16469,51 @@
             "reviewed_at": "2026-10-21"
           }
         ]
+      },
+      "historical_bullets": [
+        "Zur Prüfungssystematik gehören Kranken-, Pflege-, Renten-, Unfall- und Arbeitslosenversicherung.",
+        "Bei einer Fallfrage zuerst Versicherungszweig, versichertes Risiko und zuständigen Träger auseinanderhalten.",
+        "Historische Beitragssätze und Grenzwerte gelten nicht automatisch heute; diese Karte bestätigt keine aktuellen Beträge."
+      ],
+      "knowledge": {
+        "status": "current",
+        "as_of": "2026-10-21",
+        "current_version_id": "sozialversicherung@verified-2026-10-21",
+        "bullets": [
+          "Zur Prüfungssystematik gehören Kranken-, Pflege-, Renten-, Unfall- und Arbeitslosenversicherung.",
+          "Bei einer Fallfrage zuerst Versicherungszweig, versichertes Risiko und zuständigen Träger auseinanderhalten.",
+          "Historische Beitragssätze und Grenzwerte gelten nicht automatisch heute; diese Karte bestätigt keine aktuellen Beträge."
+        ],
+        "versions": [
+          {
+            "id": "sozialversicherung@verified-2026-10-21",
+            "effective_from": null,
+            "effective_until": null,
+            "source_exam_season": null,
+            "verified_at": "2026-10-21",
+            "verified": true,
+            "current": true,
+            "supersedes": [],
+            "bullets": [
+              "Zur Prüfungssystematik gehören Kranken-, Pflege-, Renten-, Unfall- und Arbeitslosenversicherung.",
+              "Bei einer Fallfrage zuerst Versicherungszweig, versichertes Risiko und zuständigen Träger auseinanderhalten.",
+              "Historische Beitragssätze und Grenzwerte gelten nicht automatisch heute; diese Karte bestätigt keine aktuellen Beträge."
+            ],
+            "references": [
+              {
+                "title": "SGB IV § 1",
+                "url": "https://www.gesetze-im-internet.de/sgb_4/__1.html",
+                "reviewed_at": "2026-10-21"
+              }
+            ],
+            "effective_date_note": "Gesetzlicher Geltungsbeginn hier nicht erfasst; geprüft am angegebenen Datum."
+          }
+        ]
       }
     },
     {
       "topic_id": "krankenversicherung",
-      "bullets": [
-        "Krankenversicherung und Entgeltfortzahlung sind unterschiedliche Leistungen; Anspruch und zuständige Stelle trennen."
-      ],
+      "bullets": [],
       "patterns": [
         {
           "text": "Wer überweist die Beiträge an die gesetzliche Krankenversicherung?",
@@ -16381,13 +16537,21 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Krankenversicherung und Entgeltfortzahlung sind unterschiedliche Leistungen; Anspruch und zuständige Stelle trennen."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
       "topic_id": "rentenversicherung",
-      "bullets": [
-        "Altersabsicherung und Erwerbsminderung als unterschiedliche Risiken erkennen."
-      ],
+      "bullets": [],
       "patterns": [
         {
           "text": "Wasistdamitgemeint?",
@@ -16416,13 +16580,21 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Altersabsicherung und Erwerbsminderung als unterschiedliche Risiken erkennen."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
       "topic_id": "arbeitslosenversicherung",
-      "bullets": [
-        "Versicherungsträger, versichertes Risiko und Leistungen bei Arbeitslosigkeit unterscheiden."
-      ],
+      "bullets": [],
       "patterns": [
         {
           "text": "Wie kann man gegen einen fehlerhaften Arbeitslosengeldbescheid vorgehen?",
@@ -16445,13 +16617,21 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Versicherungsträger, versichertes Risiko und Leistungen bei Arbeitslosigkeit unterscheiden."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
       "topic_id": "unfallversicherung",
-      "bullets": [
-        "Arbeitsunfall, Wegeunfall und privates Unfallrisiko anhand des konkreten Sachverhalts abgrenzen."
-      ],
+      "bullets": [],
       "patterns": [],
       "question_ids": [
         "2019-wiso-p14-U6",
@@ -16465,13 +16645,21 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Arbeitsunfall, Wegeunfall und privates Unfallrisiko anhand des konkreten Sachverhalts abgrenzen."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
       "topic_id": "pflegeversicherung",
-      "bullets": [
-        "Pflegebedarf von medizinischer Behandlung unterscheiden; passenden Versicherungszweig bestimmen."
-      ],
+      "bullets": [],
       "patterns": [],
       "question_ids": [
         "2020-21-wiso-p12-U5",
@@ -16483,6 +16671,16 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Pflegebedarf von medizinischer Behandlung unterscheiden; passenden Versicherungszweig bestimmen."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
@@ -16538,6 +16736,51 @@
             "reviewed_at": "2026-10-21"
           }
         ]
+      },
+      "historical_bullets": [
+        "Die Probezeit einer BBiG-Ausbildung dauert ein bis vier Monate.",
+        "Während der Probezeit ist eine Kündigung ohne Frist möglich. Danach gelten die besonderen Voraussetzungen des § 22 BBiG.",
+        "Auszubildende können nach der Probezeit mit vier Wochen Frist kündigen, wenn sie die Ausbildung aufgeben oder sich für einen anderen Beruf ausbilden lassen wollen; Kündigungen müssen schriftlich erfolgen."
+      ],
+      "knowledge": {
+        "status": "current",
+        "as_of": "2026-10-21",
+        "current_version_id": "ausbildungsvertrag@verified-2026-10-21",
+        "bullets": [
+          "Die Probezeit einer BBiG-Ausbildung dauert ein bis vier Monate.",
+          "Während der Probezeit ist eine Kündigung ohne Frist möglich. Danach gelten die besonderen Voraussetzungen des § 22 BBiG.",
+          "Auszubildende können nach der Probezeit mit vier Wochen Frist kündigen, wenn sie die Ausbildung aufgeben oder sich für einen anderen Beruf ausbilden lassen wollen; Kündigungen müssen schriftlich erfolgen."
+        ],
+        "versions": [
+          {
+            "id": "ausbildungsvertrag@verified-2026-10-21",
+            "effective_from": null,
+            "effective_until": null,
+            "source_exam_season": null,
+            "verified_at": "2026-10-21",
+            "verified": true,
+            "current": true,
+            "supersedes": [],
+            "bullets": [
+              "Die Probezeit einer BBiG-Ausbildung dauert ein bis vier Monate.",
+              "Während der Probezeit ist eine Kündigung ohne Frist möglich. Danach gelten die besonderen Voraussetzungen des § 22 BBiG.",
+              "Auszubildende können nach der Probezeit mit vier Wochen Frist kündigen, wenn sie die Ausbildung aufgeben oder sich für einen anderen Beruf ausbilden lassen wollen; Kündigungen müssen schriftlich erfolgen."
+            ],
+            "references": [
+              {
+                "title": "BBiG §§ 20–22",
+                "url": "https://www.gesetze-im-internet.de/bbig_2005/BJNR093110005.html",
+                "reviewed_at": "2026-10-21"
+              },
+              {
+                "title": "BBiG § 22",
+                "url": "https://www.gesetze-im-internet.de/bbig_2005/__22.html",
+                "reviewed_at": "2026-10-21"
+              }
+            ],
+            "effective_date_note": "Gesetzlicher Geltungsbeginn hier nicht erfasst; geprüft am angegebenen Datum."
+          }
+        ]
       }
     },
     {
@@ -16585,6 +16828,43 @@
             "title": "BBiG § 21",
             "url": "https://www.gesetze-im-internet.de/bbig_2005/BJNR093110005.html",
             "reviewed_at": "2026-10-21"
+          }
+        ]
+      },
+      "historical_bullets": [
+        "Bei vorzeitig bestandener Abschlussprüfung endet das Ausbildungsverhältnis mit Bekanntgabe des Ergebnisses durch den Prüfungsausschuss.",
+        "Bei Nichtbestehen kann auf Verlangen bis zur nächsten Wiederholungsprüfung verlängert werden, höchstens um ein Jahr."
+      ],
+      "knowledge": {
+        "status": "current",
+        "as_of": "2026-10-21",
+        "current_version_id": "ausbildungspruefung@verified-2026-10-21",
+        "bullets": [
+          "Bei vorzeitig bestandener Abschlussprüfung endet das Ausbildungsverhältnis mit Bekanntgabe des Ergebnisses durch den Prüfungsausschuss.",
+          "Bei Nichtbestehen kann auf Verlangen bis zur nächsten Wiederholungsprüfung verlängert werden, höchstens um ein Jahr."
+        ],
+        "versions": [
+          {
+            "id": "ausbildungspruefung@verified-2026-10-21",
+            "effective_from": null,
+            "effective_until": null,
+            "source_exam_season": null,
+            "verified_at": "2026-10-21",
+            "verified": true,
+            "current": true,
+            "supersedes": [],
+            "bullets": [
+              "Bei vorzeitig bestandener Abschlussprüfung endet das Ausbildungsverhältnis mit Bekanntgabe des Ergebnisses durch den Prüfungsausschuss.",
+              "Bei Nichtbestehen kann auf Verlangen bis zur nächsten Wiederholungsprüfung verlängert werden, höchstens um ein Jahr."
+            ],
+            "references": [
+              {
+                "title": "BBiG § 21",
+                "url": "https://www.gesetze-im-internet.de/bbig_2005/BJNR093110005.html",
+                "reviewed_at": "2026-10-21"
+              }
+            ],
+            "effective_date_note": "Gesetzlicher Geltungsbeginn hier nicht erfasst; geprüft am angegebenen Datum."
           }
         ]
       }
@@ -16717,6 +16997,61 @@
             "reviewed_at": "2026-10-21"
           }
         ]
+      },
+      "historical_bullets": [
+        "Ein Betriebsrat ist grundsätzlich ab fünf ständig wahlberechtigten Beschäftigten vorgesehen; mindestens drei müssen wählbar sein.",
+        "Wählen: grundsätzlich ab 16 Jahren. Kandidieren: grundsätzlich ab 18 Jahren und nach sechs Monaten Betriebszugehörigkeit; Ausnahmen stehen in § 8 BetrVG.",
+        "Mitbestimmung nach § 87 betrifft z. B. Arbeitszeit und Urlaubsplanung, soweit keine gesetzliche oder tarifliche Regelung besteht."
+      ],
+      "knowledge": {
+        "status": "current",
+        "as_of": "2026-10-21",
+        "current_version_id": "betriebsrat@verified-2026-10-21",
+        "bullets": [
+          "Ein Betriebsrat ist grundsätzlich ab fünf ständig wahlberechtigten Beschäftigten vorgesehen; mindestens drei müssen wählbar sein.",
+          "Wählen: grundsätzlich ab 16 Jahren. Kandidieren: grundsätzlich ab 18 Jahren und nach sechs Monaten Betriebszugehörigkeit; Ausnahmen stehen in § 8 BetrVG.",
+          "Mitbestimmung nach § 87 betrifft z. B. Arbeitszeit und Urlaubsplanung, soweit keine gesetzliche oder tarifliche Regelung besteht."
+        ],
+        "versions": [
+          {
+            "id": "betriebsrat@verified-2026-10-21",
+            "effective_from": null,
+            "effective_until": null,
+            "source_exam_season": null,
+            "verified_at": "2026-10-21",
+            "verified": true,
+            "current": true,
+            "supersedes": [],
+            "bullets": [
+              "Ein Betriebsrat ist grundsätzlich ab fünf ständig wahlberechtigten Beschäftigten vorgesehen; mindestens drei müssen wählbar sein.",
+              "Wählen: grundsätzlich ab 16 Jahren. Kandidieren: grundsätzlich ab 18 Jahren und nach sechs Monaten Betriebszugehörigkeit; Ausnahmen stehen in § 8 BetrVG.",
+              "Mitbestimmung nach § 87 betrifft z. B. Arbeitszeit und Urlaubsplanung, soweit keine gesetzliche oder tarifliche Regelung besteht."
+            ],
+            "references": [
+              {
+                "title": "BetrVG § 1",
+                "url": "https://www.gesetze-im-internet.de/betrvg/__1.html",
+                "reviewed_at": "2026-10-21"
+              },
+              {
+                "title": "BetrVG § 7",
+                "url": "https://www.gesetze-im-internet.de/betrvg/__7.html",
+                "reviewed_at": "2026-10-21"
+              },
+              {
+                "title": "BetrVG § 8",
+                "url": "https://www.gesetze-im-internet.de/betrvg/__8.html",
+                "reviewed_at": "2026-10-21"
+              },
+              {
+                "title": "BetrVG § 87",
+                "url": "https://www.gesetze-im-internet.de/betrvg/__87.html",
+                "reviewed_at": "2026-10-21"
+              }
+            ],
+            "effective_date_note": "Gesetzlicher Geltungsbeginn hier nicht erfasst; geprüft am angegebenen Datum."
+          }
+        ]
       }
     },
     {
@@ -16775,6 +17110,51 @@
             "reviewed_at": "2026-10-21"
           }
         ]
+      },
+      "historical_bullets": [
+        "Die JAV vertritt Jugendliche unter 18 und Beschäftigte in Berufsausbildung.",
+        "Wahlberechtigt sind die in § 60 Abs. 1 genannten Beschäftigten.",
+        "Kandidieren können Beschäftigte unter 25 oder Beschäftigte in Berufsausbildung; Betriebsratsmitglieder sind ausgeschlossen."
+      ],
+      "knowledge": {
+        "status": "current",
+        "as_of": "2026-10-21",
+        "current_version_id": "jav@verified-2026-10-21",
+        "bullets": [
+          "Die JAV vertritt Jugendliche unter 18 und Beschäftigte in Berufsausbildung.",
+          "Wahlberechtigt sind die in § 60 Abs. 1 genannten Beschäftigten.",
+          "Kandidieren können Beschäftigte unter 25 oder Beschäftigte in Berufsausbildung; Betriebsratsmitglieder sind ausgeschlossen."
+        ],
+        "versions": [
+          {
+            "id": "jav@verified-2026-10-21",
+            "effective_from": null,
+            "effective_until": null,
+            "source_exam_season": null,
+            "verified_at": "2026-10-21",
+            "verified": true,
+            "current": true,
+            "supersedes": [],
+            "bullets": [
+              "Die JAV vertritt Jugendliche unter 18 und Beschäftigte in Berufsausbildung.",
+              "Wahlberechtigt sind die in § 60 Abs. 1 genannten Beschäftigten.",
+              "Kandidieren können Beschäftigte unter 25 oder Beschäftigte in Berufsausbildung; Betriebsratsmitglieder sind ausgeschlossen."
+            ],
+            "references": [
+              {
+                "title": "BetrVG § 60",
+                "url": "https://www.gesetze-im-internet.de/betrvg/__60.html",
+                "reviewed_at": "2026-10-21"
+              },
+              {
+                "title": "BetrVG § 61",
+                "url": "https://www.gesetze-im-internet.de/betrvg/__61.html",
+                "reviewed_at": "2026-10-21"
+              }
+            ],
+            "effective_date_note": "Gesetzlicher Geltungsbeginn hier nicht erfasst; geprüft am angegebenen Datum."
+          }
+        ]
       }
     },
     {
@@ -16830,9 +17210,7 @@
     },
     {
       "topic_id": "unternehmen",
-      "bullets": [
-        "Firma, Rechtsform, Haftung und Vertretungsbefugnis bezeichnen unterschiedliche Merkmale."
-      ],
+      "bullets": [],
       "patterns": [
         {
           "text": "Welche Rechtsform lässt sich aus einer Unternehmensbezeichnung erkennen?",
@@ -16859,13 +17237,21 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Firma, Rechtsform, Haftung und Vertretungsbefugnis bezeichnen unterschiedliche Merkmale."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
       "topic_id": "steuern",
-      "bullets": [
-        "Steuerarten, Sozialbeiträge und sonstige Abzüge getrennt zuordnen."
-      ],
+      "bullets": [],
       "patterns": [
         {
           "text": "Welche Lohnsteuerklasse passt zum beschriebenen Familienstand?",
@@ -16905,6 +17291,16 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Steuerarten, Sozialbeiträge und sonstige Abzüge getrennt zuordnen."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
@@ -16959,13 +17355,48 @@
             "reviewed_at": "2026-10-21"
           }
         ]
+      },
+      "historical_bullets": [
+        "Für Jugendliche gilt grundsätzlich: höchstens acht Stunden täglich und 40 Stunden wöchentlich.",
+        "§ 8 JArbSchG enthält begrenzte Ausnahmen; die Erwachsenenregel zur Verlängerung auf zehn Stunden darf nicht pauschal übernommen werden."
+      ],
+      "knowledge": {
+        "status": "current",
+        "as_of": "2026-10-21",
+        "current_version_id": "arbeitsschutz@verified-2026-10-21",
+        "bullets": [
+          "Für Jugendliche gilt grundsätzlich: höchstens acht Stunden täglich und 40 Stunden wöchentlich.",
+          "§ 8 JArbSchG enthält begrenzte Ausnahmen; die Erwachsenenregel zur Verlängerung auf zehn Stunden darf nicht pauschal übernommen werden."
+        ],
+        "versions": [
+          {
+            "id": "arbeitsschutz@verified-2026-10-21",
+            "effective_from": null,
+            "effective_until": null,
+            "source_exam_season": null,
+            "verified_at": "2026-10-21",
+            "verified": true,
+            "current": true,
+            "supersedes": [],
+            "bullets": [
+              "Für Jugendliche gilt grundsätzlich: höchstens acht Stunden täglich und 40 Stunden wöchentlich.",
+              "§ 8 JArbSchG enthält begrenzte Ausnahmen; die Erwachsenenregel zur Verlängerung auf zehn Stunden darf nicht pauschal übernommen werden."
+            ],
+            "references": [
+              {
+                "title": "JArbSchG § 8",
+                "url": "https://www.gesetze-im-internet.de/jarbschg/__8.html",
+                "reviewed_at": "2026-10-21"
+              }
+            ],
+            "effective_date_note": "Gesetzlicher Geltungsbeginn hier nicht erfasst; geprüft am angegebenen Datum."
+          }
+        ]
       }
     },
     {
       "topic_id": "datenschutz",
-      "bullets": [
-        "Personenbezug, Verarbeitungszweck und Zugriffsberechtigung getrennt prüfen."
-      ],
+      "bullets": [],
       "patterns": [
         {
           "text": "Welche Aussage ist richtig?",
@@ -16991,13 +17422,21 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Personenbezug, Verarbeitungszweck und Zugriffsberechtigung getrennt prüfen."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
       "topic_id": "vertragsrecht",
-      "bullets": [
-        "Vertragsschluss, Erfüllung und Störung getrennt prüfen; Besitz und Eigentum unterscheiden."
-      ],
+      "bullets": [],
       "patterns": [
         {
           "text": "Wie kommt ein Kaufvertrag zustande?",
@@ -17088,13 +17527,21 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Vertragsschluss, Erfüllung und Störung getrennt prüfen; Besitz und Eigentum unterscheiden."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
       "topic_id": "umwelt",
-      "bullets": [
-        "Vermeidung, Wiederverwendung und Verwertung unterscheiden; Maßnahmen auf ihre konkrete Umweltwirkung prüfen."
-      ],
+      "bullets": [],
       "patterns": [
         {
           "text": "Welches Verhalten kennzeichnet nachhaltigen Konsum?",
@@ -17131,13 +17578,21 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Vermeidung, Wiederverwendung und Verwertung unterscheiden; Maßnahmen auf ihre konkrete Umweltwirkung prüfen."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
       "topic_id": "elternschutz",
-      "bullets": [
-        "Mutterschutz und Elternzeit unterscheiden; Zeitraum, betroffene Person und Art des Beschäftigungsschutzes beachten."
-      ],
+      "bullets": [],
       "patterns": [
         {
           "text": "Welche Rechte bestehen während Schwangerschaft und Elternzeit?",
@@ -17166,6 +17621,16 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Mutterschutz und Elternzeit unterscheiden; Zeitraum, betroffene Person und Art des Beschäftigungsschutzes beachten."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
@@ -17220,9 +17685,7 @@
     },
     {
       "topic_id": "finanzierung",
-      "bullets": [
-        "Kreditkosten, Rückzahlung und Überschuldungsrisiko getrennt beurteilen; Kreditwürdigkeit und verfügbare Mittel unterscheiden."
-      ],
+      "bullets": [],
       "patterns": [
         {
           "text": "Welche Aussage zu einem Überziehungskredit ist richtig?",
@@ -17250,13 +17713,21 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Kreditkosten, Rückzahlung und Überschuldungsrisiko getrennt beurteilen; Kreditwürdigkeit und verfügbare Mittel unterscheiden."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
       "topic_id": "europa",
-      "bullets": [
-        "Freizügigkeit, Warenverkehr und berufliche Mobilität den jeweiligen Fallkonstellationen zuordnen."
-      ],
+      "bullets": [],
       "patterns": [
         {
           "text": "Welche Grundfreiheiten bestehen im Europäischen Binnenmarkt?",
@@ -17277,6 +17748,16 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Freizügigkeit, Warenverkehr und berufliche Mobilität den jeweiligen Fallkonstellationen zuordnen."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     },
     {
@@ -17324,9 +17805,7 @@
     },
     {
       "topic_id": "sozialrecht",
-      "bullets": [
-        "Zuständige Stelle, Rechtsbehelf und Frist getrennt prüfen; arbeitsrechtliche und sozialrechtliche Streitigkeiten unterscheiden."
-      ],
+      "bullets": [],
       "patterns": [
         {
           "text": "Wozu dient die Sozialgerichtsbarkeit?",
@@ -17357,6 +17836,16 @@
         "relevant": true,
         "reviewed_at": null,
         "review_needed": true
+      },
+      "historical_bullets": [
+        "Zuständige Stelle, Rechtsbehelf und Frist getrennt prüfen; arbeitsrechtliche und sozialrechtliche Streitigkeiten unterscheiden."
+      ],
+      "knowledge": {
+        "status": "needs_review",
+        "as_of": "2026-10-21",
+        "current_version_id": null,
+        "bullets": [],
+        "versions": []
       }
     }
   ],

@@ -3,6 +3,7 @@ Run with requirements.txt installed; optionally --no-ocr for cache-only builds.
 Never renders or segments PDFs. Cache is bound to source revision and crop bytes.
 """
 import argparse,hashlib,json,re,unicodedata
+from wiso_knowledge import resolve_knowledge
 from collections import Counter
 from datetime import datetime,timezone
 from pathlib import Path
@@ -128,7 +129,7 @@ def build(root=ROOT,no_ocr=False):
   proposal=classify_record(record);proposal.update(question_id=item['question_id'],question_source_revision=item['question_source_revision'])
   proposal['review_reasons']+=record['review_reasons'];classes.append(reconcile(old.get(item['question_id']),proposal))
   print(f'{n+1}/{len(inventory)} {item["question_id"]}: {len(record["text"])} chars, {proposal["topic_ids"]}, cache={hit}',flush=True)
- taxonomy=read(root/'scripts/wiso_taxonomy.json');proposals=propose_topics(inventory,texts,classes,taxonomy.get('proposal_cues',[]));summaries=[];curated_patterns=read(root/'scripts/wiso_patterns.json',{});legal=read(root/'scripts/wiso_legal_verified.json',{})
+ taxonomy=read(root/'scripts/wiso_taxonomy.json');proposals=propose_topics(inventory,texts,classes,taxonomy.get('proposal_cues',[]));summaries=[];curated_patterns=read(root/'scripts/wiso_patterns.json',{});legal=read(root/'scripts/wiso_legal_verified.json',{});knowledge=read(root/'scripts/wiso_knowledge_versions.json',{})
  for node in taxonomy['nodes']:
   tid=node['id'];children={t['id'] for t in taxonomy['nodes'] if t['parent_id']==tid}|{tid}
   ids=[c['question_id'] for c in classes if children.intersection(c['topic_ids'])]
@@ -146,8 +147,15 @@ def build(root=ROOT,no_ocr=False):
   if curated:patterns=curated[:3]
   summary={'topic_id':tid,'bullets':node.get('bullets',[]) or [b for child in taxonomy['nodes'] if child['parent_id']==tid for b in child.get('bullets',[])][:3],'patterns':patterns,'question_ids':ids,'provenance':'historical_exam_summary','legal_freshness':{'relevant':node.get('legal',True),'reviewed_at':None,'review_needed':node.get('legal',True)}}
   if tid in legal:summary.update(legal[tid])
+  if summary['legal_freshness']['relevant']:
+   summary['historical_bullets']=list(summary['bullets'])
+   summary['knowledge']=resolve_knowledge(knowledge.get(tid,[]),datetime.now(timezone.utc).date().isoformat())
+   summary['bullets']=summary['knowledge']['bullets']
+   summary['legal_freshness']['review_needed']=summary['knowledge']['status']!='current'
+   selected=next((v for v in summary['knowledge']['versions'] if v['current']),None)
+   if selected:summary['legal_freshness'].update(reviewed_at=selected['verified_at'],references=selected['references'])
   summaries.append(summary)
- input_hashes={name:hashlib.sha256((root/name).read_bytes()).hexdigest() for name in ['public/data/question_inventory.json','scripts/wiso_taxonomy.json','scripts/wiso_patterns.json','scripts/wiso_legal_verified.json'] if (root/name).exists()}
+ input_hashes={name:hashlib.sha256((root/name).read_bytes()).hexdigest() for name in ['public/data/question_inventory.json','scripts/wiso_taxonomy.json','scripts/wiso_patterns.json','scripts/wiso_legal_verified.json','scripts/wiso_knowledge_versions.json'] if (root/name).exists()}
  result={'proposed_topics':proposals,'input_hashes':input_hashes,'schema_version':1,'version':VERSION,'taxonomy':taxonomy,'texts':texts,'classifications':classes,'summaries':summaries,'retired_texts':prior.get('retired_texts',[])+[t for t in prior.get('texts',[]) if t['question_id'] not in active],'retired_classifications':prior.get('retired_classifications',[])+[v for k,v in old.items() if k not in active],'config':{'recentSeasonCount':4,'minAccuracyQuestions':3,'weakAccuracy':60,'relevance':{'questionWeight':.4,'seasonWeight':.4,'recentWeight':.2,'veryHigh':.7,'high':.5,'medium':.25},'priority':{'relevanceWeight':1,'needWeight':2,'weaknessWeight':1,'unpracticedBonus':.25}}}
  write(root/'public/data/wiso_focus.json',result)
  report={'proposed_topics':len(proposals),'inventory':len(inventory),'seasons':len({q['examId'] for q in inventory}),'usable_text':sum(valid_text(t['text']) for t in texts),'classified':sum(bool(c['topic_ids']) for c in classes),'unclassified':sum(not c['topic_ids'] for c in classes),'text_review':sum(bool(t['review_reasons']) for t in texts),'cache_hits':skipped,'methods':dict(Counter(t['extraction_method'] for t in texts)),'source_files_modified':0,'pdf_pages_rendered':0,'topics':{n['id']:sum(n['id'] in c['topic_ids'] for c in classes) for n in taxonomy['nodes']}}
